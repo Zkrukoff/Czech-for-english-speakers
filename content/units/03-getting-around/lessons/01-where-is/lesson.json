@@ -1,0 +1,327 @@
+{
+  "id": "u03-l01",
+  "title": "Excuse me, where is…?",
+  "canDo": [
+    "u03-g1"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "case:genitive",
+    "verb:imperative"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-prominte",
+      "cs": "promiňte / promiň",
+      "en": "excuse me; sorry (formal / informal)",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kde",
+      "cs": "kde",
+      "en": "where",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-nadrazi",
+      "cs": "nádraží",
+      "en": "(railway) station",
+      "pos": "noun",
+      "gender": "n",
+      "notes": "Doesn't change in most cases: na nádraží, vedle nádraží.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-zastavka",
+      "cs": "zastávka",
+      "en": "(bus or tram) stop",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-lekarna",
+      "cs": "lékárna",
+      "en": "pharmacy, chemist's",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-banka",
+      "cs": "banka",
+      "en": "bank",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-namesti",
+      "cs": "náměstí",
+      "en": "square",
+      "pos": "noun",
+      "gender": "n",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-rovne",
+      "cs": "rovně",
+      "en": "straight on",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-doleva",
+      "cs": "doleva / doprava",
+      "en": "to the left / to the right",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-daleko",
+      "cs": "daleko / blízko",
+      "en": "far / near",
+      "pos": "adv",
+      "notes": "blízko + genitive: blízko nádraží (near the station).",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vedle",
+      "cs": "vedle",
+      "en": "next to (+ genitive)",
+      "pos": "prep",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-nejblizsi",
+      "cs": "nejbližší",
+      "en": "the nearest; the next",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-pesky",
+      "cs": "pěšky",
+      "en": "on foot",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-neni-zac",
+      "cs": "Není zač.",
+      "en": "You're welcome.",
+      "pos": "phrase",
+      "notes": "Also Rádo se stalo. (\"Gladly done.\")",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "A tourist stops a woman in the street in Olomouc.",
+    "lines": [
+      {
+        "speaker": "Turista",
+        "cs": "Promiňte, kde je tady nejbližší lékárna?",
+        "en": "Excuse me, where's the nearest pharmacy?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Paní",
+        "cs": "Lékárna? Jděte rovně a pak doleva.",
+        "en": "A pharmacy? Go straight on and then left.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Turista",
+        "cs": "Je to daleko?",
+        "en": "Is it far?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Paní",
+        "cs": "Ne, je to asi pět minut pěšky. Je to vedle banky.",
+        "en": "No, it's about five minutes' walk. It's next to the bank.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Turista",
+        "cs": "Děkuju moc.",
+        "en": "Thank you very much.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Paní",
+        "cs": "Není zač.",
+        "en": "You're welcome.",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u03-l01-e1",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Excuse me, where is the station?",
+      "answers": [
+        "Promiňte, kde je [tady ]nádraží?"
+      ],
+      "why": "Promiňte is the polite \"excuse me\"; Kde je…? = Where is…? nádraží doesn't change.",
+      "hints": [
+        {
+          "wrong": "Promiň, kde je [tady ]nádraží?",
+          "explain": "Promiň is informal (ty). To a stranger, say Promiňte."
+        }
+      ],
+      "skills": [
+        "vocab:v-prominte",
+        "vocab:v-kde",
+        "vocab:v-nadrazi"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l01-e2",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "Jděte rovně a pak doleva.",
+      "answers": [
+        "{Go|Walk|Keep going} straight[ on| ahead] and then[ turn| go] left[.]"
+      ],
+      "why": "jděte = go (vy imperative of jít), rovně = straight on, pak = then, doleva = (to the) left.",
+      "hints": [],
+      "skills": [
+        "verb:imperative",
+        "vocab:v-rovne",
+        "vocab:v-doleva"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l01-e3",
+      "type": "fillEnding",
+      "prompt": "Je to vedle bank___.",
+      "base": "banka",
+      "en": "It's next to the bank.",
+      "answers": [
+        "y"
+      ],
+      "why": "vedle (next to) takes the genitive. Feminine -a → -y: banka → vedle banky.",
+      "hints": [
+        {
+          "wrong": "a",
+          "explain": "banka is the nominative. vedle takes the genitive: vedle banky."
+        }
+      ],
+      "skills": [
+        "case:genitive",
+        "vocab:v-vedle",
+        "vocab:v-banka"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l01-e4",
+      "type": "caseSelect",
+      "prompt": "Lékárna je blízko **náměstí**.",
+      "question": "Which case is \"náměstí\"?",
+      "options": [
+        "nominative",
+        "genitive",
+        "accusative",
+        "locative"
+      ],
+      "en": "The pharmacy is near the square.",
+      "answers": [
+        "genitive"
+      ],
+      "why": "blízko (near) takes the genitive. náměstí is a neuter -í noun, which looks the same in most cases, so the preposition tells you the case.",
+      "hints": [],
+      "skills": [
+        "case:genitive",
+        "vocab:v-namesti"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l01-e5",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Is it far?",
+      "answers": [
+        "Je to daleko?"
+      ],
+      "why": "Je to daleko? literally \"Is it far?\". Czech needs the to here.",
+      "hints": [],
+      "skills": [
+        "vocab:v-daleko"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l01-e6",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "It's about five minutes on foot.",
+      "answers": [
+        "[Je to ]asi pět minut pěšky[.]"
+      ],
+      "why": "asi = about; after pět use the genitive plural: minuta → pět minut. pěšky = on foot.",
+      "hints": [
+        {
+          "wrong": "[Je to ]asi pět minuty pěšky[.]",
+          "explain": "minuty is used after 2–4. After five, use the genitive plural: pět minut."
+        }
+      ],
+      "skills": [
+        "case:genitive",
+        "vocab:v-pesky"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l01-e7",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Turista",
+          "cs": "Děkuju moc.",
+          "en": "Thank you very much."
+        }
+      ],
+      "prompt": "Reply: you're welcome.",
+      "answers": [
+        "{Není zač|Rádo se stalo|Nemáte zač|Prosím}[.]"
+      ],
+      "why": "Není zač (lit. \"there's nothing to thank for\") and Rádo se stalo (\"gladly done\") both mean \"you're welcome\".",
+      "hints": [],
+      "skills": [
+        "vocab:v-neni-zac"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l01-e8",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Turn right. (to a stranger)",
+      "answers": [
+        "{Jděte|Zahněte|Odbočte} doprava[.]"
+      ],
+      "why": "doprava = to the right. Jděte doprava (\"go right\") is the simplest; zahněte or odbočte = turn.",
+      "hints": [
+        {
+          "wrong": "{Jdi|Zahni|Odboč} doprava[.]",
+          "explain": "That's the ty form. To a stranger, use vy: Jděte doprava."
+        }
+      ],
+      "skills": [
+        "verb:imperative",
+        "vocab:v-doleva"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

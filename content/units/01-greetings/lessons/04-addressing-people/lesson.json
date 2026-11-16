@@ -1,0 +1,375 @@
+{
+  "id": "u01-l04",
+  "title": "Addressing people",
+  "canDo": [
+    "u01-g4"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "case:vocative"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-pan",
+      "cs": "pan",
+      "en": "Mr; gentleman",
+      "pos": "noun",
+      "gender": "m-anim",
+      "notes": "When speaking to him: pane. Dobrý den, pane Nováku!",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-pani",
+      "cs": "paní",
+      "en": "Mrs, Ms; lady",
+      "pos": "noun",
+      "gender": "f",
+      "notes": "Never changes: Dobrý den, paní Nováková.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-doktor",
+      "cs": "doktor / doktorka",
+      "en": "doctor (male / female)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "notes": "Speaking to them: pane doktore / paní doktorko.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-mama",
+      "cs": "máma",
+      "en": "mum",
+      "pos": "noun",
+      "gender": "f",
+      "notes": "Speaking to her: mami.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-tata",
+      "cs": "táta",
+      "en": "dad",
+      "pos": "noun",
+      "gender": "m-anim",
+      "notes": "Speaking to him: tati.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kam-jdes",
+      "cs": "Kam jdeš?",
+      "en": "Where are you going?",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-trh",
+      "cs": "trh",
+      "en": "market",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-spolu",
+      "cs": "spolu",
+      "en": "together",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-jasne",
+      "cs": "jasně",
+      "en": "sure, of course",
+      "pos": "adv",
+      "notes": "Very common informal \"sure!\".",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-hezky-den",
+      "cs": "Hezký den!",
+      "en": "Have a nice day!",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vam-taky",
+      "cs": "Vám taky.",
+      "en": "You too. (formal)",
+      "pos": "phrase",
+      "notes": "Informal: Tobě taky.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-pockat",
+      "cs": "počkat",
+      "en": "to wait",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "čekat",
+      "notes": "Počkej! / Počkejte! Wait!",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "Saturday morning. Lucie is on her way to the farmers' market and meets her neighbour, then a friend.",
+    "lines": [
+      {
+        "speaker": "Lucie",
+        "cs": "Dobrý den, pane Nováku!",
+        "en": "Good morning, Mr Novák!",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Pan Novák",
+        "cs": "Dobrý den, Lucie. Jak se máte?",
+        "en": "Good morning, Lucie. How are you?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Lucie",
+        "cs": "Děkuju, dobře. A vy?",
+        "en": "Fine, thanks. And you?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Pan Novák",
+        "cs": "Docela dobře, děkuju. Hezký den!",
+        "en": "Pretty good, thanks. Have a nice day!",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Lucie",
+        "cs": "Vám taky!",
+        "en": "You too!",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Petr",
+        "cs": "Lucie! Ahoj!",
+        "en": "Lucie! Hi!",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Lucie",
+        "cs": "Ahoj, Petře! Kam jdeš?",
+        "en": "Hi, Petr! Where are you going?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Petr",
+        "cs": "Na trh. A ty?",
+        "en": "To the market. And you?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Lucie",
+        "cs": "Já taky. Půjdeme spolu?",
+        "en": "Me too. Shall we go together?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Petr",
+        "cs": "Jasně, pojď.",
+        "en": "Sure, come on.",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u01-l04-e1",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Hi, Petr!",
+      "answers": [
+        "{Ahoj|Čau}[,] Petře[!]"
+      ],
+      "why": "When you speak to someone, their name goes in the vocative. Names ending in a consonant + r change it to -ře: Petr → Petře.",
+      "hints": [
+        {
+          "wrong": "{Ahoj|Čau}[,] Petr[!]",
+          "explain": "You're speaking to Petr, so use the vocative: Petr → Petře."
+        },
+        {
+          "wrong": "{Ahoj|Čau}[,] Petre[!]",
+          "explain": "Close! After a consonant, -r becomes -ře: Petře."
+        }
+      ],
+      "skills": [
+        "case:vocative"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l04-e2",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Good morning, Mr Novák.",
+      "answers": [
+        "Dobré ráno, pane Nováku[.]",
+        "Dobrý den, pane Nováku[.]"
+      ],
+      "why": "Every word is in the vocative: pan → pane, and names ending in -k take -u: Novák → Nováku.",
+      "hints": [
+        {
+          "wrong": "{Dobré ráno|Dobrý den}, pan Novák[.]",
+          "explain": "Both words change when you speak to him: pan → pane, Novák → Nováku."
+        },
+        {
+          "wrong": "{Dobré ráno|Dobrý den}, pane Novák[.]",
+          "explain": "The surname changes too: Novák → Nováku (names ending in -k, -h, -ch take -u)."
+        },
+        {
+          "wrong": "{Dobré ráno|Dobrý den}, pan Nováku[.]",
+          "explain": "pan changes too: pane Nováku."
+        }
+      ],
+      "skills": [
+        "case:vocative",
+        "vocab:v-pan"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l04-e3",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Hello, Mrs Nováková.",
+      "answers": [
+        "Dobrý den, paní Nováková[.]"
+      ],
+      "why": "paní and women's surnames in -ová never change, even when you speak to someone.",
+      "hints": [
+        {
+          "wrong": "Dobrý den, paní Novákovo[.]",
+          "explain": "Women's surnames in -ová never change: paní Nováková."
+        }
+      ],
+      "skills": [
+        "case:vocative",
+        "vocab:v-pani"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l04-e4",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Hi, Jana!",
+      "answers": [
+        "{Ahoj|Čau}[,] Jano[!]"
+      ],
+      "why": "Feminine names in -a change -a to -o in the vocative: Jana → Jano.",
+      "hints": [
+        {
+          "wrong": "{Ahoj|Čau}[,] Jana[!]",
+          "explain": "You're speaking to Jana: use the vocative, Jano."
+        }
+      ],
+      "skills": [
+        "case:vocative"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l04-e5",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Tomáš, wait!",
+      "answers": [
+        "Tomáši, počkej[!]"
+      ],
+      "why": "Names ending in a soft consonant (š, ž, č, ř, j…) add -i in the vocative: Tomáš → Tomáši. Tomáš is a friend, so use the ty form počkej.",
+      "hints": [
+        {
+          "wrong": "Tomáš, počkej[!]",
+          "explain": "Use the vocative: Tomáš → Tomáši."
+        },
+        {
+          "wrong": "Tomáši, počkejte[!]",
+          "explain": "počkejte is the vy form. To a friend: počkej."
+        }
+      ],
+      "skills": [
+        "case:vocative",
+        "vocab:v-pockat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l04-e6",
+      "type": "caseSelect",
+      "prompt": "Dobrý den, pane **doktore**.",
+      "question": "Which case is \"doktore\"?",
+      "options": [
+        "nominative",
+        "genitive",
+        "accusative",
+        "vocative"
+      ],
+      "en": "Hello, doctor.",
+      "answers": [
+        "vocative"
+      ],
+      "why": "You're speaking directly to the doctor, so both pane and doktore are vocative (the nominative is pan doktor).",
+      "hints": [],
+      "skills": [
+        "case:vocative",
+        "vocab:v-doktor"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l04-e7",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Thanks, Mum!",
+      "answers": [
+        "{Děkuju|Děkuji|Díky}, {mami|mámo}[!]"
+      ],
+      "why": "When talking to your parents, Czechs say mami and tati.",
+      "hints": [
+        {
+          "wrong": "{Děkuju|Děkuji|Díky}, máma[!]",
+          "explain": "máma is the nominative. Speaking to her, use mami (or mámo)."
+        }
+      ],
+      "skills": [
+        "case:vocative",
+        "vocab:v-mama"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l04-e8",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Pan Novák",
+          "cs": "Hezký den!",
+          "en": "Have a nice day!"
+        }
+      ],
+      "prompt": "Wish him the same (formally).",
+      "answers": [
+        "[{Děkuju|Děkuji|Díky}, ]{Vám|vám} {taky|také}[!]"
+      ],
+      "why": "Vám taky means \"(to) you too\". It's the formal reply to a wish.",
+      "hints": [
+        {
+          "wrong": "[{Děkuju|Děkuji|Díky}, ]{Tobě|tobě} taky[!]",
+          "explain": "Tobě taky is informal. Lucie says vy to Mr Novák: Vám taky."
+        },
+        {
+          "wrong": "[{Děkuju|Děkuji|Díky}, ]{Vy|vy|Ty|ty} taky[!]",
+          "explain": "Here you need \"to you\": Vám taky (formal) or Tobě taky (informal)."
+        }
+      ],
+      "skills": [
+        "vocab:v-vam-taky"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

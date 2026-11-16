@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { course } from '@/content';
 import { PageHeader } from '@/components/PageHeader';
+import { GoalList } from '@/components/GoalList';
 
 export function HomePage() {
   return (
@@ -21,14 +22,9 @@ export function HomePage() {
                 {u.title} {u.titleCs && <span className="font-normal text-stone-500">· {u.titleCs}</span>}
               </h2>
               <p className="mt-2 text-sm text-stone-600">{u.situation}</p>
-              <ul className="mt-3 space-y-1 text-sm text-stone-700">
-                {u.canDo.map((g) => (
-                  <li key={g.id} className="flex gap-2">
-                    <span aria-hidden className="text-stone-400">○</span>
-                    {g.text}
-                  </li>
-                ))}
-              </ul>
+              <div className="mt-3 text-sm">
+                <GoalList goals={u.canDo} />
+              </div>
             </Link>
           </li>
         ))}

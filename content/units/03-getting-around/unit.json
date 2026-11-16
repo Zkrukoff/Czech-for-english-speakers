@@ -1,0 +1,218 @@
+{
+  "id": "u03",
+  "title": "Getting around",
+  "titleCs": "Ve městě",
+  "situation": "Finding your way around town, using public transport and buying tickets.",
+  "canDo": [
+    {
+      "id": "u03-g1",
+      "text": "You can ask where something is and understand simple directions."
+    },
+    {
+      "id": "u03-g2",
+      "text": "You can say where you're going and how (on foot, by tram, by train)."
+    },
+    {
+      "id": "u03-g3",
+      "text": "You can say where you are and where things are."
+    },
+    {
+      "id": "u03-g4",
+      "text": "You can buy a ticket and ask when a train or bus leaves."
+    }
+  ],
+  "lessons": [
+    "01-where-is",
+    "02-going-places",
+    "03-where-are-you",
+    "04-tickets"
+  ],
+  "check": {
+    "passRatio": 0.8,
+    "exercises": [
+      {
+        "id": "u03-c1",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "Excuse me, where is the pharmacy?",
+        "goalId": "u03-g1",
+        "answers": [
+          "Promiňte, kde je [tady ]lékárna?"
+        ],
+        "why": "Promiňte (formal), kde je…? = where is…?",
+        "hints": [
+          {
+            "wrong": "Promiň, kde je [tady ]lékárna?",
+            "explain": "To a stranger, use the formal Promiňte."
+          }
+        ],
+        "skills": [
+          "vocab:v-prominte",
+          "vocab:v-lekarna"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u03-c2",
+        "type": "translate",
+        "direction": "cs-en",
+        "prompt": "Jděte rovně a pak doprava.",
+        "goalId": "u03-g1",
+        "answers": [
+          "{Go|Walk|Keep going} straight[ on| ahead] and then[ turn| go] right[.]"
+        ],
+        "why": "rovně = straight on, pak = then, doprava = (to the) right.",
+        "hints": [
+          {
+            "wrong": "{Go|Walk|Keep going} straight[ on| ahead] and then[ turn| go] left[.]",
+            "explain": "doprava is right; doleva is left."
+          }
+        ],
+        "skills": [
+          "vocab:v-rovne",
+          "vocab:v-doleva"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u03-c3",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "I'm going to the cinema.",
+        "goalId": "u03-g2",
+        "answers": [
+          "{Jdu|Jedu} do kina[.]"
+        ],
+        "why": "do + genitive: kino → do kina.",
+        "hints": [
+          {
+            "wrong": "{Jdu|Jedu} do kino[.]",
+            "explain": "do takes the genitive: do kina."
+          }
+        ],
+        "skills": [
+          "case:genitive",
+          "vocab:v-kino"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u03-c4",
+        "type": "fillEnding",
+        "prompt": "Jedu vlak___.",
+        "base": "vlak",
+        "en": "I'm going by train.",
+        "goalId": "u03-g2",
+        "answers": [
+          "em"
+        ],
+        "why": "Means of transport take the instrumental: vlak → vlakem.",
+        "hints": [
+          {
+            "wrong": "u",
+            "explain": "vlaku is the dative/locative. \"By train\" is the instrumental: vlakem."
+          }
+        ],
+        "skills": [
+          "case:instrumental",
+          "vocab:v-vlak"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u03-c5",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "I'm in Prague.",
+        "goalId": "u03-g3",
+        "answers": [
+          "[Já ]jsem v Praze[.]"
+        ],
+        "why": "v + locative: Praha → v Praze.",
+        "hints": [
+          {
+            "wrong": "[Já ]jsem v Praha[.]",
+            "explain": "After v (in), use the locative: v Praze."
+          }
+        ],
+        "skills": [
+          "case:locative"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u03-c6",
+        "type": "fillEnding",
+        "prompt": "Jsem na pošt___.",
+        "base": "pošta",
+        "en": "I'm at the post office.",
+        "goalId": "u03-g3",
+        "answers": [
+          "ě"
+        ],
+        "why": "Location (where?) takes the locative: na poště.",
+        "hints": [
+          {
+            "wrong": "u",
+            "explain": "na poštu is for movement (Jdu na poštu). Location takes the locative: na poště."
+          },
+          {
+            "wrong": "a",
+            "explain": "After na (where?), use the locative: na poště."
+          }
+        ],
+        "skills": [
+          "case:locative",
+          "vocab:v-posta"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u03-c7",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "One return ticket to Brno, please.",
+        "goalId": "u03-g4",
+        "answers": [
+          "{Jednu zpáteční jízdenku|Jeden zpáteční lístek} do Brna[, prosím].",
+          "Zpáteční {jízdenku|lístek} do Brna, prosím."
+        ],
+        "why": "Use the accusative for the ticket (jednu zpáteční jízdenku) and do + genitive (do Brna).",
+        "hints": [
+          {
+            "wrong": "Jedna zpáteční jízdenka do Brna[, prosím].",
+            "explain": "Use the accusative: jednu zpáteční jízdenku."
+          }
+        ],
+        "skills": [
+          "case:accusative",
+          "vocab:v-zpatecni"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u03-c8",
+        "type": "translate",
+        "direction": "cs-en",
+        "prompt": "Vlak odjíždí v půl deváté.",
+        "goalId": "u03-g4",
+        "answers": [
+          "The train {leaves|departs} at {half past eight|eight thirty|8:30|8.30|half eight}[.]"
+        ],
+        "why": "půl deváté = half (of the way to) nine = 8:30.",
+        "hints": [
+          {
+            "wrong": "The train {leaves|departs} at {half past nine|nine thirty|9:30|9.30|half nine}[.]",
+            "explain": "půl deváté means half way to nine: 8:30."
+          }
+        ],
+        "skills": [
+          "vocab:v-pul",
+          "vocab:v-odjizdet"
+        ],
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "nativeReviewed": false
+}

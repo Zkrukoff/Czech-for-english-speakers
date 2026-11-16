@@ -1,0 +1,368 @@
+{
+  "id": "u01-l03",
+  "title": "Where are you from?",
+  "canDo": [
+    "u01-g3"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "case:genitive"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-odkud",
+      "cs": "odkud",
+      "en": "where from",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-z",
+      "cs": "z / ze",
+      "en": "from, out of (+ genitive)",
+      "pos": "prep",
+      "notes": "ze before some consonant groups: ze Skotska, ze Slovenska.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-anglie",
+      "cs": "Anglie",
+      "en": "England",
+      "pos": "noun",
+      "gender": "f",
+      "genitive": "z Anglie",
+      "notes": "A soft feminine noun: the genitive looks the same as the nominative.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-amerika",
+      "cs": "Amerika",
+      "en": "America",
+      "pos": "noun",
+      "gender": "f",
+      "genitive": "z Ameriky",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-cesko",
+      "cs": "Česko",
+      "en": "Czechia",
+      "pos": "noun",
+      "gender": "n",
+      "genitive": "z Česka",
+      "notes": "Also Česká republika (the Czech Republic): z České republiky.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-praha",
+      "cs": "Praha",
+      "en": "Prague",
+      "pos": "noun",
+      "gender": "f",
+      "genitive": "z Prahy",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-brno",
+      "cs": "Brno",
+      "en": "Brno",
+      "pos": "noun",
+      "gender": "n",
+      "genitive": "z Brna",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-anglican",
+      "cs": "Angličan / Angličanka",
+      "en": "Englishman / Englishwoman",
+      "pos": "noun",
+      "gender": "m-anim",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-cech",
+      "cs": "Čech / Češka",
+      "en": "Czech man / Czech woman",
+      "pos": "noun",
+      "gender": "m-anim",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-ucitel",
+      "cs": "učitel / učitelka",
+      "en": "teacher (male / female)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-student",
+      "cs": "student / studentka",
+      "en": "student (male / female)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-bydlet",
+      "cs": "bydlet",
+      "en": "to live (somewhere)",
+      "pos": "verb",
+      "aspect": "impf",
+      "notes": "Bydlím v Praze. I live in Prague.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-pracovat",
+      "cs": "pracovat",
+      "en": "to work",
+      "pos": "verb",
+      "aspect": "impf",
+      "notes": "pracuju, pracuješ, pracuje…",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-co-delas",
+      "cs": "Co děláš? / Co děláte?",
+      "en": "What do you do? (informal / formal)",
+      "pos": "phrase",
+      "notes": "Literally \"What are you doing?\", but also used to ask about someone's job.",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "At a friend's birthday party, Sam meets Petra.",
+    "lines": [
+      {
+        "speaker": "Petra",
+        "cs": "Odkud jsi?",
+        "en": "Where are you from?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Sam",
+        "cs": "Jsem z Anglie, z Manchesteru. A ty? Jsi z Prahy?",
+        "en": "I'm from England, from Manchester. And you? Are you from Prague?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Petra",
+        "cs": "Ne, jsem z Brna, ale bydlím v Praze.",
+        "en": "No, I'm from Brno, but I live in Prague.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Sam",
+        "cs": "A co děláš?",
+        "en": "And what do you do?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Petra",
+        "cs": "Jsem učitelka. Učím angličtinu. A ty?",
+        "en": "I'm a teacher. I teach English. And you?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Sam",
+        "cs": "Já jsem programátor. Pracuju z domu.",
+        "en": "I'm a programmer. I work from home.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Petra",
+        "cs": "To zní dobře.",
+        "en": "That sounds good.",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u01-l03-e1",
+      "type": "fillEnding",
+      "prompt": "Jsem z Kanad___.",
+      "base": "Kanada",
+      "en": "I'm from Canada.",
+      "answers": [
+        "y"
+      ],
+      "why": "z (from) takes the genitive. Feminine nouns in -a change it to -y: Kanada → z Kanady, Praha → z Prahy.",
+      "hints": [
+        {
+          "wrong": "a",
+          "explain": "Kanada is the nominative (dictionary form). After z, use the genitive: z Kanady."
+        }
+      ],
+      "skills": [
+        "case:genitive"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l03-e2",
+      "type": "fillEnding",
+      "prompt": "Petra je z Brn___.",
+      "base": "Brno",
+      "en": "Petra is from Brno.",
+      "answers": [
+        "a"
+      ],
+      "why": "z takes the genitive. Neuter nouns in -o change it to -a: Brno → z Brna.",
+      "hints": [
+        {
+          "wrong": "o",
+          "explain": "Brno is the nominative. After z, use the genitive: z Brna."
+        }
+      ],
+      "skills": [
+        "case:genitive",
+        "vocab:v-brno"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l03-e3",
+      "type": "fillEnding",
+      "prompt": "Jsem z Angli___.",
+      "base": "Anglie",
+      "en": "I'm from England.",
+      "answers": [
+        "e"
+      ],
+      "why": "Anglie is a soft feminine noun (like růže). Its genitive singular looks the same as the nominative: z Anglie.",
+      "hints": [
+        {
+          "wrong": "y",
+          "explain": "-y is for nouns ending in -a (Kanada → z Kanady). Anglie ends in -e, and its genitive stays z Anglie."
+        }
+      ],
+      "skills": [
+        "case:genitive",
+        "vocab:v-anglie"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l03-e4",
+      "type": "caseSelect",
+      "prompt": "Jsi z **Prahy**?",
+      "question": "Which case is \"Prahy\"?",
+      "options": [
+        "nominative",
+        "genitive",
+        "accusative",
+        "locative"
+      ],
+      "en": "Are you from Prague?",
+      "answers": [
+        "genitive"
+      ],
+      "why": "After z (from), Czech always uses the genitive: Praha → z Prahy.",
+      "hints": [],
+      "skills": [
+        "case:genitive",
+        "vocab:v-praha"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l03-e5",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Where are you from? (informal)",
+      "answers": [
+        "Odkud jsi[ ty]?"
+      ],
+      "why": "odkud means \"from where\": Odkud jsi? (formal: Odkud jste?)",
+      "hints": [
+        {
+          "wrong": "Kde jsi?",
+          "explain": "Kde jsi? means \"Where are you (right now)?\". For where someone comes from, use odkud: Odkud jsi?"
+        },
+        {
+          "wrong": "Odkud jste?",
+          "explain": "Odkud jste? is the formal (vy) form. Informal: Odkud jsi?"
+        }
+      ],
+      "skills": [
+        "vocab:v-odkud"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l03-e6",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "I'm a teacher. (a woman speaking)",
+      "answers": [
+        "[Já ]jsem učitelka."
+      ],
+      "why": "Words for jobs and nationalities have masculine and feminine forms: učitel / učitelka. Czech has no word for \"a\".",
+      "hints": [
+        {
+          "wrong": "[Já ]jsem učitel.",
+          "explain": "učitel is the masculine form. A woman says: Jsem učitelka."
+        }
+      ],
+      "skills": [
+        "vocab:v-ucitel"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l03-e7",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "I live in Prague, but I'm from Brno.",
+      "answers": [
+        "Bydlím v Praze, ale {jsem|pocházím} z Brna."
+      ],
+      "why": "Use v + locative for where you live (v Praze) and z + genitive for where you're from (z Brna).",
+      "hints": [
+        {
+          "wrong": "Bydlím v Praze, ale {jsem|pocházím} z Brno.",
+          "explain": "After z (from), use the genitive: Brno → z Brna."
+        },
+        {
+          "wrong": "Bydlím v Praha, ale {jsem|pocházím} z Brna.",
+          "explain": "After v (in), the noun changes too: Praha → v Praze. You'll practise this in unit 3."
+        }
+      ],
+      "skills": [
+        "case:genitive",
+        "case:locative",
+        "vocab:v-bydlet"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l03-e8",
+      "type": "conjugate",
+      "verb": "pracovat",
+      "prompt": "___ z domu.",
+      "en": "I work from home.",
+      "person": "1sg",
+      "answers": [
+        "{pracuju|pracuji}"
+      ],
+      "why": "Verbs in -ovat change -ova- to -uj-: pracuju (or pracuji), pracuješ, pracuje, pracujeme, pracujete, pracujou.",
+      "hints": [
+        {
+          "wrong": "pracovám",
+          "explain": "Verbs in -ovat don't keep -ova- in the present: pracovat → pracuju."
+        },
+        {
+          "wrong": "pracuje",
+          "explain": "pracuje is the on/ona form. For já: pracuju."
+        }
+      ],
+      "skills": [
+        "verb:present-classes",
+        "vocab:v-pracovat"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

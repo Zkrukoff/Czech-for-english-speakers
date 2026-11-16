@@ -1,0 +1,335 @@
+{
+  "id": "u01-l02",
+  "title": "What's your name?",
+  "canDo": [
+    "u01-g2"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "verb:irregulars",
+    "verb:reflexive"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-byt",
+      "cs": "být",
+      "en": "to be",
+      "pos": "verb",
+      "aspect": "impf",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-ja",
+      "cs": "já",
+      "en": "I",
+      "pos": "pron",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-ty",
+      "cs": "ty",
+      "en": "you (informal)",
+      "pos": "pron",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vy",
+      "cs": "vy",
+      "en": "you (formal or plural)",
+      "pos": "pron",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-jmenovat-se",
+      "cs": "jmenovat se",
+      "en": "to be called",
+      "pos": "verb",
+      "aspect": "impf",
+      "notes": "Jmenuju se Anna. Jak se jmenuješ?",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-tesi-me",
+      "cs": "Těší mě.",
+      "en": "Nice to meet you.",
+      "pos": "phrase",
+      "notes": "Literally \"it pleases me\". The reply is Mě taky (Me too).",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-me-taky",
+      "cs": "Mě taky.",
+      "en": "Me too. / Likewise.",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-ano",
+      "cs": "ano",
+      "en": "yes",
+      "pos": "particle",
+      "spoken": {
+        "form": "jo",
+        "note": "In everyday speech, \"yes\" is usually jo."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-ne",
+      "cs": "ne",
+      "en": "no",
+      "pos": "particle",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kamarad",
+      "cs": "kamarád / kamarádka",
+      "en": "friend (male / female)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-tady",
+      "cs": "tady",
+      "en": "here",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-novy",
+      "cs": "nový / nová",
+      "en": "new (masc. / fem.)",
+      "pos": "adj",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "A welcome party at a language school.",
+    "lines": [
+      {
+        "speaker": "Martin",
+        "cs": "Ahoj, já jsem Martin.",
+        "en": "Hi, I'm Martin.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Sarah",
+        "cs": "Ahoj, já jsem Sarah. Těší mě.",
+        "en": "Hi, I'm Sarah. Nice to meet you.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Martin",
+        "cs": "Mě taky. Jsi tady nová?",
+        "en": "Likewise. Are you new here?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Sarah",
+        "cs": "Ano, jsem tady první týden.",
+        "en": "Yes, it's my first week here.",
+        "spoken": {
+          "form": "Jo, jsem tady první týden.",
+          "note": "jo = ano (yes) in everyday speech."
+        },
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Martin",
+        "cs": "A kdo je to?",
+        "en": "And who's that?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Sarah",
+        "cs": "To je moje kamarádka. Jmenuje se Emma.",
+        "en": "That's my friend. Her name's Emma.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Martin",
+        "cs": "Ahoj, Emmo!",
+        "en": "Hi, Emma!",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Emma",
+        "cs": "Ahoj!",
+        "en": "Hi!",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u01-l02-e1",
+      "type": "conjugate",
+      "verb": "být",
+      "prompt": "Ty ___ tady nová?",
+      "en": "Are you new here?",
+      "person": "2sg",
+      "answers": [
+        "jsi"
+      ],
+      "why": "být: jsem, jsi, je, jsme, jste, jsou. With ty the form is jsi.",
+      "hints": [
+        {
+          "wrong": "jste",
+          "explain": "jste is the vy form. Martin and Sarah are about the same age at a party, so they use ty: jsi."
+        },
+        {
+          "wrong": "je",
+          "explain": "je is the on/ona form (he/she is). With ty, use jsi."
+        }
+      ],
+      "skills": [
+        "verb:irregulars"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l02-e2",
+      "type": "conjugate",
+      "verb": "jmenovat se",
+      "prompt": "Jak se ___?",
+      "en": "What's your name? (formal)",
+      "person": "2pl",
+      "answers": [
+        "jmenujete"
+      ],
+      "why": "jmenovat se changes -ova- to -uj-: jmenuju, jmenuješ, jmenuje, jmenujeme, jmenujete, jmenujou.",
+      "hints": [
+        {
+          "wrong": "jmenuješ",
+          "explain": "That's the ty form. The formal question is Jak se jmenujete?"
+        }
+      ],
+      "skills": [
+        "verb:present-classes",
+        "vocab:v-jmenovat-se"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l02-e3",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "My name is Anna.",
+      "answers": [
+        "{Jmenuju|Jmenuji} se Anna.",
+        "[Já ]jsem Anna.",
+        "Já se {jmenuju|jmenuji} Anna."
+      ],
+      "why": "Say Jmenuju se Anna (literally \"I call myself Anna\") or simply Jsem Anna.",
+      "hints": [
+        {
+          "wrong": "{Jmenuju|Jmenuji} Anna.",
+          "explain": "You need se: the verb is jmenovat se. Jmenuju se Anna."
+        },
+        {
+          "wrong": "Se {jmenuju|jmenuji} Anna.",
+          "explain": "se can't start a sentence. It goes in second position: Jmenuju se Anna."
+        },
+        {
+          "wrong": "Já {jmenuju|jmenuji} se Anna.",
+          "explain": "If you start with já, se comes straight after it: Já se jmenuju Anna."
+        }
+      ],
+      "skills": [
+        "verb:reflexive",
+        "vocab:v-jmenovat-se"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l02-e4",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "What's your name? (to a child)",
+      "answers": [
+        "Jak se jmenuješ?"
+      ],
+      "why": "Children are always addressed with ty: Jak se jmenuješ?",
+      "hints": [
+        {
+          "wrong": "Jak se jmenujete?",
+          "explain": "That's the formal form. Children are addressed with ty: Jak se jmenuješ?"
+        }
+      ],
+      "skills": [
+        "vocab:v-jmenovat-se"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l02-e5",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Martin",
+          "cs": "Ahoj, já jsem Martin.",
+          "en": "Hi, I'm Martin."
+        }
+      ],
+      "prompt": "Introduce yourself as Kate and say you're pleased to meet him.",
+      "answers": [
+        "[Ahoj[,] ]{[já ]jsem|{jmenuju|jmenuji} se|já se {jmenuju|jmenuji}} Kate. Těší mě."
+      ],
+      "why": "Give your name with (Já) jsem… or Jmenuju se…, then say Těší mě (Nice to meet you).",
+      "hints": [
+        {
+          "wrong": "[Ahoj[,] ]{[já ]jsem|{jmenuju|jmenuji} se|já se {jmenuju|jmenuji}} Kate. Těší tě.",
+          "explain": "Těší mě means \"it pleases me\". The person who is pleased is you, so it's mě, not tě."
+        }
+      ],
+      "skills": [
+        "vocab:v-tesi-me"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l02-e6",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Sarah",
+          "cs": "Těší mě.",
+          "en": "Nice to meet you."
+        }
+      ],
+      "prompt": "Reply \"likewise\" (me too).",
+      "answers": [
+        "Mě {taky|také}[.]",
+        "{Taky|Také} mě těší[.]"
+      ],
+      "why": "The reply to Těší mě is Mě taky: \"(it pleases) me too\".",
+      "hints": [
+        {
+          "wrong": "Já {taky|také}[.]",
+          "explain": "Já taky means \"I too\" (as the subject). In Těší mě the person is the object (it pleases me), so the reply is Mě taky."
+        }
+      ],
+      "skills": [
+        "vocab:v-me-taky"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l02-e7",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "To je moje kamarádka.",
+      "answers": [
+        "{This is|That is|That's|She is|She's} my [female ]friend[.]"
+      ],
+      "why": "kamarádka is a female friend (a male friend is kamarád). To je… means \"This/That is…\".",
+      "hints": [],
+      "skills": [
+        "vocab:v-kamarad"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

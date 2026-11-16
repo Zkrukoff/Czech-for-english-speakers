@@ -1,0 +1,348 @@
+{
+  "id": "u01-l01",
+  "title": "Hello and goodbye",
+  "canDo": [
+    "u01-g1"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "verb:irregulars"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-dobry-den",
+      "cs": "dobrý den",
+      "en": "hello (formal, any time of day)",
+      "pos": "phrase",
+      "notes": "Literally \"good day\". Use it with anyone you don't know well, in shops, at work, with older people.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-ahoj",
+      "cs": "ahoj",
+      "en": "hi; bye (informal)",
+      "pos": "interj",
+      "notes": "For friends, family, children, and people your age in casual settings. Works for hello and goodbye.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-cau",
+      "cs": "čau",
+      "en": "hi; bye (very informal)",
+      "pos": "interj",
+      "notes": "From Italian \"ciao\". Between friends.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-dobre-rano",
+      "cs": "dobré ráno",
+      "en": "good morning",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-dobry-vecer",
+      "cs": "dobrý večer",
+      "en": "good evening",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-na-shledanou",
+      "cs": "na shledanou",
+      "en": "goodbye (formal)",
+      "pos": "phrase",
+      "spoken": {
+        "form": "nashle",
+        "note": "Short, friendly version you'll hear in shops."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-dekuju",
+      "cs": "děkuju",
+      "en": "thank you",
+      "pos": "phrase",
+      "notes": "Also děkuji (a little more formal). Both are correct.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-diky",
+      "cs": "díky",
+      "en": "thanks (informal)",
+      "pos": "interj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-prosim",
+      "cs": "prosím",
+      "en": "please; here you are; pardon?",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-jak-se-mas",
+      "cs": "Jak se máš? / Jak se máte?",
+      "en": "How are you? (informal / formal)",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-dobre",
+      "cs": "dobře",
+      "en": "well, fine",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-taky",
+      "cs": "taky",
+      "en": "also, too",
+      "pos": "adv",
+      "notes": "také is the more formal, written form.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-mej-se",
+      "cs": "měj se / mějte se",
+      "en": "take care (when parting; informal / formal)",
+      "pos": "phrase",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "Monday morning, at the entrance of an office building in Prague.",
+    "lines": [
+      {
+        "speaker": "Tomáš",
+        "cs": "Ahoj, Jano!",
+        "en": "Hi, Jana!",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Jana",
+        "cs": "Ahoj, Tomáši! Jak se máš?",
+        "en": "Hi, Tomáš! How are you?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tomáš",
+        "cs": "Dobře, díky. A ty?",
+        "en": "Fine, thanks. And you?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Jana",
+        "cs": "Ujde to.",
+        "en": "Not bad. / It's OK.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tomáš",
+        "cs": "Dobrý den, paní Dvořáková.",
+        "en": "Good morning, Mrs Dvořáková.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Paní Dvořáková",
+        "cs": "Dobrý den, Tomáši. Jak se máte?",
+        "en": "Good morning, Tomáš. How are you?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tomáš",
+        "cs": "Děkuju, dobře. A vy?",
+        "en": "Fine, thank you. And you?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Paní Dvořáková",
+        "cs": "Taky dobře, děkuju.",
+        "en": "Fine too, thank you.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Jana",
+        "cs": "Tak čau, Tomáši. Měj se!",
+        "en": "Right, bye, Tomáš. Take care!",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tomáš",
+        "cs": "Ty taky. Čau!",
+        "en": "You too. Bye!",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u01-l01-e1",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Hello! (to a shop assistant)",
+      "answers": [
+        "Dobrý den[!]"
+      ],
+      "why": "With people you don't know, use the formal greeting Dobrý den. It works at any time of day.",
+      "hints": [
+        {
+          "wrong": "{Ahoj|Čau}[!]",
+          "explain": "Ahoj and čau are only for friends, family and children. With a shop assistant, use the formal Dobrý den."
+        }
+      ],
+      "skills": [
+        "vocab:v-dobry-den"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l01-e2",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Hi! (to a friend)",
+      "answers": [
+        "{Ahoj|Čau}[!]"
+      ],
+      "why": "Between friends, say Ahoj or Čau.",
+      "hints": [
+        {
+          "wrong": "Dobrý den[!]",
+          "explain": "Dobrý den is the formal greeting. Between friends it sounds distant: use Ahoj or Čau."
+        }
+      ],
+      "skills": [
+        "vocab:v-ahoj"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l01-e3",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "How are you? (to a friend)",
+      "answers": [
+        "Jak se máš?"
+      ],
+      "why": "Friends use ty forms: Jak se máš? The verb is mít se, literally \"how do you have yourself\".",
+      "hints": [
+        {
+          "wrong": "Jak se máte?",
+          "explain": "Jak se máte? is the formal (vy) form. To a friend, use ty: Jak se máš?"
+        },
+        {
+          "wrong": "Jak máš?",
+          "explain": "Don't forget se: the phrase is mít se. Jak se máš?"
+        }
+      ],
+      "skills": [
+        "verb:irregulars",
+        "vocab:v-jak-se-mas"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l01-e4",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "How are you? (to your boss)",
+      "answers": [
+        "Jak se máte?"
+      ],
+      "why": "To your boss, or anyone you'd call pan or paní, use vy: Jak se máte?",
+      "hints": [
+        {
+          "wrong": "Jak se máš?",
+          "explain": "That's the informal ty form. Your boss gets vy: Jak se máte?"
+        }
+      ],
+      "skills": [
+        "verb:irregulars",
+        "vocab:v-jak-se-mas"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l01-e5",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Jana",
+          "cs": "Ahoj! Jak se máš?",
+          "en": "Hi! How are you?"
+        }
+      ],
+      "prompt": "Say you're fine, thanks, and ask how she is.",
+      "answers": [
+        "Dobře, {díky|děkuju|děkuji}. A ty?",
+        "{Díky|Děkuju|Děkuji}, dobře. A ty?"
+      ],
+      "why": "Answer with dobře (fine) and díky or děkuju, then ask back with A ty? (And you?)",
+      "hints": [
+        {
+          "wrong": "Dobře, {díky|děkuju|děkuji}. A vy?",
+          "explain": "A vy? is formal. Jana used the ty form (máš), so ask back with A ty?"
+        }
+      ],
+      "skills": [
+        "vocab:v-dobre",
+        "vocab:v-diky"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l01-e6",
+      "type": "conjugate",
+      "verb": "mít",
+      "prompt": "Jak se ___, pane Nováku?",
+      "en": "How are you, Mr Novák?",
+      "person": "2pl",
+      "answers": [
+        "máte"
+      ],
+      "why": "mít: mám, máš, má, máme, máte, mají. You say vy to Mr Novák, so: máte.",
+      "hints": [
+        {
+          "wrong": "máš",
+          "explain": "máš is the ty form. Mr Novák gets vy: máte."
+        }
+      ],
+      "skills": [
+        "verb:irregulars"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l01-e7",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "Na shledanou!",
+      "answers": [
+        "{Goodbye|Bye|Good bye|Bye bye}[!]"
+      ],
+      "why": "Na shledanou is the standard polite goodbye (literally \"until we see each other again\").",
+      "hints": [],
+      "skills": [
+        "vocab:v-na-shledanou"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l01-e8",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "Měj se!",
+      "answers": [
+        "Take care[!]",
+        "{Have a good one|Have a nice day|See you|Bye}[!]"
+      ],
+      "why": "Měj se (to ty) / Mějte se (to vy) is a friendly \"take care\", said when parting.",
+      "hints": [],
+      "skills": [
+        "vocab:v-mej-se"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

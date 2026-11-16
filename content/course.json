@@ -1,4 +1,8 @@
 {
   "title": "Czech for English Speakers",
-  "units": ["02-cafe"]
+  "units": [
+    "01-greetings",
+    "02-cafe",
+    "03-getting-around"
+  ]
 }

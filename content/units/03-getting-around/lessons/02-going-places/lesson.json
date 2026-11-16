@@ -1,0 +1,376 @@
+{
+  "id": "u03-l02",
+  "title": "Going places",
+  "canDo": [
+    "u03-g2"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "verb:motion",
+    "case:genitive",
+    "case:accusative",
+    "case:instrumental"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-kam",
+      "cs": "kam",
+      "en": "where (to)",
+      "pos": "adv",
+      "notes": "kde = where (location), kam = where to (direction).",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-jit",
+      "cs": "jít",
+      "en": "to go (on foot)",
+      "pos": "verb",
+      "aspect": "impf",
+      "notes": "jdu, jdeš, jde…",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-jet",
+      "cs": "jet",
+      "en": "to go (by vehicle)",
+      "pos": "verb",
+      "aspect": "impf",
+      "notes": "jedu, jedeš, jede…",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-do",
+      "cs": "do",
+      "en": "to, into (+ genitive)",
+      "pos": "prep",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-na",
+      "cs": "na",
+      "en": "to (+ accusative, with some places)",
+      "pos": "prep",
+      "notes": "na poštu, na nádraží, na koncert",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-domu",
+      "cs": "domů",
+      "en": "(to) home",
+      "pos": "adv",
+      "notes": "Jdu domů. (But: Jsem doma. I'm at home.)",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-prace",
+      "cs": "práce",
+      "en": "work; job",
+      "pos": "noun",
+      "gender": "f",
+      "notes": "do práce = to work",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kino",
+      "cs": "kino",
+      "en": "cinema",
+      "pos": "noun",
+      "gender": "n",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vlak",
+      "cs": "vlak",
+      "en": "train",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "vlakem = by train",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-autobus",
+      "cs": "autobus",
+      "en": "bus",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "autobusem = by bus",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-tramvaj",
+      "cs": "tramvaj",
+      "en": "tram",
+      "pos": "noun",
+      "gender": "f",
+      "notes": "Soft feminine (like píseň): tramvají = by tram, v tramvaji = in the tram.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vikend",
+      "cs": "víkend",
+      "en": "weekend",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "na víkend = for the weekend",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-stastnou-cestu",
+      "cs": "Šťastnou cestu!",
+      "en": "Have a good trip!",
+      "pos": "phrase",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "Friday afternoon. Eva bumps into Jakub, who is carrying a big bag.",
+    "lines": [
+      {
+        "speaker": "Eva",
+        "cs": "Ahoj, Jakube! Kam jdeš?",
+        "en": "Hi, Jakub! Where are you going?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Jakub",
+        "cs": "Ahoj! Jdu na nádraží. Jedu na víkend do Olomouce.",
+        "en": "Hi! I'm going to the station. I'm going to Olomouc for the weekend.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Eva",
+        "cs": "Jedeš vlakem?",
+        "en": "Are you going by train?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Jakub",
+        "cs": "Ano, vlakem. Je to pohodlnější než autobus.",
+        "en": "Yes, by train. It's more comfortable than the bus.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Eva",
+        "cs": "A na nádraží jdeš pěšky?",
+        "en": "And are you walking to the station?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Jakub",
+        "cs": "Ne, pojedu tramvají. S tou taškou je to daleko.",
+        "en": "No, I'll take the tram. With this bag it's a long way.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Eva",
+        "cs": "Tak šťastnou cestu!",
+        "en": "Well, have a good trip!",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Jakub",
+        "cs": "Díky, čau!",
+        "en": "Thanks, bye!",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u03-l02-e1",
+      "type": "conjugate",
+      "verb": "jet",
+      "prompt": "___ vlakem?",
+      "en": "Are you going by train?",
+      "person": "2sg",
+      "answers": [
+        "jedeš"
+      ],
+      "why": "jet (by vehicle): jedu, jedeš, jede, jedeme, jedete, jedou.",
+      "hints": [
+        {
+          "wrong": "jdeš",
+          "explain": "jdeš is from jít (on foot). Travelling by train uses jet: jedeš."
+        }
+      ],
+      "skills": [
+        "verb:motion"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l02-e2",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "I'm going to Brno by train.",
+      "answers": [
+        "Jedu {do Brna vlakem|vlakem do Brna}[.]",
+        "Do Brna jedu vlakem[.]"
+      ],
+      "why": "Use jet for any journey by vehicle. do takes the genitive (Brno → do Brna), and \"by train\" is the instrumental: vlakem.",
+      "hints": [
+        {
+          "wrong": "Jdu {do Brna vlakem|vlakem do Brna}[.]",
+          "explain": "jdu means going on foot. By train, use jet: Jedu."
+        },
+        {
+          "wrong": "Jedu {do Brno vlakem|vlakem do Brno}[.]",
+          "explain": "do takes the genitive: Brno → do Brna."
+        },
+        {
+          "wrong": "Jedu {do Brna s vlakem|s vlakem do Brna}[.]",
+          "explain": "\"By train\" is the bare instrumental: vlakem (s vlakem = together with a train)."
+        }
+      ],
+      "skills": [
+        "verb:motion",
+        "case:genitive",
+        "case:instrumental",
+        "vocab:v-vlak"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l02-e3",
+      "type": "fillEnding",
+      "prompt": "Pojedu tramvaj___.",
+      "base": "tramvaj",
+      "en": "I'll go by tram.",
+      "answers": [
+        "í"
+      ],
+      "why": "Means of transport go in the instrumental. Soft feminine nouns ending in a consonant take -í: tramvaj → tramvají.",
+      "hints": [
+        {
+          "wrong": "ou",
+          "explain": "tramvaj is a soft feminine noun (like píseň), so the instrumental is -í, not -ou: tramvají."
+        }
+      ],
+      "skills": [
+        "case:instrumental",
+        "vocab:v-tramvaj"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l02-e4",
+      "type": "caseSelect",
+      "prompt": "Jdu na **poštu**.",
+      "question": "Which case is \"poštu\"?",
+      "options": [
+        "nominative",
+        "genitive",
+        "accusative",
+        "locative"
+      ],
+      "en": "I'm going to the post office.",
+      "answers": [
+        "accusative"
+      ],
+      "why": "na with movement (where to?) takes the accusative: na poštu. For location (where?) it's the locative: Jsem na poště.",
+      "hints": [],
+      "skills": [
+        "case:accusative"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l02-e5",
+      "type": "fillEnding",
+      "prompt": "Jdu do kin___.",
+      "base": "kino",
+      "en": "I'm going to the cinema.",
+      "answers": [
+        "a"
+      ],
+      "why": "do takes the genitive. Neuter -o → -a: kino → do kina.",
+      "hints": [
+        {
+          "wrong": "o",
+          "explain": "kino is the nominative. do takes the genitive: do kina."
+        }
+      ],
+      "skills": [
+        "case:genitive",
+        "vocab:v-kino"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l02-e6",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "I'm going home. (on foot)",
+      "answers": [
+        "Jdu domů[.]"
+      ],
+      "why": "domů means \"(to) home\" with movement. It's a fixed word: no preposition.",
+      "hints": [
+        {
+          "wrong": "Jdu doma[.]",
+          "explain": "doma means \"at home\" (location). For movement towards home, use domů."
+        },
+        {
+          "wrong": "Jdu do domu[.]",
+          "explain": "do domu means \"into the house/building\". \"Home\" is simply domů."
+        },
+        {
+          "wrong": "Jedu domů[.]",
+          "explain": "Jedu domů is correct Czech, but it means going home by vehicle. On foot: Jdu domů."
+        }
+      ],
+      "skills": [
+        "vocab:v-domu"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l02-e7",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Where are you going? (informal)",
+      "answers": [
+        "Kam {jdeš|jedeš}[ ty]?"
+      ],
+      "why": "kam = where to. Use it with verbs of motion.",
+      "hints": [
+        {
+          "wrong": "Kde {jdeš|jedeš}?",
+          "explain": "kde means \"where\" for location. For direction, use kam: Kam jdeš?"
+        }
+      ],
+      "skills": [
+        "vocab:v-kam",
+        "verb:motion"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l02-e8",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "I go to work by bus. (every day)",
+      "answers": [
+        "{Jezdím do práce autobusem|Jezdím autobusem do práce|Do práce jezdím autobusem}[.]"
+      ],
+      "why": "For habits, use the indeterminate verb: jezdit (by vehicle) or chodit (on foot). do práce = to work (genitive).",
+      "hints": [
+        {
+          "wrong": "{Jedu do práce autobusem|Jedu autobusem do práce|Do práce jedu autobusem}[.]",
+          "explain": "Jedu describes one trip (I'm going now). For a regular habit, use jezdit: Jezdím do práce autobusem."
+        },
+        {
+          "wrong": "{Chodím do práce autobusem|Chodím autobusem do práce|Do práce chodím autobusem}[.]",
+          "explain": "chodit is for going on foot. By bus, the habitual verb is jezdit."
+        }
+      ],
+      "skills": [
+        "verb:motion",
+        "case:instrumental",
+        "vocab:v-autobus"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "id": "u02-l02",
+  "title": "I'd like…",
+  "canDo": [
+    "u02-g2"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "case:accusative",
+    "verb:conditional"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-chtel-bych",
+      "cs": "chtěl bych / chtěla bych",
+      "en": "I'd like (man / woman speaking)",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-mate",
+      "cs": "Máte…?",
+      "en": "Do you have…?",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-mate-vybrano",
+      "cs": "Máte vybráno?",
+      "en": "Are you ready to order? (lit. \"Have you chosen?\")",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-polevka",
+      "cs": "polévka",
+      "en": "soup",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-gulas",
+      "cs": "guláš",
+      "en": "goulash",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-knedlik",
+      "cs": "knedlík",
+      "en": "dumpling",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "Usually sliced bread dumplings, served with goulash and sauces.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-smazeny-syr",
+      "cs": "smažený sýr",
+      "en": "fried cheese",
+      "pos": "phrase",
+      "notes": "A Czech classic: breaded fried cheese, usually with chips and tartare sauce (tatarka).",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-rizek",
+      "cs": "řízek",
+      "en": "schnitzel",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-hranolky",
+      "cs": "hranolky",
+      "en": "chips, fries",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "Always plural. s hranolky = with chips.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-brambory",
+      "cs": "brambory",
+      "en": "potatoes",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "Plural of brambor. s brambory = with potatoes.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-bohuzel",
+      "cs": "bohužel",
+      "en": "unfortunately",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-pro",
+      "cs": "pro",
+      "en": "for (+ accusative)",
+      "pos": "prep",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-neco-k-piti",
+      "cs": "Něco k pití?",
+      "en": "Anything to drink?",
+      "pos": "phrase",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "Lunch at a traditional Czech pub. The waitress comes to Anna and Tom's table.",
+    "lines": [
+      {
+        "speaker": "Číšnice",
+        "cs": "Dobrý den, máte vybráno?",
+        "en": "Hello, are you ready to order?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Anna",
+        "cs": "Ano. Chtěla bych gulášovou polévku a smažený sýr.",
+        "en": "Yes. I'd like the goulash soup and the fried cheese.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Číšnice",
+        "cs": "S hranolky, nebo s brambory?",
+        "en": "With chips or with potatoes?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Anna",
+        "cs": "S hranolky, prosím.",
+        "en": "With chips, please.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Číšnice",
+        "cs": "A pro pána?",
+        "en": "And for the gentleman?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tom",
+        "cs": "Já bych si dal řízek s bramborovým salátem.",
+        "en": "I'd have the schnitzel with potato salad.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Číšnice",
+        "cs": "Řízek už bohužel nemáme.",
+        "en": "I'm afraid we've run out of schnitzel.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tom",
+        "cs": "Tak guláš s knedlíkem, prosím.",
+        "en": "Then the goulash with dumplings, please.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Číšnice",
+        "cs": "Dobře. Něco k pití?",
+        "en": "OK. Anything to drink?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tom",
+        "cs": "Dvě piva, prosím.",
+        "en": "Two beers, please.",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u02-l02-e1",
+      "type": "conjugate",
+      "verb": "chtít",
+      "prompt": "___ bych guláš.",
+      "tense": "conditional",
+      "en": "I'd like the goulash. (a man speaking)",
+      "person": "1sg",
+      "answers": [
+        "chtěl"
+      ],
+      "why": "Polite requests use the conditional: chtěl bych (man) / chtěla bych (woman), literally \"I would want\".",
+      "hints": [
+        {
+          "wrong": "chci",
+          "explain": "With bych you need the past form (the l-participle): chtěl bych, not chci bych."
+        },
+        {
+          "wrong": "chtěla",
+          "explain": "chtěla is what a woman says. Here a man is speaking: chtěl."
+        }
+      ],
+      "skills": [
+        "verb:conditional"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-e2",
+      "type": "fillEnding",
+      "prompt": "Chtěla bych zeleninov___ polévku.",
+      "base": "zeleninová",
+      "en": "I'd like the vegetable soup.",
+      "answers": [
+        "ou"
+      ],
+      "why": "In the accusative, feminine adjectives change -á to -ou: zeleninová polévka → zeleninovou polévku.",
+      "hints": [
+        {
+          "wrong": "á",
+          "explain": "The adjective must agree with polévku (accusative), so zeleninová → zeleninovou."
+        },
+        {
+          "wrong": "u",
+          "explain": "Close: nouns take -u, but feminine adjectives take -ou in the accusative: zeleninovou polévku."
+        }
+      ],
+      "skills": [
+        "case:accusative"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-e3",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Do you have goulash?",
+      "answers": [
+        "Máte guláš?"
+      ],
+      "why": "Máte…? (Do you have…?) is how to ask what's available. guláš is masculine inanimate, so it doesn't change in the accusative.",
+      "hints": [
+        {
+          "wrong": "Máš guláš?",
+          "explain": "Máš is the ty form. In a restaurant, use vy: Máte guláš?"
+        }
+      ],
+      "skills": [
+        "verb:irregulars",
+        "case:accusative",
+        "vocab:v-gulas"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-e4",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "I'd like a schnitzel, please. (a woman speaking)",
+      "answers": [
+        "{Chtěla bych|Dala bych si|Dám si} řízek[, prosím]."
+      ],
+      "why": "A woman says chtěla bych or dala bych si. řízek is masculine inanimate and doesn't change.",
+      "hints": [
+        {
+          "wrong": "{Chtěl bych|Dal bych si} řízek[, prosím].",
+          "explain": "The l-form agrees with the speaker. A woman says chtěla bych / dala bych si."
+        }
+      ],
+      "skills": [
+        "verb:conditional",
+        "vocab:v-rizek"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-e5",
+      "type": "caseSelect",
+      "prompt": "Tak guláš s **knedlíkem**.",
+      "question": "Which case is \"knedlíkem\"?",
+      "options": [
+        "nominative",
+        "accusative",
+        "instrumental",
+        "locative"
+      ],
+      "en": "Then the goulash with dumplings.",
+      "answers": [
+        "instrumental"
+      ],
+      "why": "s (with) takes the instrumental. Masculine nouns take -em: knedlík → s knedlíkem.",
+      "hints": [],
+      "skills": [
+        "case:instrumental",
+        "vocab:v-knedlik"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-e6",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Číšnice",
+          "cs": "Máte vybráno?",
+          "en": "Are you ready to order?"
+        }
+      ],
+      "prompt": "Say (as a man) that you'd like the fried cheese with chips.",
+      "answers": [
+        "[Ano[,] ]{Chtěl bych|Dal bych si|Dám si} smažený sýr s hranolky[, prosím]."
+      ],
+      "why": "Order with Chtěl bych / Dal bych si / Dám si + accusative. smažený sýr is masculine inanimate, so it doesn't change. \"With chips\" is s hranolky.",
+      "hints": [
+        {
+          "wrong": "[Ano[,] ]{Chtěl bych|Dal bych si|Dám si} smažený sýr s hranolkami[, prosím].",
+          "explain": "hranolky is masculine, so its instrumental plural stays hranolky: s hranolky. -ami is a feminine ending."
+        },
+        {
+          "wrong": "[Ano[,] ]{Chtěla bych|Dala bych si} smažený sýr s hranolky[, prosím].",
+          "explain": "You're a man here: chtěl bych / dal bych si."
+        }
+      ],
+      "skills": [
+        "case:accusative",
+        "vocab:v-smazeny-syr",
+        "vocab:v-hranolky"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-e7",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "Řízek už bohužel nemáme.",
+      "answers": [
+        "{Unfortunately|Sorry|I'm afraid}[,] we {don't have|have no} {schnitzel|schnitzels|the schnitzel|any schnitzel} {anymore|any more|left}[.]",
+        "We don't have {schnitzel|any schnitzel|the schnitzel} {anymore|any more|left}[,] unfortunately[.]",
+        "{Unfortunately|Sorry|I'm afraid}[,] we{'ve run| have run|'re| are} out of {schnitzel|schnitzels}[.]",
+        "We{'re| are} out of {schnitzel|schnitzels}[,] {unfortunately|sorry}[.]"
+      ],
+      "why": "už + a negative verb means \"not any more\"; bohužel means \"unfortunately\".",
+      "hints": [],
+      "skills": [
+        "vocab:v-bohuzel"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-e8",
+      "type": "fillEnding",
+      "prompt": "A pro pán___?",
+      "base": "pán",
+      "en": "And for the gentleman?",
+      "answers": [
+        "a"
+      ],
+      "why": "pro (for) takes the accusative. Masculine animate nouns (people and animals) add -a: pán → pro pána.",
+      "hints": [
+        {
+          "wrong": "u",
+          "explain": "-u is the accusative of feminine nouns in -a (kávu). pán is masculine animate, and adds -a: pro pána."
+        }
+      ],
+      "skills": [
+        "case:accusative"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

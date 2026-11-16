@@ -1,0 +1,351 @@
+{
+  "id": "u03-l03",
+  "title": "Where are you?",
+  "canDo": [
+    "u03-g3"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "case:locative"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-v",
+      "cs": "v / ve",
+      "en": "in (+ locative)",
+      "pos": "prep",
+      "notes": "ve before some consonant groups: ve městě, ve škole.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-na-loc",
+      "cs": "na",
+      "en": "on, at (+ locative)",
+      "pos": "prep",
+      "notes": "na poště, na nádraží, na náměstí",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-doma",
+      "cs": "doma",
+      "en": "at home",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-centrum",
+      "cs": "centrum",
+      "en": "centre",
+      "pos": "noun",
+      "gender": "n",
+      "notes": "v centru = in the centre",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kavarna",
+      "cs": "kavárna",
+      "en": "café",
+      "pos": "noun",
+      "gender": "f",
+      "notes": "v kavárně",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-posta",
+      "cs": "pošta",
+      "en": "post office",
+      "pos": "noun",
+      "gender": "f",
+      "notes": "na poště (at the post office), na poštu (to the post office)",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-muzeum",
+      "cs": "muzeum",
+      "en": "museum",
+      "pos": "noun",
+      "gender": "n",
+      "notes": "v muzeu (in), vedle muzea (next to)",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-venku",
+      "cs": "venku",
+      "en": "outside",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-uz",
+      "cs": "už",
+      "en": "already",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-jeste",
+      "cs": "ještě",
+      "en": "still; yet",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-za-chvili",
+      "cs": "za chvíli",
+      "en": "in a moment",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-cekat",
+      "cs": "čekat",
+      "en": "to wait",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "počkat",
+      "notes": "čekat na + accusative: Čekám na tebe. I'm waiting for you.",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "Ondřej is waiting for Klára and calls her.",
+    "lines": [
+      {
+        "speaker": "Ondřej",
+        "cs": "Ahoj, kde jsi? Já už jsem na místě.",
+        "en": "Hi, where are you? I'm already there.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Klára",
+        "cs": "Promiň, jsem ještě v tramvaji. Budu tam za deset minut.",
+        "en": "Sorry, I'm still on the tram. I'll be there in ten minutes.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Ondřej",
+        "cs": "Dobře. Čekám v kavárně na náměstí.",
+        "en": "OK. I'm waiting in the café on the square.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Klára",
+        "cs": "V té kavárně vedle muzea?",
+        "en": "In the café next to the museum?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Ondřej",
+        "cs": "Ano, sedím venku.",
+        "en": "Yes, I'm sitting outside.",
+        "spoken": {
+          "form": "Jo, sedím venku.",
+          "note": "jo = ano"
+        },
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Klára",
+        "cs": "Super, za chvíli jsem tam.",
+        "en": "Great, I'll be there in a moment.",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u03-l03-e1",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "I live in Prague.",
+      "answers": [
+        "Bydlím v Praze[.]"
+      ],
+      "why": "After v (in), use the locative. Before the ending -e, the h in Praha changes to z: v Praze.",
+      "hints": [
+        {
+          "wrong": "Bydlím v Praha[.]",
+          "explain": "After v (in), use the locative: Praha → v Praze."
+        },
+        {
+          "wrong": "Bydlím v Prahe[.]",
+          "explain": "Before -e the h in Praha changes to z: v Praze."
+        },
+        {
+          "wrong": "Bydlím v Prahu[.]",
+          "explain": "Prahu is the accusative (movement). For where you live, use the locative: v Praze."
+        }
+      ],
+      "skills": [
+        "case:locative",
+        "vocab:v-bydlet"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-e2",
+      "type": "fillEnding",
+      "prompt": "Čekám v kavárn___.",
+      "base": "kavárna",
+      "en": "I'm waiting in the café.",
+      "answers": [
+        "ě"
+      ],
+      "why": "v + location takes the locative. Feminine -a → -ě (or -e): kavárna → v kavárně.",
+      "hints": [
+        {
+          "wrong": "a",
+          "explain": "After v (where?), use the locative: kavárna → v kavárně."
+        },
+        {
+          "wrong": "u",
+          "explain": "-u is the accusative, for movement. For location, use the locative: v kavárně."
+        }
+      ],
+      "skills": [
+        "case:locative",
+        "vocab:v-kavarna"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-e3",
+      "type": "caseSelect",
+      "prompt": "Jsem na **poště**.",
+      "question": "Which case is \"poště\"?",
+      "options": [
+        "nominative",
+        "accusative",
+        "locative",
+        "instrumental"
+      ],
+      "en": "I'm at the post office.",
+      "answers": [
+        "locative"
+      ],
+      "why": "na + location (where?) takes the locative: na poště. With movement (where to?) it's the accusative: Jdu na poštu.",
+      "hints": [],
+      "skills": [
+        "case:locative",
+        "vocab:v-posta"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-e4",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "I'm at home.",
+      "answers": [
+        "[Já ]jsem doma[.]"
+      ],
+      "why": "\"At home\" is the fixed word doma.",
+      "hints": [
+        {
+          "wrong": "[Já ]jsem v domě[.]",
+          "explain": "v domě means \"in the building/house\". \"At home\" is simply doma."
+        },
+        {
+          "wrong": "[Já ]jsem domů[.]",
+          "explain": "domů means \"(to) home\", with movement. \"At home\" is doma."
+        }
+      ],
+      "skills": [
+        "vocab:v-doma"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-e5",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Where are you? (informal)",
+      "answers": [
+        "Kde jsi[ ty]?"
+      ],
+      "why": "kde = where (location).",
+      "hints": [
+        {
+          "wrong": "Kam jsi?",
+          "explain": "kam is \"where to\" (movement). For location, use kde: Kde jsi?"
+        }
+      ],
+      "skills": [
+        "vocab:v-kde"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-e6",
+      "type": "fillEnding",
+      "prompt": "Sedím v tramvaj___.",
+      "base": "tramvaj",
+      "en": "I'm sitting in the tram.",
+      "answers": [
+        "i"
+      ],
+      "why": "tramvaj is a soft feminine noun (like píseň): the locative ends in -i, v tramvaji.",
+      "hints": [
+        {
+          "wrong": "í",
+          "explain": "tramvají (-í) is the instrumental: \"by tram\". In the tram is the locative: v tramvaji."
+        },
+        {
+          "wrong": "ě",
+          "explain": "-ě is for hard nouns in -a (v kavárně). tramvaj is soft: v tramvaji."
+        }
+      ],
+      "skills": [
+        "case:locative",
+        "vocab:v-tramvaj"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-e7",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "I'm waiting in the square.",
+      "answers": [
+        "Čekám na náměstí[.]"
+      ],
+      "why": "Open spaces like squares and streets take na, not v: na náměstí, na ulici.",
+      "hints": [
+        {
+          "wrong": "Čekám v náměstí[.]",
+          "explain": "Squares take na: na náměstí."
+        }
+      ],
+      "skills": [
+        "case:locative",
+        "vocab:v-namesti",
+        "vocab:v-cekat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-e8",
+      "type": "conjugate",
+      "verb": "čekat",
+      "prompt": "___ v kavárně.",
+      "en": "I'm waiting in the café.",
+      "person": "1sg",
+      "answers": [
+        "čekám"
+      ],
+      "why": "čekat is a class-5 verb: čekám, čekáš, čeká, čekáme, čekáte, čekají.",
+      "hints": [
+        {
+          "wrong": "počkám",
+          "explain": "počkám is perfective, so it means \"I'll wait\". For \"I'm waiting (now)\", use the imperfective: čekám."
+        }
+      ],
+      "skills": [
+        "verb:present-classes",
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

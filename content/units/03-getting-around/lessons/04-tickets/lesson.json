@@ -1,0 +1,332 @@
+{
+  "id": "u03-l04",
+  "title": "A ticket to Brno",
+  "canDo": [
+    "u03-g4"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "case:accusative",
+    "verb:motion"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-jizdenka",
+      "cs": "jízdenka",
+      "en": "ticket (for transport)",
+      "pos": "noun",
+      "gender": "f",
+      "notes": "Also lístek (more colloquial; also for the cinema).",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-listek",
+      "cs": "lístek",
+      "en": "ticket",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-zpatecni",
+      "cs": "zpáteční",
+      "en": "return (ticket)",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-jednosmerny",
+      "cs": "jednosměrný",
+      "en": "one-way, single",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-nastupiste",
+      "cs": "nástupiště",
+      "en": "platform",
+      "pos": "noun",
+      "gender": "n",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-prestupovat",
+      "cs": "přestupovat",
+      "en": "to change (trains, buses)",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "přestoupit",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-primo",
+      "cs": "přímo",
+      "en": "directly, direct",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kdy",
+      "cs": "kdy",
+      "en": "when",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-v-kolik",
+      "cs": "v kolik",
+      "en": "at what time",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-odjizdet",
+      "cs": "odjíždět",
+      "en": "to leave, depart (by vehicle)",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "odjet",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-pul",
+      "cs": "půl",
+      "en": "half",
+      "pos": "num",
+      "notes": "půl desáté = 9:30 (half way to ten!)",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "At the ticket office of Prague main station.",
+    "lines": [
+      {
+        "speaker": "Cestující",
+        "cs": "Dobrý den, jednu jízdenku do Brna, prosím.",
+        "en": "Hello, one ticket to Brno, please.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Pokladní",
+        "cs": "Jednosměrnou, nebo zpáteční?",
+        "en": "Single or return?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Cestující",
+        "cs": "Zpáteční. V kolik jede nejbližší vlak?",
+        "en": "Return. What time is the next train?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Pokladní",
+        "cs": "V půl jedenácté, z nástupiště číslo pět.",
+        "en": "At half past ten, from platform number five.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Cestující",
+        "cs": "Musím přestupovat?",
+        "en": "Do I have to change?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Pokladní",
+        "cs": "Ne, ten jede přímo. Platíte kartou?",
+        "en": "No, it goes direct. Are you paying by card?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Cestující",
+        "cs": "Ano.",
+        "en": "Yes.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Pokladní",
+        "cs": "Tady to máte. Šťastnou cestu!",
+        "en": "Here you are. Have a good trip!",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u03-l04-e1",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "One ticket to Prague, please.",
+      "answers": [
+        "{Jednu jízdenku|Jeden lístek} do Prahy[, prosím]."
+      ],
+      "why": "The ticket is the object of an implied \"I'd like\", so it's in the accusative: jedna jízdenka → jednu jízdenku. do takes the genitive: do Prahy.",
+      "hints": [
+        {
+          "wrong": "Jedna jízdenka do Prahy[, prosím].",
+          "explain": "You're asking for a ticket (the object), so use the accusative: jednu jízdenku."
+        },
+        {
+          "wrong": "{Jednu jízdenku|Jeden lístek} do Praha[, prosím].",
+          "explain": "do takes the genitive: Praha → do Prahy."
+        }
+      ],
+      "skills": [
+        "case:accusative",
+        "case:genitive",
+        "vocab:v-jizdenka"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l04-e2",
+      "type": "fillEnding",
+      "prompt": "Jednu zpáteční jízdenk___, prosím.",
+      "base": "jízdenka",
+      "en": "One return ticket, please.",
+      "answers": [
+        "u"
+      ],
+      "why": "Feminine -a → -u in the accusative: jízdenka → jízdenku. (zpáteční ends in -í and doesn't change.)",
+      "hints": [
+        {
+          "wrong": "a",
+          "explain": "jízdenka is the nominative. You're asking for it, so use the accusative: jízdenku."
+        }
+      ],
+      "skills": [
+        "case:accusative",
+        "vocab:v-jizdenka"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l04-e3",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "V kolik odjíždí vlak?",
+      "answers": [
+        "{What time|When} does the train {leave|depart|go}[?]"
+      ],
+      "why": "v kolik = at what time; odjíždí = leaves (from odjíždět).",
+      "hints": [],
+      "skills": [
+        "vocab:v-v-kolik",
+        "vocab:v-odjizdet"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l04-e4",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "v půl jedenácté",
+      "answers": [
+        "at {half past ten|ten thirty|10:30|10.30|half ten}"
+      ],
+      "why": "Czech counts half hours towards the next hour: půl jedenácté = half (of the way to) eleven = 10:30.",
+      "hints": [
+        {
+          "wrong": "at {half past eleven|eleven thirty|11:30|11.30|half eleven}",
+          "explain": "půl jedenácté means half of the way to eleven: 10:30. Czech counts towards the next hour."
+        }
+      ],
+      "skills": [
+        "vocab:v-pul"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l04-e5",
+      "type": "conjugate",
+      "verb": "odjíždět",
+      "prompt": "Vlak ___ v deset.",
+      "en": "The train leaves at ten.",
+      "person": "3sg",
+      "answers": [
+        "odjíždí"
+      ],
+      "why": "odjíždět: odjíždím, odjíždíš, odjíždí, odjíždíme, odjíždíte, odjíždějí.",
+      "hints": [
+        {
+          "wrong": "odjede",
+          "explain": "odjede is correct Czech, but it's the perfective verb odjet (\"will leave\"). Here practise odjíždět: odjíždí."
+        }
+      ],
+      "skills": [
+        "verb:motion",
+        "verb:present-classes"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l04-e6",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Pokladní",
+          "cs": "Jednosměrnou, nebo zpáteční?",
+          "en": "Single or return?"
+        }
+      ],
+      "prompt": "Say: return, please.",
+      "answers": [
+        "Zpáteční[, prosím]."
+      ],
+      "why": "zpáteční = return; jednosměrná = one-way.",
+      "hints": [
+        {
+          "wrong": "Jednosměrnou[, prosím].",
+          "explain": "jednosměrnou means one-way. Return is zpáteční."
+        }
+      ],
+      "skills": [
+        "vocab:v-zpatecni"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l04-e7",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Do I have to change?",
+      "answers": [
+        "Musím {přestupovat|přestoupit}?",
+        "Budu muset {přestupovat|přestoupit}?"
+      ],
+      "why": "muset + infinitive = must, have to. přestupovat = to change (trains).",
+      "hints": [],
+      "skills": [
+        "verb:modals",
+        "vocab:v-prestupovat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l04-e8",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "When does the next train to Brno leave?",
+      "answers": [
+        "{Kdy|V kolik} {jede|odjíždí} {nejbližší|další|příští} vlak do Brna?"
+      ],
+      "why": "Vehicles use jet / odjíždět: Kdy jede vlak? do + genitive: do Brna.",
+      "hints": [
+        {
+          "wrong": "{Kdy|V kolik} {jede|odjíždí} {nejbližší|další|příští} vlak do Brno?",
+          "explain": "do takes the genitive: do Brna."
+        },
+        {
+          "wrong": "{Kdy|V kolik} {jde|odchází} {nejbližší|další|příští} vlak do Brna?",
+          "explain": "Trains use the vehicle verbs: vlak jede / odjíždí."
+        }
+      ],
+      "skills": [
+        "verb:motion",
+        "case:genitive",
+        "vocab:v-kdy"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

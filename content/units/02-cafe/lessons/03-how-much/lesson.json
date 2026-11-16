@@ -1,0 +1,327 @@
+{
+  "id": "u02-l03",
+  "title": "How much is it?",
+  "canDo": [
+    "u02-g3"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "case:genitive"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-kolik",
+      "cs": "kolik",
+      "en": "how much, how many",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-stat",
+      "cs": "stát (stojí)",
+      "en": "to cost",
+      "pos": "verb",
+      "aspect": "impf",
+      "notes": "Kolik to stojí? How much is it? (stát also means \"to stand\".)",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-koruna",
+      "cs": "koruna",
+      "en": "crown (Czech currency, Kč)",
+      "pos": "noun",
+      "gender": "f",
+      "notes": "1 koruna, 2–4 koruny, 5+ korun.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-rohlik",
+      "cs": "rohlík",
+      "en": "bread roll",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "The classic Czech crescent-shaped white roll.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kolac",
+      "cs": "koláč",
+      "en": "small round pastry (kolach)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "makový (poppy seed), tvarohový (sweet curd cheese).",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kus",
+      "cs": "kus",
+      "en": "piece, item",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "Tři koruny kus. Three crowns each.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-dohromady",
+      "cs": "dohromady",
+      "en": "together; in total",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kartou",
+      "cs": "kartou",
+      "en": "by card",
+      "pos": "phrase",
+      "notes": "Instrumental of karta: platit kartou.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-num-1-4",
+      "cs": "jeden, dva, tři, čtyři",
+      "en": "one, two, three, four",
+      "pos": "num",
+      "notes": "jeden (m) / jedna (f) / jedno (n); dva (m) / dvě (f, n).",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-num-5-10",
+      "cs": "pět, šest, sedm, osm, devět, deset",
+      "en": "five, six, seven, eight, nine, ten",
+      "pos": "num",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-num-11-19",
+      "cs": "jedenáct, dvanáct, třináct, čtrnáct, patnáct, šestnáct, sedmnáct, osmnáct, devatenáct",
+      "en": "eleven to nineteen",
+      "pos": "num",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-num-tens",
+      "cs": "dvacet, třicet, čtyřicet, padesát, šedesát, sedmdesát, osmdesát, devadesát, sto",
+      "en": "20, 30, 40, 50, 60, 70, 80, 90, 100",
+      "pos": "num",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "A small bakery, early in the morning.",
+    "lines": [
+      {
+        "speaker": "Zákazník",
+        "cs": "Dobrý den. Kolik stojí ty rohlíky?",
+        "en": "Good morning. How much are those rolls?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Prodavačka",
+        "cs": "Tři koruny kus.",
+        "en": "Three crowns each.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Zákazník",
+        "cs": "Tak deset rohlíků, prosím. A dva koláče.",
+        "en": "Then ten rolls, please. And two kolaches.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Prodavačka",
+        "cs": "Makové, nebo tvarohové?",
+        "en": "Poppy seed or curd cheese?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Zákazník",
+        "cs": "Tvarohové.",
+        "en": "Curd cheese.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Prodavačka",
+        "cs": "Deset rohlíků a dva koláče, to je dohromady osmdesát korun.",
+        "en": "Ten rolls and two kolaches, that's eighty crowns altogether.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Zákazník",
+        "cs": "Můžu platit kartou?",
+        "en": "Can I pay by card?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Prodavačka",
+        "cs": "Ano, samozřejmě.",
+        "en": "Yes, of course.",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u02-l03-e1",
+      "type": "fillEnding",
+      "prompt": "To stojí dvě korun___.",
+      "base": "koruna",
+      "en": "It costs two crowns.",
+      "answers": [
+        "y"
+      ],
+      "why": "After 2, 3 and 4, the noun goes in the nominative plural: dvě koruny, tři koruny, čtyři koruny.",
+      "hints": [
+        {
+          "wrong": "a",
+          "explain": "koruna is the singular. After dvě (two), use the plural: dvě koruny."
+        }
+      ],
+      "skills": [
+        "case:nominative",
+        "vocab:v-koruna"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l03-e2",
+      "type": "fillEnding",
+      "prompt": "Tak deset rohlík___, prosím.",
+      "base": "rohlík",
+      "en": "Ten rolls, please.",
+      "answers": [
+        "ů"
+      ],
+      "why": "From five upwards, numbers take the genitive plural. Masculine nouns take -ů: deset rohlíků.",
+      "hints": [
+        {
+          "wrong": "y",
+          "explain": "rohlíky is the plural you use after 2–4 (dva rohlíky). From five up, use the genitive plural: deset rohlíků."
+        }
+      ],
+      "skills": [
+        "case:genitive",
+        "vocab:v-rohlik"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l03-e3",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "How much is it?",
+      "answers": [
+        "Kolik to {stojí|je|dělá|bude}?"
+      ],
+      "why": "Kolik to stojí? is literally \"How much does it cost?\". At the till you'll also hear Kolik to bude? or Kolik to dělá?",
+      "hints": [],
+      "skills": [
+        "vocab:v-kolik",
+        "vocab:v-stat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l03-e4",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "Tři koruny kus.",
+      "answers": [
+        "Three crowns {each|a piece|apiece|per piece|for one}[.]"
+      ],
+      "why": "kus means \"piece\": three crowns a piece.",
+      "hints": [],
+      "skills": [
+        "vocab:v-kus"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l03-e5",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Can I pay by card?",
+      "answers": [
+        "{Můžu|Mohu} [za]platit kartou?"
+      ],
+      "why": "The means of paying is in the instrumental, with no preposition: karta → kartou.",
+      "hints": [
+        {
+          "wrong": "{Můžu|Mohu} [za]platit s kartou?",
+          "explain": "Use the bare instrumental: kartou. s kartou would mean \"together with a card\"."
+        },
+        {
+          "wrong": "{Můžu|Mohu} [za]platit karta?",
+          "explain": "Use the instrumental: karta → kartou (\"by card\")."
+        }
+      ],
+      "skills": [
+        "case:instrumental",
+        "verb:modals",
+        "vocab:v-kartou"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l03-e6",
+      "type": "caseSelect",
+      "prompt": "Tak deset **rohlíků**, prosím.",
+      "question": "Which case is \"rohlíků\"?",
+      "options": [
+        "nominative",
+        "genitive",
+        "accusative",
+        "instrumental"
+      ],
+      "en": "Ten rolls, please.",
+      "answers": [
+        "genitive"
+      ],
+      "why": "Numbers from five up are followed by the genitive plural: pět rohlíků, deset korun.",
+      "hints": [],
+      "skills": [
+        "case:genitive"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l03-e7",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "To je dohromady osmdesát korun.",
+      "answers": [
+        "{That's|That is|It's|It is} {eighty|80} crowns[ {altogether|in total|all together}][.]",
+        "{That's|That is|It's|It is} {altogether|in total} {eighty|80} crowns[.]",
+        "{Altogether|In total}[,] {that's|that is|it's|it is} {eighty|80} crowns[.]"
+      ],
+      "why": "dohromady = altogether; osmdesát = 80; korun is the genitive plural after numbers from five.",
+      "hints": [],
+      "skills": [
+        "vocab:v-dohromady",
+        "vocab:v-koruna"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l03-e8",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "twenty-five crowns",
+      "answers": [
+        "{dvacet pět|pětadvacet} korun"
+      ],
+      "why": "Czech has two ways to say 25: dvacet pět and pětadvacet. Both are common. After numbers from five, use the genitive plural: korun.",
+      "hints": [
+        {
+          "wrong": "{dvacet pět|pětadvacet} koruny",
+          "explain": "koruny is used after 2–4. After 25 (any number from five up), use korun."
+        }
+      ],
+      "skills": [
+        "case:genitive",
+        "vocab:v-koruna"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

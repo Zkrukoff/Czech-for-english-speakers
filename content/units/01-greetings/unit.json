@@ -1,0 +1,219 @@
+{
+  "id": "u01",
+  "title": "Greetings and introductions",
+  "titleCs": "Seznamujeme se",
+  "situation": "Meeting people: saying hello, introducing yourself and talking about where you're from.",
+  "canDo": [
+    {
+      "id": "u01-g1",
+      "text": "You can greet people and say goodbye, formally and informally."
+    },
+    {
+      "id": "u01-g2",
+      "text": "You can introduce yourself and ask someone's name."
+    },
+    {
+      "id": "u01-g3",
+      "text": "You can say where you're from and what you do."
+    },
+    {
+      "id": "u01-g4",
+      "text": "You can address people correctly by name and title."
+    }
+  ],
+  "lessons": [
+    "01-hello-and-goodbye",
+    "02-whats-your-name",
+    "03-where-are-you-from",
+    "04-addressing-people"
+  ],
+  "check": {
+    "passRatio": 0.8,
+    "exercises": [
+      {
+        "id": "u01-c1",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "Goodbye! (to a shop assistant)",
+        "goalId": "u01-g1",
+        "answers": [
+          "Na shledanou[!]"
+        ],
+        "why": "In a shop, use the formal Na shledanou.",
+        "hints": [
+          {
+            "wrong": "{Ahoj|Čau}[!]",
+            "explain": "Ahoj and čau are for friends. In a shop, say Na shledanou."
+          }
+        ],
+        "skills": [
+          "vocab:v-na-shledanou"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u01-c2",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "How are you? (to a neighbour you say vy to)",
+        "goalId": "u01-g1",
+        "answers": [
+          "Jak se máte?"
+        ],
+        "why": "With vy, the verb is máte: Jak se máte?",
+        "hints": [
+          {
+            "wrong": "Jak se máš?",
+            "explain": "That's the ty form. With vy: Jak se máte?"
+          }
+        ],
+        "skills": [
+          "verb:irregulars",
+          "vocab:v-jak-se-mas"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u01-c3",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "What's your name? (formal)",
+        "goalId": "u01-g2",
+        "answers": [
+          "Jak se jmenujete?"
+        ],
+        "why": "Formal: Jak se jmenujete? Informal: Jak se jmenuješ?",
+        "hints": [
+          {
+            "wrong": "Jak se jmenuješ?",
+            "explain": "That's the informal form. Formal: Jak se jmenujete?"
+          },
+          {
+            "wrong": "Jak {jmenujete|jmenuješ}?",
+            "explain": "Don't forget se: Jak se jmenujete?"
+          }
+        ],
+        "skills": [
+          "vocab:v-jmenovat-se"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u01-c4",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "I'm Tom. Nice to meet you.",
+        "goalId": "u01-g2",
+        "answers": [
+          "{[Já ]jsem|{Jmenuju|Jmenuji} se|Já se {jmenuju|jmenuji}} Tom. Těší mě."
+        ],
+        "why": "Introduce yourself with Jsem… or Jmenuju se…, and add Těší mě.",
+        "hints": [
+          {
+            "wrong": "{Jmenuju|Jmenuji} Tom. Těší mě.",
+            "explain": "You need se: Jmenuju se Tom."
+          }
+        ],
+        "skills": [
+          "vocab:v-tesi-me"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u01-c5",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "I'm from America.",
+        "goalId": "u01-g3",
+        "answers": [
+          "[Já ]jsem z Ameriky."
+        ],
+        "why": "After z, use the genitive: Amerika → z Ameriky.",
+        "hints": [
+          {
+            "wrong": "[Já ]jsem z Amerika.",
+            "explain": "After z (from), use the genitive: Amerika → z Ameriky."
+          }
+        ],
+        "skills": [
+          "case:genitive",
+          "vocab:v-amerika"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u01-c6",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "I'm a student. (a man speaking)",
+        "goalId": "u01-g3",
+        "answers": [
+          "[Já ]jsem student."
+        ],
+        "why": "A man is a student, a woman a studentka. No word for \"a\".",
+        "hints": [
+          {
+            "wrong": "[Já ]jsem studentka.",
+            "explain": "studentka is the feminine form. A man says: Jsem student."
+          }
+        ],
+        "skills": [
+          "vocab:v-student"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u01-c7",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "Hello, Mr Novák.",
+        "goalId": "u01-g4",
+        "answers": [
+          "Dobrý den, pane Nováku[.]"
+        ],
+        "why": "Both words take the vocative: pane Nováku.",
+        "hints": [
+          {
+            "wrong": "Dobrý den, pan Novák[.]",
+            "explain": "Use the vocative for both words: pane Nováku."
+          },
+          {
+            "wrong": "Dobrý den, pane Novák[.]",
+            "explain": "The surname changes too: Nováku."
+          }
+        ],
+        "skills": [
+          "case:vocative",
+          "vocab:v-pan"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u01-c8",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "Hi, Marek!",
+        "goalId": "u01-g4",
+        "answers": [
+          "{Ahoj|Čau}[,] Marku[!]"
+        ],
+        "why": "Names in -ek lose the e and take -u in the vocative: Marek → Marku.",
+        "hints": [
+          {
+            "wrong": "{Ahoj|Čau}[,] Marek[!]",
+            "explain": "Use the vocative: Marek → Marku."
+          },
+          {
+            "wrong": "{Ahoj|Čau}[,] Mareku[!]",
+            "explain": "The e in -ek drops out: Marek → Marku."
+          }
+        ],
+        "skills": [
+          "case:vocative"
+        ],
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "nativeReviewed": false
+}

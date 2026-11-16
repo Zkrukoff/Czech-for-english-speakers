@@ -1,70 +1,250 @@
 {
   "id": "u02-l01",
   "title": "Ordering a drink",
-  "canDo": ["u02-g1"],
+  "canDo": [
+    "u02-g1"
+  ],
   "explanation": "explanation.md",
-  "grammarRefs": ["case:accusative", "verb:reflexive"],
+  "grammarRefs": [
+    "case:accusative",
+    "verb:reflexive"
+  ],
   "nativeReviewed": false,
   "vocab": [
-    { "id": "v-kava", "cs": "káva", "en": "coffee", "pos": "noun", "gender": "f",
-      "spoken": { "form": "kafe", "note": "Very common in speech. It's neuter and never changes: Dám si kafe." },
-      "nativeReviewed": false },
-    { "id": "v-caj", "cs": "čaj", "en": "tea", "pos": "noun", "gender": "m-inan", "nativeReviewed": false },
-    { "id": "v-voda", "cs": "voda", "en": "water", "pos": "noun", "gender": "f", "nativeReviewed": false },
-    { "id": "v-dat-si", "cs": "dát si", "en": "to have (order) something", "pos": "verb",
-      "aspect": "pf", "partner": "dávat si", "nativeReviewed": false }
+    {
+      "id": "v-kava",
+      "cs": "káva",
+      "en": "coffee",
+      "pos": "noun",
+      "gender": "f",
+      "spoken": {
+        "form": "kafe",
+        "note": "Very common in speech. It's neuter and never changes: Dám si kafe."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-caj",
+      "cs": "čaj",
+      "en": "tea",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-voda",
+      "cs": "voda",
+      "en": "water",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-dat-si",
+      "cs": "dát si",
+      "en": "to have (order) something",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "dávat si",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-pivo",
+      "cs": "pivo",
+      "en": "beer",
+      "pos": "noun",
+      "gender": "n",
+      "notes": "Neuter, so the accusative is the same: Dám si pivo.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-mleko",
+      "cs": "mléko",
+      "en": "milk",
+      "pos": "noun",
+      "gender": "n",
+      "notes": "s mlékem = with milk",
+      "nativeReviewed": false
+    }
   ],
   "dialogue": {
     "setting": "A café in Brno. The waiter comes to your table.",
     "lines": [
-      { "speaker": "Číšník", "cs": "Dobrý den, co si dáte?", "en": "Hello, what will you have?", "nativeReviewed": false },
-      { "speaker": "Zákazník", "cs": "Dobrý den. Dám si kávu, prosím.", "en": "Hello. I'll have a coffee, please.", "nativeReviewed": false },
-      { "speaker": "Číšník", "cs": "S mlékem?", "en": "With milk?", "nativeReviewed": false },
-      { "speaker": "Zákazník", "cs": "Ano, s mlékem. A ještě vodu.", "en": "Yes, with milk. And some water too.", "nativeReviewed": false },
-      { "speaker": "Číšník", "cs": "Perlivou, nebo neperlivou?", "en": "Sparkling or still?", "nativeReviewed": false },
-      { "speaker": "Zákazník", "cs": "Neperlivou, prosím.", "en": "Still, please.", "nativeReviewed": false }
+      {
+        "speaker": "Číšník",
+        "cs": "Dobrý den, co si dáte?",
+        "en": "Hello, what will you have?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Zákazník",
+        "cs": "Dobrý den. Dám si kávu, prosím.",
+        "en": "Hello. I'll have a coffee, please.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Číšník",
+        "cs": "S mlékem?",
+        "en": "With milk?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Zákazník",
+        "cs": "Ano, s mlékem. A ještě vodu.",
+        "en": "Yes, with milk. And some water too.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Číšník",
+        "cs": "Perlivou, nebo neperlivou?",
+        "en": "Sparkling or still?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Zákazník",
+        "cs": "Neperlivou, prosím.",
+        "en": "Still, please.",
+        "nativeReviewed": false
+      }
     ]
   },
   "exercises": [
     {
-      "id": "u02-l01-e1", "type": "fillEnding",
-      "prompt": "Dám si káv___, prosím.", "base": "káva", "en": "I'll have a coffee, please.",
-      "answers": ["u"],
+      "id": "u02-l01-e1",
+      "type": "fillEnding",
+      "prompt": "Dám si káv___, prosím.",
+      "base": "káva",
+      "en": "I'll have a coffee, please.",
+      "answers": [
+        "u"
+      ],
       "why": "The thing you order is the direct object of 'dát si', so it takes the accusative. Feminine nouns ending in -a change it to -u: káva → kávu.",
-      "hints": [{ "wrong": "a", "explain": "'káva' is the nominative (dictionary) form. As the object of 'dát si' it needs the accusative: kávu." }],
-      "skills": ["case:accusative", "vocab:v-kava"], "nativeReviewed": false
+      "hints": [
+        {
+          "wrong": "a",
+          "explain": "'káva' is the nominative (dictionary) form. As the object of 'dát si' it needs the accusative: kávu."
+        }
+      ],
+      "skills": [
+        "case:accusative",
+        "vocab:v-kava"
+      ],
+      "nativeReviewed": false
     },
     {
-      "id": "u02-l01-e2", "type": "translate", "direction": "en-cs",
+      "id": "u02-l01-e2",
+      "type": "translate",
+      "direction": "en-cs",
       "prompt": "I'll have a tea, please.",
-      "answers": ["Dám si čaj[, prosím]."],
+      "answers": [
+        "Dám si čaj[, prosím]."
+      ],
       "why": "Masculine inanimate nouns look the same in the accusative as in the nominative: čaj → čaj.",
-      "hints": [{ "wrong": "Dám si čaju[, prosím].", "explain": "-u is only for feminine nouns ending in -a. 'Čaj' is masculine inanimate, so its accusative is unchanged: čaj." }],
-      "skills": ["case:accusative", "vocab:v-caj"], "nativeReviewed": false
+      "hints": [
+        {
+          "wrong": "Dám si čaju[, prosím].",
+          "explain": "-u is only for feminine nouns ending in -a. 'Čaj' is masculine inanimate, so its accusative is unchanged: čaj."
+        }
+      ],
+      "skills": [
+        "case:accusative",
+        "vocab:v-caj"
+      ],
+      "nativeReviewed": false
     },
     {
-      "id": "u02-l01-e3", "type": "caseSelect",
-      "prompt": "A ještě **vodu**.", "question": "Which case is 'vodu'?", "en": "And some water too.",
-      "options": ["nominative", "genitive", "accusative", "locative"], "answers": ["accusative"],
+      "id": "u02-l01-e3",
+      "type": "caseSelect",
+      "prompt": "A ještě **vodu**.",
+      "question": "Which case is 'vodu'?",
+      "en": "And some water too.",
+      "options": [
+        "nominative",
+        "genitive",
+        "accusative",
+        "locative"
+      ],
+      "answers": [
+        "accusative"
+      ],
       "why": "The full sentence is '(Dám si) vodu': it's still the object of the verb, which is just left out, so it takes the accusative.",
-      "hints": [], "skills": ["case:accusative"], "nativeReviewed": false
+      "hints": [],
+      "skills": [
+        "case:accusative"
+      ],
+      "nativeReviewed": false
     },
     {
-      "id": "u02-l01-e4", "type": "conjugate",
-      "verb": "dát", "person": "1sg", "prompt": "(já) ___ si kávu.", "en": "I'll have a coffee.",
-      "answers": ["dám"],
+      "id": "u02-l01-e4",
+      "type": "conjugate",
+      "verb": "dát",
+      "person": "1sg",
+      "prompt": "(já) ___ si kávu.",
+      "en": "I'll have a coffee.",
+      "answers": [
+        "dám"
+      ],
       "why": "dát follows the -ám pattern: dám, dáš, dá, dáme, dáte, dají.",
-      "hints": [{ "wrong": "dáme", "explain": "'dáme' is 'we'. For 'já' (I) the form is 'dám'." }],
-      "skills": ["verb:present-classes"], "nativeReviewed": false
+      "hints": [
+        {
+          "wrong": "dáme",
+          "explain": "'dáme' is 'we'. For 'já' (I) the form is 'dám'."
+        }
+      ],
+      "skills": [
+        "verb:present-classes"
+      ],
+      "nativeReviewed": false
     },
     {
-      "id": "u02-l01-e5", "type": "dialogueComplete",
-      "context": [{ "speaker": "Číšník", "cs": "Co si dáte?", "en": "What will you have?" }],
+      "id": "u02-l01-e5",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Číšník",
+          "cs": "Co si dáte?",
+          "en": "What will you have?"
+        }
+      ],
       "prompt": "Order a coffee politely.",
-      "answers": ["Dám si {kávu|kafe}[, prosím].", "{Kávu|Kafe}, prosím."],
+      "answers": [
+        "Dám si {kávu|kafe}[, prosím].",
+        "{Kávu|Kafe}, prosím."
+      ],
       "why": "Use 'Dám si' + the accusative. Just 'Kávu, prosím.' is also perfectly natural.",
-      "hints": [{ "wrong": "Dám si káva[, prosím].", "explain": "káva → kávu after 'dám si' (accusative)." }],
-      "skills": ["case:accusative", "vocab:v-kava"], "nativeReviewed": false
+      "hints": [
+        {
+          "wrong": "Dám si káva[, prosím].",
+          "explain": "káva → kávu after 'dám si' (accusative)."
+        }
+      ],
+      "skills": [
+        "case:accusative",
+        "vocab:v-kava"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l01-e6",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "I'll have a beer, please.",
+      "answers": [
+        "Dám si pivo[, prosím].",
+        "{Jedno pivo|Pivo}, prosím."
+      ],
+      "why": "pivo is neuter, and neuter nouns don't change in the accusative: Dám si pivo.",
+      "hints": [
+        {
+          "wrong": "Dám si pivu[, prosím].",
+          "explain": "The -u ending is only for feminine nouns in -a (kávu, vodu). pivo is neuter, so it stays pivo."
+        }
+      ],
+      "skills": [
+        "case:accusative",
+        "vocab:v-pivo"
+      ],
+      "nativeReviewed": false
     }
   ]
 }

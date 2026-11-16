@@ -14,7 +14,7 @@ export default defineConfig({
   },
   build: {
     // The main chunk holds the whole validated course (content is bundled at build time).
-    chunkSizeWarningLimit: 700,
+    chunkSizeWarningLimit: 900,
   },
   test: {
     environment: 'node',

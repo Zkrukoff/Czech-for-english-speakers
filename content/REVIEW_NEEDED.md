@@ -28,3 +28,26 @@ check first. When an item is confirmed or corrected, remove it here and set
 | tables/pron-muj | "moje, mojí, moji … more common in speech; má, mé, mou sound more formal" | Accurate? |
 | verbs.json | muset 3pl "musí (musejí)", rozumět/umět/smět "-ějí / -í" | Check which 3pl variants to list first. |
 | verbs.json | otvírat vs otevírat | Which should be the headword? |
+
+## Units 1–3 (lessons)
+
+| Where | Text | Question |
+|---|---|---|
+| u01-l01 dialogue | "Ujde to." | Natural, neutral reply to *Jak se máš?* among colleagues? |
+| u01-l01 dialogue | "Dobrý den, Tomáši. Jak se máte?" | A boss using first name + *vy* with a younger employee: realistic? |
+| u01-l02 e6 | accepts "Mě taky", rejects "Já taky" | *Mně taky* is also heard after *Těší mě*. Accept it too? |
+| u01-l04 e7 | accepts both "mami" and "mámo" | Is *mámo* natural enough to accept? |
+| u01-l04 dialogue | "Docela dobře, děkuju. Hezký den!" / "Jasně, pojď." | Natural? |
+| u02-l02 dialogue | "Řízek už bohužel nemáme." | Is this what a waitress would say, or *Řízek už bohužel došel*? |
+| u02-l02 e6 | "s hranolky" (rejects "s hranolkami") | Confirm *s hranolky* as the standard instrumental. |
+| u02-l03 dialogue | "Makové, nebo tvarohové?" | Natural question at a bakery? |
+| u02-l03 e3 | accepts "Kolik to je / dělá / bude?" | All natural? |
+| u02-l04 dialogue | "Chutnalo vám?" / "To bude čtyři sta šedesát korun." | Natural waiter phrasing? |
+| u02-l04 | "Tady máte pět set, to je v pořádku." = keep the change; spoken "to je dobrý" | Confirm both as the usual ways to say "keep the change". |
+| u02-l04 | "pane vrchní" | Still current, or old-fashioned? |
+| u03-l01 | "naproti poště (naproti takes the dative)" | Confirm. |
+| u03-l01 e8 | "Zahněte / Odbočte doprava" | Both natural for "turn right"? |
+| u03-l02 dialogue | "S tou taškou je to daleko." | Natural? |
+| u03-l03 dialogue | "Já už jsem na místě." | Natural for "I'm already there"? |
+| u03-l04 dialogue | "V půl jedenácté, z nástupiště číslo pět." | Would a clerk rather say *z pátého nástupiště*? |
+| u03-l04 e5 | treats "odjede" as wrong (practising odjíždět) | Acceptable as a drill, given *Vlak odjede v deset* is also correct Czech? |

@@ -1,0 +1,318 @@
+{
+  "id": "u02-l04",
+  "title": "The bill, please",
+  "canDo": [
+    "u02-g4"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "verb:aspect",
+    "case:instrumental"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-zaplatit",
+      "cs": "zaplatit",
+      "en": "to pay (once, in full)",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "platit",
+      "notes": "Zaplatím, prosím. I'd like to pay, please.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-ucet",
+      "cs": "účet",
+      "en": "bill; account",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "Účet, prosím. The bill, please.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-zvlast",
+      "cs": "zvlášť",
+      "en": "separately",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-hotove",
+      "cs": "hotově",
+      "en": "in cash",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-spropitne",
+      "cs": "spropitné",
+      "en": "tip",
+      "pos": "noun",
+      "gender": "n",
+      "notes": "Usually about 10 %, given by rounding up the bill when you pay.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vrchni",
+      "cs": "pane vrchní",
+      "en": "waiter! (traditional way to call a waiter)",
+      "pos": "phrase",
+      "notes": "Literally \"Mr Head Waiter\". vrchní doesn't change in the vocative.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-v-poradku",
+      "cs": "To je v pořádku.",
+      "en": "That's fine. / Keep the change.",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-hezky-vecer",
+      "cs": "Hezký večer!",
+      "en": "Have a nice evening!",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-bylo-to-vyborne",
+      "cs": "Bylo to výborné.",
+      "en": "It was excellent.",
+      "pos": "phrase",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "The end of the meal at the pub.",
+    "lines": [
+      {
+        "speaker": "Tom",
+        "cs": "Pane vrchní, zaplatíme, prosím.",
+        "en": "Excuse me, we'd like to pay, please.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Číšník",
+        "cs": "Dohromady, nebo zvlášť?",
+        "en": "Together or separately?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tom",
+        "cs": "Dohromady.",
+        "en": "Together.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Číšník",
+        "cs": "Chutnalo vám?",
+        "en": "Did you enjoy your meal?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Anna",
+        "cs": "Ano, bylo to výborné.",
+        "en": "Yes, it was excellent.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Číšník",
+        "cs": "Takže dvakrát pivo, polévka, smažený sýr a guláš. To bude čtyři sta šedesát korun.",
+        "en": "So two beers, a soup, fried cheese and goulash. That'll be four hundred and sixty crowns.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tom",
+        "cs": "Tady máte pět set, to je v pořádku.",
+        "en": "Here's five hundred, keep the change.",
+        "spoken": {
+          "form": "Pět set, to je dobrý.",
+          "note": "\"To je dobrý\" (standard: to je dobré) is how people very often say \"keep the change\"."
+        },
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Číšník",
+        "cs": "Děkuju. Hezký večer!",
+        "en": "Thank you. Have a nice evening!",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Anna",
+        "cs": "Vám taky. Na shledanou.",
+        "en": "You too. Goodbye.",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u02-l04-e1",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "We'd like to pay, please.",
+      "answers": [
+        "Zaplatíme[, prosím].",
+        "{Účet|Platíme}, prosím."
+      ],
+      "why": "In a restaurant, Czechs say Zaplatíme (we'll pay) or Zaplatím (I'll pay), prosím. zaplatit is perfective, so its present form means \"will pay (now)\".",
+      "hints": [
+        {
+          "wrong": "Zaplatím[, prosím].",
+          "explain": "Zaplatím is \"I'll pay\". For \"we\", use the my form: zaplatíme."
+        }
+      ],
+      "skills": [
+        "verb:aspect",
+        "vocab:v-zaplatit"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-e2",
+      "type": "conjugate",
+      "verb": "platit",
+      "prompt": "___ kartou, nebo hotově?",
+      "en": "Are you paying by card or in cash?",
+      "person": "2pl",
+      "answers": [
+        "{platíte|zaplatíte}"
+      ],
+      "why": "platit: platím, platíš, platí, platíme, platíte, platí. A waiter uses vy: platíte (or zaplatíte).",
+      "hints": [
+        {
+          "wrong": "{platíš|zaplatíš}",
+          "explain": "That's the ty form. A waiter uses vy: platíte."
+        }
+      ],
+      "skills": [
+        "verb:present-classes"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-e3",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Together or separately?",
+      "answers": [
+        "Dohromady, nebo zvlášť?"
+      ],
+      "why": "dohromady = together, zvlášť = separately. In either/or questions Czech puts a comma before nebo.",
+      "hints": [],
+      "skills": [
+        "vocab:v-zvlast",
+        "vocab:v-dohromady"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-e4",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "Platíte kartou, nebo hotově?",
+      "answers": [
+        "{Are you paying|Will you pay|Do you pay|Are you going to pay|Will you be paying} by card or {in cash|cash|with cash}[?]",
+        "Card or cash[?]"
+      ],
+      "why": "kartou = by card (instrumental of karta), hotově = in cash.",
+      "hints": [],
+      "skills": [
+        "vocab:v-hotove",
+        "vocab:v-kartou"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-e5",
+      "type": "fillEnding",
+      "prompt": "Platím kart___.",
+      "base": "karta",
+      "en": "I'm paying by card.",
+      "answers": [
+        "ou"
+      ],
+      "why": "The means of doing something goes in the instrumental, with no preposition. Feminine -a → -ou: karta → kartou.",
+      "hints": [
+        {
+          "wrong": "u",
+          "explain": "-u is the accusative ending. \"By card\" is the instrumental: kartou."
+        },
+        {
+          "wrong": "a",
+          "explain": "karta is the nominative. \"By card\" is the instrumental: kartou."
+        }
+      ],
+      "skills": [
+        "case:instrumental"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-e6",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Číšník",
+          "cs": "Dohromady, nebo zvlášť?",
+          "en": "Together or separately?"
+        }
+      ],
+      "prompt": "Say: separately, please.",
+      "answers": [
+        "Zvlášť[, prosím]."
+      ],
+      "why": "zvlášť means separately.",
+      "hints": [
+        {
+          "wrong": "Dohromady[, prosím].",
+          "explain": "dohromady means \"together\". Separately is zvlášť."
+        }
+      ],
+      "skills": [
+        "vocab:v-zvlast"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-e7",
+      "type": "caseSelect",
+      "prompt": "Hezký **večer**!",
+      "question": "Which case is \"večer\"?",
+      "options": [
+        "nominative",
+        "genitive",
+        "accusative",
+        "vocative"
+      ],
+      "en": "Have a nice evening!",
+      "answers": [
+        "accusative"
+      ],
+      "why": "It's short for (Přeju vám) hezký večer, \"I wish you a nice evening\", so večer is the object: accusative. It's masculine inanimate, so it looks like the nominative.",
+      "hints": [],
+      "skills": [
+        "case:accusative",
+        "vocab:v-hezky-vecer"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-e8",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "Bylo to výborné.",
+      "answers": [
+        "It was {excellent|delicious|great|very good|wonderful}[.]"
+      ],
+      "why": "Bylo to… = it was… (to is neuter, so the past is bylo). výborné = excellent.",
+      "hints": [],
+      "skills": [
+        "verb:past",
+        "vocab:v-bylo-to-vyborne"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

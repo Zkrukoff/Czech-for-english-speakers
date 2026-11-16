@@ -4,19 +4,204 @@
   "titleCs": "V kavárně",
   "situation": "Ordering drinks and food in a café or restaurant, and paying.",
   "canDo": [
-    { "id": "u02-g1", "text": "You can order a drink politely." }
+    {
+      "id": "u02-g1",
+      "text": "You can order a drink politely."
+    },
+    {
+      "id": "u02-g2",
+      "text": "You can order food and say what you'd like."
+    },
+    {
+      "id": "u02-g3",
+      "text": "You can ask the price and understand prices up to 100 crowns."
+    },
+    {
+      "id": "u02-g4",
+      "text": "You can ask for the bill and pay."
+    }
   ],
-  "lessons": ["01-ordering-a-drink"],
+  "lessons": [
+    "01-ordering-a-drink",
+    "02-id-like",
+    "03-how-much",
+    "04-the-bill"
+  ],
   "check": {
     "passRatio": 0.8,
     "exercises": [
       {
-        "id": "u02-c1", "type": "translate", "direction": "en-cs", "goalId": "u02-g1",
-        "prompt": "I'll have a water, please.",
-        "answers": ["Dám si vodu[, prosím]."],
-        "why": "The thing you order is the object of 'dát si', so it takes the accusative: voda → vodu.",
-        "hints": [{ "wrong": "Dám si voda[, prosím].", "explain": "'voda' is the dictionary (nominative) form. After 'dám si' you need the accusative: vodu." }],
-        "skills": ["case:accusative", "vocab:v-voda"],
+        "id": "u02-c1",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "I'll have a beer, please.",
+        "goalId": "u02-g1",
+        "answers": [
+          "Dám si pivo[, prosím].",
+          "{Jedno pivo|Pivo}, prosím."
+        ],
+        "why": "Dám si + accusative. pivo is neuter, so it doesn't change.",
+        "hints": [
+          {
+            "wrong": "Dám si pivu[, prosím].",
+            "explain": "pivo is neuter: the accusative is the same as the nominative, pivo."
+          }
+        ],
+        "skills": [
+          "case:accusative",
+          "vocab:v-dat-si"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u02-c2",
+        "type": "fillEnding",
+        "prompt": "Dám si vod___, prosím.",
+        "base": "voda",
+        "en": "I'll have some water, please.",
+        "goalId": "u02-g1",
+        "answers": [
+          "u"
+        ],
+        "why": "The thing you order is in the accusative: voda → vodu.",
+        "hints": [
+          {
+            "wrong": "a",
+            "explain": "voda is the nominative. After dám si, use the accusative: vodu."
+          }
+        ],
+        "skills": [
+          "case:accusative",
+          "vocab:v-voda"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u02-c3",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "I'd like the soup. (a woman speaking)",
+        "goalId": "u02-g2",
+        "answers": [
+          "{Chtěla bych|Dala bych si|Dám si} polévku[, prosím]."
+        ],
+        "why": "A woman says chtěla bych; polévka is the object, so it takes the accusative: polévku.",
+        "hints": [
+          {
+            "wrong": "{Chtěla bych|Dala bych si|Dám si} polévka[, prosím].",
+            "explain": "polévka is the object here: use the accusative, polévku."
+          },
+          {
+            "wrong": "{Chtěl bych|Dal bych si} polévku[, prosím].",
+            "explain": "A woman says chtěla bych / dala bych si."
+          }
+        ],
+        "skills": [
+          "case:accusative",
+          "verb:conditional",
+          "vocab:v-polevka"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u02-c4",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "Do you have fried cheese?",
+        "goalId": "u02-g2",
+        "answers": [
+          "Máte smažený sýr?"
+        ],
+        "why": "Máte…? is the polite way to ask what's available.",
+        "hints": [
+          {
+            "wrong": "Máš smažený sýr?",
+            "explain": "In a restaurant use vy: Máte…?"
+          }
+        ],
+        "skills": [
+          "verb:irregulars",
+          "vocab:v-smazeny-syr"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u02-c5",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "How much is it?",
+        "goalId": "u02-g3",
+        "answers": [
+          "Kolik to {stojí|je|dělá|bude}?"
+        ],
+        "why": "Kolik to stojí? How much does it cost?",
+        "hints": [],
+        "skills": [
+          "vocab:v-kolik"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u02-c6",
+        "type": "fillEnding",
+        "prompt": "Pět rohlík___, prosím.",
+        "base": "rohlík",
+        "en": "Five rolls, please.",
+        "goalId": "u02-g3",
+        "answers": [
+          "ů"
+        ],
+        "why": "From five up, use the genitive plural: pět rohlíků.",
+        "hints": [
+          {
+            "wrong": "y",
+            "explain": "rohlíky is used after 2–4. After five: pět rohlíků."
+          }
+        ],
+        "skills": [
+          "case:genitive",
+          "vocab:v-rohlik"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u02-c7",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "I'd like to pay, please.",
+        "goalId": "u02-g4",
+        "answers": [
+          "Zaplatím[, prosím].",
+          "{Účet|Platím}, prosím."
+        ],
+        "why": "Zaplatím, prosím (lit. \"I'll pay, please\") is the usual way to ask for the bill.",
+        "hints": [],
+        "skills": [
+          "verb:aspect",
+          "vocab:v-zaplatit"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u02-c8",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "Can I pay by card?",
+        "goalId": "u02-g4",
+        "answers": [
+          "{Můžu|Mohu} [za]platit kartou?"
+        ],
+        "why": "\"By card\" is the bare instrumental: kartou.",
+        "hints": [
+          {
+            "wrong": "{Můžu|Mohu} [za]platit s kartou?",
+            "explain": "Use the bare instrumental: kartou (s kartou = together with a card)."
+          }
+        ],
+        "skills": [
+          "case:instrumental",
+          "vocab:v-kartou"
+        ],
         "nativeReviewed": false
       }
     ]
