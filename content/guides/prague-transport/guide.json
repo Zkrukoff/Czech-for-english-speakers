@@ -1,0 +1,780 @@
+{
+  "id": "prague-transport",
+  "title": "Getting around Prague",
+  "titleCs": "Pražská MHD",
+  "summary": "How Prague's metro, trams, buses, trains, ferries and night lines fit together; tickets, validation and inspectors; and all the Czech you'll read and hear on the way.",
+  "order": 2,
+  "sections": [
+    {
+      "id": "network",
+      "title": "How it works",
+      "file": "how-it-works.md"
+    },
+    {
+      "id": "tickets",
+      "title": "Tickets and rules",
+      "file": "tickets.md"
+    },
+    {
+      "id": "signs",
+      "title": "Signs and announcements",
+      "file": "signs.md"
+    },
+    {
+      "id": "planning",
+      "title": "Planning and help",
+      "file": "planning.md"
+    }
+  ],
+  "phrasebook": [
+    {
+      "id": "metro",
+      "title": "Metro announcements",
+      "intro": "The recorded voices you'll hear on every journey.",
+      "phrases": [
+        {
+          "cs": "Ukončete, prosím, výstup a nástup, dveře se zavírají.",
+          "en": "Please finish getting on and off, the doors are closing.",
+          "note": "Every time the doors close. Step back.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Příští stanice: Muzeum.",
+          "en": "Next station: Muzeum.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Přestup na linku C.",
+          "en": "Change here for line C.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Konečná stanice. Prosíme, vystupte.",
+          "en": "Terminal station. Please get off.",
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "surface",
+      "title": "Trams and buses",
+      "phrases": [
+        {
+          "cs": "Příští zastávka: Národní divadlo.",
+          "en": "Next stop: National Theatre.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Zastávka na znamení.",
+          "en": "Request stop.",
+          "note": "Press the button (or raise your hand at the stop).",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Přestup na metro B.",
+          "en": "Change here for metro line B.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Konečná zastávka.",
+          "en": "Last stop.",
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "signs",
+      "title": "Signs",
+      "phrases": [
+        {
+          "cs": "Výstup",
+          "en": "Exit",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Vstup",
+          "en": "Entrance",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Přestup",
+          "en": "Change, transfer",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Směr Háje",
+          "en": "Towards Háje (direction)",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Odjezdy",
+          "en": "Departures",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Stůjte vpravo",
+          "en": "Stand on the right",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Označte si jízdenku",
+          "en": "Validate your ticket",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Výluka",
+          "en": "Planned closure, diversion",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Náhradní doprava",
+          "en": "Replacement service",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Zpoždění",
+          "en": "Delay",
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "asking",
+      "title": "Asking and getting by",
+      "phrases": [
+        {
+          "cs": "Jede tahle tramvaj na Anděl?",
+          "en": "Does this tram go to Anděl?",
+          "note": "Vehicles \"ride\": jet, jede.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Na které zastávce mám vystoupit?",
+          "en": "Which stop should I get off at?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Kolik zastávek je to na Muzeum?",
+          "en": "How many stops is it to Muzeum?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Kde si můžu koupit jízdenku?",
+          "en": "Where can I buy a ticket?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Jednu jízdenku na devadesát minut, prosím.",
+          "en": "One 90-minute ticket, please.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Kde je výstup na Václavské náměstí?",
+          "en": "Where's the exit to Wenceslas Square?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Vystupujete?",
+          "en": "Are you getting off?",
+          "note": "Said to the person between you and the door before your stop.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Pustíte mě, prosím?",
+          "en": "Could you let me through, please?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Je tady volno?",
+          "en": "Is this seat free?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Posaďte se, prosím.",
+          "en": "Please, have a seat.",
+          "note": "Offering your seat to someone.",
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "inspector",
+      "title": "Ticket inspection",
+      "phrases": [
+        {
+          "cs": "Dobrý den, přepravní kontrola. Vaše jízdenky, prosím.",
+          "en": "Hello, ticket inspection. Your tickets, please.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Tady je. Mám ji v aplikaci.",
+          "en": "Here it is. I have it in the app.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Můžete mi ukázat odznak?",
+          "en": "Can you show me your badge?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Můžu zaplatit kartou?",
+          "en": "Can I pay by card?",
+          "nativeReviewed": false
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "id": "transport-hear",
+      "title": "Announcements and signs",
+      "description": "Understand what you hear and read on the network.",
+      "exercises": [
+        {
+          "id": "tr-h1",
+          "type": "translate",
+          "direction": "cs-en",
+          "prompt": "Ukončete, prosím, výstup a nástup, dveře se zavírají.",
+          "answers": [
+            "Please {finish|stop} {getting on and off|getting off and on|boarding and exiting|exiting and boarding}[,] the doors are closing[.]",
+            "{Stand clear|Stop boarding}[,] the doors are closing[.]",
+            "The doors are closing[.]"
+          ],
+          "why": "výstup = getting off, nástup = getting on, dveře se zavírají = the doors are closing.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-h2",
+          "type": "translate",
+          "direction": "cs-en",
+          "prompt": "Konečná stanice. Prosíme, vystupte.",
+          "answers": [
+            "{Terminal|Last|Final|End} {station|stop}[.] Please {get off|exit|leave the train}[.]",
+            "This is the {terminus|end of the line}[.] Please {get off|exit|leave the train}[.]"
+          ],
+          "why": "konečná = terminus, vystupte = get off (vy imperative of vystoupit).",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-h3",
+          "type": "translate",
+          "direction": "cs-en",
+          "prompt": "Přestup na linku C.",
+          "answers": [
+            "{Change|Transfer} [here ]{for|to} line C[.]"
+          ],
+          "why": "přestup = change, transfer.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-h4",
+          "type": "question",
+          "prompt": "You hear **\"Zastávka na znamení.\"** What do you have to do if you want to get off?",
+          "cs": "Zastávka na znamení.",
+          "answerLang": "en",
+          "answers": [
+            "press the button",
+            "[I |you ]{press|push} the [stop ]button",
+            "ring the bell",
+            "press [the ]stop",
+            "request the stop"
+          ],
+          "why": "zastávka na znamení = request stop: the tram or bus only stops if someone presses the button (or waits at the stop with a raised hand).",
+          "hints": [
+            {
+              "wrong": "nothing",
+              "explain": "At a request stop the vehicle won't stop unless you press the button."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-h5",
+          "type": "question",
+          "prompt": "Which sign do you follow to get out of the metro to the street? Type the Czech word.",
+          "answerLang": "cs",
+          "answers": [
+            "Výstup"
+          ],
+          "why": "Výstup = exit. Vstup / vchod = entrance; přestup = change to another line.",
+          "hints": [
+            {
+              "wrong": "Přestup",
+              "explain": "Přestup means changing to another line. The way out is Výstup."
+            },
+            {
+              "wrong": "Vstup",
+              "explain": "Vstup is the entrance. The way out is Výstup."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-h6",
+          "type": "question",
+          "prompt": "A yellow poster at your stop says **výluka**. What does it mean?",
+          "cs": "Výluka",
+          "answerLang": "en",
+          "answers": [
+            "[a ]planned closure",
+            "[a ]closure",
+            "[a ]diversion",
+            "[the ]line is closed",
+            "planned works",
+            "engineering works",
+            "disruption",
+            "closed"
+          ],
+          "why": "výluka = a planned closure or diversion; náhradní doprava = the replacement service.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-h7",
+          "type": "question",
+          "prompt": "During a closure, what is the replacement service called? Type the two Czech words.",
+          "answerLang": "cs",
+          "answers": [
+            "náhradní doprava"
+          ],
+          "why": "náhradní doprava = replacement transport, usually buses marked X.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-h8",
+          "type": "question",
+          "prompt": "An electronic board says **\"za 4 min\"**. When does the tram leave?",
+          "cs": "22  Bílá Hora  za 4 min",
+          "answerLang": "en",
+          "answers": [
+            "in 4 minutes",
+            "in four minutes",
+            "4 minutes",
+            "four minutes",
+            "in 4 min"
+          ],
+          "why": "za + time = in (time from now): za 4 minuty, za hodinu.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "transport-network",
+      "title": "Know the network",
+      "description": "Lines, colours and the key stations.",
+      "exercises": [
+        {
+          "id": "tr-n1",
+          "type": "question",
+          "prompt": "Which metro line is **yellow**? (A, B or C)",
+          "answerLang": "en",
+          "answers": [
+            "B",
+            "line B",
+            "béčko"
+          ],
+          "why": "A is green, B is yellow, C is red.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-n2",
+          "type": "question",
+          "prompt": "Which metro line is **red**? (A, B or C)",
+          "answerLang": "en",
+          "answers": [
+            "C",
+            "line C",
+            "céčko"
+          ],
+          "why": "A is green, B is yellow, C is red.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-n3",
+          "type": "question",
+          "prompt": "At which station can you change between lines **A and B**?",
+          "answerLang": "cs",
+          "answers": [
+            "Můstek"
+          ],
+          "why": "Můstek (A/B), Muzeum (A/C), Florenc (B/C).",
+          "hints": [
+            {
+              "wrong": "Muzeum",
+              "explain": "Muzeum connects A and C. A and B meet at Můstek."
+            },
+            {
+              "wrong": "Florenc",
+              "explain": "Florenc connects B and C. A and B meet at Můstek."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-n4",
+          "type": "question",
+          "prompt": "At which station can you change between lines **A and C**?",
+          "answerLang": "cs",
+          "answers": [
+            "Muzeum"
+          ],
+          "why": "Muzeum (A/C), Můstek (A/B), Florenc (B/C).",
+          "hints": [
+            {
+              "wrong": "Můstek",
+              "explain": "Můstek connects A and B. A and C meet at Muzeum."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-n5",
+          "type": "question",
+          "prompt": "At which station can you change between lines **B and C**?",
+          "answerLang": "cs",
+          "answers": [
+            "Florenc"
+          ],
+          "why": "Florenc (B/C), Můstek (A/B), Muzeum (A/C).",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-n6",
+          "type": "question",
+          "prompt": "Night trams have numbers in which range?",
+          "answerLang": "en",
+          "answers": [
+            "91–99",
+            "91-99",
+            "91 to 99",
+            "90s",
+            "the 90s",
+            "91 99"
+          ],
+          "why": "Night trams are 91–99 and all meet at Lazarská; night buses are 901–915.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-n7",
+          "type": "question",
+          "prompt": "Which trolleybus connects the airport with metro line A (Nádraží Veleslavín)?",
+          "answerLang": "en",
+          "answers": [
+            "59",
+            "fifty-nine",
+            "line 59"
+          ],
+          "why": "Trolleybus 59 (it replaced bus 119). Bus 100 goes to Zličín on line B; night bus 910 runs when the metro is closed.",
+          "hints": [
+            {
+              "wrong": "119",
+              "explain": "Bus 119 no longer runs: trolleybus 59 replaced it."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-n8",
+          "type": "question",
+          "prompt": "You have a **paper** ticket. Where do you validate it before taking the metro?",
+          "answerLang": "en",
+          "answers": [
+            "[at the ]entrance",
+            "[at the ]entrance to the platforms",
+            "before the escalators",
+            "[in the ]{machine|validator} at the entrance",
+            "before going down",
+            "at the top of the escalators"
+          ],
+          "why": "In the metro, validate at the entrance to the platforms, before the escalators. On trams and buses, validate on board.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "transport-ask",
+      "title": "Asking your way",
+      "description": "Questions to ask on the move, and the station-name endings that go with them.",
+      "exercises": [
+        {
+          "id": "tr-a1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Does this tram go to Anděl?",
+          "answers": [
+            "Jede {tahle|tato|ta|tahleta} tramvaj na Anděl?"
+          ],
+          "why": "Vehicles use jet (jede), not jít. Destinations that are stations usually take na + accusative: na Anděl.",
+          "hints": [
+            {
+              "wrong": "Jde {tahle|tato|ta} tramvaj na Anděl?",
+              "explain": "Vehicles \"ride\" in Czech: jede, not jde."
+            },
+            {
+              "wrong": "Jede {tahle|tato|ta} tramvaj do Anděla?",
+              "explain": "Prague stations usually take na: na Anděl."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport",
+            "verb:motion",
+            "case:accusative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-a2",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Are you getting off? (to a stranger)",
+          "answers": [
+            "Vystupujete?"
+          ],
+          "why": "Vystupujete? (vy form). The classic question before your stop when someone is between you and the door.",
+          "hints": [
+            {
+              "wrong": "Vystupuješ?",
+              "explain": "That's the ty form. To a stranger, use vy: Vystupujete?"
+            }
+          ],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-a3",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Where can I buy a ticket?",
+          "answers": [
+            "Kde {si můžu|si mohu|můžu|mohu} koupit {jízdenku|lístek}?"
+          ],
+          "why": "koupit + accusative: jízdenka → jízdenku (lístek doesn't change).",
+          "hints": [
+            {
+              "wrong": "Kde {si můžu|si mohu|můžu|mohu} koupit jízdenka?",
+              "explain": "jízdenka is the object of koupit: accusative jízdenku."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport",
+            "case:accusative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-a4",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "One 90-minute ticket, please.",
+          "answers": [
+            "Jednu jízdenku na devadesát minut[, prosím].",
+            "Jednu devadesátiminutovou jízdenku[, prosím].",
+            "Jeden lístek na devadesát minut[, prosím]."
+          ],
+          "why": "jízdenka na devadesát minut (\"a ticket for ninety minutes\"), in the accusative because you're asking for it: jednu jízdenku.",
+          "hints": [
+            {
+              "wrong": "Jedna jízdenka na devadesát minut[, prosím].",
+              "explain": "You're asking for it, so use the accusative: jednu jízdenku."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport",
+            "case:accusative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-a5",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Which stop should I get off at?",
+          "answers": [
+            "Na které zastávce mám vystoupit?",
+            "Kde mám vystoupit?"
+          ],
+          "why": "na + locative: na které zastávce (zastávka → zastávce). mít + infinitive = \"should\".",
+          "hints": [
+            {
+              "wrong": "Na která zastávka mám vystoupit?",
+              "explain": "na (at a place) takes the locative: na které zastávce."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport",
+            "case:locative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-a6",
+          "type": "fillEnding",
+          "prompt": "Vystupuju na Můstk___.",
+          "base": "Můstek",
+          "en": "I'm getting off at Můstek.",
+          "answers": [
+            "u"
+          ],
+          "why": "Station names decline. na + locative: Můstek → na Můstku (the e drops out, like Marek → Marka).",
+          "hints": [
+            {
+              "wrong": "e",
+              "explain": "Masculine nouns ending in -k take -u in the locative: na Můstku."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport",
+            "case:locative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-a7",
+          "type": "fillEnding",
+          "prompt": "Přestupuju na Florenc___.",
+          "base": "Florenc",
+          "en": "I change at Florenc.",
+          "answers": [
+            "i"
+          ],
+          "why": "Florenc is a soft feminine noun (like píseň), so the locative ends in -i: na Florenci.",
+          "hints": [
+            {
+              "wrong": "u",
+              "explain": "Florenc is feminine and soft: na Florenci, not -u."
+            },
+            {
+              "wrong": "e",
+              "explain": "Florenc is a soft feminine noun: the locative is -i, na Florenci."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport",
+            "case:locative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-a8",
+          "type": "dialogueComplete",
+          "context": [
+            {
+              "speaker": "Revizor",
+              "cs": "Dobrý den, přepravní kontrola. Vaše jízdenky, prosím.",
+              "en": "Hello, ticket inspection. Your tickets, please."
+            }
+          ],
+          "prompt": "Say: here it is, I have it in the app.",
+          "answers": [
+            "[{Dobrý den|Prosím}[,] ]{Tady je|Tady|Tady ji máte|Tady máte|Prosím}[,] mám ji v aplikaci[.]",
+            "[{Dobrý den|Prosím}[,] ]Mám ji v aplikaci[.]"
+          ],
+          "why": "mám ji v aplikaci: ji refers back to jízdenka (feminine accusative); v + locative: aplikace → v aplikaci.",
+          "hints": [
+            {
+              "wrong": "[{Dobrý den|Prosím}[,] ]{Tady je|Tady|Tady máte|Prosím}[,] mám ho v aplikaci[.]",
+              "explain": "jízdenka is feminine, so \"it\" is ji: mám ji v aplikaci."
+            },
+            {
+              "wrong": "[{Dobrý den|Prosím}[,] ]{Tady je|Tady|Tady máte|Prosím}[,] mám ji v aplikace[.]",
+              "explain": "v + locative: v aplikaci."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport",
+            "case:locative"
+          ],
+          "nativeReviewed": false
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "PID: New tariff from 1 January 2026",
+      "url": "https://pid.cz/en/new-pid-tariff-from-1-january-2026-dont-pay-more-than-you-have-to/"
+    },
+    {
+      "title": "PID: How and where to buy tickets",
+      "url": "https://pid.cz/en/tickets-and-fare/how-to-buy-ticket/"
+    },
+    {
+      "title": "PID: Travel to the airport and stations",
+      "url": "https://pid.cz/en/travel-information/airport-and-stations/"
+    },
+    {
+      "title": "PID: Night transport (in Czech)",
+      "url": "https://pid.cz/informace-k-cestovani/nocni-doprava-pid/"
+    },
+    {
+      "title": "PID mobile app",
+      "url": "https://pid.cz/en/travel-information/pid-mobile-app/"
+    },
+    {
+      "title": "Prague Airport: public transport",
+      "url": "https://www.prg.aero/en/public-transport-buses-to-airport"
+    }
+  ],
+  "lastChecked": "November 2026",
+  "nativeReviewed": false
+}

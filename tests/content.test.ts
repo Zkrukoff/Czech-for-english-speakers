@@ -114,3 +114,35 @@ describe('alphabet', () => {
     for (const ex of sounds.exercises) expect(ex.diacriticsMatter, ex.id).toBe(true);
   });
 });
+
+describe('guides', () => {
+  const { course } = loadContent(contentFiles);
+
+  it('has the culture and Prague transport guides, in order', () => {
+    expect(course.guides.map((g) => g.id)).toEqual(['culture', 'prague-transport']);
+  });
+
+  it('loads every section with content', () => {
+    for (const g of course.guides) {
+      for (const s of g.sections) expect(g.sectionMd[s.id], `${g.id}/${s.id}`).toMatch(/## /);
+    }
+  });
+
+  it('tags every practice exercise with its guide, so it counts on the progress page', () => {
+    for (const g of course.guides) {
+      for (const set of g.practice) for (const ex of set.exercises) expect(ex.skills, ex.id).toContain(`guide:${g.id}`);
+    }
+  });
+
+  it('lists all 13 Czech public holidays', () => {
+    const md = course.guidesById.get('culture')!.sectionMd.holidays!;
+    const rows = md.split('## Other days')[0]!.split('\n').filter((l) => /^\| \d|^\| (Friday|Monday)/.test(l));
+    expect(rows).toHaveLength(13);
+  });
+
+  it('gives sources and a check date for the transport guide', () => {
+    const g = course.guidesById.get('prague-transport')!;
+    expect(g.sources.length).toBeGreaterThan(0);
+    expect(g.lastChecked).toBeTruthy();
+  });
+});

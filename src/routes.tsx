@@ -17,6 +17,8 @@ export const routes: RouteObject[] = [
     children: [
       { index: true, element: <HomePage /> },
       { path: 'alphabet', ...page(() => import('./features/alphabet/AlphabetPage'), 'AlphabetPage') },
+      { path: 'guides', ...page(() => import('./features/guides/GuidesIndex'), 'GuidesIndex') },
+      { path: 'guides/:guideId', ...page(() => import('./features/guides/GuidePage'), 'GuidePage') },
       { path: 'units/:unitId', ...page(() => import('./features/lessons/UnitPage'), 'UnitPage') },
       { path: 'units/:unitId/check', ...page(() => import('./features/lessons/UnitCheckPage'), 'UnitCheckPage') },
       { path: 'lessons/:lessonId', ...page(() => import('./features/lessons/LessonPage'), 'LessonPage') },

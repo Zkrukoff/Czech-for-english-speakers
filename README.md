@@ -23,6 +23,9 @@ fluency rather than gamification:
 - **The whole alphabet**: all 42 letters with sounds, letter names and the
   Czech phone-spelling alphabet, plus practice in reading rules and in
   spelling names and e-mail addresses.
+- **Guides to life in Czechia**: Czech culture, history and holidays (with
+  holiday phrases to practise), and a complete guide to Prague's public
+  transport with the Czech signs and announcements you'll meet.
 
 Live: https://zkrukoff.github.io/Czech-for-english-speakers/
 
@@ -38,6 +41,14 @@ Live: https://zkrukoff.github.io/Czech-for-english-speakers/
 
 The grammar reference (seven cases, declension tables) and the verb track
 (ten topics, 80+ verbs) are available at any time.
+
+| Guide | Contents |
+|---|---|
+| **Czech culture and traditions** | Everyday life and work (greetings, titles, e-mails, name days, homes, humour); history from Great Moravia to the EU and where to see it in Prague; all 13 public holidays, Christmas and Easter traditions; phrase practice for each |
+| **Getting around Prague** | Metro, trams, buses, trolleybuses, trains, ferries, funicular, night lines, the airport; tickets, validation, inspectors and etiquette; signs and announcements in Czech; station names in their declined forms; journey planning and closures |
+
+The transport guide's prices and lines were checked against pid.cz in
+November 2026 and link to their sources; re-check them yearly.
 
 Everything runs in the browser. Learner data is stored locally in IndexedDB;
 there is no backend and no account.
@@ -86,7 +97,7 @@ themes, and a checklist for new screens.
 ## Project layout
 
 ```
-content/              course content (JSON + Markdown). See content/SCHEMA.md
+content/              course content (JSON + Markdown), incl. alphabet/ and guides/. See content/SCHEMA.md
 docs/DESIGN.md        design guide
 scripts/              build helpers (dark-mode palette generator)
 public/audio/         recorded audio (optional, replaces text-to-speech per item)

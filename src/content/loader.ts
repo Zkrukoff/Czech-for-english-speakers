@@ -3,12 +3,14 @@ import { parseFrontmatter } from './frontmatter';
 import {
   AlphabetSchema,
   CourseSchema,
+  GuideSchema,
   FormTableFileSchema,
   GrammarFrontmatterSchema,
   LessonSchema,
   UnitSchema,
   VerbFileSchema,
   type AlphabetData,
+  type GuideData,
   type Exercise,
   type FormTable,
   type GrammarFrontmatter,
@@ -45,7 +47,14 @@ export interface GrammarPage extends GrammarFrontmatter {
 export type ExerciseSource =
   | { kind: 'lesson'; unitId: string; lessonId: string }
   | { kind: 'unitCheck'; unitId: string }
-  | { kind: 'alphabet'; setId: string };
+  | { kind: 'alphabet'; setId: string }
+  | { kind: 'guide'; guideId: string; setId: string };
+
+export interface Guide extends GuideData {
+  /** Folder name under content/guides/. */
+  slug: string;
+  sectionMd: Record<string, string>;
+}
 
 export interface IndexedExercise {
   exercise: Exercise;
@@ -67,6 +76,8 @@ export interface Course {
   verbsByLemma: Map<string, Verb>;
   /** The alphabet section, if content/alphabet/alphabet.json exists. */
   alphabet: (AlphabetData & { introMd: string }) | null;
+  guides: Guide[];
+  guidesById: Map<string, Guide>;
 }
 
 export interface ContentFiles {
@@ -107,6 +118,8 @@ export function loadContent(files: ContentFiles): LoadResult {
     verbs: [],
     verbsByLemma: new Map(),
     alphabet: null,
+    guides: [],
+    guidesById: new Map(),
   };
 
   function parse<T>(schema: z.ZodType<T>, path: string, data: unknown): T | null {
@@ -280,10 +293,43 @@ export function loadContent(files: ContentFiles): LoadResult {
     }
   }
 
+  /* ---- Guides ---- */
+  for (const [path, raw] of Object.entries(files.json)) {
+    const m = /^guides\/([^/]+)\/guide\.json$/.exec(path);
+    if (!m) continue;
+    const data = parse(GuideSchema, path, raw);
+    if (!data) continue;
+    const slug = m[1]!;
+    if (course.guidesById.has(data.id)) errors.push(`${path}: duplicate guide id "${data.id}"`);
+    const sectionMd: Record<string, string> = {};
+    for (const s of data.sections) {
+      const md = files.markdown[`guides/${slug}/${s.file}`];
+      if (md === undefined) errors.push(`${path}: section file guides/${slug}/${s.file} not found`);
+      sectionMd[s.id] = md ?? '';
+    }
+    for (const set of data.practice) {
+      claimId('practice set', set.id, path);
+      for (const ex of set.exercises) {
+        claimId('exercise', ex.id, path);
+        course.exercisesById.set(ex.id, { exercise: ex, source: { kind: 'guide', guideId: data.id, setId: set.id } });
+      }
+    }
+    const guide: Guide = { ...data, slug, sectionMd };
+    course.guidesById.set(guide.id, guide);
+    course.guides.push(guide);
+  }
+  course.guides.sort((a, b) => a.order - b.order);
+
   /* ---- Cross-reference checks ---- */
   for (const [exId, { exercise, source }] of course.exercisesById) {
     const where =
-      source.kind === 'lesson' ? `lesson ${source.lessonId}` : source.kind === 'unitCheck' ? `unit ${source.unitId} check` : `alphabet set ${source.setId}`;
+      source.kind === 'lesson'
+        ? `lesson ${source.lessonId}`
+        : source.kind === 'unitCheck'
+          ? `unit ${source.unitId} check`
+          : source.kind === 'guide'
+            ? `guide ${source.guideId}, set ${source.setId}`
+            : `alphabet set ${source.setId}`;
     for (const p of [...exercise.answers, ...exercise.hints.map((h) => h.wrong)]) {
       const err = validatePattern(p);
       if (err) errors.push(`${where}, exercise ${exId}: ${err}`);
@@ -291,6 +337,9 @@ export function loadContent(files: ContentFiles): LoadResult {
     for (const s of exercise.skills) {
       if (s.startsWith('vocab:') && !course.vocabById.has(s.slice(6))) {
         errors.push(`${where}, exercise ${exId}: skill "${s}" refers to unknown vocab id`);
+      }
+      if (s.startsWith('guide:') && !course.guidesById.has(s.slice(6))) {
+        errors.push(`${where}, exercise ${exId}: skill "${s}" refers to unknown guide`);
       }
     }
     if (exercise.type === 'caseSelect') {
@@ -316,6 +365,7 @@ export function loadContent(files: ContentFiles): LoadResult {
   for (const page of course.grammarPages) checkEmbeds(page.body, page.path);
   for (const lesson of course.lessonsById.values()) checkEmbeds(lesson.explanationMd, `lesson ${lesson.id}`);
   if (course.alphabet) checkEmbeds(course.alphabet.introMd, 'alphabet intro');
+  for (const g of course.guides) for (const [id, md] of Object.entries(g.sectionMd)) checkEmbeds(md, `guide ${g.id}, section ${id}`);
 
   for (const lesson of course.lessonsById.values()) {
     for (const ref of lesson.grammarRefs) {

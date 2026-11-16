@@ -86,3 +86,29 @@ check first. When an item is confirmed or corrected, remove it here and set
 | u02-l02 | "Dám si jedničku." for ordering menu item 1 | Common? |
 | u02-l04 | "Berete stravenky?" / "Zaplatím stravenkou." / "Zbytek kartou." | Natural? Is *stravenková karta* the usual term for meal cards? |
 | u03-l02 | *Lítačka* (Prague), *šalina* (Brno tram), *předplatní jízdenka*, "Kolik ti trvá cesta do práce?" | Check terms and phrasing. |
+
+## Guide: Czech culture and traditions
+
+| Where | Text | Question |
+|---|---|---|
+| life | Saying *Dobrý den* in lifts and waiting rooms; slippers for guests; "look in the eye or seven years of bad luck" | Fair generalisations? |
+| life | Academic titles in address (*pane inženýre, paní doktorko*); e-mail openings *Dobrý den,* / *Vážená paní…* and *S pozdravem* | Current practice? |
+| life | "The person celebrating brings the treat" for birthdays and name days; *chlebíčky* | Confirm as typical office custom. |
+| life | Shop-closing law (shops over 200 m², the listed days, 24 Dec from noon) | Confirm the current rules. |
+| history | Timeline dates and Czech terms; memorial descriptions (Palach memorial, Národní třída, 27 crosses, the crypt in Resslova) | Check facts and wording. |
+| holidays | Official Czech names of all 13 holidays | Confirm wording. |
+| holidays | Easter rhyme *Hody, hody, doprovody, dejte vejce malovaný…* and the description of the pomlázka custom and attitudes to it | Check the rhyme and the tone of the description. |
+| holidays | Christmas customs (zlaté prasátko, apple, walnut boats, carp scale) and 1 May kissing under a cherry tree, Mácha statue | Accurate? |
+| phrases | *Krásné svátky*, *Pusu pod rozkvetlou třešní!*, *Na tebe! / Na vás!*, *Dneska mám svátek, dejte si dort.* | Natural? |
+| practice | accepts *Kdy je tvůj svátek?* and *jmeniny* alongside *Kdy máš svátek?*; accepts both *k svátku* and *ke svátku* | Confirm. |
+
+## Guide: Getting around Prague
+
+| Where | Text | Question |
+|---|---|---|
+| how it works | Line numbering ranges (trams 1–2 digits, buses 3 digits), nicknames *áčko, béčko, céčko*, *esko* for S-trains | Accurate? |
+| how it works | Petřín funicular "has had its own pricing rules" | Re-check the current status. |
+| tickets | 2026 prices for 30/90-minute tickets; free travel under 15 and 65+; app ticket valid 1–2 minutes after activation; inspector surcharge "over a thousand crowns" | Re-check yearly against pid.cz. |
+| signs | *Pro cestující se sníženou pohyblivostí*, *Přestup na metro B* (tram announcement), *X-A* for metro replacement buses | Are these the exact wordings used? |
+| signs | Station names with *na*: *na Můstku, na Andělu, na Florenci, na Muzeu, na Hlavním nádraží, na Náměstí Míru* | Natural? (Is *na Muzeu* what people say?) |
+| phrases | *Je tady volno?*, *Pustíte mě, prosím?*, *Posaďte se, prosím.*, *Můžete mi ukázat odznak?* | Natural? |

@@ -43,7 +43,7 @@ export function ProgressPage() {
   const lessons = useLessonProgress();
   const due = useDueSummary();
 
-  const skills = ['alphabet', ...CASES.map((c) => `case:${c}`), ...VERB_TOPICS.map((t) => `verb:${t}`)];
+  const skills = ['alphabet', ...course.guides.map((g) => `guide:${g.id}`), ...CASES.map((c) => `case:${c}`), ...VERB_TOPICS.map((t) => `verb:${t}`)];
   const mastery = computeAllMastery(skills, attempts ?? []);
   const allGoals = course.units.flatMap((u) => u.canDo);
   const goalsDone = allGoals.filter((g) => goals.get(g.id)?.completedAt).length;
@@ -97,6 +97,17 @@ export function ProgressPage() {
           <MasteryRow label="Letters, sounds and spelling" href="/alphabet?tab=practice" m={mastery.get('alphabet')!} />
         </ul>
       </section>
+
+      {course.guides.some((g) => g.practice.length > 0) && (
+        <section className="mb-10">
+          <h2 className="mb-1 text-lg font-semibold">Guides</h2>
+          <ul className="divide-y divide-stone-100 overflow-hidden rounded-xl border border-stone-200 bg-white">
+            {course.guides.filter((g) => g.practice.length > 0).map((g) => (
+              <MasteryRow key={g.id} label={g.title} href={`/guides/${g.id}?tab=practice`} m={mastery.get(`guide:${g.id}`)!} />
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section className="mb-10">
         <h2 className="mb-1 text-lg font-semibold">The seven cases</h2>

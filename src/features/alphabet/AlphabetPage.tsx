@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { course } from '@/content';
-import type { Letter, PracticeSet } from '@/content/schema';
+import type { Letter } from '@/content/schema';
 import { PageHeader } from '@/components/PageHeader';
 import { CourseMarkdown } from '@/components/CourseMarkdown';
 import { SpeakButton } from '@/components/SpeakButton';
 import { ReviewStatusBadge } from '@/components/ReviewStatusBadge';
 import { NotFound } from '@/components/NotFound';
-import { ExerciseRunner, type ExerciseOutcome } from '@/features/exercises/ExerciseRunner';
-import { useLessonAnswerHandler } from '@/features/lessons/useLessonAnswerHandler';
+import { PracticeSets } from '@/features/practice/PracticeSets';
 
 const TABS = [
   { id: 'letters', label: 'Letters' },
@@ -45,7 +44,7 @@ export function AlphabetPage() {
       </nav>
       {tab === 'letters' && <LetterExplorer letters={alphabet.letters} />}
       {tab === 'guide' && <CourseMarkdown>{alphabet.introMd}</CourseMarkdown>}
-      {tab === 'practice' && <PracticeSets sets={alphabet.practice} />}
+      {tab === 'practice' && <PracticeSets sets={alphabet.practice} context="alphabet" />}
     </>
   );
 }
@@ -121,59 +120,5 @@ function LetterDetail({ letter: l }: { letter: Letter }) {
         )}
       </dl>
     </section>
-  );
-}
-
-function PracticeSets({ sets }: { sets: PracticeSet[] }) {
-  const [active, setActive] = useState<{ set: PracticeSet; run: number } | null>(null);
-  const [done, setDone] = useState<{ set: PracticeSet; outcomes: ExerciseOutcome[] } | null>(null);
-  const onAnswer = useLessonAnswerHandler();
-
-  if (active) {
-    return (
-      <>
-        <button type="button" onClick={() => setActive(null)} className="mb-4 text-sm text-sky-700 hover:underline">← All practice sets</button>
-        <h2 className="mb-1 text-xl font-semibold">{active.set.title}</h2>
-        <p className="mb-5 text-stone-600">{active.set.description}</p>
-        <ExerciseRunner
-          key={active.run}
-          exercises={active.set.exercises}
-          context="alphabet"
-          retryMissed
-          onAnswer={onAnswer}
-          onFinish={(outcomes) => {
-            setDone({ set: active.set, outcomes });
-            setActive(null);
-          }}
-        />
-      </>
-    );
-  }
-
-  return (
-    <>
-      {done && (
-        <div role="status" className="mb-6 rounded-xl border border-stone-200 bg-white p-5">
-          <p className="font-semibold">{done.set.title}: done</p>
-          <p className="mt-1 text-stone-700">
-            {done.outcomes.filter((o) => o.firstTry && o.result.accepted).length} of {done.outcomes.filter((o) => o.firstTry).length} right on the first try. Anything you missed will come back in your reviews.
-          </p>
-        </div>
-      )}
-      <ul className="grid gap-3 sm:grid-cols-2">
-        {sets.map((s) => (
-          <li key={s.id} className="flex flex-col rounded-xl border border-stone-200 bg-white p-5">
-            <h2 className="font-semibold">{s.title}</h2>
-            <p className="mt-1 flex-1 text-sm text-stone-600">{s.description}</p>
-            <div className="mt-4 flex items-center justify-between">
-              <span className="text-sm text-stone-500">{s.exercises.length} questions</span>
-              <button type="button" onClick={() => { setDone(null); setActive({ set: s, run: Date.now() }); }} className="btn btn-primary">
-                Start
-              </button>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </>
   );
 }

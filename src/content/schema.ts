@@ -14,8 +14,8 @@ const id = z.string().regex(/^[a-z0-9][a-z0-9-]*$/, 'ids use lowercase letters, 
 
 export const SkillTagSchema = z
   .string()
-  .refine((s) => GRAMMAR_SKILLS.includes(s) || s === ALPHABET_SKILL || /^vocab:[a-z0-9-]+$/.test(s), {
-    message: 'skill must be case:<case>, verb:<topic>, vocab:<vocabId> or alphabet',
+  .refine((s) => GRAMMAR_SKILLS.includes(s) || s === ALPHABET_SKILL || /^(vocab|guide):[a-z0-9-]+$/.test(s), {
+    message: 'skill must be case:<case>, verb:<topic>, vocab:<vocabId>, guide:<guideId> or alphabet',
   });
 
 export const SpokenFormSchema = z.object({
@@ -311,6 +311,34 @@ export const AlphabetSchema = z.object({
   nativeReviewed: reviewed,
 });
 
+/* ---------- Guides (culture, Prague transport, …) ---------- */
+
+export const PhraseSchema = z.object({
+  cs: z.string().min(1),
+  en: z.string().min(1),
+  note: z.string().optional(),
+  spoken: SpokenFormSchema.optional(),
+  nativeReviewed: reviewed,
+});
+
+export const GuideSchema = z.object({
+  id,
+  title: z.string().min(1),
+  titleCs: z.string().optional(),
+  summary: z.string().min(1),
+  /** Display order on the guides page. */
+  order: z.number().default(0),
+  /** Markdown pages, shown as tabs, in order. Files live next to guide.json. */
+  sections: z.array(z.object({ id, title: z.string().min(1), file: z.string().min(1) })).min(1),
+  /** Groups of phrases with listen buttons. */
+  phrasebook: z.array(z.object({ id, title: z.string().min(1), intro: z.string().optional(), phrases: z.array(PhraseSchema).min(1) })).default([]),
+  practice: z.array(PracticeSetSchema).default([]),
+  /** For guides with facts that change (prices, lines): where to check, and when they were last checked. */
+  sources: z.array(z.object({ title: z.string().min(1), url: z.string().url() })).default([]),
+  lastChecked: z.string().optional(),
+  nativeReviewed: reviewed,
+});
+
 /* ---------- Inferred types ---------- */
 
 export type VocabItem = z.infer<typeof VocabItemSchema>;
@@ -329,3 +357,5 @@ export type Verb = z.infer<typeof VerbSchema>;
 export type Letter = z.infer<typeof LetterSchema>;
 export type PracticeSet = z.infer<typeof PracticeSetSchema>;
 export type AlphabetData = z.infer<typeof AlphabetSchema>;
+export type Phrase = z.infer<typeof PhraseSchema>;
+export type GuideData = z.infer<typeof GuideSchema>;

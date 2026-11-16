@@ -27,11 +27,22 @@ export function answerIsCzech(ex: Exercise): boolean {
 }
 
 export function FeedbackPanel({ exercise, result, answer }: { exercise: Exercise; result: CheckResult; answer: string }) {
-  const grammarSkill = exercise.skills.find((s) => !s.startsWith('vocab:'));
+  // Link to the most relevant page: a grammar topic first, otherwise the alphabet or guide.
+  const grammarSkill =
+    exercise.skills.find((s) => s.startsWith('case:') || s.startsWith('verb:')) ?? exercise.skills.find((s) => !s.startsWith('vocab:'));
   const page = grammarSkill ? course.grammarBySkill.get(grammarSkill) : undefined;
+  const guide = grammarSkill?.startsWith('guide:') ? course.guidesById.get(grammarSkill.slice(6)) : undefined;
   const pageHref =
-    grammarSkill === 'alphabet' ? '/alphabet' : page ? (page.section === 'verbs' ? `/verbs/${page.id}` : `/grammar/${page.id}`) : undefined;
-  const pageTitle = grammarSkill === 'alphabet' ? 'Alphabet' : page?.title.split(':')[0]!.split('(')[0]!.trim();
+    grammarSkill === 'alphabet'
+      ? '/alphabet'
+      : guide
+        ? `/guides/${guide.id}`
+        : page
+          ? page.section === 'verbs'
+            ? `/verbs/${page.id}`
+            : `/grammar/${page.id}`
+          : undefined;
+  const pageTitle = grammarSkill === 'alphabet' ? 'Alphabet' : guide ? guide.title : page?.title.split(':')[0]!.split('(')[0]!.trim();
   const czech = answerIsCzech(exercise);
   // For fill-in-the-ending, read out the whole sentence with the right word in place.
   const speakText = exercise.type === 'fillEnding' ? exercise.prompt.replace(/\p{L}*___/u, result.expected) : result.expected;

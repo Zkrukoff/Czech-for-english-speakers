@@ -22,6 +22,9 @@ content/
 ├── alphabet/
 │   ├── alphabet.json                letters + practice sets
 │   └── intro.md                     pronunciation guide
+├── guides/<guide-slug>/
+│   ├── guide.json                   sections, phrasebook, practice, sources
+│   └── *.md                         one Markdown file per section
 ├── REVIEW_NEEDED.md                 items for a native speaker to check
 └── SCHEMA.md                        this file
 ```
@@ -44,6 +47,7 @@ after a native speaker has checked that item. Anything `false` shows a
   published**, or learners lose that item's history.
 - **Skill tags** link exercises to grammar topics and vocabulary:
   - `alphabet`: alphabet and pronunciation practice
+  - `guide:<guide id>`: practice belonging to a guide (must exist)
   - `case:<case>`: nominative, genitive, dative, accusative, vocative, locative, instrumental
   - `verb:<topic>`: present-classes, irregulars, past, aspect, future, motion, reflexive, modals, imperative, conditional
   - `vocab:<vocab id>`: must exist in some lesson's `vocab`
@@ -222,6 +226,28 @@ how the letter is said when spelling aloud; `spellingWord` is its word in the
 traditional phone-spelling alphabet ("Č jako Čeněk"). Practice exercises are
 ordinary exercises (usually `question`) with the skill `alphabet`. Set
 `diacriticsMatter: true` where the diacritic is the point of the question.
+
+## Guides (`guides/<slug>/guide.json`)
+
+Guides cover life in Czechia beyond the lessons (culture, Prague transport…).
+Each one is a set of Markdown sections shown as tabs, an optional phrasebook
+and optional practice sets.
+
+| Field | Type | Notes |
+|---|---|---|
+| `id` | id | URL: `/guides/<id>` |
+| `title`, `titleCs?`, `summary` | string | |
+| `order` | number | Position on the guides page |
+| `sections` | `{id, title, file}[]` | Markdown files next to guide.json, shown as tabs in order |
+| `phrasebook` | `{id, title, intro?, phrases: {cs, en, note?, spoken?, nativeReviewed}[]}[]` | Shown on a "Phrases" tab with listen buttons |
+| `practice` | PracticeSet[] | As in the alphabet; tag every exercise with `guide:<id>` |
+| `sources` | `{title, url}[]` | Official sources for facts that change |
+| `lastChecked` | string? | When prices, lines etc. were last checked, e.g. "November 2026" |
+| `nativeReviewed` | boolean | |
+
+Link to a guide tab from Markdown with `/guides/<id>?tab=<section id>`
+(or `phrases` / `practice`). Put prices, line numbers and timetables only in
+guides with `sources` and `lastChecked`, and re-check them at least yearly.
 
 ## Verbs (`verbs/verbs.json`)
 

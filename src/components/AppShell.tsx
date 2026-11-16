@@ -6,6 +6,7 @@ import { useDueSummary } from '@/db/useDue';
 const NAV = [
   { to: '/', label: 'Learn', end: true },
   { to: '/alphabet', label: 'Alphabet' },
+  { to: '/guides', label: 'Guides' },
   { to: '/grammar', label: 'Grammar' },
   { to: '/verbs', label: 'Verbs' },
   { to: '/review', label: 'Review' },

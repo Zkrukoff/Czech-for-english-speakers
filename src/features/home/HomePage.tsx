@@ -91,6 +91,23 @@ export function HomePage() {
           })}
         </ol>
       </section>
+
+      {course.guides.length > 0 && (
+        <section aria-labelledby="guides-heading" className="mt-12">
+          <h2 id="guides-heading" className="mb-4 text-xl font-semibold tracking-tight">Guides to life in Czechia</h2>
+          <ul className="grid gap-4 sm:grid-cols-2">
+            {course.guides.map((g) => (
+              <li key={g.id}>
+                <Link to={`/guides/${g.id}`} className="card group flex h-full flex-col p-5 hover:border-stone-400">
+                  <span className="text-lg font-semibold">{g.title}</span>
+                  <span className="mt-1 flex-1 text-sm text-stone-600">{g.summary}</span>
+                  <span className="mt-3 text-sm font-medium text-sky-700 group-hover:underline">Open the guide →</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </>
   );
 }

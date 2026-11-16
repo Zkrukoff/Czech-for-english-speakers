@@ -1,0 +1,741 @@
+{
+  "id": "culture",
+  "title": "Czech culture and traditions",
+  "titleCs": "Česká kultura a tradice",
+  "summary": "Everyday customs at work and at home, the history behind them, all 13 public holidays and the traditions around Christmas and Easter, with phrases to practise.",
+  "order": 1,
+  "sections": [
+    {
+      "id": "life",
+      "title": "Everyday life and work",
+      "file": "life-and-work.md"
+    },
+    {
+      "id": "history",
+      "title": "History",
+      "file": "history.md"
+    },
+    {
+      "id": "holidays",
+      "title": "Holidays",
+      "file": "holidays.md"
+    }
+  ],
+  "phrasebook": [
+    {
+      "id": "christmas",
+      "title": "Christmas and New Year",
+      "phrases": [
+        {
+          "cs": "Veselé Vánoce!",
+          "en": "Merry Christmas!",
+          "note": "Vánoce is plural, so the adjective is plural too: veselé.",
+          "spoken": {
+            "form": "Veselý Vánoce!",
+            "note": "The everyday spoken form."
+          },
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Krásné svátky!",
+          "en": "Happy holidays!",
+          "note": "Common in cards and e-mails to colleagues in December.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Šťastný nový rok!",
+          "en": "Happy New Year!",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Veselé Vánoce a šťastný nový rok!",
+          "en": "Merry Christmas and a happy New Year!",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Hodně zdraví a štěstí v novém roce!",
+          "en": "Lots of health and happiness in the new year!",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Co ti přinesl Ježíšek?",
+          "en": "What did you get for Christmas? (lit. What did the baby Jesus bring you?)",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Na Štědrý den jíme kapra a bramborový salát.",
+          "en": "On Christmas Eve we eat carp and potato salad.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Pečeš cukroví?",
+          "en": "Are you baking Christmas biscuits?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "PF 2027",
+          "en": "Happy New Year 2027 (on cards)",
+          "note": "From French \"pour féliciter\". Seen on cards and in e-mail signatures in December and January.",
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "easter",
+      "title": "Easter and spring",
+      "phrases": [
+        {
+          "cs": "Veselé Velikonoce!",
+          "en": "Happy Easter!",
+          "note": "Velikonoce is plural, like Vánoce.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Hody, hody, doprovody, dejte vejce malovaný.",
+          "en": "Hey, hey, give us a painted egg. (Easter Monday rhyme)",
+          "note": "Traditional rhyme, in dialect form (malovaný for malované).",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Kde budete o Velikonocích?",
+          "en": "Where will you be for Easter?",
+          "note": "o + locative plural: o Velikonocích, o Vánocích.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Jdeme pálit čarodějnice.",
+          "en": "We're going to the witch-burning (30 April).",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Pusu pod rozkvetlou třešní!",
+          "en": "A kiss under a blossoming cherry tree! (1 May)",
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "celebrations",
+      "title": "Name days, birthdays and toasts",
+      "phrases": [
+        {
+          "cs": "Všechno nejlepší k narozeninám!",
+          "en": "Happy birthday!",
+          "note": "k + dative plural: narozeniny → k narozeninám.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Všechno nejlepší k svátku!",
+          "en": "Happy name day!",
+          "note": "Also ke svátku.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Kdy máš svátek?",
+          "en": "When is your name day?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Dneska mám svátek, dejte si dort.",
+          "en": "It's my name day today, have some cake.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Na zdraví!",
+          "en": "Cheers!",
+          "note": "Look each person in the eye as you clink glasses.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Na tebe! / Na vás!",
+          "en": "To you! (a toast to the person celebrating)",
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "holidays",
+      "title": "Public holidays and small talk",
+      "phrases": [
+        {
+          "cs": "Zítra je svátek, obchody jsou zavřené.",
+          "en": "Tomorrow is a public holiday; the shops are closed.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Máme prodloužený víkend.",
+          "en": "We've got a long weekend.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Jedeš na chatu?",
+          "en": "Are you going to the cottage?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Kam jedete na prodloužený víkend?",
+          "en": "Where are you going for the long weekend?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Ve čtvrtek je státní svátek, v pátek si beru volno.",
+          "en": "Thursday is a public holiday; I'm taking Friday off.",
+          "nativeReviewed": false
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "id": "culture-christmas",
+      "title": "Christmas and New Year",
+      "description": "Wishes, customs and the grammar inside them.",
+      "exercises": [
+        {
+          "id": "cul-x1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Merry Christmas!",
+          "answers": [
+            "{Veselé|Krásné} Vánoce[!]"
+          ],
+          "why": "Veselé Vánoce! Vánoce is a plural word, so the adjective is plural: veselé.",
+          "hints": [],
+          "skills": [
+            "guide:culture",
+            "case:accusative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-x2",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Happy New Year!",
+          "answers": [
+            "Šťastný [a veselý ]nový rok[!]"
+          ],
+          "why": "Šťastný nový rok! (rok is masculine inanimate, so in the accusative of a wish it stays the same).",
+          "hints": [],
+          "skills": [
+            "guide:culture",
+            "case:accusative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-x3",
+          "type": "fillEnding",
+          "prompt": "Přeju vám vesel___ Vánoce.",
+          "base": "veselý",
+          "en": "I wish you a merry Christmas.",
+          "answers": [
+            "é"
+          ],
+          "why": "Vánoce is plural, so adjectives describing it are plural: veselé Vánoce.",
+          "hints": [
+            {
+              "wrong": "ý",
+              "explain": "Vánoce is plural. Standard Czech is veselé (you will hear veselý in casual speech)."
+            },
+            {
+              "wrong": "á",
+              "explain": "Vánoce is plural, not feminine singular: veselé Vánoce."
+            }
+          ],
+          "skills": [
+            "guide:culture",
+            "case:accusative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-x4",
+          "type": "translate",
+          "direction": "cs-en",
+          "prompt": "Co ti přinesl Ježíšek?",
+          "answers": [
+            "What did {baby Jesus|the baby Jesus|Ježíšek|Jesus|little Jesus|the Christ Child|Santa|Father Christmas} bring you[?]",
+            "What did you get for Christmas[?]"
+          ],
+          "why": "In Czech homes, presents are brought by Ježíšek, the baby Jesus, on Christmas Eve.",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-x5",
+          "type": "question",
+          "prompt": "What fish do most Czech families eat for Christmas Eve dinner? Type the Czech word.",
+          "answerLang": "cs",
+          "answers": [
+            "kapr",
+            "kapra",
+            "kapři"
+          ],
+          "why": "kapr (carp), usually fried, with potato salad. Live carp are sold from tubs in the street before Christmas.",
+          "hints": [
+            {
+              "wrong": "carp",
+              "explain": "Right fish: now the Czech word, kapr."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-x6",
+          "type": "question",
+          "prompt": "What does **PF** stand for on a Czech New Year card?",
+          "answerLang": "en",
+          "answers": [
+            "pour féliciter",
+            "pour feliciter"
+          ],
+          "why": "PF = pour féliciter (French, \"to congratulate\"): PF 2027 means \"Happy New Year 2027\".",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-x7",
+          "type": "dialogueComplete",
+          "context": [
+            {
+              "speaker": "Kolegyně",
+              "cs": "Veselé Vánoce!",
+              "en": "Merry Christmas!"
+            }
+          ],
+          "prompt": "Wish her the same, and a happy New Year (you say vy to her).",
+          "answers": [
+            "[{Děkuju|Děkuji|Díky}[,] ]{Vám {taky|také}|{Veselé|Krásné} Vánoce i vám}[,] a šťastný nový rok[!]"
+          ],
+          "why": "Vám taky (you too) or Veselé Vánoce i vám, then a šťastný nový rok.",
+          "hints": [
+            {
+              "wrong": "[{Děkuju|Děkuji|Díky}[,] ]{Tobě {taky|také}|{Veselé|Krásné} Vánoce i tobě}[,] a šťastný nový rok[!]",
+              "explain": "You say vy to her, so: vám taky, not tobě."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "culture-easter",
+      "title": "Easter and spring",
+      "description": "Easter wishes and the spring customs.",
+      "exercises": [
+        {
+          "id": "cul-e1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Happy Easter!",
+          "answers": [
+            "{Veselé|Krásné} Velikonoce[!]"
+          ],
+          "why": "Veselé Velikonoce! Velikonoce is plural, like Vánoce.",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-e2",
+          "type": "question",
+          "prompt": "What is the braided willow whip used on Easter Monday called? Type the Czech word.",
+          "answerLang": "cs",
+          "answers": [
+            "pomlázka",
+            "pomlázku"
+          ],
+          "why": "pomlázka: boys and men use it for a light, symbolic swat \"for health and youth\", and get painted eggs in return.",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-e3",
+          "type": "question",
+          "prompt": "What are decorated Easter eggs called? Type the Czech word.",
+          "answerLang": "cs",
+          "answers": [
+            "kraslice",
+            "kraslici",
+            "malovaná vajíčka",
+            "malované vejce",
+            "malovaná vejce"
+          ],
+          "why": "kraslice: decorated eggs, given to the boys who come round with the pomlázka.",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-e4",
+          "type": "question",
+          "prompt": "What do Czechs \"burn\" on bonfires on the night of 30 April? Type the Czech word.",
+          "answerLang": "cs",
+          "answers": [
+            "čarodějnice",
+            "čarodějnici",
+            "čarodějnic"
+          ],
+          "why": "čarodějnice (witches): pálení čarodějnic, \"the burning of the witches\", usually a straw figure on the bonfire.",
+          "hints": [
+            {
+              "wrong": "witches",
+              "explain": "Right idea: now in Czech, čarodějnice."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-e5",
+          "type": "fillEnding",
+          "prompt": "O Velikonoc___ jedu domů.",
+          "base": "Velikonoce",
+          "en": "I'm going home for Easter.",
+          "answers": [
+            "ích"
+          ],
+          "why": "o + locative. Velikonoce is plural, and the locative plural ends in -ích: o Velikonocích (at Easter), o Vánocích (at Christmas).",
+          "hints": [
+            {
+              "wrong": "e",
+              "explain": "After o (at a time), use the locative plural: o Velikonocích."
+            }
+          ],
+          "skills": [
+            "guide:culture",
+            "case:locative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-e6",
+          "type": "fillEnding",
+          "prompt": "O Vánoc___ jsme vždycky doma.",
+          "base": "Vánoce",
+          "en": "We're always at home at Christmas.",
+          "answers": [
+            "ích"
+          ],
+          "why": "o + locative plural: o Vánocích (at Christmas).",
+          "hints": [
+            {
+              "wrong": "e",
+              "explain": "After o (at a time), use the locative plural: o Vánocích."
+            }
+          ],
+          "skills": [
+            "guide:culture",
+            "case:locative"
+          ],
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "culture-celebrations",
+      "title": "Name days, birthdays and toasts",
+      "description": "What to say when a colleague celebrates.",
+      "exercises": [
+        {
+          "id": "cul-c1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Happy birthday!",
+          "answers": [
+            "Všechno nejlepší k narozeninám[!]",
+            "Všechno nejlepší[!]"
+          ],
+          "why": "Všechno nejlepší k narozeninám: \"all the best for (your) birthday\". k + dative plural: narozeniny → k narozeninám.",
+          "hints": [
+            {
+              "wrong": "Všechno nejlepší k narozeniny[!]",
+              "explain": "k (for, towards) takes the dative: k narozeninám."
+            }
+          ],
+          "skills": [
+            "guide:culture",
+            "case:dative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-c2",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Happy name day!",
+          "answers": [
+            "Všechno nejlepší {k|ke} svátku[!]",
+            "Všechno nejlepší[!]"
+          ],
+          "why": "Všechno nejlepší k svátku (or ke svátku). svátek means both \"name day\" and \"public holiday\".",
+          "hints": [
+            {
+              "wrong": "Všechno nejlepší {k|ke} svátek[!]",
+              "explain": "k takes the dative: k svátku."
+            }
+          ],
+          "skills": [
+            "guide:culture",
+            "case:dative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-c3",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Cheers!",
+          "answers": [
+            "Na zdraví[!]"
+          ],
+          "why": "Na zdraví! (to health). Look each person in the eye as you clink glasses.",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-c4",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "When is your name day? (informal)",
+          "answers": [
+            "Kdy máš {svátek|jmeniny}?",
+            "Kdy je tvůj svátek?",
+            "Kdy má{š|te} svátek?"
+          ],
+          "why": "Kdy máš svátek? (or jmeniny). svátek = name day.",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-c5",
+          "type": "question",
+          "prompt": "On your birthday or name day at a Czech office, who usually brings the cake or snacks?",
+          "answerLang": "en",
+          "answers": [
+            "[the ]person celebrating",
+            "the person whose {birthday|name day} it is",
+            "[the ]{birthday|name day} person",
+            "[the ]celebrant",
+            "I do",
+            "you do",
+            "me",
+            "they do",
+            "the one celebrating"
+          ],
+          "why": "The person celebrating brings the treat (cake, biscuits, chlebíčky), and colleagues congratulate them.",
+          "hints": [
+            {
+              "wrong": "[the ]colleagues",
+              "explain": "In Czechia it's the other way round: the person celebrating brings the treat."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-c6",
+          "type": "dialogueComplete",
+          "context": [
+            {
+              "speaker": "Kolegyně",
+              "cs": "Dneska mám svátek, dejte si dort!",
+              "en": "It's my name day today, have some cake!"
+            }
+          ],
+          "prompt": "Wish her a happy name day.",
+          "answers": [
+            "Všechno nejlepší {k|ke} svátku[!]",
+            "Všechno nejlepší[!]"
+          ],
+          "why": "Všechno nejlepší k svátku!",
+          "hints": [
+            {
+              "wrong": "Všechno nejlepší k narozeninám[!]",
+              "explain": "It's her name day (svátek), not her birthday: Všechno nejlepší k svátku!"
+            }
+          ],
+          "skills": [
+            "guide:culture",
+            "case:dative"
+          ],
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "culture-holidays",
+      "title": "Public holidays and history",
+      "description": "The dates your colleagues take off, and why.",
+      "exercises": [
+        {
+          "id": "cul-h1",
+          "type": "question",
+          "prompt": "Which date is the anniversary of the Velvet Revolution, now a public holiday?",
+          "answerLang": "en",
+          "answers": [
+            "17 November",
+            "November 17",
+            "17th November",
+            "17th of November",
+            "the 17th of November",
+            "November 17th",
+            "17. 11.",
+            "17. listopadu",
+            "17/11",
+            "17.11"
+          ],
+          "why": "17 November: Struggle for Freedom and Democracy Day, remembering the student protests of 1939 and 1989.",
+          "hints": [
+            {
+              "wrong": "28 October",
+              "explain": "28 October is the founding of Czechoslovakia. The Velvet Revolution began on 17 November 1989."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-h2",
+          "type": "question",
+          "prompt": "Czechoslovakia was founded on 28 October of which year?",
+          "answerLang": "en",
+          "answers": [
+            "1918"
+          ],
+          "why": "28 October 1918, after the collapse of Austria-Hungary. Tomáš Garrigue Masaryk became the first president.",
+          "hints": [
+            {
+              "wrong": "1993",
+              "explain": "1993 is when Czechoslovakia split into Czechia and Slovakia. It was founded in 1918."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-h3",
+          "type": "question",
+          "prompt": "Which saint, the patron of the Czech lands, is remembered on 28 September?",
+          "answerLang": "en",
+          "answers": [
+            "[St |Saint ]Wenceslas",
+            "[svatý |sv ]Václav",
+            "Good King Wenceslas"
+          ],
+          "why": "28 September is St Wenceslas (svatý Václav), now Czech Statehood Day. Wenceslas Square is named after him.",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-h4",
+          "type": "question",
+          "prompt": "Which religious reformer, burned at the stake in 1415, is remembered on 6 July?",
+          "answerLang": "en",
+          "answers": [
+            "[Jan |John |Master Jan |mistr Jan ]Hus"
+          ],
+          "why": "Jan Hus preached in Czech and challenged the Church; his death led to the Hussite wars.",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-h5",
+          "type": "translate",
+          "direction": "cs-en",
+          "prompt": "Zítra je svátek, obchody jsou zavřené.",
+          "answers": [
+            "Tomorrow is a [public |bank |national ]holiday[,] [and ]the {shops|stores} {are|will be} {closed|shut}[.]",
+            "Tomorrow{'s| is} a [public |bank |national ]holiday[,] [and ]{shops|stores} {are|will be} {closed|shut}[.]",
+            "It's a [public |bank |national ]holiday tomorrow[,] [and ]the {shops|stores} {are|will be} {closed|shut}[.]"
+          ],
+          "why": "svátek here means a public holiday; zavřené = closed (plural, agreeing with obchody).",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-h6",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "We've got a long weekend.",
+          "answers": [
+            "Máme prodloužený víkend[.]"
+          ],
+          "why": "prodloužený víkend = \"extended weekend\". víkend is masculine inanimate, so the accusative is unchanged.",
+          "hints": [
+            {
+              "wrong": "Máme dlouhý víkend[.]",
+              "explain": "Understandable, but Czechs say prodloužený víkend (extended weekend)."
+            }
+          ],
+          "skills": [
+            "guide:culture",
+            "case:accusative"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "cul-h7",
+          "type": "question",
+          "prompt": "The Munich Agreement of 1938 is often summed up in four Czech words meaning \"about us, without us\". Type them.",
+          "answerLang": "cs",
+          "answers": [
+            "o nás bez nás"
+          ],
+          "why": "O nás bez nás: Czechoslovakia was not invited to the conference that gave its border regions to Nazi Germany.",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "nativeReviewed": false
+}

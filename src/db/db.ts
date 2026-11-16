@@ -31,7 +31,7 @@ export interface Attempt {
   /** Accepted but with missing/wrong diacritics. */
   diacriticSlip: boolean;
   answer: string;
-  context: 'lesson' | 'unitCheck' | 'review' | 'alphabet';
+  context: 'lesson' | 'unitCheck' | 'review' | 'alphabet' | 'guide';
   timestamp: number;
 }
 
