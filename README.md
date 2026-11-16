@@ -42,7 +42,17 @@ Then open the URL it prints (usually http://localhost:5173).
 | `npm run preview` | Serve the built site locally |
 
 The build is a static single-page app: deploy `dist/` to any static host,
-configured to serve `index.html` for unknown paths.
+configured to serve `index.html` for unknown paths. Set `BASE_PATH` when
+building if the app is served from a sub-path (e.g. `BASE_PATH=/my-app/ npm run build`).
+
+### GitHub Pages
+
+`.github/workflows/deploy.yml` tests, builds and deploys the app on every push
+to `main` (or manually from the Actions tab). It builds with
+`BASE_PATH=/<repo-name>/` and copies `index.html` to `404.html` so deep links
+work. One-time setup in the repository: **Settings → Pages → Build and
+deployment → Source: GitHub Actions**. (Pages for a private repository needs a
+paid GitHub plan; on a free plan, make the repository public.)
 
 ## Project layout
 

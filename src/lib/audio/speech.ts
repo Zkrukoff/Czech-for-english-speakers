@@ -53,7 +53,7 @@ export class RecordedAudioProvider implements SpeechProvider {
   private current: HTMLAudioElement | null = null;
   constructor(
     private fallback: SpeechProvider,
-    private baseUrl = '/audio/',
+    private baseUrl = `${import.meta.env.BASE_URL}audio/`,
   ) {}
 
   isAvailable(): boolean {
