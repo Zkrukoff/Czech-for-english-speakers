@@ -1,0 +1,25 @@
+{
+  "id": "u02",
+  "title": "At the café",
+  "titleCs": "V kavárně",
+  "situation": "Ordering drinks and food in a café or restaurant, and paying.",
+  "canDo": [
+    { "id": "u02-g1", "text": "You can order a drink politely." }
+  ],
+  "lessons": ["01-ordering-a-drink"],
+  "check": {
+    "passRatio": 0.8,
+    "exercises": [
+      {
+        "id": "u02-c1", "type": "translate", "direction": "en-cs", "goalId": "u02-g1",
+        "prompt": "I'll have a water, please.",
+        "answers": ["Dám si vodu[, prosím]."],
+        "why": "The thing you order is the object of 'dát si', so it takes the accusative: voda → vodu.",
+        "hints": [{ "wrong": "Dám si voda[, prosím].", "explain": "'voda' is the dictionary (nominative) form. After 'dám si' you need the accusative: vodu." }],
+        "skills": ["case:accusative", "vocab:v-voda"],
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "nativeReviewed": false
+}

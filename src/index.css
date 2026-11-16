@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* One colour per case, used everywhere endings are highlighted. */
+@theme {
+  --color-case-nom: #475569;
+  --color-case-gen: #b45309;
+  --color-case-dat: #7c3aed;
+  --color-case-acc: #be123c;
+  --color-case-voc: #0f766e;
+  --color-case-loc: #1d4ed8;
+  --color-case-ins: #15803d;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body { @apply bg-stone-50 text-stone-900 antialiased; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-sky-600; }
+}
+
+/* Prose styling for markdown explanations. */
+.prose-cz { @apply leading-relaxed text-stone-800; }
+.prose-cz h2 { @apply mt-8 mb-3 text-xl font-semibold text-stone-900; }
+.prose-cz h3 { @apply mt-6 mb-2 text-lg font-semibold text-stone-900; }
+.prose-cz p { @apply my-3; }
+.prose-cz ul { @apply my-3 list-disc pl-6; }
+.prose-cz ol { @apply my-3 list-decimal pl-6; }
+.prose-cz li { @apply my-1; }
+.prose-cz strong { @apply font-semibold text-stone-900; }
+.prose-cz blockquote { @apply my-4 rounded-r-md border-l-4 border-amber-400 bg-amber-50 px-4 py-2; }
+.prose-cz table { @apply my-4 w-full border-collapse text-sm; }
+.prose-cz th { @apply border-b-2 border-stone-300 px-3 py-2 text-left font-semibold; }
+.prose-cz td { @apply border-b border-stone-200 px-3 py-2; }
+.prose-cz code { @apply rounded bg-stone-100 px-1 py-0.5 text-sm; }
+.prose-cz a { @apply text-sky-700 underline underline-offset-2; }

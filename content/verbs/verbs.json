@@ -1,0 +1,23 @@
+{
+  "verbs": [
+    {
+      "lemma": "dát", "en": "to give; (dát si) to have, order", "aspect": "pf", "partner": ["dávat"],
+      "class": "-á- (dělat)",
+      "present": { "1sg": "dám", "2sg": "dáš", "3sg": "dá", "1pl": "dáme", "2pl": "dáte", "3pl": "dají" },
+      "past": { "m": "dal", "f": "dala", "n": "dalo", "mpl": "dali", "fpl": "daly" },
+      "imperative": { "2sg": "dej", "1pl": "dejme", "2pl": "dejte" },
+      "topics": ["present-classes", "aspect"],
+      "notes": "Perfective: the present forms refer to the future or to a single completed act (Dám si kávu = I'll have a coffee).",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "dávat", "en": "to give (repeatedly, in general)", "aspect": "impf", "partner": ["dát"],
+      "class": "-á- (dělat)",
+      "present": { "1sg": "dávám", "2sg": "dáváš", "3sg": "dává", "1pl": "dáváme", "2pl": "dáváte", "3pl": "dávají" },
+      "past": { "m": "dával", "f": "dávala", "n": "dávalo", "mpl": "dávali", "fpl": "dávaly" },
+      "imperative": { "2sg": "dávej", "1pl": "dávejme", "2pl": "dávejte" },
+      "topics": ["present-classes", "aspect"],
+      "nativeReviewed": false
+    }
+  ]
+}
