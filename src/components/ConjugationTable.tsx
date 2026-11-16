@@ -13,7 +13,7 @@ export function HighlightedForm({ form, stem }: { form: string; stem: string }) 
           {stem && alt.startsWith(stem) ? (
             <>
               {stem}
-              <span className="font-semibold text-sky-700">{alt.slice(stem.length).split(' ')[0]}</span>
+              <span className="font-semibold text-vltava">{alt.slice(stem.length).split(' ')[0]}</span>
               {alt.slice(stem.length).includes(' ') && ' ' + alt.slice(stem.length).split(' ').slice(1).join(' ')}
             </>
           ) : (

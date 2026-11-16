@@ -9,7 +9,18 @@ import type { ReactNode } from 'react';
  * a present-tense table from content/verbs/verbs.json. Use CourseMarkdown to
  * get both wired up.
  */
-export function Markdown({ children, renderTable, renderVerb }: { children: string; renderTable?: (id: string) => ReactNode; renderVerb?: (lemma: string) => ReactNode }) {
+export function Markdown({
+  children,
+  renderTable,
+  renderVerb,
+  renderEmbed,
+}: {
+  children: string;
+  renderTable?: (id: string) => ReactNode;
+  renderVerb?: (lemma: string) => ReactNode;
+  /** Other embeds: ```timeline <guide>```, ```metro <guide>```. */
+  renderEmbed?: (kind: string, arg: string) => ReactNode;
+}) {
   const components: Components = {
     pre: ({ children: c }) => <>{c}</>,
     code: ({ className, children: c, node }) => {
@@ -21,6 +32,9 @@ export function Markdown({ children, renderTable, renderVerb }: { children: stri
       if (lang === 'table') {
         const id = arg;
         return renderTable ? <>{renderTable(id)}</> : <div className="text-sm text-stone-500">[table: {id}]</div>;
+      }
+      if ((lang === 'timeline' || lang === 'metro') && renderEmbed) {
+        return <>{renderEmbed(lang, arg)}</>;
       }
       if (lang === 'verb') {
         const lemma = arg;

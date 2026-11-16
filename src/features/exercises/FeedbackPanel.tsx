@@ -88,7 +88,7 @@ export function FeedbackPanel({ exercise, result, answer }: { exercise: Exercise
         </p>
       )}
       {result.status !== 'correct' && pageHref && (
-        <Link to={pageHref} target="_blank" className="mt-2 inline-block text-sm text-sky-700 underline">
+        <Link to={pageHref} target="_blank" className="mt-2 inline-block text-sm text-vltava underline">
           Open the {pageTitle} page ↗
         </Link>
       )}

@@ -24,6 +24,11 @@ Three lines, each with its own colour. Czechs often call them by nicknames: ***�
 
 A fourth line, **D**, is under construction.
 
+Tap or select any station on the map to hear its name and see where it is and what's nearby.
+
+```metro prague-transport
+```
+
 Directions are shown by the **last station** of the line (*konečná*): to go from Můstek towards Prague Castle you take line A ***směr Nemocnice Motol***. Signs in stations say ***Směr*** ("towards"), then the end station.
 
 The metro runs from about **5:00 to midnight**. Trains come every 2–3 minutes at rush hour.

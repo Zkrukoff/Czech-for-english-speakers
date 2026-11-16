@@ -23,7 +23,7 @@ export function GuidePage() {
 
   return (
     <>
-      <Link to="/guides" className="text-sm text-sky-700 hover:underline">← Guides</Link>
+      <Link to="/guides" className="text-sm text-vltava hover:underline">← Guides</Link>
       <PageHeader title={guide.title} subtitle={guide.summary}>
         <div className="mt-3 flex flex-wrap items-center gap-3">
           {guide.titleCs && <span lang="cs" className="text-stone-500">{guide.titleCs}</span>}
@@ -73,7 +73,7 @@ export function GuidePage() {
           {guide.sources.length > 0 && (
             <ul className="mt-2 space-y-1">
               {guide.sources.map((s) => (
-                <li key={s.url}><a href={s.url} target="_blank" rel="noreferrer" className="text-sky-700 underline">{s.title}</a></li>
+                <li key={s.url}><a href={s.url} target="_blank" rel="noreferrer" className="text-vltava underline">{s.title}</a></li>
               ))}
             </ul>
           )}

@@ -22,7 +22,7 @@ export function VerbDetail() {
       : 'Imperfective: budu + infinitive.';
   return (
     <>
-      <Link to="/verbs/lookup" className="text-sm text-sky-700 hover:underline">← Verb lookup</Link>
+      <Link to="/verbs/lookup" className="text-sm text-vltava hover:underline">← Verb lookup</Link>
       <PageHeader
         title={
           <span className="inline-flex items-center gap-2">

@@ -1,14 +1,30 @@
 /* Design rules live in docs/DESIGN.md. Keep this file in line with it. */
 @import "@fontsource-variable/inter";
+@import "@fontsource-variable/bricolage-grotesque";
 @import "@fontsource-variable/source-serif-4";
 @import "@fontsource-variable/source-serif-4/opsz-italic.css";
 @import "tailwindcss";
 @import "./styles/dark-palette.css";
 
 @theme {
-  /* Type: English (the interface) in a sans; Czech (what you're learning) in a serif. */
+  /* Three voices: the interface in a sans, Czech (what you're learning) in a
+     serif, and the expressive frame (headings, numbers, wordmark) in a display face. */
   --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-serif: "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
+  --font-display: "Bricolage Grotesque Variable", "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
+  /* Prague palette, for the frame and wayfinding only, never grammar: the
+     metro line colours, the Vltava, tram cream and a warm paper. */
+  --color-metro-a: #1a9b4b;
+  --color-metro-b: #f2b200;
+  --color-metro-c: #d6213a;
+  --color-vltava: #1f63c6;
+  --color-cream: #f6f0e4;
+  --color-paper: #faf7f0;
+  --color-ink: #17130f;
+  /* Always dark, in both themes: the departure-board and terminus panels. */
+  --color-night: #17130f;
+  --color-night-text: #faf7f0;
 
   /* Colour carries grammar: one colour per case, used everywhere endings are shown. */
   --color-case-nom: #57534e;
@@ -18,6 +34,12 @@
   --color-case-voc: #0f766e;
   --color-case-loc: #1d4ed8;
   --color-case-ins: #15803d;
+
+  --animate-rise: rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: none; }
+  }
 }
 
 @layer base {
@@ -26,22 +48,23 @@
     text-rendering: optimizeLegibility;
   }
   body {
-    @apply bg-stone-50 font-sans text-stone-900 antialiased;
+    @apply bg-paper font-sans text-stone-900 antialiased;
+  }
+  h1, h2 {
+    font-family: var(--font-display);
+    font-variation-settings: "wdth" 92;
   }
   /* Anything marked lang="cs" is set in the serif, so Czech always stands out from the interface. */
   :lang(cs) {
     font-family: var(--font-serif);
     font-optical-sizing: auto;
-  }
-  /* …but form controls stay readable as inputs. */
-  input:lang(cs) {
-    font-family: var(--font-serif);
+    font-variation-settings: normal;
   }
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-sky-600;
+    @apply outline-2 outline-offset-2 outline-vltava;
   }
   ::selection {
-    @apply bg-sky-200 text-stone-900;
+    @apply bg-metro-b text-ink;
   }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
@@ -55,39 +78,61 @@
 @layer components {
   /* Buttons: one primary action per screen; everything else is secondary. */
   .btn {
-    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40;
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-40;
   }
   .btn-primary {
-    @apply bg-stone-900 text-white hover:bg-stone-700;
+    @apply bg-ink text-paper shadow-[0_3px_0_0_var(--color-metro-c)] hover:-translate-y-0.5 hover:shadow-[0_5px_0_0_var(--color-metro-c)] active:translate-y-0 active:shadow-none;
   }
   .btn-secondary {
-    @apply border border-stone-300 bg-white text-stone-900 hover:bg-stone-100;
+    @apply border-2 border-ink/80 bg-white text-ink hover:bg-cream;
   }
   .btn-quiet {
-    @apply text-stone-600 hover:bg-stone-100 hover:text-stone-900;
+    @apply text-stone-600 hover:bg-cream hover:text-stone-900;
   }
   .card {
-    @apply rounded-xl border border-stone-200 bg-white;
+    @apply rounded-2xl border border-stone-200 bg-white;
+  }
+  .card-link {
+    @apply transition-all duration-200 hover:-translate-y-1 hover:border-stone-300 hover:shadow-[0_10px_30px_-12px_rgb(0_0_0/0.25)];
   }
   .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-wider text-stone-500;
+    @apply text-xs font-semibold uppercase tracking-[0.14em] text-stone-500;
+  }
+  /* A short three-colour bar: the metro lines A, B, C. */
+  .metro-stripe {
+    @apply flex h-1.5 w-24 overflow-hidden rounded-full;
+    background: linear-gradient(90deg, var(--color-metro-a) 0 33.3%, var(--color-metro-b) 33.3% 66.6%, var(--color-metro-c) 66.6% 100%);
+  }
+  /* Marker-pen highlight for one word in a big headline. */
+  /* A sticker-style highlight for one word in a big headline (dark text on yellow in both themes). */
+  .marker {
+    @apply inline-block -rotate-1 rounded-xl bg-metro-b px-2 text-night;
+  }
+  /* Departure-board panel: stays dark in both themes. */
+  .board {
+    @apply bg-night text-night-text ring-1 ring-white/10;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-cream px-3 py-1 text-xs font-semibold text-stone-700;
   }
 }
 
-/* Prose styling for markdown explanations. */
-.prose-cz { @apply max-w-3xl leading-relaxed text-stone-800; }
-.prose-cz h2 { @apply mt-10 mb-3 text-xl font-semibold tracking-tight text-stone-900; }
-.prose-cz h3 { @apply mt-6 mb-2 text-lg font-semibold text-stone-900; }
-.prose-cz p { @apply my-3; }
-.prose-cz ul { @apply my-3 list-disc pl-6; }
-.prose-cz ol { @apply my-3 list-decimal pl-6; }
-.prose-cz li { @apply my-1; }
-.prose-cz strong { @apply font-semibold text-stone-900; }
+/* Prose styling for markdown explanations. Interactive embeds (.not-prose)
+   are excluded, and get the full width of the page. */
+.prose-cz { @apply leading-relaxed text-stone-800; }
+.prose-cz > :not(.not-prose) { @apply max-w-3xl; }
+.prose-cz h2:not(.not-prose *) { @apply mt-12 mb-3 text-2xl font-bold tracking-tight text-stone-900; }
+.prose-cz h3:not(.not-prose *) { @apply mt-6 mb-2 text-lg font-semibold text-stone-900; }
+.prose-cz p:not(.not-prose *) { @apply my-3; }
+.prose-cz ul:not(.not-prose *) { @apply my-3 list-disc pl-6; }
+.prose-cz ol:not(.not-prose *) { @apply my-3 list-decimal pl-6; }
+.prose-cz li:not(.not-prose *) { @apply my-1; }
+.prose-cz strong:not(.not-prose *) { @apply font-semibold text-stone-900; }
 /* Czech examples in explanations are written in italics: give them the Czech typeface. */
-.prose-cz em { @apply font-serif text-[1.05em]; }
-.prose-cz blockquote { @apply my-5 rounded-r-lg border-l-4 border-amber-400 bg-amber-50 px-4 py-2 text-stone-800; }
-.prose-cz table { @apply my-4 w-full border-collapse text-sm; }
-.prose-cz th { @apply border-b-2 border-stone-300 px-3 py-2 text-left font-semibold; }
-.prose-cz td { @apply border-b border-stone-200 px-3 py-2; }
-.prose-cz code { @apply rounded bg-stone-100 px-1 py-0.5 text-sm; }
-.prose-cz a { @apply text-sky-700 underline underline-offset-2 hover:text-sky-900; }
+.prose-cz em:not(.not-prose *) { @apply font-serif text-[1.05em]; }
+.prose-cz blockquote:not(.not-prose *) { @apply my-5 rounded-2xl border-l-4 border-metro-b bg-cream px-5 py-3 text-stone-800; }
+.prose-cz table:not(.not-prose *) { @apply my-4 w-full border-collapse text-sm; }
+.prose-cz th:not(.not-prose *) { @apply border-b-2 border-stone-300 px-3 py-2 text-left font-semibold; }
+.prose-cz td:not(.not-prose *) { @apply border-b border-stone-200 px-3 py-2; }
+.prose-cz code:not(.not-prose *) { @apply rounded bg-stone-100 px-1 py-0.5 text-sm; }
+.prose-cz a:not(.not-prose *) { @apply text-vltava underline decoration-2 underline-offset-2 hover:text-ink; }

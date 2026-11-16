@@ -101,7 +101,7 @@ export function ReviewPage() {
       {!due ? null : due.total === 0 ? (
         <div className="rounded-xl border border-stone-200 bg-white p-6 text-stone-700">
           <p>Nothing to review yet. Words and exercises are added here as you work through lessons.</p>
-          <Link to="/" className="mt-4 inline-block text-sky-700 underline">Go to the lessons</Link>
+          <Link to="/" className="mt-4 inline-block text-vltava underline">Go to the lessons</Link>
         </div>
       ) : due.dueNow === 0 ? (
         <div className="rounded-xl border border-stone-200 bg-white p-6 text-stone-700">

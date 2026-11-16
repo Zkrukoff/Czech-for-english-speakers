@@ -49,6 +49,9 @@ export function AlphabetPage() {
   );
 }
 
+/** Selected letters light up like the coloured bubble panels in the metro. */
+const BUBBLE = ['bg-metro-a text-white', 'bg-metro-b text-ink', 'bg-metro-c text-white', 'bg-vltava text-white'];
+
 function LetterExplorer({ letters }: { letters: Letter[] }) {
   const [selected, setSelected] = useState<Letter>(letters.find((l) => l.letter === 'ř') ?? letters[0]!);
   return (
@@ -57,7 +60,7 @@ function LetterExplorer({ letters }: { letters: Letter[] }) {
         <p className="mb-3 text-sm text-stone-600">
           Select a letter to hear it and see how it's pronounced. <span className="font-medium text-stone-800">Bold</span> letters are vowels; faded ones appear only in foreign words.
         </p>
-        <ul className="grid grid-cols-6 gap-1.5 sm:grid-cols-7 md:grid-cols-9" aria-label="Letters">
+        <ul className="grid grid-cols-6 gap-2.5 sm:grid-cols-7 md:grid-cols-9" aria-label="Letters">
           {letters.map((l) => {
             const active = l.letter === selected.letter;
             return (
@@ -67,11 +70,11 @@ function LetterExplorer({ letters }: { letters: Letter[] }) {
                   onClick={() => setSelected(l)}
                   aria-pressed={active}
                   lang="cs"
-                  className={`flex aspect-square w-full flex-col items-center justify-center rounded-lg border text-xl transition ${
+                  className={`relative flex aspect-square w-full items-center justify-center rounded-full text-xl transition-all duration-200 hover:scale-110 ${
                     active
-                      ? 'border-stone-900 bg-stone-900 text-white'
-                      : `border-stone-200 bg-white hover:border-stone-500 ${l.loanOnly ? 'text-stone-400' : 'text-stone-900'}`
-                  } ${l.group === 'vowel' ? 'font-semibold' : ''}`}
+                      ? `scale-110 ${BUBBLE[l.letter.charCodeAt(0) % BUBBLE.length]} shadow-lg`
+                      : `bg-white shadow-[inset_-3px_-4px_0_0_rgb(0_0_0/0.06)] ring-1 ring-stone-200 hover:ring-stone-400 ${l.loanOnly ? 'text-stone-400' : 'text-ink'}`
+                  } ${l.group === 'vowel' ? 'font-bold' : ''}`}
                 >
                   <span>{l.letter.length > 1 ? l.upper : `${l.upper}${l.letter}`}</span>
                 </button>

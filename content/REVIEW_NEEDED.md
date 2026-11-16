@@ -112,3 +112,14 @@ check first. When an item is confirmed or corrected, remove it here and set
 | signs | *Pro cestující se sníženou pohyblivostí*, *Přestup na metro B* (tram announcement), *X-A* for metro replacement buses | Are these the exact wordings used? |
 | signs | Station names with *na*: *na Můstku, na Andělu, na Florenci, na Muzeu, na Hlavním nádraží, na Náměstí Míru* | Natural? (Is *na Muzeu* what people say?) |
 | phrases | *Je tady volno?*, *Pustíte mě, prosím?*, *Posaďte se, prosím.*, *Můžete mi ukázat odznak?* | Natural? |
+
+## History timeline and metro map
+
+| Where | Text | Question |
+|---|---|---|
+| timeline | "In a 2005 national TV poll, Czechs voted [Charles IV] the greatest Czech" | Confirm (*Největší Čech*). |
+| timeline | Hus "traditionally credited with the háček and čárka"; "Pravda vítězí" on the presidential flag | Wording OK? |
+| timeline | "pod koněm" as the classic meeting point; Havel and Dubček on the balcony on Wenceslas Square; the 1945/1968 Czech Radio building | Check details. |
+| metro notes | Station notes (e.g. Hradčanská nearest the Castle's north side; Náměstí Míru one of the deepest stations; Vltavská galleries) | Accurate and current? |
+| metro panel | "Vystupte na stanici Můstek." as the model sentence | Natural? |
+| home page | "Ahoj, Praho!", "Příští zastávka", "Konečná" used as decorative Czech | Fine in this playful use? |

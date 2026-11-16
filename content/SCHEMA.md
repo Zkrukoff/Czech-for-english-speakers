@@ -245,6 +245,17 @@ and optional practice sets.
 | `lastChecked` | string? | When prices, lines etc. were last checked, e.g. "November 2026" |
 | `nativeReviewed` | boolean | |
 
+Optional interactive data:
+
+- **`timeline`**: `{id, year, title, titleCs?, summary, significance, place?, nativeReviewed}[]`,
+  shown where a section contains a fenced block with the info string `timeline <guide id>`.
+  `summary` is always visible; `significance` ("why it matters") and `place`
+  ("see it in Prague") open as the event scrolls into focus.
+- **`metro`**: `{lines: {id: 'A'|'B'|'C', nickname, colour, stations[]}[], notes: {station: text}, underConstruction?, nativeReviewed}`,
+  shown with a `metro <guide id>` block. Stations are listed in order from one
+  terminus to the other. Positions on the diagram live in
+  `src/features/guides/MetroMap.tsx`; a test fails if a station has none.
+
 Link to a guide tab from Markdown with `/guides/<id>?tab=<section id>`
 (or `phrases` / `practice`). Put prices, line numbers and timetables only in
 guides with `sources` and `lastChecked`, and re-check them at least yearly.

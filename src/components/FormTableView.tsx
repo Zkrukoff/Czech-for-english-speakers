@@ -9,7 +9,7 @@ import { ReviewStatusBadge } from './ReviewStatusBadge';
  * marker so the absence of an ending is visible too.
  */
 export function FormCell({ value, caseKey }: { value: string; caseKey?: CaseKey }) {
-  const color = caseKey ? CASE_TEXT[caseKey] : 'text-sky-700';
+  const color = caseKey ? CASE_TEXT[caseKey] : 'text-vltava';
   const alts = value.split(' / ');
   return (
     <>

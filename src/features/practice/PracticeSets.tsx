@@ -12,7 +12,7 @@ export function PracticeSets({ sets, context }: { sets: PracticeSet[]; context: 
   if (active) {
     return (
       <>
-        <button type="button" onClick={() => setActive(null)} className="mb-4 text-sm text-sky-700 hover:underline">← All practice sets</button>
+        <button type="button" onClick={() => setActive(null)} className="mb-4 text-sm text-vltava hover:underline">← All practice sets</button>
         <h2 className="mb-1 text-xl font-semibold">{active.set.title}</h2>
         <p className="mb-5 text-stone-600">{active.set.description}</p>
         <ExerciseRunner

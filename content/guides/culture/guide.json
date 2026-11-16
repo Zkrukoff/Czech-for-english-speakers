@@ -737,5 +737,173 @@
     }
   ],
   "sources": [],
-  "nativeReviewed": false
+  "nativeReviewed": false,
+  "timeline": [
+    {
+      "id": "cyril-methodius",
+      "year": "863",
+      "title": "Cyril and Methodius arrive",
+      "titleCs": "Cyril a Metoděj",
+      "summary": "Two Byzantine missionaries come to Great Moravia, bringing Christianity and the first Slavic alphabet.",
+      "significance": "The start of written Slavic culture. Their feast day, 5 July, is a public holiday, which is why July often begins with a long weekend.",
+      "place": "Their statue on Charles Bridge, and the Church of Sts Cyril and Methodius in Resslova street.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "wenceslas",
+      "year": "10th century",
+      "title": "Saint Wenceslas",
+      "titleCs": "svatý Václav",
+      "summary": "Duke Wenceslas (Václav) is murdered by his brother, in 929 or 935, and soon venerated as a saint.",
+      "significance": "The \"eternal prince\" and patron of the Czech lands. Legend says knights sleep inside Blaník hill, ready to wake when the nation is in danger. 28 September is Czech Statehood Day.",
+      "place": "The equestrian statue at the top of Wenceslas Square, the classic place to meet: \"pod koněm\" (under the horse).",
+      "nativeReviewed": false
+    },
+    {
+      "id": "charles-iv",
+      "year": "1346–1378",
+      "title": "Charles IV and the golden age",
+      "titleCs": "Karel IV.",
+      "summary": "The King of Bohemia, later Holy Roman Emperor, makes Prague an imperial capital: Charles University (1348), the New Town, Charles Bridge (1357).",
+      "significance": "Much of the Prague visitors admire is his. In a 2005 national TV poll, Czechs voted him the greatest Czech of all time.",
+      "place": "Charles Bridge, the Karolinum (the university's oldest building) and the New Town around Karlovo náměstí.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "hus",
+      "year": "1415",
+      "title": "Jan Hus burned at the stake",
+      "titleCs": "mistr Jan Hus",
+      "summary": "The reformer who preached in Czech and criticised the Church is burned at the Council of Konstanz. The Hussite wars follow.",
+      "significance": "A symbol of conscience and of the Czech language: Hus is traditionally credited with the háček and čárka. His motto \"Pravda vítězí\" (Truth prevails) is on the presidential flag. 6 July is a public holiday.",
+      "place": "The Hus monument on Old Town Square and the Bethlehem Chapel (Betlémská kaple), where he preached.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "white-mountain",
+      "year": "1620",
+      "title": "The Battle of White Mountain",
+      "titleCs": "Bílá hora",
+      "summary": "The Protestant Czech estates are defeated. In 1621, 27 of their leaders are executed on Old Town Square.",
+      "significance": "Remembered as the beginning of the \"dark age\" (temno): three centuries of Habsburg rule, forced re-Catholicisation and the exile of thinkers such as Jan Amos Komenský (Comenius).",
+      "place": "27 white crosses in the pavement by the Old Town Hall; the battlefield memorial at Bílá Hora, the terminus of tram 22.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "revival",
+      "year": "1780s–1880s",
+      "title": "The National Revival",
+      "titleCs": "národní obrození",
+      "summary": "Writers and scholars bring Czech back as a language of literature, science and the stage. The National Theatre opens in 1883, paid for by public collections.",
+      "significance": "Without it, Czech might have survived only as a rural dialect. It's why the language is cherished, why Czech coined its own words for many things, and why Czechs light up when foreigners learn it.",
+      "place": "\"Národ sobě\" (The nation to itself) in gold above the stage of the National Theatre; the National Museum at the top of Wenceslas Square.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "czechoslovakia",
+      "year": "1918",
+      "title": "Czechoslovakia is born",
+      "titleCs": "vznik Československa",
+      "summary": "On 28 October, as Austria-Hungary collapses, an independent Czechoslovakia is declared. Tomáš Garrigue Masaryk becomes its first president.",
+      "significance": "A modern democracy in the heart of Europe, and the reason 28 October is the main national holiday. Masaryk is still the model of a principled president.",
+      "place": "The Municipal House (Obecní dům), where independence was proclaimed, and the Masaryk statue by Prague Castle.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "munich",
+      "year": "1938",
+      "title": "The Munich Agreement",
+      "titleCs": "Mnichovská dohoda",
+      "summary": "Britain, France, Germany and Italy agree to hand the Czech border regions to Nazi Germany, without Czechoslovakia at the table.",
+      "significance": "\"O nás bez nás\", about us, without us: still shorthand for great powers deciding Czech fate, and a source of lasting scepticism.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "occupation",
+      "year": "1939–1945",
+      "title": "Occupation and resistance",
+      "titleCs": "protektorát a odboj",
+      "summary": "German troops occupy Prague in March 1939. On 17 November 1939 the Nazis close Czech universities after student protests. In 1942, Czechoslovak paratroopers assassinate Reinhard Heydrich; the village of Lidice is destroyed in revenge.",
+      "significance": "17 November became International Students' Day. Operation Anthropoid is one of the most famous resistance acts of the war, and Lidice is remembered worldwide.",
+      "place": "The crypt of the Church of Sts Cyril and Methodius in Resslova street, where the paratroopers made their last stand, with bullet marks still in the wall.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "liberation",
+      "year": "May 1945",
+      "title": "Uprising and liberation",
+      "titleCs": "Pražské povstání",
+      "summary": "Prague rises against the occupiers on 5 May; the war in Europe ends days later.",
+      "significance": "8 May, Victory Day, is a public holiday. Small plaques remembering those who fell in the uprising are on buildings all over the city, often with fresh flowers.",
+      "place": "The Czech Radio building on Vinohradská street, scene of heavy fighting in 1945 (and again in 1968).",
+      "nativeReviewed": false
+    },
+    {
+      "id": "communism",
+      "year": "1948",
+      "title": "The communist takeover",
+      "titleCs": "Únor 1948",
+      "summary": "In February the Communist Party seizes power. Forty-one years of one-party rule begin.",
+      "significance": "This period shaped your colleagues' parents and grandparents: closed borders, nationalised companies, and the panelák housing estates you still see on the edges of every city.",
+      "place": "The vast panelák estate of Jižní Město, around Háje and Opatov on metro line C.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "prague-spring",
+      "year": "1968",
+      "title": "Prague Spring and invasion",
+      "titleCs": "Pražské jaro",
+      "summary": "Alexander Dubček's attempt at \"socialism with a human face\" is crushed when Warsaw Pact armies invade on the night of 20–21 August.",
+      "significance": "Remembered every 21 August, and one reason many Czechs have strong feelings about Russia. \"Normalisation\" followed: two decades of grey conformity.",
+      "place": "Wenceslas Square and the Czech Radio building, where Praguers faced the tanks.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "palach",
+      "year": "1969",
+      "title": "Jan Palach",
+      "titleCs": "Jan Palach",
+      "summary": "In January, the student Jan Palach sets himself on fire on Wenceslas Square in protest against the nation's resignation after the invasion.",
+      "significance": "A lasting symbol of resistance through conscience. Students and politicians still lay flowers at his memorial each January.",
+      "place": "The memorial in the pavement in front of the National Museum, Jan Palach Square (náměstí Jana Palacha) by the Rudolfinum, and his grave at Olšany Cemetery (metro Želivského).",
+      "nativeReviewed": false
+    },
+    {
+      "id": "charter-77",
+      "year": "1977",
+      "title": "Charter 77",
+      "titleCs": "Charta 77",
+      "summary": "Dissidents, including the playwright Václav Havel, sign a document demanding that the regime respect human rights.",
+      "significance": "It built the network of dissidents who led the 1989 revolution; many signatories became the new country's leaders.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "velvet",
+      "year": "17 November 1989",
+      "title": "The Velvet Revolution",
+      "titleCs": "sametová revoluce",
+      "summary": "Police beat a peaceful student march on Národní třída. Within weeks, mass protests and a general strike bring down the regime; Václav Havel becomes president.",
+      "significance": "A peaceful revolution and a point of national pride. 17 November is a public holiday. Havel's line \"Pravda a láska musí zvítězit nad lží a nenávistí\" (Truth and love must prevail over lies and hatred) is still quoted.",
+      "place": "The bronze hands memorial in the arcade on Národní třída, where people light candles every 17 November, and the balcony on Wenceslas Square from which Havel and Dubček spoke.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "velvet-divorce",
+      "year": "1 January 1993",
+      "title": "The Velvet Divorce",
+      "titleCs": "rozdělení Československa",
+      "summary": "Czechoslovakia splits peacefully into the Czech Republic and Slovakia.",
+      "significance": "The two nations remain close: most Czechs understand Slovak, and Slovak TV, music and colleagues are everywhere. 1 January is the restoration of the independent Czech state.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "europe",
+      "year": "1999 / 2004",
+      "title": "NATO and the European Union",
+      "titleCs": "NATO a Evropská unie",
+      "summary": "Czechia joins NATO in 1999 and the European Union in 2004.",
+      "significance": "The freedom to live and work across Europe, which is part of why so many international companies, and you, are here.",
+      "nativeReviewed": false
+    }
+  ]
 }

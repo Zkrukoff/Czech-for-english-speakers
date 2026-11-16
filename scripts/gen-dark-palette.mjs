@@ -35,6 +35,11 @@ lines.push(
   '  --color-case-voc: #2dd4bf;',
   '  --color-case-loc: #60a5fa;',
   '  --color-case-ins: #4ade80;',
+  // Prague palette: dark paper, deep cream panels, light ink, a brighter Vltava for links.
+  '  --color-paper: #100e0c;',
+  '  --color-cream: #241f18;',
+  '  --color-ink: #f5f1ea;',
+  '  --color-vltava: #7fb0ff;',
   '  color-scheme: dark;',
 );
 

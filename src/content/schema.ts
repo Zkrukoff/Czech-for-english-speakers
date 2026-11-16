@@ -321,6 +321,39 @@ export const PhraseSchema = z.object({
   nativeReviewed: reviewed,
 });
 
+export const TimelineEventSchema = z.object({
+  id,
+  /** Display date: "1415", "May 1945", "10th century". */
+  year: z.string().min(1),
+  title: z.string().min(1),
+  titleCs: z.string().optional(),
+  /** What happened (always visible). */
+  summary: z.string().min(1),
+  /** Why it matters today (revealed as the event scrolls into focus). */
+  significance: z.string().min(1),
+  /** Where to see it in Prague. */
+  place: z.string().optional(),
+  nativeReviewed: reviewed,
+});
+
+export const MetroSchema = z.object({
+  lines: z
+    .array(
+      z.object({
+        id: z.enum(['A', 'B', 'C']),
+        nickname: z.string(),
+        colour: z.string().regex(/^#[0-9a-f]{6}$/i),
+        /** Stations in order, from the first terminus to the last. */
+        stations: z.array(z.string().min(1)).min(2),
+      }),
+    )
+    .length(3),
+  /** Short notes for stations, keyed by station name. */
+  notes: z.record(z.string(), z.string()).default({}),
+  underConstruction: z.string().optional(),
+  nativeReviewed: reviewed,
+});
+
 export const GuideSchema = z.object({
   id,
   title: z.string().min(1),
@@ -335,6 +368,10 @@ export const GuideSchema = z.object({
   practice: z.array(PracticeSetSchema).default([]),
   /** For guides with facts that change (prices, lines): where to check, and when they were last checked. */
   sources: z.array(z.object({ title: z.string().min(1), url: z.string().url() })).default([]),
+  /** Optional history timeline, embedded in a section with a ```timeline <guide id>``` block. */
+  timeline: z.array(TimelineEventSchema).optional(),
+  /** Optional metro data, embedded with a ```metro <guide id>``` block. */
+  metro: MetroSchema.optional(),
   lastChecked: z.string().optional(),
   nativeReviewed: reviewed,
 });
@@ -359,3 +396,5 @@ export type PracticeSet = z.infer<typeof PracticeSetSchema>;
 export type AlphabetData = z.infer<typeof AlphabetSchema>;
 export type Phrase = z.infer<typeof PhraseSchema>;
 export type GuideData = z.infer<typeof GuideSchema>;
+export type TimelineEvent = z.infer<typeof TimelineEventSchema>;
+export type MetroData = z.infer<typeof MetroSchema>;

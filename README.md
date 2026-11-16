@@ -89,10 +89,15 @@ paid GitHub plan; on a free plan, make the repository public.)
 
 ## Design
 
-The look, tone and interaction rules are in **[docs/DESIGN.md](docs/DESIGN.md)**:
-calm ink-on-paper interface, Czech set in its own serif typeface, colour
-reserved for grammar (one colour per case) and feedback, light and dark
-themes, and a checklist for new screens.
+The look, tone and interaction rules are in **[docs/DESIGN.md](docs/DESIGN.md)**.
+The frame takes its identity from Prague: the metro line colours, the
+"bubble" wall panels of the metro stations, departure boards, units drawn as
+metro lines with lessons as stops, and a bold display typeface. The learning
+itself stays calm: Czech in its own serif, colour for grammar only in tables,
+light and dark themes, and full support for reduced motion.
+
+Interactive pieces: a scroll-driven history timeline (culture guide) and an
+interactive metro map with all 61 stations (transport guide).
 
 ## Project layout
 

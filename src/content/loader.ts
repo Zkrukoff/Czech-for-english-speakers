@@ -99,6 +99,7 @@ function formatZodError(path: string, error: z.ZodError): string[] {
 
 const TABLE_EMBED = /```table\s+([a-z0-9-]+)\s*```/g;
 const VERB_EMBED = /```verb\s+([^\n`]+?)\s*```/g;
+const GUIDE_EMBED = /```(timeline|metro)\s+([a-z0-9-]+)\s*```/g;
 
 export function loadContent(files: ContentFiles): LoadResult {
   const errors: string[] = [];
@@ -360,6 +361,12 @@ export function loadContent(files: ContentFiles): LoadResult {
     }
     for (const m of md.matchAll(VERB_EMBED)) {
       if (!course.verbsByLemma.has(m[1]!)) errors.push(`${where}: embedded verb "${m[1]}" is not in verbs.json`);
+    }
+    for (const m of md.matchAll(GUIDE_EMBED)) {
+      const g = course.guidesById.get(m[2]!);
+      if (!g) errors.push(`${where}: embedded ${m[1]} refers to unknown guide "${m[2]}"`);
+      else if (m[1] === 'timeline' && !g.timeline?.length) errors.push(`${where}: guide "${m[2]}" has no timeline`);
+      else if (m[1] === 'metro' && !g.metro) errors.push(`${where}: guide "${m[2]}" has no metro data`);
     }
   };
   for (const page of course.grammarPages) checkEmbeds(page.body, page.path);

@@ -49,7 +49,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
 
   return (
     <>
-      <Link to={`/units/${unit.id}`} className="text-sm text-sky-700 hover:underline">← Unit {unit.number}: {unit.title}</Link>
+      <Link to={`/units/${unit.id}`} className="text-sm text-vltava hover:underline">← Unit {unit.number}: {unit.title}</Link>
       <PageHeader eyebrow={`Lesson ${lesson.number}`} title={lesson.title}>
         <div className="mt-3"><ReviewStatusBadge reviewed={lesson.nativeReviewed} /></div>
       </PageHeader>
@@ -78,7 +78,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
               {grammarLinks.map((p, i) => (
                 <span key={p.id}>
                   {i > 0 && ', '}
-                  <Link className="text-sky-700 underline" to={p.section === 'verbs' ? `/verbs/${p.id}` : `/grammar/${p.id}`}>{p.title}</Link>
+                  <Link className="text-vltava underline" to={p.section === 'verbs' ? `/verbs/${p.id}` : `/grammar/${p.id}`}>{p.title}</Link>
                 </span>
               ))}
             </p>

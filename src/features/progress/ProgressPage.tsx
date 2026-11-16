@@ -64,7 +64,7 @@ export function ProgressPage() {
             <div key={u.id} className="rounded-xl border border-stone-200 bg-white p-4">
               <div className="mb-2 flex items-baseline justify-between gap-2">
                 <Link to={`/units/${u.id}`} className="font-semibold hover:underline">{u.number}. {u.title}</Link>
-                <Link to={`/units/${u.id}/check`} className="shrink-0 text-xs text-sky-700 underline">unit check</Link>
+                <Link to={`/units/${u.id}/check`} className="shrink-0 text-xs text-vltava underline">unit check</Link>
               </div>
               <div className="text-sm"><GoalList goals={u.canDo} /></div>
             </div>

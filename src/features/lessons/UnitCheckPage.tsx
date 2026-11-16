@@ -23,7 +23,7 @@ function UnitCheck({ unit }: { unit: Unit }) {
 
   return (
     <>
-      <Link to={`/units/${unit.id}`} className="text-sm text-sky-700 hover:underline">← Unit {unit.number}: {unit.title}</Link>
+      <Link to={`/units/${unit.id}`} className="text-sm text-vltava hover:underline">← Unit {unit.number}: {unit.title}</Link>
       <PageHeader title="What can you do now?" subtitle="This check tests each of the unit's goals. No time limit, and no hints from earlier answers: it's to show you where you are." />
 
       {phase.kind === 'intro' && (
