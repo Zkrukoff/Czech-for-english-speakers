@@ -27,7 +27,7 @@ export function DialogueView({ dialogue }: { dialogue: Dialogue }) {
           <input type="checkbox" checked={showEn} onChange={(e) => setShowEn(e.target.checked)} />
           Show English
         </label>
-        <button type="button" onClick={playing ? () => { speech.stop(); setPlaying(false); } : playAll} className="rounded-md border border-stone-300 px-3 py-1 hover:bg-stone-100">
+        <button type="button" onClick={playing ? () => { speech.stop(); setPlaying(false); } : playAll} className="btn btn-secondary">
           {playing ? 'Stop' : 'Play whole dialogue'}
         </button>
       </div>

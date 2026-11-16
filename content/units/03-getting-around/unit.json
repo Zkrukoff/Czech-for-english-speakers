@@ -1,8 +1,8 @@
 {
   "id": "u03",
-  "title": "Getting around",
+  "title": "Getting around and commuting",
   "titleCs": "Ve městě",
-  "situation": "Finding your way around town, using public transport and buying tickets.",
+  "situation": "Finding your way, getting to work by tram, metro, bus or train, and buying tickets.",
   "canDo": [
     {
       "id": "u03-g1",
@@ -10,7 +10,7 @@
     },
     {
       "id": "u03-g2",
-      "text": "You can say where you're going and how (on foot, by tram, by train)."
+      "text": "You can say where you're going and how you get to work."
     },
     {
       "id": "u03-g3",

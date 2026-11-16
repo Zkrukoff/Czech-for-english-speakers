@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { CASES, CASE_KEYS, GRAMMAR_SKILLS } from './taxonomy';
+import { ALPHABET_SKILL, CASES, CASE_KEYS, GRAMMAR_SKILLS } from './taxonomy';
 
 /**
  * Zod schemas for everything in /content. These are the source of truth for
@@ -14,8 +14,8 @@ const id = z.string().regex(/^[a-z0-9][a-z0-9-]*$/, 'ids use lowercase letters, 
 
 export const SkillTagSchema = z
   .string()
-  .refine((s) => GRAMMAR_SKILLS.includes(s) || /^vocab:[a-z0-9-]+$/.test(s), {
-    message: 'skill must be case:<case>, verb:<topic> or vocab:<vocabId>',
+  .refine((s) => GRAMMAR_SKILLS.includes(s) || s === ALPHABET_SKILL || /^vocab:[a-z0-9-]+$/.test(s), {
+    message: 'skill must be case:<case>, verb:<topic>, vocab:<vocabId> or alphabet',
   });
 
 export const SpokenFormSchema = z.object({
@@ -130,12 +130,31 @@ export const DialogueCompleteExerciseSchema = z.object({
   prompt: z.string().min(1),
 });
 
+/**
+ * A general typed question, used e.g. for the alphabet: an English
+ * instruction, optionally a Czech text to read or listen to, and a typed
+ * answer in Czech or English.
+ */
+export const QuestionExerciseSchema = z.object({
+  ...exerciseBase,
+  type: z.literal('question'),
+  /** Instruction or question, in English. "**bold**" allowed. */
+  prompt: z.string().min(1),
+  /** Czech text shown large (with a listen button), e.g. a spelled-out name. */
+  cs: z.string().optional(),
+  /** What the listen button says, if different from `cs`. */
+  speak: z.string().optional(),
+  /** Language of the expected answer (sets the on-screen keyboard). */
+  answerLang: z.enum(['cs', 'en']).default('cs'),
+});
+
 export const ExerciseSchema = z.discriminatedUnion('type', [
   TranslateExerciseSchema,
   FillEndingExerciseSchema,
   CaseSelectExerciseSchema,
   ConjugateExerciseSchema,
   DialogueCompleteExerciseSchema,
+  QuestionExerciseSchema,
 ]);
 
 export const LessonSchema = z.object({
@@ -256,6 +275,42 @@ export const VerbSchema = z.object({
 
 export const VerbFileSchema = z.object({ verbs: z.array(VerbSchema) });
 
+/* ---------- Alphabet ---------- */
+
+export const LetterSchema = z.object({
+  /** Lower-case letter, e.g. "č" or "ch". */
+  letter: z.string().min(1).max(2),
+  upper: z.string().min(1).max(2),
+  /** How the letter is named when spelling aloud, e.g. "čé", "eř". */
+  name: z.string().min(1),
+  group: z.enum(['vowel', 'consonant']),
+  /** Plain-English description of the sound. */
+  sound: z.string().min(1),
+  ipa: z.string().min(1),
+  example: z.object({ cs: z.string().min(1), en: z.string().min(1) }),
+  /** Word from the traditional Czech phone-spelling alphabet ("Č jako Čeněk"). */
+  spellingWord: z.string().optional(),
+  tip: z.string().optional(),
+  /** Only appears in foreign words and names. */
+  loanOnly: z.boolean().optional(),
+  nativeReviewed: reviewed,
+});
+
+export const PracticeSetSchema = z.object({
+  id,
+  title: z.string().min(1),
+  description: z.string().min(1),
+  exercises: z.array(ExerciseSchema).min(1),
+});
+
+export const AlphabetSchema = z.object({
+  /** Markdown file in content/alphabet/ with the pronunciation guide. */
+  intro: z.string().default('intro.md'),
+  letters: z.array(LetterSchema).min(1),
+  practice: z.array(PracticeSetSchema).default([]),
+  nativeReviewed: reviewed,
+});
+
 /* ---------- Inferred types ---------- */
 
 export type VocabItem = z.infer<typeof VocabItemSchema>;
@@ -271,3 +326,6 @@ export type CourseData = z.infer<typeof CourseSchema>;
 export type GrammarFrontmatter = z.infer<typeof GrammarFrontmatterSchema>;
 export type FormTable = z.infer<typeof FormTableSchema>;
 export type Verb = z.infer<typeof VerbSchema>;
+export type Letter = z.infer<typeof LetterSchema>;
+export type PracticeSet = z.infer<typeof PracticeSetSchema>;
+export type AlphabetData = z.infer<typeof AlphabetSchema>;

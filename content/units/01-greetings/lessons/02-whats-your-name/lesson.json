@@ -103,10 +103,19 @@
       "en": "new (masc. / fem.)",
       "pos": "adj",
       "nativeReviewed": false
+    },
+    {
+      "id": "v-kolega",
+      "cs": "kolega / kolegyně",
+      "en": "colleague (male / female)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "notes": "Plural: kolegové (men or a mixed group), kolegyně (women).",
+      "nativeReviewed": false
     }
   ],
   "dialogue": {
-    "setting": "A welcome party at a language school.",
+    "setting": "Sarah's first week at an international company in Prague. Martin from her new team says hello at the welcome lunch.",
     "lines": [
       {
         "speaker": "Martin",
@@ -144,8 +153,8 @@
       },
       {
         "speaker": "Sarah",
-        "cs": "To je moje kamarádka. Jmenuje se Emma.",
-        "en": "That's my friend. Her name's Emma.",
+        "cs": "To je moje kolegyně. Jmenuje se Emma.",
+        "en": "That's my colleague. Her name's Emma.",
         "nativeReviewed": false
       },
       {
@@ -320,14 +329,14 @@
       "id": "u01-l02-e7",
       "type": "translate",
       "direction": "cs-en",
-      "prompt": "To je moje kamarádka.",
+      "prompt": "To je moje kolegyně.",
       "answers": [
-        "{This is|That is|That's|She is|She's} my [female ]friend[.]"
+        "{This is|That is|That's|She is|She's} my colleague[.]"
       ],
-      "why": "kamarádka is a female friend (a male friend is kamarád). To je… means \"This/That is…\".",
+      "why": "kolegyně is a female colleague (a male colleague is kolega). To je… means \"This/That is…\".",
       "hints": [],
       "skills": [
-        "vocab:v-kamarad"
+        "vocab:v-kolega"
       ],
       "nativeReviewed": false
     }

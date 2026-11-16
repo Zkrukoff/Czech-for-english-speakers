@@ -1,34 +1,93 @@
+/* Design rules live in docs/DESIGN.md. Keep this file in line with it. */
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/source-serif-4";
+@import "@fontsource-variable/source-serif-4/opsz-italic.css";
 @import "tailwindcss";
+@import "./styles/dark-palette.css";
 
-/* One colour per case, used everywhere endings are highlighted. */
 @theme {
-  --color-case-nom: #475569;
+  /* Type: English (the interface) in a sans; Czech (what you're learning) in a serif. */
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
+
+  /* Colour carries grammar: one colour per case, used everywhere endings are shown. */
+  --color-case-nom: #57534e;
   --color-case-gen: #b45309;
   --color-case-dat: #7c3aed;
   --color-case-acc: #be123c;
   --color-case-voc: #0f766e;
   --color-case-loc: #1d4ed8;
   --color-case-ins: #15803d;
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
-  body { @apply bg-stone-50 text-stone-900 antialiased; }
-  :focus-visible { @apply outline-2 outline-offset-2 outline-sky-600; }
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-stone-50 font-sans text-stone-900 antialiased;
+  }
+  /* Anything marked lang="cs" is set in the serif, so Czech always stands out from the interface. */
+  :lang(cs) {
+    font-family: var(--font-serif);
+    font-optical-sizing: auto;
+  }
+  /* …but form controls stay readable as inputs. */
+  input:lang(cs) {
+    font-family: var(--font-serif);
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-sky-600;
+  }
+  ::selection {
+    @apply bg-sky-200 text-stone-900;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Buttons: one primary action per screen; everything else is secondary. */
+  .btn {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-primary {
+    @apply bg-stone-900 text-white hover:bg-stone-700;
+  }
+  .btn-secondary {
+    @apply border border-stone-300 bg-white text-stone-900 hover:bg-stone-100;
+  }
+  .btn-quiet {
+    @apply text-stone-600 hover:bg-stone-100 hover:text-stone-900;
+  }
+  .card {
+    @apply rounded-xl border border-stone-200 bg-white;
+  }
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-wider text-stone-500;
+  }
 }
 
 /* Prose styling for markdown explanations. */
-.prose-cz { @apply leading-relaxed text-stone-800; }
-.prose-cz h2 { @apply mt-8 mb-3 text-xl font-semibold text-stone-900; }
+.prose-cz { @apply max-w-3xl leading-relaxed text-stone-800; }
+.prose-cz h2 { @apply mt-10 mb-3 text-xl font-semibold tracking-tight text-stone-900; }
 .prose-cz h3 { @apply mt-6 mb-2 text-lg font-semibold text-stone-900; }
 .prose-cz p { @apply my-3; }
 .prose-cz ul { @apply my-3 list-disc pl-6; }
 .prose-cz ol { @apply my-3 list-decimal pl-6; }
 .prose-cz li { @apply my-1; }
 .prose-cz strong { @apply font-semibold text-stone-900; }
-.prose-cz blockquote { @apply my-4 rounded-r-md border-l-4 border-amber-400 bg-amber-50 px-4 py-2; }
+/* Czech examples in explanations are written in italics: give them the Czech typeface. */
+.prose-cz em { @apply font-serif text-[1.05em]; }
+.prose-cz blockquote { @apply my-5 rounded-r-lg border-l-4 border-amber-400 bg-amber-50 px-4 py-2 text-stone-800; }
 .prose-cz table { @apply my-4 w-full border-collapse text-sm; }
 .prose-cz th { @apply border-b-2 border-stone-300 px-3 py-2 text-left font-semibold; }
 .prose-cz td { @apply border-b border-stone-200 px-3 py-2; }
 .prose-cz code { @apply rounded bg-stone-100 px-1 py-0.5 text-sm; }
-.prose-cz a { @apply text-sky-700 underline underline-offset-2; }
+.prose-cz a { @apply text-sky-700 underline underline-offset-2 hover:text-sky-900; }

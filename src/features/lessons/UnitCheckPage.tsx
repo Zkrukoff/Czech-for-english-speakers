@@ -37,7 +37,7 @@ function UnitCheck({ unit }: { unit: Unit }) {
           <p className="mt-4 text-sm text-stone-600">
             {unit.check.exercises.length} questions. A goal counts as done when you get at least {Math.round(unit.check.passRatio * 100)}% of its questions right.
           </p>
-          <button type="button" onClick={() => setPhase({ kind: 'running', run: 0 })} className="mt-5 rounded-lg bg-stone-900 px-5 py-2.5 font-medium text-white hover:bg-stone-700">
+          <button type="button" onClick={() => setPhase({ kind: 'running', run: 0 })} className="mt-5 btn btn-primary">
             Start
           </button>
         </div>
@@ -80,8 +80,8 @@ function UnitCheck({ unit }: { unit: Unit }) {
             ))}
           </ul>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link to="/progress" className="rounded-lg bg-stone-900 px-5 py-2.5 font-medium text-white hover:bg-stone-700">See your progress</Link>
-            <button type="button" onClick={() => setPhase({ kind: 'running', run: phase.run + 1 })} className="rounded-lg border border-stone-300 px-5 py-2.5 font-medium hover:bg-stone-100">
+            <Link to="/progress" className="btn btn-primary">See your progress</Link>
+            <button type="button" onClick={() => setPhase({ kind: 'running', run: phase.run + 1 })} className="btn btn-secondary">
               Take the check again
             </button>
           </div>

@@ -36,8 +36,8 @@ export function GrammarIndex() {
         })}
       </ul>
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link to="/grammar/tables" className="rounded-lg bg-stone-900 px-4 py-2 text-sm font-medium text-white hover:bg-stone-700">All declension tables</Link>
-        <Link to="/verbs" className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium hover:bg-stone-100">Verb track</Link>
+        <Link to="/grammar/tables" className="btn btn-primary">All declension tables</Link>
+        <Link to="/verbs" className="btn btn-secondary">Verb track</Link>
       </div>
     </>
   );

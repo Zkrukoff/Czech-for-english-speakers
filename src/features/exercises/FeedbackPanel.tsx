@@ -22,13 +22,16 @@ function DiffText({ result }: { result: CheckResult }) {
 /** Answers to Czech prompts are in Czech; cs→en translations and case choices aren't. */
 export function answerIsCzech(ex: Exercise): boolean {
   if (ex.type === 'translate') return ex.direction === 'en-cs';
+  if (ex.type === 'question') return ex.answerLang === 'cs';
   return ex.type !== 'caseSelect';
 }
 
 export function FeedbackPanel({ exercise, result, answer }: { exercise: Exercise; result: CheckResult; answer: string }) {
   const grammarSkill = exercise.skills.find((s) => !s.startsWith('vocab:'));
   const page = grammarSkill ? course.grammarBySkill.get(grammarSkill) : undefined;
-  const pageHref = page ? (page.section === 'verbs' ? `/verbs/${page.id}` : `/grammar/${page.id}`) : undefined;
+  const pageHref =
+    grammarSkill === 'alphabet' ? '/alphabet' : page ? (page.section === 'verbs' ? `/verbs/${page.id}` : `/grammar/${page.id}`) : undefined;
+  const pageTitle = grammarSkill === 'alphabet' ? 'Alphabet' : page?.title.split(':')[0]!.split('(')[0]!.trim();
   const czech = answerIsCzech(exercise);
   // For fill-in-the-ending, read out the whole sentence with the right word in place.
   const speakText = exercise.type === 'fillEnding' ? exercise.prompt.replace(/\p{L}*___/u, result.expected) : result.expected;
@@ -75,7 +78,7 @@ export function FeedbackPanel({ exercise, result, answer }: { exercise: Exercise
       )}
       {result.status !== 'correct' && pageHref && (
         <Link to={pageHref} target="_blank" className="mt-2 inline-block text-sm text-sky-700 underline">
-          Open the {page!.title.split(':')[0]!.split('(')[0]!.trim()} page ↗
+          Open the {pageTitle} page ↗
         </Link>
       )}
     </div>

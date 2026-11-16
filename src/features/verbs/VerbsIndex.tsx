@@ -6,7 +6,7 @@ export function VerbsIndex() {
   return (
     <>
       <PageHeader title="Verbs" subtitle="Verbs are a core track. Work through these topics in order; each builds on the one before.">
-        <Link to="/verbs/lookup" className="mt-4 inline-block rounded-lg bg-stone-900 px-4 py-2 text-sm font-medium text-white hover:bg-stone-700">
+        <Link to="/verbs/lookup" className="btn btn-primary mt-4">
           Verb lookup ({course.verbs.length} verbs)
         </Link>
       </PageHeader>

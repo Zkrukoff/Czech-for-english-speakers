@@ -75,7 +75,7 @@ export function FormTableView({ table, compact = false }: { table: FormTable; co
                   {row.case ? <CaseLabel caseKey={row.case} /> : row.label}
                 </th>
                 {row.forms.map((f, j) => (
-                  <td key={j} className="px-4 py-2 text-base text-stone-900">
+                  <td key={j} lang="cs" className="px-4 py-2 text-base text-stone-900">
                     <FormCell value={f} caseKey={row.case} />
                   </td>
                 ))}

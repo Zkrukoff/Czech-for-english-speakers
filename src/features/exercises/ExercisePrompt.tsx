@@ -24,6 +24,7 @@ const TYPE_LABEL: Record<Exercise['type'], string> = {
   caseSelect: 'Which case?',
   conjugate: 'Conjugate',
   dialogueComplete: 'Complete the dialogue',
+  question: 'Alphabet and sounds',
 };
 
 export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
@@ -63,6 +64,17 @@ export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
           </p>
           <p className="text-2xl font-medium" lang="cs"><InlineCzech text={exercise.prompt} /></p>
           {exercise.en && <p className="text-sm text-stone-600">“{exercise.en}”</p>}
+        </>
+      )}
+      {exercise.type === 'question' && (
+        <>
+          <p className="text-xl font-medium"><InlineCzech text={exercise.prompt} /></p>
+          {exercise.cs && (
+            <p className="flex items-center gap-2 rounded-lg bg-stone-100 px-4 py-3 text-2xl" lang="cs">
+              {exercise.cs}
+              <SpeakButton text={exercise.speak ?? exercise.cs} />
+            </p>
+          )}
         </>
       )}
       {exercise.type === 'dialogueComplete' && (

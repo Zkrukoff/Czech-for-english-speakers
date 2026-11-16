@@ -113,9 +113,9 @@ function LessonView({ lesson }: { lesson: Lesson }) {
       {step !== 'practice' && (
         <div className="mt-10 flex justify-between border-t border-stone-200 pt-6">
           {stepIndex > 0 ? (
-            <button type="button" onClick={() => setStep(STEPS[stepIndex - 1]!.id)} className="rounded-lg px-4 py-2 text-stone-600 hover:bg-stone-100">← {STEPS[stepIndex - 1]!.label}</button>
+            <button type="button" onClick={() => setStep(STEPS[stepIndex - 1]!.id)} className="btn btn-quiet">← {STEPS[stepIndex - 1]!.label}</button>
           ) : <span />}
-          <button type="button" onClick={() => setStep(STEPS[stepIndex + 1]!.id)} className="rounded-lg bg-stone-900 px-5 py-2.5 font-medium text-white hover:bg-stone-700">
+          <button type="button" onClick={() => setStep(STEPS[stepIndex + 1]!.id)} className="btn btn-primary">
             {STEPS[stepIndex + 1]!.label} →
           </button>
         </div>

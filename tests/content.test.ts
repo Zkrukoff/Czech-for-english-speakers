@@ -55,8 +55,8 @@ describe('exercises are self-consistent', async () => {
   const { course, warnings } = loadContent(contentFiles);
   const all = [...course.exercisesById.values()].map((e) => e.exercise);
 
-  it('has three units of four lessons, each with exercises', () => {
-    expect(course.units).toHaveLength(3);
+  it('has four units of four lessons, each with exercises', () => {
+    expect(course.units).toHaveLength(4);
     for (const u of course.units) expect(u.lessonList).toHaveLength(4);
   });
 
@@ -92,5 +92,25 @@ describe('exercises are self-consistent', async () => {
 
   it('every lesson links only to grammar pages that exist', () => {
     expect(warnings.filter((w) => w.includes('grammar page'))).toEqual([]);
+  });
+});
+
+describe('alphabet', () => {
+  const { course } = loadContent(contentFiles);
+  const a = course.alphabet!;
+
+  it('has all 42 letters of the Czech alphabet, in order', () => {
+    const expected = 'a á b c č d ď e é ě f g h ch i í j k l m n ň o ó p q r ř s š t ť u ú ů v w x y ý z ž'.split(' ');
+    expect(a.letters.map((l) => l.letter)).toEqual(expected);
+  });
+
+  it('has an intro page and practice sets', () => {
+    expect(a.introMd).toMatch(/## /);
+    expect(a.practice.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('requires exact diacritics where the letter itself is the answer', () => {
+    const sounds = a.practice.find((s) => s.id === 'alphabet-sounds')!;
+    for (const ex of sounds.exercises) expect(ex.diacriticsMatter, ex.id).toBe(true);
   });
 });

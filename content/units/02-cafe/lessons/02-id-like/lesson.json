@@ -111,10 +111,18 @@
       "en": "Anything to drink?",
       "pos": "phrase",
       "nativeReviewed": false
+    },
+    {
+      "id": "v-poledni-menu",
+      "cs": "polední menu",
+      "en": "daily lunch menu",
+      "pos": "phrase",
+      "notes": "Two to four set dishes at lunchtime (usually about 11:00–14:00), often with soup, at a good price.",
+      "nativeReviewed": false
     }
   ],
   "dialogue": {
-    "setting": "Lunch at a traditional Czech pub. The waitress comes to Anna and Tom's table.",
+    "setting": "Lunch with a colleague at a traditional pub near the office. Like most places near offices, it has a daily lunch menu.",
     "lines": [
       {
         "speaker": "Číšnice",

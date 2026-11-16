@@ -121,10 +121,18 @@
       "en": "Have a good trip!",
       "pos": "phrase",
       "nativeReviewed": false
+    },
+    {
+      "id": "v-predplatni",
+      "cs": "předplatní jízdenka",
+      "en": "travel pass, season ticket",
+      "pos": "phrase",
+      "notes": "Monthly (měsíční) or annual (roční). In Prague it's usually loaded on the Lítačka card or app.",
+      "nativeReviewed": false
     }
   ],
   "dialogue": {
-    "setting": "Friday afternoon. Eva bumps into Jakub, who is carrying a big bag.",
+    "setting": "Friday afternoon at the office. Eva bumps into her colleague Jakub, who is carrying a big bag.",
     "lines": [
       {
         "speaker": "Eva",

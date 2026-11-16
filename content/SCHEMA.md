@@ -19,6 +19,9 @@ content/
 │   ├── verbs/*.md                   one page per verb topic
 │   └── tables/*.json                declension tables
 ├── verbs/verbs.json                 the verb lookup
+├── alphabet/
+│   ├── alphabet.json                letters + practice sets
+│   └── intro.md                     pronunciation guide
 ├── REVIEW_NEEDED.md                 items for a native speaker to check
 └── SCHEMA.md                        this file
 ```
@@ -40,6 +43,7 @@ after a native speaker has checked that item. Anything `false` shows a
   are the keys for the learner's review history. **Don't rename an id once
   published**, or learners lose that item's history.
 - **Skill tags** link exercises to grammar topics and vocabulary:
+  - `alphabet`: alphabet and pronunciation practice
   - `case:<case>`: nominative, genitive, dative, accusative, vocative, locative, instrumental
   - `verb:<topic>`: present-classes, irregulars, past, aspect, future, motion, reflexive, modals, imperative, conditional
   - `vocab:<vocab id>`: must exist in some lesson's `vocab`
@@ -131,6 +135,7 @@ Types:
 | `caseSelect` | `prompt` with the word in `**bold**`; `question`; `options` (case names); `en?` | Picks the case. `answers` = `["genitive"]` |
 | `conjugate` | `verb` (should be in verbs.json); `person?` (`1sg`…`3pl`); `tense?`; `prompt` with `___`; `en?` | Types the verb form |
 | `dialogueComplete` | `context: {speaker, cs, en?}[]`; `prompt` (English instruction) | Types the reply |
+| `question` | `prompt` (English, `**bold**` allowed); `cs?` (Czech text shown large with a listen button); `speak?` (what the listen button says, if different); `answerLang`: `cs` (default) or `en` | Types an answer to a free-form question |
 
 ### Answer patterns
 
@@ -194,6 +199,29 @@ Each form is `stem|ending`; the ending is coloured by the row's case. Use
 `" / "` between alternatives (`"pán|ovi / pán|u"`) and an empty ending for
 zero endings (`"žen|"`). Forms without `|` are shown uncoloured (pronouns).
 Every row needs one form per column.
+
+## Alphabet (`alphabet/alphabet.json`)
+
+```json
+{
+  "intro": "intro.md",
+  "letters": [{
+    "letter": "č", "upper": "Č", "name": "čé", "group": "consonant",
+    "sound": "like the \"ch\" in \"church\"", "ipa": "tʃ",
+    "example": { "cs": "čaj", "en": "tea" },
+    "spellingWord": "Čeněk", "tip": "…", "loanOnly": false,
+    "nativeReviewed": false
+  }],
+  "practice": [{ "id": "alphabet-sounds", "title": "…", "description": "…", "exercises": [ … ] }],
+  "nativeReviewed": false
+}
+```
+
+Letters are listed in Czech alphabetical order (*ch* after *h*). `name` is
+how the letter is said when spelling aloud; `spellingWord` is its word in the
+traditional phone-spelling alphabet ("Č jako Čeněk"). Practice exercises are
+ordinary exercises (usually `question`) with the skill `alphabet`. Set
+`diacriticsMatter: true` where the diacritic is the point of the question.
 
 ## Verbs (`verbs/verbs.json`)
 

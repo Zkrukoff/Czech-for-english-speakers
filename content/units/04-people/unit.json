@@ -1,0 +1,224 @@
+{
+  "id": "u04",
+  "title": "People at work",
+  "titleCs": "Lidé kolem nás",
+  "situation": "Describing colleagues, family and friends: what they look like, what they're like, and what they do.",
+  "canDo": [
+    {
+      "id": "u04-g1",
+      "text": "You can describe what someone looks like."
+    },
+    {
+      "id": "u04-g2",
+      "text": "You can say what someone is like as a person and to work with."
+    },
+    {
+      "id": "u04-g3",
+      "text": "You can talk about your family and say how old someone is."
+    },
+    {
+      "id": "u04-g4",
+      "text": "You can introduce colleagues and say what they do."
+    }
+  ],
+  "lessons": [
+    "01-what-do-they-look-like",
+    "02-what-are-they-like",
+    "03-family",
+    "04-the-team"
+  ],
+  "check": {
+    "passRatio": 0.8,
+    "exercises": [
+      {
+        "id": "u04-c1",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "She's tall and has short hair.",
+        "goalId": "u04-g1",
+        "answers": [
+          "[Je ]vysoká{,| a} má krátké vlasy[.]"
+        ],
+        "why": "Feminine adjective vysoká; vlasy is plural: krátké vlasy.",
+        "hints": [
+          {
+            "wrong": "[Je ]vysoký{,| a} má krátké vlasy[.]",
+            "explain": "For \"she\": vysoká."
+          },
+          {
+            "wrong": "[Je ]vysoká{,| a} má krátký vlasy[.]",
+            "explain": "Standard Czech: krátké vlasy (plural)."
+          }
+        ],
+        "skills": [
+          "case:nominative",
+          "case:accusative",
+          "vocab:v-vysoky"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u04-c2",
+        "type": "fillEnding",
+        "prompt": "Má dlouh___ vlasy.",
+        "base": "dlouhý",
+        "en": "He has long hair.",
+        "goalId": "u04-g1",
+        "answers": [
+          "é"
+        ],
+        "why": "vlasy is plural: dlouhé vlasy.",
+        "hints": [
+          {
+            "wrong": "ý",
+            "explain": "vlasy is plural: dlouhé."
+          }
+        ],
+        "skills": [
+          "case:accusative",
+          "vocab:v-vlasy"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u04-c3",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "My boss is very strict. (a male boss)",
+        "goalId": "u04-g2",
+        "answers": [
+          "Můj šéf je {velmi|moc|hodně} přísný[.]"
+        ],
+        "why": "můj šéf (masculine); velmi / moc + přísný.",
+        "hints": [
+          {
+            "wrong": "Moje šéf je {velmi|moc|hodně} přísný[.]",
+            "explain": "šéf is masculine: můj šéf."
+          }
+        ],
+        "skills": [
+          "vocab:v-prisny",
+          "vocab:v-sef"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u04-c4",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "What's she like?",
+        "goalId": "u04-g2",
+        "answers": [
+          "Jaká je?"
+        ],
+        "why": "Jaká je? asks about personality, and jaká agrees with \"she\".",
+        "hints": [
+          {
+            "wrong": "Jak vypadá?",
+            "explain": "Jak vypadá? asks about appearance. \"What's she like?\" is Jaká je?"
+          },
+          {
+            "wrong": "Jaký je?",
+            "explain": "For \"she\", jaký becomes jaká: Jaká je?"
+          }
+        ],
+        "skills": [
+          "vocab:v-jaky"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u04-c5",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "I have a brother.",
+        "goalId": "u04-g3",
+        "answers": [
+          "[Já ]mám bratra[.]"
+        ],
+        "why": "Masculine animate accusative: bratr → bratra.",
+        "hints": [
+          {
+            "wrong": "[Já ]mám bratr[.]",
+            "explain": "bratr is the object: masculine animate nouns add -a, bratra."
+          }
+        ],
+        "skills": [
+          "case:accusative",
+          "vocab:v-bratr"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u04-c6",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "I'm twenty-five.",
+        "goalId": "u04-g3",
+        "answers": [
+          "Je mi {dvacet pět|pětadvacet}[ let][.]"
+        ],
+        "why": "Age uses the dative: Je mi dvacet pět (let).",
+        "hints": [
+          {
+            "wrong": "[Já ]jsem {dvacet pět|pětadvacet}[ let][.]",
+            "explain": "Czech uses the dative for age: Je mi…"
+          }
+        ],
+        "skills": [
+          "case:dative",
+          "vocab:v-rok"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u04-c7",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "He works as an accountant.",
+        "goalId": "u04-g4",
+        "answers": [
+          "[On ]pracuje jako účetní[.]"
+        ],
+        "why": "pracovat jako + nominative; účetní is the same for a man or a woman.",
+        "hints": [
+          {
+            "wrong": "[On ]pracuje jako účetním[.]",
+            "explain": "After jako, use the nominative: jako účetní."
+          }
+        ],
+        "skills": [
+          "vocab:v-ucetni",
+          "vocab:v-pracovat-jako"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u04-c8",
+        "type": "translate",
+        "direction": "en-cs",
+        "prompt": "This is my colleague Jana.",
+        "goalId": "u04-g4",
+        "answers": [
+          "To je {moje|má} kolegyně Jana[.]"
+        ],
+        "why": "A female colleague is kolegyně, with moje.",
+        "hints": [
+          {
+            "wrong": "To je {moje|má} kolega Jana[.]",
+            "explain": "kolega is a male colleague. For Jana: kolegyně."
+          },
+          {
+            "wrong": "To je můj kolegyně Jana[.]",
+            "explain": "kolegyně is feminine: moje kolegyně."
+          }
+        ],
+        "skills": [
+          "vocab:v-kolega"
+        ],
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "nativeReviewed": false
+}

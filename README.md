@@ -1,7 +1,11 @@
-# Čeština for English speakers
+# Čeština for English speakers at work
 
-A web app that teaches Czech to native English speakers, from absolute
-beginner towards CEFR A2. It is built around fluency rather than gamification:
+A web app that teaches Czech to **English speakers who have moved to Czechia
+for work**, from absolute beginner towards CEFR A2. Lessons are set in the
+situations of a working week: meeting colleagues and your manager, coffee and
+the daily lunch menu, paying with meal vouchers, the commute, describing the
+people around you, spelling your name at an office. It is built around
+fluency rather than gamification:
 
 - **No streaks, points, leagues, hearts or guilt notifications.** Progress is
   what you can do: can-do goals passed in unit checks, and how accurately you
@@ -16,6 +20,24 @@ beginner towards CEFR A2. It is built around fluency rather than gamification:
 - **Typed answers that explain mistakes.** Diacritics are tolerated (flagged)
   by default, and wrong answers say *why* ("After do, use the genitive: do Prahy").
 - **Spaced repetition (FSRS)** scheduled from the learner's actual answers.
+- **The whole alphabet**: all 42 letters with sounds, letter names and the
+  Czech phone-spelling alphabet, plus practice in reading rules and in
+  spelling names and e-mail addresses.
+
+Live: https://zkrukoff.github.io/Czech-for-english-speakers/
+
+## Course
+
+| | Unit | Situations |
+|---|---|---|
+| | **Alphabet** | Letters and sounds, reading rules, spelling on the phone |
+| 1 | Meeting people at work | First days in the office: greetings, ty/vy, introductions, where you're from, addressing people |
+| 2 | Coffee and lunch near the office | Ordering, the daily lunch menu, prices, the bill, meal vouchers |
+| 3 | Getting around and commuting | Directions, trams and trains, where you are, tickets and passes |
+| 4 | People at work | Appearance, personality, family and age, introducing your team |
+
+The grammar reference (seven cases, declension tables) and the verb track
+(ten topics, 80+ verbs) are available at any time.
 
 Everything runs in the browser. Learner data is stored locally in IndexedDB;
 there is no backend and no account.
@@ -54,10 +76,19 @@ work. One-time setup in the repository: **Settings → Pages → Build and
 deployment → Source: GitHub Actions**. (Pages for a private repository needs a
 paid GitHub plan; on a free plan, make the repository public.)
 
+## Design
+
+The look, tone and interaction rules are in **[docs/DESIGN.md](docs/DESIGN.md)**:
+calm ink-on-paper interface, Czech set in its own serif typeface, colour
+reserved for grammar (one colour per case) and feedback, light and dark
+themes, and a checklist for new screens.
+
 ## Project layout
 
 ```
 content/              course content (JSON + Markdown). See content/SCHEMA.md
+docs/DESIGN.md        design guide
+scripts/              build helpers (dark-mode palette generator)
 public/audio/         recorded audio (optional, replaces text-to-speech per item)
 src/
   content/            schemas (zod), loader, cross-reference checks
@@ -121,7 +152,17 @@ The full reference is in **[content/SCHEMA.md](content/SCHEMA.md)**. In short:
 | `verbs/verbs.json` | Verb lookup: conjugation, aspect partners |
 
 Exercise types: `translate`, `fillEnding`, `caseSelect`, `conjugate`,
-`dialogueComplete`.
+`dialogueComplete`, and `question` (a general typed question, used by the
+alphabet section). The alphabet lives in `content/alphabet/alphabet.json` and
+`intro.md`.
+
+### Writing for the audience
+
+Set dialogues in the places expats actually are: the office, the team lunch,
+the tram, the bakery on the way to work, the foreign police, the doctor.
+Prefer vocabulary they'll need this month (*kolega, stravenka, polední menu,
+předplatní jízdenka*) and explain the cultural context too (when to switch
+from *vy* to *ty* at work, how tipping works).
 
 ## How it works
 

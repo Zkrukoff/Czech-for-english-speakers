@@ -26,6 +26,10 @@ What you order is still the object of the verb, so it's in the **accusative**. A
 - **Masculine inanimate** and **neuter**: no change
 - Adjectives ending in **-í** (*kuřecí, minerální*) don't change in the feminine accusative either
 
+## Lunch near the office: polední menu
+
+Most restaurants near offices offer a **polední menu** (daily lunch menu) on weekdays: a soup and two to four main dishes at a fixed price, served quickly. Ask ***Co máte dnes v menu?*** (What's on the menu today?) or just order by number: ***Dám si jedničku.*** (I'll have number one.) The menu is often written on a board or posted online in the morning.
+
 ## for: pro + accusative
 
 *A pro **pána**?* And for the gentleman? *A pro **paní**?* And for the lady?

@@ -3,6 +3,7 @@ import { PageHeader } from '@/components/PageHeader';
 import { updateSettings, useSettings } from '@/db/settings';
 import { exportData, importData, resetProgress } from '@/db/backup';
 import { czechVoices, speech } from '@/lib/audio/speech';
+import { getTheme, setTheme, type ThemeChoice } from '@/lib/theme';
 
 function useCzechVoices(): SpeechSynthesisVoice[] {
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>(() => czechVoices());
@@ -21,6 +22,7 @@ export function SettingsPage() {
   const voices = useCzechVoices();
   const fileRef = useRef<HTMLInputElement>(null);
   const [message, setMessage] = useState<string | null>(null);
+  const [theme, setThemeState] = useState<ThemeChoice>(() => getTheme());
 
   async function download() {
     const data = await exportData();
@@ -63,6 +65,24 @@ export function SettingsPage() {
           </label>
         </section>
 
+        <section className="card space-y-3 p-5">
+          <h2 className="font-semibold">Appearance</h2>
+          <div role="radiogroup" aria-label="Theme" className="flex flex-wrap gap-2">
+            {(['system', 'light', 'dark'] as const).map((t) => (
+              <button
+                key={t}
+                type="button"
+                role="radio"
+                aria-checked={theme === t}
+                onClick={() => { setTheme(t); setThemeState(t); }}
+                className={`btn ${theme === t ? 'btn-primary' : 'btn-secondary'}`}
+              >
+                {{ system: 'Match my device', light: 'Light', dark: 'Dark' }[t]}
+              </button>
+            ))}
+          </div>
+        </section>
+
         <section className="space-y-4 rounded-xl border border-stone-200 bg-white p-5">
           <h2 className="font-semibold">Audio</h2>
           {voices.length === 0 ? (
@@ -83,7 +103,7 @@ export function SettingsPage() {
             <input type="range" min={0.5} max={1.5} step={0.1} value={s.speechRate} onChange={(e) => updateSettings({ speechRate: Number(e.target.value) })} className="mt-2 block w-full" />
           </label>
           {voices.length > 0 && (
-            <button type="button" onClick={() => speech.speak('Dobrý den, jak se máte?', { rate: s.speechRate, voiceURI: s.voiceURI })} className="rounded-md border border-stone-300 px-3 py-1.5 text-sm hover:bg-stone-100">
+            <button type="button" onClick={() => speech.speak('Dobrý den, jak se máte?', { rate: s.speechRate, voiceURI: s.voiceURI })} className="btn btn-secondary">
               Test: "Dobrý den, jak se máte?"
             </button>
           )}
@@ -93,8 +113,8 @@ export function SettingsPage() {
           <h2 className="font-semibold">Your data</h2>
           <p className="text-sm text-stone-600">Everything is stored only in this browser. Download a copy to keep it safe or move it to another device.</p>
           <div className="flex flex-wrap gap-2">
-            <button type="button" onClick={download} className="rounded-md border border-stone-300 px-3 py-1.5 text-sm hover:bg-stone-100">Download my data</button>
-            <button type="button" onClick={() => fileRef.current?.click()} className="rounded-md border border-stone-300 px-3 py-1.5 text-sm hover:bg-stone-100">Restore from file…</button>
+            <button type="button" onClick={download} className="btn btn-secondary">Download my data</button>
+            <button type="button" onClick={() => fileRef.current?.click()} className="btn btn-secondary">Restore from file…</button>
             <input ref={fileRef} type="file" accept="application/json,.json" className="hidden" onChange={(e) => { const f = e.target.files?.[0]; if (f) void upload(f); e.target.value = ''; }} />
             <button
               type="button"

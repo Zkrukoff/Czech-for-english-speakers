@@ -1,12 +1,14 @@
 import type { z } from 'zod';
 import { parseFrontmatter } from './frontmatter';
 import {
+  AlphabetSchema,
   CourseSchema,
   FormTableFileSchema,
   GrammarFrontmatterSchema,
   LessonSchema,
   UnitSchema,
   VerbFileSchema,
+  type AlphabetData,
   type Exercise,
   type FormTable,
   type GrammarFrontmatter,
@@ -42,7 +44,8 @@ export interface GrammarPage extends GrammarFrontmatter {
 
 export type ExerciseSource =
   | { kind: 'lesson'; unitId: string; lessonId: string }
-  | { kind: 'unitCheck'; unitId: string };
+  | { kind: 'unitCheck'; unitId: string }
+  | { kind: 'alphabet'; setId: string };
 
 export interface IndexedExercise {
   exercise: Exercise;
@@ -62,6 +65,8 @@ export interface Course {
   tables: Map<string, FormTable>;
   verbs: Verb[];
   verbsByLemma: Map<string, Verb>;
+  /** The alphabet section, if content/alphabet/alphabet.json exists. */
+  alphabet: (AlphabetData & { introMd: string }) | null;
 }
 
 export interface ContentFiles {
@@ -101,6 +106,7 @@ export function loadContent(files: ContentFiles): LoadResult {
     tables: new Map(),
     verbs: [],
     verbsByLemma: new Map(),
+    alphabet: null,
   };
 
   function parse<T>(schema: z.ZodType<T>, path: string, data: unknown): T | null {
@@ -251,9 +257,33 @@ export function loadContent(files: ContentFiles): LoadResult {
     course.units.push(unit);
   });
 
+  /* ---- Alphabet ---- */
+  if ('alphabet/alphabet.json' in files.json) {
+    const data = parse(AlphabetSchema, 'alphabet/alphabet.json', files.json['alphabet/alphabet.json']);
+    if (data) {
+      const introPath = `alphabet/${data.intro}`;
+      const introMd = files.markdown[introPath];
+      if (introMd === undefined) errors.push(`alphabet/alphabet.json: intro file ${introPath} not found`);
+      const seenLetters = new Set<string>();
+      for (const l of data.letters) {
+        if (seenLetters.has(l.letter)) errors.push(`alphabet/alphabet.json: duplicate letter "${l.letter}"`);
+        seenLetters.add(l.letter);
+      }
+      for (const set of data.practice) {
+        claimId('practice set', set.id, 'alphabet/alphabet.json');
+        for (const ex of set.exercises) {
+          claimId('exercise', ex.id, 'alphabet/alphabet.json');
+          course.exercisesById.set(ex.id, { exercise: ex, source: { kind: 'alphabet', setId: set.id } });
+        }
+      }
+      course.alphabet = { ...data, introMd: introMd ?? '' };
+    }
+  }
+
   /* ---- Cross-reference checks ---- */
   for (const [exId, { exercise, source }] of course.exercisesById) {
-    const where = source.kind === 'lesson' ? `lesson ${source.lessonId}` : `unit ${source.unitId} check`;
+    const where =
+      source.kind === 'lesson' ? `lesson ${source.lessonId}` : source.kind === 'unitCheck' ? `unit ${source.unitId} check` : `alphabet set ${source.setId}`;
     for (const p of [...exercise.answers, ...exercise.hints.map((h) => h.wrong)]) {
       const err = validatePattern(p);
       if (err) errors.push(`${where}, exercise ${exId}: ${err}`);
@@ -285,6 +315,7 @@ export function loadContent(files: ContentFiles): LoadResult {
   };
   for (const page of course.grammarPages) checkEmbeds(page.body, page.path);
   for (const lesson of course.lessonsById.values()) checkEmbeds(lesson.explanationMd, `lesson ${lesson.id}`);
+  if (course.alphabet) checkEmbeds(course.alphabet.introMd, 'alphabet intro');
 
   for (const lesson of course.lessonsById.values()) {
     for (const ref of lesson.grammarRefs) {

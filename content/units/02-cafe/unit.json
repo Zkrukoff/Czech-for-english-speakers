@@ -1,8 +1,8 @@
 {
   "id": "u02",
-  "title": "At the café",
-  "titleCs": "V kavárně",
-  "situation": "Ordering drinks and food in a café or restaurant, and paying.",
+  "title": "Coffee and lunch near the office",
+  "titleCs": "Na kafe a na oběd",
+  "situation": "Ordering coffee before work, the daily lunch menu with colleagues, and paying, including with meal vouchers.",
   "canDo": [
     {
       "id": "u02-g1",
@@ -10,7 +10,7 @@
     },
     {
       "id": "u02-g2",
-      "text": "You can order food and say what you'd like."
+      "text": "You can order food from the menu and say what you'd like."
     },
     {
       "id": "u02-g3",
@@ -18,7 +18,7 @@
     },
     {
       "id": "u02-g4",
-      "text": "You can ask for the bill and pay."
+      "text": "You can ask for the bill and pay by card, in cash or with meal vouchers."
     }
   ],
   "lessons": [

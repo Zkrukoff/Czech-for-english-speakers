@@ -1,0 +1,349 @@
+{
+  "id": "u04-l03",
+  "title": "Family and age",
+  "canDo": [
+    "u04-g3"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "case:accusative",
+    "case:dative"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-rodina",
+      "cs": "rodina",
+      "en": "family",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-manzel",
+      "cs": "manžel / manželka",
+      "en": "husband / wife",
+      "pos": "noun",
+      "gender": "m-anim",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-pritel",
+      "cs": "přítel / přítelkyně",
+      "en": "boyfriend / girlfriend; partner",
+      "pos": "noun",
+      "gender": "m-anim",
+      "notes": "Usually means a romantic partner. A friend is kamarád / kamarádka.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-syn",
+      "cs": "syn",
+      "en": "son",
+      "pos": "noun",
+      "gender": "m-anim",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-dcera",
+      "cs": "dcera",
+      "en": "daughter",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-deti",
+      "cs": "děti",
+      "en": "children",
+      "pos": "noun",
+      "gender": "f",
+      "notes": "Plural of dítě (child). It behaves like a feminine plural: ty děti, krásné děti.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-bratr",
+      "cs": "bratr / sestra",
+      "en": "brother / sister",
+      "pos": "noun",
+      "gender": "m-anim",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-rodice",
+      "cs": "rodiče",
+      "en": "parents",
+      "pos": "noun",
+      "gender": "m-anim",
+      "notes": "Plural only.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kolik-ti-je",
+      "cs": "Kolik ti je?",
+      "en": "How old are you? (informal)",
+      "pos": "phrase",
+      "notes": "Formal: Kolik vám je?",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-rok",
+      "cs": "rok / roky / let",
+      "en": "year / years (2–4) / years (5+)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "jeden rok, dva roky, pět let.",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "Coffee break in the office kitchen. Daniel's colleague Martina shows him a photo on her phone.",
+    "lines": [
+      {
+        "speaker": "Martina",
+        "cs": "To je moje rodina. To je můj manžel Petr a tohle jsou naše děti.",
+        "en": "This is my family. That's my husband Petr and these are our children.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Daniel",
+        "cs": "Jsou krásné. Kolik jim je?",
+        "en": "They're lovely. How old are they?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Martina",
+        "cs": "Synovi je sedm a dceři čtyři.",
+        "en": "My son is seven and my daughter four.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Daniel",
+        "cs": "To je krásný věk.",
+        "en": "That's a lovely age.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Martina",
+        "cs": "A ty máš děti?",
+        "en": "And do you have children?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Daniel",
+        "cs": "Ne, ale mám přítelkyni. Taky je z Anglie a pracuje tady v Brně.",
+        "en": "No, but I have a girlfriend. She's from England too and works here in Brno.",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u04-l03-e1",
+      "type": "fillEnding",
+      "prompt": "Mám bratr___.",
+      "base": "bratr",
+      "en": "I have a brother.",
+      "answers": [
+        "a"
+      ],
+      "why": "After mít, the object is in the accusative. Masculine animate nouns (people and animals) add -a: bratr → bratra.",
+      "hints": [
+        {
+          "wrong": "u",
+          "explain": "-u is the accusative of feminine nouns in -a (sestru). bratr is masculine animate: bratra."
+        }
+      ],
+      "skills": [
+        "case:accusative",
+        "vocab:v-bratr"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l03-e2",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "I have a sister.",
+      "answers": [
+        "[Já ]mám sestru[.]"
+      ],
+      "why": "Feminine -a → -u in the accusative: sestra → sestru.",
+      "hints": [
+        {
+          "wrong": "[Já ]mám sestra[.]",
+          "explain": "sestra is the object of mám: use the accusative, sestru."
+        }
+      ],
+      "skills": [
+        "case:accusative",
+        "vocab:v-bratr"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l03-e3",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "I'm thirty (years old).",
+      "answers": [
+        "Je mi třicet[ let][.]"
+      ],
+      "why": "Czech gives age with the dative: Je mi třicet (let), literally \"It is to me thirty (years)\".",
+      "hints": [
+        {
+          "wrong": "[Já ]jsem třicet[ let][.]",
+          "explain": "Czech doesn't say \"I am thirty\". Use the dative: Je mi třicet (let)."
+        },
+        {
+          "wrong": "[Já ]mám třicet let[.]",
+          "explain": "That's how some languages say it, but Czech uses the dative: Je mi třicet let."
+        }
+      ],
+      "skills": [
+        "case:dative",
+        "vocab:v-rok"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l03-e4",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "How old are you? (informal)",
+      "answers": [
+        "Kolik {ti je|je ti}[ let]?"
+      ],
+      "why": "Kolik ti je (let)? literally \"How many (years) is it to you?\". Formal: Kolik vám je?",
+      "hints": [
+        {
+          "wrong": "Kolik {jsi|máš} let?",
+          "explain": "Czech uses the dative for age: Kolik ti je?"
+        },
+        {
+          "wrong": "Kolik {vám je|je vám}[ let]?",
+          "explain": "That's the formal form. Informal: Kolik ti je?"
+        }
+      ],
+      "skills": [
+        "case:dative",
+        "vocab:v-kolik-ti-je"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l03-e5",
+      "type": "caseSelect",
+      "prompt": "Je **mi** třicet let.",
+      "question": "Which case is \"mi\"?",
+      "options": [
+        "nominative",
+        "genitive",
+        "dative",
+        "accusative"
+      ],
+      "en": "I'm thirty.",
+      "answers": [
+        "dative"
+      ],
+      "why": "Age uses the dative: Je mi třicet (to me it is thirty). mi is the short dative of já.",
+      "hints": [],
+      "skills": [
+        "case:dative"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l03-e6",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "To je moje přítelkyně.",
+      "answers": [
+        "{This is|That is|That's|She is|She's} my {girlfriend|partner}[.]"
+      ],
+      "why": "přítelkyně usually means girlfriend (romantic partner). A female friend is kamarádka.",
+      "hints": [
+        {
+          "wrong": "{This is|That is|That's|She is|She's} my friend[.]",
+          "explain": "Careful: přítelkyně usually means girlfriend or partner. A (female) friend is kamarádka."
+        }
+      ],
+      "skills": [
+        "vocab:v-pritel"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l03-e7",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "This is my husband.",
+      "answers": [
+        "To je můj {manžel|muž}[.]"
+      ],
+      "why": "manžel is masculine, so \"my\" is můj.",
+      "hints": [
+        {
+          "wrong": "To je {moje|má} {manžel|muž}[.]",
+          "explain": "moje / má is for feminine (and neuter) nouns. manžel is masculine: můj manžel."
+        }
+      ],
+      "skills": [
+        "vocab:v-manzel"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l03-e8",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "This is my wife.",
+      "answers": [
+        "To je {moje|má} manželka[.]",
+        "To je {moje|má} žena[.]"
+      ],
+      "why": "manželka is feminine, so \"my\" is moje (or má).",
+      "hints": [
+        {
+          "wrong": "To je můj {manželka|žena}[.]",
+          "explain": "můj is masculine. manželka is feminine: moje manželka."
+        }
+      ],
+      "skills": [
+        "vocab:v-manzel"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l03-e9",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Martina",
+          "cs": "A ty máš děti?",
+          "en": "And do you have children?"
+        }
+      ],
+      "prompt": "Say no, but you have a girlfriend.",
+      "answers": [
+        "Ne, ale mám přítelkyni[.]"
+      ],
+      "why": "přítelkyně is the object of mám, so it's in the accusative: soft feminine -e → -i, přítelkyni.",
+      "hints": [
+        {
+          "wrong": "Ne, ale mám přítelkyně[.]",
+          "explain": "přítelkyně is the object of mám: accusative přítelkyni (like růže → růži)."
+        },
+        {
+          "wrong": "Ne, ale mám kamarádku[.]",
+          "explain": "kamarádka is a (female) friend. Girlfriend is přítelkyně: mám přítelkyni."
+        }
+      ],
+      "skills": [
+        "case:accusative",
+        "vocab:v-pritel"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

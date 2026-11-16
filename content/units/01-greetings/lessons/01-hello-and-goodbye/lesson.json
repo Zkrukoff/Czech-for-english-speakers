@@ -112,22 +112,22 @@
     }
   ],
   "dialogue": {
-    "setting": "Monday morning, at the entrance of an office building in Prague.",
+    "setting": "Monday morning at the entrance of an office building in Prague. Daniel, who moved from England last month, meets his colleague Jana and their manager.",
     "lines": [
       {
-        "speaker": "Tomáš",
+        "speaker": "Daniel",
         "cs": "Ahoj, Jano!",
         "en": "Hi, Jana!",
         "nativeReviewed": false
       },
       {
         "speaker": "Jana",
-        "cs": "Ahoj, Tomáši! Jak se máš?",
-        "en": "Hi, Tomáš! How are you?",
+        "cs": "Ahoj, Danieli! Jak se máš?",
+        "en": "Hi, Daniel! How are you?",
         "nativeReviewed": false
       },
       {
-        "speaker": "Tomáš",
+        "speaker": "Daniel",
         "cs": "Dobře, díky. A ty?",
         "en": "Fine, thanks. And you?",
         "nativeReviewed": false
@@ -139,19 +139,19 @@
         "nativeReviewed": false
       },
       {
-        "speaker": "Tomáš",
+        "speaker": "Daniel",
         "cs": "Dobrý den, paní Dvořáková.",
         "en": "Good morning, Mrs Dvořáková.",
         "nativeReviewed": false
       },
       {
         "speaker": "Paní Dvořáková",
-        "cs": "Dobrý den, Tomáši. Jak se máte?",
-        "en": "Good morning, Tomáš. How are you?",
+        "cs": "Dobrý den, Danieli. Jak se máte?",
+        "en": "Good morning, Daniel. How are you?",
         "nativeReviewed": false
       },
       {
-        "speaker": "Tomáš",
+        "speaker": "Daniel",
         "cs": "Děkuju, dobře. A vy?",
         "en": "Fine, thank you. And you?",
         "nativeReviewed": false
@@ -164,12 +164,12 @@
       },
       {
         "speaker": "Jana",
-        "cs": "Tak čau, Tomáši. Měj se!",
-        "en": "Right, bye, Tomáš. Take care!",
+        "cs": "Tak čau, Danieli. Měj se!",
+        "en": "Right, bye, Daniel. Take care!",
         "nativeReviewed": false
       },
       {
-        "speaker": "Tomáš",
+        "speaker": "Daniel",
         "cs": "Ty taky. Čau!",
         "en": "You too. Bye!",
         "nativeReviewed": false

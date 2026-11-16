@@ -34,4 +34,4 @@ You'll also hear *jmenuji* instead of *jmenuju*. Both are correct; *jmenuju* is 
 
 ## Male and female forms
 
-Many words for people have two forms. Sarah is *nová* (new, feminine); Martin would be *nový*. A female friend is a *kamarádka*, a male friend a *kamarád*. You'll see more of this in the next lesson.
+Many words for people have two forms. Sarah is *nová* (new, feminine); Martin would be *nový*. A female colleague is a *kolegyně*, a male colleague a *kolega*; a female friend is a *kamarádka*, a male friend a *kamarád*. You'll see more of this in the next lesson.

@@ -53,7 +53,10 @@ export const VERB_TOPICS = [
 ] as const;
 export type VerbTopic = (typeof VERB_TOPICS)[number];
 
-export type SkillTag = `case:${CaseName}` | `verb:${VerbTopic}` | `vocab:${string}`;
+/** Skill tag for the alphabet and pronunciation section. */
+export const ALPHABET_SKILL = 'alphabet';
+
+export type SkillTag = `case:${CaseName}` | `verb:${VerbTopic}` | `vocab:${string}` | typeof ALPHABET_SKILL;
 
 export const GRAMMAR_SKILLS: string[] = [
   ...CASES.map((c) => `case:${c}`),

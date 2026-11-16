@@ -24,6 +24,16 @@ Its imperfective partner *platit* is for the process or a habit:
 
 This **aspect** pair is one of the most important ideas in Czech. Read the [aspect](/verbs/aspect) page when you're ready.
 
+## Meal vouchers: stravenky
+
+Many Czech employers give **stravenky** (paper meal vouchers) or a **stravenková karta** (meal card) as a benefit. Most restaurants near offices accept them; look for the logos at the entrance, or ask:
+
+- ***Berete stravenky?*** Do you take meal vouchers?
+- ***Zaplatím stravenkou.*** I'll pay with a meal voucher. / ***stravenkami*** (with vouchers)
+- ***Zbytek kartou.*** The rest by card.
+
+Like *kartou* and *hotově*, the means of payment is the bare [instrumental](/grammar/instrumental).
+
 ## Tipping
 
 Tips (**spropitné**) are usually about 10 %. Rather than leaving money on the table, you tell the waiter the total you want to pay: for a bill of 460 Kč, hand over 500 and say ***To je v pořádku*** (keep the change), or say ***Pět set, prosím*** before paying by card.

@@ -51,3 +51,38 @@ check first. When an item is confirmed or corrected, remove it here and set
 | u03-l03 dialogue | "Já už jsem na místě." | Natural for "I'm already there"? |
 | u03-l04 dialogue | "V půl jedenácté, z nástupiště číslo pět." | Would a clerk rather say *z pátého nástupiště*? |
 | u03-l04 e5 | treats "odjede" as wrong (practising odjíždět) | Acceptable as a drill, given *Vlak odjede v deset* is also correct Czech? |
+
+## Alphabet
+
+| Where | Text | Question |
+|---|---|---|
+| letters | Letter names used when spelling (*á → "dlouhé á"*, *ě → "e s háčkem"*, *ú → "ú s čárkou"*, *ů → "ů s kroužkem"*) | Are these how people actually name them when spelling aloud, e.g. on the phone? |
+| letters | Phone-spelling words (Adam, Božena, Cyril, Čeněk, David, Emil, František, Gustav, Helena, Chrudim, Ivan, Josef, Karel, Ludvík, Marie, **Norbert**, Oto, Petr, Quido, Rudolf, Řehoř, Svatopluk, Šimon, Tomáš, Urban, Václav, Xaver, Ypsilon, Zuzana, Žofie) | Confirm the traditional list, especially N. |
+| letters | English sound approximations and IPA (ř, ď, ť, ó, é, h) | Check that the comparisons are accurate enough for beginners. |
+| intro.md | "*všechno* [fšechno]", "*sníh* [sňích]" | Confirm the voicing examples. |
+| practice | e-mail spelling "jé, á, en, á, tečka, …, zavináč, seznam, tečka, cé, zet" | Is this how an address is typically read out (whole words like *seznam* not spelled)? |
+| practice | "zavináč … literally a rolled pickled herring" | Confirm the etymology note. |
+
+## Unit 4 – People at work
+
+| Where | Text | Question |
+|---|---|---|
+| u04-l01 dialogue | "Mám mu něco předat." / "Sedí tamhle u okna." | Natural? |
+| u04-l01 | "spíš menší", "silnější" as tactful descriptions | Accurate register advice? |
+| u04-l01 e2, check | rejects "krátký vlasy" (standard *krátké vlasy*) with a note on spoken forms | Fair? |
+| u04-l02 dialogue | "Tak co, jak se ti líbí nová práce?" / "pomáhají mi s češtinou" / "strašně náročný" | Natural? |
+| u04-l02 | *sympatický* as a false friend; *soucitný / chápavý* for "sympathetic" | Confirm. |
+| u04-l02 e6 | accepts "Mí kolegové" as well as "Moji kolegové" | Is *mí* natural enough to accept? |
+| u04-l03 dialogue | "Synovi je sedm a dceři čtyři." / "To je krásný věk." | Natural? |
+| u04-l03 | *přítel / přítelkyně* "usually means a romantic partner" | Confirm the usage note. |
+| u04-l04 dialogue | "Tohle je paní Horáková, naše účetní. Má na starosti faktury." / "ví úplně všechno" | Natural workplace introductions? |
+| u04-l04 | "the more senior person, or the woman, offers *ty*" | Confirm the etiquette note, and that IT/international firms commonly use *ty* from day one. |
+
+## Reframed units 1–3
+
+| Where | Text | Question |
+|---|---|---|
+| u01-l01 dialogue | Manager says "Dobrý den, Danieli. Jak se máte?" to a new foreign employee | Natural? (vocative *Danieli*) |
+| u02-l02 | "Dám si jedničku." for ordering menu item 1 | Common? |
+| u02-l04 | "Berete stravenky?" / "Zaplatím stravenkou." / "Zbytek kartou." | Natural? Is *stravenková karta* the usual term for meal cards? |
+| u03-l02 | *Lítačka* (Prague), *šalina* (Brno tram), *předplatní jízdenka*, "Kolik ti trvá cesta do práce?" | Check terms and phrasing. |

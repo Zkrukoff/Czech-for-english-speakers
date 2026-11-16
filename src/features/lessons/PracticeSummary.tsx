@@ -26,8 +26,8 @@ export function PracticeSummary({ outcomes, onAgain, next }: { outcomes: Exercis
         </div>
       )}
       <div className="mt-6 flex flex-wrap gap-3">
-        <Link to={next.to} className="rounded-lg bg-stone-900 px-5 py-2.5 font-medium text-white hover:bg-stone-700">{next.label}</Link>
-        <button type="button" onClick={onAgain} className="rounded-lg border border-stone-300 px-5 py-2.5 font-medium hover:bg-stone-100">Practise again</button>
+        <Link to={next.to} className="btn btn-primary">{next.label}</Link>
+        <button type="button" onClick={onAgain} className="btn btn-secondary">Practise again</button>
       </div>
     </div>
   );

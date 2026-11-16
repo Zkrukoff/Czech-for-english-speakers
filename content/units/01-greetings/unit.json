@@ -1,12 +1,12 @@
 {
   "id": "u01",
-  "title": "Greetings and introductions",
+  "title": "Meeting people at work",
   "titleCs": "Seznamujeme se",
-  "situation": "Meeting people: saying hello, introducing yourself and talking about where you're from.",
+  "situation": "Your first days at a Czech workplace: greeting colleagues and your manager, introducing yourself, and small talk about where you're from.",
   "canDo": [
     {
       "id": "u01-g1",
-      "text": "You can greet people and say goodbye, formally and informally."
+      "text": "You can greet colleagues, your manager and neighbours, formally and informally."
     },
     {
       "id": "u01-g2",

@@ -43,7 +43,7 @@ export function ProgressPage() {
   const lessons = useLessonProgress();
   const due = useDueSummary();
 
-  const skills = [...CASES.map((c) => `case:${c}`), ...VERB_TOPICS.map((t) => `verb:${t}`)];
+  const skills = ['alphabet', ...CASES.map((c) => `case:${c}`), ...VERB_TOPICS.map((t) => `verb:${t}`)];
   const mastery = computeAllMastery(skills, attempts ?? []);
   const allGoals = course.units.flatMap((u) => u.canDo);
   const goalsDone = allGoals.filter((g) => goals.get(g.id)?.completedAt).length;
@@ -82,13 +82,20 @@ export function ProgressPage() {
             <Stat n={due.total} label="items in total" />
             <div className="ml-auto text-sm">
               {due.dueNow > 0 ? (
-                <Link to="/review" className="rounded-lg bg-stone-900 px-4 py-2 font-medium text-white hover:bg-stone-700">Review now</Link>
+                <Link to="/review" className="btn btn-primary">Review now</Link>
               ) : due.nextDue ? (
                 <span className="text-stone-600">Next item due {relativeTime(due.nextDue)}</span>
               ) : null}
             </div>
           </div>
         )}
+      </section>
+
+      <section className="mb-10">
+        <h2 className="mb-1 text-lg font-semibold">Alphabet and pronunciation</h2>
+        <ul className="divide-y divide-stone-100 overflow-hidden rounded-xl border border-stone-200 bg-white">
+          <MasteryRow label="Letters, sounds and spelling" href="/alphabet?tab=practice" m={mastery.get('alphabet')!} />
+        </ul>
       </section>
 
       <section className="mb-10">

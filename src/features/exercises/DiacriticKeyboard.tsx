@@ -17,7 +17,8 @@ export function DiacriticKeyboard({ onInsert, disabled }: { onInsert: (ch: strin
             // Keep focus in the text field.
             onMouseDown={(e) => e.preventDefault()}
             onClick={() => onInsert(ch)}
-            className="h-9 w-9 rounded-md border border-stone-300 bg-white text-base hover:bg-stone-100 disabled:opacity-40"
+            lang="cs"
+            className="h-10 w-10 rounded-md border border-stone-300 bg-white text-lg hover:bg-stone-100 disabled:opacity-40"
           >
             {ch}
           </button>
@@ -29,7 +30,7 @@ export function DiacriticKeyboard({ onInsert, disabled }: { onInsert: (ch: strin
         onMouseDown={(e) => e.preventDefault()}
         onClick={() => setUpper((u) => !u)}
         aria-pressed={upper}
-        className={`h-9 rounded-md border px-2 text-sm ${upper ? 'border-stone-900 bg-stone-900 text-white' : 'border-stone-300 bg-white hover:bg-stone-100'}`}
+        className={`h-10 rounded-md border px-3 text-sm ${upper ? 'border-stone-900 bg-stone-900 text-white' : 'border-stone-300 bg-white hover:bg-stone-100'}`}
       >
         ⇧
       </button>

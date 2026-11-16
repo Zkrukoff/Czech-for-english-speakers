@@ -82,13 +82,13 @@ export function ReviewPage() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             {due && due.dueNow > 0 ? (
-              <button type="button" onClick={() => start(phase.run + 1)} className="rounded-lg bg-stone-900 px-5 py-2.5 font-medium text-white hover:bg-stone-700">
+              <button type="button" onClick={() => start(phase.run + 1)} className="btn btn-primary">
                 Continue ({due.dueNow} more due)
               </button>
             ) : (
-              <Link to="/" className="rounded-lg bg-stone-900 px-5 py-2.5 font-medium text-white hover:bg-stone-700">Back to lessons</Link>
+              <Link to="/" className="btn btn-primary">Back to lessons</Link>
             )}
-            <Link to="/progress" className="rounded-lg border border-stone-300 px-5 py-2.5 font-medium hover:bg-stone-100">See your progress</Link>
+            <Link to="/progress" className="btn btn-secondary">See your progress</Link>
           </div>
         </div>
       </>
@@ -117,7 +117,7 @@ export function ReviewPage() {
           <p className="mt-1 text-sm text-stone-600">
             Sessions are up to {SESSION_SIZE} items. Stop whenever you like: anything you don't get to just waits.
           </p>
-          <button type="button" onClick={() => start()} className="mt-5 rounded-lg bg-stone-900 px-5 py-2.5 font-medium text-white hover:bg-stone-700">
+          <button type="button" onClick={() => start()} className="mt-5 btn btn-primary">
             Start review
           </button>
         </div>

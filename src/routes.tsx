@@ -16,6 +16,7 @@ export const routes: RouteObject[] = [
     hydrateFallbackElement: <></>,
     children: [
       { index: true, element: <HomePage /> },
+      { path: 'alphabet', ...page(() => import('./features/alphabet/AlphabetPage'), 'AlphabetPage') },
       { path: 'units/:unitId', ...page(() => import('./features/lessons/UnitPage'), 'UnitPage') },
       { path: 'units/:unitId/check', ...page(() => import('./features/lessons/UnitCheckPage'), 'UnitCheckPage') },
       { path: 'lessons/:lessonId', ...page(() => import('./features/lessons/LessonPage'), 'LessonPage') },

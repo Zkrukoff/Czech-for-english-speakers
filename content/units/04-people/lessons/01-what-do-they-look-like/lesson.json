@@ -1,0 +1,342 @@
+{
+  "id": "u04-l01",
+  "title": "What does he look like?",
+  "canDo": [
+    "u04-g1"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "case:nominative",
+    "case:accusative"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-vypadat",
+      "cs": "vypadat",
+      "en": "to look (like)",
+      "pos": "verb",
+      "aspect": "impf",
+      "notes": "Jak vypadá? What does he/she look like?",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vysoky",
+      "cs": "vysoký",
+      "en": "tall; high",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-maly",
+      "cs": "malý",
+      "en": "small; short (of a person)",
+      "pos": "adj",
+      "notes": "Spíš menší (rather short) is the polite way to say it.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-mlady",
+      "cs": "mladý / starý",
+      "en": "young / old",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vlasy",
+      "cs": "vlasy",
+      "en": "hair",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "Always plural: Má dlouhé vlasy.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kratky",
+      "cs": "krátký / dlouhý",
+      "en": "short / long",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-tmavy",
+      "cs": "tmavý / světlý",
+      "en": "dark / fair, light",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-bryle",
+      "cs": "brýle",
+      "en": "glasses",
+      "pos": "noun",
+      "gender": "f",
+      "notes": "Plural only: Má brýle. Nosí brýle.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vousy",
+      "cs": "vousy",
+      "en": "beard",
+      "pos": "noun",
+      "gender": "m-inan",
+      "notes": "Plural: Má vousy.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kosile",
+      "cs": "košile",
+      "en": "shirt",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-modry",
+      "cs": "modrý",
+      "en": "blue",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-predat",
+      "cs": "předat",
+      "en": "to hand over, pass on",
+      "pos": "verb",
+      "aspect": "pf",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "Daniel's first week. He needs to give something to Pavel from IT, but doesn't know who he is.",
+    "lines": [
+      {
+        "speaker": "Daniel",
+        "cs": "Promiň, nevíš, kdo je Pavel z IT? Mám mu něco předat.",
+        "en": "Sorry, do you know who Pavel from IT is? I need to give him something.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Jana",
+        "cs": "Pavel? Je vysoký, má krátké tmavé vlasy a brýle.",
+        "en": "Pavel? He's tall, with short dark hair and glasses.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Daniel",
+        "cs": "Má vousy?",
+        "en": "Does he have a beard?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Jana",
+        "cs": "Ne, nemá. Dnes má modrou košili. Sedí tamhle u okna.",
+        "en": "No, he doesn't. Today he's wearing a blue shirt. He sits over there by the window.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Daniel",
+        "cs": "Aha, už ho vidím. Díky!",
+        "en": "Oh, I can see him now. Thanks!",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u04-l01-e1",
+      "type": "fillEnding",
+      "prompt": "Moje manažerka je vysok___.",
+      "base": "vysoký",
+      "en": "My manager is tall.",
+      "answers": [
+        "á"
+      ],
+      "why": "Adjectives agree with the noun they describe. manažerka is feminine, so vysoký → vysoká.",
+      "hints": [
+        {
+          "wrong": "ý",
+          "explain": "vysoký is the masculine form. manažerka is feminine: vysoká."
+        },
+        {
+          "wrong": "é",
+          "explain": "-é is for neuter nouns (or plurals). manažerka is feminine: vysoká."
+        }
+      ],
+      "skills": [
+        "case:nominative",
+        "vocab:v-vysoky"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l01-e2",
+      "type": "fillEnding",
+      "prompt": "Pavel má krátk___ vlasy.",
+      "base": "krátký",
+      "en": "Pavel has short hair.",
+      "answers": [
+        "é"
+      ],
+      "why": "vlasy is a masculine inanimate plural. Adjectives describing it end in -é, in both nominative and accusative: krátké vlasy.",
+      "hints": [
+        {
+          "wrong": "ý",
+          "explain": "vlasy is plural, so the adjective is plural too: krátké vlasy."
+        },
+        {
+          "wrong": "í",
+          "explain": "-í is the plural for people (masc. animate): milí kolegové. For vlasy it's -é: krátké vlasy."
+        }
+      ],
+      "skills": [
+        "case:accusative",
+        "vocab:v-vlasy",
+        "vocab:v-kratky"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l01-e3",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "She has glasses.",
+      "answers": [
+        "{Má|Nosí} brýle[.]"
+      ],
+      "why": "brýle (glasses) only exists in the plural. Czech says \"has glasses\" (má brýle) or \"wears glasses\" (nosí brýle).",
+      "hints": [
+        {
+          "wrong": "{Má|Nosí} brýli[.]",
+          "explain": "brýle is always plural, like English \"glasses\": Má brýle."
+        }
+      ],
+      "skills": [
+        "case:accusative",
+        "vocab:v-bryle"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l01-e4",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "What does he look like?",
+      "answers": [
+        "Jak vypadá?"
+      ],
+      "why": "Jak vypadá? literally \"How does he look?\". Use jak, not co, and no se.",
+      "hints": [
+        {
+          "wrong": "Co vypadá?",
+          "explain": "Czech asks \"how\" (jak), not \"what\": Jak vypadá?"
+        },
+        {
+          "wrong": "Jak se vypadá?",
+          "explain": "vypadat isn't reflexive: Jak vypadá?"
+        },
+        {
+          "wrong": "Jaký je?",
+          "explain": "Jaký je? means \"What's he like (as a person)?\". For appearance: Jak vypadá?"
+        }
+      ],
+      "skills": [
+        "vocab:v-vypadat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l01-e5",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "Je vysoký a má tmavé vlasy.",
+      "answers": [
+        "{He is|He's} tall and {has|he has|he's got|has got} dark hair[.]",
+        "{He is|He's} tall with dark hair[.]"
+      ],
+      "why": "vysoký = tall; má tmavé vlasy = (he) has dark hair.",
+      "hints": [],
+      "skills": [
+        "vocab:v-tmavy"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l01-e6",
+      "type": "caseSelect",
+      "prompt": "Dnes má **modrou** košili.",
+      "question": "Which case is \"modrou\"?",
+      "options": [
+        "nominative",
+        "genitive",
+        "accusative",
+        "instrumental"
+      ],
+      "en": "Today he's wearing a blue shirt.",
+      "answers": [
+        "accusative"
+      ],
+      "why": "košili is the object of má (has), so it's in the accusative, and the adjective agrees: modrá košile → modrou košili.",
+      "hints": [],
+      "skills": [
+        "case:accusative",
+        "vocab:v-modry"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l01-e7",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Kolega",
+          "cs": "Jak vypadá tvoje manažerka?",
+          "en": "What does your manager look like?"
+        }
+      ],
+      "prompt": "Say she's tall and has long hair.",
+      "answers": [
+        "[Je ]vysoká{,| a} má dlouhé vlasy[.]"
+      ],
+      "why": "Feminine adjective vysoká; vlasy is plural, so dlouhé vlasy.",
+      "hints": [
+        {
+          "wrong": "[Je ]vysoký{,| a} má dlouhé vlasy[.]",
+          "explain": "Your manager is a woman here (manažerka): vysoká."
+        },
+        {
+          "wrong": "[Je ]vysoká{,| a} má dlouhý vlasy[.]",
+          "explain": "Standard Czech: dlouhé vlasy. (You will hear dlouhý vlasy in speech; see the note on spoken forms.)"
+        }
+      ],
+      "skills": [
+        "case:nominative",
+        "case:accusative",
+        "vocab:v-kratky"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l01-e8",
+      "type": "conjugate",
+      "verb": "mít",
+      "prompt": "Moje sestra ___ dlouhé vlasy.",
+      "en": "My sister has long hair.",
+      "person": "3sg",
+      "answers": [
+        "má"
+      ],
+      "why": "mít: mám, máš, má, máme, máte, mají. For on/ona: má.",
+      "hints": [
+        {
+          "wrong": "mám",
+          "explain": "mám is \"I have\". For ona (my sister): má."
+        }
+      ],
+      "skills": [
+        "verb:irregulars"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

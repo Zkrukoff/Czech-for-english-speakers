@@ -9,6 +9,8 @@ Czech has two words for "you", and choosing the right one is part of being polit
 
 Using *ty* is called **tykání**, using *vy* is **vykání**. When in doubt, use *vy*: it's always safe, and Czechs will suggest switching to *ty* when they're ready. *Vy* is also the plural "you" for a group.
 
+**At work:** many international companies use *ty* among colleagues from the first day, but you'd still greet your manager, the receptionist or the building caretaker with *Dobrý den* until they suggest otherwise. Listen to how colleagues greet each other and follow their lead.
+
 ## Greetings by situation
 
 | Situation | Hello | Goodbye |
@@ -30,4 +32,4 @@ Czechs tend to answer this question honestly. *Ujde to* or *Nic moc* are perfect
 
 ## Names change when you speak to someone
 
-You may have noticed *Ahoj, Jan**o**!* and *Ahoj, Tomáš**i**!* in the dialogue. Jana's and Tomáš's names change because someone is speaking *to* them. This is the **vocative**, and you'll practise it in lesson 4.
+You may have noticed *Ahoj, Jan**o**!* and *Ahoj, Daniel**i**!* in the dialogue. Jana's and Daniel's names change because someone is speaking *to* them. This is the **vocative**, and you'll practise it in lesson 4.

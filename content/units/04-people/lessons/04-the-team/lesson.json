@@ -1,0 +1,317 @@
+{
+  "id": "u04-l04",
+  "title": "Meet the team",
+  "canDo": [
+    "u04-g4"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "case:nominative",
+    "case:locative"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-tym",
+      "cs": "tým",
+      "en": "team",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vyvojar",
+      "cs": "vývojář / vývojářka",
+      "en": "developer (male / female)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-ucetni",
+      "cs": "účetní",
+      "en": "accountant",
+      "pos": "noun",
+      "gender": "m-anim",
+      "notes": "The same word for a man or a woman. It declines like an adjective (jarní).",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vedouci",
+      "cs": "vedoucí",
+      "en": "manager, head (of a team)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "notes": "Same for a man or a woman; declines like an adjective: s vedoucím, s vedoucí.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-asistent",
+      "cs": "asistent / asistentka",
+      "en": "assistant (male / female)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-reditel",
+      "cs": "ředitel / ředitelka",
+      "en": "director (male / female)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-pracovat-jako",
+      "cs": "pracovat jako",
+      "en": "to work as",
+      "pos": "phrase",
+      "notes": "+ nominative: Pracuje jako asistentka.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-mit-na-starosti",
+      "cs": "mít na starosti",
+      "en": "to be in charge of",
+      "pos": "phrase",
+      "notes": "+ accusative: Má na starosti marketing.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vitej",
+      "cs": "vítej / vítejte",
+      "en": "welcome (informal / formal)",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-oddeleni",
+      "cs": "oddělení",
+      "en": "department",
+      "pos": "noun",
+      "gender": "n",
+      "notes": "v našem oddělení = in our department",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "Daniel's manager introduces him to the team on his first day.",
+    "lines": [
+      {
+        "speaker": "Paní Dvořáková",
+        "cs": "Tak, Danieli, tohle je náš tým. To je Pavel, náš vývojář.",
+        "en": "So, Daniel, this is our team. This is Pavel, our developer.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Pavel",
+        "cs": "Ahoj, vítej!",
+        "en": "Hi, welcome!",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Paní Dvořáková",
+        "cs": "Tohle je paní Horáková, naše účetní. Má na starosti faktury.",
+        "en": "This is Mrs Horáková, our accountant. She's in charge of invoices.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Paní Horáková",
+        "cs": "Dobrý den, těší mě.",
+        "en": "Hello, nice to meet you.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Paní Dvořáková",
+        "cs": "A tohle je Lenka. Pracuje jako asistentka a ví úplně všechno.",
+        "en": "And this is Lenka. She works as an assistant and knows absolutely everything.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Lenka",
+        "cs": "To není pravda!",
+        "en": "That's not true!",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Daniel",
+        "cs": "Těší mě. Doufám, že si zapamatuju všechna jména.",
+        "en": "Nice to meet you. I hope I'll remember all the names.",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u04-l04-e1",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "She works as a developer.",
+      "answers": [
+        "[Ona ]pracuje jako vývojářka[.]"
+      ],
+      "why": "pracovat jako + nominative. A woman is a vývojářka.",
+      "hints": [
+        {
+          "wrong": "[Ona ]pracuje jako vývojář[.]",
+          "explain": "vývojář is masculine. For a woman: vývojářka."
+        },
+        {
+          "wrong": "[Ona ]pracuje jako vývojářkou[.]",
+          "explain": "After jako, use the same case as the subject (nominative): jako vývojářka."
+        }
+      ],
+      "skills": [
+        "case:nominative",
+        "vocab:v-vyvojar",
+        "vocab:v-pracovat-jako"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l04-e2",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Pavel is our developer.",
+      "answers": [
+        "Pavel je náš vývojář[.]"
+      ],
+      "why": "náš is \"our\" with a masculine noun.",
+      "hints": [
+        {
+          "wrong": "Pavel je naše vývojář[.]",
+          "explain": "naše is for feminine and neuter nouns. vývojář is masculine: náš vývojář."
+        }
+      ],
+      "skills": [
+        "vocab:v-vyvojar"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l04-e3",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "Má na starosti marketing.",
+      "answers": [
+        "{He|She} {is|'s} {in charge of|responsible for} marketing[.]",
+        "{He|She} {looks after|handles|runs|manages} marketing[.]"
+      ],
+      "why": "mít na starosti + accusative = to be in charge of.",
+      "hints": [],
+      "skills": [
+        "vocab:v-mit-na-starosti"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l04-e4",
+      "type": "fillEnding",
+      "prompt": "Pracuje v marketing___.",
+      "base": "marketing",
+      "en": "He works in marketing.",
+      "answers": [
+        "u"
+      ],
+      "why": "v (in) + locative. Masculine nouns ending in -g, -k, -h, -ch take -u: v marketingu.",
+      "hints": [
+        {
+          "wrong": "ě",
+          "explain": "After g (and k, h, ch), the masculine locative is -u, not -ě: v marketingu."
+        }
+      ],
+      "skills": [
+        "case:locative"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l04-e5",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Welcome! (to one colleague you say ty to)",
+      "answers": [
+        "Vítej[!]"
+      ],
+      "why": "vítej is the ty form; vítejte is formal or plural.",
+      "hints": [
+        {
+          "wrong": "Vítejte[!]",
+          "explain": "Vítejte is formal or plural. To one colleague you say ty to: Vítej!"
+        }
+      ],
+      "skills": [
+        "vocab:v-vitej"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l04-e6",
+      "type": "caseSelect",
+      "prompt": "Pracuje jako **asistentka**.",
+      "question": "Which case is \"asistentka\"?",
+      "options": [
+        "nominative",
+        "accusative",
+        "instrumental",
+        "locative"
+      ],
+      "en": "She works as an assistant.",
+      "answers": [
+        "nominative"
+      ],
+      "why": "After jako (as), the noun is in the same case as what it describes: here the subject, so the nominative.",
+      "hints": [],
+      "skills": [
+        "case:nominative",
+        "vocab:v-asistent"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l04-e7",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Who is that?",
+      "answers": [
+        "Kdo {je to|to je}?"
+      ],
+      "why": "Kdo je to? or Kdo to je? Both are natural.",
+      "hints": [],
+      "skills": [
+        "vocab:v-tym"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l04-e8",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Paní Horáková",
+          "cs": "Dobrý den, těší mě.",
+          "en": "Hello, nice to meet you."
+        }
+      ],
+      "prompt": "Reply politely that you're pleased to meet her too.",
+      "answers": [
+        "[Dobrý den[,] ]{Mě {taky|také}|{Taky|Také} mě těší|Těší mě}[.]"
+      ],
+      "why": "Mě taky (likewise), or simply Těší mě back. Dobrý den is the right greeting with a colleague you say vy to.",
+      "hints": [
+        {
+          "wrong": "{Ahoj|Čau}[,] {mě taky|těší mě}[.]",
+          "explain": "Paní Horáková greeted you formally (Dobrý den), so answer in kind: Dobrý den, mě taky."
+        },
+        {
+          "wrong": "[Dobrý den[,] ]Já {taky|také}[.]",
+          "explain": "Já taky is \"I too\". Here it's \"(it pleases) me too\": Mě taky."
+        }
+      ],
+      "skills": [
+        "vocab:v-me-taky"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "id": "u04-l02",
+  "title": "What's she like?",
+  "canDo": [
+    "u04-g2"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "case:nominative",
+    "case:dative"
+  ],
+  "nativeReviewed": false,
+  "vocab": [
+    {
+      "id": "v-jaky",
+      "cs": "jaký / jaká / jaké",
+      "en": "what … like? (m / f / n)",
+      "pos": "adj",
+      "notes": "Jaký je? What's he like? (Jak vypadá? = What does he look like?)",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-sef",
+      "cs": "šéf / šéfová",
+      "en": "boss (male / female)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-mily",
+      "cs": "milý",
+      "en": "nice, kind",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-sympaticky",
+      "cs": "sympatický",
+      "en": "likeable, pleasant",
+      "pos": "adj",
+      "notes": "A false friend: it doesn't mean \"sympathetic\" (that's soucitný).",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-prisny",
+      "cs": "přísný",
+      "en": "strict",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-spravedlivy",
+      "cs": "spravedlivý",
+      "en": "fair, just",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-pracovity",
+      "cs": "pracovitý",
+      "en": "hard-working",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-narocny",
+      "cs": "náročný",
+      "en": "demanding",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-vtipny",
+      "cs": "vtipný",
+      "en": "funny",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-liny",
+      "cs": "líný",
+      "en": "lazy",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-velmi",
+      "cs": "velmi / moc",
+      "en": "very (neutral / everyday)",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-trochu",
+      "cs": "trochu",
+      "en": "a bit, a little",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-mrzi",
+      "cs": "To mě mrzí.",
+      "en": "I'm sorry (to hear that).",
+      "pos": "phrase",
+      "notes": "Also To je mi líto.",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "Friday lunch. Sarah's friend Kateřina asks about her new job.",
+    "lines": [
+      {
+        "speaker": "Kateřina",
+        "cs": "Tak co, jak se ti líbí nová práce?",
+        "en": "So, how do you like the new job?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Sarah",
+        "cs": "Moc. Kolegové jsou milí a pomáhají mi s češtinou.",
+        "en": "A lot. My colleagues are nice and they help me with my Czech.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Kateřina",
+        "cs": "A jaký je tvůj šéf?",
+        "en": "And what's your boss like?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Sarah",
+        "cs": "Je trochu přísný, ale spravedlivý. A je velmi pracovitý.",
+        "en": "He's a bit strict, but fair. And he's very hard-working.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Kateřina",
+        "cs": "To zní dobře. Můj šéf je strašně náročný.",
+        "en": "That sounds good. My boss is terribly demanding.",
+        "spoken": {
+          "form": "strašně",
+          "note": "strašně (terribly) is a very common everyday intensifier, for good things too: strašně milý."
+        },
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Sarah",
+        "cs": "To mě mrzí.",
+        "en": "I'm sorry to hear that.",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u04-l02-e1",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "What's your boss like? (informal; a male boss)",
+      "answers": [
+        "Jaký je tvůj šéf?"
+      ],
+      "why": "Jaký je…? asks what someone is like as a person. Jaký agrees with šéf (masculine).",
+      "hints": [
+        {
+          "wrong": "Jak vypadá tvůj šéf?",
+          "explain": "Jak vypadá? asks about appearance. For personality: Jaký je tvůj šéf?"
+        },
+        {
+          "wrong": "Jak je tvůj šéf?",
+          "explain": "Jak je…? is more like \"How is he (doing)?\". To ask what he's like: Jaký je tvůj šéf?"
+        },
+        {
+          "wrong": "Jaký je váš šéf?",
+          "explain": "váš is the formal/plural \"your\". Informal: tvůj šéf."
+        }
+      ],
+      "skills": [
+        "case:nominative",
+        "vocab:v-jaky",
+        "vocab:v-sef"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-e2",
+      "type": "fillEnding",
+      "prompt": "Moji kolegové jsou mil___.",
+      "base": "milý",
+      "en": "My colleagues are nice.",
+      "answers": [
+        "í"
+      ],
+      "why": "For groups of people with at least one man (masculine animate plural), adjectives end in -í: milí kolegové.",
+      "hints": [
+        {
+          "wrong": "é",
+          "explain": "-é is the plural for women and things: milé kolegyně. Kolegové (men, or a mixed group) take -í: milí."
+        },
+        {
+          "wrong": "ý",
+          "explain": "kolegové is plural, so the adjective is plural: milí."
+        }
+      ],
+      "skills": [
+        "case:nominative",
+        "vocab:v-mily"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-e3",
+      "type": "fillEnding",
+      "prompt": "Naše šéfová je přísn___.",
+      "base": "přísný",
+      "en": "Our boss (a woman) is strict.",
+      "answers": [
+        "á"
+      ],
+      "why": "šéfová is feminine: přísný → přísná.",
+      "hints": [
+        {
+          "wrong": "ý",
+          "explain": "přísný is masculine. šéfová (a female boss) needs přísná."
+        }
+      ],
+      "skills": [
+        "case:nominative",
+        "vocab:v-prisny"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-e4",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "He's very funny.",
+      "answers": [
+        "[On ]je {velmi|moc|hodně} vtipný[.]"
+      ],
+      "why": "velmi / moc / hodně + adjective: velmi vtipný.",
+      "hints": [
+        {
+          "wrong": "[On ]je {velmi|moc|hodně} vtipná[.]",
+          "explain": "vtipná is feminine. For \"he\": vtipný."
+        }
+      ],
+      "skills": [
+        "vocab:v-vtipny",
+        "vocab:v-velmi"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-e5",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "Je trochu líný.",
+      "answers": [
+        "{He is|He's} a {bit|little|little bit} lazy[.]",
+        "{He is|He's} {slightly|somewhat|kind of|rather} lazy[.]"
+      ],
+      "why": "trochu = a bit; líný = lazy (masculine, so \"he\").",
+      "hints": [],
+      "skills": [
+        "vocab:v-liny",
+        "vocab:v-trochu"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-e6",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "My colleagues are nice. (a mixed team)",
+      "answers": [
+        "{Moji|Mí} kolegové jsou {milí|moc milí|sympatičtí}[.]"
+      ],
+      "why": "Masculine animate plural: kolegové, with adjectives in -í (milí). sympatický → sympatičtí.",
+      "hints": [
+        {
+          "wrong": "{Moji|Mí} kolegové jsou milý[.]",
+          "explain": "milý is singular. With kolegové use the plural: milí."
+        },
+        {
+          "wrong": "{Moji|Mí} kolegové jsou milé[.]",
+          "explain": "milé is for women or things. For a mixed group (kolegové): milí."
+        },
+        {
+          "wrong": "Moje kolegové jsou milí[.]",
+          "explain": "For masculine animate plurals, \"my\" is moji (or mí): moji kolegové."
+        }
+      ],
+      "skills": [
+        "case:nominative",
+        "vocab:v-mily",
+        "vocab:v-kolega"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-e7",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Kateřina",
+          "cs": "Můj šéf je strašně náročný.",
+          "en": "My boss is terribly demanding."
+        }
+      ],
+      "prompt": "Say you're sorry to hear that.",
+      "answers": [
+        "To mě mrzí[.]",
+        "To je mi líto[.]"
+      ],
+      "why": "To mě mrzí or To je mi líto express sympathy (\"I'm sorry to hear that\").",
+      "hints": [
+        {
+          "wrong": "Promiň[.]",
+          "explain": "Promiň is \"sorry\" for something you did (excuse me). For sympathy: To mě mrzí."
+        },
+        {
+          "wrong": "Promiňte[.]",
+          "explain": "Promiňte is \"excuse me / sorry\" for something you did. For sympathy: To mě mrzí."
+        }
+      ],
+      "skills": [
+        "vocab:v-mrzi"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-e8",
+      "type": "caseSelect",
+      "prompt": "Kolegové jsou **milí**.",
+      "question": "Which case is \"milí\"?",
+      "options": [
+        "nominative",
+        "genitive",
+        "accusative",
+        "instrumental"
+      ],
+      "en": "My colleagues are nice.",
+      "answers": [
+        "nominative"
+      ],
+      "why": "After být (jsou), a describing adjective stays in the nominative, agreeing with the subject: kolegové → milí.",
+      "hints": [],
+      "skills": [
+        "case:nominative"
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

@@ -43,3 +43,11 @@ The means of transport goes in the **instrumental**, without a preposition:
 | metro | metr**em** |
 
 *pěšky* = on foot.
+
+## Commuting
+
+If you take public transport to work every day, buy a **předplatní jízdenka** (travel pass): **měsíční** (monthly), **čtvrtletní** (quarterly) or **roční** (annual), much cheaper than single tickets. In Prague, passes are loaded on the **Lítačka** card or app. In Brno, locals call the tram a **šalina**.
+
+- ***Jezdím do práce tramvají / metrem.*** I go to work by tram / metro.
+- ***Chodím do práce pěšky.*** I walk to work.
+- ***Kolik ti trvá cesta do práce?*** How long is your commute?

@@ -81,10 +81,19 @@
       "en": "It was excellent.",
       "pos": "phrase",
       "nativeReviewed": false
+    },
+    {
+      "id": "v-stravenka",
+      "cs": "stravenka",
+      "en": "meal voucher",
+      "pos": "noun",
+      "gender": "f",
+      "notes": "Many employers give meal vouchers or a meal card (stravenková karta) as a benefit. Platím stravenkou.",
+      "nativeReviewed": false
     }
   ],
   "dialogue": {
-    "setting": "The end of the meal at the pub.",
+    "setting": "The end of lunch with a colleague.",
     "lines": [
       {
         "speaker": "Tom",
@@ -311,6 +320,32 @@
       "skills": [
         "verb:past",
         "vocab:v-bylo-to-vyborne"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-e9",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Can I pay with meal vouchers?",
+      "answers": [
+        "{Můžu|Mohu} [za]platit {stravenkami|stravenkou|stravenkovou kartou}?",
+        "Berete stravenky?"
+      ],
+      "why": "The means of payment is the bare instrumental: stravenka → stravenkou (one), stravenkami (several). A meal card: stravenkovou kartou. You can also ask Berete stravenky? (Do you take meal vouchers?)",
+      "hints": [
+        {
+          "wrong": "{Můžu|Mohu} [za]platit {se stravenkami|s stravenkami|se stravenkou|s stravenkou}?",
+          "explain": "Use the bare instrumental, without s/se: stravenkami."
+        },
+        {
+          "wrong": "{Můžu|Mohu} [za]platit stravenky?",
+          "explain": "stravenky is the plural nominative/accusative. \"With vouchers\" is the instrumental: stravenkami."
+        }
+      ],
+      "skills": [
+        "case:instrumental",
+        "vocab:v-stravenka"
       ],
       "nativeReviewed": false
     }

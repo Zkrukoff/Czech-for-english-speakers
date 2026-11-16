@@ -1,0 +1,1296 @@
+{
+  "intro": "intro.md",
+  "letters": [
+    {
+      "letter": "a",
+      "upper": "A",
+      "name": "á",
+      "group": "vowel",
+      "sound": "short, like the \"u\" in \"cup\"",
+      "ipa": "a",
+      "example": {
+        "cs": "pas",
+        "en": "passport"
+      },
+      "spellingWord": "Adam",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "á",
+      "upper": "Á",
+      "name": "dlouhé á",
+      "group": "vowel",
+      "sound": "long, like the \"a\" in \"father\"",
+      "ipa": "aː",
+      "example": {
+        "cs": "pás",
+        "en": "belt; waist"
+      },
+      "tip": "The čárka (´) only makes a vowel longer. It never shows stress. pas and pás are different words.",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "b",
+      "upper": "B",
+      "name": "bé",
+      "group": "consonant",
+      "sound": "as in English",
+      "ipa": "b",
+      "example": {
+        "cs": "banka",
+        "en": "bank"
+      },
+      "spellingWord": "Božena",
+      "tip": "At the end of a word it sounds like p: chléb → [chlép].",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "c",
+      "upper": "C",
+      "name": "cé",
+      "group": "consonant",
+      "sound": "like the \"ts\" in \"cats\", even at the start of a word",
+      "ipa": "ts",
+      "example": {
+        "cs": "cena",
+        "en": "price"
+      },
+      "spellingWord": "Cyril",
+      "tip": "Never like the \"c\" in \"cat\" or \"city\".",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "č",
+      "upper": "Č",
+      "name": "čé",
+      "group": "consonant",
+      "sound": "like the \"ch\" in \"church\"",
+      "ipa": "tʃ",
+      "example": {
+        "cs": "čaj",
+        "en": "tea"
+      },
+      "spellingWord": "Čeněk",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "d",
+      "upper": "D",
+      "name": "dé",
+      "group": "consonant",
+      "sound": "as in English",
+      "ipa": "d",
+      "example": {
+        "cs": "doma",
+        "en": "at home"
+      },
+      "spellingWord": "David",
+      "tip": "Before i, í and ě it becomes ď: dívka sounds like [ďívka].",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "ď",
+      "upper": "Ď",
+      "name": "ďé",
+      "group": "consonant",
+      "sound": "like the \"d\" in British \"duty\": d and y pronounced together",
+      "ipa": "ɟ",
+      "example": {
+        "cs": "ďábel",
+        "en": "devil"
+      },
+      "tip": "The capital is written Ď. You'll hear the sound more often than you see the letter, because di, dí and dě are pronounced ďi, ďí, ďe.",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "e",
+      "upper": "E",
+      "name": "é",
+      "group": "vowel",
+      "sound": "short, like the \"e\" in \"bed\"",
+      "ipa": "ɛ",
+      "example": {
+        "cs": "den",
+        "en": "day"
+      },
+      "spellingWord": "Emil",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "é",
+      "upper": "É",
+      "name": "dlouhé é",
+      "group": "vowel",
+      "sound": "long version of e, like \"ai\" in \"fair\" (without the r)",
+      "ipa": "ɛː",
+      "example": {
+        "cs": "mléko",
+        "en": "milk"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "letter": "ě",
+      "upper": "Ě",
+      "name": "e s háčkem",
+      "group": "vowel",
+      "sound": "an \"e\" that changes the consonant before it",
+      "ipa": "jɛ / ɲɛ",
+      "example": {
+        "cs": "děkuju",
+        "en": "thank you"
+      },
+      "tip": "bě, pě, vě, fě sound like bje, pje, vje, fje (věc → [vjec]); dě, tě, ně sound like ďe, ťe, ňe (děkuju → [ďekuju]); mě sounds like mňe (město → [mňesto]).",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "f",
+      "upper": "F",
+      "name": "ef",
+      "group": "consonant",
+      "sound": "as in English",
+      "ipa": "f",
+      "example": {
+        "cs": "fotka",
+        "en": "photo"
+      },
+      "spellingWord": "František",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "g",
+      "upper": "G",
+      "name": "gé",
+      "group": "consonant",
+      "sound": "always hard, like the \"g\" in \"go\"",
+      "ipa": "g",
+      "example": {
+        "cs": "guláš",
+        "en": "goulash"
+      },
+      "spellingWord": "Gustav",
+      "tip": "Never like the \"g\" in \"gym\". Mostly in borrowed words.",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "h",
+      "upper": "H",
+      "name": "há",
+      "group": "consonant",
+      "sound": "a voiced h: like the \"h\" in \"behind\", with the voice on",
+      "ipa": "ɦ",
+      "example": {
+        "cs": "hrad",
+        "en": "castle"
+      },
+      "spellingWord": "Helena",
+      "tip": "Softer and \"buzzier\" than English h. At the end of a word it sounds like ch: sníh → [sňích].",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "ch",
+      "upper": "Ch",
+      "name": "chá",
+      "group": "consonant",
+      "sound": "like the \"ch\" in Scottish \"loch\", never like \"church\"",
+      "ipa": "x",
+      "example": {
+        "cs": "chleba",
+        "en": "bread"
+      },
+      "spellingWord": "Chrudim",
+      "tip": "Ch counts as one letter and comes after h in the dictionary: chata comes after hrad.",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "i",
+      "upper": "I",
+      "name": "í",
+      "group": "vowel",
+      "sound": "short, like the \"i\" in \"bit\"",
+      "ipa": "ɪ",
+      "example": {
+        "cs": "pivo",
+        "en": "beer"
+      },
+      "spellingWord": "Ivan",
+      "tip": "Called \"měkké i\" (soft i). After d, t, n it softens them: ti sounds like ťi, ni like ňi.",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "í",
+      "upper": "Í",
+      "name": "dlouhé í",
+      "group": "vowel",
+      "sound": "long, like the \"ee\" in \"see\"",
+      "ipa": "iː",
+      "example": {
+        "cs": "víno",
+        "en": "wine"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "letter": "j",
+      "upper": "J",
+      "name": "jé",
+      "group": "consonant",
+      "sound": "like the \"y\" in \"yes\"",
+      "ipa": "j",
+      "example": {
+        "cs": "jídlo",
+        "en": "food"
+      },
+      "spellingWord": "Josef",
+      "tip": "Never like English j in \"jam\".",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "k",
+      "upper": "K",
+      "name": "ká",
+      "group": "consonant",
+      "sound": "like English k, but without the puff of air",
+      "ipa": "k",
+      "example": {
+        "cs": "káva",
+        "en": "coffee"
+      },
+      "spellingWord": "Karel",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "l",
+      "upper": "L",
+      "name": "el",
+      "group": "consonant",
+      "sound": "a clear l, as in \"leaf\"",
+      "ipa": "l",
+      "example": {
+        "cs": "lékárna",
+        "en": "pharmacy"
+      },
+      "spellingWord": "Ludvík",
+      "tip": "Can be a syllable on its own, with no vowel: vlk (wolf).",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "m",
+      "upper": "M",
+      "name": "em",
+      "group": "consonant",
+      "sound": "as in English",
+      "ipa": "m",
+      "example": {
+        "cs": "máma",
+        "en": "mum"
+      },
+      "spellingWord": "Marie",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "n",
+      "upper": "N",
+      "name": "en",
+      "group": "consonant",
+      "sound": "as in English",
+      "ipa": "n",
+      "example": {
+        "cs": "noc",
+        "en": "night"
+      },
+      "spellingWord": "Norbert",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "ň",
+      "upper": "Ň",
+      "name": "eň",
+      "group": "consonant",
+      "sound": "like the \"ny\" in \"canyon\"",
+      "ipa": "ɲ",
+      "example": {
+        "cs": "Plzeň",
+        "en": "Pilsen"
+      },
+      "tip": "Also heard in ni, ní and ně: nic sounds like [ňic].",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "o",
+      "upper": "O",
+      "name": "ó",
+      "group": "vowel",
+      "sound": "short, like the \"o\" in British \"not\"",
+      "ipa": "o",
+      "example": {
+        "cs": "oko",
+        "en": "eye"
+      },
+      "spellingWord": "Oto",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "ó",
+      "upper": "Ó",
+      "name": "dlouhé ó",
+      "group": "vowel",
+      "sound": "long o, like the \"aw\" in \"law\"",
+      "ipa": "oː",
+      "example": {
+        "cs": "gól",
+        "en": "goal (in sport)"
+      },
+      "loanOnly": true,
+      "nativeReviewed": false
+    },
+    {
+      "letter": "p",
+      "upper": "P",
+      "name": "pé",
+      "group": "consonant",
+      "sound": "like English p, but without the puff of air",
+      "ipa": "p",
+      "example": {
+        "cs": "práce",
+        "en": "work"
+      },
+      "spellingWord": "Petr",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "q",
+      "upper": "Q",
+      "name": "kvé",
+      "group": "consonant",
+      "sound": "like \"kv\"",
+      "ipa": "kv",
+      "example": {
+        "cs": "aquapark",
+        "en": "water park"
+      },
+      "spellingWord": "Quido",
+      "loanOnly": true,
+      "nativeReviewed": false
+    },
+    {
+      "letter": "r",
+      "upper": "R",
+      "name": "er",
+      "group": "consonant",
+      "sound": "a tapped or rolled r, made with the tip of the tongue",
+      "ipa": "r",
+      "example": {
+        "cs": "ruka",
+        "en": "hand"
+      },
+      "spellingWord": "Rudolf",
+      "tip": "Can be a syllable on its own: Brno, krk (neck), čtvrtek (Thursday).",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "ř",
+      "upper": "Ř",
+      "name": "eř",
+      "group": "consonant",
+      "sound": "a sound unique to Czech: a rolled r and the \"s\" in \"measure\" at the same time",
+      "ipa": "r̝",
+      "example": {
+        "cs": "řeka",
+        "en": "river"
+      },
+      "spellingWord": "Řehoř",
+      "tip": "Try a rolled r with the tongue a little tenser and let it buzz like ž. Even Czech children learn it last. If it won't come yet, say ž: you'll be understood.",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "s",
+      "upper": "S",
+      "name": "es",
+      "group": "consonant",
+      "sound": "always like the \"s\" in \"see\", never like \"z\"",
+      "ipa": "s",
+      "example": {
+        "cs": "sestra",
+        "en": "sister"
+      },
+      "spellingWord": "Svatopluk",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "š",
+      "upper": "Š",
+      "name": "eš",
+      "group": "consonant",
+      "sound": "like the \"sh\" in \"ship\"",
+      "ipa": "ʃ",
+      "example": {
+        "cs": "škola",
+        "en": "school"
+      },
+      "spellingWord": "Šimon",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "t",
+      "upper": "T",
+      "name": "té",
+      "group": "consonant",
+      "sound": "like English t, but without the puff of air",
+      "ipa": "t",
+      "example": {
+        "cs": "tramvaj",
+        "en": "tram"
+      },
+      "spellingWord": "Tomáš",
+      "tip": "Before i, í and ě it becomes ť: ticho sounds like [ťicho].",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "ť",
+      "upper": "Ť",
+      "name": "ťé",
+      "group": "consonant",
+      "sound": "like the \"t\" in British \"tune\": t and y pronounced together",
+      "ipa": "c",
+      "example": {
+        "cs": "chuť",
+        "en": "taste, appetite"
+      },
+      "tip": "Dobrou chuť! = Enjoy your meal! The capital is written Ť.",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "u",
+      "upper": "U",
+      "name": "ú",
+      "group": "vowel",
+      "sound": "short, like the \"oo\" in \"book\"",
+      "ipa": "u",
+      "example": {
+        "cs": "ulice",
+        "en": "street"
+      },
+      "spellingWord": "Urban",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "ú",
+      "upper": "Ú",
+      "name": "ú s čárkou",
+      "group": "vowel",
+      "sound": "long, like the \"oo\" in \"food\"",
+      "ipa": "uː",
+      "example": {
+        "cs": "úterý",
+        "en": "Tuesday"
+      },
+      "tip": "Usually only at the start of a word (úterý) or a word part (neúspěch).",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "ů",
+      "upper": "Ů",
+      "name": "ů s kroužkem",
+      "group": "vowel",
+      "sound": "exactly the same sound as ú",
+      "ipa": "uː",
+      "example": {
+        "cs": "dům",
+        "en": "house"
+      },
+      "tip": "The kroužek (˚) spelling is used in the middle and at the end of words: dům, domů. It sounds the same as ú.",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "v",
+      "upper": "V",
+      "name": "vé",
+      "group": "consonant",
+      "sound": "as in English",
+      "ipa": "v",
+      "example": {
+        "cs": "voda",
+        "en": "water"
+      },
+      "spellingWord": "Václav",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "w",
+      "upper": "W",
+      "name": "dvojité vé",
+      "group": "consonant",
+      "sound": "like v",
+      "ipa": "v",
+      "example": {
+        "cs": "web",
+        "en": "website"
+      },
+      "spellingWord": "dvojité V",
+      "loanOnly": true,
+      "nativeReviewed": false
+    },
+    {
+      "letter": "x",
+      "upper": "X",
+      "name": "iks",
+      "group": "consonant",
+      "sound": "like \"ks\"",
+      "ipa": "ks",
+      "example": {
+        "cs": "taxi",
+        "en": "taxi"
+      },
+      "spellingWord": "Xaver",
+      "loanOnly": true,
+      "nativeReviewed": false
+    },
+    {
+      "letter": "y",
+      "upper": "Y",
+      "name": "ypsilon",
+      "group": "vowel",
+      "sound": "exactly the same sound as i",
+      "ipa": "ɪ",
+      "example": {
+        "cs": "byt",
+        "en": "flat, apartment"
+      },
+      "spellingWord": "Ypsilon",
+      "tip": "Called \"tvrdé y\" (hard y). It sounds like i, but after d, t, n it keeps them hard: dy = [dy], di = [ďi]. Czechs spend years at school learning when to write i or y.",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "ý",
+      "upper": "Ý",
+      "name": "dlouhé ý",
+      "group": "vowel",
+      "sound": "exactly the same sound as í",
+      "ipa": "iː",
+      "example": {
+        "cs": "sýr",
+        "en": "cheese"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "letter": "z",
+      "upper": "Z",
+      "name": "zet",
+      "group": "consonant",
+      "sound": "like the \"z\" in \"zoo\"",
+      "ipa": "z",
+      "example": {
+        "cs": "zima",
+        "en": "winter; cold"
+      },
+      "spellingWord": "Zuzana",
+      "nativeReviewed": false
+    },
+    {
+      "letter": "ž",
+      "upper": "Ž",
+      "name": "žet",
+      "group": "consonant",
+      "sound": "like the \"s\" in \"measure\"",
+      "ipa": "ʒ",
+      "example": {
+        "cs": "žena",
+        "en": "woman"
+      },
+      "spellingWord": "Žofie",
+      "nativeReviewed": false
+    }
+  ],
+  "practice": [
+    {
+      "id": "alphabet-sounds",
+      "title": "Sounds to letters",
+      "description": "Which Czech letter makes this sound? Type the letter. Here the háček or čárka is the whole point, so it has to be exact.",
+      "exercises": [
+        {
+          "id": "alpha-s1",
+          "type": "question",
+          "prompt": "Which letter sounds like the **\"ch\" in \"church\"**?",
+          "answerLang": "cs",
+          "answers": [
+            "č"
+          ],
+          "why": "č (c with a háček) is the \"ch\" in \"church\": čaj, Čech.",
+          "hints": [
+            {
+              "wrong": "ch",
+              "explain": "In Czech, ch is the sound in Scottish \"loch\". The \"church\" sound is č."
+            },
+            {
+              "wrong": "c",
+              "explain": "Plain c is \"ts\" as in \"cats\". Add the háček: č."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-s2",
+          "type": "question",
+          "prompt": "Which letter sounds like the **\"sh\" in \"ship\"**?",
+          "answerLang": "cs",
+          "answers": [
+            "š"
+          ],
+          "why": "š is the \"sh\" in \"ship\": škola, šéf.",
+          "hints": [
+            {
+              "wrong": "s",
+              "explain": "Plain s is always \"s\" as in \"see\". With a háček, š is \"sh\"."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-s3",
+          "type": "question",
+          "prompt": "Which letter sounds like the **\"s\" in \"measure\"**?",
+          "answerLang": "cs",
+          "answers": [
+            "ž"
+          ],
+          "why": "ž is the sound in \"measure\": žena, Žofie.",
+          "hints": [
+            {
+              "wrong": "z",
+              "explain": "z is the \"z\" in \"zoo\". The \"measure\" sound is ž."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-s4",
+          "type": "question",
+          "prompt": "Which letter sounds like the **\"ts\" in \"cats\"**?",
+          "answerLang": "cs",
+          "answers": [
+            "c"
+          ],
+          "why": "Czech c is always \"ts\": cena [tsena], Cyril.",
+          "hints": [
+            {
+              "wrong": "ts",
+              "explain": "Czech writes this sound with one letter: c."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-s5",
+          "type": "question",
+          "prompt": "Which letter (two characters) sounds like the **\"ch\" in Scottish \"loch\"**?",
+          "answerLang": "cs",
+          "answers": [
+            "ch"
+          ],
+          "why": "ch is the \"loch\" sound: chleba, Chrudim. It counts as one letter.",
+          "hints": [
+            {
+              "wrong": "č",
+              "explain": "č is the \"church\" sound. The \"loch\" sound is written ch."
+            },
+            {
+              "wrong": "h",
+              "explain": "Czech h is a voiced, softer h. The \"loch\" sound is ch."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-s6",
+          "type": "question",
+          "prompt": "Which letter sounds like the **\"y\" in \"yes\"**?",
+          "answerLang": "cs",
+          "answers": [
+            "j"
+          ],
+          "why": "Czech j is the English \"y\" sound: jo, jídlo.",
+          "hints": [
+            {
+              "wrong": "y",
+              "explain": "Czech y is a vowel (it sounds like i). The \"yes\" sound is j."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-s7",
+          "type": "question",
+          "prompt": "Which letter sounds like the **\"ny\" in \"canyon\"**?",
+          "answerLang": "cs",
+          "answers": [
+            "ň"
+          ],
+          "why": "ň is \"ny\": Plzeň, kůň.",
+          "hints": [
+            {
+              "wrong": "n",
+              "explain": "Add the háček: ň."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-s8",
+          "type": "question",
+          "prompt": "Which letter is the sound in **Dvořák** that English doesn't have?",
+          "answerLang": "cs",
+          "answers": [
+            "ř"
+          ],
+          "why": "ř: a rolled r and ž at the same time. Dvořák, řeka.",
+          "hints": [
+            {
+              "wrong": "r",
+              "explain": "Plain r is a tapped r. The special sound is ř."
+            },
+            {
+              "wrong": "ž",
+              "explain": "Close: ř sounds like r and ž together, but it's written ř."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-s9",
+          "type": "question",
+          "prompt": "Which letter has a **kroužek** (a small ring) and sounds like **\"oo\" in \"food\"**?",
+          "answerLang": "cs",
+          "answers": [
+            "ů"
+          ],
+          "why": "ů sounds exactly like ú. It's written in the middle and at the end of words: dům, domů.",
+          "hints": [
+            {
+              "wrong": "ú",
+              "explain": "ú is the same sound, but it has a čárka, not a kroužek. The letter with the ring is ů."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-s10",
+          "type": "question",
+          "prompt": "Which vowel sounds **exactly the same as i**?",
+          "answerLang": "cs",
+          "answers": [
+            "y"
+          ],
+          "why": "y (tvrdé y) sounds exactly like i. The difference is only in spelling, and in how d, t, n before it are pronounced.",
+          "hints": [
+            {
+              "wrong": "í",
+              "explain": "í is the long version of i. The other letter that sounds like i is y."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "alphabet-rules",
+      "title": "Reading rules",
+      "description": "Czech is read almost exactly as it is written, once you know a handful of rules.",
+      "exercises": [
+        {
+          "id": "alpha-r1",
+          "type": "question",
+          "prompt": "Which syllable of a Czech word is stressed? (first, second or last)",
+          "answerLang": "en",
+          "answers": [
+            "first[ syllable]",
+            "[the ]first[ one]",
+            "1st"
+          ],
+          "why": "Czech stress is always on the first syllable: Olomouc = O-lo-mouc. A čárka shows a long vowel, not stress.",
+          "hints": [
+            {
+              "wrong": "last[ syllable]",
+              "explain": "Czech always stresses the first syllable, even in long words."
+            },
+            {
+              "wrong": "second[ syllable]",
+              "explain": "Czech always stresses the first syllable."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-r2",
+          "type": "question",
+          "prompt": "Pas and pás are different words. Which one means **\"passport\"**?",
+          "cs": "pas / pás",
+          "answerLang": "cs",
+          "answers": [
+            "pas"
+          ],
+          "why": "pas (short a) = passport; pás (long á) = belt, waist. Vowel length changes the meaning.",
+          "hints": [
+            {
+              "wrong": "pás",
+              "explain": "pás, with a long á, means belt or waist. Passport is pas."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-r3",
+          "type": "question",
+          "prompt": "Byt and být are different words. Which one means **\"to be\"**?",
+          "cs": "byt / být",
+          "answerLang": "cs",
+          "answers": [
+            "být"
+          ],
+          "why": "být (long ý) = to be; byt (short y) = flat, apartment.",
+          "hints": [
+            {
+              "wrong": "byt",
+              "explain": "byt is \"flat, apartment\". \"To be\" has a long ý: být."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-r4",
+          "type": "question",
+          "prompt": "In **dívka** (girl), is the d pronounced as d or ď?",
+          "cs": "dívka",
+          "answerLang": "cs",
+          "answers": [
+            "ď"
+          ],
+          "why": "d before i, í or ě is pronounced ď: dívka [ďívka]. (The same for t → ť and n → ň.)",
+          "hints": [
+            {
+              "wrong": "d",
+              "explain": "Before i, í or ě, d is softened to ď: [ďívka]."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-r5",
+          "type": "question",
+          "prompt": "How does the final **d** in **hrad** (castle) sound: d or t?",
+          "cs": "hrad",
+          "answerLang": "cs",
+          "answers": [
+            "t"
+          ],
+          "why": "Consonants at the end of a word lose their voice: hrad sounds like [hrat], chléb like [chlép].",
+          "hints": [
+            {
+              "wrong": "d",
+              "explain": "At the end of a word, d is pronounced t: [hrat]."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-r6",
+          "type": "question",
+          "prompt": "How is **město** (town) pronounced? Type it the way it sounds, using ň.",
+          "cs": "město",
+          "answerLang": "cs",
+          "answers": [
+            "mňesto"
+          ],
+          "why": "mě is pronounced mňe: město [mňesto], mě [mňe].",
+          "hints": [
+            {
+              "wrong": "mesto",
+              "explain": "The ě changes the m before it: mě sounds like mňe, so [mňesto]."
+            },
+            {
+              "wrong": "mjesto",
+              "explain": "After b, p, v, f, ě sounds like je; after m it sounds like ňe: [mňesto]."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-r7",
+          "type": "question",
+          "prompt": "How many vowels are there in this famous tongue-twister? Type a number.",
+          "cs": "Strč prst skrz krk.",
+          "answerLang": "en",
+          "answers": [
+            "0",
+            "none",
+            "zero",
+            "no vowels"
+          ],
+          "why": "None. \"Strč prst skrz krk\" (Stick a finger through your throat) works because r and l can form syllables on their own, as in Brno and vlk.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "alphabet-spelling-listen",
+      "title": "Understanding spelling",
+      "description": "On the phone or at an office, Czechs spell names and e-mail addresses letter by letter. Type the word being spelled.",
+      "exercises": [
+        {
+          "id": "alpha-l1",
+          "type": "question",
+          "prompt": "Type the surname being spelled.",
+          "cs": "en – ó – vé – á s čárkou – ká",
+          "answerLang": "cs",
+          "answers": [
+            "Novák"
+          ],
+          "why": "en – ó – vé – á s čárkou – ká spells Novák.",
+          "hints": [
+            {
+              "wrong": "Novak",
+              "explain": "Listen for \"á s čárkou\": the a is long. Novák."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-l2",
+          "type": "question",
+          "prompt": "Type the surname being spelled.",
+          "cs": "dé – vé – ó – eř – á s čárkou – ká",
+          "answerLang": "cs",
+          "answers": [
+            "Dvořák"
+          ],
+          "why": "dé – vé – ó – eř – á s čárkou – ká spells Dvořák.",
+          "hints": [
+            {
+              "wrong": "Dvorak",
+              "explain": "\"eř\" is ř and \"á s čárkou\" is á: Dvořák."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-l3",
+          "type": "question",
+          "prompt": "Type the surname being spelled.",
+          "cs": "eš – ťé – á – es – té – en – á s čárkou",
+          "answerLang": "cs",
+          "answers": [
+            "Šťastná"
+          ],
+          "why": "eš – ťé – á – es – té – en – á s čárkou spells Šťastná.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-l4",
+          "type": "question",
+          "prompt": "Type the surname being spelled.",
+          "cs": "ká – ú – chá – á – eř",
+          "answerLang": "cs",
+          "answers": [
+            "Kuchař"
+          ],
+          "why": "ká – ú – chá – á – eř spells Kuchař. Notice \"chá\" is one letter, ch.",
+          "hints": [
+            {
+              "wrong": "Kučař",
+              "explain": "\"chá\" is the letter ch, not č (čé)."
+            },
+            {
+              "wrong": "Kuchar",
+              "explain": "The last letter is \"eř\": ř."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-l5",
+          "type": "question",
+          "prompt": "Type the e-mail address being spelled.",
+          "cs": "jé, á, en, á, tečka, en, ó, vé, á, ká, ó, vé, á, zavináč, seznam, tečka, cé, zet",
+          "answerLang": "cs",
+          "answers": [
+            "jana.novakova@seznam.cz"
+          ],
+          "why": "jé – á – en – á – tečka – novakova – zavináč – seznam – tečka – cé – zet. \"tečka\" is a dot and \"zavináč\" is @. Czech e-mail addresses are usually written without diacritics.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-l6",
+          "type": "question",
+          "prompt": "Type the name being spelled with the phone alphabet.",
+          "cs": "H jako Helena, á s čárkou, J jako Josef, E jako Emil, K jako Karel",
+          "answerLang": "cs",
+          "answers": [
+            "Hájek"
+          ],
+          "why": "H jako Helena, A s čárkou, J jako Josef, E jako Emil, K jako Karel: Hájek. \"jako\" means \"as in\".",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "alphabet-spelling-say",
+      "title": "Spelling your own name",
+      "description": "How do you say these letters and symbols when spelling aloud? Type the Czech name.",
+      "exercises": [
+        {
+          "id": "alpha-n1",
+          "type": "question",
+          "prompt": "How do you name the letter **š** when spelling?",
+          "answerLang": "cs",
+          "answers": [
+            "eš"
+          ],
+          "why": "š is called \"eš\". Consonants are named either with -é (bé, cé, dé…) or with e- in front (ef, el, em, en, er, es, eš…).",
+          "hints": [
+            {
+              "wrong": "šé",
+              "explain": "š is one of the letters named with e- in front: eš."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-n2",
+          "type": "question",
+          "prompt": "How do you name the letter **w** when spelling?",
+          "answerLang": "cs",
+          "answers": [
+            "dvojité vé",
+            "dvojité v"
+          ],
+          "why": "w is \"dvojité vé\" (double v). You'll need it for website and e-mail addresses.",
+          "hints": [
+            {
+              "wrong": "dabl jů",
+              "explain": "Czechs say \"dvojité vé\" for w."
+            },
+            {
+              "wrong": "double v",
+              "explain": "In Czech: dvojité vé."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-n3",
+          "type": "question",
+          "prompt": "How do you name the letter **y** when spelling?",
+          "answerLang": "cs",
+          "answers": [
+            "ypsilon",
+            "tvrdé y"
+          ],
+          "why": "y is \"ypsilon\" or \"tvrdé y\" (hard y), to distinguish it from i (\"měkké i\").",
+          "hints": [
+            {
+              "wrong": "í",
+              "explain": "That's the name of i. y is ypsilon (or tvrdé y)."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-n4",
+          "type": "question",
+          "prompt": "How do you name the letter **j** when spelling?",
+          "answerLang": "cs",
+          "answers": [
+            "jé"
+          ],
+          "why": "j is \"jé\". Careful: English \"jay\" would be understood as \"dž\".",
+          "hints": [
+            {
+              "wrong": "džej",
+              "explain": "That's the English name. In Czech, j is \"jé\"."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-n5",
+          "type": "question",
+          "prompt": "How do you name the letter **h** when spelling?",
+          "answerLang": "cs",
+          "answers": [
+            "há"
+          ],
+          "why": "h is \"há\". (ch is \"chá\".)",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-n6",
+          "type": "question",
+          "prompt": "What do you call the **@** symbol in an e-mail address?",
+          "answerLang": "cs",
+          "answers": [
+            "zavináč"
+          ],
+          "why": "@ is \"zavináč\", literally a rolled pickled herring.",
+          "hints": [
+            {
+              "wrong": "at",
+              "explain": "Czechs say \"zavináč\" for @."
+            }
+          ],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-n7",
+          "type": "question",
+          "prompt": "What do you call the **dot** in an e-mail address?",
+          "answerLang": "cs",
+          "answers": [
+            "tečka"
+          ],
+          "why": "A dot is \"tečka\": seznam tečka cé zet = seznam.cz.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "diacriticsMatter": true,
+          "nativeReviewed": false
+        },
+        {
+          "id": "alpha-n8",
+          "type": "question",
+          "prompt": "Say \"**D as in David**\" the Czech way.",
+          "answerLang": "cs",
+          "answers": [
+            "D jako David"
+          ],
+          "why": "Use \"jako\" (as/like) with the phone-spelling alphabet: D jako David, Č jako Čeněk.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        }
+      ]
+    }
+  ],
+  "nativeReviewed": false
+}

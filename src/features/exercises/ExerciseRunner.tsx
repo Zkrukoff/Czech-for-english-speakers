@@ -123,12 +123,12 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
 
       <div className="flex justify-end">
         {result ? (
-          <button autoFocus type="button" onClick={next} className="rounded-lg bg-stone-900 px-5 py-2.5 font-medium text-white hover:bg-stone-700">
+          <button autoFocus type="button" onClick={next} className="btn btn-primary">
             {index + 1 >= queue.length ? 'Finish' : 'Continue'}
           </button>
         ) : (
           exercise.type !== 'caseSelect' && (
-            <button type="button" onClick={() => submit()} disabled={!answer.trim()} className="rounded-lg bg-stone-900 px-5 py-2.5 font-medium text-white hover:bg-stone-700 disabled:opacity-40">
+            <button type="button" onClick={() => submit()} disabled={!answer.trim()} className="btn btn-primary">
               Check
             </button>
           )

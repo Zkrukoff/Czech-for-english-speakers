@@ -35,7 +35,7 @@ export function PersonTable({ title, forms, highlight = true }: { title: string;
           {PERSONS.map((p) => (
             <tr key={p} className="border-t border-stone-100 first:border-0">
               <th scope="row" className="w-32 px-3 py-1.5 text-left font-normal text-stone-500">{PERSON_LABELS[p]}</th>
-              <td className="px-3 py-1.5 text-base"><HighlightedForm form={forms[p]} stem={stem} /></td>
+              <td lang="cs" className="px-3 py-1.5 text-base"><HighlightedForm form={forms[p]} stem={stem} /></td>
             </tr>
           ))}
         </tbody>
