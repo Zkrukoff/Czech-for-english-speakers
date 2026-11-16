@@ -1,33 +1,44 @@
 import { Link } from 'react-router-dom';
-import { CASES, CASE_INFO, course } from '@/content';
+import { CASES, CASE_INFO, CASE_KEYS, course } from '@/content';
 import { PageHeader } from '@/components/PageHeader';
+import { CASE_BG } from '@/components/caseColors';
 
 export function GrammarIndex() {
+  const overview = course.grammarById.get('how-cases-work');
   return (
     <>
-      <PageHeader title="Grammar reference" subtitle="The seven cases, explained for English speakers, plus full declension tables." />
+      <PageHeader title="Grammar reference" subtitle="The seven cases, explained for English speakers, with full declension tables." />
+      {overview && (
+        <Link to={`/grammar/${overview.id}`} className="mb-6 block rounded-xl border border-sky-200 bg-sky-50 p-5 hover:border-sky-400">
+          <div className="text-sm font-medium text-sky-800">Start here</div>
+          <div className="mt-1 text-lg font-semibold">{overview.title}</div>
+          <p className="mt-1 text-sm text-stone-700">{overview.summary}</p>
+        </Link>
+      )}
+      <h2 className="mb-3 font-semibold">The seven cases</h2>
       <ul className="grid gap-3 sm:grid-cols-2">
-        {CASES.map((c) => {
+        {CASES.map((c, i) => {
           const page = course.grammarBySkill.get(`case:${c}`);
           const info = CASE_INFO[c];
-          const inner = (
-            <>
-              <div className="text-sm text-stone-500">{info.number}. pád · {info.czech} · <i>{info.question}</i></div>
-              <div className="mt-1 font-semibold capitalize">{c}</div>
-            </>
-          );
+          if (!page) return null;
           return (
             <li key={c}>
-              {page ? (
-                <Link to={`/grammar/${page.id}`} className="block rounded-lg border border-stone-200 bg-white p-4 hover:border-stone-400">{inner}</Link>
-              ) : (
-                <div className="rounded-lg border border-dashed border-stone-300 p-4 text-stone-400">{inner}<div className="text-xs">Coming in milestone (b)</div></div>
-              )}
+              <Link to={`/grammar/${page.id}`} className="flex h-full gap-3 rounded-lg border border-stone-200 bg-white p-4 hover:border-stone-400">
+                <span className={`mt-1 h-3 w-3 shrink-0 rounded-full ${CASE_BG[CASE_KEYS[i]!]}`} aria-hidden />
+                <span>
+                  <span className="block font-semibold capitalize">{info.number}. {c}</span>
+                  <span className="block text-sm text-stone-500">{info.czech} · <i>{info.question}</i></span>
+                  {page.summary && <span className="mt-1 block text-sm text-stone-700">{page.summary}</span>}
+                </span>
+              </Link>
             </li>
           );
         })}
       </ul>
-      <Link to="/grammar/tables" className="mt-6 inline-block text-sky-700 underline">All declension tables →</Link>
+      <div className="mt-6 flex flex-wrap gap-3">
+        <Link to="/grammar/tables" className="rounded-lg bg-stone-900 px-4 py-2 text-sm font-medium text-white hover:bg-stone-700">All declension tables</Link>
+        <Link to="/verbs" className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium hover:bg-stone-100">Verb track</Link>
+      </div>
     </>
   );
 }

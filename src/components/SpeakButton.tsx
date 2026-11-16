@@ -1,0 +1,35 @@
+import { useEffect, useState } from 'react';
+import { czechVoices, speech } from '@/lib/audio/speech';
+import { useSettings } from '@/db/settings';
+
+/** Voices load asynchronously in most browsers. */
+function useHasCzechVoice(): boolean {
+  const [has, setHas] = useState(() => czechVoices().length > 0);
+  useEffect(() => {
+    if (typeof speechSynthesis === 'undefined') return;
+    const update = () => setHas(czechVoices().length > 0);
+    speechSynthesis.addEventListener('voiceschanged', update);
+    update();
+    return () => speechSynthesis.removeEventListener('voiceschanged', update);
+  }, []);
+  return has;
+}
+
+export function SpeakButton({ text, audioId, label = 'Listen' }: { text: string; audioId?: string; label?: string }) {
+  const settings = useSettings();
+  const hasVoice = useHasCzechVoice();
+  if (!hasVoice && !audioId) return null;
+  return (
+    <button
+      type="button"
+      onClick={() => speech.speak(text, { audioId, rate: settings.speechRate, voiceURI: settings.voiceURI })}
+      className="inline-flex h-7 w-7 items-center justify-center rounded-full text-stone-500 hover:bg-stone-100 hover:text-stone-900"
+      aria-label={`${label}: ${text}`}
+      title={label}
+    >
+      <svg viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4" aria-hidden>
+        <path d="M9.5 3.5 5.6 7H3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2.6l3.9 3.5a.6.6 0 0 0 1-.45V3.95a.6.6 0 0 0-1-.45ZM13.5 6.5a5 5 0 0 1 0 7l-1-1a3.6 3.6 0 0 0 0-5l1-1Zm2.1-2.1a8 8 0 0 1 0 11.2l-1-1a6.6 6.6 0 0 0 0-9.2l1-1Z" />
+      </svg>
+    </button>
+  );
+}

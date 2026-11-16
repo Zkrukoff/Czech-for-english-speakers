@@ -12,6 +12,10 @@ export default defineConfig({
       '@content': fileURLToPath(new URL('./content', import.meta.url)),
     },
   },
+  build: {
+    // The main chunk holds the whole validated course (content is bundled at build time).
+    chunkSizeWarningLimit: 700,
+  },
   test: {
     environment: 'node',
     include: ['tests/**/*.test.ts', 'tests/**/*.test.tsx'],

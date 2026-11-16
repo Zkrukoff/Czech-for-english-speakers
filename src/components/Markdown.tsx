@@ -5,17 +5,26 @@ import type { ReactNode } from 'react';
 
 /**
  * Renders course markdown. A fenced block ```table <id>``` embeds a
- * declension/conjugation table from content/grammar/tables; `renderTable`
- * supplies the component (wired up in the grammar reference).
+ * declension table from content/grammar/tables, and ```verb <lemma>``` embeds
+ * a present-tense table from content/verbs/verbs.json. Use CourseMarkdown to
+ * get both wired up.
  */
-export function Markdown({ children, renderTable }: { children: string; renderTable?: (id: string) => ReactNode }) {
+export function Markdown({ children, renderTable, renderVerb }: { children: string; renderTable?: (id: string) => ReactNode; renderVerb?: (lemma: string) => ReactNode }) {
   const components: Components = {
     pre: ({ children: c }) => <>{c}</>,
-    code: ({ className, children: c }) => {
+    code: ({ className, children: c, node }) => {
       const lang = /language-(\w+)/.exec(className ?? '')?.[1];
+      // For ```table noun-zena``` the id is in the fence's info string (meta);
+      // also accept it on the first line of the block.
+      const meta = String((node?.data as { meta?: string } | undefined)?.meta ?? '').trim();
+      const arg = meta || String(c).trim();
       if (lang === 'table') {
-        const id = String(c).trim();
+        const id = arg;
         return renderTable ? <>{renderTable(id)}</> : <div className="text-sm text-stone-500">[table: {id}]</div>;
+      }
+      if (lang === 'verb') {
+        const lemma = arg;
+        return renderVerb ? <>{renderVerb(lemma)}</> : <div className="text-sm text-stone-500">[verb: {lemma}]</div>;
       }
       return <code className={className}>{c}</code>;
     },

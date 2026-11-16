@@ -82,6 +82,7 @@ function formatZodError(path: string, error: z.ZodError): string[] {
 }
 
 const TABLE_EMBED = /```table\s+([a-z0-9-]+)\s*```/g;
+const VERB_EMBED = /```verb\s+([^\n`]+?)\s*```/g;
 
 export function loadContent(files: ContentFiles): LoadResult {
   const errors: string[] = [];
@@ -143,6 +144,9 @@ export function loadContent(files: ContentFiles): LoadResult {
   for (const v of course.verbs) {
     for (const p of v.partner) {
       if (!course.verbsByLemma.has(p)) warnings.push(`verbs: partner "${p}" of "${v.lemma}" has no entry`);
+    }
+    if (v.motionPair && !course.verbsByLemma.has(v.motionPair)) {
+      errors.push(`verbs: motionPair "${v.motionPair}" of "${v.lemma}" has no entry`);
     }
   }
   course.verbs.sort((a, b) => a.lemma.localeCompare(b.lemma, 'cs'));
@@ -274,6 +278,9 @@ export function loadContent(files: ContentFiles): LoadResult {
   const checkEmbeds = (md: string, where: string) => {
     for (const m of md.matchAll(TABLE_EMBED)) {
       if (!course.tables.has(m[1]!)) errors.push(`${where}: embedded table "${m[1]}" does not exist`);
+    }
+    for (const m of md.matchAll(VERB_EMBED)) {
+      if (!course.verbsByLemma.has(m[1]!)) errors.push(`${where}: embedded verb "${m[1]}" is not in verbs.json`);
     }
   };
   for (const page of course.grammarPages) checkEmbeds(page.body, page.path);

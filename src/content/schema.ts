@@ -246,6 +246,8 @@ export const VerbSchema = z.object({
   /** Only for verbs with an irregular/synthetic future (být → budu, jít → půjdu). */
   future: personForms.optional(),
   motion: z.enum(['determinate', 'indeterminate']).optional(),
+  /** The other verb of a motion pair, e.g. "chodit" for "jít". */
+  motionPair: z.string().optional(),
   topics: z.array(z.string()).default([]),
   notes: z.string().optional(),
   spoken: SpokenFormSchema.optional(),

@@ -1,23 +1,2784 @@
 {
-  "verbs": [
-    {
-      "lemma": "dát", "en": "to give; (dát si) to have, order", "aspect": "pf", "partner": ["dávat"],
-      "class": "-á- (dělat)",
-      "present": { "1sg": "dám", "2sg": "dáš", "3sg": "dá", "1pl": "dáme", "2pl": "dáte", "3pl": "dají" },
-      "past": { "m": "dal", "f": "dala", "n": "dalo", "mpl": "dali", "fpl": "daly" },
-      "imperative": { "2sg": "dej", "1pl": "dejme", "2pl": "dejte" },
-      "topics": ["present-classes", "aspect"],
-      "notes": "Perfective: the present forms refer to the future or to a single completed act (Dám si kávu = I'll have a coffee).",
-      "nativeReviewed": false
-    },
-    {
-      "lemma": "dávat", "en": "to give (repeatedly, in general)", "aspect": "impf", "partner": ["dát"],
-      "class": "-á- (dělat)",
-      "present": { "1sg": "dávám", "2sg": "dáváš", "3sg": "dává", "1pl": "dáváme", "2pl": "dáváte", "3pl": "dávají" },
-      "past": { "m": "dával", "f": "dávala", "n": "dávalo", "mpl": "dávali", "fpl": "dávaly" },
-      "imperative": { "2sg": "dávej", "1pl": "dávejme", "2pl": "dávejte" },
-      "topics": ["present-classes", "aspect"],
-      "nativeReviewed": false
-    }
-  ]
+ "verbs": [
+  {
+   "lemma": "být",
+   "en": "to be",
+   "aspect": "impf",
+   "partner": [],
+   "class": "irregular",
+   "present": {
+    "1sg": "jsem",
+    "2sg": "jsi",
+    "3sg": "je",
+    "1pl": "jsme",
+    "2pl": "jste",
+    "3pl": "jsou"
+   },
+   "past": {
+    "m": "byl",
+    "f": "byla",
+    "n": "bylo",
+    "mpl": "byli",
+    "fpl": "byly"
+   },
+   "imperative": {
+    "2sg": "buď",
+    "1pl": "buďme",
+    "2pl": "buďte"
+   },
+   "future": {
+    "1sg": "budu",
+    "2sg": "budeš",
+    "3sg": "bude",
+    "1pl": "budeme",
+    "2pl": "budete",
+    "3pl": "budou"
+   },
+   "topics": [
+    "irregulars",
+    "past",
+    "future"
+   ],
+   "notes": "Negative: nejsem, nejsi, není, nejsme, nejste, nejsou. The forms jsem, jsi, jsme, jste are also the auxiliary of the past tense (byl jsem).",
+   "spoken": {
+    "form": "seš",
+    "note": "Colloquial for jsi: Kde seš?"
+   },
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "mít",
+   "en": "to have",
+   "aspect": "impf",
+   "partner": [],
+   "class": "irregular",
+   "present": {
+    "1sg": "mám",
+    "2sg": "máš",
+    "3sg": "má",
+    "1pl": "máme",
+    "2pl": "máte",
+    "3pl": "mají"
+   },
+   "past": {
+    "m": "měl",
+    "f": "měla",
+    "n": "mělo",
+    "mpl": "měli",
+    "fpl": "měly"
+   },
+   "imperative": {
+    "2sg": "měj",
+    "1pl": "mějme",
+    "2pl": "mějte"
+   },
+   "topics": [
+    "irregulars",
+    "modals"
+   ],
+   "notes": "Negative: nemám. 'Mít' + infinitive means 'to be supposed to': Mám zavolat? (Should I call?)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "chtít",
+   "en": "to want",
+   "aspect": "impf",
+   "partner": [],
+   "class": "irregular",
+   "present": {
+    "1sg": "chci",
+    "2sg": "chceš",
+    "3sg": "chce",
+    "1pl": "chceme",
+    "2pl": "chcete",
+    "3pl": "chtějí"
+   },
+   "past": {
+    "m": "chtěl",
+    "f": "chtěla",
+    "n": "chtělo",
+    "mpl": "chtěli",
+    "fpl": "chtěly"
+   },
+   "imperative": {
+    "2sg": "chtěj",
+    "1pl": "chtějme",
+    "2pl": "chtějte"
+   },
+   "topics": [
+    "irregulars",
+    "modals"
+   ],
+   "notes": "Chtěl/a bych… (I would like…) is the polite way to ask for something.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "jíst",
+   "en": "to eat",
+   "aspect": "impf",
+   "partner": [
+    "sníst"
+   ],
+   "class": "irregular",
+   "present": {
+    "1sg": "jím",
+    "2sg": "jíš",
+    "3sg": "jí",
+    "1pl": "jíme",
+    "2pl": "jíte",
+    "3pl": "jedí"
+   },
+   "past": {
+    "m": "jedl",
+    "f": "jedla",
+    "n": "jedlo",
+    "mpl": "jedli",
+    "fpl": "jedly"
+   },
+   "imperative": {
+    "2sg": "jez",
+    "1pl": "jezme",
+    "2pl": "jezte"
+   },
+   "topics": [
+    "irregulars",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "sníst",
+   "en": "to eat up",
+   "aspect": "pf",
+   "partner": [
+    "jíst"
+   ],
+   "class": "irregular",
+   "present": {
+    "1sg": "sním",
+    "2sg": "sníš",
+    "3sg": "sní",
+    "1pl": "sníme",
+    "2pl": "sníte",
+    "3pl": "snědí"
+   },
+   "past": {
+    "m": "snědl",
+    "f": "snědla",
+    "n": "snědlo",
+    "mpl": "snědli",
+    "fpl": "snědly"
+   },
+   "imperative": {
+    "2sg": "sněz",
+    "1pl": "snězme",
+    "2pl": "snězte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "vědět",
+   "en": "to know (a fact)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "irregular",
+   "present": {
+    "1sg": "vím",
+    "2sg": "víš",
+    "3sg": "ví",
+    "1pl": "víme",
+    "2pl": "víte",
+    "3pl": "vědí"
+   },
+   "past": {
+    "m": "věděl",
+    "f": "věděla",
+    "n": "vědělo",
+    "mpl": "věděli",
+    "fpl": "věděly"
+   },
+   "imperative": {
+    "2sg": "věz",
+    "1pl": "vězme",
+    "2pl": "vězte"
+   },
+   "topics": [
+    "irregulars"
+   ],
+   "notes": "vědět = know a fact (Vím, kde bydlí). znát = know a person or place (Znám Petra).",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "jít",
+   "en": "to go (on foot, one direction)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "irregular",
+   "present": {
+    "1sg": "jdu",
+    "2sg": "jdeš",
+    "3sg": "jde",
+    "1pl": "jdeme",
+    "2pl": "jdete",
+    "3pl": "jdou"
+   },
+   "past": {
+    "m": "šel",
+    "f": "šla",
+    "n": "šlo",
+    "mpl": "šli",
+    "fpl": "šly"
+   },
+   "imperative": {
+    "2sg": "jdi",
+    "1pl": "pojďme",
+    "2pl": "jděte"
+   },
+   "future": {
+    "1sg": "půjdu",
+    "2sg": "půjdeš",
+    "3sg": "půjde",
+    "1pl": "půjdeme",
+    "2pl": "půjdete",
+    "3pl": "půjdou"
+   },
+   "motion": "determinate",
+   "motionPair": "chodit",
+   "topics": [
+    "irregulars",
+    "motion",
+    "future"
+   ],
+   "notes": "pojď / pojďte = come (here)! Future: půjdu (never 'budu jít').",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "chodit",
+   "en": "to go (on foot, regularly / there and back)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "chodím",
+    "2sg": "chodíš",
+    "3sg": "chodí",
+    "1pl": "chodíme",
+    "2pl": "chodíte",
+    "3pl": "chodí"
+   },
+   "past": {
+    "m": "chodil",
+    "f": "chodila",
+    "n": "chodilo",
+    "mpl": "chodili",
+    "fpl": "chodily"
+   },
+   "imperative": {
+    "2sg": "choď",
+    "1pl": "choďme",
+    "2pl": "choďte"
+   },
+   "motion": "indeterminate",
+   "motionPair": "jít",
+   "topics": [
+    "motion"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "jet",
+   "en": "to go (by vehicle, one direction)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "irregular",
+   "present": {
+    "1sg": "jedu",
+    "2sg": "jedeš",
+    "3sg": "jede",
+    "1pl": "jedeme",
+    "2pl": "jedete",
+    "3pl": "jedou"
+   },
+   "past": {
+    "m": "jel",
+    "f": "jela",
+    "n": "jelo",
+    "mpl": "jeli",
+    "fpl": "jely"
+   },
+   "imperative": {
+    "2sg": "jeď",
+    "1pl": "jeďme",
+    "2pl": "jeďte"
+   },
+   "future": {
+    "1sg": "pojedu",
+    "2sg": "pojedeš",
+    "3sg": "pojede",
+    "1pl": "pojedeme",
+    "2pl": "pojedete",
+    "3pl": "pojedou"
+   },
+   "motion": "determinate",
+   "motionPair": "jezdit",
+   "topics": [
+    "motion",
+    "future"
+   ],
+   "notes": "Use jet for any trip by car, bus, train or tram, even if you are a passenger.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "jezdit",
+   "en": "to go (by vehicle, regularly / there and back)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "jezdím",
+    "2sg": "jezdíš",
+    "3sg": "jezdí",
+    "1pl": "jezdíme",
+    "2pl": "jezdíte",
+    "3pl": "jezdí"
+   },
+   "past": {
+    "m": "jezdil",
+    "f": "jezdila",
+    "n": "jezdilo",
+    "mpl": "jezdili",
+    "fpl": "jezdily"
+   },
+   "imperative": {
+    "2sg": "jezdi",
+    "1pl": "jezděme",
+    "2pl": "jezděte"
+   },
+   "motion": "indeterminate",
+   "motionPair": "jet",
+   "topics": [
+    "motion"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "letět",
+   "en": "to fly (one direction)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "letím",
+    "2sg": "letíš",
+    "3sg": "letí",
+    "1pl": "letíme",
+    "2pl": "letíte",
+    "3pl": "letí"
+   },
+   "past": {
+    "m": "letěl",
+    "f": "letěla",
+    "n": "letělo",
+    "mpl": "letěli",
+    "fpl": "letěly"
+   },
+   "imperative": {
+    "2sg": "leť",
+    "1pl": "leťme",
+    "2pl": "leťte"
+   },
+   "future": {
+    "1sg": "poletím",
+    "2sg": "poletíš",
+    "3sg": "poletí",
+    "1pl": "poletíme",
+    "2pl": "poletíte",
+    "3pl": "poletí"
+   },
+   "motion": "determinate",
+   "motionPair": "létat",
+   "topics": [
+    "motion"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "létat",
+   "en": "to fly (regularly, around)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "létám",
+    "2sg": "létáš",
+    "3sg": "létá",
+    "1pl": "létáme",
+    "2pl": "létáte",
+    "3pl": "létají"
+   },
+   "past": {
+    "m": "létal",
+    "f": "létala",
+    "n": "létalo",
+    "mpl": "létali",
+    "fpl": "létaly"
+   },
+   "imperative": {
+    "2sg": "létej",
+    "1pl": "létejme",
+    "2pl": "létejte"
+   },
+   "motion": "indeterminate",
+   "motionPair": "letět",
+   "topics": [
+    "motion"
+   ],
+   "spoken": {
+    "form": "lítat",
+    "note": "Common spoken form: lítám, lítal."
+   },
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "nést",
+   "en": "to carry (on foot, one direction)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "1 · -e- (nese, bere, píše)",
+   "present": {
+    "1sg": "nesu",
+    "2sg": "neseš",
+    "3sg": "nese",
+    "1pl": "neseme",
+    "2pl": "nesete",
+    "3pl": "nesou"
+   },
+   "past": {
+    "m": "nesl",
+    "f": "nesla",
+    "n": "neslo",
+    "mpl": "nesli",
+    "fpl": "nesly"
+   },
+   "imperative": {
+    "2sg": "nes",
+    "1pl": "nesme",
+    "2pl": "neste"
+   },
+   "future": {
+    "1sg": "ponesu",
+    "2sg": "poneseš",
+    "3sg": "ponese",
+    "1pl": "poneseme",
+    "2pl": "ponesete",
+    "3pl": "ponesou"
+   },
+   "motion": "determinate",
+   "motionPair": "nosit",
+   "topics": [
+    "motion"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "nosit",
+   "en": "to carry (regularly); to wear",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "nosím",
+    "2sg": "nosíš",
+    "3sg": "nosí",
+    "1pl": "nosíme",
+    "2pl": "nosíte",
+    "3pl": "nosí"
+   },
+   "past": {
+    "m": "nosil",
+    "f": "nosila",
+    "n": "nosilo",
+    "mpl": "nosili",
+    "fpl": "nosily"
+   },
+   "imperative": {
+    "2sg": "nos",
+    "1pl": "nosme",
+    "2pl": "noste"
+   },
+   "motion": "indeterminate",
+   "motionPair": "nést",
+   "topics": [
+    "motion"
+   ],
+   "notes": "Also 'to wear': Nosí brýle. (She wears glasses.)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "přijít",
+   "en": "to come, arrive (on foot)",
+   "aspect": "pf",
+   "partner": [
+    "přicházet"
+   ],
+   "class": "irregular",
+   "present": {
+    "1sg": "přijdu",
+    "2sg": "přijdeš",
+    "3sg": "přijde",
+    "1pl": "přijdeme",
+    "2pl": "přijdete",
+    "3pl": "přijdou"
+   },
+   "past": {
+    "m": "přišel",
+    "f": "přišla",
+    "n": "přišlo",
+    "mpl": "přišli",
+    "fpl": "přišly"
+   },
+   "imperative": {
+    "2sg": "přijď",
+    "1pl": "přijďme",
+    "2pl": "přijďte"
+   },
+   "topics": [
+    "motion",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "přicházet",
+   "en": "to be coming, arriving (on foot)",
+   "aspect": "impf",
+   "partner": [
+    "přijít"
+   ],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "přicházím",
+    "2sg": "přicházíš",
+    "3sg": "přichází",
+    "1pl": "přicházíme",
+    "2pl": "přicházíte",
+    "3pl": "přicházejí"
+   },
+   "past": {
+    "m": "přicházel",
+    "f": "přicházela",
+    "n": "přicházelo",
+    "mpl": "přicházeli",
+    "fpl": "přicházely"
+   },
+   "imperative": {
+    "2sg": "přicházej",
+    "1pl": "přicházejme",
+    "2pl": "přicházejte"
+   },
+   "topics": [
+    "motion",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "odejít",
+   "en": "to leave (on foot)",
+   "aspect": "pf",
+   "partner": [
+    "odcházet"
+   ],
+   "class": "irregular",
+   "present": {
+    "1sg": "odejdu",
+    "2sg": "odejdeš",
+    "3sg": "odejde",
+    "1pl": "odejdeme",
+    "2pl": "odejdete",
+    "3pl": "odejdou"
+   },
+   "past": {
+    "m": "odešel",
+    "f": "odešla",
+    "n": "odešlo",
+    "mpl": "odešli",
+    "fpl": "odešly"
+   },
+   "imperative": {
+    "2sg": "odejdi",
+    "1pl": "odejděme",
+    "2pl": "odejděte"
+   },
+   "topics": [
+    "motion",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "odcházet",
+   "en": "to be leaving (on foot)",
+   "aspect": "impf",
+   "partner": [
+    "odejít"
+   ],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "odcházím",
+    "2sg": "odcházíš",
+    "3sg": "odchází",
+    "1pl": "odcházíme",
+    "2pl": "odcházíte",
+    "3pl": "odcházejí"
+   },
+   "past": {
+    "m": "odcházel",
+    "f": "odcházela",
+    "n": "odcházelo",
+    "mpl": "odcházeli",
+    "fpl": "odcházely"
+   },
+   "imperative": {
+    "2sg": "odcházej",
+    "1pl": "odcházejme",
+    "2pl": "odcházejte"
+   },
+   "topics": [
+    "motion",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "přijet",
+   "en": "to come, arrive (by vehicle)",
+   "aspect": "pf",
+   "partner": [
+    "přijíždět"
+   ],
+   "class": "irregular",
+   "present": {
+    "1sg": "přijedu",
+    "2sg": "přijedeš",
+    "3sg": "přijede",
+    "1pl": "přijedeme",
+    "2pl": "přijedete",
+    "3pl": "přijedou"
+   },
+   "past": {
+    "m": "přijel",
+    "f": "přijela",
+    "n": "přijelo",
+    "mpl": "přijeli",
+    "fpl": "přijely"
+   },
+   "imperative": {
+    "2sg": "přijeď",
+    "1pl": "přijeďme",
+    "2pl": "přijeďte"
+   },
+   "topics": [
+    "motion",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "přijíždět",
+   "en": "to be arriving (by vehicle)",
+   "aspect": "impf",
+   "partner": [
+    "přijet"
+   ],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "přijíždím",
+    "2sg": "přijíždíš",
+    "3sg": "přijíždí",
+    "1pl": "přijíždíme",
+    "2pl": "přijíždíte",
+    "3pl": "přijíždějí"
+   },
+   "past": {
+    "m": "přijížděl",
+    "f": "přijížděla",
+    "n": "přijíždělo",
+    "mpl": "přijížděli",
+    "fpl": "přijížděly"
+   },
+   "imperative": {
+    "2sg": "přijížděj",
+    "1pl": "přijíždějme",
+    "2pl": "přijíždějte"
+   },
+   "topics": [
+    "motion",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "odjet",
+   "en": "to leave (by vehicle)",
+   "aspect": "pf",
+   "partner": [
+    "odjíždět"
+   ],
+   "class": "irregular",
+   "present": {
+    "1sg": "odjedu",
+    "2sg": "odjedeš",
+    "3sg": "odjede",
+    "1pl": "odjedeme",
+    "2pl": "odjedete",
+    "3pl": "odjedou"
+   },
+   "past": {
+    "m": "odjel",
+    "f": "odjela",
+    "n": "odjelo",
+    "mpl": "odjeli",
+    "fpl": "odjely"
+   },
+   "imperative": {
+    "2sg": "odjeď",
+    "1pl": "odjeďme",
+    "2pl": "odjeďte"
+   },
+   "topics": [
+    "motion",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "odjíždět",
+   "en": "to be leaving (by vehicle)",
+   "aspect": "impf",
+   "partner": [
+    "odjet"
+   ],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "odjíždím",
+    "2sg": "odjíždíš",
+    "3sg": "odjíždí",
+    "1pl": "odjíždíme",
+    "2pl": "odjíždíte",
+    "3pl": "odjíždějí"
+   },
+   "past": {
+    "m": "odjížděl",
+    "f": "odjížděla",
+    "n": "odjíždělo",
+    "mpl": "odjížděli",
+    "fpl": "odjížděly"
+   },
+   "imperative": {
+    "2sg": "odjížděj",
+    "1pl": "odjíždějme",
+    "2pl": "odjíždějte"
+   },
+   "topics": [
+    "motion",
+    "aspect"
+   ],
+   "notes": "Vlak odjíždí v osm. (The train leaves at eight.)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "dělat",
+   "en": "to do, make",
+   "aspect": "impf",
+   "partner": [
+    "udělat"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "dělám",
+    "2sg": "děláš",
+    "3sg": "dělá",
+    "1pl": "děláme",
+    "2pl": "děláte",
+    "3pl": "dělají"
+   },
+   "past": {
+    "m": "dělal",
+    "f": "dělala",
+    "n": "dělalo",
+    "mpl": "dělali",
+    "fpl": "dělaly"
+   },
+   "imperative": {
+    "2sg": "dělej",
+    "1pl": "dělejme",
+    "2pl": "dělejte"
+   },
+   "topics": [
+    "present-classes",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "udělat",
+   "en": "to do, make (and finish)",
+   "aspect": "pf",
+   "partner": [
+    "dělat"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "udělám",
+    "2sg": "uděláš",
+    "3sg": "udělá",
+    "1pl": "uděláme",
+    "2pl": "uděláte",
+    "3pl": "udělají"
+   },
+   "past": {
+    "m": "udělal",
+    "f": "udělala",
+    "n": "udělalo",
+    "mpl": "udělali",
+    "fpl": "udělaly"
+   },
+   "imperative": {
+    "2sg": "udělej",
+    "1pl": "udělejme",
+    "2pl": "udělejte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "psát",
+   "en": "to write",
+   "aspect": "impf",
+   "partner": [
+    "napsat"
+   ],
+   "class": "1 · -e- (nese, bere, píše)",
+   "present": {
+    "1sg": "píšu / píši",
+    "2sg": "píšeš",
+    "3sg": "píše",
+    "1pl": "píšeme",
+    "2pl": "píšete",
+    "3pl": "píšou / píší"
+   },
+   "past": {
+    "m": "psal",
+    "f": "psala",
+    "n": "psalo",
+    "mpl": "psali",
+    "fpl": "psaly"
+   },
+   "imperative": {
+    "2sg": "piš",
+    "1pl": "pišme",
+    "2pl": "pište"
+   },
+   "topics": [
+    "present-classes",
+    "aspect"
+   ],
+   "notes": "Both píšu/píšou and píši/píší are standard; the -u/-ou forms are more common in speech.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "napsat",
+   "en": "to write (and finish)",
+   "aspect": "pf",
+   "partner": [
+    "psát"
+   ],
+   "class": "1 · -e- (nese, bere, píše)",
+   "present": {
+    "1sg": "napíšu / napíši",
+    "2sg": "napíšeš",
+    "3sg": "napíše",
+    "1pl": "napíšeme",
+    "2pl": "napíšete",
+    "3pl": "napíšou / napíší"
+   },
+   "past": {
+    "m": "napsal",
+    "f": "napsala",
+    "n": "napsalo",
+    "mpl": "napsali",
+    "fpl": "napsaly"
+   },
+   "imperative": {
+    "2sg": "napiš",
+    "1pl": "napišme",
+    "2pl": "napište"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "číst",
+   "en": "to read",
+   "aspect": "impf",
+   "partner": [
+    "přečíst"
+   ],
+   "class": "1 · -e- (nese, bere, píše)",
+   "present": {
+    "1sg": "čtu",
+    "2sg": "čteš",
+    "3sg": "čte",
+    "1pl": "čteme",
+    "2pl": "čtete",
+    "3pl": "čtou"
+   },
+   "past": {
+    "m": "četl",
+    "f": "četla",
+    "n": "četlo",
+    "mpl": "četli",
+    "fpl": "četly"
+   },
+   "imperative": {
+    "2sg": "čti",
+    "1pl": "čtěme",
+    "2pl": "čtěte"
+   },
+   "topics": [
+    "present-classes",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "přečíst",
+   "en": "to read (through, to the end)",
+   "aspect": "pf",
+   "partner": [
+    "číst"
+   ],
+   "class": "1 · -e- (nese, bere, píše)",
+   "present": {
+    "1sg": "přečtu",
+    "2sg": "přečteš",
+    "3sg": "přečte",
+    "1pl": "přečteme",
+    "2pl": "přečtete",
+    "3pl": "přečtou"
+   },
+   "past": {
+    "m": "přečetl",
+    "f": "přečetla",
+    "n": "přečetlo",
+    "mpl": "přečetli",
+    "fpl": "přečetly"
+   },
+   "imperative": {
+    "2sg": "přečti",
+    "1pl": "přečtěme",
+    "2pl": "přečtěte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "pít",
+   "en": "to drink",
+   "aspect": "impf",
+   "partner": [
+    "vypít"
+   ],
+   "class": "3 · -je- (kupuje, pije)",
+   "present": {
+    "1sg": "piju / piji",
+    "2sg": "piješ",
+    "3sg": "pije",
+    "1pl": "pijeme",
+    "2pl": "pijete",
+    "3pl": "pijou / pijí"
+   },
+   "past": {
+    "m": "pil",
+    "f": "pila",
+    "n": "pilo",
+    "mpl": "pili",
+    "fpl": "pily"
+   },
+   "imperative": {
+    "2sg": "pij",
+    "1pl": "pijme",
+    "2pl": "pijte"
+   },
+   "topics": [
+    "present-classes",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "vypít",
+   "en": "to drink (up)",
+   "aspect": "pf",
+   "partner": [
+    "pít"
+   ],
+   "class": "3 · -je- (kupuje, pije)",
+   "present": {
+    "1sg": "vypiju / vypiji",
+    "2sg": "vypiješ",
+    "3sg": "vypije",
+    "1pl": "vypijeme",
+    "2pl": "vypijete",
+    "3pl": "vypijou / vypijí"
+   },
+   "past": {
+    "m": "vypil",
+    "f": "vypila",
+    "n": "vypilo",
+    "mpl": "vypili",
+    "fpl": "vypily"
+   },
+   "imperative": {
+    "2sg": "vypij",
+    "1pl": "vypijme",
+    "2pl": "vypijte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "kupovat",
+   "en": "to buy (regularly, be buying)",
+   "aspect": "impf",
+   "partner": [
+    "koupit"
+   ],
+   "class": "3 · -je- (kupuje, pije)",
+   "present": {
+    "1sg": "kupuju / kupuji",
+    "2sg": "kupuješ",
+    "3sg": "kupuje",
+    "1pl": "kupujeme",
+    "2pl": "kupujete",
+    "3pl": "kupujou / kupují"
+   },
+   "past": {
+    "m": "kupoval",
+    "f": "kupovala",
+    "n": "kupovalo",
+    "mpl": "kupovali",
+    "fpl": "kupovaly"
+   },
+   "imperative": {
+    "2sg": "kupuj",
+    "1pl": "kupujme",
+    "2pl": "kupujte"
+   },
+   "topics": [
+    "present-classes",
+    "aspect"
+   ],
+   "notes": "Verbs in -ovat all follow this pattern: pracovat → pracuju, potřebovat → potřebuju.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "koupit",
+   "en": "to buy",
+   "aspect": "pf",
+   "partner": [
+    "kupovat"
+   ],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "koupím",
+    "2sg": "koupíš",
+    "3sg": "koupí",
+    "1pl": "koupíme",
+    "2pl": "koupíte",
+    "3pl": "koupí"
+   },
+   "past": {
+    "m": "koupil",
+    "f": "koupila",
+    "n": "koupilo",
+    "mpl": "koupili",
+    "fpl": "koupily"
+   },
+   "imperative": {
+    "2sg": "kup",
+    "1pl": "kupme",
+    "2pl": "kupte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "platit",
+   "en": "to pay",
+   "aspect": "impf",
+   "partner": [
+    "zaplatit"
+   ],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "platím",
+    "2sg": "platíš",
+    "3sg": "platí",
+    "1pl": "platíme",
+    "2pl": "platíte",
+    "3pl": "platí"
+   },
+   "past": {
+    "m": "platil",
+    "f": "platila",
+    "n": "platilo",
+    "mpl": "platili",
+    "fpl": "platily"
+   },
+   "imperative": {
+    "2sg": "plať",
+    "1pl": "plaťme",
+    "2pl": "plaťte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "zaplatit",
+   "en": "to pay (a bill, once)",
+   "aspect": "pf",
+   "partner": [
+    "platit"
+   ],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "zaplatím",
+    "2sg": "zaplatíš",
+    "3sg": "zaplatí",
+    "1pl": "zaplatíme",
+    "2pl": "zaplatíte",
+    "3pl": "zaplatí"
+   },
+   "past": {
+    "m": "zaplatil",
+    "f": "zaplatila",
+    "n": "zaplatilo",
+    "mpl": "zaplatili",
+    "fpl": "zaplatily"
+   },
+   "imperative": {
+    "2sg": "zaplať",
+    "1pl": "zaplaťme",
+    "2pl": "zaplaťte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "notes": "Zaplatím, prosím. (I'd like to pay, please.)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "brát",
+   "en": "to take",
+   "aspect": "impf",
+   "partner": [
+    "vzít"
+   ],
+   "class": "1 · -e- (nese, bere, píše)",
+   "present": {
+    "1sg": "beru",
+    "2sg": "bereš",
+    "3sg": "bere",
+    "1pl": "bereme",
+    "2pl": "berete",
+    "3pl": "berou"
+   },
+   "past": {
+    "m": "bral",
+    "f": "brala",
+    "n": "bralo",
+    "mpl": "brali",
+    "fpl": "braly"
+   },
+   "imperative": {
+    "2sg": "ber",
+    "1pl": "berme",
+    "2pl": "berte"
+   },
+   "topics": [
+    "present-classes",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "vzít",
+   "en": "to take (once)",
+   "aspect": "pf",
+   "partner": [
+    "brát"
+   ],
+   "class": "irregular",
+   "present": {
+    "1sg": "vezmu",
+    "2sg": "vezmeš",
+    "3sg": "vezme",
+    "1pl": "vezmeme",
+    "2pl": "vezmete",
+    "3pl": "vezmou"
+   },
+   "past": {
+    "m": "vzal",
+    "f": "vzala",
+    "n": "vzalo",
+    "mpl": "vzali",
+    "fpl": "vzaly"
+   },
+   "imperative": {
+    "2sg": "vezmi",
+    "1pl": "vezměme",
+    "2pl": "vezměte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "spoken": {
+    "form": "vem",
+    "note": "Spoken imperative: Vem si to. (= Vezmi si to.)"
+   },
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "říkat",
+   "en": "to say, tell (repeatedly)",
+   "aspect": "impf",
+   "partner": [
+    "říct"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "říkám",
+    "2sg": "říkáš",
+    "3sg": "říká",
+    "1pl": "říkáme",
+    "2pl": "říkáte",
+    "3pl": "říkají"
+   },
+   "past": {
+    "m": "říkal",
+    "f": "říkala",
+    "n": "říkalo",
+    "mpl": "říkali",
+    "fpl": "říkaly"
+   },
+   "imperative": {
+    "2sg": "říkej",
+    "1pl": "říkejme",
+    "2pl": "říkejte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "říct",
+   "en": "to say, tell (once)",
+   "aspect": "pf",
+   "partner": [
+    "říkat"
+   ],
+   "class": "irregular",
+   "present": {
+    "1sg": "řeknu",
+    "2sg": "řekneš",
+    "3sg": "řekne",
+    "1pl": "řekneme",
+    "2pl": "řeknete",
+    "3pl": "řeknou"
+   },
+   "past": {
+    "m": "řekl",
+    "f": "řekla",
+    "n": "řeklo",
+    "mpl": "řekli",
+    "fpl": "řekly"
+   },
+   "imperative": {
+    "2sg": "řekni",
+    "1pl": "řekněme",
+    "2pl": "řekněte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "notes": "Also written říci (more formal). Jak se to řekne česky? (How do you say that in Czech?)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "volat",
+   "en": "to call, phone",
+   "aspect": "impf",
+   "partner": [
+    "zavolat"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "volám",
+    "2sg": "voláš",
+    "3sg": "volá",
+    "1pl": "voláme",
+    "2pl": "voláte",
+    "3pl": "volají"
+   },
+   "past": {
+    "m": "volal",
+    "f": "volala",
+    "n": "volalo",
+    "mpl": "volali",
+    "fpl": "volaly"
+   },
+   "imperative": {
+    "2sg": "volej",
+    "1pl": "volejme",
+    "2pl": "volejte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "zavolat",
+   "en": "to call, phone (once)",
+   "aspect": "pf",
+   "partner": [
+    "volat"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "zavolám",
+    "2sg": "zavoláš",
+    "3sg": "zavolá",
+    "1pl": "zavoláme",
+    "2pl": "zavoláte",
+    "3pl": "zavolají"
+   },
+   "past": {
+    "m": "zavolal",
+    "f": "zavolala",
+    "n": "zavolalo",
+    "mpl": "zavolali",
+    "fpl": "zavolaly"
+   },
+   "imperative": {
+    "2sg": "zavolej",
+    "1pl": "zavolejme",
+    "2pl": "zavolejte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "vařit",
+   "en": "to cook",
+   "aspect": "impf",
+   "partner": [
+    "uvařit"
+   ],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "vařím",
+    "2sg": "vaříš",
+    "3sg": "vaří",
+    "1pl": "vaříme",
+    "2pl": "vaříte",
+    "3pl": "vaří"
+   },
+   "past": {
+    "m": "vařil",
+    "f": "vařila",
+    "n": "vařilo",
+    "mpl": "vařili",
+    "fpl": "vařily"
+   },
+   "imperative": {
+    "2sg": "vař",
+    "1pl": "vařme",
+    "2pl": "vařte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "uvařit",
+   "en": "to cook (a dish, and finish)",
+   "aspect": "pf",
+   "partner": [
+    "vařit"
+   ],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "uvařím",
+    "2sg": "uvaříš",
+    "3sg": "uvaří",
+    "1pl": "uvaříme",
+    "2pl": "uvaříte",
+    "3pl": "uvaří"
+   },
+   "past": {
+    "m": "uvařil",
+    "f": "uvařila",
+    "n": "uvařilo",
+    "mpl": "uvařili",
+    "fpl": "uvařily"
+   },
+   "imperative": {
+    "2sg": "uvař",
+    "1pl": "uvařme",
+    "2pl": "uvařte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "čekat",
+   "en": "to wait",
+   "aspect": "impf",
+   "partner": [
+    "počkat"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "čekám",
+    "2sg": "čekáš",
+    "3sg": "čeká",
+    "1pl": "čekáme",
+    "2pl": "čekáte",
+    "3pl": "čekají"
+   },
+   "past": {
+    "m": "čekal",
+    "f": "čekala",
+    "n": "čekalo",
+    "mpl": "čekali",
+    "fpl": "čekaly"
+   },
+   "imperative": {
+    "2sg": "čekej",
+    "1pl": "čekejme",
+    "2pl": "čekejte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "notes": "čekat na + accusative: Čekám na autobus.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "počkat",
+   "en": "to wait (a moment, until)",
+   "aspect": "pf",
+   "partner": [
+    "čekat"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "počkám",
+    "2sg": "počkáš",
+    "3sg": "počká",
+    "1pl": "počkáme",
+    "2pl": "počkáte",
+    "3pl": "počkají"
+   },
+   "past": {
+    "m": "počkal",
+    "f": "počkala",
+    "n": "počkalo",
+    "mpl": "počkali",
+    "fpl": "počkaly"
+   },
+   "imperative": {
+    "2sg": "počkej",
+    "1pl": "počkejme",
+    "2pl": "počkejte"
+   },
+   "topics": [
+    "aspect",
+    "imperative"
+   ],
+   "notes": "Počkej! / Počkejte! (Wait!)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "začínat",
+   "en": "to begin (regularly)",
+   "aspect": "impf",
+   "partner": [
+    "začít"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "začínám",
+    "2sg": "začínáš",
+    "3sg": "začíná",
+    "1pl": "začínáme",
+    "2pl": "začínáte",
+    "3pl": "začínají"
+   },
+   "past": {
+    "m": "začínal",
+    "f": "začínala",
+    "n": "začínalo",
+    "mpl": "začínali",
+    "fpl": "začínaly"
+   },
+   "imperative": {
+    "2sg": "začínej",
+    "1pl": "začínejme",
+    "2pl": "začínejte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "začít",
+   "en": "to begin",
+   "aspect": "pf",
+   "partner": [
+    "začínat"
+   ],
+   "class": "2 · -ne- (začne, sedne)",
+   "present": {
+    "1sg": "začnu",
+    "2sg": "začneš",
+    "3sg": "začne",
+    "1pl": "začneme",
+    "2pl": "začnete",
+    "3pl": "začnou"
+   },
+   "past": {
+    "m": "začal",
+    "f": "začala",
+    "n": "začalo",
+    "mpl": "začali",
+    "fpl": "začaly"
+   },
+   "imperative": {
+    "2sg": "začni",
+    "1pl": "začněme",
+    "2pl": "začněte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "notes": "Followed by an imperfective infinitive: Začal jsem se učit česky.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "vstávat",
+   "en": "to get up (regularly)",
+   "aspect": "impf",
+   "partner": [
+    "vstát"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "vstávám",
+    "2sg": "vstáváš",
+    "3sg": "vstává",
+    "1pl": "vstáváme",
+    "2pl": "vstáváte",
+    "3pl": "vstávají"
+   },
+   "past": {
+    "m": "vstával",
+    "f": "vstávala",
+    "n": "vstávalo",
+    "mpl": "vstávali",
+    "fpl": "vstávaly"
+   },
+   "imperative": {
+    "2sg": "vstávej",
+    "1pl": "vstávejme",
+    "2pl": "vstávejte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "notes": "V kolik vstáváš? (What time do you get up?)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "vstát",
+   "en": "to get up",
+   "aspect": "pf",
+   "partner": [
+    "vstávat"
+   ],
+   "class": "2 · -ne- (začne, sedne)",
+   "present": {
+    "1sg": "vstanu",
+    "2sg": "vstaneš",
+    "3sg": "vstane",
+    "1pl": "vstaneme",
+    "2pl": "vstanete",
+    "3pl": "vstanou"
+   },
+   "past": {
+    "m": "vstal",
+    "f": "vstala",
+    "n": "vstalo",
+    "mpl": "vstali",
+    "fpl": "vstaly"
+   },
+   "imperative": {
+    "2sg": "vstaň",
+    "1pl": "vstaňme",
+    "2pl": "vstaňte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "otevřít",
+   "en": "to open",
+   "aspect": "pf",
+   "partner": [
+    "otvírat"
+   ],
+   "class": "1 · -e- (nese, bere, píše)",
+   "present": {
+    "1sg": "otevřu",
+    "2sg": "otevřeš",
+    "3sg": "otevře",
+    "1pl": "otevřeme",
+    "2pl": "otevřete",
+    "3pl": "otevřou"
+   },
+   "past": {
+    "m": "otevřel",
+    "f": "otevřela",
+    "n": "otevřelo",
+    "mpl": "otevřeli",
+    "fpl": "otevřely"
+   },
+   "imperative": {
+    "2sg": "otevři",
+    "1pl": "otevřeme",
+    "2pl": "otevřete"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "otvírat",
+   "en": "to open (regularly); to be open",
+   "aspect": "impf",
+   "partner": [
+    "otevřít"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "otvírám",
+    "2sg": "otvíráš",
+    "3sg": "otvírá",
+    "1pl": "otvíráme",
+    "2pl": "otvíráte",
+    "3pl": "otvírají"
+   },
+   "past": {
+    "m": "otvíral",
+    "f": "otvírala",
+    "n": "otvíralo",
+    "mpl": "otvírali",
+    "fpl": "otvíraly"
+   },
+   "imperative": {
+    "2sg": "otvírej",
+    "1pl": "otvírejme",
+    "2pl": "otvírejte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "notes": "Also otevírat. V kolik otvíráte? (What time do you open?)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "zavřít",
+   "en": "to close",
+   "aspect": "pf",
+   "partner": [
+    "zavírat"
+   ],
+   "class": "1 · -e- (nese, bere, píše)",
+   "present": {
+    "1sg": "zavřu",
+    "2sg": "zavřeš",
+    "3sg": "zavře",
+    "1pl": "zavřeme",
+    "2pl": "zavřete",
+    "3pl": "zavřou"
+   },
+   "past": {
+    "m": "zavřel",
+    "f": "zavřela",
+    "n": "zavřelo",
+    "mpl": "zavřeli",
+    "fpl": "zavřely"
+   },
+   "imperative": {
+    "2sg": "zavři",
+    "1pl": "zavřeme",
+    "2pl": "zavřete"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "zavírat",
+   "en": "to close (regularly)",
+   "aspect": "impf",
+   "partner": [
+    "zavřít"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "zavírám",
+    "2sg": "zavíráš",
+    "3sg": "zavírá",
+    "1pl": "zavíráme",
+    "2pl": "zavíráte",
+    "3pl": "zavírají"
+   },
+   "past": {
+    "m": "zavíral",
+    "f": "zavírala",
+    "n": "zavíralo",
+    "mpl": "zavírali",
+    "fpl": "zavíraly"
+   },
+   "imperative": {
+    "2sg": "zavírej",
+    "1pl": "zavírejme",
+    "2pl": "zavírejte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "pomáhat",
+   "en": "to help",
+   "aspect": "impf",
+   "partner": [
+    "pomoct"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "pomáhám",
+    "2sg": "pomáháš",
+    "3sg": "pomáhá",
+    "1pl": "pomáháme",
+    "2pl": "pomáháte",
+    "3pl": "pomáhají"
+   },
+   "past": {
+    "m": "pomáhal",
+    "f": "pomáhala",
+    "n": "pomáhalo",
+    "mpl": "pomáhali",
+    "fpl": "pomáhaly"
+   },
+   "imperative": {
+    "2sg": "pomáhej",
+    "1pl": "pomáhejme",
+    "2pl": "pomáhejte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "notes": "Takes the dative: Pomáhám mámě.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "pomoct",
+   "en": "to help (once)",
+   "aspect": "pf",
+   "partner": [
+    "pomáhat"
+   ],
+   "class": "irregular",
+   "present": {
+    "1sg": "pomůžu / pomohu",
+    "2sg": "pomůžeš",
+    "3sg": "pomůže",
+    "1pl": "pomůžeme",
+    "2pl": "pomůžete",
+    "3pl": "pomůžou / pomohou"
+   },
+   "past": {
+    "m": "pomohl",
+    "f": "pomohla",
+    "n": "pomohlo",
+    "mpl": "pomohli",
+    "fpl": "pomohly"
+   },
+   "imperative": {
+    "2sg": "pomoz",
+    "1pl": "pomozme",
+    "2pl": "pomozte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "notes": "Also written pomoci. Můžete mi pomoct? (Can you help me?)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "ptát se",
+   "en": "to ask",
+   "aspect": "impf",
+   "partner": [
+    "zeptat se"
+   ],
+   "class": "5 · -á- (dělá)",
+   "reflexive": "se",
+   "present": {
+    "1sg": "ptám",
+    "2sg": "ptáš",
+    "3sg": "ptá",
+    "1pl": "ptáme",
+    "2pl": "ptáte",
+    "3pl": "ptají"
+   },
+   "past": {
+    "m": "ptal",
+    "f": "ptala",
+    "n": "ptalo",
+    "mpl": "ptali",
+    "fpl": "ptaly"
+   },
+   "imperative": {
+    "2sg": "ptej",
+    "1pl": "ptejme",
+    "2pl": "ptejte"
+   },
+   "topics": [
+    "aspect",
+    "reflexive"
+   ],
+   "notes": "ptát se + genitive (of a person): Zeptej se paní.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "zeptat se",
+   "en": "to ask (once)",
+   "aspect": "pf",
+   "partner": [
+    "ptát se"
+   ],
+   "class": "5 · -á- (dělá)",
+   "reflexive": "se",
+   "present": {
+    "1sg": "zeptám",
+    "2sg": "zeptáš",
+    "3sg": "zeptá",
+    "1pl": "zeptáme",
+    "2pl": "zeptáte",
+    "3pl": "zeptají"
+   },
+   "past": {
+    "m": "zeptal",
+    "f": "zeptala",
+    "n": "zeptalo",
+    "mpl": "zeptali",
+    "fpl": "zeptaly"
+   },
+   "imperative": {
+    "2sg": "zeptej",
+    "1pl": "zeptejme",
+    "2pl": "zeptejte"
+   },
+   "topics": [
+    "aspect",
+    "reflexive"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "odpočívat",
+   "en": "to rest",
+   "aspect": "impf",
+   "partner": [
+    "odpočinout si"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "odpočívám",
+    "2sg": "odpočíváš",
+    "3sg": "odpočívá",
+    "1pl": "odpočíváme",
+    "2pl": "odpočíváte",
+    "3pl": "odpočívají"
+   },
+   "past": {
+    "m": "odpočíval",
+    "f": "odpočívala",
+    "n": "odpočívalo",
+    "mpl": "odpočívali",
+    "fpl": "odpočívaly"
+   },
+   "imperative": {
+    "2sg": "odpočívej",
+    "1pl": "odpočívejme",
+    "2pl": "odpočívejte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "odpočinout si",
+   "en": "to have a rest",
+   "aspect": "pf",
+   "partner": [
+    "odpočívat"
+   ],
+   "class": "2 · -ne- (začne, sedne)",
+   "reflexive": "si",
+   "present": {
+    "1sg": "odpočinu",
+    "2sg": "odpočineš",
+    "3sg": "odpočine",
+    "1pl": "odpočineme",
+    "2pl": "odpočinete",
+    "3pl": "odpočinou"
+   },
+   "past": {
+    "m": "odpočinul",
+    "f": "odpočinula",
+    "n": "odpočinulo",
+    "mpl": "odpočinuli",
+    "fpl": "odpočinuly"
+   },
+   "imperative": {
+    "2sg": "odpočiň",
+    "1pl": "odpočiňme",
+    "2pl": "odpočiňte"
+   },
+   "topics": [
+    "aspect",
+    "reflexive"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "dívat se",
+   "en": "to look, watch",
+   "aspect": "impf",
+   "partner": [
+    "podívat se"
+   ],
+   "class": "5 · -á- (dělá)",
+   "reflexive": "se",
+   "present": {
+    "1sg": "dívám",
+    "2sg": "díváš",
+    "3sg": "dívá",
+    "1pl": "díváme",
+    "2pl": "díváte",
+    "3pl": "dívají"
+   },
+   "past": {
+    "m": "díval",
+    "f": "dívala",
+    "n": "dívalo",
+    "mpl": "dívali",
+    "fpl": "dívaly"
+   },
+   "imperative": {
+    "2sg": "dívej",
+    "1pl": "dívejme",
+    "2pl": "dívejte"
+   },
+   "topics": [
+    "aspect",
+    "reflexive"
+   ],
+   "notes": "dívat se na + accusative: Díváme se na film.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "podívat se",
+   "en": "to take a look",
+   "aspect": "pf",
+   "partner": [
+    "dívat se"
+   ],
+   "class": "5 · -á- (dělá)",
+   "reflexive": "se",
+   "present": {
+    "1sg": "podívám",
+    "2sg": "podíváš",
+    "3sg": "podívá",
+    "1pl": "podíváme",
+    "2pl": "podíváte",
+    "3pl": "podívají"
+   },
+   "past": {
+    "m": "podíval",
+    "f": "podívala",
+    "n": "podívalo",
+    "mpl": "podívali",
+    "fpl": "podívaly"
+   },
+   "imperative": {
+    "2sg": "podívej",
+    "1pl": "podívejme",
+    "2pl": "podívejte"
+   },
+   "topics": [
+    "aspect",
+    "reflexive"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "učit se",
+   "en": "to learn, study",
+   "aspect": "impf",
+   "partner": [
+    "naučit se"
+   ],
+   "class": "4 · -í- (prosí, mluví)",
+   "reflexive": "se",
+   "present": {
+    "1sg": "učím",
+    "2sg": "učíš",
+    "3sg": "učí",
+    "1pl": "učíme",
+    "2pl": "učíte",
+    "3pl": "učí"
+   },
+   "past": {
+    "m": "učil",
+    "f": "učila",
+    "n": "učilo",
+    "mpl": "učili",
+    "fpl": "učily"
+   },
+   "imperative": {
+    "2sg": "uč",
+    "1pl": "učme",
+    "2pl": "učte"
+   },
+   "topics": [
+    "reflexive",
+    "aspect"
+   ],
+   "notes": "Without se, učit means 'to teach': Učím angličtinu. (I teach English.)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "naučit se",
+   "en": "to learn (successfully)",
+   "aspect": "pf",
+   "partner": [
+    "učit se"
+   ],
+   "class": "4 · -í- (prosí, mluví)",
+   "reflexive": "se",
+   "present": {
+    "1sg": "naučím",
+    "2sg": "naučíš",
+    "3sg": "naučí",
+    "1pl": "naučíme",
+    "2pl": "naučíte",
+    "3pl": "naučí"
+   },
+   "past": {
+    "m": "naučil",
+    "f": "naučila",
+    "n": "naučilo",
+    "mpl": "naučili",
+    "fpl": "naučily"
+   },
+   "imperative": {
+    "2sg": "nauč",
+    "1pl": "naučme",
+    "2pl": "naučte"
+   },
+   "topics": [
+    "reflexive",
+    "aspect"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "dát",
+   "en": "to give; (dát si) to have, order",
+   "aspect": "pf",
+   "partner": [
+    "dávat"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "dám",
+    "2sg": "dáš",
+    "3sg": "dá",
+    "1pl": "dáme",
+    "2pl": "dáte",
+    "3pl": "dají"
+   },
+   "past": {
+    "m": "dal",
+    "f": "dala",
+    "n": "dalo",
+    "mpl": "dali",
+    "fpl": "daly"
+   },
+   "imperative": {
+    "2sg": "dej",
+    "1pl": "dejme",
+    "2pl": "dejte"
+   },
+   "topics": [
+    "present-classes",
+    "aspect",
+    "reflexive"
+   ],
+   "notes": "dát si = to have (food or drink), to treat yourself to: Dám si kávu. Co si dáte?",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "dávat",
+   "en": "to give (repeatedly, in general)",
+   "aspect": "impf",
+   "partner": [
+    "dát"
+   ],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "dávám",
+    "2sg": "dáváš",
+    "3sg": "dává",
+    "1pl": "dáváme",
+    "2pl": "dáváte",
+    "3pl": "dávají"
+   },
+   "past": {
+    "m": "dával",
+    "f": "dávala",
+    "n": "dávalo",
+    "mpl": "dávali",
+    "fpl": "dávaly"
+   },
+   "imperative": {
+    "2sg": "dávej",
+    "1pl": "dávejme",
+    "2pl": "dávejte"
+   },
+   "topics": [
+    "aspect"
+   ],
+   "notes": "Co dávají v kině? (What's on at the cinema?)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "mluvit",
+   "en": "to speak",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "mluvím",
+    "2sg": "mluvíš",
+    "3sg": "mluví",
+    "1pl": "mluvíme",
+    "2pl": "mluvíte",
+    "3pl": "mluví"
+   },
+   "past": {
+    "m": "mluvil",
+    "f": "mluvila",
+    "n": "mluvilo",
+    "mpl": "mluvili",
+    "fpl": "mluvily"
+   },
+   "imperative": {
+    "2sg": "mluv",
+    "1pl": "mluvme",
+    "2pl": "mluvte"
+   },
+   "topics": [
+    "present-classes"
+   ],
+   "notes": "Mluvíte anglicky? (Do you speak English?)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "prosit",
+   "en": "to ask, beg (for)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "prosím",
+    "2sg": "prosíš",
+    "3sg": "prosí",
+    "1pl": "prosíme",
+    "2pl": "prosíte",
+    "3pl": "prosí"
+   },
+   "past": {
+    "m": "prosil",
+    "f": "prosila",
+    "n": "prosilo",
+    "mpl": "prosili",
+    "fpl": "prosily"
+   },
+   "imperative": {
+    "2sg": "pros",
+    "1pl": "prosme",
+    "2pl": "proste"
+   },
+   "topics": [
+    "present-classes"
+   ],
+   "notes": "prosím = please / here you are / pardon?",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "rozumět",
+   "en": "to understand",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "rozumím",
+    "2sg": "rozumíš",
+    "3sg": "rozumí",
+    "1pl": "rozumíme",
+    "2pl": "rozumíte",
+    "3pl": "rozumějí / rozumí"
+   },
+   "past": {
+    "m": "rozuměl",
+    "f": "rozuměla",
+    "n": "rozumělo",
+    "mpl": "rozuměli",
+    "fpl": "rozuměly"
+   },
+   "topics": [
+    "present-classes"
+   ],
+   "notes": "Takes the dative: Rozumím ti. Nerozumím. (I don't understand.)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "bydlet",
+   "en": "to live (reside)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "bydlím",
+    "2sg": "bydlíš",
+    "3sg": "bydlí",
+    "1pl": "bydlíme",
+    "2pl": "bydlíte",
+    "3pl": "bydlí"
+   },
+   "past": {
+    "m": "bydlel",
+    "f": "bydlela",
+    "n": "bydlelo",
+    "mpl": "bydleli",
+    "fpl": "bydlely"
+   },
+   "imperative": {
+    "2sg": "bydli",
+    "1pl": "bydleme",
+    "2pl": "bydlete"
+   },
+   "topics": [
+    "present-classes"
+   ],
+   "notes": "Kde bydlíš? Bydlím v Praze.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "pracovat",
+   "en": "to work",
+   "aspect": "impf",
+   "partner": [],
+   "class": "3 · -je- (kupuje, pije)",
+   "present": {
+    "1sg": "pracuju / pracuji",
+    "2sg": "pracuješ",
+    "3sg": "pracuje",
+    "1pl": "pracujeme",
+    "2pl": "pracujete",
+    "3pl": "pracujou / pracují"
+   },
+   "past": {
+    "m": "pracoval",
+    "f": "pracovala",
+    "n": "pracovalo",
+    "mpl": "pracovali",
+    "fpl": "pracovaly"
+   },
+   "imperative": {
+    "2sg": "pracuj",
+    "1pl": "pracujme",
+    "2pl": "pracujte"
+   },
+   "topics": [
+    "present-classes"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "potřebovat",
+   "en": "to need",
+   "aspect": "impf",
+   "partner": [],
+   "class": "3 · -je- (kupuje, pije)",
+   "present": {
+    "1sg": "potřebuju / potřebuji",
+    "2sg": "potřebuješ",
+    "3sg": "potřebuje",
+    "1pl": "potřebujeme",
+    "2pl": "potřebujete",
+    "3pl": "potřebujou / potřebují"
+   },
+   "past": {
+    "m": "potřeboval",
+    "f": "potřebovala",
+    "n": "potřebovalo",
+    "mpl": "potřebovali",
+    "fpl": "potřebovaly"
+   },
+   "topics": [
+    "present-classes"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "znát",
+   "en": "to know (a person, place)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "5 · -á- (dělá)",
+   "present": {
+    "1sg": "znám",
+    "2sg": "znáš",
+    "3sg": "zná",
+    "1pl": "známe",
+    "2pl": "znáte",
+    "3pl": "znají"
+   },
+   "past": {
+    "m": "znal",
+    "f": "znala",
+    "n": "znalo",
+    "mpl": "znali",
+    "fpl": "znaly"
+   },
+   "topics": [
+    "present-classes"
+   ],
+   "notes": "Známe se? (Do we know each other?)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "vidět",
+   "en": "to see",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "vidím",
+    "2sg": "vidíš",
+    "3sg": "vidí",
+    "1pl": "vidíme",
+    "2pl": "vidíte",
+    "3pl": "vidí"
+   },
+   "past": {
+    "m": "viděl",
+    "f": "viděla",
+    "n": "vidělo",
+    "mpl": "viděli",
+    "fpl": "viděly"
+   },
+   "topics": [
+    "present-classes"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "myslet",
+   "en": "to think",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "myslím",
+    "2sg": "myslíš",
+    "3sg": "myslí",
+    "1pl": "myslíme",
+    "2pl": "myslíte",
+    "3pl": "myslí"
+   },
+   "past": {
+    "m": "myslel",
+    "f": "myslela",
+    "n": "myslelo",
+    "mpl": "mysleli",
+    "fpl": "myslely"
+   },
+   "imperative": {
+    "2sg": "mysli",
+    "1pl": "mysleme",
+    "2pl": "myslete"
+   },
+   "topics": [
+    "present-classes",
+    "reflexive"
+   ],
+   "notes": "myslet na = think about: Myslím na tebe. myslet si = have an opinion: Myslím si, že…",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "spát",
+   "en": "to sleep",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "spím",
+    "2sg": "spíš",
+    "3sg": "spí",
+    "1pl": "spíme",
+    "2pl": "spíte",
+    "3pl": "spí"
+   },
+   "past": {
+    "m": "spal",
+    "f": "spala",
+    "n": "spalo",
+    "mpl": "spali",
+    "fpl": "spaly"
+   },
+   "imperative": {
+    "2sg": "spi",
+    "1pl": "spěme",
+    "2pl": "spěte"
+   },
+   "topics": [
+    "present-classes"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "líbit se",
+   "en": "to please (= to like)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "reflexive": "se",
+   "present": {
+    "1sg": "líbím",
+    "2sg": "líbíš",
+    "3sg": "líbí",
+    "1pl": "líbíme",
+    "2pl": "líbíte",
+    "3pl": "líbí"
+   },
+   "past": {
+    "m": "líbil",
+    "f": "líbila",
+    "n": "líbilo",
+    "mpl": "líbili",
+    "fpl": "líbily"
+   },
+   "topics": [
+    "reflexive"
+   ],
+   "notes": "The thing liked is the subject, the person is in the dative: Líbí se mi Praha. (I like Prague.)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "těšit se",
+   "en": "to look forward (to)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "reflexive": "se",
+   "present": {
+    "1sg": "těším",
+    "2sg": "těšíš",
+    "3sg": "těší",
+    "1pl": "těšíme",
+    "2pl": "těšíte",
+    "3pl": "těší"
+   },
+   "past": {
+    "m": "těšil",
+    "f": "těšila",
+    "n": "těšilo",
+    "mpl": "těšili",
+    "fpl": "těšily"
+   },
+   "imperative": {
+    "2sg": "těš",
+    "1pl": "těšme",
+    "2pl": "těšte"
+   },
+   "topics": [
+    "reflexive"
+   ],
+   "notes": "těšit se na + accusative: Těším se na víkend. Těší mě. (Nice to meet you.)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "jmenovat se",
+   "en": "to be called",
+   "aspect": "impf",
+   "partner": [],
+   "class": "3 · -je- (kupuje, pije)",
+   "reflexive": "se",
+   "present": {
+    "1sg": "jmenuju / jmenuji",
+    "2sg": "jmenuješ",
+    "3sg": "jmenuje",
+    "1pl": "jmenujeme",
+    "2pl": "jmenujete",
+    "3pl": "jmenujou / jmenují"
+   },
+   "past": {
+    "m": "jmenoval",
+    "f": "jmenovala",
+    "n": "jmenovalo",
+    "mpl": "jmenovali",
+    "fpl": "jmenovaly"
+   },
+   "topics": [
+    "reflexive"
+   ],
+   "notes": "Jak se jmenuješ? Jmenuju se Anna.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "bát se",
+   "en": "to be afraid (of)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "reflexive": "se",
+   "present": {
+    "1sg": "bojím",
+    "2sg": "bojíš",
+    "3sg": "bojí",
+    "1pl": "bojíme",
+    "2pl": "bojíte",
+    "3pl": "bojí"
+   },
+   "past": {
+    "m": "bál",
+    "f": "bála",
+    "n": "bálo",
+    "mpl": "báli",
+    "fpl": "bály"
+   },
+   "imperative": {
+    "2sg": "boj",
+    "1pl": "bojme",
+    "2pl": "bojte"
+   },
+   "topics": [
+    "reflexive"
+   ],
+   "notes": "Takes the genitive: Bojím se psů. The imperative is used mostly negatively: Neboj se! (Don't worry!)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "sednout si",
+   "en": "to sit down",
+   "aspect": "pf",
+   "partner": [],
+   "class": "2 · -ne- (začne, sedne)",
+   "reflexive": "si",
+   "present": {
+    "1sg": "sednu",
+    "2sg": "sedneš",
+    "3sg": "sedne",
+    "1pl": "sedneme",
+    "2pl": "sednete",
+    "3pl": "sednou"
+   },
+   "past": {
+    "m": "sedl",
+    "f": "sedla",
+    "n": "sedlo",
+    "mpl": "sedli",
+    "fpl": "sedly"
+   },
+   "imperative": {
+    "2sg": "sedni",
+    "1pl": "sedněme",
+    "2pl": "sedněte"
+   },
+   "topics": [
+    "reflexive",
+    "imperative"
+   ],
+   "notes": "Sedněte si, prosím. (Please take a seat.)",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "moct",
+   "en": "can, to be able",
+   "aspect": "impf",
+   "partner": [],
+   "class": "irregular",
+   "present": {
+    "1sg": "můžu / mohu",
+    "2sg": "můžeš",
+    "3sg": "může",
+    "1pl": "můžeme",
+    "2pl": "můžete",
+    "3pl": "můžou / mohou"
+   },
+   "past": {
+    "m": "mohl",
+    "f": "mohla",
+    "n": "mohlo",
+    "mpl": "mohli",
+    "fpl": "mohly"
+   },
+   "topics": [
+    "modals"
+   ],
+   "notes": "Also written moci. Můžu platit kartou? (Can I pay by card?) mohu/mohou are more formal.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "muset",
+   "en": "must, to have to",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "musím",
+    "2sg": "musíš",
+    "3sg": "musí",
+    "1pl": "musíme",
+    "2pl": "musíte",
+    "3pl": "musí"
+   },
+   "past": {
+    "m": "musel",
+    "f": "musela",
+    "n": "muselo",
+    "mpl": "museli",
+    "fpl": "musely"
+   },
+   "topics": [
+    "modals"
+   ],
+   "notes": "Careful: nemusím = I don't have to (not 'I mustn't'). Musejí is also standard for 3pl.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "smět",
+   "en": "may, to be allowed to",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "smím",
+    "2sg": "smíš",
+    "3sg": "smí",
+    "1pl": "smíme",
+    "2pl": "smíte",
+    "3pl": "smějí / smí"
+   },
+   "past": {
+    "m": "směl",
+    "f": "směla",
+    "n": "smělo",
+    "mpl": "směli",
+    "fpl": "směly"
+   },
+   "topics": [
+    "modals"
+   ],
+   "notes": "nesmím = I mustn't, I'm not allowed to: Tady se nesmí kouřit.",
+   "nativeReviewed": false
+  },
+  {
+   "lemma": "umět",
+   "en": "to know how to, can (a skill)",
+   "aspect": "impf",
+   "partner": [],
+   "class": "4 · -í- (prosí, mluví)",
+   "present": {
+    "1sg": "umím",
+    "2sg": "umíš",
+    "3sg": "umí",
+    "1pl": "umíme",
+    "2pl": "umíte",
+    "3pl": "umějí / umí"
+   },
+   "past": {
+    "m": "uměl",
+    "f": "uměla",
+    "n": "umělo",
+    "mpl": "uměli",
+    "fpl": "uměly"
+   },
+   "topics": [
+    "modals"
+   ],
+   "notes": "Umíš plavat? (Can you swim?) Umím trochu česky. (I speak a little Czech.)",
+   "nativeReviewed": false
+  }
+ ]
 }

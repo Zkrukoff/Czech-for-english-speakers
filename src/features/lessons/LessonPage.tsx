@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { course } from '@/content';
 import { PageHeader } from '@/components/PageHeader';
 import { NotFound } from '@/components/NotFound';
-import { Markdown } from '@/components/Markdown';
+import { CourseMarkdown } from '@/components/CourseMarkdown';
 import { ReviewStatusBadge } from '@/components/ReviewStatusBadge';
 import { Placeholder } from '@/components/Placeholder';
 
@@ -16,7 +16,7 @@ export function LessonPage() {
       <PageHeader eyebrow={`Unit ${unit.number} · Lesson ${lesson.number}`} title={lesson.title}>
         <div className="mt-3"><ReviewStatusBadge reviewed={lesson.nativeReviewed} /></div>
       </PageHeader>
-      <Markdown>{lesson.explanationMd}</Markdown>
+      <CourseMarkdown>{lesson.explanationMd}</CourseMarkdown>
       <div className="mt-8"><Placeholder milestone="(c): vocabulary, dialogue and exercises" /></div>
     </>
   );

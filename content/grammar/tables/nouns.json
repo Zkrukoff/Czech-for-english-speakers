@@ -1,0 +1,918 @@
+{
+ "tables": [
+  {
+   "id": "noun-pan",
+   "title": "pán",
+   "group": "nouns",
+   "subtitle": "masculine animate · hard",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "pán|",
+      "pán|i / pán|ové"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "pán|a",
+      "pán|ů"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "pán|ovi / pán|u",
+      "pán|ům"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "pán|a",
+      "pán|y"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "pan|e",
+      "pán|i / pán|ové"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "pán|ovi / pán|u",
+      "pán|ech"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "pán|em",
+      "pán|y"
+     ]
+    }
+   ],
+   "notes": [
+    "Dative and locative singular: -ovi is the usual ending for people (Petrovi, panu Novákovi). When two words stand together, only the last takes -ovi: panu Petrovi.",
+    "Vocative: stems ending in -r change it to -ře (Petr → Petře), and stems in -k, -h, -ch take -u (Marek → Marku, kluk → kluku).",
+    "Accusative singular = genitive singular for all masculine animate nouns: Vidím pána. Mám psa."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-hrad",
+   "title": "hrad",
+   "group": "nouns",
+   "subtitle": "masculine inanimate · hard",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "hrad|",
+      "hrad|y"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "hrad|u",
+      "hrad|ů"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "hrad|u",
+      "hrad|ům"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "hrad|",
+      "hrad|y"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "hrad|e",
+      "hrad|y"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "hrad|u / hrad|ě",
+      "hrad|ech"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "hrad|em",
+      "hrad|y"
+     ]
+    }
+   ],
+   "notes": [
+    "Genitive singular is -u for most nouns, but some common ones take -a: do lesa, do kostela, ze sýra.",
+    "Locative singular -ě or -u depends on the word and is best learned with it: v obchodě, na hradě, but v hotelu, v parku, ve vlaku. After k, h, ch, g it is almost always -u."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-muz",
+   "title": "muž",
+   "group": "nouns",
+   "subtitle": "masculine animate · soft",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "muž|",
+      "muž|i / muž|ové"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "muž|e",
+      "muž|ů"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "muž|i / muž|ovi",
+      "muž|ům"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "muž|e",
+      "muž|e"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "muž|i",
+      "muž|i / muž|ové"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "muž|i / muž|ovi",
+      "muž|ích"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "muž|em",
+      "muž|i"
+     ]
+    }
+   ],
+   "notes": [
+    "Names that end in a soft consonant follow muž: Tomáš → Tomáši (vocative), s Tomášem, Tomášovi."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-stroj",
+   "title": "stroj",
+   "group": "nouns",
+   "subtitle": "masculine inanimate · soft",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "stroj|",
+      "stroj|e"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "stroj|e",
+      "stroj|ů"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "stroj|i",
+      "stroj|ům"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "stroj|",
+      "stroj|e"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "stroj|i",
+      "stroj|e"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "stroj|i",
+      "stroj|ích"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "stroj|em",
+      "stroj|i"
+     ]
+    }
+   ],
+   "notes": [
+    "Common nouns of this type: čaj, pokoj, klíč, počítač, pomeranč, talíř."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-predseda",
+   "title": "předseda",
+   "group": "nouns",
+   "subtitle": "masculine animate · ending in -a",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "předsed|a",
+      "předsed|ové"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "předsed|y",
+      "předsed|ů"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "předsed|ovi",
+      "předsed|ům"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "předsed|u",
+      "předsed|y"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "předsed|o",
+      "předsed|ové"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "předsed|ovi",
+      "předsed|ech"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "předsed|ou",
+      "předsed|y"
+     ]
+    }
+   ],
+   "notes": [
+    "Masculine nouns in -a (táta, kolega, Honza) decline like žena in the singular, but take -ovi in the dative and locative, and adjectives agree in the masculine: můj táta, s mým tátou."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-soudce",
+   "title": "soudce",
+   "group": "nouns",
+   "subtitle": "masculine animate · ending in -e",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "soudc|e",
+      "soudc|i / soudc|ové"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "soudc|e",
+      "soudc|ů"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "soudc|i / soudc|ovi",
+      "soudc|ům"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "soudc|e",
+      "soudc|e"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "soudc|e",
+      "soudc|i / soudc|ové"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "soudc|i / soudc|ovi",
+      "soudc|ích"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "soudc|em",
+      "soudc|i"
+     ]
+    }
+   ],
+   "notes": [
+    "Other nouns like this: průvodce (guide), správce (administrator), vůdce (leader)."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-zena",
+   "title": "žena",
+   "group": "nouns",
+   "subtitle": "feminine · hard (-a)",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "žen|a",
+      "žen|y"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "žen|y",
+      "žen|"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "žen|ě",
+      "žen|ám"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "žen|u",
+      "žen|y"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "žen|o",
+      "žen|y"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "žen|ě",
+      "žen|ách"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "žen|ou",
+      "žen|ami"
+     ]
+    }
+   ],
+   "notes": [
+    "Before -ě the consonants k, h, ch, r change: Praha → v Praze, ruka → v ruce, kniha → v knize, sestra → o sestře.",
+    "Genitive plural has no ending and often inserts -e- or shortens a vowel: sestra → sester, kráva → krav."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-ruze",
+   "title": "růže",
+   "group": "nouns",
+   "subtitle": "feminine · soft (-e)",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "růž|e",
+      "růž|e"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "růž|e",
+      "růž|í"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "růž|i",
+      "růž|ím"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "růž|i",
+      "růž|e"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "růž|e",
+      "růž|e"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "růž|i",
+      "růž|ích"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "růž|í",
+      "růž|emi"
+     ]
+    }
+   ],
+   "notes": [
+    "Common nouns of this type: ulice (street), restaurace (restaurant), židle (chair), práce (work)."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-pisen",
+   "title": "píseň",
+   "group": "nouns",
+   "subtitle": "feminine · soft consonant",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "píseň|",
+      "písn|ě"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "písn|ě",
+      "písn|í"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "písn|i",
+      "písn|ím"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "píseň|",
+      "písn|ě"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "písn|i",
+      "písn|ě"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "písn|i",
+      "písn|ích"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "písn|í",
+      "písn|ěmi"
+     ]
+    }
+   ],
+   "notes": [
+    "Many nouns of this type end in -ň, -ř, -j, -c: kancelář → v kanceláři, tramvaj → v tramvaji, postel → v posteli."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-kost",
+   "title": "kost",
+   "group": "nouns",
+   "subtitle": "feminine · ending in a consonant (-i in genitive)",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "kost|",
+      "kost|i"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "kost|i",
+      "kost|í"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "kost|i",
+      "kost|em"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "kost|",
+      "kost|i"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "kost|i",
+      "kost|i"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "kost|i",
+      "kost|ech"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "kost|í",
+      "kost|mi"
+     ]
+    }
+   ],
+   "notes": [
+    "Common nouns of this type: věc (thing), noc (night), radost (joy), and most nouns in -ost: místnost, možnost."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-mesto",
+   "title": "město",
+   "group": "nouns",
+   "subtitle": "neuter · hard (-o)",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "měst|o",
+      "měst|a"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "měst|a",
+      "měst|"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "měst|u",
+      "měst|ům"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "měst|o",
+      "měst|a"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "měst|o",
+      "měst|a"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "měst|ě / měst|u",
+      "měst|ech"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "měst|em",
+      "měst|y"
+     ]
+    }
+   ],
+   "notes": [
+    "Locative singular is usually -ě (ve městě, v kině, v divadle), and -u after k, h, ch (v jablku). Some words allow both."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-more",
+   "title": "moře",
+   "group": "nouns",
+   "subtitle": "neuter · soft (-e)",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "moř|e",
+      "moř|e"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "moř|e",
+      "moř|í"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "moř|i",
+      "moř|ím"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "moř|e",
+      "moř|e"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "moř|e",
+      "moř|e"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "moř|i",
+      "moř|ích"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "moř|em",
+      "moř|i"
+     ]
+    }
+   ],
+   "notes": [
+    "Other nouns like this: pole (field), letiště (airport), hřiště (playground), parkoviště (car park)."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-kure",
+   "title": "kuře",
+   "group": "nouns",
+   "subtitle": "neuter · -e with -et- (young animals)",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "kuř|e",
+      "kuř|ata"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "kuř|ete",
+      "kuř|at"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "kuř|eti",
+      "kuř|atům"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "kuř|e",
+      "kuř|ata"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "kuř|e",
+      "kuř|ata"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "kuř|eti",
+      "kuř|atech"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "kuř|etem",
+      "kuř|aty"
+     ]
+    }
+   ],
+   "notes": [
+    "This pattern is used mainly for young animals and children: kotě (kitten), štěně (puppy), dítě (child, but its plural děti is irregular)."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "noun-staveni",
+   "title": "stavení",
+   "group": "nouns",
+   "subtitle": "neuter · -í",
+   "columns": [
+    "singular",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "staven|í",
+      "staven|í"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "staven|í",
+      "staven|í"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "staven|í",
+      "staven|ím"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "staven|í",
+      "staven|í"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "staven|í",
+      "staven|í"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "staven|í",
+      "staven|ích"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "staven|ím",
+      "staven|ími"
+     ]
+    }
+   ],
+   "notes": [
+    "Most verbal nouns in -ní / -tí follow this pattern: nádraží, náměstí, překvapení, cvičení."
+   ],
+   "nativeReviewed": false
+  }
+ ]
+}

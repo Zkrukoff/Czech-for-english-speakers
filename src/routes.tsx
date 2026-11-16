@@ -1,41 +1,37 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, type RouteObject } from 'react-router-dom';
 import { AppShell } from './components/AppShell';
 import { NotFound } from './components/NotFound';
 import { HomePage } from './features/home/HomePage';
-import { UnitPage } from './features/lessons/UnitPage';
-import { LessonPage } from './features/lessons/LessonPage';
-import { UnitCheckPage } from './features/lessons/UnitCheckPage';
-import { GrammarIndex } from './features/grammar/GrammarIndex';
-import { GrammarPageView } from './features/grammar/GrammarPageView';
-import { TablesPage } from './features/grammar/TablesPage';
-import { VerbsIndex } from './features/verbs/VerbsIndex';
-import { VerbLookup } from './features/verbs/VerbLookup';
-import { VerbDetail } from './features/verbs/VerbDetail';
-import { ReviewPage } from './features/review/ReviewPage';
-import { ProgressPage } from './features/progress/ProgressPage';
-import { SettingsPage } from './features/settings/SettingsPage';
 
-export const router = createBrowserRouter([
+/** Lazy-load a named page component so each section is its own chunk. */
+function page<M extends Record<string, unknown>>(load: () => Promise<M>, name: keyof M): Pick<RouteObject, 'lazy'> {
+  return { lazy: async () => ({ Component: (await load())[name] as React.ComponentType }) };
+}
+
+export const routes: RouteObject[] = [
   {
     path: '/',
     element: <AppShell />,
     errorElement: <AppShell error />,
+    hydrateFallbackElement: <></>,
     children: [
       { index: true, element: <HomePage /> },
-      { path: 'units/:unitId', element: <UnitPage /> },
-      { path: 'units/:unitId/check', element: <UnitCheckPage /> },
-      { path: 'lessons/:lessonId', element: <LessonPage /> },
-      { path: 'grammar', element: <GrammarIndex /> },
-      { path: 'grammar/tables', element: <TablesPage /> },
-      { path: 'grammar/:pageId', element: <GrammarPageView /> },
-      { path: 'verbs', element: <VerbsIndex /> },
-      { path: 'verbs/lookup', element: <VerbLookup /> },
-      { path: 'verbs/lookup/:lemma', element: <VerbDetail /> },
-      { path: 'verbs/:pageId', element: <GrammarPageView /> },
-      { path: 'review', element: <ReviewPage /> },
-      { path: 'progress', element: <ProgressPage /> },
-      { path: 'settings', element: <SettingsPage /> },
+      { path: 'units/:unitId', ...page(() => import('./features/lessons/UnitPage'), 'UnitPage') },
+      { path: 'units/:unitId/check', ...page(() => import('./features/lessons/UnitCheckPage'), 'UnitCheckPage') },
+      { path: 'lessons/:lessonId', ...page(() => import('./features/lessons/LessonPage'), 'LessonPage') },
+      { path: 'grammar', ...page(() => import('./features/grammar/GrammarIndex'), 'GrammarIndex') },
+      { path: 'grammar/tables', ...page(() => import('./features/grammar/TablesPage'), 'TablesPage') },
+      { path: 'grammar/:pageId', ...page(() => import('./features/grammar/GrammarPageView'), 'GrammarPageView') },
+      { path: 'verbs', ...page(() => import('./features/verbs/VerbsIndex'), 'VerbsIndex') },
+      { path: 'verbs/lookup', ...page(() => import('./features/verbs/VerbLookup'), 'VerbLookup') },
+      { path: 'verbs/lookup/:lemma', ...page(() => import('./features/verbs/VerbDetail'), 'VerbDetail') },
+      { path: 'verbs/:pageId', ...page(() => import('./features/grammar/GrammarPageView'), 'GrammarPageView') },
+      { path: 'review', ...page(() => import('./features/review/ReviewPage'), 'ReviewPage') },
+      { path: 'progress', ...page(() => import('./features/progress/ProgressPage'), 'ProgressPage') },
+      { path: 'settings', ...page(() => import('./features/settings/SettingsPage'), 'SettingsPage') },
       { path: '*', element: <NotFound /> },
     ],
   },
-]);
+];
+
+export const router = createBrowserRouter(routes);

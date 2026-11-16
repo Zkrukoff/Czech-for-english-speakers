@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { course } from '@/content';
 import { NotFound } from '@/components/NotFound';
-import { Markdown } from '@/components/Markdown';
+import { CourseMarkdown } from '@/components/CourseMarkdown';
 import { PageHeader } from '@/components/PageHeader';
 import { ReviewStatusBadge } from '@/components/ReviewStatusBadge';
 
@@ -14,7 +14,7 @@ export function GrammarPageView() {
       <PageHeader title={page.title} subtitle={page.summary}>
         <div className="mt-3"><ReviewStatusBadge reviewed={page.nativeReviewed} /></div>
       </PageHeader>
-      <Markdown>{page.body}</Markdown>
+      <CourseMarkdown>{page.body}</CourseMarkdown>
     </>
   );
 }

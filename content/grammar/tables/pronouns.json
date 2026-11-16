@@ -1,0 +1,480 @@
+{
+ "tables": [
+  {
+   "id": "pron-personal-sg",
+   "title": "Personal pronouns (singular)",
+   "group": "pronouns",
+   "subtitle": "já, ty, on, ona, ono",
+   "columns": [
+    "já (I)",
+    "ty (you)",
+    "on (he)",
+    "ona (she)",
+    "ono (it)"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "já",
+      "ty",
+      "on",
+      "ona",
+      "ono"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "mě / mne",
+      "tebe / tě",
+      "jeho / ho / něho",
+      "jí / ní",
+      "jeho / ho / něho"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "mně / mi",
+      "tobě / ti",
+      "jemu / mu / němu",
+      "jí / ní",
+      "jemu / mu / němu"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "mě / mne",
+      "tebe / tě",
+      "jeho / ho / něho / jej",
+      "ji / ni",
+      "je / ho / něj"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "mně",
+      "tobě",
+      "něm",
+      "ní",
+      "něm"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "mnou",
+      "tebou",
+      "jím / ním",
+      "jí / ní",
+      "jím / ním"
+     ]
+    }
+   ],
+   "notes": [
+    "Short forms (mi, ti, mu, ho, tě) are the normal unstressed choice and go in second position: Dej mi to. Vidím ho.",
+    "Long forms (mně, tobě, jemu, jeho) are used for emphasis or at the start of a sentence: Tobě to nedám, jemu ano.",
+    "Forms starting with n- (něho, němu, ní, něm) are used after prepositions: bez něho, k ní, o něm, s ním.",
+    "ty has a vocative only in the sense of calling someone (Ty!), so it isn't listed."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "pron-personal-pl",
+   "title": "Personal pronouns (plural)",
+   "group": "pronouns",
+   "subtitle": "my, vy, oni",
+   "columns": [
+    "my (we)",
+    "vy (you)",
+    "oni / ony / ona (they)"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "my",
+      "vy",
+      "oni / ony / ona"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "nás",
+      "vás",
+      "jich / nich"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "nám",
+      "vám",
+      "jim / nim"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "nás",
+      "vás",
+      "je / ně"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "nás",
+      "vás",
+      "nich"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "námi",
+      "vámi",
+      "jimi / nimi"
+     ]
+    }
+   ],
+   "notes": [
+    "vy is also the polite singular 'you' (vykání). Use it with anyone you don't know well: Máte čas? Děkuji vám."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "pron-reflexive",
+   "title": "se / si (reflexive)",
+   "group": "pronouns",
+   "subtitle": "oneself: has no nominative",
+   "columns": [
+    "reflexive"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "—"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "sebe"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "sobě / si"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "sebe / se"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "sobě"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "sebou"
+     ]
+    }
+   ],
+   "notes": [
+    "se is the short accusative and si the short dative. This is why verbs are listed as 'mýt se' (wash oneself) or 'dát si' (give oneself = have).",
+    "s sebou = with you/me/oneself: Máš s sebou deštník? (Do you have an umbrella with you?)"
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "pron-muj",
+   "title": "můj, moje (my)",
+   "group": "pronouns",
+   "subtitle": "possessive · same pattern: tvůj, svůj",
+   "columns": [
+    "masc. sg",
+    "fem. sg",
+    "neut. sg",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "můj",
+      "má / moje",
+      "mé / moje",
+      "mí / moji (m. anim.) · mé / moje (m. inan., f.) · má / moje (n.)"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "mého",
+      "mé / mojí",
+      "mého",
+      "mých"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "mému",
+      "mé / mojí",
+      "mému",
+      "mým"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "mého (anim.) / můj (inan.)",
+      "mou / moji",
+      "mé / moje",
+      "mé / moje (n. má / moje)"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "mém",
+      "mé / mojí",
+      "mém",
+      "mých"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "mým",
+      "mou / mojí",
+      "mým",
+      "mými"
+     ]
+    }
+   ],
+   "notes": [
+    "The longer forms (moje, mojí, moji) are standard Czech and more common in speech; the short forms (má, mé, mou) sound more formal or written.",
+    "svůj is used when the owner is the subject of the sentence: Petr volá své mámě (his own mum)."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "pron-nas",
+   "title": "náš, naše (our)",
+   "group": "pronouns",
+   "subtitle": "possessive · same pattern: váš",
+   "columns": [
+    "masc. sg",
+    "fem. sg",
+    "neut. sg",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "náš",
+      "naše",
+      "naše",
+      "naši (m. anim.) / naše"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "našeho",
+      "naší",
+      "našeho",
+      "našich"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "našemu",
+      "naší",
+      "našemu",
+      "našim"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "našeho (anim.) / náš (inan.)",
+      "naši",
+      "naše",
+      "naše"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "našem",
+      "naší",
+      "našem",
+      "našich"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "naším",
+      "naší",
+      "naším",
+      "našimi"
+     ]
+    }
+   ],
+   "notes": [
+    "váš (your, plural or polite) follows the same pattern: Kde je vaše auto? S vaším kolegou."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "pron-ten",
+   "title": "ten, ta, to (this, that, the)",
+   "group": "pronouns",
+   "subtitle": "demonstrative",
+   "columns": [
+    "masc. sg",
+    "fem. sg",
+    "neut. sg",
+    "plural"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "ten",
+      "ta",
+      "to",
+      "ti (m. anim.) / ty (m. inan., f.) / ta (n.)"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "toho",
+      "té",
+      "toho",
+      "těch"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "tomu",
+      "té",
+      "tomu",
+      "těm"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "toho (anim.) / ten (inan.)",
+      "tu",
+      "to",
+      "ty (n. ta)"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "tom",
+      "té",
+      "tom",
+      "těch"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "tím",
+      "tou",
+      "tím",
+      "těmi"
+     ]
+    }
+   ],
+   "notes": [
+    "ten works much like English 'the' or 'that': Ten film byl dobrý. In speech: v tý ulici (v té ulici), s těma lidma (s těmi lidmi).",
+    "tenhle, tahle, tohle = 'this one here': Tohle je můj bratr."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "pron-kdo-co",
+   "title": "kdo, co (who, what)",
+   "group": "pronouns",
+   "subtitle": "interrogative",
+   "columns": [
+    "kdo (who)",
+    "co (what)"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "kdo",
+      "co"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "koho",
+      "čeho"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "komu",
+      "čemu"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "koho",
+      "co"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "kom",
+      "čem"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "kým",
+      "čím"
+     ]
+    }
+   ],
+   "notes": [
+    "kdo always takes a masculine singular verb: Kdo to udělal? Kdo přišel?",
+    "The case questions (kdo? co?, koho? čeho?, …) are how Czech schoolchildren learn the cases."
+   ],
+   "nativeReviewed": false
+  }
+ ]
+}

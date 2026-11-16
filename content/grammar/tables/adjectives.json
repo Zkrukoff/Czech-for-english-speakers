@@ -1,0 +1,295 @@
+{
+ "tables": [
+  {
+   "id": "adj-mlady-sg",
+   "title": "mladý (singular)",
+   "group": "adjectives",
+   "subtitle": "hard adjectives · singular",
+   "columns": [
+    "masc. animate",
+    "masc. inanimate",
+    "feminine",
+    "neuter"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "mlad|ý",
+      "mlad|ý",
+      "mlad|á",
+      "mlad|é"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "mlad|ého",
+      "mlad|ého",
+      "mlad|é",
+      "mlad|ého"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "mlad|ému",
+      "mlad|ému",
+      "mlad|é",
+      "mlad|ému"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "mlad|ého",
+      "mlad|ý",
+      "mlad|ou",
+      "mlad|é"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "mlad|ý",
+      "mlad|ý",
+      "mlad|á",
+      "mlad|é"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "mlad|ém",
+      "mlad|ém",
+      "mlad|é",
+      "mlad|ém"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "mlad|ým",
+      "mlad|ým",
+      "mlad|ou",
+      "mlad|ým"
+     ]
+    }
+   ],
+   "notes": [
+    "Spoken Czech (obecná čeština) changes ý to ej and é to ý: dobrej (dobrý), dobrý pivo (dobré pivo), v tý ulici (v té ulici). You'll hear this constantly, but write and speak the standard forms first."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "adj-mlady-pl",
+   "title": "mladý (plural)",
+   "group": "adjectives",
+   "subtitle": "hard adjectives · plural",
+   "columns": [
+    "masc. animate",
+    "masc. inanimate + feminine",
+    "neuter"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "mlad|í",
+      "mlad|é",
+      "mlad|á"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "mlad|ých",
+      "mlad|ých",
+      "mlad|ých"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "mlad|ým",
+      "mlad|ým",
+      "mlad|ým"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "mlad|é",
+      "mlad|é",
+      "mlad|á"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "mlad|í",
+      "mlad|é",
+      "mlad|á"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "mlad|ých",
+      "mlad|ých",
+      "mlad|ých"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "mlad|ými",
+      "mlad|ými",
+      "mlad|ými"
+     ]
+    }
+   ],
+   "notes": [
+    "Masculine animate nominative plural -í softens the consonant before it: dobrý → dobří, velký → velcí, český → čeští, hezký → hezcí.",
+    "In speech, the plural is simplified to one form for all genders: dobrý lidi, s dobrejma lidma. Standard: dobří lidé, s dobrými lidmi."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "adj-jarni-sg",
+   "title": "jarní (singular)",
+   "group": "adjectives",
+   "subtitle": "soft adjectives · singular",
+   "columns": [
+    "masc. animate",
+    "masc. inanimate",
+    "feminine",
+    "neuter"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "jarn|í",
+      "jarn|í",
+      "jarn|í",
+      "jarn|í"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "jarn|ího",
+      "jarn|ího",
+      "jarn|í",
+      "jarn|ího"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "jarn|ímu",
+      "jarn|ímu",
+      "jarn|í",
+      "jarn|ímu"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "jarn|ího",
+      "jarn|í",
+      "jarn|í",
+      "jarn|í"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "jarn|í",
+      "jarn|í",
+      "jarn|í",
+      "jarn|í"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "jarn|ím",
+      "jarn|ím",
+      "jarn|í",
+      "jarn|ím"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "jarn|ím",
+      "jarn|ím",
+      "jarn|í",
+      "jarn|ím"
+     ]
+    }
+   ],
+   "notes": [
+    "Soft adjectives are easy: the feminine never changes in the singular. Common ones: moderní, první, poslední, cizí, hlavní, zahraniční."
+   ],
+   "nativeReviewed": false
+  },
+  {
+   "id": "adj-jarni-pl",
+   "title": "jarní (plural)",
+   "group": "adjectives",
+   "subtitle": "soft adjectives · plural (all genders)",
+   "columns": [
+    "all genders"
+   ],
+   "rows": [
+    {
+     "case": "nom",
+     "forms": [
+      "jarn|í"
+     ]
+    },
+    {
+     "case": "gen",
+     "forms": [
+      "jarn|ích"
+     ]
+    },
+    {
+     "case": "dat",
+     "forms": [
+      "jarn|ím"
+     ]
+    },
+    {
+     "case": "acc",
+     "forms": [
+      "jarn|í"
+     ]
+    },
+    {
+     "case": "voc",
+     "forms": [
+      "jarn|í"
+     ]
+    },
+    {
+     "case": "loc",
+     "forms": [
+      "jarn|ích"
+     ]
+    },
+    {
+     "case": "ins",
+     "forms": [
+      "jarn|ími"
+     ]
+    }
+   ],
+   "notes": [],
+   "nativeReviewed": false
+  }
+ ]
+}
