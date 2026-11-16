@@ -12,9 +12,10 @@ export async function recordAttempt(
   context: AttemptContext,
   database: CzechDB = db,
   now = Date.now(),
+  itemKey = `ex:${exercise.id}`,
 ): Promise<Attempt> {
   const attempt: Attempt = {
-    itemKey: `ex:${exercise.id}`,
+    itemKey,
     exerciseId: exercise.id,
     skills: exercise.skills,
     correct: result.accepted,

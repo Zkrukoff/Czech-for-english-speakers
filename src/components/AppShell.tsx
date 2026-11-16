@@ -1,6 +1,7 @@
 import { NavLink, Outlet, useRouteError } from 'react-router-dom';
 import { contentErrors } from '@/content';
 import { ContentErrorScreen } from './ContentErrorScreen';
+import { useDueSummary } from '@/db/useDue';
 
 const NAV = [
   { to: '/', label: 'Learn', end: true },
@@ -12,6 +13,7 @@ const NAV = [
 ];
 
 export function AppShell({ error = false }: { error?: boolean }) {
+  const due = useDueSummary();
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-10 border-b border-stone-200 bg-white/90 backdrop-blur">
@@ -32,6 +34,9 @@ export function AppShell({ error = false }: { error?: boolean }) {
                 }
               >
                 {n.label}
+                {n.to === '/review' && due && due.dueNow > 0 && (
+                  <span className="ml-1.5 tabular-nums opacity-70" aria-label={`${due.dueNow} due`}>{due.dueNow}</span>
+                )}
               </NavLink>
             ))}
           </nav>

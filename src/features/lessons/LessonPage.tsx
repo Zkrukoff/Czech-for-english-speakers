@@ -6,6 +6,8 @@ import { NotFound } from '@/components/NotFound';
 import { CourseMarkdown } from '@/components/CourseMarkdown';
 import { ReviewStatusBadge } from '@/components/ReviewStatusBadge';
 import { completeLesson, markLessonStep } from '@/db/progress';
+import { ensureVocabCards } from '@/db/srs';
+import { reviewableVocab } from '@/lib/srs/reviewItems';
 import { ExerciseRunner, type ExerciseOutcome } from '@/features/exercises/ExerciseRunner';
 import { VocabList } from './VocabList';
 import { DialogueView } from './DialogueView';
@@ -101,6 +103,8 @@ function LessonView({ lesson }: { lesson: Lesson }) {
             onAnswer={onAnswer}
             onFinish={async (o) => {
               await completeLesson(lesson.id);
+              // The lesson's words join the review queue from now on.
+              await ensureVocabCards(reviewableVocab(lesson.vocab).map((v) => v.id));
               setOutcomes(o);
             }}
           />

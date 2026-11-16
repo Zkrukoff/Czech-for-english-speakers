@@ -23,6 +23,8 @@ interface Props {
   /** Called after each answer is checked (used by spaced repetition). */
   onAnswer?: (outcome: ExerciseOutcome) => void | Promise<void>;
   onFinish: (outcomes: ExerciseOutcome[]) => void;
+  /** Key under which answers are logged (defaults to "ex:<id>"). */
+  itemKeyOf?: (exercise: Exercise) => string;
 }
 
 interface QueueItem {
@@ -30,7 +32,7 @@ interface QueueItem {
   firstTry: boolean;
 }
 
-export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFinish }: Props) {
+export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFinish, itemKeyOf }: Props) {
   const settings = useSettings();
   const [queue, setQueue] = useState<QueueItem[]>(() => exercises.map((exercise) => ({ exercise, firstTry: true })));
   const [index, setIndex] = useState(0);
@@ -53,7 +55,7 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
     if (retryMissed && item!.firstTry && !r.accepted) {
       setQueue((q) => [...q, { exercise, firstTry: false }]);
     }
-    await recordAttempt(exercise, value, r, context);
+    await recordAttempt(exercise, value, r, context, undefined, undefined, itemKeyOf?.(exercise));
     await onAnswer?.(outcome);
   }
 
