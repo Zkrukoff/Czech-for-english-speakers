@@ -99,6 +99,19 @@ export interface Stamp {
   at: number;
 }
 
+/** A word or phrase the learner saved from daily life. Reviewed as "own:<id>". */
+export interface OwnWord {
+  id?: number;
+  cs: string;
+  en?: string;
+  note?: string;
+  /** Where they saw or heard it. */
+  place?: string;
+  /** Link to a lexicon noun (with vzor) or verb entry; guessed = chosen by hand from a suggestion. */
+  link?: { kind: 'noun'; lemma: string; vzor: string; gender: 'm-anim' | 'm-inan' | 'f' | 'n'; guessed?: boolean } | { kind: 'verb'; lemma: string };
+  createdAt: number;
+}
+
 /** Internal bookkeeping, e.g. whether the one-time copy from the old database has run. */
 export interface MetaEntry {
   key: string;
@@ -116,7 +129,7 @@ export const DB_NAME = 'prazak';
 export const LEGACY_DB_NAMES = ['czech-for-english-speakers'] as const;
 
 /** The tables that hold learner data, in the order they are copied and backed up. */
-export const DATA_TABLES = ['settings', 'attempts', 'cards', 'lessonProgress', 'goalProgress', 'profile', 'missions', 'stamps'] as const;
+export const DATA_TABLES = ['settings', 'attempts', 'cards', 'lessonProgress', 'goalProgress', 'profile', 'missions', 'stamps', 'ownWords'] as const;
 
 /** The tables that existed in schema v1 (and in the legacy database). */
 export const V1_TABLES = ['settings', 'attempts', 'cards', 'lessonProgress', 'goalProgress'] as const;
@@ -131,6 +144,7 @@ export class PrazakDB extends Dexie {
   profile!: EntityTable<Profile, 'id'>;
   missions!: EntityTable<MissionRecord, 'missionId'>;
   stamps!: EntityTable<Stamp, 'id'>;
+  ownWords!: EntityTable<OwnWord, 'id'>;
 
   constructor(name: string = DB_NAME) {
     super(name);
@@ -150,6 +164,10 @@ export class PrazakDB extends Dexie {
       profile: 'id',
       missions: 'missionId, unitId, doneAt',
       stamps: 'id, kind, at',
+    });
+    // v3 (round 2): additive. Words the learner saves themselves.
+    this.version(3).stores({
+      ownWords: '++id, createdAt',
     });
   }
 }

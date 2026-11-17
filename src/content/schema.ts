@@ -253,8 +253,22 @@ export const MultipleChoiceExerciseSchema = z.object({
   optionsLang: z.enum(['en', 'cs']).default('en'),
 });
 
+/**
+ * Recall, graded by the learner: show the Czech, reveal the meaning, then
+ * "Vím / Ještě ne". Used for saved words that have no English meaning.
+ */
+export const SelfCheckExerciseSchema = z.object({
+  ...exerciseBase,
+  type: z.literal('selfCheck'),
+  answers: z.array(z.string()).default([]),
+  cs: z.string().min(1),
+  /** Revealed after "show": meaning, note, where it was seen. */
+  reveal: z.string().optional(),
+});
+
 export const ExerciseSchema = z.discriminatedUnion('type', [
   MultipleChoiceExerciseSchema,
+  SelfCheckExerciseSchema,
   TranslateExerciseSchema,
   FillEndingExerciseSchema,
   CaseSelectExerciseSchema,

@@ -131,7 +131,7 @@ export const SELF_ASSESSED = { good: 'self:good', again: 'self:again' } as const
 
 export function checkAnswer(exercise: Exercise, rawAnswer: string, options: CheckOptions): CheckResult {
   const answer = rawAnswer.trim();
-  if (exercise.type === 'speak') {
+  if (exercise.type === 'speak' || exercise.type === 'selfCheck') {
     const good = answer === SELF_ASSESSED.good;
     return {
       status: good ? 'correct' : 'incorrect',

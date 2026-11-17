@@ -85,6 +85,13 @@ export function HomePage() {
             </span>
             <IconArrowRight size={18} className="text-ink-3 group-hover:text-ink" />
           </Link>
+          <Link to="/words" className="card card-link group flex items-center justify-between gap-3 p-4">
+            <span>
+              <span className="label-board block text-ink-3" lang="cs">Moje slova</span>
+              <span className="text-ink-2">Saw a new word today? Save it.</span>
+            </span>
+            <IconArrowRight size={18} className="text-ink-3 group-hover:text-ink" />
+          </Link>
           <Today />
         </div>
       </section>

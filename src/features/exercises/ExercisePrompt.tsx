@@ -36,6 +36,7 @@ const TYPE_LABEL: Record<Exercise['type'], string> = {
   speak: 'Say it',
   readReal: 'Read it',
   multipleChoice: 'Choose one',
+  selfCheck: 'Your word: do you remember it?',
 };
 
 export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
@@ -123,6 +124,7 @@ export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
           <p className="font-medium">{exercise.prompt}</p>
         </>
       )}
+      {exercise.type === 'selfCheck' && <p className="text-3xl font-semibold" lang="cs">{exercise.cs}</p>}
       {exercise.type === 'multipleChoice' && (
         <>
           {exercise.cs && (

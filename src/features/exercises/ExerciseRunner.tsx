@@ -8,9 +8,10 @@ import { AnswerInput } from './AnswerInput';
 import { ChoiceInput } from './types/ChoiceInput';
 import { SpeakInput } from './types/SpeakInput';
 import { BuildSentenceInput } from './types/BuildSentenceInput';
+import { SelfCheckInput } from './types/SelfCheckInput';
 
 /** Types whose input submits by itself (a choice, or a self-assessment). */
-const SELF_SUBMITTING = new Set<Exercise['type']>(['caseSelect', 'chooseEnding', 'aspectChoice', 'minimalPair', 'multipleChoice', 'speak']);
+const SELF_SUBMITTING = new Set<Exercise['type']>(['caseSelect', 'chooseEnding', 'aspectChoice', 'minimalPair', 'multipleChoice', 'speak', 'selfCheck']);
 import { FeedbackPanel, answerIsCzech } from './FeedbackPanel';
 import { ExercisePrompt, caseOptionLabel } from './ExercisePrompt';
 
@@ -140,6 +141,8 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
               onChoose={(o) => submit(o)}
               lang={exercise.optionsLang}
             />
+          ) : exercise.type === 'selfCheck' ? (
+            <SelfCheckInput reveal={exercise.reveal} disabled={!!result} onAssess={(v) => submit(v)} />
           ) : exercise.type === 'speak' ? (
             <SpeakInput cs={exercise.cs} audio={exercise.audio} disabled={!!result} onAssess={(v) => submit(v)} />
           ) : exercise.type === 'buildSentence' ? (

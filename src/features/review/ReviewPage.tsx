@@ -10,7 +10,7 @@ import { dueByKind, dueCards, scheduleAnswer } from '@/db/srs';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { DepartureBoard, Stamp } from '@/components/ui';
 import { useDueSummary } from '@/db/useDue';
-import { exerciseForCard } from '@/lib/srs/reviewItems';
+import { exerciseForCard, ownWordExercise } from '@/lib/srs/reviewItems';
 import { relativeTime } from '@/lib/time';
 
 const SESSION_SIZE = 20;
@@ -30,7 +30,11 @@ async function buildSession(): Promise<SessionItem[]> {
   const cards = await dueCards(Date.now());
   const items: SessionItem[] = [];
   for (const card of cards) {
-    const exercise = exerciseForCard(card.itemKey, course, card.reps);
+    let exercise = exerciseForCard(card.itemKey, course, card.reps);
+    if (card.itemKey.startsWith('own:')) {
+      const word = await db.ownWords.get(Number(card.itemKey.slice(4)));
+      exercise = word ? ownWordExercise(word) : null;
+    }
     if (!exercise) {
       // Pattern cards are kept: their exercises may come back once content is annotated.
       if (!card.itemKey.startsWith('pattern:') && !card.itemKey.startsWith('fn:')) await db.cards.delete(card.itemKey);
@@ -110,6 +114,7 @@ export function ReviewPage() {
     { kind: 'ex', cs: 'Cvičení', en: 'exercises' },
     { kind: 'pattern', cs: 'Koncovky', en: 'endings' },
     { kind: 'fn', cs: 'Pády', en: 'case uses' },
+    { kind: 'own', cs: 'Moje slova', en: 'your words' },
   ];
 
   return (
@@ -149,6 +154,9 @@ export function ReviewPage() {
           )}
         </section>
       )}
+      <p className="mt-6 text-sm">
+        <Link to="/words" className="text-vltava underline">Your own words</Link>: save words you meet in daily life, and they come back here too.
+      </p>
       <details className="mt-8 text-sm text-ink-2">
         <summary className="cursor-pointer font-medium text-ink">How reviews are scheduled</summary>
         <ul className="mt-2 list-disc space-y-1 pl-5">

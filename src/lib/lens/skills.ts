@@ -24,6 +24,7 @@ export function czechStrings(ex: Exercise): string[] {
       return ex.direction === 'cs-en' ? [ex.prompt] : [];
     case 'listenType':
     case 'speak':
+    case 'selfCheck':
       return [ex.cs];
     case 'readReal':
       return ex.realia.lines;

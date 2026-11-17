@@ -192,3 +192,10 @@ check first. When an item is confirmed or corrected, remove it here and set
 | pub | The note about the waiter's tally slip and bringing another beer | Accurate enough as a general note? |
 | pharmacy | *Jednu třikrát denně, nejdéle pět dní* | Natural dosage phrasing? |
 | questions | Wrong-option explanations (e.g. *Co vám je?*, *Pro koho to je?*, *drobné*, *paragon*) | Correct? |
+
+## Round 2 · A2 Your words
+
+| Where | Text | Question |
+|---|---|---|
+| words page | *Přidat slovo*, *Uložit*, *Moje slova*, examples *výdejní místo*, *obvoďák* | OK? |
+| pattern guess | The ending-based vzor suggestions (shown as "a guess: check it") | Are the default guesses sensible? |

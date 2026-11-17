@@ -50,7 +50,7 @@ describe('schema v2 upgrade', () => {
     await makeV1(name);
     const db = new PrazakDB(name);
     await db.open();
-    expect(db.verno).toBe(2);
+    expect(db.verno).toBeGreaterThanOrEqual(2);
     expect((await db.settings.get('app'))?.speechRate).toBe(1.2);
     expect(await db.attempts.count()).toBe(1);
     expect((await db.cards.get('vocab:v-kava'))?.reps).toBe(3);
@@ -127,7 +127,7 @@ describe('backup and reset with v2 tables', () => {
     await saveProfile({ who: 'partner', level: 'A1', vykaniIntroSeen: true, homeStation: 'A/flora' }, a, 1);
     await completeMission('u01-m1', 'u01', a, 2);
     const backup = await exportData(a);
-    expect(backup.version).toBe(2);
+    expect(backup.version).toBe(3);
     const b = new PrazakDB(fresh());
     await importData(JSON.parse(JSON.stringify(backup)), b);
     expect((await b.profile.get('me'))?.homeStation).toBe('A/flora');
