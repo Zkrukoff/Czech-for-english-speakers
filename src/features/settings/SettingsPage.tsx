@@ -119,8 +119,24 @@ export function SettingsPage() {
           )}
         </section>
 
+        <section aria-labelledby="s-ride" className="space-y-3">
+          <SectionNumber n={4} id="s-ride">Your ride</SectionNumber>
+          <p className="text-ink-2">
+            {s.rideFrom && s.rideTo ? (
+              <>
+                <span lang="cs" className="font-semibold">{course.lines.flatMap((l) => l.stops).find((x) => x.slug === s.rideFrom)?.stationInfo.name}</span> →{' '}
+                <span lang="cs" className="font-semibold">{course.lines.flatMap((l) => l.stops).find((x) => x.slug === s.rideTo)?.stationInfo.name}</span>.{' '}
+              </>
+            ) : (
+              'Not set yet. '
+            )}
+            Sessions are as long as your commute, counted in metro stops.
+          </p>
+          <Link to="/ride" className="btn btn-secondary">Change your ride</Link>
+        </section>
+
         <section aria-labelledby="s-me" className="space-y-4">
-          <SectionNumber n={4} id="s-me">About you</SectionNumber>
+          <SectionNumber n={5} id="s-me">About you</SectionNumber>
           {profile ? (
             <div className="grid gap-4 sm:grid-cols-2">
               <label className="block">
@@ -156,7 +172,7 @@ export function SettingsPage() {
         </section>
 
         <section aria-labelledby="s-data" className="space-y-3">
-          <SectionNumber n={5} id="s-data">Your data</SectionNumber>
+          <SectionNumber n={6} id="s-data">Your data</SectionNumber>
           <p className="text-sm text-ink-2">Everything is stored only in this browser. Download a copy to keep it safe or move it to another device.</p>
           <div className="flex flex-wrap gap-2">
             <button type="button" onClick={download} className="btn btn-secondary">Download my data</button>

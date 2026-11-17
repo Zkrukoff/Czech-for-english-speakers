@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Card } from '@/components/ui';
+import { RideProgress } from './RideProgress';
 import type { Exercise } from '@/content/schema';
 import { checkAnswer, type CheckResult } from '@/lib/answers/check';
 import { recordAttempt, type AttemptContext } from '@/db/progress';
@@ -33,6 +34,8 @@ interface Props {
   onFinish: (outcomes: ExerciseOutcome[]) => void;
   /** Key under which answers are logged (defaults to "ex:<id>"). */
   itemKeyOf?: (exercise: Exercise) => string;
+  /** Today's ride: show progress as the stations of the route instead of dots. */
+  route?: string[];
 }
 
 interface QueueItem {
@@ -40,7 +43,7 @@ interface QueueItem {
   firstTry: boolean;
 }
 
-export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFinish, itemKeyOf }: Props) {
+export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFinish, itemKeyOf, route }: Props) {
   const settings = useSettings();
   const [queue, setQueue] = useState<QueueItem[]>(() => exercises.map((exercise) => ({ exercise, firstTry: true })));
   const [index, setIndex] = useState(0);
@@ -84,6 +87,9 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
 
   return (
     <div className="space-y-5">
+      {route && route.length > 1 ? (
+        <RideProgress route={route} done={index / queue.length} />
+      ) : (
       <div className="flex items-center gap-4">
         <span className="label-board shrink-0 text-ink-3">
           {index + 1} / {queue.length}
@@ -101,6 +107,8 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
           ))}
         </ol>
       </div>
+      )}
+
       <Card key={`${exercise.id}-${index}`} corner="tr" className="block" >
         <div className="p-5 sm:p-6">
         <ExercisePrompt exercise={exercise} />

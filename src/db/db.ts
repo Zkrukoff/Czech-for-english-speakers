@@ -12,6 +12,9 @@ export interface Settings {
   voiceURI?: string;
   /** Show colloquial (obecná čeština) notes. */
   showSpokenForms: boolean;
+  /** Today's ride: the learner's usual commute, as station slugs (content/lines/lines.json). */
+  rideFrom?: string;
+  rideTo?: string;
 }
 
 export const DEFAULT_SETTINGS: Settings = {

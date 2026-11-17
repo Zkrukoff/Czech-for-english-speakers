@@ -9,6 +9,7 @@ import { LineStrip } from './LineStrip';
 import { LineVertical } from './LineVertical';
 import { Today } from './Today';
 import { HolidayPrepBanner } from './HolidayPrepBanner';
+import { RideCard } from './RideCard';
 import { useLinePosition } from './useLinePosition';
 
 /** Home: the line you're riding, where you are, what's next, and today's name day. */
@@ -76,6 +77,7 @@ export function HomePage() {
           </div>
         )}
         <div className="grid min-w-0 gap-5">
+          <RideCard />
           <Link to="/review" className="card card-link group flex items-center gap-4 p-5">
             <IconReview size={32} className="shrink-0" />
             <span className="flex-1">
