@@ -1,3 +1,4 @@
+import { unitPath } from '@/lib/paths';
 import { Link } from 'react-router-dom';
 import { course } from '@/content';
 import { GoalList } from '@/components/GoalList';
@@ -105,7 +106,7 @@ export function HomePage() {
             const done = u.lessonList.map((l) => !!lessons.get(l.id)?.completedAt);
             return (
               <li key={u.id}>
-                <Link to={`/units/${u.id}`} className="card card-link flex h-full flex-col p-6">
+                <Link to={unitPath(u.id)} className="card card-link flex h-full flex-col p-6">
                   <div className="flex items-center gap-3">
                     <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full font-display text-xl font-extrabold ${c.bg} ${c.text}`} style={{ fontFamily: 'var(--font-display)' }}>
                       {u.number}

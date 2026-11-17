@@ -29,10 +29,10 @@ export function CourseMarkdown({ children }: { children: string }) {
             </Suspense>
           );
         }
-        if (kind === 'metro' && g?.metro) {
+        if (kind === 'metro' && course.metro) {
           return (
             <Suspense fallback={null}>
-              <MetroMap metro={g.metro} />
+              <MetroMap metro={course.metro} />
             </Suspense>
           );
         }

@@ -1,0 +1,909 @@
+{
+  "$comment": "Noun lexicon for the case lens. Forms are generated from the vzor table (src/lib/lens/decline.ts); \"forms\" overrides cells the rules cannot predict. \"uncertain\" entries only produce warnings. Everything here needs native review.",
+  "nouns": [
+    {
+      "lemma": "Anglie",
+      "en": "England",
+      "gender": "f",
+      "vzor": "noun-ruze",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Amerika",
+      "en": "America",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Česko",
+      "en": "Czechia",
+      "gender": "n",
+      "vzor": "noun-mesto",
+      "number": "sg",
+      "forms": {
+        "loc.sg": "Česku"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Praha",
+      "en": "Prague",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Brno",
+      "en": "Brno",
+      "gender": "n",
+      "vzor": "noun-mesto",
+      "number": "sg",
+      "forms": {
+        "loc.sg": "Brně"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Angličan",
+      "en": "Englishman",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "forms": {
+        "nom.pl": "Angličané",
+        "voc.pl": "Angličané"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Angličanka",
+      "en": "Englishwoman",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "Angličanek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Čech",
+      "en": "Czech (man)",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Češka",
+      "en": "Czech (woman)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "Češek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "učitel",
+      "en": "teacher (man)",
+      "gender": "m-anim",
+      "vzor": "noun-muz",
+      "forms": {
+        "nom.pl": "učitelé",
+        "voc.pl": "učitelé"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "učitelka",
+      "en": "teacher (woman)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "učitelek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "student",
+      "en": "student (man)",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "studentka",
+      "en": "student (woman)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "studentek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "pan",
+      "en": "Mr; gentleman",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "nativeReviewed": false,
+      "forms": {
+        "nom.pl": "páni / pánové",
+        "gen.pl": "pánů",
+        "dat.pl": "pánům",
+        "acc.pl": "pány",
+        "voc.pl": "páni / pánové",
+        "loc.pl": "pánech",
+        "ins.pl": "pány"
+      },
+      "note": "As a title (pan Novák). The plural uses the stem pán- (páni, pánové)."
+    },
+    {
+      "lemma": "paní",
+      "en": "Mrs, Ms; lady",
+      "gender": "f",
+      "vzor": "irregular",
+      "forms": {
+        "nom.sg": "paní",
+        "gen.sg": "paní",
+        "dat.sg": "paní",
+        "acc.sg": "paní",
+        "voc.sg": "paní",
+        "loc.sg": "paní",
+        "ins.sg": "paní",
+        "nom.pl": "paní",
+        "gen.pl": "paní",
+        "dat.pl": "paním",
+        "acc.pl": "paní",
+        "voc.pl": "paní",
+        "loc.pl": "paních",
+        "ins.pl": "paními"
+      },
+      "note": "Declined like a soft adjective; the same form in every singular case.",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "doktor",
+      "en": "doctor (man)",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "doktorka",
+      "en": "doctor (woman)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "doktorek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "máma",
+      "en": "mum",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "uncertain": true,
+      "note": "Genitive plural (mam / mám) not checked: flagged for native review.",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "táta",
+      "en": "dad",
+      "gender": "m-anim",
+      "vzor": "noun-predseda",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "trh",
+      "en": "market",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "kamarád",
+      "en": "friend (man)",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "kamarádka",
+      "en": "friend (woman)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "kamarádek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "kolega",
+      "en": "colleague (man)",
+      "gender": "m-anim",
+      "vzor": "noun-predseda",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "kolegyně",
+      "en": "colleague (woman)",
+      "gender": "f",
+      "vzor": "noun-ruze",
+      "forms": {
+        "gen.pl": "kolegyň"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "nádraží",
+      "en": "(railway) station",
+      "gender": "n",
+      "vzor": "noun-staveni",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "zastávka",
+      "en": "(bus or tram) stop",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "zastávek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "lékárna",
+      "en": "pharmacy",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "lékáren"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "banka",
+      "en": "bank",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "náměstí",
+      "en": "square",
+      "gender": "n",
+      "vzor": "noun-staveni",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "jízdenka",
+      "en": "ticket (for transport)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "jízdenek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "lístek",
+      "en": "ticket",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "stem": "lístk",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "nástupiště",
+      "en": "platform",
+      "gender": "n",
+      "vzor": "noun-more",
+      "forms": {
+        "gen.pl": "nástupišť"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "centrum",
+      "en": "centre",
+      "gender": "n",
+      "vzor": "noun-mesto",
+      "stem": "centr",
+      "forms": {
+        "nom.sg": "centrum",
+        "acc.sg": "centrum",
+        "voc.sg": "centrum",
+        "loc.sg": "centru",
+        "gen.pl": "center"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "kavárna",
+      "en": "café",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "kaváren"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "pošta",
+      "en": "post office",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "muzeum",
+      "en": "museum",
+      "gender": "n",
+      "vzor": "irregular",
+      "forms": {
+        "nom.sg": "muzeum",
+        "gen.sg": "muzea",
+        "dat.sg": "muzeu",
+        "acc.sg": "muzeum",
+        "voc.sg": "muzeum",
+        "loc.sg": "muzeu",
+        "ins.sg": "muzeem",
+        "nom.pl": "muzea",
+        "gen.pl": "muzeí",
+        "dat.pl": "muzeím",
+        "acc.pl": "muzea",
+        "voc.pl": "muzea",
+        "loc.pl": "muzeích",
+        "ins.pl": "muzei"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "práce",
+      "en": "work; job",
+      "gender": "f",
+      "vzor": "noun-ruze",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "kino",
+      "en": "cinema",
+      "gender": "n",
+      "vzor": "noun-mesto",
+      "forms": {
+        "loc.sg": "kině"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "vlak",
+      "en": "train",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "autobus",
+      "en": "bus",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "forms": {
+        "loc.sg": "autobusu"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "tramvaj",
+      "en": "tram",
+      "gender": "f",
+      "vzor": "noun-pisen",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "víkend",
+      "en": "weekend",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "nativeReviewed": false,
+      "forms": {
+        "loc.sg": "víkendu"
+      }
+    },
+    {
+      "lemma": "káva",
+      "en": "coffee",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "čaj",
+      "en": "tea",
+      "gender": "m-inan",
+      "vzor": "noun-stroj",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "voda",
+      "en": "water",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "pivo",
+      "en": "beer",
+      "gender": "n",
+      "vzor": "noun-mesto",
+      "forms": {
+        "loc.sg": "pivu"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "mléko",
+      "en": "milk",
+      "gender": "n",
+      "vzor": "noun-mesto",
+      "uncertain": true,
+      "note": "Locative v mléce / v mléku: both are in use; not narrowed down.",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "koruna",
+      "en": "crown (Kč)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "rohlík",
+      "en": "bread roll",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "koláč",
+      "en": "kolach (pastry)",
+      "gender": "m-inan",
+      "vzor": "noun-stroj",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "kus",
+      "en": "piece, item",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "polévka",
+      "en": "soup",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "polévek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "guláš",
+      "en": "goulash",
+      "gender": "m-inan",
+      "vzor": "noun-stroj",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "knedlík",
+      "en": "dumpling",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "řízek",
+      "en": "schnitzel",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "stem": "řízk",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "hranolky",
+      "en": "chips, fries",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "number": "pl",
+      "stem": "hranolk",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "brambory",
+      "en": "potatoes",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "number": "pl",
+      "stem": "brambor",
+      "uncertain": true,
+      "note": "Also used as masculine (gen. pl. bramborů). Lesson vocab lists it as masculine: flagged for native review.",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "účet",
+      "en": "bill; account",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "stem": "účt",
+      "nativeReviewed": false,
+      "forms": {
+        "loc.sg": "účtu"
+      }
+    },
+    {
+      "lemma": "spropitné",
+      "en": "tip (money)",
+      "gender": "n",
+      "vzor": "irregular",
+      "number": "sg",
+      "forms": {
+        "nom.sg": "spropitné",
+        "gen.sg": "spropitného",
+        "dat.sg": "spropitnému",
+        "acc.sg": "spropitné",
+        "voc.sg": "spropitné",
+        "loc.sg": "spropitném",
+        "ins.sg": "spropitným"
+      },
+      "note": "Declined like a hard adjective.",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "stravenka",
+      "en": "meal voucher",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "stravenek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "tým",
+      "en": "team",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "nativeReviewed": false,
+      "forms": {
+        "loc.sg": "týmu"
+      }
+    },
+    {
+      "lemma": "vývojář",
+      "en": "developer (man)",
+      "gender": "m-anim",
+      "vzor": "noun-muz",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "vývojářka",
+      "en": "developer (woman)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "vývojářek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "účetní",
+      "en": "accountant",
+      "gender": "m-anim",
+      "vzor": "irregular",
+      "forms": {
+        "nom.sg": "účetní",
+        "gen.sg": "účetního",
+        "dat.sg": "účetnímu",
+        "acc.sg": "účetního",
+        "voc.sg": "účetní",
+        "loc.sg": "účetním",
+        "ins.sg": "účetním",
+        "nom.pl": "účetní",
+        "gen.pl": "účetních",
+        "dat.pl": "účetním",
+        "acc.pl": "účetní",
+        "voc.pl": "účetní",
+        "loc.pl": "účetních",
+        "ins.pl": "účetními"
+      },
+      "note": "Declined like a soft adjective (jarní). The feminine účetní is declined like paní.",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "vedoucí",
+      "en": "manager, head",
+      "gender": "m-anim",
+      "vzor": "irregular",
+      "forms": {
+        "nom.sg": "vedoucí",
+        "gen.sg": "vedoucího",
+        "dat.sg": "vedoucímu",
+        "acc.sg": "vedoucího",
+        "voc.sg": "vedoucí",
+        "loc.sg": "vedoucím",
+        "ins.sg": "vedoucím",
+        "nom.pl": "vedoucí",
+        "gen.pl": "vedoucích",
+        "dat.pl": "vedoucím",
+        "acc.pl": "vedoucí",
+        "voc.pl": "vedoucí",
+        "loc.pl": "vedoucích",
+        "ins.pl": "vedoucími"
+      },
+      "note": "Declined like a soft adjective (jarní).",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "asistent",
+      "en": "assistant (man)",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "asistentka",
+      "en": "assistant (woman)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "asistentek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "ředitel",
+      "en": "director (man)",
+      "gender": "m-anim",
+      "vzor": "noun-muz",
+      "forms": {
+        "nom.pl": "ředitelé",
+        "voc.pl": "ředitelé"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "ředitelka",
+      "en": "director (woman)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "ředitelek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "oddělení",
+      "en": "department",
+      "gender": "n",
+      "vzor": "noun-staveni",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "rodina",
+      "en": "family",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "manžel",
+      "en": "husband",
+      "gender": "m-anim",
+      "vzor": "noun-muz",
+      "forms": {
+        "nom.pl": "manželé",
+        "voc.pl": "manželé"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "manželka",
+      "en": "wife",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "manželek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "přítel",
+      "en": "friend; boyfriend",
+      "gender": "m-anim",
+      "vzor": "irregular",
+      "forms": {
+        "nom.sg": "přítel",
+        "gen.sg": "přítele",
+        "dat.sg": "příteli",
+        "acc.sg": "přítele",
+        "voc.sg": "příteli",
+        "loc.sg": "příteli",
+        "ins.sg": "přítelem",
+        "nom.pl": "přátelé",
+        "gen.pl": "přátel",
+        "dat.pl": "přátelům",
+        "acc.pl": "přátele",
+        "voc.pl": "přátelé",
+        "loc.pl": "přátelích",
+        "ins.pl": "přáteli"
+      },
+      "note": "Plural stem přátel-.",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "přítelkyně",
+      "en": "girlfriend; (female) friend",
+      "gender": "f",
+      "vzor": "noun-ruze",
+      "forms": {
+        "gen.pl": "přítelkyň"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "syn",
+      "en": "son",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "forms": {
+        "voc.sg": "synu",
+        "nom.pl": "synové",
+        "voc.pl": "synové"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "dcera",
+      "en": "daughter",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "dat.sg": "dceři",
+        "loc.sg": "dceři"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "dítě",
+      "en": "child",
+      "gender": "n",
+      "vzor": "irregular",
+      "forms": {
+        "nom.sg": "dítě",
+        "gen.sg": "dítěte",
+        "dat.sg": "dítěti",
+        "acc.sg": "dítě",
+        "voc.sg": "dítě",
+        "loc.sg": "dítěti",
+        "ins.sg": "dítětem",
+        "nom.pl": "děti",
+        "gen.pl": "dětí",
+        "dat.pl": "dětem",
+        "acc.pl": "děti",
+        "voc.pl": "děti",
+        "loc.pl": "dětech",
+        "ins.pl": "dětmi"
+      },
+      "note": "The plural děti is grammatically feminine.",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "bratr",
+      "en": "brother",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "sestra",
+      "en": "sister",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "sester"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "rodič",
+      "en": "parent",
+      "gender": "m-anim",
+      "vzor": "noun-muz",
+      "forms": {
+        "nom.pl": "rodiče",
+        "voc.pl": "rodiče"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "rok",
+      "en": "year",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "forms": {
+        "loc.sg": "roce / roku",
+        "gen.pl": "let / roků"
+      },
+      "note": "After numbers 5+ the genitive plural is usually let (pět let).",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "vlas",
+      "en": "hair (a single hair; vlasy = hair)",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "vous",
+      "en": "whisker (vousy = beard)",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "brýle",
+      "en": "glasses",
+      "gender": "f",
+      "vzor": "noun-ruze",
+      "number": "pl",
+      "stem": "brýl",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "košile",
+      "en": "shirt",
+      "gender": "f",
+      "vzor": "noun-ruze",
+      "forms": {
+        "gen.pl": "košil"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "šéf",
+      "en": "boss (man)",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "šéfová",
+      "en": "boss (woman)",
+      "gender": "f",
+      "vzor": "irregular",
+      "forms": {
+        "nom.sg": "šéfová",
+        "gen.sg": "šéfové",
+        "dat.sg": "šéfové",
+        "acc.sg": "šéfovou",
+        "voc.sg": "šéfová",
+        "loc.sg": "šéfové",
+        "ins.sg": "šéfovou",
+        "nom.pl": "šéfové",
+        "gen.pl": "šéfových",
+        "dat.pl": "šéfovým",
+        "acc.pl": "šéfové",
+        "voc.pl": "šéfové",
+        "loc.pl": "šéfových",
+        "ins.pl": "šéfovými"
+      },
+      "note": "Declined like a hard adjective.",
+      "nativeReviewed": false
+    }
+  ]
+}

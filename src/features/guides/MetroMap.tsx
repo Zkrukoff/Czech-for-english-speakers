@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import type { MetroData } from '@/content/schema';
+import type { MetroData } from '@/content/loader';
 import { SpeakButton } from '@/components/SpeakButton';
 
 /**

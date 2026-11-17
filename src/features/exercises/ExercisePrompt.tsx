@@ -1,3 +1,6 @@
+import { RecordingButton } from './types/RecordingButton';
+import { RealiaCard } from './types/RealiaCard';
+import { CzechText } from '@/components/CzechText';
 import type { ReactNode } from 'react';
 import type { Exercise } from '@/content/schema';
 import { CASE_INFO } from '@/content/taxonomy';
@@ -12,7 +15,7 @@ export function InlineCzech({ text }: { text: string }) {
       {parts.map((p, i): ReactNode => {
         if (p === '___') return <span key={i} className="mx-0.5 inline-block w-12 border-b-2 border-vltava align-baseline" aria-label="blank" />;
         if (p.startsWith('**')) return <strong key={i} className="rounded bg-vltava-tint px-1 text-vltava">{p.slice(2, -2)}</strong>;
-        return <span key={i}>{p}</span>;
+        return <span key={i}><CzechText text={p} /></span>;
       })}
     </>
   );
@@ -25,6 +28,13 @@ const TYPE_LABEL: Record<Exercise['type'], string> = {
   conjugate: 'Conjugate',
   dialogueComplete: 'Complete the dialogue',
   question: 'Alphabet and sounds',
+  listenType: 'Listen and type',
+  chooseEnding: 'Choose the ending',
+  buildSentence: 'Build the sentence',
+  aspectChoice: 'Which verb?',
+  minimalPair: 'Which word do you hear?',
+  speak: 'Say it',
+  readReal: 'Read it',
 };
 
 export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
@@ -35,7 +45,7 @@ export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
       </div>
       {exercise.type === 'translate' && (
         <p className="flex items-center gap-2 text-2xl font-medium" lang={exercise.direction === 'en-cs' ? 'en' : 'cs'}>
-          {exercise.prompt}
+          <CzechText text={exercise.prompt} />
           {exercise.direction === 'cs-en' && <SpeakButton text={exercise.prompt} />}
         </p>
       )}
@@ -71,10 +81,45 @@ export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
           <p className="text-xl font-medium"><InlineCzech text={exercise.prompt} /></p>
           {exercise.cs && (
             <p className="flex items-center gap-2 rounded-lg bg-paper-2 px-4 py-3 text-2xl" lang="cs">
-              {exercise.cs}
+              <CzechText text={exercise.cs} />
               <SpeakButton text={exercise.speak ?? exercise.cs} />
             </p>
           )}
+        </>
+      )}
+      {exercise.type === 'listenType' && (
+        <div className="flex flex-wrap items-center gap-3">
+          <RecordingButton id={exercise.audio} />
+          <span className="text-sm text-ink-2">Type what you hear, in Czech.</span>
+        </div>
+      )}
+      {(exercise.type === 'chooseEnding' || exercise.type === 'aspectChoice') && (
+        <>
+          <p className="text-2xl font-medium" lang="cs"><InlineCzech text={exercise.prompt} /></p>
+          <p className="text-sm text-ink-2">
+            {exercise.type === 'chooseEnding' && exercise.base && <>Base form: <b lang="cs">{exercise.base}</b>. </>}
+            {exercise.type === 'aspectChoice' && <>Verbs: <b lang="cs">{exercise.verbs.join(' / ')}</b> (imperfective / perfective). </>}
+            {exercise.en && <>“{exercise.en}”</>}
+          </p>
+        </>
+      )}
+      {exercise.type === 'buildSentence' && <p className="text-xl font-medium">“{exercise.prompt}”</p>}
+      {exercise.type === 'minimalPair' && (
+        <div className="flex flex-wrap items-center gap-3">
+          <RecordingButton id={exercise.audio} />
+          <span className="text-sm text-ink-2">Listen for <b lang="cs">{exercise.sound}</b>.</span>
+        </div>
+      )}
+      {exercise.type === 'speak' && (
+        <>
+          <p className="text-2xl font-medium" lang="cs"><CzechText text={exercise.cs} /></p>
+          <p className="text-sm text-ink-2">“{exercise.en}”{exercise.focus && <> · Listen for: {exercise.focus}</>}</p>
+        </>
+      )}
+      {exercise.type === 'readReal' && (
+        <>
+          <RealiaCard realia={exercise.realia} />
+          <p className="font-medium">{exercise.prompt}</p>
         </>
       )}
       {exercise.type === 'dialogueComplete' && (
@@ -83,7 +128,7 @@ export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
             {exercise.context.map((l, i) => (
               <div key={i} className="max-w-md rounded-2xl rounded-tl-sm bg-paper-2 px-4 py-2">
                 <div className="text-xs font-medium text-ink-3">{l.speaker}</div>
-                <div className="flex items-center gap-1 text-lg" lang="cs">{l.cs} <SpeakButton text={l.cs} /></div>
+                <div className="flex items-center gap-1 text-lg" lang="cs"><CzechText text={l.cs} /> <SpeakButton text={l.cs} /></div>
                 {l.en && <div className="text-sm text-ink-3">{l.en}</div>}
               </div>
             ))}

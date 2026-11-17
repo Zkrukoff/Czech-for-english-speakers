@@ -1,0 +1,589 @@
+{
+  "$comment": "Single source of truth for the course map. Station names and order are checked against PID open data with scripts/pid_stations.py; record the feed and date in \"verified\" each time.",
+  "verified": {
+    "source": "PID GTFS open data, https://data.pid.cz/PID_GTFS.zip (feed valid 2026-11-16 to 2026-11-29)",
+    "date": "2026-11-17",
+    "note": "Order and names of all three lines match the feed. Flora (Line A) has no service in this feed window; see its status note."
+  },
+  "milestones": [
+    {
+      "id": "vaclavak",
+      "name": "Václavák",
+      "en": "Wenceslas Square",
+      "summary": "A double milestone at the two ends of Wenceslas Square: a review of everything so far at Můstek, then the A1 can-do check at Muzeum.",
+      "level": "A1"
+    },
+    {
+      "id": "konecna-a",
+      "name": "Konečná A",
+      "en": "End of Line A",
+      "summary": "The A2 can-do check at the end of the line.",
+      "level": "A2"
+    }
+  ],
+  "lines": [
+    {
+      "id": "A",
+      "nickname": "áčko",
+      "levels": [
+        "A1",
+        "A2"
+      ],
+      "service": "in-service",
+      "stops": [
+        {
+          "station": "nemocnice-motol",
+          "kind": "pronunciation"
+        },
+        {
+          "station": "petriny",
+          "kind": "unit",
+          "unit": "u01"
+        },
+        {
+          "station": "nadrazi-veleslavin",
+          "kind": "unit",
+          "unit": "u02"
+        },
+        {
+          "station": "borislavka",
+          "kind": "unit",
+          "unit": "u03"
+        },
+        {
+          "station": "dejvicka",
+          "kind": "unit",
+          "unit": "u04"
+        },
+        {
+          "station": "hradcanska",
+          "kind": "planned"
+        },
+        {
+          "station": "malostranska",
+          "kind": "planned"
+        },
+        {
+          "station": "staromestska",
+          "kind": "planned"
+        },
+        {
+          "station": "mustek",
+          "kind": "milestone",
+          "milestone": {
+            "id": "vaclavak",
+            "part": "review",
+            "level": "A1"
+          }
+        },
+        {
+          "station": "muzeum",
+          "kind": "milestone",
+          "milestone": {
+            "id": "vaclavak",
+            "part": "check",
+            "level": "A1"
+          }
+        },
+        {
+          "station": "namesti-miru",
+          "kind": "planned"
+        },
+        {
+          "station": "jiriho-z-podebrad",
+          "kind": "planned"
+        },
+        {
+          "station": "flora",
+          "kind": "planned"
+        },
+        {
+          "station": "zelivskeho",
+          "kind": "planned"
+        },
+        {
+          "station": "strasnicka",
+          "kind": "planned"
+        },
+        {
+          "station": "skalka",
+          "kind": "planned"
+        },
+        {
+          "station": "depo-hostivar",
+          "kind": "milestone",
+          "milestone": {
+            "id": "konecna-a",
+            "part": "check",
+            "level": "A2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "nickname": "béčko",
+      "levels": [
+        "B1",
+        "B2"
+      ],
+      "service": "not-yet",
+      "stops": [
+        {
+          "station": "zlicin",
+          "kind": "planned"
+        },
+        {
+          "station": "stodulky",
+          "kind": "planned"
+        },
+        {
+          "station": "luka",
+          "kind": "planned"
+        },
+        {
+          "station": "luziny",
+          "kind": "planned"
+        },
+        {
+          "station": "hurka",
+          "kind": "planned"
+        },
+        {
+          "station": "nove-butovice",
+          "kind": "planned"
+        },
+        {
+          "station": "jinonice",
+          "kind": "planned"
+        },
+        {
+          "station": "radlicka",
+          "kind": "planned"
+        },
+        {
+          "station": "smichovske-nadrazi",
+          "kind": "planned"
+        },
+        {
+          "station": "andel",
+          "kind": "planned"
+        },
+        {
+          "station": "karlovo-namesti",
+          "kind": "planned"
+        },
+        {
+          "station": "narodni-trida",
+          "kind": "planned"
+        },
+        {
+          "station": "mustek",
+          "kind": "planned"
+        },
+        {
+          "station": "namesti-republiky",
+          "kind": "planned"
+        },
+        {
+          "station": "florenc",
+          "kind": "planned"
+        },
+        {
+          "station": "krizikova",
+          "kind": "planned"
+        },
+        {
+          "station": "invalidovna",
+          "kind": "planned"
+        },
+        {
+          "station": "palmovka",
+          "kind": "planned"
+        },
+        {
+          "station": "ceskomoravska",
+          "kind": "planned"
+        },
+        {
+          "station": "vysocanska",
+          "kind": "planned"
+        },
+        {
+          "station": "kolbenova",
+          "kind": "planned"
+        },
+        {
+          "station": "hloubetin",
+          "kind": "planned"
+        },
+        {
+          "station": "rajska-zahrada",
+          "kind": "planned"
+        },
+        {
+          "station": "cerny-most",
+          "kind": "planned"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "nickname": "céčko",
+      "levels": [
+        "C1",
+        "C2"
+      ],
+      "service": "not-yet",
+      "stops": [
+        {
+          "station": "letnany",
+          "kind": "planned"
+        },
+        {
+          "station": "prosek",
+          "kind": "planned"
+        },
+        {
+          "station": "strizkov",
+          "kind": "planned"
+        },
+        {
+          "station": "ladvi",
+          "kind": "planned"
+        },
+        {
+          "station": "kobylisy",
+          "kind": "planned"
+        },
+        {
+          "station": "nadrazi-holesovice",
+          "kind": "planned"
+        },
+        {
+          "station": "vltavska",
+          "kind": "planned"
+        },
+        {
+          "station": "florenc",
+          "kind": "planned"
+        },
+        {
+          "station": "hlavni-nadrazi",
+          "kind": "planned"
+        },
+        {
+          "station": "muzeum",
+          "kind": "planned"
+        },
+        {
+          "station": "i-p-pavlova",
+          "kind": "planned"
+        },
+        {
+          "station": "vysehrad",
+          "kind": "planned"
+        },
+        {
+          "station": "prazskeho-povstani",
+          "kind": "planned"
+        },
+        {
+          "station": "pankrac",
+          "kind": "planned"
+        },
+        {
+          "station": "budejovicka",
+          "kind": "planned"
+        },
+        {
+          "station": "kacerov",
+          "kind": "planned"
+        },
+        {
+          "station": "roztyly",
+          "kind": "planned"
+        },
+        {
+          "station": "chodov",
+          "kind": "planned"
+        },
+        {
+          "station": "opatov",
+          "kind": "planned"
+        },
+        {
+          "station": "haje",
+          "kind": "planned"
+        }
+      ]
+    }
+  ],
+  "underConstruction": "A fourth line, D, is being built from Pankrác to the southern districts.",
+  "stations": {
+    "nemocnice-motol": {
+      "name": "Nemocnice Motol",
+      "tile": "01",
+      "aboveGround": "The end of line A, at one of the country's largest hospitals."
+    },
+    "petriny": {
+      "name": "Petřiny",
+      "tile": "02"
+    },
+    "nadrazi-veleslavin": {
+      "name": "Nádraží Veleslavín",
+      "tile": "03",
+      "aboveGround": "Trolleybus 59 to the airport. Despite the name, it's a metro station, not a railway station."
+    },
+    "borislavka": {
+      "name": "Bořislavka",
+      "tile": "04"
+    },
+    "dejvicka": {
+      "name": "Dejvická",
+      "tile": "05",
+      "aboveGround": "The university district, with many students and international offices."
+    },
+    "hradcanska": {
+      "name": "Hradčanská",
+      "tile": "06",
+      "aboveGround": "The nearest metro station to the north side of Prague Castle."
+    },
+    "malostranska": {
+      "name": "Malostranská",
+      "tile": "07",
+      "aboveGround": "The Lesser Town. Walk up the old castle steps or take tram 22 to Prague Castle."
+    },
+    "staromestska": {
+      "name": "Staroměstská",
+      "tile": "08",
+      "aboveGround": "Old Town Square, the Jewish Quarter and Charles Bridge are a short walk away."
+    },
+    "mustek": {
+      "name": "Můstek",
+      "tile": "09",
+      "aboveGround": "The bottom of Wenceslas Square and the edge of the Old Town."
+    },
+    "muzeum": {
+      "name": "Muzeum",
+      "tile": "10",
+      "aboveGround": "The top of Wenceslas Square, by the National Museum and the St Wenceslas statue (\"pod koněm\")."
+    },
+    "namesti-miru": {
+      "name": "Náměstí Míru",
+      "tile": "11",
+      "aboveGround": "Vinohrady, with the Church of St Ludmila. One of the deepest stations, with a very long escalator."
+    },
+    "jiriho-z-podebrad": {
+      "name": "Jiřího z Poděbrad",
+      "tile": "12",
+      "aboveGround": "A Vinohrady square with the striking Church of the Sacred Heart and a popular farmers' market."
+    },
+    "flora": {
+      "name": "Flora",
+      "tile": "13",
+      "status": {
+        "note": "No Line A trains call at Flora in the PID GTFS feed for 16–29 Nov 2026, although the station is still listed. Probably a temporary closure; the reason is not in the data. Check pid.cz before relying on it.",
+        "checked": "2026-11-17"
+      }
+    },
+    "zelivskeho": {
+      "name": "Želivského",
+      "tile": "14",
+      "aboveGround": "Olšany Cemetery, where Jan Palach is buried."
+    },
+    "strasnicka": {
+      "name": "Strašnická",
+      "tile": "15"
+    },
+    "skalka": {
+      "name": "Skalka",
+      "tile": "16"
+    },
+    "depo-hostivar": {
+      "name": "Depo Hostivař",
+      "tile": "17"
+    },
+    "zlicin": {
+      "name": "Zličín",
+      "tile": "18",
+      "aboveGround": "Bus 100 to the airport."
+    },
+    "stodulky": {
+      "name": "Stodůlky",
+      "tile": "19"
+    },
+    "luka": {
+      "name": "Luka",
+      "tile": "20"
+    },
+    "luziny": {
+      "name": "Lužiny",
+      "tile": "21"
+    },
+    "hurka": {
+      "name": "Hůrka",
+      "tile": "22"
+    },
+    "nove-butovice": {
+      "name": "Nové Butovice",
+      "tile": "23"
+    },
+    "jinonice": {
+      "name": "Jinonice",
+      "tile": "24"
+    },
+    "radlicka": {
+      "name": "Radlická",
+      "tile": "01"
+    },
+    "smichovske-nadrazi": {
+      "name": "Smíchovské nádraží",
+      "tile": "02",
+      "aboveGround": "A railway station and bus terminal for trips south."
+    },
+    "andel": {
+      "name": "Anděl",
+      "tile": "03",
+      "aboveGround": "A busy hub in Smíchov: offices, shopping centres and many tram lines."
+    },
+    "karlovo-namesti": {
+      "name": "Karlovo náměstí",
+      "tile": "04"
+    },
+    "narodni-trida": {
+      "name": "Národní třída",
+      "tile": "05",
+      "aboveGround": "The 17 November 1989 memorial is in the arcade nearby; the National Theatre is a few minutes' walk."
+    },
+    "namesti-republiky": {
+      "name": "Náměstí Republiky",
+      "tile": "06",
+      "aboveGround": "The Municipal House (Obecní dům) and the Powder Tower."
+    },
+    "florenc": {
+      "name": "Florenc",
+      "tile": "07",
+      "aboveGround": "The main coach station for international buses."
+    },
+    "krizikova": {
+      "name": "Křižíkova",
+      "tile": "08"
+    },
+    "invalidovna": {
+      "name": "Invalidovna",
+      "tile": "09"
+    },
+    "palmovka": {
+      "name": "Palmovka",
+      "tile": "10"
+    },
+    "ceskomoravska": {
+      "name": "Českomoravská",
+      "tile": "11"
+    },
+    "vysocanska": {
+      "name": "Vysočanská",
+      "tile": "12"
+    },
+    "kolbenova": {
+      "name": "Kolbenova",
+      "tile": "13"
+    },
+    "hloubetin": {
+      "name": "Hloubětín",
+      "tile": "14"
+    },
+    "rajska-zahrada": {
+      "name": "Rajská zahrada",
+      "tile": "15"
+    },
+    "cerny-most": {
+      "name": "Černý Most",
+      "tile": "16",
+      "aboveGround": "The end of line B, with a large shopping area and buses to the east."
+    },
+    "letnany": {
+      "name": "Letňany",
+      "tile": "17",
+      "aboveGround": "The end of line C, near the exhibition grounds."
+    },
+    "prosek": {
+      "name": "Prosek",
+      "tile": "18"
+    },
+    "strizkov": {
+      "name": "Střížkov",
+      "tile": "19"
+    },
+    "ladvi": {
+      "name": "Ládví",
+      "tile": "20"
+    },
+    "kobylisy": {
+      "name": "Kobylisy",
+      "tile": "21"
+    },
+    "nadrazi-holesovice": {
+      "name": "Nádraží Holešovice",
+      "tile": "22",
+      "aboveGround": "A railway station; buses to Troja and Prague Zoo."
+    },
+    "vltavska": {
+      "name": "Vltavská",
+      "tile": "23",
+      "aboveGround": "Holešovice, with the Prague Market (Pražská tržnice) and contemporary art galleries nearby."
+    },
+    "hlavni-nadrazi": {
+      "name": "Hlavní nádraží",
+      "tile": "24",
+      "aboveGround": "The main railway station: trains to Brno, Vienna, Berlin and beyond."
+    },
+    "i-p-pavlova": {
+      "name": "I. P. Pavlova",
+      "tile": "01",
+      "aboveGround": "Say it \"í pé Pavlova\". Vinohrady's bars and cafés start here."
+    },
+    "vysehrad": {
+      "name": "Vyšehrad",
+      "tile": "02",
+      "aboveGround": "Walk to Vyšehrad fortress for views over the Vltava and the national cemetery."
+    },
+    "prazskeho-povstani": {
+      "name": "Pražského povstání",
+      "tile": "03"
+    },
+    "pankrac": {
+      "name": "Pankrác",
+      "tile": "04",
+      "aboveGround": "An office district with tall towers; the future interchange with line D."
+    },
+    "budejovicka": {
+      "name": "Budějovická",
+      "tile": "05"
+    },
+    "kacerov": {
+      "name": "Kačerov",
+      "tile": "06"
+    },
+    "roztyly": {
+      "name": "Roztyly",
+      "tile": "07"
+    },
+    "chodov": {
+      "name": "Chodov",
+      "tile": "08",
+      "aboveGround": "One of Prague's largest shopping centres."
+    },
+    "opatov": {
+      "name": "Opatov",
+      "tile": "09"
+    },
+    "haje": {
+      "name": "Háje",
+      "tile": "10",
+      "aboveGround": "The end of line C, in Jižní Město, the city's largest panelák housing estate."
+    }
+  },
+  "nativeReviewed": false
+}

@@ -26,7 +26,7 @@ A fourth line, **D**, is under construction.
 
 Tap or select any station on the map to hear its name and see where it is and what's nearby.
 
-```metro prague-transport
+```metro network
 ```
 
 Directions are shown by the **last station** of the line (*konečná*): to go from Můstek towards Prague Castle you take line A ***směr Nemocnice Motol***. Signs in stations say ***Směr*** ("towards"), then the end station.

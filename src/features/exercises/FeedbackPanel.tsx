@@ -1,3 +1,4 @@
+import { lensPlain } from '@/lib/lens';
 import { Link } from 'react-router-dom';
 import type { CheckResult } from '@/lib/answers/check';
 import type { Exercise } from '@/content/schema';
@@ -23,7 +24,7 @@ function DiffText({ result }: { result: CheckResult }) {
 /** Answers to Czech prompts are in Czech; cs→en translations and case choices aren't. */
 export function answerIsCzech(ex: Exercise): boolean {
   if (ex.type === 'translate') return ex.direction === 'en-cs';
-  if (ex.type === 'question') return ex.answerLang === 'cs';
+  if (ex.type === 'question' || ex.type === 'readReal') return ex.answerLang === 'cs';
   return ex.type !== 'caseSelect';
 }
 
@@ -46,7 +47,10 @@ export function FeedbackPanel({ exercise, result, answer }: { exercise: Exercise
   const pageTitle = grammarSkill === 'alphabet' ? 'Alphabet' : guide ? guide.title : page?.title.split(':')[0]!.split('(')[0]!.trim();
   const czech = answerIsCzech(exercise);
   // For fill-in-the-ending, read out the whole sentence with the right word in place.
-  const speakText = exercise.type === 'fillEnding' ? exercise.prompt.replace(/\p{L}*___/u, result.expected) : result.expected;
+  const speakText =
+    exercise.type === 'fillEnding' || exercise.type === 'chooseEnding' || exercise.type === 'aspectChoice'
+      ? lensPlain(exercise.prompt).replace(/\p{L}*___/u, result.expected)
+      : result.expected;
 
   const tone =
     result.status === 'correct'

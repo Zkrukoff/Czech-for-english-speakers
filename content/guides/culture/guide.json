@@ -8,7 +8,8 @@
     {
       "id": "life",
       "title": "Everyday life and work",
-      "file": "life-and-work.md"
+      "file": "life-and-work.md",
+      "lessons": ["u01-l01", "u01-l04", "u02-l04", "u04-l04"]
     },
     {
       "id": "history",

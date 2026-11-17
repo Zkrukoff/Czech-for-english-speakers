@@ -1,0 +1,344 @@
+{
+  "$comment": "Why a word is in its case: the controlled list of functions used by case-lens markup [[form|lemma|case|function]]. A function may be used with its own case only (except \"chunk\").",
+  "functions": [
+    {
+      "id": "subject",
+      "case": "nom",
+      "label": "subject",
+      "explain": "The person or thing doing the action, or being described, is in the nominative: the dictionary form.",
+      "example": {
+        "cs": "Káva je dobrá.",
+        "en": "The coffee is good."
+      }
+    },
+    {
+      "id": "naming",
+      "case": "nom",
+      "label": "naming: \"to je…\"",
+      "explain": "After to je / to jsou (\"this is…\") and after být with a noun describing the subject, the noun stays in the nominative.",
+      "example": {
+        "cs": "To je moje kolegyně.",
+        "en": "This is my colleague."
+      },
+      "triggers": [
+        "to je",
+        "jsem"
+      ]
+    },
+    {
+      "id": "after-z",
+      "case": "gen",
+      "label": "after z (from, out of)",
+      "explain": "Z (\"from, out of\") always takes the genitive. Jsem z Anglie: I am from England.",
+      "example": {
+        "cs": "Jsem z Anglie.",
+        "en": "I'm from England."
+      },
+      "triggers": [
+        "z",
+        "ze"
+      ]
+    },
+    {
+      "id": "after-do",
+      "case": "gen",
+      "label": "after do (to, into)",
+      "explain": "Do (\"to, into\") takes the genitive: going into a building, a city or a country.",
+      "example": {
+        "cs": "Jedu do centra.",
+        "en": "I'm going to the centre."
+      },
+      "triggers": [
+        "do"
+      ]
+    },
+    {
+      "id": "after-u",
+      "case": "gen",
+      "label": "after u (at, by)",
+      "explain": "U (\"at, by, at someone's place\") takes the genitive.",
+      "example": {
+        "cs": "Bydlím u nádraží.",
+        "en": "I live by the station."
+      },
+      "triggers": [
+        "u"
+      ]
+    },
+    {
+      "id": "after-bez",
+      "case": "gen",
+      "label": "after bez (without)",
+      "explain": "Bez (\"without\") takes the genitive.",
+      "example": {
+        "cs": "Kávu bez mléka, prosím.",
+        "en": "Coffee without milk, please."
+      },
+      "triggers": [
+        "bez"
+      ]
+    },
+    {
+      "id": "after-od",
+      "case": "gen",
+      "label": "after od (from someone, since)",
+      "explain": "Od (\"from\" a person, \"since\") takes the genitive.",
+      "example": {
+        "cs": "Mám to od kolegy.",
+        "en": "I have it from a colleague."
+      },
+      "triggers": [
+        "od"
+      ]
+    },
+    {
+      "id": "possession",
+      "case": "gen",
+      "label": "of: whose",
+      "explain": "A noun that answers \"whose? of what?\" goes in the genitive, after the noun it belongs to.",
+      "example": {
+        "cs": "To je auto mého bratra.",
+        "en": "That's my brother's car."
+      }
+    },
+    {
+      "id": "quantity-5plus",
+      "case": "gen",
+      "label": "after 5 and more",
+      "explain": "After pět (5) and higher numbers, and after kolik, hodně, málo, the noun goes into the genitive plural.",
+      "example": {
+        "cs": "Stojí to sto korun.",
+        "en": "It costs a hundred crowns."
+      },
+      "triggers": [
+        "pět",
+        "kolik",
+        "hodně",
+        "málo"
+      ]
+    },
+    {
+      "id": "quantity-2-4",
+      "case": "nom",
+      "label": "after 2, 3, 4",
+      "explain": "After dva/dvě, tři and čtyři, the noun is in the nominative plural.",
+      "example": {
+        "cs": "Dvě kávy, prosím.",
+        "en": "Two coffees, please."
+      },
+      "triggers": [
+        "dva",
+        "dvě",
+        "tři",
+        "čtyři"
+      ]
+    },
+    {
+      "id": "recipient",
+      "case": "dat",
+      "label": "to whom: the recipient",
+      "explain": "The person you give, send, say or show something to is in the dative.",
+      "example": {
+        "cs": "Dám to kolegovi.",
+        "en": "I'll give it to my colleague."
+      },
+      "triggers": [
+        "dát",
+        "říct",
+        "poslat"
+      ]
+    },
+    {
+      "id": "experiencer",
+      "case": "dat",
+      "label": "who feels it",
+      "explain": "With feelings and states (je mi zima, líbí se mi, chutná mi) the person who feels it is in the dative.",
+      "example": {
+        "cs": "Je mi zima.",
+        "en": "I'm cold."
+      }
+    },
+    {
+      "id": "after-k",
+      "case": "dat",
+      "label": "after k (towards, to someone's)",
+      "explain": "K / ke (\"towards; to someone's place\") takes the dative.",
+      "example": {
+        "cs": "Jdu k doktorovi.",
+        "en": "I'm going to the doctor's."
+      },
+      "triggers": [
+        "k",
+        "ke"
+      ]
+    },
+    {
+      "id": "object",
+      "case": "acc",
+      "label": "direct object",
+      "explain": "The thing or person the action is done to (I want X, I have X, I see X) is in the accusative.",
+      "example": {
+        "cs": "Dám si kávu.",
+        "en": "I'll have a coffee."
+      },
+      "triggers": [
+        "mít",
+        "chtít",
+        "dát si",
+        "vidět"
+      ]
+    },
+    {
+      "id": "after-na-motion",
+      "case": "acc",
+      "label": "after na: where to",
+      "explain": "Na with movement (where to?) takes the accusative: jdu na poštu.",
+      "example": {
+        "cs": "Jdu na poštu.",
+        "en": "I'm going to the post office."
+      },
+      "triggers": [
+        "na"
+      ]
+    },
+    {
+      "id": "after-pro",
+      "case": "acc",
+      "label": "after pro (for)",
+      "explain": "Pro (\"for\") takes the accusative.",
+      "example": {
+        "cs": "To je pro kamaráda.",
+        "en": "It's for a friend."
+      },
+      "triggers": [
+        "pro"
+      ]
+    },
+    {
+      "id": "after-za-exchange",
+      "case": "acc",
+      "label": "after za (for, in exchange)",
+      "explain": "Za meaning \"for (a price), in exchange for\" takes the accusative. Díky za…, za sto korun.",
+      "example": {
+        "cs": "Děkuju za kávu.",
+        "en": "Thanks for the coffee."
+      },
+      "triggers": [
+        "za"
+      ]
+    },
+    {
+      "id": "duration",
+      "case": "acc",
+      "label": "how long",
+      "explain": "A stretch of time with no preposition (celý den, každý týden) is in the accusative.",
+      "example": {
+        "cs": "Pracuju celý den.",
+        "en": "I work all day."
+      }
+    },
+    {
+      "id": "addressing",
+      "case": "voc",
+      "label": "addressing someone",
+      "explain": "When you call or speak to someone by name or title, the name changes into the vocative: Petr → Petře, paní Nováková stays.",
+      "example": {
+        "cs": "Ahoj, Petře!",
+        "en": "Hi, Petr!"
+      }
+    },
+    {
+      "id": "location-v-na",
+      "case": "loc",
+      "label": "after v / na: where",
+      "explain": "V (\"in\") and na (\"on, at\") describing where something is (not where to) take the locative.",
+      "example": {
+        "cs": "Jsem v kavárně.",
+        "en": "I'm in a café."
+      },
+      "triggers": [
+        "v",
+        "ve",
+        "na"
+      ]
+    },
+    {
+      "id": "after-o",
+      "case": "loc",
+      "label": "after o (about)",
+      "explain": "O meaning \"about\" takes the locative: mluvit o práci.",
+      "example": {
+        "cs": "Mluvíme o práci.",
+        "en": "We're talking about work."
+      },
+      "triggers": [
+        "o"
+      ]
+    },
+    {
+      "id": "after-po",
+      "case": "loc",
+      "label": "after po (after, around)",
+      "explain": "Po meaning \"after\" or \"around/along\" takes the locative.",
+      "example": {
+        "cs": "Po práci jdu domů.",
+        "en": "After work I go home."
+      },
+      "triggers": [
+        "po"
+      ]
+    },
+    {
+      "id": "with-s",
+      "case": "ins",
+      "label": "after s (with)",
+      "explain": "S / se (\"with, together with\") takes the instrumental.",
+      "example": {
+        "cs": "Kávu s mlékem.",
+        "en": "Coffee with milk."
+      },
+      "triggers": [
+        "s",
+        "se"
+      ]
+    },
+    {
+      "id": "means",
+      "case": "ins",
+      "label": "by means of",
+      "explain": "How you do something, including how you travel, goes in the instrumental with no preposition: jedu tramvají.",
+      "example": {
+        "cs": "Jedu tramvají.",
+        "en": "I'm going by tram."
+      }
+    },
+    {
+      "id": "position-ins",
+      "case": "ins",
+      "label": "after před, za, nad, pod, mezi: where",
+      "explain": "Před (in front of), za (behind), nad (above), pod (under) and mezi (between), describing where something is, take the instrumental.",
+      "example": {
+        "cs": "Čekám před nádražím.",
+        "en": "I'm waiting in front of the station."
+      },
+      "triggers": [
+        "před",
+        "za",
+        "nad",
+        "pod",
+        "mezi"
+      ]
+    },
+    {
+      "id": "chunk",
+      "case": "nom",
+      "label": "fixed phrase",
+      "explain": "A fixed phrase learnt as a whole for now. The grammar behind it is taught later on the line.",
+      "example": {
+        "cs": "Na shledanou.",
+        "en": "Goodbye."
+      }
+    }
+  ],
+  "nativeReviewed": false
+}

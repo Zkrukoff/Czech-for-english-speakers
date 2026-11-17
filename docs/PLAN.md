@@ -239,7 +239,20 @@ delete; fixture test; manual check in a browser with real v1 data).
 - Font coverage and kerning (tested, D5).
 - Texture effects must never sit under body text.
 
-### Phase 3: Learning-experience architecture
+### Phase 3: Learning-experience architecture ✅ done
+
+**Decisions recorded:** D5 Mluvka · D11 wordmark B (Kubismus) · station tiles approved.
+
+**Outcome**
+- `content/lines/lines.json` is the single source for lines and stations, checked against the PID GTFS feed (valid 16–29 Nov 2026) with `scripts/pid_stations.py`: all three lines match in names and order. **Flora** is still in PID's stop list but has no Line A service in that feed window; it's recorded as a dated, unverified service note instead of a guess.
+- Line A: Nemocnice Motol = pronunciation, Petřiny → Dejvická = units 1–4, Hradčanská → Staroměstská = výluka, Můstek + Muzeum = the **Václavák** double milestone, Depo Hostivař = the A2 check. Lines B and C are "not yet in service".
+- Lexicon of 88 nouns with forms generated from the vzor tables (the generator reproduces every table), 26 case functions, and validated `[[form|lemma|case|function]]` markup. `CzechText` hides the markup everywhere today.
+- Seven new exercise types with schema, checking and basic UI. Listening types stay hidden until recordings exist (`docs/AUDIO.md`).
+- Missions (one per built station), motion-verb families, number drills generated only from lexicon forms, name days bundled with source and licence (six days flagged for checking), guide↔lesson links, and a draft Zabydlení guide (hidden until phase 5).
+- **Dexie v2** (additive): `profile`, `missions` and `stamps`. Existing learners get an inferred profile and back-dated station stamps, so they're never sent through onboarding. Tested from real v1 and legacy fixtures. Backups are now v2, and v1 still imports.
+- New review cards `pattern:<vzor>:<case>.<number>` and `fn:<id>`, scheduled from lens markup and reviewed through rotating example exercises.
+- Navigation: *Linka · Opakování · Mluvnice · Slovesa · Průvodce · Jízdenky · Nastavení*. Stations live at `/line/A/<slug>`; `/units/:id` and `/progress` redirect. Wordmark B and new icons.
+
 
 **Content model**
 

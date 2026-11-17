@@ -1,3 +1,4 @@
+import { WALLET_PATH } from '@/lib/paths';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { course } from '@/content';
@@ -27,11 +28,14 @@ async function buildSession(): Promise<SessionItem[]> {
   const cards = await dueCards(Date.now());
   const items: SessionItem[] = [];
   for (const card of cards) {
-    const exercise = exerciseForCard(card.itemKey, course);
+    const exercise = exerciseForCard(card.itemKey, course, card.reps);
     if (!exercise) {
-      await db.cards.delete(card.itemKey);
+      // Pattern cards are kept: their exercises may come back once content is annotated.
+      if (!card.itemKey.startsWith('pattern:') && !card.itemKey.startsWith('fn:')) await db.cards.delete(card.itemKey);
       continue;
     }
+    // One exercise once per session, even if it is due both as itself and as a pattern.
+    if (items.some((i) => i.exercise === exercise)) continue;
     items.push({ itemKey: card.itemKey, exercise });
     if (items.length >= SESSION_SIZE) break;
   }
@@ -88,7 +92,7 @@ export function ReviewPage() {
             ) : (
               <Link to="/" className="btn btn-primary">Back to lessons</Link>
             )}
-            <Link to="/progress" className="btn btn-secondary">See your progress</Link>
+            <Link to={WALLET_PATH} className="btn btn-secondary">See your ticket wallet</Link>
           </div>
         </div>
       </>

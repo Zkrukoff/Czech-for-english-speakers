@@ -2,7 +2,11 @@ import { db, type PrazakDB, type ReviewCard } from './db';
 import { gradeFor, scheduler as defaultScheduler, type Scheduler } from '@/lib/srs/scheduler';
 import type { CheckStatus } from '@/lib/answers/check';
 
-/** Review items are exercises ("ex:<id>") and vocabulary ("vocab:<id>"). */
+/**
+ * Review items are exercises ("ex:<id>"), vocabulary ("vocab:<id>") and,
+ * from case-lens markup, ending patterns ("pattern:<vzor>:<case>.<number>")
+ * and case functions ("fn:<id>").
+ */
 export const exerciseKey = (exerciseId: string) => `ex:${exerciseId}`;
 export const vocabKey = (vocabId: string) => `vocab:${vocabId}`;
 
@@ -35,11 +39,14 @@ export async function scheduleExerciseAnswer(
   exercise: { id: string; skills: string[] },
   status: CheckStatus,
   deps: SrsDeps = {},
+  /** Grammar keys from the exercise's case-lens markup ("pattern:…", "fn:…"), each with its case skill. */
+  lens: { key: string; skill?: string }[] = [],
 ): Promise<void> {
   await scheduleAnswer(exerciseKey(exercise.id), exercise.skills, status, deps);
   for (const skill of exercise.skills) {
     if (skill.startsWith('vocab:')) await scheduleAnswer(vocabKey(skill.slice(6)), [skill], status, deps);
   }
+  for (const { key, skill } of lens) await scheduleAnswer(key, skill ? [skill] : [], status, deps);
 }
 
 /** Add new (unseen) cards for a lesson's vocabulary. Existing cards are left alone. */

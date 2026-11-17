@@ -1,0 +1,4 @@
+{
+  "$comment": "Real-speaker recordings (D6). Put each file in public/audio/ and list it here: id, file name, the exact Czech said, who recorded it, and the licence. listenType and minimalPair exercises stay hidden until their recording is listed. See docs/AUDIO.md.",
+  "recordings": []
+}

@@ -1,3 +1,4 @@
+import { exerciseSummary } from '@/lib/exercises/summary';
 import { Link } from 'react-router-dom';
 import type { ExerciseOutcome } from '@/features/exercises/ExerciseRunner';
 import { IconArrowRight } from '@/components/icons';
@@ -20,7 +21,7 @@ export function PracticeSummary({ outcomes, onAgain, next }: { outcomes: Exercis
           <ul className="mt-2 space-y-1 text-sm">
             {missed.map((o) => (
               <li key={o.exercise.id} className="rounded-md bg-paper px-3 py-2">
-                <span className="text-ink-3">{o.exercise.prompt.replace(/\*\*/g, '')}</span> <IconArrowRight size={16} className="inline-block align-[-3px]" /> <span lang="cs" className="font-medium">{o.result.expected}</span>
+                <span className="text-ink-3">{exerciseSummary(o.exercise).replace(/\*\*/g, '')}</span> <IconArrowRight size={16} className="inline-block align-[-3px]" /> <span lang="cs" className="font-medium">{o.result.expected}</span>
               </li>
             ))}
           </ul>

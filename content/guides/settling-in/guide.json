@@ -1,0 +1,17 @@
+{
+  "id": "settling-in",
+  "title": "Settling in",
+  "titleCs": "Zabydlení",
+  "summary": "The Czech you need for the paperwork and errands of moving here: the flat, the bank, the doctor and the post office. Practical, dated, and never legal advice.",
+  "order": 3,
+  "draft": true,
+  "sections": [
+    { "id": "home", "title": "Finding and running a flat", "file": "home.md", "lessons": [] },
+    { "id": "offices", "title": "Offices and paperwork", "file": "offices.md", "lessons": [] },
+    { "id": "money", "title": "Bank, bills and payments", "file": "money.md", "lessons": ["u02-l03", "u02-l04"] },
+    { "id": "health", "title": "Doctors and pharmacies", "file": "health.md", "lessons": ["u03-l01"] },
+    { "id": "post", "title": "Post and parcels", "file": "post.md", "lessons": [] }
+  ],
+  "sources": [],
+  "nativeReviewed": false
+}

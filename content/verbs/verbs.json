@@ -257,6 +257,7 @@
   },
   {
    "lemma": "chodit",
+   "family": "jít",
    "en": "to go (on foot, regularly / there and back)",
    "aspect": "impf",
    "partner": [],
@@ -333,6 +334,7 @@
   },
   {
    "lemma": "jezdit",
+   "family": "jet",
    "en": "to go (by vehicle, regularly / there and back)",
    "aspect": "impf",
    "partner": [],
@@ -407,6 +409,7 @@
   },
   {
    "lemma": "létat",
+   "family": "letět",
    "en": "to fly (regularly, around)",
    "aspect": "impf",
    "partner": [],
@@ -485,6 +488,7 @@
   },
   {
    "lemma": "nosit",
+   "family": "nést",
    "en": "to carry (regularly); to wear",
    "aspect": "impf",
    "partner": [],
@@ -519,6 +523,7 @@
   },
   {
    "lemma": "přijít",
+   "family": "jít",
    "en": "to come, arrive (on foot)",
    "aspect": "pf",
    "partner": [
@@ -553,6 +558,7 @@
   },
   {
    "lemma": "přicházet",
+   "family": "jít",
    "en": "to be coming, arriving (on foot)",
    "aspect": "impf",
    "partner": [
@@ -587,6 +593,7 @@
   },
   {
    "lemma": "odejít",
+   "family": "jít",
    "en": "to leave (on foot)",
    "aspect": "pf",
    "partner": [
@@ -621,6 +628,7 @@
   },
   {
    "lemma": "odcházet",
+   "family": "jít",
    "en": "to be leaving (on foot)",
    "aspect": "impf",
    "partner": [
@@ -655,6 +663,7 @@
   },
   {
    "lemma": "přijet",
+   "family": "jet",
    "en": "to come, arrive (by vehicle)",
    "aspect": "pf",
    "partner": [
@@ -689,6 +698,7 @@
   },
   {
    "lemma": "přijíždět",
+   "family": "jet",
    "en": "to be arriving (by vehicle)",
    "aspect": "impf",
    "partner": [
@@ -723,6 +733,7 @@
   },
   {
    "lemma": "odjet",
+   "family": "jet",
    "en": "to leave (by vehicle)",
    "aspect": "pf",
    "partner": [
@@ -757,6 +768,7 @@
   },
   {
    "lemma": "odjíždět",
+   "family": "jet",
    "en": "to be leaving (by vehicle)",
    "aspect": "impf",
    "partner": [

@@ -27,6 +27,33 @@
     "03-how-much",
     "04-the-bill"
   ],
+  "missions": [
+    {
+      "id": "u02-m1",
+      "title": "Coffee, start to finish",
+      "task": "Order your coffee in Czech at a café near work, and pay, without switching to English.",
+      "phrases": [
+        {
+          "cs": "Dobrý den, dám si kávu, prosím.",
+          "en": "Hello, I'll have a coffee, please."
+        },
+        {
+          "cs": "S sebou, prosím.",
+          "en": "To take away, please."
+        },
+        {
+          "cs": "Zaplatím kartou.",
+          "en": "I'll pay by card."
+        },
+        {
+          "cs": "Děkuju, na shledanou.",
+          "en": "Thanks, goodbye."
+        }
+      ],
+      "ifStuck": "Můžete to zopakovat, prosím? (Could you repeat that, please?)",
+      "nativeReviewed": false
+    }
+  ],
   "check": {
     "passRatio": 0.8,
     "exercises": [

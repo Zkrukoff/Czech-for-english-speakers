@@ -119,12 +119,43 @@ export function acceptedAnswers(exercise: Exercise): string[] {
 
 /** For fill-in-the-ending, the letters right before "___" (e.g. "káv" in "Dám si káv___"). */
 function fillEndingStem(exercise: Exercise): string | undefined {
-  if (exercise.type !== 'fillEnding') return undefined;
+  if (exercise.type !== 'fillEnding' && exercise.type !== 'chooseEnding') return undefined;
   return /(\p{L}+)___/u.exec(exercise.prompt)?.[1];
 }
 
+/** Exercises answered by picking an option: matched exactly, never diacritics-tolerant. */
+export const CHOICE_TYPES = new Set<Exercise['type']>(['caseSelect', 'chooseEnding', 'aspectChoice', 'minimalPair']);
+
+/** Values the speaking exercise sends after the learner judges their own recording. */
+export const SELF_ASSESSED = { good: 'self:good', again: 'self:again' } as const;
+
 export function checkAnswer(exercise: Exercise, rawAnswer: string, options: CheckOptions): CheckResult {
   const answer = rawAnswer.trim();
+  if (exercise.type === 'speak') {
+    const good = answer === SELF_ASSESSED.good;
+    return {
+      status: good ? 'correct' : 'incorrect',
+      accepted: good,
+      expected: exercise.cs,
+      explanation: good ? undefined : exercise.why,
+      hintMatched: false,
+      diacriticsOnly: false,
+    };
+  }
+  if (CHOICE_TYPES.has(exercise.type)) {
+    const stemC = fillEndingStem(exercise);
+    const right = exercise.answers.includes(answer);
+    const hint = exercise.hints.find((h) => h.wrong === answer);
+    const shown = (a: string) => (stemC ? stemC + a : a);
+    return {
+      status: right ? 'correct' : 'incorrect',
+      accepted: right,
+      expected: shown(right ? answer : exercise.answers[0]!),
+      explanation: right ? undefined : (hint?.explain ?? exercise.why),
+      hintMatched: !!hint,
+      diacriticsOnly: false,
+    };
+  }
   // Fill-in-the-ending: learners may type the ending ("u") or the whole word
   // ("kávu"); both are accepted, and feedback always shows the whole word.
   const stem = fillEndingStem(exercise);

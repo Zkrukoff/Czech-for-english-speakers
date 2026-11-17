@@ -1,3 +1,4 @@
+import { CzechText } from '@/components/CzechText';
 import { useState } from 'react';
 import type { Dialogue } from '@/content/schema';
 import { SpeakButton } from '@/components/SpeakButton';
@@ -39,7 +40,7 @@ export function DialogueView({ dialogue }: { dialogue: Dialogue }) {
               <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${right ? 'rounded-tr-sm bg-vltava-tint' : 'rounded-tl-sm bg-surface border border-rule'}`}>
                 <div className="text-xs font-medium text-ink-3">{l.speaker}</div>
                 <div className="flex items-start gap-1 text-lg" lang="cs">
-                  <span>{l.cs}</span>
+                  <span><CzechText text={l.cs} /></span>
                   <SpeakButton text={l.cs} audioId={l.audio} />
                 </div>
                 {showEn && <div className="text-sm text-ink-2">{l.en}</div>}

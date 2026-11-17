@@ -148,6 +148,93 @@ export const QuestionExerciseSchema = z.object({
   answerLang: z.enum(['cs', 'en']).default('cs'),
 });
 
+/* ---- Exercise types added for Pražák (phase 3) ---- */
+
+/** Listen to a real recording and type what you hear. Hidden until the recording exists (D6). */
+export const ListenTypeExerciseSchema = z.object({
+  ...exerciseBase,
+  type: z.literal('listenType'),
+  /** Recording id in content/audio/manifest.json. */
+  audio: z.string().min(1),
+  /** What is said (shown after answering). */
+  cs: z.string().min(1),
+  en: z.string().optional(),
+});
+
+/** Pick the right ending from a few; the sentence has "___" after the stem. */
+export const ChooseEndingExerciseSchema = z.object({
+  ...exerciseBase,
+  type: z.literal('chooseEnding'),
+  prompt: z.string().includes('___', { message: 'chooseEnding prompt must contain ___' }),
+  options: z.array(z.string()).min(2).max(5),
+  base: z.string().optional(),
+  en: z.string().optional(),
+});
+
+/** Put word tiles in order. Tiles may include distractors. */
+export const BuildSentenceExerciseSchema = z.object({
+  ...exerciseBase,
+  type: z.literal('buildSentence'),
+  /** English meaning to build. */
+  prompt: z.string().min(1),
+  tiles: z.array(z.string().min(1)).min(2),
+});
+
+/** Choose the imperfective or perfective verb for the context. */
+export const AspectChoiceExerciseSchema = z.object({
+  ...exerciseBase,
+  type: z.literal('aspectChoice'),
+  /** Sentence with "___" where the verb goes. */
+  prompt: z.string().includes('___', { message: 'aspectChoice prompt must contain ___' }),
+  /** The two forms to choose between, imperfective first. */
+  options: z.tuple([z.string().min(1), z.string().min(1)]),
+  /** Infinitives of the pair, imperfective first (must be aspect partners in verbs.json). */
+  verbs: z.tuple([z.string().min(1), z.string().min(1)]),
+  en: z.string().optional(),
+});
+
+/** Hear one of two words that differ in one sound; choose which. Hidden until the recording exists. */
+export const MinimalPairExerciseSchema = z.object({
+  ...exerciseBase,
+  type: z.literal('minimalPair'),
+  pair: z.tuple([z.string().min(1), z.string().min(1)]),
+  /** Recording id of the word that is played; answers holds that word. */
+  audio: z.string().min(1),
+  /** The contrast, e.g. "ř / ž". */
+  sound: z.string().min(1),
+});
+
+/**
+ * Say it out loud: record yourself in the browser, play it back next to the
+ * reference, and judge for yourself (D8). Nothing is uploaded.
+ */
+export const SpeakExerciseSchema = z.object({
+  ...exerciseBase,
+  type: z.literal('speak'),
+  answers: z.array(z.string()).default([]),
+  cs: z.string().min(1),
+  en: z.string().min(1),
+  /** Reference recording id, if one exists. */
+  audio: z.string().optional(),
+  /** What to listen for in your own recording. */
+  focus: z.string().optional(),
+});
+
+/** Read a real-world text (sign, menu, announcement, form) recreated in our style (D12), then answer. */
+export const ReadRealExerciseSchema = z.object({
+  ...exerciseBase,
+  type: z.literal('readReal'),
+  realia: z.object({
+    kind: z.enum(['sign', 'menu', 'announcement', 'timetable', 'form', 'message']),
+    title: z.string().optional(),
+    /** Lines of Czech text, as printed. */
+    lines: z.array(z.string().min(1)).min(1),
+  }),
+  /** The question, in English. */
+  prompt: z.string().min(1),
+  answerLang: z.enum(['cs', 'en']).default('en'),
+});
+
 export const ExerciseSchema = z.discriminatedUnion('type', [
   TranslateExerciseSchema,
   FillEndingExerciseSchema,
@@ -155,7 +242,15 @@ export const ExerciseSchema = z.discriminatedUnion('type', [
   ConjugateExerciseSchema,
   DialogueCompleteExerciseSchema,
   QuestionExerciseSchema,
+  ListenTypeExerciseSchema,
+  ChooseEndingExerciseSchema,
+  BuildSentenceExerciseSchema,
+  AspectChoiceExerciseSchema,
+  MinimalPairExerciseSchema,
+  SpeakExerciseSchema,
+  ReadRealExerciseSchema,
 ]);
+
 
 export const LessonSchema = z.object({
   id,
@@ -174,6 +269,19 @@ export const LessonSchema = z.object({
 
 export const CanDoSchema = z.object({ id, text: z.string().min(1) });
 
+/** A real-world task for the station: do it in Prague, then tick it off yourself. */
+export const MissionSchema = z.object({
+  id,
+  title: z.string().min(1),
+  /** What to do, in English. */
+  task: z.string().min(1),
+  /** Phrases that help. */
+  phrases: z.array(z.object({ cs: z.string().min(1), en: z.string().min(1) })).default([]),
+  /** A gentle way out for when it goes wrong. */
+  ifStuck: z.string().optional(),
+  nativeReviewed: reviewed,
+});
+
 export const UnitSchema = z.object({
   id,
   title: z.string().min(1),
@@ -183,6 +291,7 @@ export const UnitSchema = z.object({
   canDo: z.array(CanDoSchema).min(1),
   /** Lesson folder names under lessons/, in order. */
   lessons: z.array(z.string()).min(1),
+  missions: z.array(MissionSchema).default([]),
   check: z.object({
     /** Fraction of a goal's check items that must be right to complete it. */
     passRatio: z.number().min(0).max(1).default(0.8),
@@ -267,6 +376,8 @@ export const VerbSchema = z.object({
   motion: z.enum(['determinate', 'indeterminate']).optional(),
   /** The other verb of a motion pair, e.g. "chodit" for "jít". */
   motionPair: z.string().optional(),
+  /** Motion-verb family: the base verb (jít for přijít, odejít, chodit…). */
+  family: z.string().optional(),
   topics: z.array(z.string()).default([]),
   notes: z.string().optional(),
   spoken: SpokenFormSchema.optional(),
@@ -336,24 +447,6 @@ export const TimelineEventSchema = z.object({
   nativeReviewed: reviewed,
 });
 
-export const MetroSchema = z.object({
-  lines: z
-    .array(
-      z.object({
-        id: z.enum(['A', 'B', 'C']),
-        nickname: z.string(),
-        colour: z.string().regex(/^#[0-9a-f]{6}$/i),
-        /** Stations in order, from the first terminus to the last. */
-        stations: z.array(z.string().min(1)).min(2),
-      }),
-    )
-    .length(3),
-  /** Short notes for stations, keyed by station name. */
-  notes: z.record(z.string(), z.string()).default({}),
-  underConstruction: z.string().optional(),
-  nativeReviewed: reviewed,
-});
-
 export const GuideSchema = z.object({
   id,
   title: z.string().min(1),
@@ -361,8 +454,20 @@ export const GuideSchema = z.object({
   summary: z.string().min(1),
   /** Display order on the guides page. */
   order: z.number().default(0),
+  /** Not shown to learners yet (structure in place, content still being written). */
+  draft: z.boolean().default(false),
   /** Markdown pages, shown as tabs, in order. Files live next to guide.json. */
-  sections: z.array(z.object({ id, title: z.string().min(1), file: z.string().min(1) })).min(1),
+  sections: z
+    .array(
+      z.object({
+        id,
+        title: z.string().min(1),
+        file: z.string().min(1),
+        /** Lesson ids that teach the language this section uses. Back-links are generated. */
+        lessons: z.array(z.string()).default([]),
+      }),
+    )
+    .min(1),
   /** Groups of phrases with listen buttons. */
   phrasebook: z.array(z.object({ id, title: z.string().min(1), intro: z.string().optional(), phrases: z.array(PhraseSchema).min(1) })).default([]),
   practice: z.array(PracticeSetSchema).default([]),
@@ -370,10 +475,125 @@ export const GuideSchema = z.object({
   sources: z.array(z.object({ title: z.string().min(1), url: z.string().url() })).default([]),
   /** Optional history timeline, embedded in a section with a ```timeline <guide id>``` block. */
   timeline: z.array(TimelineEventSchema).optional(),
-  /** Optional metro data, embedded with a ```metro <guide id>``` block. */
-  metro: MetroSchema.optional(),
   lastChecked: z.string().optional(),
   nativeReviewed: reviewed,
+});
+
+/* ---------- Lines and stations (content/lines/lines.json) ---------- */
+
+export const LINE_IDS = ['A', 'B', 'C'] as const;
+export const LevelSchema = z.enum(['A1', 'A2', 'B1', 'B2', 'C1', 'C2']);
+const slug = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'station slugs are ASCII, lowercase, hyphenated');
+const tile = z.string().regex(/^(0[1-9]|1[0-9]|2[0-4])$/, 'tile is "01"…"24" (a --tile-NN token)');
+
+export const StationSchema = z.object({
+  /** Official name, exactly as in PID data. */
+  name: z.string().min(1),
+  tile,
+  /** What's above ground: shown on the station screen. */
+  aboveGround: z.string().optional(),
+  /** A dated service note, e.g. a closure seen in the PID feed. */
+  status: z.object({ note: z.string().min(1), checked: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) }).optional(),
+});
+
+export const StopSchema = z.discriminatedUnion('kind', [
+  z.object({ station: slug, kind: z.literal('pronunciation') }),
+  z.object({ station: slug, kind: z.literal('unit'), unit: id }),
+  z.object({
+    station: slug,
+    kind: z.literal('milestone'),
+    milestone: z.object({ id, part: z.enum(['review', 'check']), level: LevelSchema }),
+  }),
+  /** Not built yet: shown as "výluka" (closed for works). */
+  z.object({ station: slug, kind: z.literal('planned') }),
+]);
+
+export const LinesSchema = z.object({
+  $comment: z.string().optional(),
+  verified: z.object({ source: z.string().min(1), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), note: z.string().optional() }),
+  milestones: z.array(z.object({ id, name: z.string().min(1), en: z.string().min(1), summary: z.string().min(1), level: LevelSchema })),
+  lines: z
+    .array(
+      z.object({
+        id: z.enum(LINE_IDS),
+        nickname: z.string().min(1),
+        levels: z.array(LevelSchema).length(2),
+        service: z.enum(['in-service', 'not-yet']),
+        /** In riding order, first terminus to last. */
+        stops: z.array(StopSchema).min(2),
+      }),
+    )
+    .length(3),
+  underConstruction: z.string().optional(),
+  stations: z.record(slug, StationSchema),
+  nativeReviewed: reviewed,
+});
+
+/* ---------- Lexicon and case-lens functions ---------- */
+
+const cellKey = z.string().regex(/^(nom|gen|dat|acc|voc|loc|ins)\.(sg|pl)$/, 'cells are "<case>.<sg|pl>", e.g. "gen.pl"');
+
+export const NounSchema = z.object({
+  lemma: z.string().min(1),
+  en: z.string().min(1),
+  gender: GenderSchema,
+  /** A noun table id (content/grammar/tables/nouns.json) or "irregular" (then every form is listed). */
+  vzor: z.string().min(1),
+  stem: z.string().optional(),
+  number: z.enum(['sg', 'pl']).optional(),
+  forms: z.record(cellKey, z.string().min(1)).optional(),
+  /** Forms not fully checked: mismatches are warnings, not errors. */
+  uncertain: z.boolean().optional(),
+  note: z.string().optional(),
+  nativeReviewed: reviewed,
+});
+
+export const LexiconSchema = z.object({ $comment: z.string().optional(), nouns: z.array(NounSchema) });
+
+export const GrammarFunctionSchema = z.object({
+  id,
+  case: z.enum(CASE_KEYS),
+  /** Short label shown in the lens, e.g. "after z (from)". */
+  label: z.string().min(1),
+  /** Why: one or two sentences. */
+  explain: z.string().min(1),
+  example: z.object({ cs: z.string().min(1), en: z.string().min(1) }),
+  /** Czech words that trigger it (prepositions, verbs). */
+  triggers: z.array(z.string()).default([]),
+});
+
+export const FunctionsFileSchema = z.object({
+  $comment: z.string().optional(),
+  functions: z.array(GrammarFunctionSchema).min(1),
+  nativeReviewed: reviewed,
+});
+
+/* ---------- Name days and audio ---------- */
+
+export const NamedaysSchema = z.object({
+  $comment: z.string().optional(),
+  source: z.object({ title: z.string(), url: z.string().url(), licence: z.string(), retrieved: z.string() }),
+  verify: z.array(z.object({ date: z.string().regex(/^\d{2}-\d{2}$/), note: z.string() })).default([]),
+  days: z.record(z.string().regex(/^(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/), z.array(z.string().min(1)).min(1)),
+  nativeReviewed: reviewed,
+});
+
+/**
+ * Real-speaker recordings (D6). Files live in public/audio/<id>.<ext>.
+ * Exercises that need a recording stay hidden until it is listed here.
+ */
+export const AudioManifestSchema = z.object({
+  $comment: z.string().optional(),
+  recordings: z.array(
+    z.object({
+      id: z.string().regex(/^[a-z0-9][a-z0-9-]*$/),
+      file: z.string().regex(/^[a-z0-9][a-z0-9-]*\.(mp3|m4a|ogg|opus|wav)$/),
+      /** What is said, exactly. */
+      cs: z.string().min(1),
+      speaker: z.string().min(1),
+      licence: z.string().min(1),
+    }),
+  ),
 });
 
 /* ---------- Inferred types ---------- */
@@ -397,4 +617,11 @@ export type AlphabetData = z.infer<typeof AlphabetSchema>;
 export type Phrase = z.infer<typeof PhraseSchema>;
 export type GuideData = z.infer<typeof GuideSchema>;
 export type TimelineEvent = z.infer<typeof TimelineEventSchema>;
-export type MetroData = z.infer<typeof MetroSchema>;
+export type Noun = z.infer<typeof NounSchema>;
+export type Mission = z.infer<typeof MissionSchema>;
+export type NamedaysData = z.infer<typeof NamedaysSchema>;
+export type AudioManifest = z.infer<typeof AudioManifestSchema>;
+export type GrammarFunction = z.infer<typeof GrammarFunctionSchema>;
+export type LinesData = z.infer<typeof LinesSchema>;
+export type StopData = z.infer<typeof StopSchema>;
+export type StationData = z.infer<typeof StationSchema>;

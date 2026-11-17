@@ -1,5 +1,6 @@
-import { Link, useParams } from 'react-router-dom';
-import { course } from '@/content';
+import { useRouteUnit } from './useRouteUnit';
+import { unitCheckPath } from '@/lib/paths';
+import { Link } from 'react-router-dom';
 import { PageHeader } from '@/components/PageHeader';
 import { NotFound } from '@/components/NotFound';
 import { GoalList } from '@/components/GoalList';
@@ -8,8 +9,7 @@ import { useLessonProgress } from '@/db/hooks';
 import { IconArrowRight, IconDone, IconTerminus } from '@/components/icons';
 
 export function UnitPage() {
-  const { unitId = '' } = useParams();
-  const unit = course.unitsById.get(unitId);
+  const unit = useRouteUnit();
   const lessons = useLessonProgress();
   if (!unit) return <NotFound what="unit" />;
   const c = unitColour(unit.number);
@@ -42,7 +42,7 @@ export function UnitPage() {
               );
             })}
             <li className="relative">
-              <Link to={`/units/${unit.id}/check`} className="group flex items-center gap-5 rounded-2xl py-2 pr-3">
+              <Link to={unitCheckPath(unit.id)} className="group flex items-center gap-5 rounded-2xl py-2 pr-3">
                 <span className={`relative z-[1] flex h-12 w-12 shrink-0 items-center justify-center rounded-full font-display text-xl font-extrabold text-on-fill-light transition-transform group-hover:scale-110 bg-board`}>
                   <IconTerminus size={22} />
                 </span>

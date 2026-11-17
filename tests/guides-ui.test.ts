@@ -6,9 +6,9 @@ import { POSITIONS } from '@/features/guides/MetroMap';
 const { course } = loadContent(contentFiles);
 
 describe('metro map', () => {
-  const metro = course.guidesById.get('prague-transport')!.metro!;
+  const metro = course.metro!;
 
-  it('has all 61 stations on lines A (17), B (24) and C (20)', () => {
+  it('has all 61 stops on lines A (17), B (24) and C (20)', () => {
     expect(metro.lines.map((l) => [l.id, l.stations.length])).toEqual([['A', 17], ['B', 24], ['C', 20]]);
   });
 

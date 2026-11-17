@@ -2,33 +2,26 @@ import { NavLink, Outlet, useRouteError } from 'react-router-dom';
 import { contentErrors } from '@/content';
 import { ContentErrorScreen } from './ContentErrorScreen';
 import { useDueSummary } from '@/db/useDue';
-import { MetroLineStripe, MetroMark } from './brand/Metro';
+import { MetroLineStripe } from './brand/Metro';
+import { MarkKubismus, WordmarkKubismus } from './brand/Wordmarks';
 
+/** Czech labels (the brief), with the English meaning for tooltips and screen readers. */
 const NAV = [
-  { to: '/', label: 'Learn', end: true },
-  { to: '/alphabet', label: 'Alphabet' },
-  { to: '/guides', label: 'Guides' },
-  { to: '/grammar', label: 'Grammar' },
-  { to: '/verbs', label: 'Verbs' },
-  { to: '/review', label: 'Review' },
-  { to: '/progress', label: 'Progress' },
-  { to: '/settings', label: 'Settings' },
+  { to: '/', label: 'Linka', en: 'your line', end: true },
+  { to: '/review', label: 'Opakování', en: 'review' },
+  { to: '/grammar', label: 'Mluvnice', en: 'grammar' },
+  { to: '/verbs', label: 'Slovesa', en: 'verbs' },
+  { to: '/guides', label: 'Průvodce', en: 'guides' },
+  { to: '/wallet', label: 'Jízdenky', en: 'ticket wallet' },
+  { to: '/settings', label: 'Nastavení', en: 'settings' },
 ];
 
-/**
- * Wordmark: "Pražák" with its tagline. Interim version for phase 1; the
- * hand-lettered SVG wordmark replaces it in phase 2 (docs/PLAN.md).
- */
+/** Wordmark B (Kubismus, chosen in D11) with the tagline. */
 function Wordmark() {
   return (
-    <NavLink to="/" className="group flex items-center gap-2.5" aria-label="Pražák, home">
-      <MetroMark className="h-8 w-8 transition-transform duration-300 group-hover:rotate-12" />
-      <span className="flex flex-col leading-none">
-        <span lang="cs" className="font-display text-2xl font-extrabold tracking-tight text-ink" style={{ fontFamily: 'var(--font-display)' }}>
-          Pražák
-        </span>
-        <span lang="cs" className="mt-0.5 hidden text-[11px] font-medium uppercase tracking-[0.18em] text-ink-3 sm:block">Mluv jako Pražák.</span>
-      </span>
+    <NavLink to="/" className="group flex items-center gap-3" aria-label="Pražák, home">
+      <WordmarkKubismus className="h-9 w-auto text-ink" title="Pražák" />
+      <span lang="cs" className="label-board hidden text-[11px] text-ink-3 sm:block">Mluv jako Pražák.</span>
     </NavLink>
   );
 }
@@ -52,12 +45,13 @@ export function AppShell({ error = false }: { error?: boolean }) {
                     to={n.to}
                     end={n.end}
                     className={({ isActive }) =>
-                      `inline-flex min-h-10 items-center whitespace-nowrap rounded-full px-3.5 text-sm font-semibold transition-colors ${
+                      `relative inline-flex min-h-10 items-center whitespace-nowrap rounded-full px-3.5 text-sm font-semibold transition-colors ${
                         isActive ? 'bg-ink text-paper' : 'text-ink-2 hover:bg-paper-2 hover:text-ink'
                       }`
                     }
                   >
-                    {n.label}
+                    <span lang="cs" title={n.en}>{n.label}</span>
+                    <span className="sr-only"> ({n.en})</span>
                     {n.to === '/review' && due && due.dueNow > 0 && (
                       <span className="ml-1.5 rounded-full bg-line-b px-1.5 text-xs font-bold tabular-nums text-ink" aria-label={`${due.dueNow} due`}>
                         {due.dueNow}
@@ -77,7 +71,7 @@ export function AppShell({ error = false }: { error?: boolean }) {
         <MetroLineStripe className="h-1" />
         <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-8 text-sm text-ink-3 sm:flex-row sm:items-center sm:justify-between">
           <span className="flex items-center gap-2">
-            <MetroMark className="h-5 w-5" />
+            <MarkKubismus className="h-5 w-5" />
             <span><span lang="cs" className="font-semibold text-ink-2">Pražák</span>: Czech for people who actually live here.</span>
           </span>
           <span className="text-xs">

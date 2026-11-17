@@ -27,6 +27,29 @@
     "03-family",
     "04-the-team"
   ],
+  "missions": [
+    {
+      "id": "u04-m1",
+      "title": "Three sentences about someone",
+      "task": "Tell a Czech colleague about someone in your life: what they look like, what they're like, and how you know them. Three sentences is enough.",
+      "phrases": [
+        {
+          "cs": "Můj bratr je vysoký a má krátké vlasy.",
+          "en": "My brother is tall and has short hair."
+        },
+        {
+          "cs": "Je moc milá.",
+          "en": "She's very nice."
+        },
+        {
+          "cs": "Pracujeme spolu.",
+          "en": "We work together."
+        }
+      ],
+      "ifStuck": "Jak se řekne … česky? (How do you say … in Czech?)",
+      "nativeReviewed": false
+    }
+  ],
   "check": {
     "passRatio": 0.8,
     "exercises": [

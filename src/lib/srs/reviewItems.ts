@@ -5,6 +5,7 @@ import type { Exercise, VocabItem } from '@/content/schema';
  * Turns review cards back into exercises.
  *   "ex:<id>"    → the original lesson/unit-check exercise
  *   "vocab:<id>" → a generated English → Czech translation of the word
+ *   "pattern:…" / "fn:…" → an exercise that practises that ending or case use
  */
 
 /** Vocabulary that works as a flashcard (lists like "jeden, dva, tři" don't). */
@@ -62,8 +63,18 @@ export function vocabExercise(item: VocabItem, allVocab: VocabItem[] = []): Exer
   };
 }
 
-/** The exercise for a card, or null if its content no longer exists. */
-export function exerciseForCard(itemKey: string, course: Course): Exercise | null {
+/**
+ * The exercise for a card, or null if its content no longer exists.
+ * Pattern and function cards ("pattern:…", "fn:…") are reviewed through an
+ * exercise that practises them; `rotation` (e.g. the card's rep count) picks
+ * a different one each time, so the learner sees the pattern in new sentences.
+ */
+export function exerciseForCard(itemKey: string, course: Course, rotation = 0): Exercise | null {
+  if (itemKey.startsWith('pattern:') || itemKey.startsWith('fn:')) {
+    const ids = course.exercisesByLensKey.get(itemKey) ?? [];
+    if (!ids.length) return null;
+    return course.exercisesById.get(ids[rotation % ids.length]!)?.exercise ?? null;
+  }
   if (itemKey.startsWith('ex:')) return course.exercisesById.get(itemKey.slice(3))?.exercise ?? null;
   if (itemKey.startsWith('vocab:')) {
     const v = course.vocabById.get(itemKey.slice(6));

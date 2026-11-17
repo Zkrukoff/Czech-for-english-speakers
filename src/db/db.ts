@@ -66,6 +66,39 @@ export interface GoalProgress {
   bestScore: number;
 }
 
+/** Who the learner is (one row, id "me"). Created in onboarding, or inferred for existing learners. */
+export interface Profile {
+  id: 'me';
+  /** Why they're learning, from onboarding. */
+  who?: 'work' | 'partner' | 'study' | 'living' | 'other';
+  /** Self-assessed starting level. */
+  level?: 'new' | 'A1' | 'A2' | 'B1';
+  /** Line/station key of their real-life home stop, e.g. "A/jiriho-z-podebrad" (optional, for flavour). */
+  homeStation?: string;
+  /** Has seen the vykání / tykání introduction. */
+  vykaniIntroSeen: boolean;
+  /** When onboarding finished (or the profile was inferred). */
+  onboardedAt: number;
+  /** True when created from existing progress instead of onboarding. */
+  inferred: boolean;
+}
+
+/** A mission the learner says they've done. */
+export interface MissionRecord {
+  missionId: string;
+  unitId: string;
+  doneAt: number;
+}
+
+/** A stamp in the ticket wallet. Ids are deterministic, so awarding is idempotent. */
+export interface Stamp {
+  /** "unit:u01", "milestone:vaclavak:check", "mission:u01-m1" */
+  id: string;
+  kind: 'unit' | 'milestone' | 'mission';
+  refId: string;
+  at: number;
+}
+
 /** Internal bookkeeping, e.g. whether the one-time copy from the old database has run. */
 export interface MetaEntry {
   key: string;
@@ -83,7 +116,10 @@ export const DB_NAME = 'prazak';
 export const LEGACY_DB_NAMES = ['czech-for-english-speakers'] as const;
 
 /** The tables that hold learner data, in the order they are copied and backed up. */
-export const DATA_TABLES = ['settings', 'attempts', 'cards', 'lessonProgress', 'goalProgress'] as const;
+export const DATA_TABLES = ['settings', 'attempts', 'cards', 'lessonProgress', 'goalProgress', 'profile', 'missions', 'stamps'] as const;
+
+/** The tables that existed in schema v1 (and in the legacy database). */
+export const V1_TABLES = ['settings', 'attempts', 'cards', 'lessonProgress', 'goalProgress'] as const;
 
 export class PrazakDB extends Dexie {
   settings!: EntityTable<Settings, 'id'>;
@@ -92,6 +128,9 @@ export class PrazakDB extends Dexie {
   lessonProgress!: EntityTable<LessonProgress, 'lessonId'>;
   goalProgress!: EntityTable<GoalProgress, 'goalId'>;
   meta!: EntityTable<MetaEntry, 'key'>;
+  profile!: EntityTable<Profile, 'id'>;
+  missions!: EntityTable<MissionRecord, 'missionId'>;
+  stamps!: EntityTable<Stamp, 'id'>;
 
   constructor(name: string = DB_NAME) {
     super(name);
@@ -103,6 +142,14 @@ export class PrazakDB extends Dexie {
       lessonProgress: 'lessonId',
       goalProgress: 'goalId, unitId',
       meta: 'key',
+    });
+    // v2 (Pražák phase 3): additive only. Existing tables and rows are untouched;
+    // the profile and wallet stamps of existing learners are filled in by
+    // ensureProfile() from their progress (src/db/profile.ts).
+    this.version(2).stores({
+      profile: 'id',
+      missions: 'missionId, unitId, doneAt',
+      stamps: 'id, kind, at',
     });
   }
 }

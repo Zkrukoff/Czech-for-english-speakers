@@ -27,6 +27,29 @@
     "03-where-are-you",
     "04-tickets"
   ],
+  "missions": [
+    {
+      "id": "u03-m1",
+      "title": "Ask the way",
+      "task": "On a tram or at a stop, ask someone in Czech whether it goes where you're going, or where to get off.",
+      "phrases": [
+        {
+          "cs": "Promiňte, jede to na Anděl?",
+          "en": "Excuse me, does this go to Anděl?"
+        },
+        {
+          "cs": "Kde mám vystoupit?",
+          "en": "Where should I get off?"
+        },
+        {
+          "cs": "Děkuju moc.",
+          "en": "Thanks a lot."
+        }
+      ],
+      "ifStuck": "Nerozumím. Můžete mluvit pomaleji? (I don't understand. Could you speak more slowly?)",
+      "nativeReviewed": false
+    }
+  ],
   "check": {
     "passRatio": 0.8,
     "exercises": [

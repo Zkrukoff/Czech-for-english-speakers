@@ -1,3 +1,4 @@
+import { unitPath, unitCheckPath } from '@/lib/paths';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { course, type Lesson } from '@/content';
@@ -50,7 +51,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
 
   return (
     <>
-      <Link to={`/units/${unit.id}`} className="text-sm text-vltava hover:underline"><IconArrowLeft size={16} className="inline-block align-[-3px]" /> Unit {unit.number}: {unit.title}</Link>
+      <Link to={unitPath(unit.id)} className="text-sm text-vltava hover:underline"><IconArrowLeft size={16} className="inline-block align-[-3px]" /> Unit {unit.number}: {unit.title}</Link>
       <PageHeader eyebrow={`Lesson ${lesson.number}`} title={lesson.title}>
         <div className="mt-3"><ReviewStatusBadge reviewed={lesson.nativeReviewed} /></div>
       </PageHeader>
@@ -93,7 +94,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
           <PracticeSummary
             outcomes={outcomes}
             onAgain={() => { setOutcomes(null); setRun((r) => r + 1); }}
-            next={nextLesson ? { to: `/lessons/${nextLesson.id}`, label: `Next: ${nextLesson.title}` } : { to: `/units/${unit.id}/check`, label: 'Unit check: what can you do now?' }}
+            next={nextLesson ? { to: `/lessons/${nextLesson.id}`, label: `Next: ${nextLesson.title}` } : { to: unitCheckPath(unit.id), label: 'Unit check: what can you do now?' }}
           />
         ) : (
           <ExerciseRunner

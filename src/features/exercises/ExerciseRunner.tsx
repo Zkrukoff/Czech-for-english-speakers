@@ -4,6 +4,12 @@ import { checkAnswer, type CheckResult } from '@/lib/answers/check';
 import { recordAttempt, type AttemptContext } from '@/db/progress';
 import { useSettings } from '@/db/settings';
 import { AnswerInput } from './AnswerInput';
+import { ChoiceInput } from './types/ChoiceInput';
+import { SpeakInput } from './types/SpeakInput';
+import { BuildSentenceInput } from './types/BuildSentenceInput';
+
+/** Types whose input submits by itself (a choice, or a self-assessment). */
+const SELF_SUBMITTING = new Set<Exercise['type']>(['caseSelect', 'chooseEnding', 'aspectChoice', 'minimalPair', 'speak']);
 import { FeedbackPanel, answerIsCzech } from './FeedbackPanel';
 import { ExercisePrompt, caseOptionLabel } from './ExercisePrompt';
 
@@ -105,6 +111,18 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
                 );
               })}
             </div>
+          ) : exercise.type === 'chooseEnding' || exercise.type === 'aspectChoice' || exercise.type === 'minimalPair' ? (
+            <ChoiceInput
+              options={exercise.type === 'minimalPair' ? exercise.pair : exercise.options}
+              chosen={result ? answer : undefined}
+              correct={exercise.answers}
+              onChoose={(o) => submit(o)}
+              render={exercise.type === 'chooseEnding' ? (o) => <>–{o || '∅'}</> : undefined}
+            />
+          ) : exercise.type === 'speak' ? (
+            <SpeakInput cs={exercise.cs} audio={exercise.audio} disabled={!!result} onAssess={(v) => submit(v)} />
+          ) : exercise.type === 'buildSentence' ? (
+            <BuildSentenceInput tiles={exercise.tiles} disabled={!!result} onChange={setAnswer} />
           ) : (
             <AnswerInput
               value={answer}
@@ -127,7 +145,7 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
             {index + 1 >= queue.length ? 'Finish' : 'Continue'}
           </button>
         ) : (
-          exercise.type !== 'caseSelect' && (
+          !SELF_SUBMITTING.has(exercise.type) && (
             <button type="button" onClick={() => submit()} disabled={!answer.trim()} className="btn btn-primary">
               Check
             </button>

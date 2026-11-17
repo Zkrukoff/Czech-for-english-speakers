@@ -1,3 +1,4 @@
+import { CzechText } from '@/components/CzechText';
 import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { course } from '@/content';
@@ -103,7 +104,7 @@ function LetterDetail({ letter: l }: { letter: Letter }) {
         <div>
           <dt className="text-ink-3">Example</dt>
           <dd className="flex items-center gap-1 text-base">
-            <span lang="cs" className="text-lg">{l.example.cs}</span>
+            <span lang="cs" className="text-lg"><CzechText text={l.example.cs} /></span>
             <SpeakButton text={l.example.cs} />
             <span className="text-ink-2">({l.example.en})</span>
           </dd>

@@ -1,3 +1,4 @@
+import { unitPath, unitCheckPath } from '@/lib/paths';
 import { Link } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { CASES, CASE_INFO, CASE_KEYS, VERB_TOPICS, course } from '@/content';
@@ -63,8 +64,8 @@ export function ProgressPage() {
           {course.units.map((u) => (
             <div key={u.id} className="rounded-xl border border-rule bg-surface p-4">
               <div className="mb-2 flex items-baseline justify-between gap-2">
-                <Link to={`/units/${u.id}`} className="font-semibold hover:underline">{u.number}. {u.title}</Link>
-                <Link to={`/units/${u.id}/check`} className="shrink-0 text-xs text-vltava underline">unit check</Link>
+                <Link to={unitPath(u.id)} className="font-semibold hover:underline">{u.number}. {u.title}</Link>
+                <Link to={unitCheckPath(u.id)} className="shrink-0 text-xs text-vltava underline">unit check</Link>
               </div>
               <div className="text-sm"><GoalList goals={u.canDo} /></div>
             </div>

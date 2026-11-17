@@ -1,16 +1,18 @@
+import { useRouteUnit } from './useRouteUnit';
+import { unitPath, WALLET_PATH } from '@/lib/paths';
 import { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { course, type Unit } from '@/content';
+import { Link } from 'react-router-dom';
+import type { Unit } from '@/content';
 import { PageHeader } from '@/components/PageHeader';
 import { NotFound } from '@/components/NotFound';
 import { ExerciseRunner } from '@/features/exercises/ExerciseRunner';
 import { saveGoalScores, scoreGoals, type GoalScore } from '@/db/progress';
+import { stampUnitIfComplete } from '@/db/wallet';
 import { useLessonAnswerHandler } from './useLessonAnswerHandler';
 import { IconArrowLeft, IconDone, IconOpen } from '@/components/icons';
 
 export function UnitCheckPage() {
-  const { unitId = '' } = useParams();
-  const unit = course.unitsById.get(unitId);
+  const unit = useRouteUnit();
   if (!unit) return <NotFound what="unit" />;
   return <UnitCheck key={unit.id} unit={unit} />;
 }
@@ -24,7 +26,7 @@ function UnitCheck({ unit }: { unit: Unit }) {
 
   return (
     <>
-      <Link to={`/units/${unit.id}`} className="text-sm text-vltava hover:underline"><IconArrowLeft size={16} className="inline-block align-[-3px]" /> Unit {unit.number}: {unit.title}</Link>
+      <Link to={unitPath(unit.id)} className="text-sm text-vltava hover:underline"><IconArrowLeft size={16} className="inline-block align-[-3px]" /> Unit {unit.number}: {unit.title}</Link>
       <PageHeader title="What can you do now?" subtitle="This check tests each of the unit's goals. No time limit, and no hints from earlier answers: it's to show you where you are." />
 
       {phase.kind === 'intro' && (
@@ -57,6 +59,7 @@ function UnitCheck({ unit }: { unit: Unit }) {
               unit.check.passRatio,
             );
             await saveGoalScores(unit.id, scores);
+            await stampUnitIfComplete(unit.id, unit.canDo.map((g) => g.id));
             setPhase({ kind: 'done', scores, run: phase.run });
           }}
         />
@@ -81,7 +84,7 @@ function UnitCheck({ unit }: { unit: Unit }) {
             ))}
           </ul>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link to="/progress" className="btn btn-primary">See your progress</Link>
+            <Link to={WALLET_PATH} className="btn btn-primary">See your ticket wallet</Link>
             <button type="button" onClick={() => setPhase({ kind: 'running', run: phase.run + 1 })} className="btn btn-secondary">
               Take the check again
             </button>

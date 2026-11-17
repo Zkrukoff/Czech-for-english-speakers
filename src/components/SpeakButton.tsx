@@ -1,3 +1,4 @@
+import { lensPlain } from '@/lib/lens';
 import { useEffect, useState } from 'react';
 import { czechVoices, speech } from '@/lib/audio/speech';
 import { useSettings } from '@/db/settings';
@@ -15,7 +16,8 @@ function useHasCzechVoice(): boolean {
   return has;
 }
 
-export function SpeakButton({ text, audioId, label = 'Listen' }: { text: string; audioId?: string; label?: string }) {
+export function SpeakButton({ text: raw, audioId, label = 'Listen' }: { text: string; audioId?: string; label?: string }) {
+  const text = lensPlain(raw);
   const settings = useSettings();
   const hasVoice = useHasCzechVoice();
   if (!hasVoice && !audioId) return null;

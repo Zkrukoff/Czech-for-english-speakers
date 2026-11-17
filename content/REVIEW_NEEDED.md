@@ -123,3 +123,19 @@ check first. When an item is confirmed or corrected, remove it here and set
 | metro notes | Station notes (e.g. Hradčanská nearest the Castle's north side; Náměstí Míru one of the deepest stations; Vltavská galleries) | Accurate and current? |
 | metro panel | "Vystupte na stanici Můstek." as the model sentence | Natural? |
 | home page | "Ahoj, Praho!", "Příští zastávka", "Konečná" used as decorative Czech | Fine in this playful use? |
+
+## Phase 3: course map, lexicon, missions, name days
+
+| Where | Text | Question |
+|---|---|---|
+| lines.json | Station *aboveGround* notes (moved from the transport guide) | Still accurate? |
+| lines.json | Flora: no Line A service in the PID feed for 16–29 Nov 2026 | Temporary closure? For how long? Update the status note. |
+| lexicon | All 88 nouns, especially the overrides: *Angličané, učitelé, ředitelé, manželé, synu, dceři, přátelé, kolegyň, přítelkyň, nástupišť, center, muzeí, roce / roku, let / roků, košil* | Correct? |
+| lexicon | *máma* gen. pl. (*mam / mám*); *mléko* loc. (*mléce / mléku*); *brambory* feminine vs masculine | Marked uncertain: which forms should the app teach? |
+| lexicon | *pan* (title) plural *páni / pánové*; *paní* singular is the same in every case | Correct? |
+| functions.json | The 26 explanations and example sentences | Accurate and natural? Anything missing (e.g. *genitive after negation* as a recognition-only item)? |
+| missions | Phrases: *Jsem nový kolega / nová kolegyně*, *S sebou, prosím*, *Zaplatím kartou*, *Jede to na Anděl?*, *Kde mám vystoupit?*, *Můj bratr je vysoký a má krátké vlasy* | Natural? |
+| name days | Days flagged in `calendar/namedays.json` → `verify` (1 Jan, 1 May, 8 May, 26 Jul, 28 Sep, 25 Dec), and the calendar as a whole | Check against a current Czech calendar. |
+| speak exercise | Buttons *Zvládl/a jsem to* · *Ještě ne* | Natural? |
+| exercise types | Number drills generated from the lexicon: *jeden/jedna/jedno*, *dva/dvě* + nom. pl., 5+ + gen. pl. | Rules as stated OK for learners? |
+

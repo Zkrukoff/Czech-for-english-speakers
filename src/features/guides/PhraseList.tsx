@@ -1,3 +1,4 @@
+import { CzechText } from '@/components/CzechText';
 import type { Phrase } from '@/content/schema';
 import { SpeakButton } from '@/components/SpeakButton';
 import { SpokenFormNote } from '@/components/SpokenFormNote';
@@ -8,7 +9,7 @@ export function PhraseList({ phrases }: { phrases: Phrase[] }) {
       {phrases.map((p) => (
         <li key={p.cs} className="px-4 py-3">
           <div className="flex items-start gap-1">
-            <span lang="cs" className="text-lg text-ink">{p.cs}</span>
+            <span lang="cs" className="text-lg text-ink"><CzechText text={p.cs} /></span>
             <SpeakButton text={p.cs} />
           </div>
           <div className="text-ink-2">{p.en}</div>

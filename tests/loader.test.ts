@@ -35,6 +35,17 @@ function fixture(): ContentFiles {
         exercises: [exercise()],
         nativeReviewed: false,
       },
+      'lines/lines.json': {
+        verified: { source: 'PID GTFS', date: '2026-11-17' },
+        milestones: [],
+        lines: [
+          { id: 'A', nickname: 'a', levels: ['A1', 'A2'], service: 'in-service', stops: [{ station: 'x', kind: 'pronunciation' }, { station: 'y', kind: 'unit', unit: 'u1' }] },
+          { id: 'B', nickname: 'b', levels: ['B1', 'B2'], service: 'not-yet', stops: [{ station: 'x', kind: 'planned' }, { station: 'z', kind: 'planned' }] },
+          { id: 'C', nickname: 'c', levels: ['C1', 'C2'], service: 'not-yet', stops: [{ station: 'y', kind: 'planned' }, { station: 'z', kind: 'planned' }] },
+        ],
+        stations: { x: { name: 'X', tile: '01' }, y: { name: 'Y', tile: '02' }, z: { name: 'Z', tile: '03' } },
+        nativeReviewed: false,
+      },
     },
     markdown: { 'units/01-u/lessons/01-l/explanation.md': '## Hi' },
   };

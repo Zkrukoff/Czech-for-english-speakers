@@ -72,6 +72,7 @@ after a native speaker has checked that item. Anything `false` shows a
 | `situation` | string | One sentence describing the real-life situation |
 | `canDo` | `{id, text}[]` | Goals, phrased "You can…" |
 | `lessons` | string[] | Lesson folder names, in order |
+| `missions` | Mission[] | Real-world tasks for this station: `{id, title, task, phrases: {cs, en}[], ifStuck?, nativeReviewed}`. Learners tick them off themselves |
 | `check.passRatio` | number | Default 0.8. Share of a goal's check items needed to complete it |
 | `check.exercises` | Exercise[] | Each needs a `goalId`; every goal needs at least one |
 | `nativeReviewed` | boolean | |
@@ -140,6 +141,33 @@ Types:
 | `conjugate` | `verb` (should be in verbs.json); `person?` (`1sg`…`3pl`); `tense?`; `prompt` with `___`; `en?` | Types the verb form |
 | `dialogueComplete` | `context: {speaker, cs, en?}[]`; `prompt` (English instruction) | Types the reply |
 | `question` | `prompt` (English, `**bold**` allowed); `cs?` (Czech text shown large with a listen button); `speak?` (what the listen button says, if different); `answerLang`: `cs` (default) or `en` | Types an answer to a free-form question |
+| `listenType` | `audio` (recording id); `cs` (what is said); `en?` | Hears a real recording and types it. **Hidden until the recording is in `audio/manifest.json`** |
+| `chooseEnding` | `prompt` with `___` after the stem; `options` (2–5 endings, `""` for none); `base?`; `en?` | Picks the ending. `answers` ⊂ `options` |
+| `buildSentence` | `prompt` (English meaning); `tiles` (words, may include distractors) | Taps tiles in order. Every word of every answer must be a tile |
+| `aspectChoice` | `prompt` with `___`; `options`: [impf form, pf form]; `verbs`: [impf, pf] infinitives | Picks the aspect. `verbs` must be partners in verbs.json |
+| `minimalPair` | `pair` [word, word]; `audio` (recording of one of them); `sound` (e.g. "ř / ž") | Picks the word heard. **Hidden until the recording exists** |
+| `speak` | `cs`; `en`; `audio?` (reference recording); `focus?` (what to listen for) | Records themself in the browser, compares, judges themself. Nothing is uploaded. `answers` may be empty |
+| `readReal` | `realia: {kind: sign/menu/announcement/timetable/form/message, title?, lines[]}`; `prompt` (English question); `answerLang` (`en` default) | Reads a real-world text (recreated in our style, no real logos) and answers |
+
+### Case-lens markup
+
+Any Czech string (dialogue lines, prompts, examples, phrases, realia) can mark
+words with the case they're in and **why**:
+
+```
+Dám si [[kávu|káva|acc|object]], prosím.
+         form  lemma case function
+```
+
+- `case` is `nom gen dat acc voc loc ins`, optionally with a number: `acc.pl`.
+- `function` is an id from `grammar/functions.json` and must belong to that case
+  (except `chunk`: a fixed phrase whose grammar is taught later, D9).
+- The lemma must be in `lexicon/nouns.json`, and the form must be that case of
+  the lemma. Forms are generated from the noun's vzor table, so a wrong ending
+  is a content error (only a warning for nouns marked `uncertain`).
+- Readers never see the markup; the lens and review use it. Each annotated word
+  also schedules review of its ending pattern (`pattern:<vzor>:<case>.<number>`)
+  and its function (`fn:<id>`).
 
 ### Answer patterns
 
@@ -238,7 +266,8 @@ and optional practice sets.
 | `id` | id | URL: `/guides/<id>` |
 | `title`, `titleCs?`, `summary` | string | |
 | `order` | number | Position on the guides page |
-| `sections` | `{id, title, file}[]` | Markdown files next to guide.json, shown as tabs in order |
+| `sections` | `{id, title, file, lessons?}[]` | Markdown files next to guide.json, shown as tabs in order. `lessons`: ids of lessons that teach this section's language (back-links on lessons are generated) |
+| `draft` | boolean? | Validated and reachable by URL, but not listed for learners yet |
 | `phrasebook` | `{id, title, intro?, phrases: {cs, en, note?, spoken?, nativeReviewed}[]}[]` | Shown on a "Phrases" tab with listen buttons |
 | `practice` | PracticeSet[] | As in the alphabet; tag every exercise with `guide:<id>` |
 | `sources` | `{title, url}[]` | Official sources for facts that change |
@@ -251,10 +280,8 @@ Optional interactive data:
   shown where a section contains a fenced block with the info string `timeline <guide id>`.
   `summary` is always visible; `significance` ("why it matters") and `place`
   ("see it in Prague") open as the event scrolls into focus.
-- **`metro`**: `{lines: {id: 'A'|'B'|'C', nickname, colour, stations[]}[], notes: {station: text}, underConstruction?, nativeReviewed}`,
-  shown with a `metro <guide id>` block. Stations are listed in order from one
-  terminus to the other. Positions on the diagram live in
-  `src/features/guides/MetroMap.tsx`; a test fails if a station has none.
+- **The metro map** is drawn from `lines/lines.json` wherever a section
+  contains a fenced block with the info string `metro network`.
 
 Link to a guide tab from Markdown with `/guides/<id>?tab=<section id>`
 (or `phrases` / `practice`). Put prices, line numbers and timetables only in
@@ -275,6 +302,7 @@ guides with `sources` and `lastChecked`, and re-check them at least yearly.
 | `imperative` | `{2sg, 1pl, 2pl}`? | |
 | `future` | `{1sg…3pl}`? | Only for irregular futures (`budu`, `půjdu`, `pojedu`) |
 | `motion` / `motionPair` | enum? / string? | `determinate` / `indeterminate` and the other verb of the pair |
+| `family` | string? | Motion-verb family: the base verb (`jít` for `chodit`, `přijít`, `odcházet`…) |
 | `topics` | string[] | Verb topics for the "related topics" links |
 | `notes`, `spoken` | | |
 | `nativeReviewed` | boolean | |
@@ -282,3 +310,46 @@ guides with `sources` and `lastChecked`, and re-check them at least yearly.
 The verb page builds the past, future (`budu` + infinitive for
 imperfectives, present forms for perfectives), conditional and reflexive
 forms from these fields.
+
+## Lines and stations (`lines/lines.json`)
+
+The course map, and the single source of station data (the metro map uses it
+too). Lines A, B and C are CEFR levels A1–A2, B1–B2 and C1–C2.
+
+| Field | Notes |
+|---|---|
+| `verified` | `{source, date, note?}`: when names and order were last checked against PID open data with `scripts/pid_stations.py` |
+| `milestones` | `{id, name, en, summary, level}[]`, e.g. *Václavák* |
+| `lines[]` | `{id, nickname, levels, service: in-service / not-yet, stops[]}`; stops in riding order |
+| `stops[]` | `{station, kind}` where kind is `pronunciation`, `unit` (+ `unit` id), `milestone` (+ `milestone: {id, part: review/check, level}`) or `planned` (shown as *výluka*) |
+| `stations` | Keyed by ASCII slug (also the URL: `/line/A/<slug>`): `{name, tile: "01"…"24", aboveGround?, status?: {note, checked}}` |
+
+Units must appear along the lines in `course.json` order, each exactly once.
+To re-check stations: download `https://data.pid.cz/PID_GTFS.zip` and run
+`python3 scripts/pid_stations.py PID_GTFS.zip --check`.
+
+## Lexicon (`lexicon/nouns.json`)
+
+`{lemma, en, gender, vzor, stem?, number?: sg/pl, forms?, uncertain?, note?, nativeReviewed}`.
+`vzor` is a noun table id (`noun-zena`…) or `irregular` (then `forms` lists all
+14 cells, e.g. `"gen.pl": "přátel"`). For regular nouns, `forms` only overrides
+cells the rules can't predict: mobile *e* in the genitive plural (`zastávek`),
+*-é* plurals (`učitelé`), irregular vocatives (`synu`). `stem` is the oblique
+stem when it differs (`lístek` → `lístk`). See `src/lib/lens/decline.ts` for
+the rules applied.
+
+## Case functions (`grammar/functions.json`)
+
+`{id, case, label, explain, example: {cs, en}, triggers?}`: the controlled list
+of reasons a case is used (`after-z`, `location-v-na`, `with-s`, `quantity-5plus`…).
+
+## Name days (`calendar/namedays.json`)
+
+`{source: {title, url, licence, retrieved}, verify: {date, note}[], days: {"MM-DD": names[]}}`.
+Bundled (no network use). Days listed in `verify` need a native speaker's check.
+
+## Audio (`audio/manifest.json`)
+
+Real-speaker recordings: `{id, file, cs, speaker, licence}[]`, files in
+`public/audio/`. See `docs/AUDIO.md`.
+

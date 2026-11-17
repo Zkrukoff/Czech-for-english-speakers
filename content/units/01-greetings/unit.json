@@ -27,6 +27,33 @@
     "03-where-are-you-from",
     "04-addressing-people"
   ],
+  "missions": [
+    {
+      "id": "u01-m1",
+      "title": "Say hello properly",
+      "task": "Introduce yourself in Czech to a colleague you haven't really spoken to yet: greet them, say your name and where you're from, and say goodbye the right way.",
+      "phrases": [
+        {
+          "cs": "Dobrý den, já jsem …",
+          "en": "Hello, I'm …"
+        },
+        {
+          "cs": "Jsem nový kolega. / Jsem nová kolegyně.",
+          "en": "I'm a new colleague. (man / woman)"
+        },
+        {
+          "cs": "Těší mě.",
+          "en": "Nice to meet you."
+        },
+        {
+          "cs": "Jsem z Anglie.",
+          "en": "I'm from England."
+        }
+      ],
+      "ifStuck": "Promiňte, mluvím jen trochu česky. (Sorry, I only speak a little Czech.)",
+      "nativeReviewed": false
+    }
+  ],
   "check": {
     "passRatio": 0.8,
     "exercises": [
