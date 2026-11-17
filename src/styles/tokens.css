@@ -102,6 +102,9 @@
   --dur-max: 250ms;
   --ease-mech: cubic-bezier(0.3, 0, 0.1, 1);
 
+  /* Ink stamps sink into paper in light mode; in the dark they sit on top. */
+  --stamp-blend: multiply;
+
   color-scheme: light;
 }
 
@@ -117,6 +120,7 @@
     --vltava: #86BDD3; --vltava-tint: #1E333D; --champagne-tint: #3A3122;
     --case-1: #C1DAF9; --case-2: #E2975E; --case-3: #BA9DFF; --case-4: #E2769E;
     --case-5: #7CCDD5; --case-6: #6597EE; --case-7: #D6C38E;
+    --stamp-blend: normal;
     color-scheme: dark;
   }
 }
@@ -128,5 +132,6 @@
   --vltava: #86BDD3; --vltava-tint: #1E333D; --champagne-tint: #3A3122;
   --case-1: #C1DAF9; --case-2: #E2975E; --case-3: #BA9DFF; --case-4: #E2769E;
   --case-5: #7CCDD5; --case-6: #6597EE; --case-7: #D6C38E;
+  --stamp-blend: normal;
   color-scheme: dark;
 }

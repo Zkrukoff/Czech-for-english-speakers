@@ -78,19 +78,19 @@
       },
       {
         "speaker": "Zákazník",
-        "cs": "Dobrý den. Dám si kávu, prosím.",
+        "cs": "Dobrý den. Dám si [[kávu|káva|acc|object]], prosím.",
         "en": "Hello. I'll have a coffee, please.",
         "nativeReviewed": false
       },
       {
         "speaker": "Číšník",
-        "cs": "S mlékem?",
+        "cs": "S [[mlékem|mléko|ins|with-s]]?",
         "en": "With milk?",
         "nativeReviewed": false
       },
       {
         "speaker": "Zákazník",
-        "cs": "Ano, s mlékem. A ještě vodu.",
+        "cs": "Ano, s [[mlékem|mléko|ins|with-s]]. A ještě [[vodu|voda|acc|object]].",
         "en": "Yes, with milk. And some water too.",
         "nativeReviewed": false
       },
@@ -112,7 +112,7 @@
     {
       "id": "u02-l01-e1",
       "type": "fillEnding",
-      "prompt": "Dám si káv___, prosím.",
+      "prompt": "Dám si [[káv___|káva|acc|object]], prosím.",
       "base": "káva",
       "en": "I'll have a coffee, please.",
       "answers": [
@@ -179,7 +179,7 @@
       "type": "conjugate",
       "verb": "dát",
       "person": "1sg",
-      "prompt": "(já) ___ si kávu.",
+      "prompt": "(já) ___ si [[kávu|káva|acc|object]].",
       "en": "I'll have a coffee.",
       "answers": [
         "dám"

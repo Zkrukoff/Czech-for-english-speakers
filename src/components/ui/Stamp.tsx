@@ -24,7 +24,7 @@ export function Stamp({
       role="img"
       aria-label={[top, main, bottom].filter(Boolean).join(', ')}
       className={`${animate && !reduced ? 'animate-punch' : ''} ${className}`}
-      style={{ color: colour, transform: 'rotate(-8deg)', mixBlendMode: 'multiply' }}
+      style={{ color: colour, transform: 'rotate(-8deg)', mixBlendMode: 'var(--stamp-blend)' as React.CSSProperties['mixBlendMode'] }}
     >
       <defs>
         <path id={`${id}-t`} d="M20 60a40 40 0 0 1 80 0" />
@@ -32,12 +32,12 @@ export function Stamp({
         {/* Uneven ink: a speckle mask so the stamp looks pressed, not printed. */}
         <filter id={`${id}-ink`}>
           <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" />
-          <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 1.6" />
+          <feColorMatrix values={`0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 ${size < 96 ? '-0.9 1.45' : '-1.6 1.55'}`} />
           <feComposite in="SourceGraphic" operator="in" />
         </filter>
       </defs>
       <g fill="none" stroke="currentColor" filter={`url(#${id}-ink)`}>
-        <circle cx="60" cy="60" r="54" strokeWidth="4" />
+        <circle cx="60" cy="60" r="54" strokeWidth={size < 96 ? 6 : 4} />
         <circle cx="60" cy="60" r="47" strokeWidth="1.5" />
         <g fill="currentColor" stroke="none" fontFamily="var(--font-mono)" fontWeight="700">
           <text fontSize="11" letterSpacing="2.5" textAnchor="middle">
@@ -48,7 +48,7 @@ export function Stamp({
               <textPath href={`#${id}-b`} startOffset="50%">{bottom}</textPath>
             </text>
           )}
-          <text x="60" y="67" fontSize={main.length > 8 ? 13 : 18} textAnchor="middle" letterSpacing="1">{main}</text>
+          <text x="60" y="67" fontSize={main.length > 8 ? 13 : size < 96 ? 24 : 18} textAnchor="middle" letterSpacing="1">{main}</text>
         </g>
       </g>
     </svg>

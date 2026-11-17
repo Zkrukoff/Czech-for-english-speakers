@@ -618,6 +618,7 @@ export type Phrase = z.infer<typeof PhraseSchema>;
 export type GuideData = z.infer<typeof GuideSchema>;
 export type TimelineEvent = z.infer<typeof TimelineEventSchema>;
 export type Noun = z.infer<typeof NounSchema>;
+export type Gender = z.infer<typeof GenderSchema>;
 export type Mission = z.infer<typeof MissionSchema>;
 export type NamedaysData = z.infer<typeof NamedaysSchema>;
 export type AudioManifest = z.infer<typeof AudioManifestSchema>;

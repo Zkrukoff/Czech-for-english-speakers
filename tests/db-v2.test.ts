@@ -168,7 +168,8 @@ describe('pattern and function review cards', () => {
     expect(errors).toEqual([]);
     const ex = course.exercisesById.get('lens-1')!.exercise;
     expect(lensKeys(ex, course.lexicon).sort()).toEqual(['fn:object', 'pattern:stroj:acc.sg']);
-    expect(course.exercisesByLensKey.get('fn:object')).toEqual(['lens-1', 'lens-2']);
+    expect(course.exercisesByLensKey.get('fn:object')!.slice(0, 2)).toEqual(['lens-1', 'lens-2']);
+    expect(course.exercisesByLensKey.get('fn:object')).toContain('u02-l01-e1');
 
     const db = new PrazakDB(fresh());
     await scheduleExerciseAnswer(ex, 'incorrect', { database: db }, [{ key: 'fn:object', skill: 'case:accusative' }]);

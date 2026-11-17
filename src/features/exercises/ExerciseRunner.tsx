@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Card } from '@/components/ui';
 import type { Exercise } from '@/content/schema';
 import { checkAnswer, type CheckResult } from '@/lib/answers/check';
 import { recordAttempt, type AttemptContext } from '@/db/progress';
@@ -75,20 +76,27 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
     setResult(null);
   }
 
-  const remaining = queue.length - index;
   return (
     <div className="space-y-5">
-      <div className="flex items-center justify-between text-sm text-ink-3">
-        <span>
-          {index + 1} of {queue.length}
-          {!item.firstTry && <span className="ml-2 rounded-full bg-paper-3 px-2 py-0.5 text-xs text-ink-2">another try</span>}
+      <div className="flex items-center gap-4">
+        <span className="label-board shrink-0 text-ink-3">
+          {index + 1} / {queue.length}
+          {!item.firstTry && <span className="ml-2 text-ink-2">· znovu</span>}
         </span>
-        <div className="h-1.5 w-40 overflow-hidden rounded-full bg-paper-3" aria-hidden>
-          <div className="h-full bg-ink transition-all" style={{ width: `${((queue.length - remaining) / queue.length) * 100}%` }} />
-        </div>
+        {/* Progress as stops on a line: passed stops filled, the current one ringed. */}
+        <ol className="relative flex h-4 flex-1 items-center justify-between" aria-hidden>
+          <span className="absolute inset-x-0 top-1/2 h-1 -translate-y-1/2 bg-paper-3" />
+          <span className="absolute left-0 top-1/2 h-1 -translate-y-1/2 bg-ink transition-[width] duration-200" style={{ width: `${(index / Math.max(1, queue.length - 1)) * 100}%` }} />
+          {queue.length <= 14 && queue.map((_, i) => (
+            <li
+              key={i}
+              className={`relative h-3 w-3 rounded-full border-2 border-ink ${i < index ? 'bg-ink' : i === index ? 'h-4 w-4 bg-line-b' : 'bg-surface'}`}
+            />
+          ))}
+        </ol>
       </div>
-
-      <div key={`${exercise.id}-${index}`} className="rounded-xl border border-rule bg-surface p-5 shadow-offset-sm">
+      <Card key={`${exercise.id}-${index}`} corner="tr" className="block" >
+        <div className="p-5 sm:p-6">
         <ExercisePrompt exercise={exercise} />
         <div className="mt-5">
           {exercise.type === 'caseSelect' ? (
@@ -135,7 +143,8 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
             />
           )}
         </div>
-      </div>
+        </div>
+      </Card>
 
       {result && <FeedbackPanel exercise={exercise} result={result} answer={answer} />}
 

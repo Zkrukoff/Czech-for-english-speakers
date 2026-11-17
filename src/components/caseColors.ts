@@ -20,3 +20,14 @@ export const CASE_BG: Record<CaseKey, string> = {
   loc: 'bg-case-6',
   ins: 'bg-case-7',
 };
+
+/** Underline colour per case, for lens-annotated endings. */
+export const CASE_DECOR: Record<CaseKey, string> = {
+  nom: 'decoration-case-1',
+  gen: 'decoration-case-2',
+  dat: 'decoration-case-3',
+  acc: 'decoration-case-4',
+  voc: 'decoration-case-5',
+  loc: 'decoration-case-6',
+  ins: 'decoration-case-7',
+};

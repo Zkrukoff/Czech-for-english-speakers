@@ -528,6 +528,8 @@ export function loadContent(files: ContentFiles): LoadResult {
           errors.push(`${where}: ${seg.raw}: lemma "${seg.lemma}" is not in content/lexicon/nouns.json`);
           continue;
         }
+        // A word with a blank ("káv___") is checked per accepted answer in the exercise checks below.
+        if (seg.form.includes('___')) continue;
         const cells = cellsOf(entry.paradigm, seg.form).filter((c) => c.startsWith(seg.case) && (!seg.number || c.endsWith(seg.number)));
         if (cells.length === 0) {
           const expected = (['sg', 'pl'] as const)
@@ -582,6 +584,19 @@ export function loadContent(files: ContentFiles): LoadResult {
       for (const a of exercise.answers) if (!opts.includes(a)) errors.push(`${where}, exercise ${exId}: answer "${a}" is not one of the ${label}`);
     };
     if (exercise.type === 'chooseEnding') mustBeOptions(exercise.options, 'options');
+    // A lens word around the blank must be the right case of its lemma for every accepted ending.
+    if (exercise.type === 'fillEnding' || exercise.type === 'chooseEnding') {
+      for (const seg of parseLens(exercise.prompt).segments) {
+        if (seg.type !== 'lens' || !seg.form.includes('___')) continue;
+        const entry = course.lexicon.get(seg.lemma);
+        if (!entry) continue;
+        for (const ending of expandPatterns(exercise.answers)) {
+          const form = seg.form.replace('___', ending);
+          const ok = cellsOf(entry.paradigm, form).some((c) => c.startsWith(seg.case) && (!seg.number || c.endsWith(seg.number)));
+          if (!ok) (entry.noun.uncertain ? warnings : errors).push(`${where}, exercise ${exId}: ${seg.raw} with answer "${ending}" gives "${form}", which is not the ${seg.case} of "${seg.lemma}"`);
+        }
+      }
+    }
     if (exercise.type === 'minimalPair') mustBeOptions(exercise.pair, 'pair');
     if (exercise.type === 'aspectChoice') {
       mustBeOptions(exercise.options, 'options');

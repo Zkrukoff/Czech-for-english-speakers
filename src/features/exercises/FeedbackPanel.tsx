@@ -5,6 +5,34 @@ import type { Exercise } from '@/content/schema';
 import { course } from '@/content';
 import { SpeakButton } from '@/components/SpeakButton';
 import { IconExternal } from '@/components/icons';
+import { Stamp } from '@/components/ui';
+import { parseLens } from '@/lib/lens';
+import { lensInfo, type LensToken } from '@/features/lens/lensInfo';
+import { LensExplanation } from '@/features/lens/LensExplanation';
+
+/** Types whose answer is one word, where the wrong part can be pinpointed. */
+const ONE_WORD = new Set<Exercise['type']>(['fillEnding', 'chooseEnding', 'conjugate', 'aspectChoice']);
+
+/** The common start of two words and where they part, e.g. kávu / káva → ["káv", "a", "u"]. */
+export function wordDiff(given: string, expected: string): [string, string, string] {
+  let i = 0;
+  const g = given.toLocaleLowerCase('cs');
+  const e = expected.toLocaleLowerCase('cs');
+  while (i < g.length && i < e.length && g[i] === e[i]) i++;
+  return [expected.slice(0, i), given.slice(i), expected.slice(i)];
+}
+
+/** The lens word that contains the blank, if the prompt is annotated. */
+function blankToken(exercise: Exercise): LensToken | undefined {
+  if (!('prompt' in exercise)) return undefined;
+  return parseLens(exercise.prompt).segments.find((s): s is LensToken => s.type === 'lens' && s.form.includes('___'));
+}
+
+/** Where the answer goes in a fill-in prompt: the letters before the blank. */
+function stemOf(exercise: Exercise): string {
+  if (exercise.type !== 'fillEnding' && exercise.type !== 'chooseEnding') return '';
+  return /(\p{L}+)___/u.exec(lensPlain(exercise.prompt))?.[1] ?? '';
+}
 
 function DiffText({ result }: { result: CheckResult }) {
   if (!result.diff) return <>{result.expected}</>;
@@ -52,20 +80,30 @@ export function FeedbackPanel({ exercise, result, answer }: { exercise: Exercise
       ? lensPlain(exercise.prompt).replace(/\p{L}*___/u, result.expected)
       : result.expected;
 
-  const tone =
-    result.status === 'correct'
-      ? 'border-ink bg-paper-2'
-      : result.status === 'diacritics'
-        ? 'border-champagne bg-champagne-tint'
-        : 'border-ink bg-paper-2';
+  const token = blankToken(exercise);
+  const lens = token ? lensInfo({ ...token, form: token.form.replace('___', result.expected.slice(stemOf(exercise).length)) }) : undefined;
+  const stem = stemOf(exercise);
+  const givenWord = stem && !answer.toLocaleLowerCase('cs').startsWith(stem.toLocaleLowerCase('cs')) ? stem + answer : answer;
+  const [same, wrongPart, rightPart] = wordDiff(givenWord.trim(), result.expected);
+  const pinpoint = ONE_WORD.has(exercise.type) && !result.diacriticsOnly && givenWord.trim() !== '';
 
   return (
-    <div role="status" aria-live="polite" className={`rounded-xl border p-4 ${tone}`}>
-      {result.status === 'correct' && <p className="font-semibold text-ink">Correct.</p>}
+    <div role="status" aria-live="polite" className={`relative rounded-md border-2 border-ink p-4 shadow-offset-sm ${result.status === 'diacritics' ? 'bg-champagne-tint' : 'bg-surface'}`}>
+      {result.status === 'correct' && (
+        <div className="flex items-center gap-4">
+          <Stamp top="PRAŽÁK" main="OK" bottom="SPRÁVNĚ" size={72} className="-my-2 shrink-0" />
+          <div>
+            <p className="font-display text-xl font-extrabold" lang="cs">Správně.</p>
+            {czech && exercise.type !== 'speak' && (
+              <p className="flex items-center gap-1 text-lg" lang="cs">{result.expected} <SpeakButton text={speakText} /></p>
+            )}
+          </div>
+        </div>
+      )}
       {result.status === 'diacritics' && (
         <>
           <p className="font-semibold text-ink">Accepted, but check the diacritics.</p>
-          <p className="mt-2 text-lg">
+          <p className="mt-2 text-lg" lang="cs">
             <DiffText result={result} />
           </p>
           <p className="mt-1 text-sm text-ink">The highlighted letters were missing or wrong in your answer.</p>
@@ -73,28 +111,59 @@ export function FeedbackPanel({ exercise, result, answer }: { exercise: Exercise
       )}
       {result.status === 'incorrect' && (
         <>
-          <p className="font-semibold text-ink">{result.diacriticsOnly ? 'Not quite: the diacritics are different.' : 'Not quite.'}</p>
-          {answer.trim() && (
-            <p className="mt-2 text-sm text-ink-2">
-              You wrote: <span className="text-ink line-through decoration-ink">{answer}</span>
-            </p>
-          )}
-          <p className="mt-1 flex items-center gap-1 text-lg">
-            <span className="text-sm text-ink-2">Answer:</span>{' '}
-            <span className="font-medium">{exercise.type === 'caseSelect' ? <span className="capitalize">{result.expected}</span> : <DiffText result={result} />}</span>
-            {czech && <SpeakButton text={speakText} />}
+          <p className="font-display text-xl font-extrabold">
+            {exercise.type === 'speak' ? <span lang="cs">Ještě jednou.</span> : result.diacriticsOnly ? 'Close: only the diacritics differ.' : 'Not quite.'}
           </p>
+          {exercise.type !== 'speak' && (
+            <dl className="mt-2 grid grid-cols-[auto_1fr] items-baseline gap-x-3 gap-y-1">
+              {answer.trim() && (
+                <>
+                  <dt className="label-board text-ink-3">You</dt>
+                  <dd className="text-lg" lang={czech ? 'cs' : 'en'}>
+                    {pinpoint ? (
+                      <>
+                        {same}
+                        <span className="underline decoration-ink decoration-wavy decoration-2 underline-offset-4">{wrongPart || '∅'}</span>
+                        <span className="sr-only"> (this part is wrong)</span>
+                      </>
+                    ) : (
+                      <span className="line-through decoration-ink decoration-2">{answer}</span>
+                    )}
+                  </dd>
+                </>
+              )}
+              <dt className="label-board text-ink-3">Right</dt>
+              <dd className="flex items-center gap-1 text-lg font-semibold" lang={czech ? 'cs' : 'en'}>
+                {exercise.type === 'caseSelect' ? (
+                  <span className="capitalize">{result.expected}</span>
+                ) : pinpoint ? (
+                  <span>
+                    {same}
+                    <span className="text-vltava underline decoration-2 underline-offset-4">{rightPart}</span>
+                  </span>
+                ) : (
+                  <DiffText result={result} />
+                )}
+                {czech && <SpeakButton text={speakText} />}
+              </dd>
+            </dl>
+          )}
         </>
+      )}
+      {lens && result.status !== 'correct' && (
+        <div className="mt-4 border-t-2 border-dashed border-rule pt-3">
+          <LensExplanation info={lens} compact />
+        </div>
       )}
       {result.explanation && result.status !== 'correct' && (
         <p className="mt-3 border-t border-rule pt-3 text-ink">
-          <span className="font-medium">Why: </span>
+          <span className="font-semibold">{lens ? 'In short: ' : 'Why: '}</span>
           {result.explanation}
         </p>
       )}
       {result.status !== 'correct' && pageHref && (
-        <Link to={pageHref} target="_blank" className="mt-2 inline-block text-sm text-vltava underline">
-          Open the {pageTitle} page <IconExternal size={14} className="inline-block align-[-2px]" />
+        <Link to={pageHref} target="_blank" className="mt-2 inline-flex items-center gap-1 text-sm text-vltava underline">
+          Open the {pageTitle} page <IconExternal size={14} />
         </Link>
       )}
     </div>

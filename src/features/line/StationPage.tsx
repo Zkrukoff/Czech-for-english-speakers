@@ -1,8 +1,8 @@
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { course } from '@/content';
 import { NotFound } from '@/components/NotFound';
-import { PageHeader } from '@/components/PageHeader';
-import { EnamelPlate, LineBadge, TileGrid } from '@/components/ui';
+import { EnamelPlate } from '@/components/ui';
+import { StationHeader } from './StationHeader';
 import { UnitPage } from '@/features/lessons/UnitPage';
 import { stationPath } from '@/lib/paths';
 
@@ -22,20 +22,7 @@ export function StationPage() {
   const info = stop.stationInfo;
   return (
     <>
-      <PageHeader
-        eyebrow={`Linka ${stop.line} · ${lineData.levels.join('–')} · station ${stop.position} of ${lineData.stops.length}`}
-        title={info.name}
-        subtitle={info.aboveGround}
-      />
-      <div className="mb-8 flex flex-wrap items-center gap-3">
-        <LineBadge line={stop.line} />
-        {stop.transfers.map((t) => (
-          <span key={t} className="chip">
-            Přestup · change to <LineBadge line={t} size={24} />
-          </span>
-        ))}
-      </div>
-      <TileGrid tone={`var(--tile-${info.tile})`} cols={8} rows={2} size={32} className="mb-8 w-full border-2 border-ink" />
+      <StationHeader stop={stop} />
       {stop.kind === 'pronunciation' && (
         <section className="card p-6">
           <EnamelPlate tone="blue">Výslovnost · pronunciation</EnamelPlate>

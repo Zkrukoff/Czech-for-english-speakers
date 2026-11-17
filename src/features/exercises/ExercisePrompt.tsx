@@ -8,17 +8,17 @@ import { PERSON_LABELS } from '@/lib/verbs';
 import { SpeakButton } from '@/components/SpeakButton';
 
 /** Render "**word**" as bold and "___" as a visible blank. */
+/** A Czech prompt: lens words, **bold** for the word in question, ___ for the blank. */
 export function InlineCzech({ text }: { text: string }) {
-  const parts = text.split(/(\*\*[^*]+\*\*|___)/g);
-  return (
-    <>
-      {parts.map((p, i): ReactNode => {
-        if (p === '___') return <span key={i} className="mx-0.5 inline-block w-12 border-b-2 border-vltava align-baseline" aria-label="blank" />;
-        if (p.startsWith('**')) return <strong key={i} className="rounded bg-vltava-tint px-1 text-vltava">{p.slice(2, -2)}</strong>;
-        return <span key={i}><CzechText text={p} /></span>;
-      })}
-    </>
-  );
+  return <CzechText text={text} renderText={renderPromptText} />;
+}
+
+function renderPromptText(text: string): ReactNode {
+  return text.split(/(\*\*[^*]+\*\*|___)/g).map((p, i): ReactNode => {
+    if (p === '___') return <span key={i} className="mx-0.5 inline-block w-12 border-b-2 border-vltava align-baseline" aria-label="blank" />;
+    if (p.startsWith('**')) return <strong key={i} className="rounded-sm bg-vltava-tint px-1 text-vltava">{p.slice(2, -2)}</strong>;
+    return <span key={i}>{p}</span>;
+  });
 }
 
 const TYPE_LABEL: Record<Exercise['type'], string> = {

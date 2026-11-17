@@ -5,10 +5,10 @@ export function SpokenFormNote({ spoken }: { spoken: { form: string; note?: stri
   const { showSpokenForms } = useSettings();
   if (!showSpokenForms) return null;
   return (
-    <div className="inline-flex max-w-2xl gap-2 rounded-lg border border-champagne bg-champagne-tint px-3 py-2 text-sm text-ink">
-      <span className="font-medium">Spoken:</span>
+    <div className="inline-flex max-w-2xl flex-wrap gap-x-2 rounded-sm border-l-4 border-champagne bg-champagne-tint px-3 py-2 text-sm text-ink">
+      <span className="label-board text-ink-2" title="How Pražáci actually say it">Jak to říkají Pražáci</span>
       <span>
-        <b>{spoken.form}</b>
+        <b lang="cs">{spoken.form}</b>
         {spoken.note && <> · {spoken.note}</>}
       </span>
     </div>

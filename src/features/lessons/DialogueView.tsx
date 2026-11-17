@@ -1,3 +1,4 @@
+import { lensPlain } from '@/lib/lens';
 import { CzechText } from '@/components/CzechText';
 import { useState } from 'react';
 import type { Dialogue } from '@/content/schema';
@@ -15,7 +16,7 @@ export function DialogueView({ dialogue }: { dialogue: Dialogue }) {
   async function playAll() {
     setPlaying(true);
     for (const l of dialogue.lines) {
-      await speech.speak(l.cs, { audioId: l.audio, rate: settings.speechRate, voiceURI: settings.voiceURI });
+      await speech.speak(lensPlain(l.cs), { audioId: l.audio, rate: settings.speechRate, voiceURI: settings.voiceURI });
     }
     setPlaying(false);
   }
@@ -25,7 +26,7 @@ export function DialogueView({ dialogue }: { dialogue: Dialogue }) {
       {dialogue.setting && <p className="mb-4 italic text-ink-2">{dialogue.setting}</p>}
       <div className="mb-4 flex flex-wrap items-center gap-4 text-sm">
         <label className="flex items-center gap-2">
-          <input type="checkbox" checked={showEn} onChange={(e) => setShowEn(e.target.checked)} />
+          <input type="checkbox" className="h-5 w-5 accent-ink" checked={showEn} onChange={(e) => setShowEn(e.target.checked)} />
           Show English
         </label>
         <button type="button" onClick={playing ? () => { speech.stop(); setPlaying(false); } : playAll} className="btn btn-secondary">
@@ -37,8 +38,8 @@ export function DialogueView({ dialogue }: { dialogue: Dialogue }) {
           const right = speakers.indexOf(l.speaker) % 2 === 1;
           return (
             <li key={i} className={`flex ${right ? 'justify-end' : ''}`}>
-              <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${right ? 'rounded-tr-sm bg-vltava-tint' : 'rounded-tl-sm bg-surface border border-rule'}`}>
-                <div className="text-xs font-medium text-ink-3">{l.speaker}</div>
+              <div className={`max-w-[85%] rounded-md border-2 border-ink px-4 py-2.5 shadow-offset-sm ${right ? 'rounded-tr-none bg-vltava-tint' : 'rounded-tl-none bg-surface'}`}>
+                <div className="label-board text-ink-3">{l.speaker}</div>
                 <div className="flex items-start gap-1 text-lg" lang="cs">
                   <span><CzechText text={l.cs} /></span>
                   <SpeakButton text={l.cs} audioId={l.audio} />

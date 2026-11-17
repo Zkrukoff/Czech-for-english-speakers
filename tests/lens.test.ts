@@ -118,3 +118,19 @@ describe('content validation', () => {
     expect(result.errors.filter((e) => e.startsWith('lexicon'))).toEqual([]);
   });
 });
+
+describe('lens words around a blank', () => {
+  const withPrompt = (prompt: string, answers: string[]) => {
+    const json = structuredClone(contentFiles.json) as Record<string, any>;
+    const path = Object.keys(json).find((p) => p.endsWith('lesson.json'))!;
+    json[path].exercises.push({ id: 'blank-1', type: 'fillEnding', prompt, answers, why: 'w', hints: [], skills: ['case:accusative'], nativeReviewed: false });
+    return loadContent({ ...contentFiles, json });
+  };
+  it('checks every accepted ending in place', () => {
+    expect(withPrompt('Dám si [[káv___|káva|acc|object]].', ['u']).errors).toEqual([]);
+    expect(withPrompt('Dám si [[káv___|káva|acc|object]].', ['ě']).errors.join()).toMatch(/gives "kávě", which is not the acc/);
+  });
+  it('the model lesson (u02-l01) is annotated and valid', () => {
+    expect(course.lensKeysByExercise.get('u02-l01-e1')).toEqual(['fn:object', 'pattern:zena:acc.sg']);
+  });
+});
