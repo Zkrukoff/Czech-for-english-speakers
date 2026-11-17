@@ -3,6 +3,7 @@ import type { CheckResult } from '@/lib/answers/check';
 import type { Exercise } from '@/content/schema';
 import { course } from '@/content';
 import { SpeakButton } from '@/components/SpeakButton';
+import { IconExternal } from '@/components/icons';
 
 function DiffText({ result }: { result: CheckResult }) {
   if (!result.diff) return <>{result.expected}</>;
@@ -10,7 +11,7 @@ function DiffText({ result }: { result: CheckResult }) {
     <>
       {result.diff.map((d, i) =>
         d.wrong ? (
-          <mark key={i} className="rounded-sm bg-amber-200 px-0.5 font-semibold text-amber-950 underline decoration-2">{d.ch}</mark>
+          <mark key={i} className="rounded-sm bg-champagne px-0.5 font-semibold text-ink underline decoration-2">{d.ch}</mark>
         ) : (
           <span key={i}>{d.ch}</span>
         ),
@@ -49,47 +50,47 @@ export function FeedbackPanel({ exercise, result, answer }: { exercise: Exercise
 
   const tone =
     result.status === 'correct'
-      ? 'border-emerald-300 bg-emerald-50'
+      ? 'border-ink bg-paper-2'
       : result.status === 'diacritics'
-        ? 'border-amber-300 bg-amber-50'
-        : 'border-rose-300 bg-rose-50';
+        ? 'border-champagne bg-champagne-tint'
+        : 'border-ink bg-paper-2';
 
   return (
     <div role="status" aria-live="polite" className={`rounded-xl border p-4 ${tone}`}>
-      {result.status === 'correct' && <p className="font-semibold text-emerald-900">Correct.</p>}
+      {result.status === 'correct' && <p className="font-semibold text-ink">Correct.</p>}
       {result.status === 'diacritics' && (
         <>
-          <p className="font-semibold text-amber-900">Accepted, but check the diacritics.</p>
+          <p className="font-semibold text-ink">Accepted, but check the diacritics.</p>
           <p className="mt-2 text-lg">
             <DiffText result={result} />
           </p>
-          <p className="mt-1 text-sm text-amber-900">The highlighted letters were missing or wrong in your answer.</p>
+          <p className="mt-1 text-sm text-ink">The highlighted letters were missing or wrong in your answer.</p>
         </>
       )}
       {result.status === 'incorrect' && (
         <>
-          <p className="font-semibold text-rose-900">{result.diacriticsOnly ? 'Not quite: the diacritics are different.' : 'Not quite.'}</p>
+          <p className="font-semibold text-ink">{result.diacriticsOnly ? 'Not quite: the diacritics are different.' : 'Not quite.'}</p>
           {answer.trim() && (
-            <p className="mt-2 text-sm text-stone-600">
-              You wrote: <span className="text-stone-900 line-through decoration-rose-400">{answer}</span>
+            <p className="mt-2 text-sm text-ink-2">
+              You wrote: <span className="text-ink line-through decoration-ink">{answer}</span>
             </p>
           )}
           <p className="mt-1 flex items-center gap-1 text-lg">
-            <span className="text-sm text-stone-600">Answer:</span>{' '}
+            <span className="text-sm text-ink-2">Answer:</span>{' '}
             <span className="font-medium">{exercise.type === 'caseSelect' ? <span className="capitalize">{result.expected}</span> : <DiffText result={result} />}</span>
             {czech && <SpeakButton text={speakText} />}
           </p>
         </>
       )}
       {result.explanation && result.status !== 'correct' && (
-        <p className="mt-3 border-t border-black/10 pt-3 text-stone-800">
+        <p className="mt-3 border-t border-rule pt-3 text-ink">
           <span className="font-medium">Why: </span>
           {result.explanation}
         </p>
       )}
       {result.status !== 'correct' && pageHref && (
         <Link to={pageHref} target="_blank" className="mt-2 inline-block text-sm text-vltava underline">
-          Open the {pageTitle} page ↗
+          Open the {pageTitle} page <IconExternal size={14} className="inline-block align-[-2px]" />
         </Link>
       )}
     </div>

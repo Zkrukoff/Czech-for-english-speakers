@@ -21,7 +21,7 @@ export function DialogueView({ dialogue }: { dialogue: Dialogue }) {
 
   return (
     <div>
-      {dialogue.setting && <p className="mb-4 italic text-stone-600">{dialogue.setting}</p>}
+      {dialogue.setting && <p className="mb-4 italic text-ink-2">{dialogue.setting}</p>}
       <div className="mb-4 flex flex-wrap items-center gap-4 text-sm">
         <label className="flex items-center gap-2">
           <input type="checkbox" checked={showEn} onChange={(e) => setShowEn(e.target.checked)} />
@@ -36,13 +36,13 @@ export function DialogueView({ dialogue }: { dialogue: Dialogue }) {
           const right = speakers.indexOf(l.speaker) % 2 === 1;
           return (
             <li key={i} className={`flex ${right ? 'justify-end' : ''}`}>
-              <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${right ? 'rounded-tr-sm bg-sky-50' : 'rounded-tl-sm bg-white border border-stone-200'}`}>
-                <div className="text-xs font-medium text-stone-500">{l.speaker}</div>
+              <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${right ? 'rounded-tr-sm bg-vltava-tint' : 'rounded-tl-sm bg-surface border border-rule'}`}>
+                <div className="text-xs font-medium text-ink-3">{l.speaker}</div>
                 <div className="flex items-start gap-1 text-lg" lang="cs">
                   <span>{l.cs}</span>
                   <SpeakButton text={l.cs} audioId={l.audio} />
                 </div>
-                {showEn && <div className="text-sm text-stone-600">{l.en}</div>}
+                {showEn && <div className="text-sm text-ink-2">{l.en}</div>}
                 {l.spoken && <div className="mt-2"><SpokenFormNote spoken={l.spoken} /></div>}
               </div>
             </li>

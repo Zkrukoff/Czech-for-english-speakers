@@ -1,138 +1,222 @@
-/* Design rules live in docs/DESIGN.md. Keep this file in line with it. */
-@import "@fontsource-variable/inter";
-@import "@fontsource-variable/bricolage-grotesque";
-@import "@fontsource-variable/source-serif-4";
-@import "@fontsource-variable/source-serif-4/opsz-italic.css";
+/* Pražák. Design rules: docs/DESIGN.md. Raw values: src/styles/tokens.css only. */
+@import "./styles/fonts.css";
+@import "./styles/tokens.css";
 @import "tailwindcss";
-@import "./styles/dark-palette.css";
+@import "./styles/texture.css";
 
-@theme {
-  /* Three voices: the interface in a sans, Czech (what you're learning) in a
-     serif, and the expressive frame (headings, numbers, wordmark) in a display face. */
-  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-serif: "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
-  --font-display: "Bricolage Grotesque Variable", "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+/*
+ * Tailwind is limited to our tokens: the default colour palette and fonts are
+ * switched off, so a stray `bg-stone-100` produces nothing (and
+ * tests/no-hex.test.ts also rejects default palette class names).
+ * `inline` makes utilities reference the CSS variables, so dark mode switches
+ * by changing variables only.
+ */
+@theme inline {
+  --color-*: initial;
+  --font-*: initial;
+  --shadow-*: initial;
 
-  /* Prague palette, for the frame and wayfinding only, never grammar: the
-     metro line colours, the Vltava, tram cream and a warm paper. */
-  --color-metro-a: #1a9b4b;
-  --color-metro-b: #f2b200;
-  --color-metro-c: #d6213a;
-  --color-vltava: #1f63c6;
-  --color-cream: #f6f0e4;
-  --color-paper: #faf7f0;
-  --color-ink: #17130f;
-  /* Always dark, in both themes: the departure-board and terminus panels. */
-  --color-night: #17130f;
-  --color-night-text: #faf7f0;
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-paper-3: var(--paper-3);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-line-a: var(--line-a);
+  --color-line-a-deep: var(--line-a-deep);
+  --color-line-b: var(--line-b);
+  --color-line-c: var(--line-c);
+  --color-line-c-deep: var(--line-c-deep);
+  --color-vltava: var(--vltava);
+  --color-vltava-tint: var(--vltava-tint);
+  --color-champagne: var(--champagne);
+  --color-champagne-tint: var(--champagne-tint);
+  --color-on-fill-dark: var(--on-fill-dark);
+  --color-on-fill-light: var(--on-fill-light);
+  --color-board: var(--board);
+  --color-plate-red: var(--plate-red);
+  --color-plate-blue: var(--plate-blue);
+  --color-case-1: var(--case-1);
+  --color-case-2: var(--case-2);
+  --color-case-3: var(--case-3);
+  --color-case-4: var(--case-4);
+  --color-case-5: var(--case-5);
+  --color-case-6: var(--case-6);
+  --color-case-7: var(--case-7);
+  --color-transparent: transparent;
+  --color-current: currentColor;
 
-  /* Colour carries grammar: one colour per case, used everywhere endings are shown. */
-  --color-case-nom: #57534e;
-  --color-case-gen: #b45309;
-  --color-case-dat: #7c3aed;
-  --color-case-acc: #be123c;
-  --color-case-voc: #0f766e;
-  --color-case-loc: #1d4ed8;
-  --color-case-ins: #15803d;
+  --font-display: var(--font-display);
+  --font-ui: var(--font-ui);
+  --font-mono: var(--font-mono);
+  --font-read: var(--font-read);
 
-  --animate-rise: rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --text-xs: var(--step--1);
+  --text-sm: var(--step-sm);
+  --text-base: var(--step-0);
+  --text-lg: var(--step-1);
+  --text-xl: var(--step-2);
+  --text-2xl: var(--step-3);
+  --text-3xl: var(--step-4);
+  --text-4xl: var(--step-5);
+  --text-5xl: var(--step-6);
+  --text-6xl: var(--step-7);
+  --text-7xl: var(--step-8);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-lg);
+  --radius-2xl: var(--radius-lg);
+
+  --shadow-offset: var(--shadow-offset);
+  --shadow-offset-sm: var(--shadow-offset-sm);
+
+  --animate-rise: rise var(--dur-max) var(--ease-mech) both;
+  --animate-punch: punch var(--dur-max) var(--ease-mech) both;
   @keyframes rise {
-    from { opacity: 0; transform: translateY(12px); }
+    from { opacity: 0; transform: translateY(6px); }
     to { opacity: 1; transform: none; }
   }
+  @keyframes punch {
+    0% { transform: scale(1.35) rotate(-14deg); opacity: 0; }
+    60% { transform: scale(0.94) rotate(-7deg); opacity: 1; }
+    100% { transform: scale(1) rotate(-8deg); opacity: 1; }
+  }
+}
+
+/* Departure-board label: Azeret Mono, uppercase, letter-spaced. */
+@utility label-board {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
 }
 
 @layer base {
   html {
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
+    font-family: var(--font-ui);
+    font-size: 100%;
   }
   body {
-    @apply bg-paper font-sans text-stone-900 antialiased;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.5;
+    font-feature-settings: "kern", "liga", "calt";
+    -webkit-font-smoothing: antialiased;
   }
-  h1, h2 {
+  @media (min-width: 768px) {
+    body { font-size: 1.0625rem; }   /* 17px body from tablet up */
+  }
+  h1, h2, h3 {
     font-family: var(--font-display);
-    font-variation-settings: "wdth" 92;
+    font-variation-settings: "opsz" 96, "wdth" 88;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
   }
-  /* Anything marked lang="cs" is set in the serif, so Czech always stands out from the interface. */
-  :lang(cs) {
-    font-family: var(--font-serif);
-    font-optical-sizing: auto;
-    font-variation-settings: normal;
-  }
+  h3 { font-variation-settings: "opsz" 24, "wdth" 92; line-height: 1.15; letter-spacing: -0.01em; }
+  /* Czech is marked lang="cs" for screen readers and hyphenation; it is set in
+     the UI face, in full ink (docs/DESIGN.md, decision D10). */
+  :lang(cs) { hyphens: manual; }
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-vltava;
+    outline: 3px solid var(--vltava);
+    outline-offset: 2px;
   }
-  ::selection {
-    @apply bg-metro-b text-ink;
-  }
+  ::selection { background: var(--line-b); color: var(--on-fill-dark); }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       transition-duration: 0.01ms !important;
       animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
       scroll-behavior: auto !important;
     }
   }
 }
 
 @layer components {
-  /* Buttons: one primary action per screen; everything else is secondary. */
+  /* Buttons: flat colour, ink border, solid offset shadow; pressing pushes the button onto its shadow. */
   .btn {
-    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-40;
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md border-2 border-ink px-5 py-2 font-ui text-sm font-semibold transition-[transform,box-shadow] disabled:cursor-not-allowed disabled:opacity-40;
+    box-shadow: var(--shadow-offset-sm);
+    transition-duration: var(--dur-fast);
+    transition-timing-function: var(--ease-mech);
   }
-  .btn-primary {
-    @apply bg-ink text-paper shadow-[0_3px_0_0_var(--color-metro-c)] hover:-translate-y-0.5 hover:shadow-[0_5px_0_0_var(--color-metro-c)] active:translate-y-0 active:shadow-none;
-  }
-  .btn-secondary {
-    @apply border-2 border-ink/80 bg-white text-ink hover:bg-cream;
-  }
-  .btn-quiet {
-    @apply text-stone-600 hover:bg-cream hover:text-stone-900;
-  }
+  .btn:not(:disabled):hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--shadow-ink); }
+  .btn:not(:disabled):active { transform: translate(2px, 2px); box-shadow: 0 0 0 var(--shadow-ink); }
+  .btn-primary { @apply bg-ink text-paper; }
+  .btn-secondary { @apply bg-surface text-ink; }
+  .btn-quiet { @apply border-transparent bg-transparent text-ink-2 shadow-none hover:text-ink; box-shadow: none !important; }
+
+  /* Card: paper, ink hairline, solid offset shadow. Use <Card> for the clipped "cubist" corner. */
   .card {
-    @apply rounded-2xl border border-stone-200 bg-white;
+    @apply rounded-md border-2 border-ink bg-surface;
+    box-shadow: var(--shadow-offset);
   }
   .card-link {
-    @apply transition-all duration-200 hover:-translate-y-1 hover:border-stone-300 hover:shadow-[0_10px_30px_-12px_rgb(0_0_0/0.25)];
+    transition: transform var(--dur-fast) var(--ease-mech), box-shadow var(--dur-fast) var(--ease-mech);
   }
-  .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-[0.14em] text-stone-500;
-  }
-  /* A short three-colour bar: the metro lines A, B, C. */
-  .metro-stripe {
-    @apply flex h-1.5 w-24 overflow-hidden rounded-full;
-    background: linear-gradient(90deg, var(--color-metro-a) 0 33.3%, var(--color-metro-b) 33.3% 66.6%, var(--color-metro-c) 66.6% 100%);
-  }
-  /* Marker-pen highlight for one word in a big headline. */
-  /* A sticker-style highlight for one word in a big headline (dark text on yellow in both themes). */
-  .marker {
-    @apply inline-block -rotate-1 rounded-xl bg-metro-b px-2 text-night;
-  }
-  /* Departure-board panel: stays dark in both themes. */
-  .board {
-    @apply bg-night text-night-text ring-1 ring-white/10;
-  }
+  .card-link:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--shadow-ink); }
+  .card-link:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--shadow-ink); }
+
+  .eyebrow { @apply label-board text-ink-3; }
+
+  /* Board panel: always dark, in both themes. */
+  .board { background: var(--board); color: var(--on-fill-light); }
+
   .chip {
-    @apply inline-flex items-center gap-1.5 rounded-full bg-cream px-3 py-1 text-xs font-semibold text-stone-700;
+    @apply inline-flex items-center gap-1.5 rounded-sm border border-ink bg-paper-2 px-2 py-0.5 font-mono text-xs uppercase text-ink;
+    letter-spacing: 0.08em;
   }
+  .rule { @apply h-0 border-t-2 border-ink; }
+
+  /* The three line colours side by side: the whole network. (Used as a brand
+     stripe, never to mean one level.) */
+  .metro-stripe {
+    @apply flex h-1.5 w-24;
+    background: linear-gradient(90deg, var(--line-a) 0 33.3%, var(--line-b) 33.3% 66.6%, var(--line-c) 66.6% 100%);
+  }
+  /* Highlight for one word in a big headline: a yellow fill with dark text. */
+  .marker {
+    @apply inline-block -rotate-1 rounded-sm px-2;
+    background: var(--line-b);
+    color: var(--on-fill-dark);
+    box-shadow: var(--shadow-offset-sm);
+  }
+  .hairline { @apply h-0 border-t border-rule-strong; }
 }
 
-/* Prose styling for markdown explanations. Interactive embeds (.not-prose)
-   are excluded, and get the full width of the page. */
-.prose-cz { @apply leading-relaxed text-stone-800; }
+/* Prose styling for Markdown explanations. Interactive embeds (.not-prose)
+   are excluded and get the full width; only text is limited to reading width. */
+.prose-cz { @apply leading-relaxed text-ink; }
 .prose-cz > :not(.not-prose) { @apply max-w-3xl; }
-.prose-cz h2:not(.not-prose *) { @apply mt-12 mb-3 text-2xl font-bold tracking-tight text-stone-900; }
-.prose-cz h3:not(.not-prose *) { @apply mt-6 mb-2 text-lg font-semibold text-stone-900; }
+.prose-cz h2:not(.not-prose *) { @apply mt-12 mb-3 text-2xl font-bold text-ink; }
+.prose-cz h3:not(.not-prose *) { @apply mt-6 mb-2 text-lg font-bold text-ink; }
 .prose-cz p:not(.not-prose *) { @apply my-3; }
-.prose-cz ul:not(.not-prose *) { @apply my-3 list-disc pl-6; }
+.prose-cz ul:not(.not-prose *) { @apply my-3 pl-6; list-style: none; }
+.prose-cz ul:not(.not-prose *) > li { position: relative; }
+/* The háček as a bullet. */
+.prose-cz ul:not(.not-prose *) > li::before {
+  content: ''; position: absolute; left: -1.25rem; top: 0.55em; width: 0.7rem; height: 0.4rem;
+  border-left: 2.5px solid var(--ink); border-bottom: 2.5px solid var(--ink); transform: rotate(-45deg) skew(-6deg);
+  border-radius: 1px;
+}
 .prose-cz ol:not(.not-prose *) { @apply my-3 list-decimal pl-6; }
 .prose-cz li:not(.not-prose *) { @apply my-1; }
-.prose-cz strong:not(.not-prose *) { @apply font-semibold text-stone-900; }
-/* Czech examples in explanations are written in italics: give them the Czech typeface. */
-.prose-cz em:not(.not-prose *) { @apply font-serif text-[1.05em]; }
-.prose-cz blockquote:not(.not-prose *) { @apply my-5 rounded-2xl border-l-4 border-metro-b bg-cream px-5 py-3 text-stone-800; }
+.prose-cz strong:not(.not-prose *) { @apply font-bold text-ink; }
+.prose-cz em:not(.not-prose *) { @apply font-medium italic text-ink; }
+.prose-cz blockquote:not(.not-prose *) { @apply my-5 rounded-md border-2 border-ink bg-champagne-tint px-5 py-3 text-ink; }
 .prose-cz table:not(.not-prose *) { @apply my-4 w-full border-collapse text-sm; }
-.prose-cz th:not(.not-prose *) { @apply border-b-2 border-stone-300 px-3 py-2 text-left font-semibold; }
-.prose-cz td:not(.not-prose *) { @apply border-b border-stone-200 px-3 py-2; }
-.prose-cz code:not(.not-prose *) { @apply rounded bg-stone-100 px-1 py-0.5 text-sm; }
+.prose-cz th:not(.not-prose *) { @apply label-board border-b-2 border-ink px-3 py-2 text-left text-ink-2; }
+.prose-cz td:not(.not-prose *) { @apply border-b border-rule px-3 py-2; }
+.prose-cz code:not(.not-prose *) { @apply rounded-sm bg-paper-2 px-1 py-0.5 font-mono text-sm; }
 .prose-cz a:not(.not-prose *) { @apply text-vltava underline decoration-2 underline-offset-2 hover:text-ink; }
+/* Long-form guide articles use the reading face. */
+.prose-read { font-family: var(--font-read); font-size: 1.15em; line-height: 1.6; }
+.prose-read :is(h2, h3, table, th, td, code) { font-family: var(--font-display); }
+.prose-read :is(th, td) { font-family: var(--font-ui); font-size: 0.9em; }

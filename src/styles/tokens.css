@@ -1,0 +1,132 @@
+/*
+ * Pražák design tokens. The ONLY place colours, fonts and other raw values
+ * are written. Components use these through Tailwind utilities (mapped in
+ * src/index.css) or var(--…). tests/no-hex.test.ts fails if a hex value
+ * appears anywhere else in src/.
+ *
+ * Contrast rules (enforced by tests/contrast.test.ts, WCAG 2.x):
+ *  - Body text: --ink on --paper / --paper-2 / --surface.
+ *  - --line-b (yellow) and --champagne are FILLS ONLY, always with --on-fill-dark text.
+ *  - --line-a / --line-c are ~3.9:1 on paper: fills, badges and LARGE text
+ *    only (≥ 24px, or ≥ 18.66px bold). Small text uses --line-a-deep / --line-c-deep.
+ *  - Text on --line-a / --line-c fills must be large (white is only 4.4–4.6:1).
+ *  - Case colours (--case-1…7) are for text on --paper / --paper-2 / --surface,
+ *    and are always shown with the case number (1.–7. pád), never alone.
+ */
+
+:root {
+  /* ---- Base ---- */
+  --paper: #F5EFE3;          /* warm sandstone off-white: main background */
+  --paper-2: #EAE1D0;        /* darker paper: sections, cards */
+  --paper-3: #DCD1BD;        /* tracks, pressed states (not for text backgrounds of small text) */
+  --surface: #FFFCF5;        /* input fields and raised paper */
+  --ink: #1C1A17;            /* warm near-black: text, rules, offset shadows */
+  --ink-2: #4A433B;          /* secondary text (8.5:1 on paper) */
+  --ink-3: #685F54;          /* tertiary text, captions (5.5:1 on paper, 4.8:1 on paper-2) */
+  --rule: #CFC5B3;           /* hairlines (decorative, never text) */
+  --rule-strong: #A89C88;    /* stronger dividers, input borders (non-text, 3:1 on paper) */
+  --shadow-ink: #1C1A17;     /* solid offset shadows */
+
+  /* ---- Metro lines = CEFR levels (meaning: lines and levels ONLY) ---- */
+  --line-a: #0E8A50;         /* Linka A green: fills, large type, badges */
+  --line-a-deep: #0B6E40;    /* green for small text/links on paper */
+  --line-b: #F5BE18;         /* Linka B yellow: FILL ONLY, with --on-fill-dark text */
+  --line-c: #D93A2B;         /* Linka C red: fills, large type, badges */
+  --line-c-deep: #B52A1E;    /* red for small text on paper */
+
+  /* ---- Accents ---- */
+  --vltava: #1F4E63;         /* deep river blue-teal: info, links, corrections */
+  --vltava-tint: #DCE6E8;    /* background for info panels */
+  --champagne: #C8A464;      /* Line A aluminium-tile gold: stamps, rewards. Fill only */
+  --champagne-tint: #EFE3C8; /* soft champagne panels */
+
+  /* ---- Fixed colours that do NOT change in dark mode ---- */
+  --on-fill-dark: #1C1A17;   /* text on yellow, champagne and station tiles */
+  --on-fill-light: #F5EFE3;  /* text on vltava, line-c-deep, ink "board" panels */
+  --board: #1C1A17;          /* departure-board panels stay dark in both themes */
+  --plate-red: #B52A1E;      /* enamel plate, red (like the číslo popisné house plate): --on-fill-light text, 5.5:1 */
+  --plate-blue: #1F4E63;     /* enamel plate, blue (like the číslo orientační plate): --on-fill-light text, 7.9:1 */
+
+  /* ---- Case colours (case lens). Hues kept clear of the line colours; chosen so
+     every pair stays apart under protanopia, deuteranopia and tritanopia
+     (worst OKLab distance 0.043; see docs/DESIGN.md). Always paired with the number. */
+  --case-1: #2E3640;         /* 1. nominativ  slate */
+  --case-2: #8E4A00;         /* 2. genitiv    ochre */
+  --case-3: #7148B8;         /* 3. dativ      violet */
+  --case-4: #A3245E;         /* 4. akuzativ   magenta */
+  --case-5: #00676F;         /* 5. vokativ    teal */
+  --case-6: #1F4C9C;         /* 6. lokál      blue */
+  --case-7: #4B3A00;         /* 7. instrumentál dark olive */
+
+  /* ---- Station tiles: muted OKLCH tones (L 0.84, C 0.065), one per station,
+     a nod to the coloured wall panels of the Line A stations. Always --on-fill-dark text (≥ 10:1). */
+  --tile-01: #F1BAC2; --tile-02: #F2BBB7; --tile-03: #F1BDAC; --tile-04: #EDC0A4;
+  --tile-05: #E7C39D; --tile-06: #DFC79B; --tile-07: #D5CC9B; --tile-08: #CAD09F;
+  --tile-09: #BED3A6; --tile-10: #B2D6B0; --tile-11: #A8D8BB; --tile-12: #9FD9C6;
+  --tile-13: #99D9D2; --tile-14: #98D8DD; --tile-15: #9AD5E7; --tile-16: #A1D3EE;
+  --tile-17: #AACFF4; --tile-18: #B4CBF6; --tile-19: #C0C7F5; --tile-20: #CBC3F2;
+  --tile-21: #D6C0EC; --tile-22: #E0BDE4; --tile-23: #E8BBD9; --tile-24: #EDBACE;
+
+  /* ---- Type ---- */
+  --font-display: 'Bricolage Grotesque', 'Mluvka', sans-serif;  /* headlines; swap for Metron later */
+  --font-ui: 'Mluvka', 'Bricolage Grotesque', sans-serif;        /* UI and body (D5: compare with --font-ui-alt) */
+  --font-ui-alt: 'Bricolage Grotesque', sans-serif;              /* the brief's fallback, at text optical size */
+  --font-mono: 'Azeret Mono', ui-monospace, monospace;           /* labels, tables, timetables */
+  --font-read: 'Yrsa', Georgia, serif;                           /* long-form guide articles only */
+
+  /* Modular scale, ratio 1.25 from 1rem (sm is the half step). */
+  --step--1: 0.8rem;    /* 12.8px  mono labels */
+  --step-sm: 0.894rem;  /* 14.3px  secondary text */
+  --step-0: 1rem;       /* 16px    body (17px from md, see index.css) */
+  --step-1: 1.25rem;    /* 20px */
+  --step-2: 1.563rem;   /* 25px */
+  --step-3: 1.953rem;   /* 31px */
+  --step-4: 2.441rem;   /* 39px */
+  --step-5: 3.052rem;   /* 49px    page titles */
+  --step-6: 3.815rem;   /* 61px */
+  --step-7: 4.768rem;   /* 76px    hero */
+  --step-8: 5.96rem;    /* 95px    hero, large screens */
+
+  /* ---- Shape and depth ---- */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --border-w: 2px;
+  --shadow-offset: 4px 4px 0 var(--shadow-ink);
+  --shadow-offset-sm: 2px 2px 0 var(--shadow-ink);
+  --clip-corner: 18px;       /* the "cubist" clipped corner on cards */
+
+  /* ---- Motion (mechanical, short; all disabled under prefers-reduced-motion) ---- */
+  --dur-fast: 120ms;
+  --dur: 200ms;
+  --dur-max: 250ms;
+  --ease-mech: cubic-bezier(0.3, 0, 0.1, 1);
+
+  color-scheme: light;
+}
+
+/* ---- Noční tramvaj (night tram): dark mode ----
+   Ink-based background, paper-coloured text, the same line colours.
+   Every value re-checked in tests/contrast.test.ts. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #1C1A17; --paper-2: #26231F; --paper-3: #3A352F; --surface: #2D2A25;
+    --ink: #F5EFE3; --ink-2: #D6CDBE; --ink-3: #ADA393;
+    --rule: #3E3933; --rule-strong: #6B6358; --shadow-ink: #000000;
+    --line-a-deep: #46C285; --line-c-deep: #F47B6B;
+    --vltava: #86BDD3; --vltava-tint: #1E333D; --champagne-tint: #3A3122;
+    --case-1: #C1DAF9; --case-2: #E2975E; --case-3: #BA9DFF; --case-4: #E2769E;
+    --case-5: #7CCDD5; --case-6: #6597EE; --case-7: #D6C38E;
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --paper: #1C1A17; --paper-2: #26231F; --paper-3: #3A352F; --surface: #2D2A25;
+  --ink: #F5EFE3; --ink-2: #D6CDBE; --ink-3: #ADA393;
+  --rule: #3E3933; --rule-strong: #6B6358; --shadow-ink: #000000;
+  --line-a-deep: #46C285; --line-c-deep: #F47B6B;
+  --vltava: #86BDD3; --vltava-tint: #1E333D; --champagne-tint: #3A3122;
+  --case-1: #C1DAF9; --case-2: #E2975E; --case-3: #BA9DFF; --case-4: #E2769E;
+  --case-5: #7CCDD5; --case-6: #6597EE; --case-7: #D6C38E;
+  color-scheme: dark;
+}

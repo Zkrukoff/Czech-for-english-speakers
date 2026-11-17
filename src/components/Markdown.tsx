@@ -31,14 +31,14 @@ export function Markdown({
       const arg = meta || String(c).trim();
       if (lang === 'table') {
         const id = arg;
-        return renderTable ? <>{renderTable(id)}</> : <div className="text-sm text-stone-500">[table: {id}]</div>;
+        return renderTable ? <>{renderTable(id)}</> : <div className="text-sm text-ink-3">[table: {id}]</div>;
       }
       if ((lang === 'timeline' || lang === 'metro') && renderEmbed) {
         return <>{renderEmbed(lang, arg)}</>;
       }
       if (lang === 'verb') {
         const lemma = arg;
-        return renderVerb ? <>{renderVerb(lemma)}</> : <div className="text-sm text-stone-500">[verb: {lemma}]</div>;
+        return renderVerb ? <>{renderVerb(lemma)}</> : <div className="text-sm text-ink-3">[verb: {lemma}]</div>;
       }
       return <code className={className}>{c}</code>;
     },

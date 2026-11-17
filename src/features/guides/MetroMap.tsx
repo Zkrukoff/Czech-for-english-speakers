@@ -59,7 +59,10 @@ function labelProps(name: string): { x: number; y: number; anchor: 'start' | 'en
   }
 }
 
-const TEXT_ON: Record<string, string> = { A: '#ffffff', B: '#1c1917', C: '#ffffff' };
+/** Line colours come from the design tokens (not from content), with the text colour each fill needs. */
+const LINE_FILL: Record<string, string> = { A: 'var(--line-a)', B: 'var(--line-b)', C: 'var(--line-c)' };
+const TEXT_ON: Record<string, string> = { A: 'var(--on-fill-light)', B: 'var(--on-fill-dark)', C: 'var(--on-fill-light)' };
+const LINE_TEXT: Record<string, string> = { A: 'var(--line-a-deep)', B: 'var(--ink)', C: 'var(--line-c-deep)' };
 
 export function MetroMap({ metro }: { metro: MetroData }) {
   const [selected, setSelected] = useState<string>('Můstek');
@@ -91,7 +94,7 @@ export function MetroMap({ metro }: { metro: MetroData }) {
                 key={l.id}
                 points={l.stations.map((s) => POSITIONS[s]!.join(',')).join(' ')}
                 fill="none"
-                stroke={l.colour}
+                stroke={LINE_FILL[l.id]}
                 strokeWidth={12}
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -107,7 +110,7 @@ export function MetroMap({ metro }: { metro: MetroData }) {
                 const by = y + ((y - ny) / len) * 30;
                 return (
                   <g key={`${l.id}-${i}`} aria-hidden>
-                    <circle cx={bx} cy={by} r={15} fill={l.colour} />
+                    <circle cx={bx} cy={by} r={15} fill={LINE_FILL[l.id]} />
                     <text x={bx} y={by + 6} textAnchor="middle" fontSize={17} fontWeight={800} fill={TEXT_ON[l.id]} className="font-display">
                       {l.id}
                     </text>
@@ -143,7 +146,7 @@ export function MetroMap({ metro }: { metro: MetroData }) {
                     cx={x}
                     cy={y}
                     r={transfer ? 10 : 6.5}
-                    className={`transition-all ${isSel ? 'fill-stone-900 stroke-stone-900' : 'fill-white stroke-stone-900 group-hover:fill-stone-300 group-focus-visible:fill-sky-300'}`}
+                    className={`transition-all ${isSel ? 'fill-ink stroke-ink' : 'fill-surface stroke-ink group-hover:fill-paper-3 group-focus-visible:fill-vltava-tint'}`}
                     strokeWidth={transfer ? 4 : 3}
                   />
                   <text
@@ -154,7 +157,7 @@ export function MetroMap({ metro }: { metro: MetroData }) {
                     fontSize={transfer ? 17 : 14.5}
                     fontWeight={transfer || isSel ? 700 : 500}
                     lang="cs"
-                    className={`fill-stone-800 stroke-stone-50 [paint-order:stroke] ${isSel ? 'fill-stone-950' : ''}`}
+                    className={`fill-ink stroke-paper [paint-order:stroke] ${isSel ? 'fill-ink' : ''}`}
                     strokeWidth={4}
                     strokeLinejoin="round"
                   >
@@ -169,48 +172,48 @@ export function MetroMap({ metro }: { metro: MetroData }) {
         <aside aria-live="polite" className="card self-start p-5 lg:sticky lg:top-24">
           <p className="eyebrow">Station</p>
           <div className="mt-1 flex items-center gap-1">
-            <h3 lang="cs" className="font-serif text-2xl font-semibold text-stone-900">{sel}</h3>
+            <h3 lang="cs" className="font-display text-2xl font-semibold text-ink">{sel}</h3>
             <SpeakButton text={sel} />
           </div>
           <div className="mt-3 flex flex-wrap gap-2">
             {selLines.map((id) => {
               const l = lineById.get(id)!;
               return (
-                <span key={id} className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-bold" style={{ background: l.colour, color: TEXT_ON[id] }}>
+                <span key={id} className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-bold" style={{ background: LINE_FILL[id], color: TEXT_ON[id] }}>
                   Line {id} <span className="font-normal opacity-80" lang="cs">{l.nickname}</span>
                 </span>
               );
             })}
           </div>
-          {selLines.length > 1 && <p className="mt-3 text-sm text-stone-700">Change here between lines {selLines.join(' and ')}.</p>}
+          {selLines.length > 1 && <p className="mt-3 text-sm text-ink-2">Change here between lines {selLines.join(' and ')}.</p>}
           {selLines.map((id) => {
             const l = lineById.get(id)!;
             const first = l.stations[0]!;
             const last = l.stations[l.stations.length - 1]!;
             return (
-              <p key={id} className="mt-2 text-sm text-stone-600">
+              <p key={id} className="mt-2 text-sm text-ink-2">
                 Line {id} runs <span lang="cs">směr {first}</span> or <span lang="cs">směr {last}</span>.
               </p>
             );
           })}
-          {metro.notes[sel] && <p className="mt-3 rounded-lg bg-cream p-3 text-stone-800">{metro.notes[sel]}</p>}
-          <p className="mt-3 text-sm text-stone-500">
-            "Get off at {sel}": <span lang="cs" className="text-stone-800">Vystupte na stanici {sel}.</span>
+          {metro.notes[sel] && <p className="mt-3 rounded-lg bg-paper-2 p-3 text-ink">{metro.notes[sel]}</p>}
+          <p className="mt-3 text-sm text-ink-3">
+            "Get off at {sel}": <span lang="cs" className="text-ink">Vystupte na stanici {sel}.</span>
           </p>
         </aside>
       </div>
 
-      {metro.underConstruction && <p className="mt-3 text-sm text-stone-600">{metro.underConstruction}</p>}
+      {metro.underConstruction && <p className="mt-3 text-sm text-ink-2">{metro.underConstruction}</p>}
 
       <details className="mt-4 text-sm">
-        <summary className="cursor-pointer font-medium text-stone-700">All stations, line by line</summary>
+        <summary className="cursor-pointer font-medium text-ink-2">All stations, line by line</summary>
         <div className="mt-3 grid gap-4 sm:grid-cols-3">
           {metro.lines.map((l) => (
             <div key={l.id}>
-              <p className="mb-1 font-bold" style={{ color: l.id === 'B' ? undefined : l.colour }}>
+              <p className="mb-1 font-bold" style={{ color: LINE_TEXT[l.id] }}>
                 Line {l.id} ({l.nickname})
               </p>
-              <ol className="list-decimal pl-5 text-stone-700" lang="cs">
+              <ol className="list-decimal pl-5 text-ink-2" lang="cs">
                 {l.stations.map((s) => (
                   <li key={s}>
                     <button type="button" onClick={() => setSelected(s)} className="text-left hover:underline">

@@ -22,7 +22,7 @@ export function TablesPage() {
         title="Declension tables"
         subtitle="Every noun follows one of these model words. Endings are coloured by case, using the same colour for a case everywhere in the app."
       />
-      <div className="mb-4 flex flex-wrap gap-x-5 gap-y-2 rounded-lg border border-stone-200 bg-white px-4 py-3 text-sm" aria-label="Case colours">
+      <div className="mb-4 flex flex-wrap gap-x-5 gap-y-2 rounded-lg border border-rule bg-surface px-4 py-3 text-sm" aria-label="Case colours">
         {CASE_KEYS.map((k) => <CaseLabel key={k} caseKey={k} />)}
       </div>
       <div role="tablist" className="mb-2 flex flex-wrap gap-1">
@@ -32,7 +32,7 @@ export function TablesPage() {
             role="tab"
             aria-selected={g.id === group}
             onClick={() => setGroup(g.id)}
-            className={`rounded-md px-3 py-1.5 text-sm font-medium ${g.id === group ? 'bg-stone-900 text-white' : 'text-stone-600 hover:bg-stone-100'}`}
+            className={`rounded-md px-3 py-1.5 text-sm font-medium ${g.id === group ? 'bg-ink text-on-fill-light' : 'text-ink-2 hover:bg-paper-2'}`}
           >
             {g.label}
           </button>

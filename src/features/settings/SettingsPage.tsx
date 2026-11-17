@@ -47,20 +47,20 @@ export function SettingsPage() {
     <>
       <PageHeader title="Settings" />
       <div className="max-w-xl space-y-8">
-        <section className="space-y-4 rounded-xl border border-stone-200 bg-white p-5">
+        <section className="space-y-4 rounded-xl border border-rule bg-surface p-5">
           <h2 className="font-semibold">Answers</h2>
           <label className="flex items-start gap-3">
             <input type="checkbox" className="mt-1" checked={s.strictDiacritics} onChange={(e) => updateSettings({ strictDiacritics: e.target.checked })} />
             <span>
               <span className="font-medium">Require exact diacritics</span>
-              <span className="block text-sm text-stone-600">When off, "kavu" is accepted for "kávu" but flagged so you see the correct spelling. When on, it counts as wrong.</span>
+              <span className="block text-sm text-ink-2">When off, "kavu" is accepted for "kávu" but flagged so you see the correct spelling. When on, it counts as wrong.</span>
             </span>
           </label>
           <label className="flex items-start gap-3">
             <input type="checkbox" className="mt-1" checked={s.showSpokenForms} onChange={(e) => updateSettings({ showSpokenForms: e.target.checked })} />
             <span>
               <span className="font-medium">Show spoken (colloquial) forms</span>
-              <span className="block text-sm text-stone-600">Notes like "you'll often hear dobrej for dobrý".</span>
+              <span className="block text-sm text-ink-2">Notes like "you'll often hear dobrej for dobrý".</span>
             </span>
           </label>
         </section>
@@ -83,16 +83,16 @@ export function SettingsPage() {
           </div>
         </section>
 
-        <section className="space-y-4 rounded-xl border border-stone-200 bg-white p-5">
+        <section className="space-y-4 rounded-xl border border-rule bg-surface p-5">
           <h2 className="font-semibold">Audio</h2>
           {voices.length === 0 ? (
-            <p className="text-sm text-stone-600">
+            <p className="text-sm text-ink-2">
               Your browser has no Czech (cs-CZ) voice, so listen buttons are hidden. Most systems can add one in their language or speech settings.
             </p>
           ) : (
             <label className="block">
               <span className="font-medium">Czech voice</span>
-              <select value={s.voiceURI ?? ''} onChange={(e) => updateSettings({ voiceURI: e.target.value || undefined })} className="mt-1 block w-full rounded-md border border-stone-300 bg-white px-3 py-2">
+              <select value={s.voiceURI ?? ''} onChange={(e) => updateSettings({ voiceURI: e.target.value || undefined })} className="mt-1 block w-full rounded-md border border-rule-strong bg-surface px-3 py-2">
                 <option value="">Default</option>
                 {voices.map((v) => <option key={v.voiceURI} value={v.voiceURI}>{v.name}</option>)}
               </select>
@@ -109,9 +109,9 @@ export function SettingsPage() {
           )}
         </section>
 
-        <section className="space-y-3 rounded-xl border border-stone-200 bg-white p-5">
+        <section className="space-y-3 rounded-xl border border-rule bg-surface p-5">
           <h2 className="font-semibold">Your data</h2>
-          <p className="text-sm text-stone-600">Everything is stored only in this browser. Download a copy to keep it safe or move it to another device.</p>
+          <p className="text-sm text-ink-2">Everything is stored only in this browser. Download a copy to keep it safe or move it to another device.</p>
           <div className="flex flex-wrap gap-2">
             <button type="button" onClick={download} className="btn btn-secondary">Download my data</button>
             <button type="button" onClick={() => fileRef.current?.click()} className="btn btn-secondary">Restore from file…</button>
@@ -124,12 +124,12 @@ export function SettingsPage() {
                   setMessage('All progress was deleted.');
                 }
               }}
-              className="rounded-md border border-rose-300 px-3 py-1.5 text-sm text-rose-800 hover:bg-rose-50"
+              className="rounded-md border border-ink px-3 py-1.5 text-sm text-ink hover:bg-paper-2"
             >
               Reset progress…
             </button>
           </div>
-          {message && <p role="status" className="text-sm text-stone-800">{message}</p>}
+          {message && <p role="status" className="text-sm text-ink">{message}</p>}
         </section>
       </div>
     </>

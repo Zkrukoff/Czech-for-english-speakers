@@ -6,6 +6,7 @@ import { NotFound } from '@/components/NotFound';
 import { ExerciseRunner } from '@/features/exercises/ExerciseRunner';
 import { saveGoalScores, scoreGoals, type GoalScore } from '@/db/progress';
 import { useLessonAnswerHandler } from './useLessonAnswerHandler';
+import { IconArrowLeft, IconDone, IconOpen } from '@/components/icons';
 
 export function UnitCheckPage() {
   const { unitId = '' } = useParams();
@@ -23,18 +24,18 @@ function UnitCheck({ unit }: { unit: Unit }) {
 
   return (
     <>
-      <Link to={`/units/${unit.id}`} className="text-sm text-vltava hover:underline">← Unit {unit.number}: {unit.title}</Link>
+      <Link to={`/units/${unit.id}`} className="text-sm text-vltava hover:underline"><IconArrowLeft size={16} className="inline-block align-[-3px]" /> Unit {unit.number}: {unit.title}</Link>
       <PageHeader title="What can you do now?" subtitle="This check tests each of the unit's goals. No time limit, and no hints from earlier answers: it's to show you where you are." />
 
       {phase.kind === 'intro' && (
-        <div className="rounded-xl border border-stone-200 bg-white p-6">
+        <div className="rounded-xl border border-rule bg-surface p-6">
           <p className="font-medium">You'll be checked on:</p>
           <ul className="mt-2 space-y-1">
             {unit.canDo.map((g) => (
-              <li key={g.id} className="flex gap-2 text-stone-700"><span aria-hidden className="text-stone-400">○</span>{g.text}</li>
+              <li key={g.id} className="flex gap-2 text-ink-2"><IconOpen size={18} className="mt-0.5 shrink-0 text-ink-3" />{g.text}</li>
             ))}
           </ul>
-          <p className="mt-4 text-sm text-stone-600">
+          <p className="mt-4 text-sm text-ink-2">
             {unit.check.exercises.length} questions. A goal counts as done when you get at least {Math.round(unit.check.passRatio * 100)}% of its questions right.
           </p>
           <button type="button" onClick={() => setPhase({ kind: 'running', run: 0 })} className="mt-5 btn btn-primary">
@@ -62,17 +63,17 @@ function UnitCheck({ unit }: { unit: Unit }) {
       )}
 
       {phase.kind === 'done' && (
-        <div className="rounded-xl border border-stone-200 bg-white p-6">
+        <div className="rounded-xl border border-rule bg-surface p-6">
           <h2 className="text-xl font-semibold">Results</h2>
           <ul className="mt-4 space-y-3">
             {phase.scores.map((s) => (
               <li key={s.goalId} className="flex items-start gap-3">
-                <span aria-hidden className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-sm ${s.passed ? 'bg-emerald-600 text-white' : 'bg-stone-200 text-stone-600'}`}>
-                  {s.passed ? '✓' : '·'}
+                <span aria-hidden className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-sm ${s.passed ? 'bg-ink text-on-fill-light' : 'bg-paper-3 text-ink-2'}`}>
+                  {s.passed ? <IconDone size={18} /> : <IconOpen size={18} />}
                 </span>
                 <span>
                   <span className="block">{goalText(s.goalId)}</span>
-                  <span className="text-sm text-stone-500">
+                  <span className="text-sm text-ink-3">
                     {s.correct} of {s.total} right{s.passed ? '' : ': worth another look at the lessons for this goal'}
                   </span>
                 </span>

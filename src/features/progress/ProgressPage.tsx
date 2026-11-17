@@ -12,9 +12,9 @@ import { relativeTime } from '@/lib/time';
 
 const STATUS_LABEL = { 'not-started': 'not started', learning: 'practising', mastered: 'mastered' } as const;
 const STATUS_STYLE = {
-  'not-started': 'bg-stone-100 text-stone-500',
-  learning: 'bg-amber-50 text-amber-800',
-  mastered: 'bg-emerald-50 text-emerald-800',
+  'not-started': 'bg-paper-2 text-ink-3',
+  learning: 'bg-champagne-tint text-ink',
+  mastered: 'bg-paper-2 text-ink',
 } as const;
 
 function MasteryRow({ label, href, m, dot }: { label: string; href?: string; m: SkillMastery; dot?: string }) {
@@ -26,10 +26,10 @@ function MasteryRow({ label, href, m, dot }: { label: string; href?: string; m: 
       </span>
       <span className={`justify-self-end rounded-full px-2 py-0.5 text-xs font-medium sm:order-last ${STATUS_STYLE[m.status]}`}>{STATUS_LABEL[m.status]}</span>
       <span className="col-span-2 flex items-center gap-3 sm:col-span-1">
-        <span className="h-2 flex-1 overflow-hidden rounded-full bg-stone-100" role="img" aria-label={`${Math.round(m.accuracy * 100)}% of recent answers right`}>
-          <span className={`block h-full ${m.status === 'mastered' ? 'bg-emerald-500' : 'bg-amber-400'}`} style={{ width: `${m.accuracy * 100}%` }} />
+        <span className="h-2 flex-1 overflow-hidden rounded-full bg-paper-2" role="img" aria-label={`${Math.round(m.accuracy * 100)}% of recent answers right`}>
+          <span className={`block h-full ${m.status === 'mastered' ? 'bg-ink' : 'bg-champagne'}`} style={{ width: `${m.accuracy * 100}%` }} />
         </span>
-        <span className="w-32 text-right text-xs text-stone-500">
+        <span className="w-32 text-right text-xs text-ink-3">
           {m.recent ? `${Math.round(m.accuracy * 100)}% of last ${m.recent}` : 'no answers yet'}
         </span>
       </span>
@@ -56,12 +56,12 @@ export function ProgressPage() {
 
       <section className="mb-10">
         <h2 className="mb-1 text-lg font-semibold">Can-do goals</h2>
-        <p className="mb-4 text-sm text-stone-600">
+        <p className="mb-4 text-sm text-ink-2">
           {goalsDone} of {allGoals.length} goals completed in unit checks · {lessonsDone} of {allLessons.length} lessons practised
         </p>
         <div className="grid gap-4 md:grid-cols-3">
           {course.units.map((u) => (
-            <div key={u.id} className="rounded-xl border border-stone-200 bg-white p-4">
+            <div key={u.id} className="rounded-xl border border-rule bg-surface p-4">
               <div className="mb-2 flex items-baseline justify-between gap-2">
                 <Link to={`/units/${u.id}`} className="font-semibold hover:underline">{u.number}. {u.title}</Link>
                 <Link to={`/units/${u.id}/check`} className="shrink-0 text-xs text-vltava underline">unit check</Link>
@@ -75,7 +75,7 @@ export function ProgressPage() {
       <section className="mb-10">
         <h2 className="mb-1 text-lg font-semibold">Reviews</h2>
         {due && (
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-3 rounded-xl border border-stone-200 bg-white p-4">
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-3 rounded-xl border border-rule bg-surface p-4">
             <Stat n={due.dueNow} label="due now" />
             <Stat n={due.dueToday} label="due today" />
             <Stat n={due.dueThisWeek} label="due this week" />
@@ -84,7 +84,7 @@ export function ProgressPage() {
               {due.dueNow > 0 ? (
                 <Link to="/review" className="btn btn-primary">Review now</Link>
               ) : due.nextDue ? (
-                <span className="text-stone-600">Next item due {relativeTime(due.nextDue)}</span>
+                <span className="text-ink-2">Next item due {relativeTime(due.nextDue)}</span>
               ) : null}
             </div>
           </div>
@@ -93,7 +93,7 @@ export function ProgressPage() {
 
       <section className="mb-10">
         <h2 className="mb-1 text-lg font-semibold">Alphabet and pronunciation</h2>
-        <ul className="divide-y divide-stone-100 overflow-hidden rounded-xl border border-stone-200 bg-white">
+        <ul className="divide-y divide-rule overflow-hidden rounded-xl border border-rule bg-surface">
           <MasteryRow label="Letters, sounds and spelling" href="/alphabet?tab=practice" m={mastery.get('alphabet')!} />
         </ul>
       </section>
@@ -101,7 +101,7 @@ export function ProgressPage() {
       {course.guides.some((g) => g.practice.length > 0) && (
         <section className="mb-10">
           <h2 className="mb-1 text-lg font-semibold">Guides</h2>
-          <ul className="divide-y divide-stone-100 overflow-hidden rounded-xl border border-stone-200 bg-white">
+          <ul className="divide-y divide-rule overflow-hidden rounded-xl border border-rule bg-surface">
             {course.guides.filter((g) => g.practice.length > 0).map((g) => (
               <MasteryRow key={g.id} label={g.title} href={`/guides/${g.id}?tab=practice`} m={mastery.get(`guide:${g.id}`)!} />
             ))}
@@ -112,7 +112,7 @@ export function ProgressPage() {
       <section className="mb-10">
         <h2 className="mb-1 text-lg font-semibold">The seven cases</h2>
         <MasteryNote />
-        <ul className="divide-y divide-stone-100 overflow-hidden rounded-xl border border-stone-200 bg-white">
+        <ul className="divide-y divide-rule overflow-hidden rounded-xl border border-rule bg-surface">
           {CASES.map((c, i) => (
             <MasteryRow key={c} label={`${CASE_INFO[c].number}. ${c[0]!.toUpperCase()}${c.slice(1)}`} href={`/grammar/${c}`} m={mastery.get(`case:${c}`)!} dot={CASE_BG[CASE_KEYS[i]!]} />
           ))}
@@ -122,7 +122,7 @@ export function ProgressPage() {
       <section>
         <h2 className="mb-1 text-lg font-semibold">Verb topics</h2>
         <MasteryNote />
-        <ul className="divide-y divide-stone-100 overflow-hidden rounded-xl border border-stone-200 bg-white">
+        <ul className="divide-y divide-rule overflow-hidden rounded-xl border border-rule bg-surface">
           {VERB_TOPICS.map((t) => {
             const page = course.grammarBySkill.get(`verb:${t}`);
             return <MasteryRow key={t} label={page?.title.split(':')[0] ?? t} href={page ? `/verbs/${page.id}` : undefined} m={mastery.get(`verb:${t}`)!} />;
@@ -135,7 +135,7 @@ export function ProgressPage() {
 
 function MasteryNote() {
   return (
-    <p className="mb-3 text-sm text-stone-600">
+    <p className="mb-3 text-sm text-ink-2">
       Based on your last {MASTERY_WINDOW} answers that use each topic. "Mastered" means at least {MASTERY_MIN_ATTEMPTS} answers with {Math.round(MASTERY_ACCURACY * 100)}% or more right.
     </p>
   );
@@ -145,7 +145,7 @@ function Stat({ n, label }: { n: number; label: string }) {
   return (
     <div>
       <div className="text-2xl font-semibold tabular-nums">{n}</div>
-      <div className="text-xs text-stone-500">{label}</div>
+      <div className="text-xs text-ink-3">{label}</div>
     </div>
   );
 }

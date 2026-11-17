@@ -1,267 +1,138 @@
-# Design guide
+# Pražák design system
 
-> **Pražák redesign in progress.** This guide describes the current design. It will be
-> rewritten in phase 2 of [PLAN.md](PLAN.md) for the new design system in
-> [PRAZAK_BRIEF.md](PRAZAK_BRIEF.md). Until then, follow the brief where they disagree.
+How Pražák looks, sounds and moves. The source of truth for values is
+[`src/styles/tokens.css`](../src/styles/tokens.css); everything is visible at
+**`/styleguide`**. The full brief is [PRAZAK_BRIEF.md](PRAZAK_BRIEF.md).
 
-How the app should look, read and behave. Keep the code in line with this
-guide, and update the guide when you change the design deliberately. The
-tokens and shared styles live in `src/index.css` and
-`src/styles/dark-palette.css`.
+## Direction
 
-## Who it's for
+A risograph zine made by a Prague design student who rides Line A every day.
+Artistic, youthful, unmistakably human-made and unmistakably Prague. It is not a SaaS
+dashboard and not a cartoon owl. Visual sources (inspiration, never
+reproduction): the Line A station wall panels, 1970s metro wayfinding, Czech
+Cubism, enamel street and house-number plates, tram tickets and validator
+stamps, mid-century Czech posters and illustrated books.
 
-English-speaking adults who have moved to Czechia for work: developers,
-engineers, teachers, researchers, people in international companies. They:
+### Hard rules (the anti-AI checklist)
 
-- are busy and study in short sessions: on the tram, at lunch, in the evening
-- are used to professional tools, and dislike being treated like children
-- need Czech for concrete situations: colleagues, lunch, the commute, offices,
-  the doctor, the landlord
-- are motivated by being able to *do* things, not by points
-
-So the app should feel like **Prague itself**: young, creative and a bit
-cheeky on the outside, with the learning inside as clear and calm as a
-well-made reference book. It is never a game.
-
-## Principles
-
-1. **A lively frame, a calm core.** The frame (home page, headers, guides,
-   maps) is bold, colourful and playful. The core (exercises, explanations,
-   tables) stays quiet so the Czech can be read without distraction.
-   Never: streaks, points, badges, confetti, mascots, countdowns, sounds on
-   success or guilt messages. Progress is what you can do and how accurately.
-2. **Czech is the hero.** Czech text is always the most prominent thing on
-   the screen, set in its own typeface. The interface steps back.
-3. **Two colour systems that never mix.** The *Prague palette* (metro line
-   colours, Vltava blue, tram cream) decorates the frame and marks the way
-   (units as lines, the metro map). The *grammar colours* (one per case) and
-   the *feedback colours* appear only in grammar tables and answer feedback.
-   Never use a metro colour to mean a case, or a case colour as decoration.
-4. **Explain, don't just mark.** Every wrong answer shows why. Design every
-   feedback state to make room for an explanation.
-5. **One clear next step.** Each screen has at most one primary button.
-   Everything else is secondary or a link.
-6. **Honest about uncertainty.** Content not yet checked by a native speaker
-   is labelled, never hidden.
-
-## The Prague identity
-
-Everything decorative comes from the city:
-
-| Motif | Where it comes from | Where it's used |
-|---|---|---|
-| **Metro stripe**: green · yellow · red | Lines A, B and C | Top of the header, footer, short bar above page titles (`.metro-stripe`, `MetroLineStripe`) |
-| **Bubble wall**: a grid of coloured circles | The convex aluminium panels lining the line A and B stations | Home hero, guide cards, the alphabet's round letter tiles (`BubbleWall`) |
-| **Lines and stops** | The metro map | Each unit is a "line" in its own colour; its lessons are stops and the unit check is the *Konečná* (terminus) |
-| **Departure board**: yellow on near-black | Station and tram displays | The "Příští zastávka" (next stop) card, the unit-check terminus (`.board`) |
-| **The wordmark** | The app's name | "Pražák" in the display face (interim, until the hand-lettered SVG wordmark in phase 2); the logo is three overlapping line colours (`MetroMark`) |
-| **Sticker highlight** | Street posters and stickers | One highlighted word in a big headline (`.marker`) |
-
-Small Czech touches belong in the frame, not just the lessons: *Ahoj, Praho!*,
-*Příští zastávka*, *Konečná*. Always with English alongside where the meaning
-matters.
-
-## Voice and tone
-
-- Plain, adult English with a light touch of wit. Short sentences. British
-  spelling (*colour, practise*).
-- Address the learner as *you*. Never "Great job!", "Oops!", "Awesome!".
-- Correct: "Correct." / "Accepted, but check the diacritics." / "Not quite."
-  followed by the reason.
-- Describe the situation, not the feature: "You can order food from the
-  menu", not "Complete 5 food exercises".
-- Use real places and real situations: Prague, Brno, Olomouc; trams, meal
-  vouchers, the daily lunch menu, *Lítačka*, the foreign police.
-- No exclamation marks in interface copy. (Czech example sentences may have
-  them, as real speech does.)
-
-## Typography
-
-| Use | Typeface | Notes |
-|---|---|---|
-| Display: page titles, section headings, big numbers, the wordmark | **Bricolage Grotesque** (variable) | `font-display`; applied automatically to `h1` and `h2`; extra-bold, tight tracking, slightly narrow |
-| Interface (English) | **Inter** (variable) | `font-sans`, the default |
-| Czech text | **Source Serif 4** (variable) | Applied automatically to anything with `lang="cs"`, and to *italics* in explanations |
-
-All three are self-hosted through `@fontsource-variable` packages, so there are no
-requests to font services, the app works offline, and both cover every Czech
-diacritic (including ď, ť, ů and capital Ď, Ť).
-
-**Rule: mark Czech with `lang="cs"`.** It switches the typeface, helps screen
-readers pronounce it, and lets browsers hyphenate correctly. In Markdown
-explanations, write Czech examples in *italics*; they get the serif too.
-
-Sizes (Tailwind classes):
-
-| Role | Class |
+| Never | Instead |
 |---|---|
-| Hero headline | `text-5xl sm:text-6xl font-extrabold leading-[0.95]` |
-| Page title | `text-4xl sm:text-5xl font-extrabold tracking-tight` |
-| Section heading | `text-3xl font-extrabold` (pages) / `text-2xl font-bold` (explanations) |
-| Eyebrow (small label above a title) | `.eyebrow` (uppercase, tracked, stone-500) |
-| Czech prompt in an exercise | `text-2xl` |
-| Body | `text-base`, explanations `leading-relaxed`, max width `max-w-3xl` |
-| Secondary text | `text-sm text-stone-600` |
+| Purple/blue gradients, mesh gradients, glassmorphism, glowing blobs | Flat colour, paper grain, risograph halftone |
+| Inter, Poppins, Montserrat, Space Grotesk, DM Sans, Plus Jakarta Sans, system-ui as the visible font | The four faces below (a test fails if a banned family is loaded) |
+| Identical rounded cards with soft blurred shadows in centred stacks | Solid offset shadows (`4px 4px 0 var(--ink)`), ink borders, one clipped "cubist" corner, a real grid, hairline rules, numbered sections, intentional asymmetry |
+| Emoji or text glyphs as icons, ✨ sparkles, 3D/isometric art | The custom icon set; hand-drawn SVG line illustrations in the palette |
+| "Welcome back! 👋", exclamation-point cheer, confetti | Wry, deadpan, warm microcopy; the ink stamp |
+| Green check / red X feedback | Ink stamp for right; ink underline on the wrong ending + correction in Vltava + the case-lens explanation |
 
-## Colour
+## Tokens
 
-### Interface: ink on warm paper
+All raw values (colours, fonts, the type scale, radii, shadows, motion) are in
+`tokens.css`. Components use them through Tailwind utilities (`bg-paper`,
+`text-ink-2`, `border-rule`, `font-mono`…), mapped in `src/index.css`, or
+`var(--…)`. Tailwind's default palette and fonts are **switched off**.
+`tests/no-hex.test.ts` fails on any hex value outside `tokens.css`, any
+default-palette class, or a banned font.
 
-| Token (Tailwind) | Light | Use |
+### Colour
+
+| Group | Tokens | Rules |
 |---|---|---|
-| `paper` | `#faf7f0` | page background |
-| `white` | | cards, inputs |
-| `cream` | `#f6f0e4` | soft panels (why it matters, notes, chips) |
-| `ink` | `#17130f` | headings, primary buttons, active nav pill |
-| `stone-200`…`600` | | borders and secondary text |
-| `vltava` | `#1f63c6` | links and focus rings |
-| `night` / `night-text` | `#17130f` / `#faf7f0` | departure-board panels; stay dark in both themes |
+| Base | `paper`, `paper-2`, `paper-3`, `surface`, `ink`, `ink-2`, `ink-3`, `rule`, `rule-strong` | Body text is `ink`; `ink-2` secondary, `ink-3` captions. `rule*` are never text |
+| **Lines = levels** | `line-a` (A1–A2), `line-b` (B1–B2), `line-c` (C1–C2), `line-a-deep`, `line-c-deep` | They mean lines and levels only. `line-b` is a fill only, always with `on-fill-dark` text. `line-a`/`line-c` are for fills, badges and large text; small text uses the `-deep` variants |
+| Accents | `vltava` (links, info, corrections), `vltava-tint`, `champagne` (stamps, rewards; fill only), `champagne-tint` | |
+| Fixed | `on-fill-dark`, `on-fill-light`, `board`, `plate-red`, `plate-blue` | Do not change in dark mode: text on fills, departure boards, enamel plates |
+| Case lens | `case-1` … `case-7` | Text on paper/surface only. **Always with the number and name** (*4. pád · akuzativ*), never colour alone |
+| Station tiles | `tile-01` … `tile-24` | Muted OKLCH tones (L 0.84, C 0.065), one per station, always `on-fill-dark` text (≥ 10:1) |
 
-### Prague palette (frame and wayfinding only)
+**Case colours** were chosen by a search over contrast and simulated colour
+blindness: every colour is ≥ 4.87:1 on both papers, hues stay clear of the
+three line colours, and the closest pair under protanopia, deuteranopia or
+tritanopia is 0.043 apart in OKLab (the first draft had a pair at 0.008). The
+`/styleguide` shows them under all three simulations.
 
-| Token | Colour | Meaning |
+**Contrast** is enforced by `tests/contrast.test.ts` for every pairing
+components use, in both themes (AA: 4.5:1 text, 3:1 large text and fills).
+Light text on `line-a` / `line-c` is only 4.4–4.6:1, so it must be large;
+`LineBadge` switches to an ink letter on a coloured ring below 28 px.
+
+**Dark mode, "noční tramvaj":** an ink background with paper-coloured text and
+the same line colours; `vltava`, the `-deep` line colours and the case colours
+get lighter dark-mode values (the brief's `--vltava` is 1.9:1 on ink). It
+follows the device unless the learner picks Light or Dark in Settings.
+
+### Type
+
+| Role | Face | Use |
 |---|---|---|
-| `metro-a` | `#1a9b4b` green | Line A; unit 1 |
-| `metro-b` | `#f2b200` yellow | Line B; unit 2; highlights, the review count. Never as text on a light background |
-| `metro-c` | `#d6213a` red | Line C; unit 3; the Č; the primary button's shadow |
-| `vltava` | `#1f63c6` blue | unit 4; links |
+| Display | **Bricolage Grotesque** (OFL) | `h1`–`h3`, big numbers, hero moments. Big and tight: `opsz` 96, `wdth` 88, tracking −0.02em |
+| UI and body | **Mluvka** (Jiří Krblich, OFL; v3.001) | Everything else. 16 px body, 17 px from tablet up, 1.5 leading |
+| Labels, tables, timetables | **Azeret Mono** (Displaay, Prague; OFL) | `.label-board` / `.eyebrow`: uppercase, letter-spaced, like departure boards; conjugation grids, ticket stubs |
+| Long reading | **Yrsa** (Rosetta, Brno; OFL) | Long-form guide articles only (`.prose-read`) |
 
-Units cycle through these colours (`src/components/unitColours.ts`).
+- All four faces are self-hosted as WOFF2, Latin + Latin Extended subsets only (`src/styles/fonts.css`). `tests/fonts.test.ts` opens each file and checks the pangram *Příliš žluťoučký kůň úpěl ďábelské ódy*, every Czech letter (`Ř ř Ů ů Ě ě Ď ď Ť ť Ň ň`…) and Czech quotation marks.
+- Fonts are referenced only through `--font-display`, `--font-ui`, `--font-mono` and `--font-read`, so dropping in Metron (Storm Type) or another face later is a one-line change.
+- **Decision D5 is open:** Mluvka began as a fork of Plus Jakarta Sans. `/styleguide` shows it next to the brief's fallback (Bricolage at text optical size, `--font-ui-alt`).
+- **Czech text** is marked `lang="cs"` (for screen readers and hyphenation) and set in the UI face in full `ink`. English explanations are a step smaller in `ink-2` (decision D10).
+- **Scale** (ratio 1.25 from 1 rem; `sm` is the half step): `text-xs` 12.8 · `sm` 14.3 · `base` 16 · `lg` 20 · `xl` 25 · `2xl` 31 · `3xl` 39 · `4xl` 49 · `5xl` 61 · `6xl` 76 · `7xl` 95 px.
 
-### Case colours (grammar)
+### Shape, depth and texture
 
-One colour per case, used everywhere endings or cases appear: tables, case
-labels, progress dots. Never use these colours for anything else.
+- **Borders:** 2 px ink. **Radii** are small (3/6/10 px); pills only for badges.
+- **Shadows** are solid offsets in `--shadow-ink` (`--shadow-offset`, `--shadow-offset-sm`), never blurred. Pressing a button pushes it onto its shadow.
+- **Cubist corner:** `<Card corner="tr|tl|br|bl">` clips one corner; border and shadow follow the clipped shape.
+- **Texture** (`src/styles/texture.css`):
+  - Paper grain over the page at ~7%.
+  - `.halftone` for large colour fields.
+  - `.misreg-red|yellow|blue` misregistration for decorative drawings only, **never text**.
 
-| Case | Light | Dark |
-|---|---|---|
-| Nominative | `#57534e` | `#a8a29e` |
-| Genitive | `#b45309` | `#f59e0b` |
-| Dative | `#7c3aed` | `#a78bfa` |
-| Accusative | `#be123c` | `#fb7185` |
-| Vocative | `#0f766e` | `#2dd4bf` |
-| Locative | `#1d4ed8` | `#60a5fa` |
-| Instrumental | `#15803d` | `#4ade80` |
+## Components (`src/components/ui`, `icons`, `brand`)
 
-Defined as `--color-case-*`; use the classes `text-case-gen`, `bg-case-loc`
-and so on (see `src/components/caseColors.ts`).
-
-### Feedback states
-
-| State | Colours | Wording |
-|---|---|---|
-| Correct | `emerald-50` / `emerald-300` | "Correct." |
-| Accepted, diacritics slip | `amber-50` / `amber-300`, wrong letters highlighted `amber-200` | "Accepted, but check the diacritics." |
-| Wrong | `rose-50` / `rose-300` | "Not quite." + answer + why |
-| Not native-reviewed | `amber-50` badge | "Not yet native-reviewed" |
-
-Colour is never the only signal: every state has a text label.
-
-### Dark mode
-
-The app follows the device setting by default; learners can force light or
-dark in Settings (stored in `localStorage`, applied before first paint in
-`index.html`).
-
-Dark mode works by **mirroring the colour scales** (50 ↔ 950, 100 ↔ 900…,
-500 unchanged), generated from Tailwind's own palette by
-`scripts/gen-dark-palette.mjs` into `src/styles/dark-palette.css`. So:
-
-- write components with light-mode classes only (`bg-white`, `text-stone-900`);
-  **don't add `dark:` variants**
-- `paper`, `cream`, `ink` and `vltava` get dark values from the same script;
-  the metro colours stay the same; `night` panels stay dark on purpose
-- stick to the scales the script mirrors (stone, sky, emerald, amber, rose,
-  red, violet) plus `white`/`black` and the case colours; add a scale to the
-  script before using a new one
-- re-run the script after upgrading Tailwind
-
-## Layout and spacing
-
-- Content column: `max-w-5xl` with `px-4` gutters; prose `max-w-3xl`.
-- Vertical rhythm: `mb-8`/`mb-10` between page sections, `gap-4` in grids,
-  `p-5` inside cards.
-- Grids collapse to one column on phones; nothing may scroll sideways at
-  390 px wide except deliberately scrollable rows (the main nav, wide tables
-  inside their own `overflow-x-auto`).
-- The header is sticky and translucent; on phones the nav becomes one
-  horizontally scrollable row under the wordmark.
-
-## Components
-
-Shared classes in `src/index.css`:
-
-| Class | Use |
+| Component | What it's for |
 |---|---|
-| `.btn .btn-primary` | the one main action on a screen: an ink pill with a red "platform edge" shadow that lifts on hover |
-| `.btn .btn-secondary` | other actions: outlined pill |
-| `.btn .btn-quiet` | back / tertiary actions |
-| `.card` | white surface, 1px border, `rounded-2xl` |
-| `.card-link` | add to clickable cards: lifts and gains a soft shadow on hover |
-| `.board` | departure-board panel (always dark) |
-| `.chip` | small rounded label on cream |
-| `.eyebrow` | small uppercase, widely tracked label above a title |
-| `.metro-stripe`, `.marker` | see *The Prague identity* |
-| `.prose-cz` | Markdown explanations; its rules skip anything inside `.not-prose`, and only text is limited to reading width, so embeds (tables, the timeline, the metro map) can use the full page |
+| `Button` | Primary (ink), secondary (paper), quiet. One primary per screen |
+| `Card` | Paper card with ink border, offset shadow and optional cubist corner; `.card` / `.card-link` for simple ones |
+| `EnamelPlate` | Labels and badges styled as street and house-number plates (red, blue, paper) |
+| `LineBadge` | Circular A/B/C badge, after the 1970s wayfinding |
+| `TileGrid` | **Signature pattern:** alternating convex and concave circles in one flat station tone, after the Line A wall panels. For section headers, loading states, stamp backgrounds and station screens |
+| `Stamp` | Validator ink stamp for finished units, missions and correct answers |
+| `Ticket` | Perforated ticket that holds stamps (the ticket wallet) |
+| `DepartureBoard` | Split-flap text (mono, yellow on board) |
+| `SectionNumber` | Numbered heading with an ink rule |
+| `icons/*` | One style: 24 px grid, 1.75 px round stroke, `currentColor`, slightly imperfect. Tram, ticket, stamp, háček, beer, key, metro, speaker, arrows, done, open, terminus, review, settings, mic, pin, book, close |
+| `brand/Wordmarks` | Three hand-lettered wordmark drafts with their háček app icons (decision pending) |
 
-Patterns:
+**The háček (ˇ)** is the brand motif: in the wordmark and icon, as the bullet
+in explanations (`.prose-cz ul`), as the loading tick, and as the "aha" mark
+in grammar tips.
 
-- **Interactive embeds** in explanations: ```` ```timeline <guide> ```` (a
-  scroll-driven history timeline: events grow and reveal *why it matters*
-  as they reach the middle of the screen) and ```` ```metro <guide> ````
-  (the interactive metro map). Both have full static alternatives: the
-  timeline opens everything under reduced motion or "Show everything"; the
-  map has a station list for keyboard and screen-reader users.
-- **Exercise card:** label (e.g. "Translate into Czech"), Czech prompt large,
-  answer field, on-screen Czech keyboard. Enter checks, Enter continues.
-  Feedback appears *below* the card, so the question stays visible.
-- **Dialogue:** chat bubbles, alternating sides by speaker, Czech line large
-  with a listen button, English below (can be hidden).
-- **Tables:** stem in ink, ending in its case colour; a faint ∅ for a zero
-  ending; row labels show the case dot, name and number.
-- **Listen button:** a speaker icon, only shown if the device has a Czech
-  voice or a recording exists. Never autoplay.
-- **Goal list:** ○ not yet, ✓ done (emerald). Goals are completed only in
-  unit checks.
-- **Counts:** the number of due reviews appears as a small neutral pill in
-  the nav and as a card on the home page. Never red, never a notification.
+## Motion
 
-## Interaction
+Mechanical and short: 120–250 ms (`--dur-fast`, `--dur`, `--dur-max`), with
+`--ease-mech`. Examples: a ticket being punched (`animate-punch`), a station
+sliding past, split-flap characters. Every animation is removed under
+`prefers-reduced-motion`; components that move also check
+`useReducedMotion()` and render their final state.
 
-- Typing is the main input. The answer field has autocorrect, autocapitalise
-  and spellcheck off, with `lang` set so mobile keyboards can offer Czech.
-- The on-screen keyboard inserts at the cursor and keeps focus in the field.
-- Answers are forgiving about capitals, punctuation and spacing, and flag
-  (rather than fail) missing diacritics unless the learner opts into strict mode.
-- A missed exercise comes back once at the end of the session, marked
-  "another try". Sessions can be left at any time without penalty.
+## Voice and microcopy
+
+Youthful, wry, a little deadpan, the way a Czech friend talks. Warm, never
+saccharine. Czech words where context makes them clear (*Hotovo.* *Jedeme.*
+*Ještě jedno?*); English for explanations. No exclamation-mark overload. Errors are friendly and
+specific. Empty states have personality (*"Tady nic není. Like a tram stop at 3 a.m."*).
 
 ## Accessibility
 
-- Text contrast at least WCAG AA in both themes (the mirrored scales keep the
-  same contrast pairs).
-- Visible focus ring (`sky-600`) on everything interactive; a "Skip to
-  content" link.
-- Touch targets at least 40 px (buttons use `min-h-11`; keyboard keys
-  `h-10 w-10`; listen buttons `h-9 w-9` with negative margin).
-- Feedback panels use `role="status"` / `aria-live` so screen readers announce
-  the result.
-- Respect `prefers-reduced-motion`: the global CSS rule stops all transitions
-  and animations, and components with scroll effects (`useReducedMotion`)
-  show their final state instead.
-- Motion is short and purposeful: content rising into place on load
-  (`animate-rise`), cards lifting on hover, timeline events growing into
-  focus. Nothing loops except the small "live" dot on the departure board.
+- WCAG AA contrast for all text, tested in both themes.
+- Visible 3 px Vltava focus ring; keyboard reachable everywhere; skip link.
+- Touch targets ≥ 40 px (buttons are 44 px high).
+- Never colour alone: cases carry their number, lines their letter, feedback its words.
+- Phone first: designed at 375 px, then scaled up; no sideways scrolling except deliberate scroll areas (wide tables, the metro map).
 
-## Checklist for a new screen
+## Adding something new
 
-- [ ] Czech text has `lang="cs"`
-- [ ] At most one `.btn-primary`
-- [ ] No new colours outside the palettes; Prague colours never mean grammar; no `dark:` classes
-- [ ] The frame may play; the exercise and explanation areas stay calm
-- [ ] Works at 390 px wide without sideways scrolling
-- [ ] Works in dark mode
-- [ ] Every state has text, not just colour
-- [ ] Copy follows the voice rules: no hype, no guilt, no exclamation marks
-- [ ] Content set in real expat situations
+- [ ] Uses tokens only (the tests will tell you)
+- [ ] Line colours only for lines and levels; case colours only in the case lens
+- [ ] Czech marked `lang="cs"`
+- [ ] At most one primary button
+- [ ] Works at 375 px, in light and noční tramvaj, and with reduced motion
+- [ ] Added to `/styleguide` if it's a reusable piece

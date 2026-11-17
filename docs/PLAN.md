@@ -217,7 +217,10 @@ to rename; onboarding arrives in phase 4.
 **Risks:** the URL change (D1); the database migration (mitigated: copy, never
 delete; fixture test; manual check in a browser with real v1 data).
 
-### Phase 2: Design system
+### Phase 2: Design system ✅ done
+
+**Outcome:** tokens in `src/styles/tokens.css` (the only place hex values appear; enforced by `tests/no-hex.test.ts`); four self-hosted WOFF2 faces, checked for every Czech letter by `tests/fonts.test.ts`; contrast for every pairing tested in both themes (`tests/contrast.test.ts`); texture, icons, UI primitives, three wordmark drafts and `/styleguide`. All existing screens migrated to tokens. **The case colours are a v2 set that supersedes §4.1** (the draft failed contrast on paper-2 and was 0.008 apart under protanopia; v2 is ≥ 4.87:1 and 0.043). Open: D5 (UI font), D11 (wordmark), approval of the station tiles. See [DESIGN.md](DESIGN.md).
+
 
 | Change | Files |
 |---|---|

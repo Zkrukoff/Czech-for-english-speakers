@@ -51,7 +51,7 @@ export function AnswerInput({ value, onChange, onSubmit, disabled, placeholder, 
             onSubmit();
           }
         }}
-        className={`${short ? 'w-48' : 'w-full'} rounded-lg border border-stone-300 bg-white px-4 py-3 text-lg shadow-sm focus:border-sky-500 focus:outline-none disabled:bg-stone-50`}
+        className={`${short ? 'w-48' : 'w-full'} rounded-lg border border-rule-strong bg-surface px-4 py-3 text-lg shadow-offset-sm focus:border-vltava focus:outline-none disabled:bg-paper`}
       />
       {lang === 'cs' && <DiacriticKeyboard onInsert={insert} disabled={disabled} />}
     </div>

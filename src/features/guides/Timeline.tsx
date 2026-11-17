@@ -3,7 +3,7 @@ import type { TimelineEvent } from '@/content/schema';
 import { useReducedMotion } from '@/lib/useReducedMotion';
 
 /** Dot colours cycle through the metro lines and the Vltava. */
-const DOTS = ['bg-metro-a', 'bg-metro-b', 'bg-metro-c', 'bg-vltava'];
+const DOTS = ['bg-line-a', 'bg-line-b', 'bg-line-c', 'bg-vltava'];
 
 /**
  * A scroll-driven timeline. Events start small and faded; as each one reaches
@@ -72,10 +72,10 @@ export function Timeline({ events }: { events: TimelineEvent[] }) {
       )}
       <ol ref={listRef} className="relative" aria-label="Timeline of Czech history">
         {/* The track, and a three-colour fill that grows as you scroll. */}
-        <div aria-hidden className="absolute left-[11px] top-2 bottom-2 w-1 rounded-full bg-stone-200 md:left-[7.75rem]" />
+        <div aria-hidden className="absolute left-[11px] top-2 bottom-2 w-1 rounded-full bg-paper-3 md:left-[7.75rem]" />
         <div
           aria-hidden
-          className="absolute left-[11px] top-2 w-1 rounded-full bg-gradient-to-b from-metro-a via-metro-b to-metro-c md:left-[7.75rem]"
+          className="absolute left-[11px] top-2 w-1 rounded-full bg-gradient-to-b from-line-a via-line-b to-line-c md:left-[7.75rem]"
           style={{ height: still ? 'calc(100% - 1rem)' : `calc(${progress * 100}% - 0.5rem)` }}
         />
         {events.map((e, i) => {
@@ -91,7 +91,7 @@ export function Timeline({ events }: { events: TimelineEvent[] }) {
             >
               <div
                 className={`hidden pt-3 text-right font-display font-extrabold leading-tight tracking-tight transition-all duration-500 md:block ${
-                  isActive ? 'text-2xl text-stone-900' : open ? 'text-xl text-stone-700' : 'text-lg text-stone-400'
+                  isActive ? 'text-2xl text-ink' : open ? 'text-xl text-ink-2' : 'text-lg text-ink-3'
                 }`}
               >
                 {e.year}
@@ -99,30 +99,30 @@ export function Timeline({ events }: { events: TimelineEvent[] }) {
               <div className="relative flex justify-center pt-4">
                 <span
                   aria-hidden
-                  className={`relative z-[1] block rounded-full ring-4 ring-stone-50 transition-all duration-500 ${DOTS[i % DOTS.length]} ${
+                  className={`relative z-[1] block rounded-full ring-4 ring-paper transition-all duration-500 ${DOTS[i % DOTS.length]} ${
                     isActive ? 'h-6 w-6 -mt-1' : open ? 'h-4 w-4' : 'h-3 w-3 opacity-50'
                   }`}
                 />
               </div>
               <article
                 className={`card origin-left p-5 transition-all duration-500 ease-out ${
-                  isActive ? 'scale-100 border-stone-300 opacity-100 shadow-lg' : open ? 'scale-[0.97] opacity-100' : 'scale-[0.92] opacity-40'
+                  isActive ? 'scale-100 border-rule-strong opacity-100 shadow-offset' : open ? 'scale-[0.97] opacity-100' : 'scale-[0.92] opacity-40'
                 }`}
               >
-                <div className="font-display text-sm font-bold text-stone-500 md:hidden">{e.year}</div>
-                <h3 className={`font-display font-bold tracking-tight text-stone-900 transition-all duration-500 ${isActive ? 'text-2xl' : 'text-xl'}`}>
+                <div className="font-display text-sm font-bold text-ink-3 md:hidden">{e.year}</div>
+                <h3 className={`font-display font-bold tracking-tight text-ink transition-all duration-500 ${isActive ? 'text-2xl' : 'text-xl'}`}>
                   {e.title}
                 </h3>
-                {e.titleCs && <p lang="cs" className="text-stone-500">{e.titleCs}</p>}
-                <p className="mt-2 text-stone-700">{e.summary}</p>
+                {e.titleCs && <p lang="cs" className="text-ink-3">{e.titleCs}</p>}
+                <p className="mt-2 text-ink-2">{e.summary}</p>
                 <div className={`grid transition-[grid-template-rows,opacity] duration-700 ease-out ${open ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                   <div className="overflow-hidden">
-                    <div className="mt-4 rounded-xl bg-cream p-4 text-stone-800">
-                      <p className="eyebrow text-stone-600">Why it matters</p>
+                    <div className="mt-4 rounded-xl bg-paper-2 p-4 text-ink">
+                      <p className="eyebrow text-ink-2">Why it matters</p>
                       <p className="mt-1">{e.significance}</p>
                       {e.place && (
                         <>
-                          <p className="eyebrow mt-3 text-stone-600">See it in Prague</p>
+                          <p className="eyebrow mt-3 text-ink-2">See it in Prague</p>
                           <p className="mt-1">{e.place}</p>
                         </>
                       )}

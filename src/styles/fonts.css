@@ -1,0 +1,91 @@
+/*
+ * Self-hosted fonts, WOFF2, Latin + Latin Extended subsets only (covers every
+ * Czech letter; see tests/fonts.test.ts). Nothing is loaded from a CDN.
+ * Families are referenced only through the --font-* variables in tokens.css,
+ * so swapping a font (e.g. for Metron later) is a one-line change.
+ *
+ * Licences: all SIL Open Font License 1.1.
+ *   Bricolage Grotesque (Mathieu Triay), Azeret Mono (Displaay, Prague),
+ *   Yrsa (Rosetta, Brno), Mluvka (Jiří Krblich / Fungi Type; OFL.txt alongside).
+ */
+
+/* Bricolage Grotesque: display. Variable: weight 200–800, width 75–100, optical size 12–96. */
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  font-stretch: 75% 100%;
+  src: url(../../node_modules/@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-ext-standard-normal.woff2) format('woff2-variations');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  font-stretch: 75% 100%;
+  src: url(../../node_modules/@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-standard-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* Mluvka: UI and body. Variable: weight 200–900. Subset of the v3.001 web font. */
+@font-face {
+  font-family: 'Mluvka';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 900;
+  src: url(../assets/fonts/mluvka/Mluvka-variable.latin-ext.woff2) format('woff2-variations');
+}
+
+/* Azeret Mono: labels, tables, timetables. Variable: weight 100–900. */
+@font-face {
+  font-family: 'Azeret Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(../../node_modules/@fontsource-variable/azeret-mono/files/azeret-mono-latin-ext-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Azeret Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(../../node_modules/@fontsource-variable/azeret-mono/files/azeret-mono-latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* Yrsa: long reading in guide articles only. Variable: weight 300–700, with italics. */
+@font-face {
+  font-family: 'Yrsa';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 700;
+  src: url(../../node_modules/@fontsource-variable/yrsa/files/yrsa-latin-ext-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Yrsa';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 700;
+  src: url(../../node_modules/@fontsource-variable/yrsa/files/yrsa-latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Yrsa';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 300 700;
+  src: url(../../node_modules/@fontsource-variable/yrsa/files/yrsa-latin-ext-wght-italic.woff2) format('woff2-variations');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Yrsa';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 300 700;
+  src: url(../../node_modules/@fontsource-variable/yrsa/files/yrsa-latin-wght-italic.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}

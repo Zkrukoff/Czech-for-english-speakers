@@ -5,6 +5,7 @@ import { NotFound } from '@/components/NotFound';
 import { GoalList } from '@/components/GoalList';
 import { unitColour } from '@/components/unitColours';
 import { useLessonProgress } from '@/db/hooks';
+import { IconArrowRight, IconDone, IconTerminus } from '@/components/icons';
 
 export function UnitPage() {
   const { unitId = '' } = useParams();
@@ -26,8 +27,8 @@ export function UnitPage() {
               return (
                 <li key={l.id} className="relative mb-3">
                   <Link to={`/lessons/${l.id}`} className="group flex items-center gap-5 rounded-2xl py-2 pr-3">
-                    <span className={`relative z-[1] flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[5px] font-display text-lg font-extrabold transition-transform group-hover:scale-110 ${c.border} ${done ? `${c.bg} ${c.text}` : 'bg-white text-ink'}`}>
-                      {done ? '✓' : l.number}
+                    <span className={`relative z-[1] flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[5px] font-display text-lg font-extrabold transition-transform group-hover:scale-110 ${c.border} ${done ? `${c.bg} ${c.text}` : 'bg-surface text-ink'}`}>
+                      {done ? <IconDone size={24} /> : l.number}
                     </span>
                     <span className="card card-link flex flex-1 items-center justify-between gap-3 px-5 py-4">
                       <span>
@@ -42,15 +43,15 @@ export function UnitPage() {
             })}
             <li className="relative">
               <Link to={`/units/${unit.id}/check`} className="group flex items-center gap-5 rounded-2xl py-2 pr-3">
-                <span className={`relative z-[1] flex h-12 w-12 shrink-0 items-center justify-center rounded-full font-display text-xl font-extrabold text-night-text transition-transform group-hover:scale-110 bg-night`}>
-                  ★
+                <span className={`relative z-[1] flex h-12 w-12 shrink-0 items-center justify-center rounded-full font-display text-xl font-extrabold text-on-fill-light transition-transform group-hover:scale-110 bg-board`}>
+                  <IconTerminus size={22} />
                 </span>
                 <span className="board flex flex-1 items-center justify-between gap-3 rounded-2xl px-5 py-4">
                   <span>
-                    <span className="block text-xs font-semibold uppercase tracking-[0.14em] text-metro-b" lang="cs">Konečná</span>
+                    <span className="block text-xs font-semibold uppercase tracking-[0.14em] text-line-b" lang="cs">Konečná</span>
                     <span className="text-lg font-semibold">Unit check: what can you do?</span>
                   </span>
-                  <span aria-hidden>→</span>
+                  <IconArrowRight size={20} />
                 </span>
               </Link>
             </li>

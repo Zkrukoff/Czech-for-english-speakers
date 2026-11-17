@@ -5,7 +5,7 @@ export function SpokenFormNote({ spoken }: { spoken: { form: string; note?: stri
   const { showSpokenForms } = useSettings();
   if (!showSpokenForms) return null;
   return (
-    <div className="inline-flex max-w-2xl gap-2 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+    <div className="inline-flex max-w-2xl gap-2 rounded-lg border border-champagne bg-champagne-tint px-3 py-2 text-sm text-ink">
       <span className="font-medium">Spoken:</span>
       <span>
         <b>{spoken.form}</b>

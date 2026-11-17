@@ -72,17 +72,17 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
   const remaining = queue.length - index;
   return (
     <div className="space-y-5">
-      <div className="flex items-center justify-between text-sm text-stone-500">
+      <div className="flex items-center justify-between text-sm text-ink-3">
         <span>
           {index + 1} of {queue.length}
-          {!item.firstTry && <span className="ml-2 rounded-full bg-stone-200 px-2 py-0.5 text-xs text-stone-700">another try</span>}
+          {!item.firstTry && <span className="ml-2 rounded-full bg-paper-3 px-2 py-0.5 text-xs text-ink-2">another try</span>}
         </span>
-        <div className="h-1.5 w-40 overflow-hidden rounded-full bg-stone-200" aria-hidden>
-          <div className="h-full bg-stone-700 transition-all" style={{ width: `${((queue.length - remaining) / queue.length) * 100}%` }} />
+        <div className="h-1.5 w-40 overflow-hidden rounded-full bg-paper-3" aria-hidden>
+          <div className="h-full bg-ink transition-all" style={{ width: `${((queue.length - remaining) / queue.length) * 100}%` }} />
         </div>
       </div>
 
-      <div key={`${exercise.id}-${index}`} className="rounded-xl border border-stone-200 bg-white p-5 shadow-sm">
+      <div key={`${exercise.id}-${index}`} className="rounded-xl border border-rule bg-surface p-5 shadow-offset-sm">
         <ExercisePrompt exercise={exercise} />
         <div className="mt-5">
           {exercise.type === 'caseSelect' ? (
@@ -97,7 +97,7 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
                     disabled={!!result}
                     onClick={() => submit(o)}
                     className={`rounded-lg border px-4 py-3 text-left capitalize ${
-                      right ? 'border-emerald-400 bg-emerald-50' : chosen ? 'border-rose-400 bg-rose-50' : 'border-stone-300 bg-white hover:border-stone-500'
+                      right ? 'border-ink bg-paper-2' : chosen ? 'border-ink bg-paper-2' : 'border-rule-strong bg-surface hover:border-rule-strong'
                     }`}
                   >
                     {caseOptionLabel(o)}

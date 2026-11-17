@@ -12,11 +12,11 @@ export function GuidesIndex() {
       <ul className="grid gap-4 md:grid-cols-2">
         {course.guides.map((g) => (
           <li key={g.id}>
-            <Link to={`/guides/${g.id}`} className="card flex h-full flex-col p-5 transition hover:border-stone-400">
+            <Link to={`/guides/${g.id}`} className="card flex h-full flex-col p-5 transition hover:border-rule-strong">
               <h2 className="text-xl font-semibold">{g.title}</h2>
-              {g.titleCs && <p lang="cs" className="text-stone-500">{g.titleCs}</p>}
-              <p className="mt-2 flex-1 text-stone-600">{g.summary}</p>
-              <p className="mt-4 text-sm text-stone-500">
+              {g.titleCs && <p lang="cs" className="text-ink-3">{g.titleCs}</p>}
+              <p className="mt-2 flex-1 text-ink-2">{g.summary}</p>
+              <p className="mt-4 text-sm text-ink-3">
                 {g.sections.length} sections · {g.phrasebook.reduce((n, b) => n + b.phrases.length, 0)} phrases ·{' '}
                 {g.practice.reduce((n, s) => n + s.exercises.length, 0)} practice questions
               </p>

@@ -6,6 +6,7 @@ import { CourseMarkdown } from '@/components/CourseMarkdown';
 import { ReviewStatusBadge } from '@/components/ReviewStatusBadge';
 import { PracticeSets } from '@/features/practice/PracticeSets';
 import { PhraseList } from './PhraseList';
+import { IconArrowLeft } from '@/components/icons';
 
 export function GuidePage() {
   const { guideId = '' } = useParams();
@@ -23,15 +24,15 @@ export function GuidePage() {
 
   return (
     <>
-      <Link to="/guides" className="text-sm text-vltava hover:underline">← Guides</Link>
+      <Link to="/guides" className="text-sm text-vltava hover:underline"><IconArrowLeft size={16} className="inline-block align-[-3px]" /> Guides</Link>
       <PageHeader title={guide.title} subtitle={guide.summary}>
         <div className="mt-3 flex flex-wrap items-center gap-3">
-          {guide.titleCs && <span lang="cs" className="text-stone-500">{guide.titleCs}</span>}
+          {guide.titleCs && <span lang="cs" className="text-ink-3">{guide.titleCs}</span>}
           <ReviewStatusBadge reviewed={guide.nativeReviewed} />
         </div>
       </PageHeader>
 
-      <nav aria-label="Guide sections" className="-mx-4 mb-8 overflow-x-auto border-b border-stone-200 px-4 md:mx-0 md:px-0">
+      <nav aria-label="Guide sections" className="-mx-4 mb-8 overflow-x-auto border-b border-rule px-4 md:mx-0 md:px-0">
         <ul className="flex gap-1">
           {tabs.map((t) => (
             <li key={t.id}>
@@ -42,7 +43,7 @@ export function GuidePage() {
                   window.scrollTo(0, 0);
                 }}
                 aria-current={t.id === tab ? 'page' : undefined}
-                className={`-mb-px whitespace-nowrap border-b-2 px-4 py-2 text-sm font-medium ${t.id === tab ? 'border-stone-900 text-stone-900' : 'border-transparent text-stone-500 hover:text-stone-800'}`}
+                className={`-mb-px whitespace-nowrap border-b-2 px-4 py-2 text-sm font-medium ${t.id === tab ? 'border-ink text-ink' : 'border-transparent text-ink-3 hover:text-ink'}`}
               >
                 {t.label}
               </button>
@@ -58,7 +59,7 @@ export function GuidePage() {
           {guide.phrasebook.map((b) => (
             <section key={b.id} aria-labelledby={`pb-${b.id}`}>
               <h2 id={`pb-${b.id}`} className="mb-1 text-xl font-semibold tracking-tight">{b.title}</h2>
-              {b.intro && <p className="mb-3 text-stone-600">{b.intro}</p>}
+              {b.intro && <p className="mb-3 text-ink-2">{b.intro}</p>}
               <PhraseList phrases={b.phrases} />
             </section>
           ))}
@@ -68,7 +69,7 @@ export function GuidePage() {
       {tab === 'practice' && <PracticeSets sets={guide.practice} context="guide" />}
 
       {(guide.sources.length > 0 || guide.lastChecked) && (
-        <aside className="mt-12 max-w-3xl border-t border-stone-200 pt-4 text-sm text-stone-500">
+        <aside className="mt-12 max-w-3xl border-t border-rule pt-4 text-sm text-ink-3">
           {guide.lastChecked && <p>Practical details last checked: {guide.lastChecked}. Prices, lines and timetables change, so check the official sources before you rely on them.</p>}
           {guide.sources.length > 0 && (
             <ul className="mt-2 space-y-1">

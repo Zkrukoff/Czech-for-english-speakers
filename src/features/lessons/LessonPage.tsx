@@ -13,6 +13,7 @@ import { VocabList } from './VocabList';
 import { DialogueView } from './DialogueView';
 import { PracticeSummary } from './PracticeSummary';
 import { useLessonAnswerHandler } from './useLessonAnswerHandler';
+import { IconArrowLeft, IconArrowRight } from '@/components/icons';
 
 const STEPS = [
   { id: 'explanation', label: 'Grammar' },
@@ -49,21 +50,21 @@ function LessonView({ lesson }: { lesson: Lesson }) {
 
   return (
     <>
-      <Link to={`/units/${unit.id}`} className="text-sm text-vltava hover:underline">← Unit {unit.number}: {unit.title}</Link>
+      <Link to={`/units/${unit.id}`} className="text-sm text-vltava hover:underline"><IconArrowLeft size={16} className="inline-block align-[-3px]" /> Unit {unit.number}: {unit.title}</Link>
       <PageHeader eyebrow={`Lesson ${lesson.number}`} title={lesson.title}>
         <div className="mt-3"><ReviewStatusBadge reviewed={lesson.nativeReviewed} /></div>
       </PageHeader>
 
-      <nav aria-label="Lesson steps" className="mb-8 flex gap-1 overflow-x-auto border-b border-stone-200">
+      <nav aria-label="Lesson steps" className="mb-8 flex gap-1 overflow-x-auto border-b border-rule">
         {STEPS.map((s, i) => (
           <button
             key={s.id}
             type="button"
             onClick={() => setStep(s.id)}
             aria-current={s.id === step ? 'step' : undefined}
-            className={`-mb-px whitespace-nowrap border-b-2 px-4 py-2 text-sm font-medium ${s.id === step ? 'border-stone-900 text-stone-900' : 'border-transparent text-stone-500 hover:text-stone-800'}`}
+            className={`-mb-px whitespace-nowrap border-b-2 px-4 py-2 text-sm font-medium ${s.id === step ? 'border-ink text-ink' : 'border-transparent text-ink-3 hover:text-ink'}`}
           >
-            <span className="mr-1.5 text-stone-400">{i + 1}</span>
+            <span className="mr-1.5 text-ink-3">{i + 1}</span>
             {s.label}
           </button>
         ))}
@@ -73,7 +74,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
         <>
           <CourseMarkdown>{lesson.explanationMd}</CourseMarkdown>
           {grammarLinks.length > 0 && (
-            <p className="mt-6 text-sm text-stone-600">
+            <p className="mt-6 text-sm text-ink-2">
               More detail:{' '}
               {grammarLinks.map((p, i) => (
                 <span key={p.id}>
@@ -111,12 +112,12 @@ function LessonView({ lesson }: { lesson: Lesson }) {
         ))}
 
       {step !== 'practice' && (
-        <div className="mt-10 flex justify-between border-t border-stone-200 pt-6">
+        <div className="mt-10 flex justify-between border-t border-rule pt-6">
           {stepIndex > 0 ? (
-            <button type="button" onClick={() => setStep(STEPS[stepIndex - 1]!.id)} className="btn btn-quiet">← {STEPS[stepIndex - 1]!.label}</button>
+            <button type="button" onClick={() => setStep(STEPS[stepIndex - 1]!.id)} className="btn btn-quiet"><IconArrowLeft size={16} className="inline-block align-[-3px]" /> {STEPS[stepIndex - 1]!.label}</button>
           ) : <span />}
           <button type="button" onClick={() => setStep(STEPS[stepIndex + 1]!.id)} className="btn btn-primary">
-            {STEPS[stepIndex + 1]!.label} →
+            {STEPS[stepIndex + 1]!.label} <IconArrowRight size={16} className="inline-block align-[-3px]" />
           </button>
         </div>
       )}

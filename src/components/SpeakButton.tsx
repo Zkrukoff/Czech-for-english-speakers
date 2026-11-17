@@ -23,7 +23,7 @@ export function SpeakButton({ text, audioId, label = 'Listen' }: { text: string;
     <button
       type="button"
       onClick={() => speech.speak(text, { audioId, rate: settings.speechRate, voiceURI: settings.voiceURI })}
-      className="-my-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-sans text-stone-500 hover:bg-stone-100 hover:text-stone-900"
+      className="-my-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-sans text-ink-3 hover:bg-paper-2 hover:text-ink"
       aria-label={`${label}: ${text}`}
       title={label}
     >

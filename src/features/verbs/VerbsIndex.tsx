@@ -16,11 +16,11 @@ export function VerbsIndex() {
           if (!page) return null;
           return (
             <li key={t}>
-              <Link to={`/verbs/${page.id}`} className="flex gap-4 rounded-lg border border-stone-200 bg-white px-4 py-3 hover:border-stone-400">
-                <span className="w-5 text-sm font-medium text-stone-400">{i + 1}</span>
+              <Link to={`/verbs/${page.id}`} className="flex gap-4 rounded-lg border border-rule bg-surface px-4 py-3 hover:border-rule-strong">
+                <span className="w-5 text-sm font-medium text-ink-3">{i + 1}</span>
                 <span>
                   <span className="block font-medium">{page.title}</span>
-                  {page.summary && <span className="block text-sm text-stone-600">{page.summary}</span>}
+                  {page.summary && <span className="block text-sm text-ink-2">{page.summary}</span>}
                 </span>
               </Link>
             </li>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { IconUp } from '@/components/icons';
 
 const LETTERS = ['á', 'č', 'ď', 'é', 'ě', 'í', 'ň', 'ó', 'ř', 'š', 'ť', 'ú', 'ů', 'ý', 'ž'];
 
@@ -18,7 +19,7 @@ export function DiacriticKeyboard({ onInsert, disabled }: { onInsert: (ch: strin
             onMouseDown={(e) => e.preventDefault()}
             onClick={() => onInsert(ch)}
             lang="cs"
-            className="h-10 w-10 rounded-md border border-stone-300 bg-white text-lg hover:bg-stone-100 disabled:opacity-40"
+            className="h-10 w-10 rounded-md border border-rule-strong bg-surface text-lg hover:bg-paper-2 disabled:opacity-40"
           >
             {ch}
           </button>
@@ -30,9 +31,9 @@ export function DiacriticKeyboard({ onInsert, disabled }: { onInsert: (ch: strin
         onMouseDown={(e) => e.preventDefault()}
         onClick={() => setUpper((u) => !u)}
         aria-pressed={upper}
-        className={`h-10 rounded-md border px-3 text-sm ${upper ? 'border-stone-900 bg-stone-900 text-white' : 'border-stone-300 bg-white hover:bg-stone-100'}`}
+        className={`h-10 rounded-md border px-3 text-sm ${upper ? 'border-ink bg-ink text-on-fill-light' : 'border-rule-strong bg-surface hover:bg-paper-2'}`}
       >
-        ⇧
+        <IconUp size={18} title="Capital letters" />
       </button>
     </div>
   );

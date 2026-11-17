@@ -6,7 +6,7 @@ export function PageHeader({ title, subtitle, eyebrow, children }: { title: Reac
       <div className="metro-stripe mb-4" aria-hidden />
       {eyebrow && <div className="eyebrow mb-2">{eyebrow}</div>}
       <h1 className="text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">{title}</h1>
-      {subtitle && <p className="mt-4 max-w-2xl text-lg leading-relaxed text-stone-600">{subtitle}</p>}
+      {subtitle && <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-2">{subtitle}</p>}
       {children}
     </div>
   );
