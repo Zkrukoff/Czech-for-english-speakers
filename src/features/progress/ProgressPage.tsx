@@ -56,7 +56,7 @@ export function ProgressPage() {
 
   return (
     <>
-      <PageHeader eyebrow="Jízdenky" title="Ticket wallet" subtitle="Every finished station gets its ticket stamped. Progress here is what you can do, not how many days in a row you opened the app." />
+      <PageHeader title="Ticket wallet" cs="Jízdenky" subtitle="Every finished station gets its ticket stamped. Progress here is what you can do, not how many days in a row you opened the app." />
 
       <dl className="mb-10 grid grid-cols-2 border-2 border-ink bg-surface shadow-offset sm:grid-cols-4">
         {[

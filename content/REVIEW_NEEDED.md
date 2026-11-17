@@ -174,3 +174,11 @@ check first. When an item is confirmed or corrected, remove it here and set
 | Zabydlení | All five sections: flat sizes (2+kk vs 2+1), *zálohy na energie*, *obvoďák*, *eRecept*, 155 / 112, *pohotovost*, the phrasebook | Accurate, natural, current? |
 | transport | Inspector surcharge "over a thousand crowns" and the app ticket's activation delay | Not on the pid.cz pages checked: verify. |
 
+
+## Home: holidays and navigation
+
+| Where | Text | Question |
+|---|---|---|
+| calendar/holidays.json | The one-line descriptions, greetings (*Šťastný nový rok!, Veselé Velikonoce!, Veselé Vánoce!*) and which days large shops close (from the culture guide) | Accurate and current? |
+| home | *Dnes · úterý 17. listopadu*, *Státní svátek*, *Příští svátek*, *za 37 dní / za 2 dny / zítra* | Natural? |
+| page titles | Czech names under English titles: *Mluvnice, Slovesa, Vyhledávání sloves, Průvodce, Jízdenky, Nastavení, Opakování, Česká abeceda, Skloňování* | OK? |

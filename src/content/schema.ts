@@ -583,6 +583,26 @@ export const NamedaysSchema = z.object({
   nativeReviewed: reviewed,
 });
 
+export const HolidaysSchema = z.object({
+  $comment: z.string().optional(),
+  source: z.object({ title: z.string(), checked: z.string() }),
+  holidays: z
+    .array(
+      z.object({
+        id,
+        /** MM-DD, or easter-2 (Good Friday) / easter+1 (Easter Monday). */
+        date: z.string().regex(/^((0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])|easter[+-]\d)$/),
+        cs: z.string().min(1),
+        en: z.string().min(1),
+        about: z.string().min(1),
+        shops: z.enum(['closed', 'noon', 'open']),
+        greeting: z.object({ cs: z.string(), en: z.string() }).optional(),
+      }),
+    )
+    .min(1),
+  nativeReviewed: reviewed,
+});
+
 /**
  * Real-speaker recordings (D6). Files live in public/audio/<id>.<ext>.
  * Exercises that need a recording stay hidden until it is listed here.
@@ -626,6 +646,8 @@ export type Noun = z.infer<typeof NounSchema>;
 export type Gender = z.infer<typeof GenderSchema>;
 export type Mission = z.infer<typeof MissionSchema>;
 export type NamedaysData = z.infer<typeof NamedaysSchema>;
+export type HolidaysData = z.infer<typeof HolidaysSchema>;
+export type Holiday = HolidaysData['holidays'][number];
 export type AudioManifest = z.infer<typeof AudioManifestSchema>;
 export type GrammarFunction = z.infer<typeof GrammarFunctionSchema>;
 export type LinesData = z.infer<typeof LinesSchema>;

@@ -1,0 +1,138 @@
+{
+  "$comment": "Czech public holidays (státní a ostatní svátky). \"date\" is MM-DD, or \"easter-2\" / \"easter+1\" for Good Friday and Easter Monday (computed). \"shops\": closed by law for larger shops, \"noon\" = closed from midday, \"open\". Matches the culture guide (holidays.md).",
+  "source": {
+    "title": "Act No. 245/2000 Coll. on public holidays; shop closing: Act No. 223/2016 Coll.",
+    "checked": "2026-11-17"
+  },
+  "holidays": [
+    {
+      "id": "novy-rok",
+      "date": "01-01",
+      "cs": "Den obnovy samostatného českého státu · Nový rok",
+      "en": "Restoration Day · New Year",
+      "about": "The Czech Republic began on 1 January 1993, and it's New Year's Day.",
+      "shops": "closed",
+      "greeting": {
+        "cs": "Šťastný nový rok!",
+        "en": "Happy New Year!"
+      }
+    },
+    {
+      "id": "velky-patek",
+      "date": "easter-2",
+      "cs": "Velký pátek",
+      "en": "Good Friday",
+      "about": "The Friday before Easter.",
+      "shops": "open",
+      "greeting": {
+        "cs": "Veselé Velikonoce!",
+        "en": "Happy Easter!"
+      }
+    },
+    {
+      "id": "velikonocni-pondeli",
+      "date": "easter+1",
+      "cs": "Velikonoční pondělí",
+      "en": "Easter Monday",
+      "about": "The day of the pomlázka: boys go round with braided willow whips, and get painted eggs.",
+      "shops": "closed",
+      "greeting": {
+        "cs": "Veselé Velikonoce!",
+        "en": "Happy Easter!"
+      }
+    },
+    {
+      "id": "svatek-prace",
+      "date": "05-01",
+      "cs": "Svátek práce",
+      "en": "Labour Day",
+      "about": "Labour Day, and the traditional day for lovers to kiss under a blossoming tree.",
+      "shops": "open"
+    },
+    {
+      "id": "den-vitezstvi",
+      "date": "05-08",
+      "cs": "Den vítězství",
+      "en": "Victory Day",
+      "about": "The end of the Second World War in Europe, 1945.",
+      "shops": "closed"
+    },
+    {
+      "id": "cyril-metodej",
+      "date": "07-05",
+      "cs": "Den slovanských věrozvěstů Cyrila a Metoděje",
+      "en": "Saints Cyril and Methodius Day",
+      "about": "The two missionaries who brought Christianity and writing to the Slavs in 863.",
+      "shops": "open"
+    },
+    {
+      "id": "jan-hus",
+      "date": "07-06",
+      "cs": "Den upálení mistra Jana Husa",
+      "en": "Jan Hus Day",
+      "about": "The church reformer Jan Hus was burned at the stake on this day in 1415.",
+      "shops": "open"
+    },
+    {
+      "id": "statnost",
+      "date": "09-28",
+      "cs": "Den české státnosti",
+      "en": "Czech Statehood Day",
+      "about": "The feast of St Wenceslas (svatý Václav), patron saint of the Czech lands.",
+      "shops": "closed"
+    },
+    {
+      "id": "vznik-csr",
+      "date": "10-28",
+      "cs": "Den vzniku samostatného československého státu",
+      "en": "Independent Czechoslovak State Day",
+      "about": "Czechoslovakia was founded on 28 October 1918: the main national day.",
+      "shops": "closed"
+    },
+    {
+      "id": "17-listopad",
+      "date": "11-17",
+      "cs": "Den boje za svobodu a demokracii",
+      "en": "Struggle for Freedom and Democracy Day",
+      "about": "The student protests of 1939 and the Velvet Revolution of 1989. People light candles on Národní třída.",
+      "shops": "open"
+    },
+    {
+      "id": "stedry-den",
+      "date": "12-24",
+      "cs": "Štědrý den",
+      "en": "Christmas Eve",
+      "about": "The day of Czech Christmas: carp for dinner, and presents from Ježíšek in the evening.",
+      "shops": "noon",
+      "greeting": {
+        "cs": "Veselé Vánoce!",
+        "en": "Merry Christmas!"
+      }
+    },
+    {
+      "id": "1-svatek-vanocni",
+      "date": "12-25",
+      "cs": "1. svátek vánoční",
+      "en": "Christmas Day",
+      "about": "A quiet family day.",
+      "shops": "closed",
+      "greeting": {
+        "cs": "Veselé Vánoce!",
+        "en": "Merry Christmas!"
+      }
+    },
+    {
+      "id": "2-svatek-vanocni",
+      "date": "12-26",
+      "cs": "2. svátek vánoční",
+      "en": "St Stephen's Day",
+      "about": "Visiting family and friends, or a walk off the cukroví.",
+      "shops": "closed",
+      "greeting": {
+        "cs": "Veselé Vánoce!",
+        "en": "Merry Christmas!"
+      }
+    }
+  ],
+  "nativeReviewed": false
+}

@@ -62,7 +62,7 @@ export function SettingsPage() {
 
   return (
     <>
-      <PageHeader eyebrow="Nastavení" title="Settings" />
+      <PageHeader title="Settings" cs="Nastavení" />
       <div className="max-w-2xl space-y-12">
         <section aria-labelledby="s-look">
           <SectionNumber n={1} id="s-look">Appearance</SectionNumber>

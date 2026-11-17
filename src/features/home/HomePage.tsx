@@ -6,7 +6,8 @@ import { useProfile } from '@/db/hooks';
 import { IconArrowRight, IconReview } from '@/components/icons';
 import { stationPath } from '@/lib/paths';
 import { LineStrip } from './LineStrip';
-import { NameDay } from './NameDay';
+import { LineVertical } from './LineVertical';
+import { Today } from './Today';
 import { useLinePosition } from './useLinePosition';
 
 /** Home: the line you're riding, where you are, what's next, and today's name day. */
@@ -34,11 +35,16 @@ export function HomePage() {
             <span className="font-mono">A1–A2</span> · {pos.practised} of {pos.total} lessons practised
           </p>
         </div>
-        <div className="min-w-0 border-2 border-ink bg-surface pt-2 shadow-offset">
+        {/* Phones: the line runs top to bottom with unit names written out. Wider screens: a strip map, unit names on hover. */}
+        <div className="border-2 border-ink bg-surface p-3 shadow-offset sm:hidden">
+          <LineVertical line={lineA!} stateOf={pos.stateOf} homeKey={profile?.homeStation} />
+        </div>
+        <div className="hidden min-w-0 border-2 border-ink bg-surface pt-2 shadow-offset sm:block">
           <LineStrip line={lineA!} stateOf={pos.stateOf} homeKey={profile?.homeStation} />
         </div>
         <p className="mt-2 text-xs text-ink-3">
-          Filled: done · yellow: you are here · dashed: <span lang="cs">výluka</span>, still being written · double ring: milestone. Tap a station.
+          Filled: done · yellow: you are here · dashed: <span lang="cs">výluka</span>, still being written · double ring: milestone.
+          <span className="hidden sm:inline"> Point at a station to see what's taught there.</span>
         </p>
       </section>
 
@@ -79,7 +85,7 @@ export function HomePage() {
             </span>
             <IconArrowRight size={18} className="text-ink-3 group-hover:text-ink" />
           </Link>
-          <NameDay />
+          <Today />
         </div>
       </section>
 

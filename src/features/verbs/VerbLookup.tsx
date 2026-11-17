@@ -12,7 +12,7 @@ export function VerbLookup() {
   const results = useMemo(() => searchVerbs(course.verbs, q), [q]);
   return (
     <>
-      <PageHeader title="Verb lookup" subtitle="Search by infinitive, any conjugated form, or English meaning. Diacritics are optional: 'pisu' finds psát." />
+      <PageHeader title="Verb lookup" cs="Vyhledávání sloves" subtitle="Search by infinitive, any conjugated form, or English meaning. Diacritics are optional: 'pisu' finds psát." />
       <input
         type="search"
         autoFocus

@@ -30,7 +30,8 @@ export function DepartureBoard({ text, className = '' }: { text: string; classNa
     return () => clearInterval(id);
   }, [text, reduced]);
   return (
-    <span className={`board inline-flex rounded-sm px-2 py-1 font-mono font-semibold uppercase ${className}`} style={{ letterSpacing: '0.08em', color: 'var(--line-b)' }} aria-label={text}>
+    <span className={`board inline-flex rounded-sm px-2 py-1 font-mono font-semibold uppercase ${className}`} style={{ letterSpacing: '0.08em', color: 'var(--line-b)' }}>
+      <span className="sr-only">{text}</span>
       <span aria-hidden className="whitespace-pre-wrap break-words">
         {shown}
       </span>

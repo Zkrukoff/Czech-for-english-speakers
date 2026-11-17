@@ -11,6 +11,7 @@ import {
   LexiconSchema,
   FunctionsFileSchema,
   NamedaysSchema,
+  HolidaysSchema,
   AudioManifestSchema,
   UnitSchema,
   VerbFileSchema,
@@ -26,6 +27,7 @@ import {
   type Noun,
   type GrammarFunction,
   type NamedaysData,
+  type HolidaysData,
   type AudioManifest,
   type Mission,
   type StationData,
@@ -141,6 +143,8 @@ export interface Course {
   /** Guide sections that use each lesson's language (generated from guide.json). */
   guideLinksByLesson: Map<string, { guideId: string; sectionId: string; title: string }[]>;
   namedays: NamedaysData | null;
+  /** Czech public holidays (content/calendar/holidays.json). */
+  holidays: HolidaysData | null;
   /** Recorded audio by id (content/audio/manifest.json). */
   audio: Map<string, AudioManifest['recordings'][number]>;
   /** Pattern and function SRS keys each exercise practises (from its lens markup). */
@@ -206,6 +210,7 @@ export function loadContent(files: ContentFiles): LoadResult {
     taughtIn: new Map(),
     guideLinksByLesson: new Map(),
     namedays: null,
+    holidays: null,
     audio: new Map(),
     hiddenExercises: [],
     lensKeysByExercise: new Map(),
@@ -436,6 +441,7 @@ export function loadContent(files: ContentFiles): LoadResult {
   }
 
   /* ---- Name days and audio ---- */
+  if ('calendar/holidays.json' in files.json) course.holidays = parse(HolidaysSchema, 'calendar/holidays.json', files.json['calendar/holidays.json']);
   if ('calendar/namedays.json' in files.json) course.namedays = parse(NamedaysSchema, 'calendar/namedays.json', files.json['calendar/namedays.json']);
   if ('audio/manifest.json' in files.json) {
     const manifest = parse(AudioManifestSchema, 'audio/manifest.json', files.json['audio/manifest.json']);

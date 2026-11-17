@@ -26,6 +26,7 @@ export function TablesPage() {
     <>
       <PageHeader
         title="Declension tables"
+        cs="Skloňování"
         subtitle="Every noun follows one of these model words. Endings are coloured by case, using the same colour for a case everywhere in the app."
       />
       <div className="mb-4 flex flex-wrap gap-x-5 gap-y-2 border-2 border-ink bg-surface px-4 py-3 text-sm" aria-label="Case colours">

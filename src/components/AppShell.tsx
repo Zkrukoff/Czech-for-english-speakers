@@ -5,15 +5,15 @@ import { useDueSummary } from '@/db/useDue';
 import { MetroLineStripe } from './brand/Metro';
 import { MarkKubismus, WordmarkKubismus } from './brand/Wordmarks';
 
-/** Czech labels (the brief), with the English meaning for tooltips and screen readers. */
+/** English labels for easy navigation; each page shows its Czech name under the title (and in the tooltip here). */
 const NAV = [
-  { to: '/', label: 'Linka', en: 'your line', end: true },
-  { to: '/review', label: 'Opakování', en: 'review' },
-  { to: '/grammar', label: 'Mluvnice', en: 'grammar' },
-  { to: '/verbs', label: 'Slovesa', en: 'verbs' },
-  { to: '/guides', label: 'Průvodce', en: 'guides' },
-  { to: '/wallet', label: 'Jízdenky', en: 'ticket wallet' },
-  { to: '/settings', label: 'Nastavení', en: 'settings' },
+  { to: '/', label: 'Home', cs: 'Linka', end: true },
+  { to: '/review', label: 'Review', cs: 'Opakování' },
+  { to: '/grammar', label: 'Grammar', cs: 'Mluvnice' },
+  { to: '/verbs', label: 'Verbs', cs: 'Slovesa' },
+  { to: '/guides', label: 'Guides', cs: 'Průvodce' },
+  { to: '/wallet', label: 'Ticket wallet', cs: 'Jízdenky' },
+  { to: '/settings', label: 'Settings', cs: 'Nastavení' },
 ];
 
 /** Wordmark B (Kubismus, chosen in D11) with the tagline. */
@@ -50,8 +50,7 @@ export function AppShell({ error = false }: { error?: boolean }) {
                       }`
                     }
                   >
-                    <span lang="cs" title={n.en}>{n.label}</span>
-                    <span className="sr-only"> ({n.en})</span>
+                    <span title={n.cs}>{n.label}</span>
                     {n.to === '/review' && due && due.dueNow > 0 && (
                       <span className="ml-1.5 rounded-full bg-line-b px-1.5 text-xs font-bold tabular-nums text-ink" aria-label={`${due.dueNow} due`}>
                         {due.dueNow}

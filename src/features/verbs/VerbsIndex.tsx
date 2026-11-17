@@ -5,7 +5,7 @@ import { PageHeader } from '@/components/PageHeader';
 export function VerbsIndex() {
   return (
     <>
-      <PageHeader title="Verbs" subtitle="Verbs are a core track. Work through these topics in order; each builds on the one before.">
+      <PageHeader title="Verbs" cs="Slovesa" subtitle="Verbs are a core track. Work through these topics in order; each builds on the one before.">
         <Link to="/verbs/lookup" className="btn btn-primary mt-4">
           Verb lookup ({course.verbs.length} verbs)
         </Link>

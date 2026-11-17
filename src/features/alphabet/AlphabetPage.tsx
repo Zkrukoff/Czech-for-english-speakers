@@ -26,6 +26,7 @@ export function AlphabetPage() {
     <>
       <PageHeader
         title="The Czech alphabet"
+        cs="Česká abeceda"
         subtitle="42 letters. Learn them once and you can read any Czech word aloud, and spell your name and e-mail at the bank, the doctor's or the foreign police."
       >
         <div className="mt-3"><ReviewStatusBadge reviewed={alphabet.nativeReviewed} /></div>

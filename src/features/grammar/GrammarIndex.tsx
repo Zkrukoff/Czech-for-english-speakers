@@ -15,7 +15,7 @@ export function GrammarIndex() {
   const fns = [...course.functions.values()].filter((f) => f.id !== 'chunk');
   return (
     <>
-      <PageHeader eyebrow="Mluvnice" title="Grammar" subtitle="Cases by what they do, the model nouns behind every ending, and verbs in pairs. Every underlined ending in a lesson links here." />
+      <PageHeader title="Grammar" cs="Mluvnice" subtitle="Cases by what they do, the model nouns behind every ending, and verbs in pairs. Every underlined ending in a lesson links here." />
 
       {overview && (
         <Link to={`/grammar/${overview.id}`} className="card card-link mb-12 flex items-center justify-between gap-4 p-5">

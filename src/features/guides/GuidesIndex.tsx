@@ -12,8 +12,8 @@ export function GuidesIndex() {
   return (
     <>
       <PageHeader
-        eyebrow="Průvodce"
         title="Guides"
+        cs="Průvodce"
         subtitle="Life in Czechia beyond the lessons. Every article links to the lessons that teach its Czech, and every lesson links back here."
       />
       <ul className="grid gap-8 md:grid-cols-2">

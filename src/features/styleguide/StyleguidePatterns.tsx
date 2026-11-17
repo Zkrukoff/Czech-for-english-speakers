@@ -2,7 +2,7 @@ import { course } from '@/content';
 import { CzechText } from '@/components/CzechText';
 import { GenderMark } from '@/components/GenderMark';
 import { LineStrip } from '@/features/home/LineStrip';
-import { NameDay } from '@/features/home/NameDay';
+import { Today } from '@/features/home/Today';
 import { FeedbackPanel } from '@/features/exercises/FeedbackPanel';
 import { ChoiceInput } from '@/features/exercises/types/ChoiceInput';
 import { RealiaCard } from '@/features/exercises/types/RealiaCard';
@@ -73,9 +73,10 @@ export function StyleguidePatterns() {
         </div>
       </Demo>
 
-      <Demo title="Name day (home)">
-        <div className="max-w-sm">
-          <NameDay date={new Date(2026, 11, 24)} />
+      <Demo title="Today (home): holiday, name day, countdown" note="On a public holiday the ticket-stock band shows what it is, whether shops are open and what to say. The countdown uses the number rule: za 2 dny, za 5 dní.">
+        <div className="grid max-w-3xl gap-5 sm:grid-cols-2">
+          <Today date={new Date(2026, 11, 24)} />
+          <Today date={new Date(2026, 2, 10)} />
         </div>
       </Demo>
 

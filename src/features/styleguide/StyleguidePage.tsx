@@ -46,7 +46,7 @@ function Swatch({ name, note, text = 'var(--ink)' }: { name: string; note?: stri
   return (
     <div className="flex flex-col">
       <div className="flex h-20 items-end rounded-md border-2 border-ink p-2" style={{ background: `var(${name})`, color: text }}>
-        <span className="label-board">Aa</span>
+        <span className="font-display text-3xl font-extrabold leading-none">Aa</span>
       </div>
       <code className="mt-1 font-mono text-xs text-ink">{name}</code>
       <span className="font-mono text-xs text-ink-3">{readToken(name)}</span>
@@ -199,7 +199,7 @@ export function StyleguidePage() {
                   <tr key={fg + bg} className="border-b border-rule">
                     <td className="py-1.5 pr-4">{fg}</td>
                     <td className="py-1.5 pr-4">{bg}</td>
-                    <td className="py-1.5 pr-4"><span className="rounded-sm px-2 py-0.5 font-ui text-sm" style={{ color: `var(${fg})`, background: `var(${bg})` }}>Žluťoučký</span></td>
+                    <td className="py-1.5 pr-4"><span className={`rounded-sm px-2 py-0.5 ${use === 'large' ? 'font-display text-2xl font-extrabold' : 'font-ui text-sm'}`} style={{ color: `var(${fg})`, background: `var(${bg})` }}>Žluťoučký</span></td>
                     <td className="py-1.5 pr-4">{r.toFixed(2)}:1</td>
                     <td className="py-1.5">{use === 'large' ? 'large text only' : 'any text'} {ok ? '· pass' : '· FAIL'}</td>
                   </tr>

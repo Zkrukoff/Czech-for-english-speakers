@@ -81,7 +81,7 @@ export function ReviewPage() {
     const right = first.filter((o) => o.result.accepted).length;
     return (
       <>
-        <PageHeader eyebrow="Opakování" title="Hotovo." />
+        <PageHeader title="Review done" cs="Hotovo." />
         <div className="flex flex-wrap items-center gap-6 rounded-md border-2 border-ink bg-surface p-6 shadow-offset">
           <Stamp main={`${right}/${first.length}`} bottom="OPAKOVÁNÍ" size={104} />
           <div className="min-w-0 flex-1">
@@ -114,7 +114,7 @@ export function ReviewPage() {
 
   return (
     <>
-      <PageHeader eyebrow="Opakování" title="Review" subtitle="Things come back just before you'd forget them, timed from how you answered last time." />
+      <PageHeader title="Review" cs="Opakování" subtitle="Things come back just before you'd forget them, timed from how you answered last time." />
       {!due ? null : due.total === 0 ? (
         <div className="rounded-md border-2 border-dashed border-ink bg-paper-2 p-6">
           <p className="font-display text-2xl font-extrabold" lang="cs">Tady nic není.</p>

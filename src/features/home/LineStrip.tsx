@@ -4,6 +4,7 @@ import type { Line, Stop } from '@/content/loader';
 import { LineBadge } from '@/components/ui';
 import { IconPin } from '@/components/icons';
 import { stationPath } from '@/lib/paths';
+import { stopSummary } from '@/features/line/stopSummary';
 
 const LINE_BG = { A: 'bg-line-a', B: 'bg-line-b', C: 'bg-line-c' } as const;
 
@@ -47,15 +48,16 @@ export function LineStrip({ line, stateOf, homeKey, compact = false }: Props) {
             const state = inService ? stateOf(stop) : 'vyluka';
             const isHome = homeKey === `${stop.line}/${stop.slug}`;
             const milestone = stop.kind === 'milestone';
-            const label = `${stop.stationInfo.name}${state === 'current' ? ', you are here' : state === 'done' ? ', done' : state === 'vyluka' ? ', not open yet' : ''}${isHome ? ', your home station' : ''}`;
+            const sum = stopSummary(stop);
+            const label = `${stop.stationInfo.name}: ${sum.kicker}, ${sum.title}${state === 'current' ? ', you are here' : state === 'done' ? ', done' : state === 'vyluka' ? ', not open yet' : ''}${isHome ? ', your home station' : ''}`;
             return (
               <li key={stop.slug} ref={state === 'current' ? current : undefined} className="relative shrink-0" style={{ width: step }}>
                 <Link
                   to={stationPath(stop)}
-                  aria-label={label}
                   aria-current={state === 'current' ? 'location' : undefined}
                   className="group absolute bottom-0 left-0 flex w-full flex-col items-center"
                 >
+                  <span className="sr-only">{label}</span>
                   {/* Name, angled like on the real strip maps. */}
                   <span
                     lang="cs"
@@ -75,6 +77,17 @@ export function LineStrip({ line, stateOf, homeKey, compact = false }: Props) {
                   >
                     {state === 'current' && !compact && <IconPin size={18} className="text-on-fill-dark" />}
                   </span>
+                  {/* What's at this stop, on hover or keyboard focus. Anchored at the dot and opening rightwards, so it stays inside the scroll area. */}
+                  {!compact && (
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute bottom-16 left-1/2 z-10 w-max max-w-[15rem] -translate-x-3 border-2 border-ink bg-board px-3 py-2 text-left text-on-fill-light opacity-0 shadow-offset-sm transition-opacity duration-150 group-hover:opacity-100 group-focus-visible:opacity-100"
+                    >
+                      <span lang="cs" className="block font-bold leading-tight">{stop.stationInfo.name}</span>
+                      <span className="label-board mt-1 block text-line-b">{sum.kicker}</span>
+                      <span className="block text-sm font-semibold leading-snug">{sum.title}</span>
+                    </span>
+                  )}
                   {isHome && (
                     <span aria-hidden className="absolute -bottom-0.5 label-board whitespace-nowrap text-[10px] text-ink-2">
                       domov
