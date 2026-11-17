@@ -1,6 +1,6 @@
 import 'fake-indexeddb/auto';
 import { describe, expect, it } from 'vitest';
-import { CzechDB } from '@/db/db';
+import { PrazakDB } from '@/db/db';
 import { createScheduler, gradeFor, Rating, State } from '@/lib/srs/scheduler';
 import { dueCards, dueSummary, ensureVocabCards, scheduleAnswer, scheduleExerciseAnswer } from '@/db/srs';
 
@@ -10,7 +10,7 @@ const T0 = Date.UTC(2026, 0, 5, 9, 0, 0);
 const s = createScheduler({ fuzz: false });
 
 let dbCounter = 0;
-const freshDb = () => new CzechDB(`test-srs-${dbCounter++}`);
+const freshDb = () => new PrazakDB(`test-srs-${dbCounter++}`);
 
 describe('gradeFor', () => {
   it('maps answer outcomes to FSRS grades', () => {

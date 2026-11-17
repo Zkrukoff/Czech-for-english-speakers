@@ -20,6 +20,7 @@ import {
   type VocabItem,
 } from './schema';
 import { validatePattern } from '@/lib/answers/patterns';
+import { compareCs } from '@/lib/text';
 
 /* ---------- Resolved (loaded) content types ---------- */
 
@@ -169,7 +170,7 @@ export function loadContent(files: ContentFiles): LoadResult {
       errors.push(`verbs: motionPair "${v.motionPair}" of "${v.lemma}" has no entry`);
     }
   }
-  course.verbs.sort((a, b) => a.lemma.localeCompare(b.lemma, 'cs'));
+  course.verbs.sort((a, b) => compareCs(a.lemma, b.lemma));
 
   /* ---- Grammar pages ---- */
   for (const [path, raw] of Object.entries(files.markdown)) {

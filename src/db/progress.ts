@@ -1,4 +1,4 @@
-import { db, type Attempt, type CzechDB, type GoalProgress } from './db';
+import { db, type Attempt, type PrazakDB, type GoalProgress } from './db';
 import type { CheckResult } from '@/lib/answers/check';
 import type { Exercise } from '@/content/schema';
 
@@ -10,7 +10,7 @@ export async function recordAttempt(
   answer: string,
   result: CheckResult,
   context: AttemptContext,
-  database: CzechDB = db,
+  database: PrazakDB = db,
   now = Date.now(),
   itemKey = `ex:${exercise.id}`,
 ): Promise<Attempt> {
@@ -28,7 +28,7 @@ export async function recordAttempt(
   return attempt;
 }
 
-export async function markLessonStep(lessonId: string, step: string, database: CzechDB = db): Promise<void> {
+export async function markLessonStep(lessonId: string, step: string, database: PrazakDB = db): Promise<void> {
   await database.transaction('rw', database.lessonProgress, async () => {
     const p = (await database.lessonProgress.get(lessonId)) ?? { lessonId, stepsDone: [] };
     if (!p.stepsDone.includes(step)) p.stepsDone.push(step);
@@ -36,7 +36,7 @@ export async function markLessonStep(lessonId: string, step: string, database: C
   });
 }
 
-export async function completeLesson(lessonId: string, database: CzechDB = db, now = Date.now()): Promise<void> {
+export async function completeLesson(lessonId: string, database: PrazakDB = db, now = Date.now()): Promise<void> {
   await database.transaction('rw', database.lessonProgress, async () => {
     const p = (await database.lessonProgress.get(lessonId)) ?? { lessonId, stepsDone: [] };
     p.completedAt ??= now;
@@ -68,7 +68,7 @@ export function scoreGoals(
 }
 
 /** Save unit-check results. A goal, once completed, stays completed; the best score is kept. */
-export async function saveGoalScores(unitId: string, scores: GoalScore[], database: CzechDB = db, now = Date.now()): Promise<void> {
+export async function saveGoalScores(unitId: string, scores: GoalScore[], database: PrazakDB = db, now = Date.now()): Promise<void> {
   await database.transaction('rw', database.goalProgress, async () => {
     for (const s of scores) {
       const prev = await database.goalProgress.get(s.goalId);

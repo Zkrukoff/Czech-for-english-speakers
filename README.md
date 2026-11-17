@@ -1,7 +1,9 @@
-# Čeština for English speakers at work
+# Pražák
 
-A web app that teaches Czech to **English speakers who have moved to Czechia
-for work**, from absolute beginner towards CEFR A2. Lessons are set in the
+***Mluv jako Pražák.*** Czech for people who actually live here.
+
+A *Pražák* is a Prague local. Pražák is a web app that teaches Czech to
+**English speakers who have moved to Czechia for work**, from absolute beginner towards CEFR A2. Lessons are set in the
 situations of a working week: meeting colleagues and your manager, coffee and
 the daily lunch menu, paying with meal vouchers, the commute, describing the
 people around you, spelling your name at an office. It is built around
@@ -27,7 +29,16 @@ fluency rather than gamification:
   holiday phrases to practise), and a complete guide to Prague's public
   transport with the Czech signs and announcements you'll meet.
 
-Live: https://zkrukoff.github.io/Czech-for-english-speakers/
+Live: https://zkrukoff.github.io/Czech-for-english-speakers/ (moving to
+`https://zkrukoff.github.io/prazak/` when the repo is renamed; see
+[deploy/legacy-redirect](deploy/legacy-redirect/README.md)).
+
+**Naming:** the display name is always *Pražák*, with both diacritics. Code
+identifiers, file names, package names, database names and URLs use the ASCII
+form `prazak`.
+
+The redesign is planned in [docs/PLAN.md](docs/PLAN.md), from the brief in
+[docs/PRAZAK_BRIEF.md](docs/PRAZAK_BRIEF.md).
 
 ## Course
 
@@ -209,8 +220,11 @@ interface. It plays `public/audio/<id>.mp3` when a content item has an
 text-to-speech voice. Listen buttons are hidden if the browser has no
 Czech voice.
 
-**Data**: stored in IndexedDB in the learner's browser. Settings has
-download/restore (JSON) and reset.
+**Data**: stored in IndexedDB (database `prazak`) in the learner's browser.
+Settings has download/restore (JSON) and reset. Before the rename the database
+was called `czech-for-english-speakers`; on first load the app copies its data
+into `prazak` once and never deletes the old one (`src/db/migrate.ts`). Old
+backup files still restore.
 
 ## Native review status
 

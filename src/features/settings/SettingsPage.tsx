@@ -29,7 +29,7 @@ export function SettingsPage() {
     const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 1)], { type: 'application/json' }));
     const a = document.createElement('a');
     a.href = url;
-    a.download = `czech-progress-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `prazak-progress-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
   }

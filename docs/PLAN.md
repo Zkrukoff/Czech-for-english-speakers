@@ -184,7 +184,23 @@ Each phase ends with: tests, a production build, a browser check at 375 px and
 desktop in both themes, and a commit on `redesign/prazak`. Nothing merges to
 `main`, and so nothing deploys, until you approve. I'll open a PR at the end.
 
-### Phase 1: Rename
+### Phase 1: Rename ✅ done
+
+**Outcome:** display name, tagline, metadata, manifest, placeholder háček
+icons, `prazak` identifiers, database rename with copy migration, backup
+compatibility, namespaced theme key, Czech collation and Unicode tests,
+redirect stub, README. Tested end to end: progress made in the current
+production build (answers, review cards, goals, lessons, settings, theme)
+appeared intact in the new build on the same origin, and the old database was
+left untouched.
+
+**Deferred to merge time (by design):** renaming the GitHub repo. Renaming it
+now would move the live site before the redesign ships. GitHub confirms that
+project Pages sites are *not* redirected after a rename, so
+`deploy/legacy-redirect/` holds the redirect files and step-by-step
+instructions. No splash screen, onboarding, e-mails or notifications existed
+to rename; onboarding arrives in phase 4.
+
 
 | Change | Files |
 |---|---|

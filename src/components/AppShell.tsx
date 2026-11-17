@@ -15,16 +15,19 @@ const NAV = [
   { to: '/settings', label: 'Settings' },
 ];
 
-/** Wordmark: the metro mark and "Čeština" in the display face, with a red Č. */
+/**
+ * Wordmark: "Pražák" with its tagline. Interim version for phase 1; the
+ * hand-lettered SVG wordmark replaces it in phase 2 (docs/PLAN.md).
+ */
 function Wordmark() {
   return (
-    <NavLink to="/" className="group flex items-center gap-2.5">
+    <NavLink to="/" className="group flex items-center gap-2.5" aria-label="Pražák, home">
       <MetroMark className="h-8 w-8 transition-transform duration-300 group-hover:rotate-12" />
       <span className="flex flex-col leading-none">
         <span lang="cs" className="font-display text-2xl font-extrabold tracking-tight text-ink" style={{ fontFamily: 'var(--font-display)' }}>
-          <span className="text-metro-c">Č</span>eština
+          Pražák
         </span>
-        <span className="mt-0.5 hidden text-[11px] font-medium uppercase tracking-[0.18em] text-stone-500 sm:block">for English speakers at work</span>
+        <span lang="cs" className="mt-0.5 hidden text-[11px] font-medium uppercase tracking-[0.18em] text-stone-500 sm:block">Mluv jako Pražák.</span>
       </span>
     </NavLink>
   );
@@ -75,7 +78,7 @@ export function AppShell({ error = false }: { error?: boolean }) {
         <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-8 text-sm text-stone-500 sm:flex-row sm:items-center sm:justify-between">
           <span className="flex items-center gap-2">
             <MetroMark className="h-5 w-5" />
-            <span>Made for people who moved to Czechia and want to <span lang="cs" className="text-stone-700">mluvit česky</span>.</span>
+            <span><span lang="cs" className="font-semibold text-stone-700">Pražák</span>: Czech for people who actually live here.</span>
           </span>
           <span className="text-xs">Progress stays in this browser · Czech content awaiting native review</span>
         </div>

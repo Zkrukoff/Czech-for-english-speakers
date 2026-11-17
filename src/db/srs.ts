@@ -1,4 +1,4 @@
-import { db, type CzechDB, type ReviewCard } from './db';
+import { db, type PrazakDB, type ReviewCard } from './db';
 import { gradeFor, scheduler as defaultScheduler, type Scheduler } from '@/lib/srs/scheduler';
 import type { CheckStatus } from '@/lib/answers/check';
 
@@ -7,7 +7,7 @@ export const exerciseKey = (exerciseId: string) => `ex:${exerciseId}`;
 export const vocabKey = (vocabId: string) => `vocab:${vocabId}`;
 
 export interface SrsDeps {
-  database?: CzechDB;
+  database?: PrazakDB;
   scheduler?: Scheduler;
   now?: number;
 }
@@ -61,7 +61,7 @@ export async function ensureVocabCards(vocabIds: string[], deps: SrsDeps = {}): 
 }
 
 /** Cards due now, most overdue first. */
-export async function dueCards(now = Date.now(), limit = Infinity, database: CzechDB = db): Promise<ReviewCard[]> {
+export async function dueCards(now = Date.now(), limit = Infinity, database: PrazakDB = db): Promise<ReviewCard[]> {
   const due = await database.cards.where('due').belowOrEqual(now).sortBy('due');
   return due.slice(0, limit);
 }
@@ -74,7 +74,7 @@ export interface DueSummary {
   nextDue?: number;
 }
 
-export async function dueSummary(now = Date.now(), database: CzechDB = db): Promise<DueSummary> {
+export async function dueSummary(now = Date.now(), database: PrazakDB = db): Promise<DueSummary> {
   const day = 24 * 60 * 60 * 1000;
   const endOfToday = new Date(now);
   endOfToday.setHours(23, 59, 59, 999);

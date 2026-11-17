@@ -1,5 +1,5 @@
 import type { Verb } from '@/content/schema';
-import { searchKey } from './text';
+import { compareCs, searchKey } from './text';
 
 export const PERSONS = ['1sg', '2sg', '3sg', '1pl', '2pl', '3pl'] as const;
 export type Person = (typeof PERSONS)[number];
@@ -141,5 +141,5 @@ export function searchVerbs(verbs: Verb[], query: string): Verb[] {
     else if (en.includes(q)) score = 30;
     if (score) scored.push({ v, score });
   }
-  return scored.sort((a, b) => b.score - a.score || a.v.lemma.localeCompare(b.v.lemma, 'cs')).map((s) => s.v);
+  return scored.sort((a, b) => b.score - a.score || compareCs(a.v.lemma, b.v.lemma)).map((s) => s.v);
 }

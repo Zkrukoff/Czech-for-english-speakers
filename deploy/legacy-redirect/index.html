@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pražák has moved</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      // Old address: https://zkrukoff.github.io/Czech-for-english-speakers/<path>
+      // New address: https://zkrukoff.github.io/prazak/<path>
+      // GitHub Pages serves this file for every path in the old site, so deep links
+      // (e.g. /lessons/u02-l01) land on the same page in the new site.
+      (function () {
+        var OLD = '/Czech-for-english-speakers';
+        var NEW = '/prazak';
+        var p = location.pathname;
+        var i = p.toLowerCase().indexOf(OLD.toLowerCase());
+        var rest = i === -1 ? '/' : p.slice(i + OLD.length) || '/';
+        location.replace(location.origin + NEW + rest + location.search + location.hash);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Pražák has moved to <a href="https://zkrukoff.github.io/prazak/">zkrukoff.github.io/prazak</a>. Your progress is still there.</p>
+  </body>
+</html>

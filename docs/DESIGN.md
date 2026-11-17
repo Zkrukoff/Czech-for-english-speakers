@@ -1,5 +1,9 @@
 # Design guide
 
+> **Pražák redesign in progress.** This guide describes the current design. It will be
+> rewritten in phase 2 of [PLAN.md](PLAN.md) for the new design system in
+> [PRAZAK_BRIEF.md](PRAZAK_BRIEF.md). Until then, follow the brief where they disagree.
+
 How the app should look, read and behave. Keep the code in line with this
 guide, and update the guide when you change the design deliberately. The
 tokens and shared styles live in `src/index.css` and
@@ -51,7 +55,7 @@ Everything decorative comes from the city:
 | **Bubble wall**: a grid of coloured circles | The convex aluminium panels lining the line A and B stations | Home hero, guide cards, the alphabet's round letter tiles (`BubbleWall`) |
 | **Lines and stops** | The metro map | Each unit is a "line" in its own colour; its lessons are stops and the unit check is the *Konečná* (terminus) |
 | **Departure board**: yellow on near-black | Station and tram displays | The "Příští zastávka" (next stop) card, the unit-check terminus (`.board`) |
-| **The Č** | Czech's most recognisable letter | Red Č in the wordmark; the logo is three overlapping line colours (`MetroMark`) |
+| **The wordmark** | The app's name | "Pražák" in the display face (interim, until the hand-lettered SVG wordmark in phase 2); the logo is three overlapping line colours (`MetroMark`) |
 | **Sticker highlight** | Street posters and stickers | One highlighted word in a big headline (`.marker`) |
 
 Small Czech touches belong in the frame, not just the lessons: *Ahoj, Praho!*,

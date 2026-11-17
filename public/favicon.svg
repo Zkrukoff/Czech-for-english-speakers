@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Placeholder Pražák mark: the háček. Replaced by the chosen wordmark's háček in phase 2. -->
+  <rect width="64" height="64" rx="14" fill="#F5EFE3"/>
+  <path d="M15 21 L32 40 L49 21" fill="none" stroke="#1C1A17" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="12" y="50" width="13" height="5" fill="#0E8A50"/>
+  <rect x="25.5" y="50" width="13" height="5" fill="#F5BE18"/>
+  <rect x="39" y="50" width="13" height="5" fill="#D93A2B"/>
+</svg>

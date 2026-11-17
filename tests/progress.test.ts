@@ -1,6 +1,6 @@
 import 'fake-indexeddb/auto';
 import { describe, expect, it } from 'vitest';
-import { CzechDB } from '@/db/db';
+import { PrazakDB } from '@/db/db';
 import { completeLesson, markLessonStep, saveGoalScores, scoreGoals } from '@/db/progress';
 
 describe('scoreGoals', () => {
@@ -24,7 +24,7 @@ describe('scoreGoals', () => {
 
 describe('progress storage', () => {
   it('keeps a completed goal completed and keeps the best score', async () => {
-    const db = new CzechDB('test-goals');
+    const db = new PrazakDB('test-goals');
     await saveGoalScores('u1', [{ goalId: 'g1', correct: 2, total: 2, passed: true }], db, 1000);
     await saveGoalScores('u1', [{ goalId: 'g1', correct: 0, total: 2, passed: false }], db, 2000);
     const g = await db.goalProgress.get('g1');
@@ -32,7 +32,7 @@ describe('progress storage', () => {
   });
 
   it('records lesson steps and completion once', async () => {
-    const db = new CzechDB('test-lessons');
+    const db = new PrazakDB('test-lessons');
     await markLessonStep('l1', 'explanation', db);
     await markLessonStep('l1', 'explanation', db);
     await completeLesson('l1', db, 5);

@@ -1,5 +1,5 @@
 {
-  "name": "czech-for-english-speakers",
+  "name": "prazak",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -42,5 +42,6 @@
   },
   "engines": {
     "node": ">=22.12.0"
-  }
+  },
+  "description": "Pražák: Czech for people who actually live here."
 }

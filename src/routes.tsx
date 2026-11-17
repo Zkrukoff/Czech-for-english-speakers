@@ -37,5 +37,5 @@ export const routes: RouteObject[] = [
   },
 ];
 
-// basename lets the app live under a sub-path such as /Czech-for-english-speakers/.
+// basename lets the app live under a sub-path such as /prazak/ on GitHub Pages.
 export const router = createBrowserRouter(routes, { basename: import.meta.env.BASE_URL.replace(/\/$/, '') || '/' });

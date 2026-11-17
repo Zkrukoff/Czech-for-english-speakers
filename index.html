@@ -3,14 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Czech for English speakers living and working in Czechia: real situations, proper grammar explanations, typed answers, spaced repetition. No streaks or points." />
-    <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0c0a09" media="(prefers-color-scheme: dark)" />
-    <title>Čeština: Czech for English speakers at work</title>
+    <title>Pražák · Mluv jako Pražák</title>
+    <meta name="description" content="Pražák: Czech for people who actually live here. Lessons built around life in Prague, real grammar explanations, typed answers and reviews timed to your mistakes." />
+    <meta name="application-name" content="Pražák" />
+    <meta name="apple-mobile-web-app-title" content="Pražák" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pražák" />
+    <meta property="og:title" content="Pražák · Mluv jako Pražák" />
+    <meta property="og:description" content="Czech for people who actually live here." />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="theme-color" content="#F5EFE3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1C1A17" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <script>
-      // Apply the saved theme before first paint (see src/lib/theme.ts).
+      // Apply the saved theme before first paint (see src/lib/theme.ts; 'theme' is the pre-rename key).
       try {
-        var t = localStorage.getItem('theme');
+        var t = localStorage.getItem('prazak:theme') || localStorage.getItem('theme');
         if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
       } catch (e) {}
     </script>
