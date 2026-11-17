@@ -18,7 +18,9 @@ Czechia has **13 public holidays**. Offices, schools and banks close; public tra
 | 25 December | *1. svátek vánoční* | Christmas Day |
 | 26 December | *2. svátek vánoční* | St Stephen's Day |
 
-On 1 January, Easter Monday, 8 May, 28 September, 28 October and 25–26 December larger shops are closed by law, and on 24 December they close at midday. Plan your shopping.
+On 1 January, Easter Monday, 8 May, 28 September, 28 October and 25–26 December larger shops (over 200 m²) are closed by law, and on 24 December they close at midday; shops at stations and airports, pharmacies and petrol stations are exempt (ČOI, checked 17 November 2026). Plan your shopping.
+
+Each holiday has a short prep lesson (words, customs, what to say): see [Czech holidays](/holidays). The one coming up is featured on your home screen the week before.
 
 ## Other days you'll notice
 

@@ -20,6 +20,8 @@ export const routes: RouteObject[] = [
       { index: true, element: <HomePage /> },
       { path: 'welcome', ...page(() => import('./features/onboarding/OnboardingPage'), 'OnboardingPage') },
       { path: 'styleguide', ...page(() => import('./features/styleguide/StyleguidePage'), 'StyleguidePage') },
+      { path: 'holidays', ...page(() => import('./features/holidays/HolidaysIndex'), 'HolidaysIndex') },
+      { path: 'holidays/:lessonId', ...page(() => import('./features/holidays/HolidayLessonPage'), 'HolidayLessonPage') },
       { path: 'words', ...page(() => import('./features/words/WordsPage'), 'WordsPage') },
       { path: 'overheard', ...page(() => import('./features/overheard/OverheardIndex'), 'OverheardIndex') },
       { path: 'overheard/:sceneId', ...page(() => import('./features/overheard/ScenePage'), 'ScenePage') },

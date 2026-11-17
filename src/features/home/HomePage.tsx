@@ -8,6 +8,7 @@ import { stationPath } from '@/lib/paths';
 import { LineStrip } from './LineStrip';
 import { LineVertical } from './LineVertical';
 import { Today } from './Today';
+import { HolidayPrepBanner } from './HolidayPrepBanner';
 import { useLinePosition } from './useLinePosition';
 
 /** Home: the line you're riding, where you are, what's next, and today's name day. */
@@ -47,6 +48,8 @@ export function HomePage() {
           <span className="hidden sm:inline"> Point at a station to see what's taught there.</span>
         </p>
       </section>
+
+      <HolidayPrepBanner />
 
       <section aria-label="Today" className="mb-12 grid gap-5 md:grid-cols-[1.4fr_1fr]">
         {pos.nextLesson && nextUnit && pos.current ? (

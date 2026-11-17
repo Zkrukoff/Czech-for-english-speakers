@@ -1,7 +1,7 @@
 {
   "$comment": "Czech public holidays (státní a ostatní svátky). \"date\" is MM-DD, or \"easter-2\" / \"easter+1\" for Good Friday and Easter Monday (computed). \"shops\": closed by law for larger shops, \"noon\" = closed from midday, \"open\". Matches the culture guide (holidays.md).",
   "source": {
-    "title": "Act No. 245/2000 Coll. on public holidays; shop closing: Act No. 223/2016 Coll.",
+    "title": "Dates: Ministry of Foreign Affairs list of public holidays 2026 (Act 245/2000 Coll.; later amendments 279/2024 and 59/2026 add commemorative days only). Shops: Czech Trade Inspection Authority (ČOI) press release of 19 Dec 2025 on Act 223/2016 Coll.",
     "checked": "2026-11-17"
   },
   "holidays": [
@@ -134,5 +134,18 @@
       }
     }
   ],
-  "nativeReviewed": false
+  "nativeReviewed": false,
+  "verified": [
+    {
+      "source": "Ministry of Foreign Affairs: Státní svátky ČR v roce 2026",
+      "url": "https://mzv.gov.cz/london/cz/konzularni_a_vizove_informace/statni_svatky_1/index.mobi",
+      "date": "2026-11-17"
+    },
+    {
+      "source": "ČOI press release: prodejní doba o svátcích (19 Dec 2025)",
+      "url": "https://coi.gov.cz/wp-content/uploads/2025/12/2025-12-19-prodejni-doba-svatky-2025.docx",
+      "date": "2026-11-17"
+    }
+  ],
+  "shopsNote": "The ban covers shops with more than 200 m² of sales floor. Shops at train and bus stations and airports, pharmacies, petrol stations and shops in hospitals may stay open."
 }

@@ -199,3 +199,12 @@ check first. When an item is confirmed or corrected, remove it here and set
 |---|---|---|
 | words page | *Přidat slovo*, *Uložit*, *Moje slova*, examples *výdejní místo*, *obvoďák* | OK? |
 | pattern guess | The ending-based vzor suggestions (shown as "a guess: check it") | Are the default guesses sensible? |
+
+## Round 2 · A3 Holiday prep lessons
+
+| Where | Text | Question |
+|---|---|---|
+| calendar/holiday-lessons.json | All nine lessons: customs (lentils and no poultry at New Year; pomlázka, ribbons, a shot for adults; kissing under a blossoming cherry, Mácha's statue on Petřín; carp, Ježíšek, golden piglet, apple, walnut-shell candles), greetings, etiquette tips, vocabulary | Accurate, current, not stereotyped? |
+| greetings | *Všechno nejlepší do nového roku!*, *Hezký prodloužený víkend!*, *Krásné svátky!* | Natural? |
+| 28 Oct | "the president awards state honours at Prague Castle" | Accurate? |
+| verified | Dates (mzv.gov.cz) and shop closures (coi.gov.cz), checked 17 Nov 2026 | Re-check yearly. |

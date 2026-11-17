@@ -1,0 +1,1276 @@
+{
+  "$comment": "Holiday prep mini-lessons: featured on the home screen in the 7 days before each holiday, open all year at /holidays. Customs are general; shop rules are verified (see calendar/holidays.json).",
+  "lessons": [
+    {
+      "id": "hol-novy-rok",
+      "holidays": [
+        "novy-rok"
+      ],
+      "title": "New Year",
+      "titleCs": "Nový rok",
+      "intro": "The night before is Silvestr; 1 January is a public holiday and the anniversary of the independent Czech state (1993).",
+      "whatPeopleDo": [
+        "Silvestr (31 December) is a party night: fireworks at midnight and a toast with sparkling wine.",
+        "Many people eat lentils (čočka) around New Year for money in the year ahead, and avoid poultry on New Year's Day, so luck doesn't fly away.",
+        "Cards and e-mails say PF 2027: pour féliciter, French for \"to congratulate\"."
+      ],
+      "greetings": [
+        {
+          "cs": "Šťastný nový rok!",
+          "en": "Happy New Year!"
+        },
+        {
+          "cs": "Všechno nejlepší do nového roku!",
+          "en": "All the best for the new year!"
+        }
+      ],
+      "etiquette": [
+        "Large shops are closed on 1 January (by law).",
+        "At work, PF greetings go out in late December and the first days of January."
+      ],
+      "vocab": [
+        {
+          "id": "v-hol-silvestr",
+          "cs": "Silvestr",
+          "en": "New Year's Eve",
+          "pos": "noun",
+          "gender": "m-inan",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-ohnostroj",
+          "cs": "ohňostroj",
+          "en": "fireworks",
+          "pos": "noun",
+          "gender": "m-inan",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-predsevzeti",
+          "cs": "předsevzetí",
+          "en": "(New Year's) resolution",
+          "pos": "noun",
+          "gender": "n",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-cocka",
+          "cs": "čočka",
+          "en": "lentils",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-pripitek",
+          "cs": "přípitek",
+          "en": "toast (with a drink)",
+          "pos": "noun",
+          "gender": "m-inan",
+          "nativeReviewed": false
+        }
+      ],
+      "exercises": [
+        {
+          "id": "hol-nr-e1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Happy New Year!",
+          "answers": [
+            "Šťastný nový rok[!]"
+          ],
+          "why": "Šťastný nový rok! Šťastný = happy, lucky.",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-nr-e2",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "(a New Year's) resolution",
+          "answers": [
+            "předsevzetí"
+          ],
+          "why": "Předsevzetí: a resolution, from předsevzít si (to resolve).",
+          "hints": [],
+          "skills": [
+            "vocab:v-hol-predsevzeti"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-nr-e3",
+          "type": "multipleChoice",
+          "prompt": "What do many Czechs eat around New Year for money in the coming year?",
+          "options": [
+            "Lentils",
+            "Carp",
+            "Poppy-seed cake"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "Lentils"
+          ],
+          "why": "Čočka: lentils, like little coins.",
+          "hints": [
+            {
+              "wrong": "Carp",
+              "explain": "Carp is the Christmas Eve dinner; some keep a carp scale in their wallet for money, though."
+            },
+            {
+              "wrong": "Poppy-seed cake",
+              "explain": "Poppy seed (mák) is everywhere in Czech baking, but the New Year money food is lentils."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-nr-e4",
+          "type": "multipleChoice",
+          "prompt": "What does **PF** on a New Year card stand for?",
+          "options": [
+            "pour féliciter",
+            "Prosperující a Funkční",
+            "Prima Fajn"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "pour féliciter"
+          ],
+          "why": "PF: pour féliciter, French for \"to congratulate\". It's been used on Czech New Year cards for generations.",
+          "hints": [
+            {
+              "wrong": "Prosperující a Funkční",
+              "explain": "A good guess, but it's French: pour féliciter."
+            },
+            {
+              "wrong": "Prima Fajn",
+              "explain": "Prima and fajn both mean \"great\" in spoken Czech, but PF is French: pour féliciter."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "hol-velikonoce",
+      "holidays": [
+        "velky-patek",
+        "velikonocni-pondeli"
+      ],
+      "title": "Easter",
+      "titleCs": "Velikonoce",
+      "intro": "Good Friday and Easter Monday are both public holidays. Easter Monday is the day of the pomlázka.",
+      "whatPeopleDo": [
+        "On Easter Monday morning boys and men go from house to house with a pomlázka, a whip braided from willow twigs, and lightly swat girls and women: an old spring custom for health and youth.",
+        "In return they get painted eggs (kraslice), sweets, and for the grown-ups often a shot of something strong. Girls tie a ribbon onto the pomlázka.",
+        "There's a rhyme to go with it: Hody, hody, doprovody…",
+        "Homes are decorated with painted eggs and a lamb-shaped cake (beránek)."
+      ],
+      "greetings": [
+        {
+          "cs": "Veselé Velikonoce!",
+          "en": "Happy Easter!"
+        }
+      ],
+      "etiquette": [
+        "Large shops are closed on Easter Monday, but open on Good Friday (by law).",
+        "If you're visited on Easter Monday morning, have eggs or sweets ready."
+      ],
+      "vocab": [
+        {
+          "id": "v-hol-velikonoce",
+          "cs": "Velikonoce",
+          "en": "Easter",
+          "pos": "noun",
+          "gender": "f",
+          "notes": "Plural only.",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-pomlazka",
+          "cs": "pomlázka",
+          "en": "braided willow whip (Easter Monday)",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-kraslice",
+          "cs": "kraslice",
+          "en": "decorated Easter egg",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-koleda",
+          "cs": "koleda",
+          "en": "Easter round (or a carol at Christmas)",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-beranek",
+          "cs": "beránek",
+          "en": "lamb; lamb-shaped Easter cake",
+          "pos": "noun",
+          "gender": "m-anim",
+          "nativeReviewed": false
+        }
+      ],
+      "exercises": [
+        {
+          "id": "hol-ve-e1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Happy Easter!",
+          "answers": [
+            "Veselé Velikonoce[!]"
+          ],
+          "why": "Veselé Velikonoce! Velikonoce is plural, so veselé.",
+          "hints": [],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-ve-e2",
+          "type": "multipleChoice",
+          "prompt": "On Easter Monday, what do girls traditionally tie onto the pomlázka?",
+          "options": [
+            "A ribbon",
+            "A painted egg",
+            "A flower"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "A ribbon"
+          ],
+          "why": "A ribbon (stužka) goes onto the pomlázka; the eggs are a gift to the boys.",
+          "hints": [
+            {
+              "wrong": "A painted egg",
+              "explain": "The eggs (kraslice) are handed out as gifts, not tied on."
+            },
+            {
+              "wrong": "A flower",
+              "explain": "Spring flowers decorate homes, but on the pomlázka it's a ribbon."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-ve-e3",
+          "type": "multipleChoice",
+          "prompt": "Are large shops open on Good Friday?",
+          "options": [
+            "Yes",
+            "No",
+            "Only in the morning"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "Yes"
+          ],
+          "why": "Good Friday: open. Easter Monday: closed for large shops (ČOI, checked 17 Nov 2026).",
+          "hints": [
+            {
+              "wrong": "No",
+              "explain": "That's Easter Monday. On Good Friday shops are open."
+            },
+            {
+              "wrong": "Only in the morning",
+              "explain": "Half-day closing is only Christmas Eve (24 December)."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-ve-e4",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "decorated Easter egg",
+          "answers": [
+            "kraslice"
+          ],
+          "why": "Kraslice: a decorated Easter egg.",
+          "hints": [],
+          "skills": [
+            "vocab:v-hol-kraslice"
+          ],
+          "nativeReviewed": false
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "hol-1-maj",
+      "holidays": [
+        "svatek-prace"
+      ],
+      "title": "1 May",
+      "titleCs": "1. máj",
+      "intro": "Labour Day, and for many Czechs the day of love.",
+      "whatPeopleDo": [
+        "Couples kiss under a blossoming tree, traditionally a cherry tree, \"so the girl doesn't dry up\" in the coming year.",
+        "Romantic Prague goes to the statue of the poet Karel Hynek Mácha on Petřín: his poem Máj (May) begins with the line \"Byl pozdní večer, první máj\".",
+        "The night before, 30 April, is pálení čarodějnic: bonfires where straw witches are burned."
+      ],
+      "greetings": [
+        {
+          "cs": "Byl pozdní večer, první máj…",
+          "en": "It was late evening, the first of May…",
+          "note": "The first line of Mácha's Máj, which many Czechs know by heart."
+        }
+      ],
+      "etiquette": [
+        "Large shops are open on 1 May.",
+        "Kissing under a tree is a sweet custom, not an obligation."
+      ],
+      "vocab": [
+        {
+          "id": "v-hol-polibek",
+          "cs": "polibek",
+          "en": "kiss",
+          "pos": "noun",
+          "gender": "m-inan",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-tresen",
+          "cs": "třešeň",
+          "en": "cherry tree; cherry",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-carodejnice",
+          "cs": "čarodějnice",
+          "en": "witch",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-ohen",
+          "cs": "oheň",
+          "en": "fire, bonfire",
+          "pos": "noun",
+          "gender": "m-inan",
+          "nativeReviewed": false
+        }
+      ],
+      "exercises": [
+        {
+          "id": "hol-1m-e1",
+          "type": "multipleChoice",
+          "prompt": "On 1 May, where do couples traditionally kiss?",
+          "options": [
+            "Under a blossoming tree",
+            "On Charles Bridge",
+            "Under the Astronomical Clock"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "Under a blossoming tree"
+          ],
+          "why": "Under a blossoming tree, traditionally a cherry (třešeň).",
+          "hints": [
+            {
+              "wrong": "On Charles Bridge",
+              "explain": "A lovely place for it, but the custom is a blossoming tree."
+            },
+            {
+              "wrong": "Under the Astronomical Clock",
+              "explain": "The tradition is a blossoming tree, ideally a cherry."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-1m-e2",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "kiss",
+          "answers": [
+            "polibek"
+          ],
+          "why": "Polibek: a kiss.",
+          "hints": [],
+          "skills": [
+            "vocab:v-hol-polibek"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-1m-e3",
+          "type": "multipleChoice",
+          "prompt": "What happens on the night of 30 April?",
+          "options": [
+            "Bonfires and burning straw witches",
+            "A torch-lit march to the Castle",
+            "Fireworks over the Vltava"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "Bonfires and burning straw witches"
+          ],
+          "why": "Pálení čarodějnic: \"burning the witches\", bonfires all over the country.",
+          "hints": [
+            {
+              "wrong": "A torch-lit march to the Castle",
+              "explain": "No: 30 April is bonfire night, pálení čarodějnic."
+            },
+            {
+              "wrong": "Fireworks over the Vltava",
+              "explain": "Fireworks are for New Year. 30 April is bonfires."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "hol-8-kveten",
+      "holidays": [
+        "den-vitezstvi"
+      ],
+      "title": "Victory Day",
+      "titleCs": "Den vítězství",
+      "intro": "8 May marks the end of the Second World War in Europe in 1945.",
+      "whatPeopleDo": [
+        "Wreaths are laid at war memorials, and there are commemorations around the country.",
+        "In Prague, the days before (5–8 May 1945) are remembered as the Prague Uprising (Pražské povstání)."
+      ],
+      "greetings": [],
+      "etiquette": [
+        "Large shops are closed on 8 May (by law).",
+        "It's a quiet, commemorative day rather than a celebration."
+      ],
+      "vocab": [
+        {
+          "id": "v-hol-valka",
+          "cs": "válka",
+          "en": "war",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-osvobozeni",
+          "cs": "osvobození",
+          "en": "liberation",
+          "pos": "noun",
+          "gender": "n",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-povstani",
+          "cs": "povstání",
+          "en": "uprising",
+          "pos": "noun",
+          "gender": "n",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-venec",
+          "cs": "věnec",
+          "en": "wreath",
+          "pos": "noun",
+          "gender": "m-inan",
+          "nativeReviewed": false
+        }
+      ],
+      "exercises": [
+        {
+          "id": "hol-8k-e1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "war",
+          "answers": [
+            "válka"
+          ],
+          "why": "Válka: war. Druhá světová válka: the Second World War.",
+          "hints": [],
+          "skills": [
+            "vocab:v-hol-valka"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-8k-e2",
+          "type": "multipleChoice",
+          "prompt": "What is remembered in Prague in the days just before 8 May?",
+          "options": [
+            "The Prague Uprising of 1945",
+            "The Velvet Revolution",
+            "The founding of Czechoslovakia"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "The Prague Uprising of 1945"
+          ],
+          "why": "Pražské povstání, 5–8 May 1945.",
+          "hints": [
+            {
+              "wrong": "The Velvet Revolution",
+              "explain": "That's 17 November (1989)."
+            },
+            {
+              "wrong": "The founding of Czechoslovakia",
+              "explain": "That's 28 October (1918)."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-8k-e3",
+          "type": "multipleChoice",
+          "prompt": "Are large shops open on 8 May?",
+          "options": [
+            "No",
+            "Yes",
+            "Only until noon"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "No"
+          ],
+          "why": "Closed for large shops on 8 May (ČOI, checked 17 Nov 2026).",
+          "hints": [
+            {
+              "wrong": "Yes",
+              "explain": "8 May is one of the days large shops must close."
+            },
+            {
+              "wrong": "Only until noon",
+              "explain": "The noon rule is only for Christmas Eve."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "hol-cervenec",
+      "holidays": [
+        "cyril-metodej",
+        "jan-hus"
+      ],
+      "title": "Cyril and Methodius, and Jan Hus",
+      "titleCs": "Cyril a Metoděj, Jan Hus",
+      "intro": "Two holidays back to back, 5 and 6 July, often make a long summer weekend.",
+      "whatPeopleDo": [
+        "5 July remembers Cyril and Methodius, who came to Great Moravia in 863 with Christianity and a Slavic alphabet.",
+        "6 July remembers Jan Hus, the church reformer burned at the stake in Konstanz in 1415.",
+        "With two days off in summer, many people head to the country cottage (chata or chalupa)."
+      ],
+      "greetings": [
+        {
+          "cs": "Hezký prodloužený víkend!",
+          "en": "Have a nice long weekend!"
+        }
+      ],
+      "etiquette": [
+        "Large shops are open on both days.",
+        "Expect quiet offices and full trains out of Prague the evening before."
+      ],
+      "vocab": [
+        {
+          "id": "v-hol-chata",
+          "cs": "chata",
+          "en": "(weekend) cottage",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-chalupa",
+          "cs": "chalupa",
+          "en": "country cottage (usually an old farmhouse)",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-prodlouzeny-vikend",
+          "cs": "prodloužený víkend",
+          "en": "long weekend",
+          "pos": "phrase",
+          "nativeReviewed": false
+        }
+      ],
+      "exercises": [
+        {
+          "id": "hol-ce-e1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Have a nice long weekend!",
+          "answers": [
+            "Hezký prodloužený víkend[!]",
+            "Pěkný prodloužený víkend[!]"
+          ],
+          "why": "Hezký prodloužený víkend! Prodloužený = lengthened.",
+          "hints": [],
+          "skills": [
+            "vocab:v-hol-prodlouzeny-vikend"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-ce-e2",
+          "type": "multipleChoice",
+          "prompt": "Who is remembered on 6 July?",
+          "options": [
+            "Jan Hus",
+            "St Wenceslas",
+            "Cyril and Methodius"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "Jan Hus"
+          ],
+          "why": "Jan Hus, burned at the stake in Konstanz in 1415.",
+          "hints": [
+            {
+              "wrong": "St Wenceslas",
+              "explain": "He's 28 September."
+            },
+            {
+              "wrong": "Cyril and Methodius",
+              "explain": "They're the day before, 5 July."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-ce-e3",
+          "type": "multipleChoice",
+          "prompt": "What is a **chalupa**?",
+          "options": [
+            "A country cottage, often an old farmhouse",
+            "A summer festival",
+            "A mountain hut with food"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "A country cottage, often an old farmhouse"
+          ],
+          "why": "Chalupa: a country cottage, typically an old farmhouse. A chata is usually a smaller, purpose-built cottage.",
+          "hints": [
+            {
+              "wrong": "A summer festival",
+              "explain": "Festivals are festival(y). A chalupa is a country cottage."
+            },
+            {
+              "wrong": "A mountain hut with food",
+              "explain": "That's a chata in the mountains (horská chata) or bouda. A chalupa is a farmhouse cottage."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "hol-vaclav",
+      "holidays": [
+        "statnost"
+      ],
+      "title": "St Wenceslas",
+      "titleCs": "Svatý Václav",
+      "intro": "28 September, Czech Statehood Day, is the feast of St Wenceslas, patron saint of the Czech lands.",
+      "whatPeopleDo": [
+        "Wenceslas (Václav) was a duke of Bohemia, murdered by his brother Boleslav, and became the country's patron saint.",
+        "His statue tops Wenceslas Square (Václavské náměstí), the meeting point \"pod koněm\" (under the horse).",
+        "Everyone called Václav also has their name day today."
+      ],
+      "greetings": [
+        {
+          "cs": "Všechno nejlepší k svátku!",
+          "en": "Happy name day!",
+          "note": "For anyone called Václav."
+        }
+      ],
+      "etiquette": [
+        "Large shops are closed on 28 September (by law).",
+        "Wish the Václavs at work a happy name day."
+      ],
+      "vocab": [
+        {
+          "id": "v-hol-svaty",
+          "cs": "svatý",
+          "en": "saint; holy",
+          "pos": "adj",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-knize",
+          "cs": "kníže",
+          "en": "duke, prince (historical)",
+          "pos": "noun",
+          "gender": "m-anim",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-patron",
+          "cs": "patron",
+          "en": "patron saint",
+          "pos": "noun",
+          "gender": "m-anim",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-socha",
+          "cs": "socha",
+          "en": "statue",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        }
+      ],
+      "exercises": [
+        {
+          "id": "hol-va-e1",
+          "type": "multipleChoice",
+          "prompt": "What does **pod koněm** (under the horse) mean to a Prague local?",
+          "options": [
+            "The meeting point by the St Wenceslas statue",
+            "A pub near Wenceslas Square",
+            "A tram stop"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "The meeting point by the St Wenceslas statue"
+          ],
+          "why": "Pod koněm: under the horse of the St Wenceslas statue, the classic place to meet.",
+          "hints": [
+            {
+              "wrong": "A pub near Wenceslas Square",
+              "explain": "It's the statue itself, at the top of the square."
+            },
+            {
+              "wrong": "A tram stop",
+              "explain": "The nearest stop is the metro at Muzeum; pod koněm is the statue."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-va-e2",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "statue",
+          "answers": [
+            "socha"
+          ],
+          "why": "Socha: statue.",
+          "hints": [],
+          "skills": [
+            "vocab:v-hol-socha"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-va-e3",
+          "type": "multipleChoice",
+          "prompt": "Who also celebrates on 28 September?",
+          "options": [
+            "Everyone called Václav",
+            "Everyone called Jan",
+            "Nobody: there's no name day"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "Everyone called Václav"
+          ],
+          "why": "It's the name day for Václav (and Václava in some calendars).",
+          "hints": [
+            {
+              "wrong": "Everyone called Jan",
+              "explain": "Jan's name day is in June."
+            },
+            {
+              "wrong": "Nobody: there's no name day",
+              "explain": "There is: Václav."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "hol-28-rijen",
+      "holidays": [
+        "vznik-csr"
+      ],
+      "title": "Independence Day",
+      "titleCs": "28. říjen",
+      "intro": "28 October 1918: Czechoslovakia was founded. It's the main national day.",
+      "whatPeopleDo": [
+        "Tomáš Garrigue Masaryk became the first president of Czechoslovakia.",
+        "On 28 October the president awards state honours at Prague Castle, and there are flags on public buildings."
+      ],
+      "greetings": [],
+      "etiquette": [
+        "Large shops are closed on 28 October (by law).",
+        "Flags out: the Czech flag is white, red and a blue wedge."
+      ],
+      "vocab": [
+        {
+          "id": "v-hol-vznik",
+          "cs": "vznik",
+          "en": "founding, beginning",
+          "pos": "noun",
+          "gender": "m-inan",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-republika",
+          "cs": "republika",
+          "en": "republic",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-prezident",
+          "cs": "prezident",
+          "en": "president",
+          "pos": "noun",
+          "gender": "m-anim",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-vlajka",
+          "cs": "vlajka",
+          "en": "flag",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        }
+      ],
+      "exercises": [
+        {
+          "id": "hol-28-e1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "flag",
+          "answers": [
+            "vlajka"
+          ],
+          "why": "Vlajka: flag. Státní vlajka: the national flag.",
+          "hints": [],
+          "skills": [
+            "vocab:v-hol-vlajka"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-28-e2",
+          "type": "multipleChoice",
+          "prompt": "Who was the first president of Czechoslovakia?",
+          "options": [
+            "Tomáš Garrigue Masaryk",
+            "Václav Havel",
+            "Edvard Beneš"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "Tomáš Garrigue Masaryk"
+          ],
+          "why": "T. G. Masaryk, from 1918.",
+          "hints": [
+            {
+              "wrong": "Václav Havel",
+              "explain": "Havel was the last president of Czechoslovakia (from 1989) and the first of the Czech Republic."
+            },
+            {
+              "wrong": "Edvard Beneš",
+              "explain": "Beneš was the second, after Masaryk."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-28-e3",
+          "type": "multipleChoice",
+          "prompt": "What year was Czechoslovakia founded?",
+          "options": [
+            "1918",
+            "1939",
+            "1993"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "1918"
+          ],
+          "why": "28 October 1918.",
+          "hints": [
+            {
+              "wrong": "1939",
+              "explain": "1939 is the Nazi occupation and the student protests remembered on 17 November."
+            },
+            {
+              "wrong": "1993",
+              "explain": "1993 is when the Czech Republic and Slovakia became separate states (1 January)."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "hol-17-listopad",
+      "holidays": [
+        "17-listopad"
+      ],
+      "title": "Freedom and Democracy Day",
+      "titleCs": "17. listopad",
+      "intro": "17 November remembers two student protests: 1939 against the Nazi occupation, and 1989, which began the Velvet Revolution.",
+      "whatPeopleDo": [
+        "In 1939 the Nazis closed Czech universities after student protests.",
+        "On 17 November 1989 a student march was beaten by police on Národní třída; within weeks the communist regime fell.",
+        "People light candles at the memorial on Národní třída. In 1989 crowds jingled their keys at rallies: the time is up."
+      ],
+      "greetings": [],
+      "etiquette": [
+        "Large shops are open on 17 November.",
+        "It's a day of memory and of concerts and marches; join in quietly if you like."
+      ],
+      "vocab": [
+        {
+          "id": "v-hol-svicka",
+          "cs": "svíčka",
+          "en": "candle",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-svoboda",
+          "cs": "svoboda",
+          "en": "freedom",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-demonstrace",
+          "cs": "demonstrace",
+          "en": "demonstration",
+          "pos": "noun",
+          "gender": "f",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-sametova-revoluce",
+          "cs": "sametová revoluce",
+          "en": "the Velvet Revolution",
+          "pos": "phrase",
+          "nativeReviewed": false
+        }
+      ],
+      "exercises": [
+        {
+          "id": "hol-17-e1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "candle",
+          "answers": [
+            "svíčka"
+          ],
+          "why": "Svíčka: candle. Zapálit svíčku: to light a candle.",
+          "hints": [],
+          "skills": [
+            "vocab:v-hol-svicka"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-17-e2",
+          "type": "multipleChoice",
+          "prompt": "Where in Prague do people light candles on 17 November?",
+          "options": [
+            "On Národní třída",
+            "On Charles Bridge",
+            "At Prague Castle"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "On Národní třída"
+          ],
+          "why": "At the memorial on Národní třída, where the 1989 march was stopped by police.",
+          "hints": [
+            {
+              "wrong": "On Charles Bridge",
+              "explain": "Not the place for this day: it's Národní třída."
+            },
+            {
+              "wrong": "At Prague Castle",
+              "explain": "The memorial is on Národní třída."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-17-e3",
+          "type": "multipleChoice",
+          "prompt": "What did crowds jingle at the 1989 rallies?",
+          "options": [
+            "Keys",
+            "Coins",
+            "Bells"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "Keys"
+          ],
+          "why": "Keys: a sign that it was time for the regime to go.",
+          "hints": [
+            {
+              "wrong": "Coins",
+              "explain": "It was keys (klíče)."
+            },
+            {
+              "wrong": "Bells",
+              "explain": "It was keys, held up and jingled."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "hol-vanoce",
+      "holidays": [
+        "stedry-den",
+        "1-svatek-vanocni",
+        "2-svatek-vanocni"
+      ],
+      "title": "Christmas",
+      "titleCs": "Vánoce",
+      "intro": "Czech Christmas happens on the evening of 24 December, Štědrý den.",
+      "whatPeopleDo": [
+        "Before Christmas, live carp are sold from tubs in the streets; many families still have carp with potato salad for Christmas Eve dinner.",
+        "Presents come from Ježíšek (baby Jesus), not Santa, and are opened after dinner on the 24th.",
+        "Old customs: fasting all day to see the golden piglet (zlaté prasátko), cutting an apple across (a star inside means a good year), floating walnut-shell candles.",
+        "Every home has cukroví, a dozen kinds of small Christmas biscuits."
+      ],
+      "greetings": [
+        {
+          "cs": "Veselé Vánoce!",
+          "en": "Merry Christmas!"
+        },
+        {
+          "cs": "Krásné svátky!",
+          "en": "Happy holidays!"
+        },
+        {
+          "cs": "Veselé Vánoce a šťastný nový rok!",
+          "en": "Merry Christmas and a happy New Year!"
+        }
+      ],
+      "etiquette": [
+        "Large shops close at noon on 24 December and stay closed on 25 and 26 December (by law).",
+        "If you're invited to a Czech home over Christmas, bringing cukroví or wine is welcome."
+      ],
+      "vocab": [
+        {
+          "id": "v-hol-vanoce",
+          "cs": "Vánoce",
+          "en": "Christmas",
+          "pos": "noun",
+          "gender": "f",
+          "notes": "Plural only.",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-kapr",
+          "cs": "kapr",
+          "en": "carp",
+          "pos": "noun",
+          "gender": "m-anim",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-jeziseck",
+          "cs": "Ježíšek",
+          "en": "baby Jesus (who brings the presents)",
+          "pos": "noun",
+          "gender": "m-anim",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-cukrovi",
+          "cs": "cukroví",
+          "en": "Christmas biscuits",
+          "pos": "noun",
+          "gender": "n",
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-hol-darek",
+          "cs": "dárek",
+          "en": "present, gift",
+          "pos": "noun",
+          "gender": "m-inan",
+          "nativeReviewed": false
+        }
+      ],
+      "exercises": [
+        {
+          "id": "hol-va2-e1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Merry Christmas!",
+          "answers": [
+            "Veselé Vánoce[!]"
+          ],
+          "why": "Veselé Vánoce! Vánoce is plural, so veselé.",
+          "hints": [],
+          "skills": [
+            "vocab:v-hol-vanoce"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-va2-e2",
+          "type": "multipleChoice",
+          "prompt": "Who brings Czech children their Christmas presents?",
+          "options": [
+            "Ježíšek",
+            "Santa Claus",
+            "Svatý Mikuláš"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "Ježíšek"
+          ],
+          "why": "Ježíšek (baby Jesus), on the evening of 24 December.",
+          "hints": [
+            {
+              "wrong": "Santa Claus",
+              "explain": "Santa appears in adverts, but the Czech gift-bringer is Ježíšek."
+            },
+            {
+              "wrong": "Svatý Mikuláš",
+              "explain": "Mikuláš comes on the evening of 5 December, with an angel and a devil, and brings sweets (or coal)."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-va2-e3",
+          "type": "multipleChoice",
+          "prompt": "Until when are large shops open on 24 December?",
+          "options": [
+            "Noon",
+            "6 p.m.",
+            "They're closed all day"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "Noon"
+          ],
+          "why": "By law, large shops close at 12:00 on Christmas Eve (ČOI, checked 17 Nov 2026).",
+          "hints": [
+            {
+              "wrong": "6 p.m.",
+              "explain": "Earlier: noon."
+            },
+            {
+              "wrong": "They're closed all day",
+              "explain": "That's 25 and 26 December. On the 24th, until noon."
+            }
+          ],
+          "skills": [
+            "guide:culture"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "hol-va2-e4",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "present, gift",
+          "answers": [
+            "dárek"
+          ],
+          "why": "Dárek: a present.",
+          "hints": [],
+          "skills": [
+            "vocab:v-hol-darek"
+          ],
+          "nativeReviewed": false
+        }
+      ],
+      "nativeReviewed": false
+    }
+  ],
+  "nativeReviewed": false
+}

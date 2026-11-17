@@ -13,6 +13,7 @@ import {
   NamedaysSchema,
   HolidaysSchema,
   OverheardSceneSchema,
+  HolidayLessonsSchema,
   AudioManifestSchema,
   UnitSchema,
   VerbFileSchema,
@@ -30,6 +31,7 @@ import {
   type NamedaysData,
   type HolidaysData,
   type OverheardScene,
+  type HolidayLesson,
   type AudioManifest,
   type Mission,
   type StationData,
@@ -69,7 +71,8 @@ export type ExerciseSource =
   | { kind: 'unitCheck'; unitId: string }
   | { kind: 'alphabet'; setId: string }
   | { kind: 'guide'; guideId: string; setId: string }
-  | { kind: 'overheard'; sceneId: string };
+  | { kind: 'overheard'; sceneId: string }
+  | { kind: 'holiday'; lessonId: string };
 
 export interface Guide extends GuideData {
   /** Folder name under content/guides/. */
@@ -150,6 +153,8 @@ export interface Course {
   holidays: HolidaysData | null;
   /** Listening scenes (content/overheard/*.json), in order. */
   overheard: OverheardScene[];
+  /** Holiday prep mini-lessons, in calendar order. */
+  holidayLessons: HolidayLesson[];
   /** Recorded audio by id (content/audio/manifest.json). */
   audio: Map<string, AudioManifest['recordings'][number]>;
   /** Pattern and function SRS keys each exercise practises (from its lens markup). */
@@ -217,6 +222,7 @@ export function loadContent(files: ContentFiles): LoadResult {
     namedays: null,
     holidays: null,
     overheard: [],
+    holidayLessons: [],
     audio: new Map(),
     hiddenExercises: [],
     lensKeysByExercise: new Map(),
@@ -460,6 +466,24 @@ export function loadContent(files: ContentFiles): LoadResult {
   }
   course.overheard.sort((a, b) => a.order - b.order);
   if ('calendar/holidays.json' in files.json) course.holidays = parse(HolidaysSchema, 'calendar/holidays.json', files.json['calendar/holidays.json']);
+  if ('calendar/holiday-lessons.json' in files.json) {
+    const where = 'calendar/holiday-lessons.json';
+    const data = parse(HolidayLessonsSchema, where, files.json[where]);
+    const known = new Set(course.holidays?.holidays.map((h) => h.id) ?? []);
+    for (const l of data?.lessons ?? []) {
+      claimId('holiday lesson', l.id, where);
+      for (const h of l.holidays) if (!known.has(h)) errors.push(`${where}: lesson ${l.id} refers to unknown holiday "${h}"`);
+      for (const v of l.vocab) {
+        claimId('vocab', v.id, where);
+        course.vocabById.set(v.id, { item: v, lessonId: l.id });
+      }
+      for (const ex of l.exercises) {
+        claimId('exercise', ex.id, where);
+        course.exercisesById.set(ex.id, { exercise: ex, source: { kind: 'holiday', lessonId: l.id } });
+      }
+      course.holidayLessons.push(l);
+    }
+  }
   if ('calendar/namedays.json' in files.json) course.namedays = parse(NamedaysSchema, 'calendar/namedays.json', files.json['calendar/namedays.json']);
   if ('audio/manifest.json' in files.json) {
     const manifest = parse(AudioManifestSchema, 'audio/manifest.json', files.json['audio/manifest.json']);
@@ -592,6 +616,8 @@ export function loadContent(files: ContentFiles): LoadResult {
             ? `guide ${source.guideId}, set ${source.setId}`
             : source.kind === 'overheard'
               ? `overheard ${source.sceneId}`
+              : source.kind === 'holiday'
+                ? `holiday lesson ${source.lessonId}`
             : `alphabet set ${source.setId}`;
     for (const p of [...exercise.answers, ...exercise.hints.map((h) => h.wrong)]) {
       const err = validatePattern(p);

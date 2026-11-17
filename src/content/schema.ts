@@ -656,6 +656,8 @@ export const NamedaysSchema = z.object({
 export const HolidaysSchema = z.object({
   $comment: z.string().optional(),
   source: z.object({ title: z.string(), checked: z.string() }),
+  verified: z.array(z.object({ source: z.string(), url: z.string().url(), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) })).default([]),
+  shopsNote: z.string().optional(),
   holidays: z
     .array(
       z.object({
@@ -672,6 +674,23 @@ export const HolidaysSchema = z.object({
     .min(1),
   nativeReviewed: reviewed,
 });
+
+export const HolidayLessonSchema = z.object({
+  id,
+  /** Holiday ids (calendar/holidays.json) this lesson prepares for. */
+  holidays: z.array(z.string()).min(1),
+  title: z.string().min(1),
+  titleCs: z.string().min(1),
+  intro: z.string().min(1),
+  whatPeopleDo: z.array(z.string().min(1)).min(1),
+  greetings: z.array(z.object({ cs: z.string().min(1), en: z.string().min(1), note: z.string().optional() })).default([]),
+  etiquette: z.array(z.string().min(1)).default([]),
+  vocab: z.array(VocabItemSchema).default([]),
+  exercises: z.array(z.lazy(() => ExerciseSchema)).min(3),
+  nativeReviewed: reviewed,
+});
+
+export const HolidayLessonsSchema = z.object({ $comment: z.string().optional(), lessons: z.array(HolidayLessonSchema), nativeReviewed: reviewed });
 
 /**
  * Real-speaker recordings (D6). Files live in public/audio/<id>.<ext>.
@@ -717,6 +736,7 @@ export type Gender = z.infer<typeof GenderSchema>;
 export type Mission = z.infer<typeof MissionSchema>;
 export type NamedaysData = z.infer<typeof NamedaysSchema>;
 export type OverheardScene = z.infer<typeof OverheardSceneSchema>;
+export type HolidayLesson = z.infer<typeof HolidayLessonSchema>;
 export type HolidaysData = z.infer<typeof HolidaysSchema>;
 export type Holiday = HolidaysData['holidays'][number];
 export type AudioManifest = z.infer<typeof AudioManifestSchema>;
