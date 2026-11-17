@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Card } from '@/components/ui';
 import type { Exercise } from '@/content/schema';
 import { checkAnswer, type CheckResult } from '@/lib/answers/check';
@@ -46,6 +46,11 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
   const [answer, setAnswer] = useState('');
   const [result, setResult] = useState<CheckResult | null>(null);
   const [outcomes, setOutcomes] = useState<ExerciseOutcome[]>([]);
+  const continueRef = useRef<HTMLButtonElement>(null);
+  // After an answer, move focus to Continue so Enter moves on (the input it came from is now disabled).
+  useEffect(() => {
+    if (result) requestAnimationFrame(() => continueRef.current?.focus());
+  }, [result]);
 
   const item = queue[index];
   if (!item) return null;
@@ -150,7 +155,7 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
 
       <div className="flex justify-end">
         {result ? (
-          <button autoFocus type="button" onClick={next} className="btn btn-primary">
+          <button ref={continueRef} type="button" onClick={next} className="btn btn-primary">
             {index + 1 >= queue.length ? 'Finish' : 'Continue'}
           </button>
         ) : (

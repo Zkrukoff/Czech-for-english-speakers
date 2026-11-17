@@ -45,7 +45,9 @@
   --on-fill-light: #F5EFE3;  /* text on vltava, line-c-deep, ink "board" panels */
   --board: #1C1A17;          /* departure-board panels stay dark in both themes */
   --plate-red: #B52A1E;      /* enamel plate, red (like the číslo popisné house plate): --on-fill-light text, 5.5:1 */
-  --plate-blue: #1F4E63;     /* enamel plate, blue (like the číslo orientační plate): --on-fill-light text, 7.9:1 */
+  --plate-blue: #1F4E63;
+  --ticket: #EFE3C8;         /* ticket card stock: --on-fill-dark text, the same in both themes */
+  --ticket-void: #DCD1BD;    /* an unstamped ticket */     /* enamel plate, blue (like the číslo orientační plate): --on-fill-light text, 7.9:1 */
 
   /* ---- Case colours (case lens). Hues kept clear of the line colours; chosen so
      every pair stays apart under protanopia, deuteranopia and tritanopia
@@ -104,6 +106,8 @@
 
   /* Ink stamps sink into paper in light mode; in the dark they sit on top. */
   --stamp-blend: multiply;
+  --stamp-red: #B52A1E;      /* validator ink */
+  --stamp-blue: #1F4E63;
 
   color-scheme: light;
 }
@@ -121,6 +125,8 @@
     --case-1: #C1DAF9; --case-2: #E2975E; --case-3: #BA9DFF; --case-4: #E2769E;
     --case-5: #7CCDD5; --case-6: #6597EE; --case-7: #D6C38E;
     --stamp-blend: normal;
+  --stamp-red: #F47B6B; --stamp-blue: #86BDD3;
+    --stamp-red: #F47B6B; --stamp-blue: #86BDD3;
     color-scheme: dark;
   }
 }
@@ -133,5 +139,6 @@
   --case-1: #C1DAF9; --case-2: #E2975E; --case-3: #BA9DFF; --case-4: #E2769E;
   --case-5: #7CCDD5; --case-6: #6597EE; --case-7: #D6C38E;
   --stamp-blend: normal;
+  --stamp-red: #F47B6B; --stamp-blue: #86BDD3;
   color-scheme: dark;
 }

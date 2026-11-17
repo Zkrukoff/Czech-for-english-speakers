@@ -117,7 +117,7 @@ export function Timeline({ events }: { events: TimelineEvent[] }) {
                 <p className="mt-2 text-ink-2">{e.summary}</p>
                 <div className={`grid transition-[grid-template-rows,opacity] duration-700 ease-out ${open ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                   <div className="overflow-hidden">
-                    <div className="mt-4 rounded-xl bg-paper-2 p-4 text-ink">
+                    <div className="mt-4 rounded-sm border-l-4 border-ink bg-paper-2 p-4 text-ink">
                       <p className="eyebrow text-ink-2">Why it matters</p>
                       <p className="mt-1">{e.significance}</p>
                       {e.place && (

@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { course } from '@/content';
 import { CASE_KEYS } from '@/content/taxonomy';
 import { PageHeader } from '@/components/PageHeader';
@@ -13,7 +14,12 @@ const GROUPS = [
 ];
 
 export function TablesPage() {
-  const [group, setGroup] = useState(GROUPS[0]!.id);
+  const [params] = useSearchParams();
+  const want = params.get('vzor') ?? '';
+  const [group, setGroup] = useState((GROUPS.find((g) => g.match(want)) ?? GROUPS[0]!).id);
+  useEffect(() => {
+    if (want) document.getElementById(want)?.scrollIntoView({ block: 'start' });
+  }, [want]);
   const active = GROUPS.find((g) => g.id === group)!;
   const tables = [...course.tables.values()].filter((t) => active.match(t.id));
   return (
@@ -22,7 +28,7 @@ export function TablesPage() {
         title="Declension tables"
         subtitle="Every noun follows one of these model words. Endings are coloured by case, using the same colour for a case everywhere in the app."
       />
-      <div className="mb-4 flex flex-wrap gap-x-5 gap-y-2 rounded-lg border border-rule bg-surface px-4 py-3 text-sm" aria-label="Case colours">
+      <div className="mb-4 flex flex-wrap gap-x-5 gap-y-2 border-2 border-ink bg-surface px-4 py-3 text-sm" aria-label="Case colours">
         {CASE_KEYS.map((k) => <CaseLabel key={k} caseKey={k} />)}
       </div>
       <div role="tablist" className="mb-2 flex flex-wrap gap-1">
@@ -32,14 +38,21 @@ export function TablesPage() {
             role="tab"
             aria-selected={g.id === group}
             onClick={() => setGroup(g.id)}
-            className={`rounded-md px-3 py-1.5 text-sm font-medium ${g.id === group ? 'bg-ink text-on-fill-light' : 'text-ink-2 hover:bg-paper-2'}`}
+            className={`min-h-11 rounded-sm border-2 px-3 text-sm font-semibold ${g.id === group ? 'border-ink bg-ink text-paper' : 'border-rule-strong text-ink-2 hover:border-ink'}`}
           >
             {g.label}
           </button>
         ))}
       </div>
       <div className="grid gap-x-6 lg:grid-cols-2">
-        {tables.map((t) => <FormTableView key={t.id} table={t} />)}
+        {tables.map((t) => (
+          <div key={t.id} className="min-w-0">
+            <FormTableView table={t} />
+            {t.id.startsWith('noun-') && (
+              <Link to={`/grammar/vzory/${t.id}`} className="-mt-2 mb-4 inline-block text-sm text-vltava underline">Nouns like {t.title} · drill</Link>
+            )}
+          </div>
+        ))}
       </div>
     </>
   );

@@ -15,7 +15,7 @@ export function StationHeader({ stop, kicker }: { stop: Stop; kicker?: string })
       <div className="relative overflow-hidden border-2 border-ink" style={{ background: `var(--tile-${info.tile})` }}>
         <TileGrid tone={`var(--tile-${info.tile})`} cols={10} rows={2} size={40} className="w-full opacity-90" />
       </div>
-      <div className="-mt-7 ml-3 inline-flex max-w-[calc(100%-1.5rem)] items-center gap-3 border-2 border-ink bg-surface px-4 py-3 shadow-offset sm:ml-6">
+      <div className="relative z-[1] -mt-7 ml-3 inline-flex max-w-[calc(100%-1.5rem)] items-center gap-3 border-2 border-ink bg-surface px-4 py-3 shadow-offset sm:ml-6">
         <LineBadge line={stop.line} size={44} />
         <div className="min-w-0">
           <p className="label-board text-ink-3">

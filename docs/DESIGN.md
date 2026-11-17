@@ -40,7 +40,8 @@ default-palette class, or a banned font.
 | Base | `paper`, `paper-2`, `paper-3`, `surface`, `ink`, `ink-2`, `ink-3`, `rule`, `rule-strong` | Body text is `ink`; `ink-2` secondary, `ink-3` captions. `rule*` are never text |
 | **Lines = levels** | `line-a` (A1–A2), `line-b` (B1–B2), `line-c` (C1–C2), `line-a-deep`, `line-c-deep` | They mean lines and levels only. `line-b` is a fill only, always with `on-fill-dark` text. `line-a`/`line-c` are for fills, badges and large text; small text uses the `-deep` variants |
 | Accents | `vltava` (links, info, corrections), `vltava-tint`, `champagne` (stamps, rewards; fill only), `champagne-tint` | |
-| Fixed | `on-fill-dark`, `on-fill-light`, `board`, `plate-red`, `plate-blue` | Do not change in dark mode: text on fills, departure boards, enamel plates |
+| Fixed | `on-fill-dark`, `on-fill-light`, `board`, `plate-red`, `plate-blue`, `ticket`, `ticket-void` | Do not change in dark mode: text on fills, departure boards, enamel plates, tickets (paper in both themes) |
+| Stamp ink | `stamp-red`, `stamp-blue`, `stamp-blend` | Validator ink: day ink sinks into paper (multiply); at night it's lighter and sits on top. Tickets reset to day ink |
 | Case lens | `case-1` … `case-7` | Text on paper/surface only. **Always with the number and name** (*4. pád · akuzativ*), never colour alone |
 | Station tiles | `tile-01` … `tile-24` | Muted OKLCH tones (L 0.84, C 0.065), one per station, always `on-fill-dark` text (≥ 10:1) |
 
@@ -99,7 +100,16 @@ follows the device unless the learner picks Light or Dark in Settings.
 | `DepartureBoard` | Split-flap text (mono, yellow on board) |
 | `SectionNumber` | Numbered heading with an ink rule |
 | `icons/*` | One style: 24 px grid, 1.75 px round stroke, `currentColor`, slightly imperfect. Tram, ticket, stamp, háček, beer, key, metro, speaker, arrows, done, open, terminus, review, settings, mic, pin, book, close |
-| `brand/Wordmarks` | Three hand-lettered wordmark drafts with their háček app icons (decision pending) |
+| `brand/Wordmarks` | Wordmark **B (Kubismus)** in the header, favicon and app icons; A and C kept in `/styleguide` as the drafts |
+| `GenderMark` | The one gender marker on every noun: mono Czech abbreviations (`m·živ`, `m·neživ`, `ž`, `s`) with the full name for screen readers |
+| `CzechText` + `features/lens/*` | **Case lens.** Lens-annotated endings are underlined in their case colour; tap → bottom sheet on phones, popover from 640px. Shows case number + name, *why* (function), the pattern (vzor) and links. A word containing a blank is never tappable |
+| `features/home/LineStrip` | The strip map: one straight line, names at −45°, done = ink, here = line-B yellow with a pin, výluka = dashed, milestone = double ring, transfers as small badges. Scrolls to "you are here" |
+| `features/line/StationHeader` | Station screens: tile band, enamel-style name sign, line/level/position, transfers, *Nahoře* (above ground) |
+| `FeedbackPanel` | Right: validator stamp + *Správně.* Wrong: wavy ink underline on the wrong part, the right part in Vltava, lens explanation, then the short *why*. No green/red |
+| `UnitComplete` | The validator moment: ticket rises in, stamp punches it (≤250ms each) |
+
+**Screens are assembled from these; every reusable pattern is shown live in
+`/styleguide` § 8.**
 
 **The háček (ˇ)** is the brand motif: in the wordmark and icon, as the bullet
 in explanations (`.prose-cz ul`), as the loading tick, and as the "aha" mark
@@ -126,7 +136,8 @@ specific. Empty states have personality (*"Tady nic není. Like a tram stop at 3
 - Visible 3 px Vltava focus ring; keyboard reachable everywhere; skip link.
 - Touch targets ≥ 40 px (buttons are 44 px high).
 - Never colour alone: cases carry their number, lines their letter, feedback its words.
-- Phone first: designed at 375 px, then scaled up; no sideways scrolling except deliberate scroll areas (wide tables, the metro map).
+- Phone first: designed at 375 px, then scaled up; no sideways scrolling except deliberate scroll areas (wide tables, the metro map, the strip map).
+- Dialogs (the lens) take focus when opened, close on Escape or outside tap, and return focus to the word. After an answer, focus moves to *Continue*.
 
 ## Adding something new
 

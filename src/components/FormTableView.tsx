@@ -51,7 +51,7 @@ export function CaseLabel({ caseKey }: { caseKey: CaseKey }) {
 
 export function FormTableView({ table, compact = false }: { table: FormTable; compact?: boolean }) {
   return (
-    <figure className="my-5 overflow-hidden rounded-xl border border-rule bg-surface not-prose">
+    <figure id={table.id} className="my-5 scroll-mt-28 overflow-hidden rounded-md border-2 border-ink bg-surface shadow-offset-sm not-prose">
       <figcaption className="flex flex-wrap items-baseline justify-between gap-2 border-b border-rule bg-paper px-4 py-2">
         <span>
           <span className="font-semibold text-ink">{table.title}</span>

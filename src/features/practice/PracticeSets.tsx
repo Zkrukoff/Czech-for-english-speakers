@@ -34,7 +34,7 @@ export function PracticeSets({ sets, context }: { sets: PracticeSet[]; context: 
   return (
     <>
       {done && (
-        <div role="status" className="mb-6 rounded-xl border border-rule bg-surface p-5">
+        <div role="status" className="mb-6 rounded-md border-2 border-ink bg-surface p-5">
           <p className="font-semibold">{done.set.title}: done</p>
           <p className="mt-1 text-ink-2">
             {done.outcomes.filter((o) => o.firstTry && o.result.accepted).length} of {done.outcomes.filter((o) => o.firstTry).length} right on the first try. Anything you missed will come back in your reviews.
@@ -43,7 +43,7 @@ export function PracticeSets({ sets, context }: { sets: PracticeSet[]; context: 
       )}
       <ul className="grid gap-3 sm:grid-cols-2">
         {sets.map((s) => (
-          <li key={s.id} className="flex flex-col rounded-xl border border-rule bg-surface p-5">
+          <li key={s.id} className="flex flex-col rounded-md border-2 border-ink bg-surface p-5">
             <h2 className="font-semibold">{s.title}</h2>
             <p className="mt-1 flex-1 text-sm text-ink-2">{s.description}</p>
             <div className="mt-4 flex items-center justify-between">

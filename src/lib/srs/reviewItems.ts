@@ -1,5 +1,7 @@
 import type { Course } from '@/content/loader';
 import type { Exercise, VocabItem } from '@/content/schema';
+import type { CellKey } from '@/lib/lens';
+import { vzorDrill } from '@/lib/drills/vzor';
 
 /**
  * Turns review cards back into exercises.
@@ -72,7 +74,14 @@ export function vocabExercise(item: VocabItem, allVocab: VocabItem[] = []): Exer
 export function exerciseForCard(itemKey: string, course: Course, rotation = 0): Exercise | null {
   if (itemKey.startsWith('pattern:') || itemKey.startsWith('fn:')) {
     const ids = course.exercisesByLensKey.get(itemKey) ?? [];
-    if (!ids.length) return null;
+    if (!ids.length) {
+      // No annotated sentence for this ending yet: drill it on a lexicon noun that follows the pattern.
+      const m = /^pattern:([^:]+):([a-z]{3}\.(?:sg|pl))$/.exec(itemKey);
+      if (!m) return null;
+      const nouns = [...course.lexicon.values()].filter((e) => e.noun.vzor === `noun-${m[1]}` && !e.noun.uncertain && e.paradigm[m[2] as CellKey]);
+      const e = nouns[rotation % Math.max(1, nouns.length)];
+      return e ? vzorDrill(e.noun, e.paradigm, m[2] as CellKey) : null;
+    }
     return course.exercisesById.get(ids[rotation % ids.length]!)?.exercise ?? null;
   }
   if (itemKey.startsWith('ex:')) return course.exercisesById.get(itemKey.slice(3))?.exercise ?? null;

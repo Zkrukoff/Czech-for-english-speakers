@@ -10,11 +10,15 @@ export function Ticket({
   title,
   date,
   stamp,
-  tone = 'var(--champagne-tint)',
+  tone = 'var(--ticket)',
 }: { line?: ReactNode; from?: string; title: string; date?: string; stamp?: ReactNode; tone?: string }) {
   const holes = 'radial-gradient(circle at 0 50%, transparent 7px, black 7.5px), radial-gradient(circle at 100% 50%, transparent 7px, black 7.5px)';
   return (
-    <div className="relative w-full max-w-sm" style={{ filter: 'drop-shadow(3px 3px 0 var(--shadow-ink))' }}>
+    <div
+      className="relative w-full max-w-sm"
+      // Tickets are paper in both themes, so stamps on them use day ink.
+      style={{ filter: 'drop-shadow(3px 3px 0 var(--shadow-ink))', ['--stamp-red' as string]: 'var(--plate-red)', ['--stamp-blue' as string]: 'var(--plate-blue)', ['--stamp-blend' as string]: 'multiply' }}
+    >
       <div
         className="grid grid-cols-[1fr_auto] border-2 border-ink"
         style={{ background: tone, WebkitMask: holes, mask: holes, WebkitMaskComposite: 'source-in', maskComposite: 'intersect', color: 'var(--on-fill-dark)' }}

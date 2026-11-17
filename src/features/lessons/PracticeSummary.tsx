@@ -9,7 +9,7 @@ export function PracticeSummary({ outcomes, onAgain, next }: { outcomes: Exercis
   const missed = first.filter((o) => !o.result.accepted);
   const slips = first.filter((o) => o.result.status === 'diacritics').length;
   return (
-    <div className="rounded-xl border border-rule bg-surface p-6">
+    <div className="rounded-md border-2 border-ink bg-surface p-6">
       <h2 className="text-xl font-semibold">Practice done</h2>
       <p className="mt-2 text-ink-2">
         You answered {right} of {first.length} correctly on the first try

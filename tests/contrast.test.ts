@@ -16,6 +16,7 @@ const PAIRS: [fg: string, bg: string, level: 'text' | 'large'][] = [
   ['--line-a-deep', '--paper', 'text'], ['--line-a-deep', '--paper-2', 'text'], ['--line-c-deep', '--paper', 'text'], ['--line-c-deep', '--paper-2', 'text'],
   ['--line-a', '--paper', 'large'], ['--line-c', '--paper', 'large'],
   ['--on-fill-dark', '--line-b', 'text'], ['--on-fill-dark', '--champagne', 'text'],
+  ['--on-fill-dark', '--ticket', 'text'], ['--on-fill-dark', '--ticket-void', 'text'],
   ['--on-fill-light', '--line-a', 'large'], ['--on-fill-light', '--line-c', 'large'],
   ['--on-fill-light', '--plate-red', 'text'], ['--on-fill-light', '--plate-blue', 'text'], ['--on-fill-light', '--board', 'text'], ['--line-b', '--board', 'text'],
   ...(['1', '2', '3', '4', '5', '6', '7'] as const).flatMap((n) => [

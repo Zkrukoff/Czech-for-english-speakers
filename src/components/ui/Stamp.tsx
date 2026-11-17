@@ -9,7 +9,7 @@ export function Stamp({
   top = 'PRAŽÁK',
   main,
   bottom,
-  colour = 'var(--plate-red)',
+  colour = 'var(--stamp-red)',
   size = 120,
   animate = true,
   className = '',

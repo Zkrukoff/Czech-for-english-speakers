@@ -21,10 +21,10 @@ export function VerbLookup() {
         placeholder="e.g. jít, píšu, to buy"
         aria-label="Search verbs"
         lang="cs"
-        className="mb-4 w-full max-w-lg rounded-lg border border-rule-strong bg-surface px-4 py-2.5 text-lg shadow-offset-sm focus:border-vltava focus:outline-none"
+        className="mb-4 w-full max-w-lg rounded-sm border-2 border-ink bg-surface px-4 py-2.5 text-lg shadow-offset-sm focus:border-vltava focus:outline-none"
       />
       <p className="mb-3 text-sm text-ink-3">{results.length} verb{results.length === 1 ? '' : 's'}</p>
-      <ul className="divide-y divide-rule overflow-hidden rounded-xl border border-rule bg-surface">
+      <ul className="divide-y divide-rule overflow-hidden rounded-md border-2 border-ink bg-surface">
         {results.map((v) => (
           <li key={v.lemma}>
             <Link to={`/verbs/lookup/${encodeURIComponent(v.lemma)}`} className="flex flex-wrap items-center gap-x-3 gap-y-1 px-4 py-2.5 hover:bg-paper">

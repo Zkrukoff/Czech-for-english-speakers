@@ -293,7 +293,29 @@ routes (`/units/:id`, `/progress`) redirect so bookmarks keep working.
 - Generated number drills must only use forms that exist in the lexicon.
 - The schema migration (additive, tested with v1 fixtures).
 
-### Phase 4: Screens
+### Phase 4: Screens ✅ done
+
+**Outcome:** all twelve screens built from the phase 2 components:
+- onboarding (who, level, a *vy/ty* intro with three quick questions, home station);
+- home (strip map with "you are here", next stop on a departure board, reviews, *Dnes má svátek*, Lines B and C not in service);
+- station screens (tile band, name sign, lessons as stops, the check as terminus, missions with self-report stamps);
+- the lesson player (case lens, stop-line progress, stamp / ink-underline feedback with the lens explanation, guide back-links);
+- the unit-complete ticket punch;
+- review as a departure board (words, exercises, endings, case uses);
+- grammar (cases by function in the brief's order, 14 vzory each with a page and a drill, aspect pairs);
+- verb lookup (motion family, examples from the lessons);
+- guides index and article template (lessons sidebar, Zabydlení shown as *výluka*);
+- transit practice (announcement listening, which waits for a recording, plus a next-station board and an exit sign);
+- the ticket wallet (stamped tickets, mission stamps, stats, no streaks);
+- settings (*noční tramvaj*, spoken Czech, audio, profile);
+- `/styleguide` § 8 with the screen patterns.
+
+**Lens on a phone:** prototyped as a bottom sheet below 640px and a popover above; kept both, responsively.
+
+**Content annotated so far:** only u02-l01, as the model. Annotating the rest is phase 5.
+
+**QA:** checked every route at 375px light and 1280px dark (no overflow, no console errors), keyboard access to the lens (Tab / Enter / Escape, focus returned), focus on *Continue* after answering, and reduced motion (static stamp and split-flap board).
+
 
 Mobile first at 375 px, then up. Each screen is built from phase-2 components
 only and added to `/styleguide` as a pattern.

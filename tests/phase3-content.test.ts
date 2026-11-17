@@ -49,7 +49,8 @@ describe('new exercise types', () => {
   it('hides listening exercises until their recording exists, and shows them once it does', () => {
     const ex = { id: 'x-listen', type: 'listenType', audio: 'rec-dobry-den', cs: 'Dobrý den.', answers: ['Dobrý den'] };
     const hidden = withExercise(ex);
-    expect(hidden.course.hiddenExercises).toEqual([{ id: 'x-listen', audio: 'rec-dobry-den' }]);
+    expect(hidden.course.hiddenExercises).toContainEqual({ id: 'x-listen', audio: 'rec-dobry-den' });
+    expect(hidden.course.hiddenExercises).toContainEqual({ id: 'tr-hear-doors', audio: 'rec-ukoncete-vystup' });
     expect(hidden.course.exercisesById.has('x-listen')).toBe(false);
     expect(hidden.course.units[0]!.lessonList[0]!.exercises.some((e) => e.id === 'x-listen')).toBe(false);
     const shown = withExercise(ex, (json) => {

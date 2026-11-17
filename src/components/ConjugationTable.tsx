@@ -28,7 +28,7 @@ export function HighlightedForm({ form, stem }: { form: string; stem: string }) 
 export function PersonTable({ title, forms, highlight = true }: { title: string; forms: Record<Person, string>; highlight?: boolean }) {
   const stem = highlight ? commonStem(PERSONS.map((p) => forms[p])) : '';
   return (
-    <div className="overflow-hidden rounded-lg border border-rule bg-surface">
+    <div className="overflow-hidden rounded-md border-2 border-ink bg-surface">
       <div className="border-b border-rule bg-paper px-3 py-1.5 text-sm font-medium text-ink-2">{title}</div>
       <table className="w-full text-sm">
         <tbody>

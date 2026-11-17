@@ -9,12 +9,36 @@ import { SpeakButton } from '@/components/SpeakButton';
 import { SpokenFormNote } from '@/components/SpokenFormNote';
 import { conditionalForms, futureForms, imperativeForms, pastForms, presentForms } from '@/lib/verbs';
 import { IconArrowLeft } from '@/components/icons';
+import { CzechText } from '@/components/CzechText';
+import { lensPlain } from '@/lib/lens';
+import type { Verb } from '@/content/schema';
+
+/** Up to three dialogue lines from the lessons that use one of the verb's present or past forms. */
+function lessonExamples(verb: Verb): { cs: string; en: string }[] {
+  const forms = [...Object.values(verb.present), ...Object.values(verb.past)]
+    .flatMap((f) => f.split(' / '))
+    .map((f) => f.trim())
+    .filter((f) => f.length > 1);
+  if (!forms.length) return [];
+  const re = new RegExp(`(?<!\\p{L})(${forms.map((f) => f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})(?!\\p{L})`, 'iu');
+  const out: { cs: string; en: string }[] = [];
+  for (const lesson of course.lessonsById.values()) {
+    for (const line of lesson.dialogue.lines) {
+      if (re.test(lensPlain(line.cs)) && !out.some((o) => o.cs === line.cs)) out.push({ cs: line.cs, en: line.en });
+      if (out.length >= 3) return out;
+    }
+  }
+  return out;
+}
 
 export function VerbDetail() {
   const { lemma = '' } = useParams();
   const verb = course.verbsByLemma.get(lemma);
   if (!verb) return <NotFound what="verb" />;
   const imp = imperativeForms(verb);
+  const base = verb.family ?? verb.lemma;
+  const family = course.verbs.filter((v) => v.lemma === base || v.family === base);
+  const examples = lessonExamples(verb);
   const topicPages = verb.topics.map((t) => course.grammarBySkill.get(`verb:${t}`)).filter((p) => p !== undefined);
   const futureNote = verb.future
     ? 'Irregular future.'
@@ -45,14 +69,14 @@ export function VerbDetail() {
           {verb.partner.map((p) => {
             const pv = course.verbsByLemma.get(p);
             return (
-              <Link key={p} to={`/verbs/lookup/${encodeURIComponent(p)}`} className="rounded-lg border border-rule bg-surface px-4 py-2 hover:border-rule-strong">
+              <Link key={p} to={`/verbs/lookup/${encodeURIComponent(p)}`} className="rounded-md border-2 border-ink bg-surface px-4 py-2 hover:-translate-y-0.5">
                 <span className="block text-xs text-ink-3">Aspect partner</span>
                 <span className="font-semibold">{p}</span> {pv && <AspectBadge aspect={pv.aspect} />}
               </Link>
             );
           })}
           {verb.motionPair && (
-            <Link to={`/verbs/lookup/${encodeURIComponent(verb.motionPair)}`} className="rounded-lg border border-rule bg-surface px-4 py-2 hover:border-rule-strong">
+            <Link to={`/verbs/lookup/${encodeURIComponent(verb.motionPair)}`} className="rounded-md border-2 border-ink bg-surface px-4 py-2 hover:-translate-y-0.5">
               <span className="block text-xs text-ink-3">Motion pair</span>
               <span className="font-semibold">{verb.motionPair}</span>
             </Link>
@@ -60,7 +84,42 @@ export function VerbDetail() {
         </div>
       )}
 
-      {verb.notes && <p className="mb-4 max-w-2xl rounded-lg bg-paper-2 px-4 py-3 text-ink">{verb.notes}</p>}
+      {verb.notes && <p className="mb-4 max-w-2xl border-l-4 border-ink bg-paper-2 px-4 py-3 text-ink">{verb.notes}</p>}
+
+      {family.length > 1 && (
+        <section aria-labelledby="family-h" className="mb-8">
+          <h2 id="family-h" className="label-board mb-2 text-ink-3">Rodina · motion family of <span lang="cs">{base}</span></h2>
+          <ul className="flex flex-wrap gap-2" lang="cs">
+            {family.map((v) => (
+              <li key={v.lemma}>
+                <Link
+                  to={`/verbs/lookup/${encodeURIComponent(v.lemma)}`}
+                  aria-current={v.lemma === verb.lemma ? 'page' : undefined}
+                  className={`inline-flex min-h-11 items-center gap-2 border-2 px-3 ${v.lemma === verb.lemma ? 'border-ink bg-ink text-paper' : 'border-rule-strong bg-surface hover:border-ink'}`}
+                >
+                  <span className="font-semibold">{v.lemma}</span>
+                  <span className="font-mono text-xs opacity-80">{v.aspect === 'pf' ? 'pf' : v.aspect === 'impf' ? 'impf' : 'bi'}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-2 text-sm text-ink-2">The prefix changes the direction (při- arriving, od- leaving); <span lang="cs">jít</span>/<span lang="cs">chodit</span> and <span lang="cs">jet</span>/<span lang="cs">jezdit</span> split one trip from going regularly.</p>
+        </section>
+      )}
+
+      {examples.length > 0 && (
+        <section aria-labelledby="ex-h" className="mb-8">
+          <h2 id="ex-h" className="label-board mb-2 text-ink-3">Příklady · from the lessons</h2>
+          <ul className="space-y-2">
+            {examples.map((e) => (
+              <li key={e.cs} className="border-l-4 border-vltava pl-3">
+                <span lang="cs" className="text-lg"><CzechText text={e.cs} /></span>
+                <span className="block text-sm text-ink-2">{e.en}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       {verb.spoken && <div className="mb-6"><SpokenFormNote spoken={verb.spoken} /></div>}
 
       <div className="grid gap-4 md:grid-cols-2">
@@ -72,7 +131,7 @@ export function VerbDetail() {
         </div>
         <PersonTable title="Conditional" forms={conditionalForms(verb)} highlight={false} />
         {imp && (
-          <div className="overflow-hidden rounded-lg border border-rule bg-surface">
+          <div className="overflow-hidden rounded-md border-2 border-ink bg-surface">
             <div className="border-b border-rule bg-paper px-3 py-1.5 text-sm font-medium text-ink-2">Imperative</div>
             <table className="w-full text-sm">
               <tbody>

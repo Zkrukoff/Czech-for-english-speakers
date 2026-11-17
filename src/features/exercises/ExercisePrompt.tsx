@@ -126,7 +126,7 @@ export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
         <>
           <div className="space-y-2">
             {exercise.context.map((l, i) => (
-              <div key={i} className="max-w-md rounded-2xl rounded-tl-sm bg-paper-2 px-4 py-2">
+              <div key={i} className="max-w-md rounded-md rounded-tl-none border-2 border-ink bg-surface px-4 py-2">
                 <div className="text-xs font-medium text-ink-3">{l.speaker}</div>
                 <div className="flex items-center gap-1 text-lg" lang="cs"><CzechText text={l.cs} /> <SpeakButton text={l.cs} /></div>
                 {l.en && <div className="text-sm text-ink-3">{l.en}</div>}

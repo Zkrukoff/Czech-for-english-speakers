@@ -39,6 +39,8 @@
   --color-board: var(--board);
   --color-plate-red: var(--plate-red);
   --color-plate-blue: var(--plate-blue);
+  --color-ticket: var(--ticket);
+  --color-ticket-void: var(--ticket-void);
   --color-case-1: var(--case-1);
   --color-case-2: var(--case-2);
   --color-case-3: var(--case-3);

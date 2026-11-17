@@ -1,3 +1,4 @@
+import { LineBadge } from '@/components/ui';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { course } from '@/content';
 import { PageHeader } from '@/components/PageHeader';
@@ -43,7 +44,7 @@ export function GuidePage() {
                   window.scrollTo(0, 0);
                 }}
                 aria-current={t.id === tab ? 'page' : undefined}
-                className={`-mb-px whitespace-nowrap border-b-2 px-4 py-2 text-sm font-medium ${t.id === tab ? 'border-ink text-ink' : 'border-transparent text-ink-3 hover:text-ink'}`}
+                className={`-mb-px min-h-11 whitespace-nowrap border-b-4 px-4 py-2 text-sm font-semibold ${t.id === tab ? 'border-ink text-ink' : 'border-transparent text-ink-3 hover:text-ink'}`}
               >
                 {t.label}
               </button>
@@ -52,7 +53,37 @@ export function GuidePage() {
         </ul>
       </nav>
 
-      {section && <CourseMarkdown>{guide.sectionMd[section.id] ?? ''}</CourseMarkdown>}
+      {section && (
+        <div className="grid gap-10 lg:grid-cols-[1fr_17rem]">
+          <div className="min-w-0">
+            <CourseMarkdown>{guide.sectionMd[section.id] ?? ''}</CourseMarkdown>
+          </div>
+          {section.lessons.length > 0 && (
+            <aside aria-labelledby="learn-h" className="self-start lg:sticky lg:top-28">
+              <div className="border-2 border-ink bg-surface p-4 shadow-offset-sm">
+                <h2 id="learn-h" className="label-board text-ink-3">Naučte se · the Czech for this</h2>
+                <ul className="mt-3 space-y-2">
+                  {section.lessons.map((id) => {
+                    const l = course.lessonsById.get(id)!;
+                    const stop = course.stopByUnit.get(l.unitId);
+                    return (
+                      <li key={id}>
+                        <Link to={`/lessons/${id}`} className="group flex items-start gap-2">
+                          {stop && <LineBadge line={stop.line} size={22} />}
+                          <span>
+                            <span className="block font-semibold group-hover:underline">{l.title}</span>
+                            <span className="block text-xs text-ink-3" lang="cs">{stop?.stationInfo.name} · lekce {l.number}</span>
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </aside>
+          )}
+        </div>
+      )}
 
       {tab === 'phrases' && (
         <div className="max-w-3xl space-y-10">

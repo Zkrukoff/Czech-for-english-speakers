@@ -1,5 +1,6 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { WORDMARK_OPTIONS } from '@/components/brand/Wordmarks';
+import { StyleguidePatterns } from './StyleguidePatterns';
 import { ALL_ICONS, IconHacek, IconArrowRight } from '@/components/icons';
 import { Button, Card, DepartureBoard, EnamelPlate, LineBadge, SectionNumber, Stamp, Ticket, TileGrid } from '@/components/ui';
 
@@ -106,13 +107,13 @@ export function StyleguidePage() {
         </p>
       </header>
 
-      <Section n={1} title="Wordmark: three drafts">
-        <p className="mb-6 max-w-2xl text-ink-2">Hand-lettered as SVG, not typeset. Each háček stands alone as the app icon. Choose one (or a direction) and I'll refine it.</p>
+      <Section n={1} title="Wordmark: B (Kubismus) chosen">
+        <p className="mb-6 max-w-2xl text-ink-2">Hand-lettered as SVG, not typeset. B (Kubismus) is the wordmark and app icon (decision D11); A and C are kept here as the drafts it was chosen from.</p>
         <div className="grid gap-6 lg:grid-cols-3">
           {WORDMARK_OPTIONS.map(({ id, name, note, Wordmark, Mark }) => (
             <Card key={id} corner="tr" className="h-full">
               <div className="flex h-full flex-col gap-4 p-5">
-                <p className="label-board text-ink-3">{name}</p>
+                <p className="label-board text-ink-3">{name}{id === 'kubismus' && ' · v aplikaci'}</p>
                 <div className="text-ink"><Wordmark className="h-14 w-auto" /></div>
                 <div className="board flex items-center rounded-md p-4"><Wordmark className="h-10 w-auto" /></div>
                 <div className="flex items-end gap-4">
@@ -257,7 +258,7 @@ export function StyleguidePage() {
           {[['7xl', 'step-8'], ['6xl', 'step-7'], ['5xl', 'step-6'], ['4xl', 'step-5'], ['3xl', 'step-4'], ['2xl', 'step-3'], ['xl', 'step-2'], ['lg', 'step-1'], ['base', 'step-0'], ['sm', 'step-sm'], ['xs', 'step--1']].map(([tw, step]) => (
             <div key={tw} className="flex items-baseline gap-4 overflow-hidden whitespace-nowrap">
               <span className="w-28 shrink-0 font-mono text-xs text-ink-3">text-{tw}</span>
-              <span className="font-display font-bold leading-none text-ink" style={{ fontSize: `var(--${step})` }}>Jedeme.</span>
+              <span className="block max-w-full overflow-hidden font-display font-bold leading-none text-ink" style={{ fontSize: `var(--${step})` }}>Jedeme.</span>
             </div>
           ))}
         </div>
@@ -351,6 +352,10 @@ export function StyleguidePage() {
             <li>It also marks "aha" tips and the loading state.</li>
           </ul>
         </div>
+      </Section>
+
+      <Section n={8} title="Screen patterns">
+        <StyleguidePatterns />
       </Section>
     </div>
   );

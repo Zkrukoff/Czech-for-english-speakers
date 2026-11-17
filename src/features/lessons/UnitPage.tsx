@@ -64,7 +64,7 @@ export function UnitPage() {
                 <span className="relative z-[1] flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[3px] border-ink bg-board text-line-b">
                   <IconTerminus size={22} />
                 </span>
-                <span className="board flex flex-1 items-center justify-between gap-3 rounded-md px-4 py-3">
+                <span className="board flex flex-1 items-center justify-between gap-3 rounded-md border-2 border-ink px-4 py-3">
                   <span>
                     <span className="label-board block text-line-b" lang="cs">Kontrola</span>
                     <span className="text-lg font-semibold">What can you do now?</span>
@@ -103,7 +103,7 @@ export function UnitPage() {
                 <div className="mt-4 flex items-center gap-3">
                   {done ? (
                     <>
-                      <Stamp main="MISE" bottom={new Date(done.doneAt).toLocaleDateString('cs-CZ')} size={64} colour="var(--plate-blue)" />
+                      <Stamp main="MISE" bottom={new Date(done.doneAt).toLocaleDateString('cs-CZ')} size={64} colour="var(--stamp-blue)" />
                       <button type="button" className="btn btn-quiet text-sm" onClick={() => undoMission(m.id)}>Undo</button>
                     </>
                   ) : (

@@ -91,7 +91,7 @@ function LetterExplorer({ letters }: { letters: Letter[] }) {
 
 function LetterDetail({ letter: l }: { letter: Letter }) {
   return (
-    <section aria-live="polite" className="self-start rounded-xl border border-rule bg-surface p-5 lg:sticky lg:top-24">
+    <section aria-live="polite" className="self-start rounded-md border-2 border-ink bg-surface p-5 lg:sticky lg:top-24">
       <div className="flex items-baseline gap-3">
         <span className="font-display text-6xl leading-none" lang="cs">{l.letter.length > 1 ? `${l.upper} ${l.letter}` : `${l.upper}${l.letter}`}</span>
         <span className="text-sm text-ink-3">{l.group}{l.loanOnly ? ' · foreign words only' : ''}</span>

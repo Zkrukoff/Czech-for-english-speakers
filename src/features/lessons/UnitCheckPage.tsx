@@ -1,4 +1,5 @@
 import { useRouteUnit } from './useRouteUnit';
+import { UnitComplete } from './UnitComplete';
 import { unitPath, WALLET_PATH } from '@/lib/paths';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -17,7 +18,7 @@ export function UnitCheckPage() {
   return <UnitCheck key={unit.id} unit={unit} />;
 }
 
-type Phase = { kind: 'intro' } | { kind: 'running'; run: number } | { kind: 'done'; scores: GoalScore[]; run: number };
+type Phase = { kind: 'intro' } | { kind: 'running'; run: number } | { kind: 'done'; scores: GoalScore[]; run: number; completedAt: number | null };
 
 function UnitCheck({ unit }: { unit: Unit }) {
   const [phase, setPhase] = useState<Phase>({ kind: 'intro' });
@@ -30,7 +31,7 @@ function UnitCheck({ unit }: { unit: Unit }) {
       <PageHeader title="What can you do now?" subtitle="This check tests each of the unit's goals. No time limit, and no hints from earlier answers: it's to show you where you are." />
 
       {phase.kind === 'intro' && (
-        <div className="rounded-xl border border-rule bg-surface p-6">
+        <div className="rounded-md border-2 border-ink bg-surface p-6 shadow-offset">
           <p className="font-medium">You'll be checked on:</p>
           <ul className="mt-2 space-y-1">
             {unit.canDo.map((g) => (
@@ -59,14 +60,17 @@ function UnitCheck({ unit }: { unit: Unit }) {
               unit.check.passRatio,
             );
             await saveGoalScores(unit.id, scores);
-            await stampUnitIfComplete(unit.id, unit.canDo.map((g) => g.id));
-            setPhase({ kind: 'done', scores, run: phase.run });
+            const stamp = await stampUnitIfComplete(unit.id, unit.canDo.map((g) => g.id));
+            // The ticket moment only when this check passed everything (not on a re-take of an old pass with misses).
+            setPhase({ kind: 'done', scores, run: phase.run, completedAt: stamp && scores.every((x) => x.passed) ? stamp.at : null });
           }}
         />
       )}
 
+      {phase.kind === 'done' && phase.completedAt !== null && <UnitComplete unit={unit} at={phase.completedAt} />}
+
       {phase.kind === 'done' && (
-        <div className="rounded-xl border border-rule bg-surface p-6">
+        <div className={`rounded-md border-2 border-ink bg-surface p-6 shadow-offset ${phase.completedAt !== null ? 'mt-12' : ''}`}>
           <h2 className="text-xl font-semibold">Results</h2>
           <ul className="mt-4 space-y-3">
             {phase.scores.map((s) => (

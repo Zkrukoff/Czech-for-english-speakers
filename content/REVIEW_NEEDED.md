@@ -139,3 +139,24 @@ check first. When an item is confirmed or corrected, remove it here and set
 | speak exercise | Buttons *Zvládl/a jsem to* · *Ještě ne* | Natural? |
 | exercise types | Number drills generated from the lexicon: *jeden/jedna/jedno*, *dva/dvě* + nom. pl., 5+ + gen. pl. | Rules as stated OK for learners? |
 
+## Phase 4: interface Czech and new screens
+
+| Where | Text | Question |
+|---|---|---|
+| navigation | *Linka, Opakování, Mluvnice, Slovesa, Průvodce, Jízdenky, Nastavení* | Natural as app labels? |
+| home | *Vítejte · Jedeme · Příští zastávka · Nastupovat · Pokračovat · Konečná · Zatím nejezdí · domov* | OK? (*Nastupovat* as "board here") |
+| name day | *Dnes má svátek …*; *Všechno nejlepší k svátku!*; *Dnes nemá svátek nikdo.* | Natural? |
+| onboarding | *Ahoj.*; vy/ty explanation; *Můžeme si tykat?* → *Jasně, rád / ráda.*; *Přesně.*; the three vy/ty scenarios | Is *Jasně, rád(a)* a natural reply? Are the scenarios right (colleague your age on day one → vy)? |
+| lesson | *Lekce 1 / 4*, *znovu* (retry), *V reálu*, *Správně.*, *Ještě jednou.* | OK? |
+| station | *Zastávky*, *Kontrola*, *Nahoře*, *Přestup*, *Výluka*, *Mise*, *Zvládnuto*, *Hotovo* | OK? |
+| unit complete | *Označeno · validated*, *Hotovo.* | OK? |
+| review | *Odjezdy*, *Slovíčka*, *Cvičení*, *Koncovky*, *Pády*, *Ještě jedno kolo*, *Tady nic není.* | OK? |
+| wallet | *Jízdenka*, *neoznačeno*, *Stanice, Lekce, Cíle, Mise*, *Zatím nic.* | OK? |
+| grammar | *Vzor*, *Vid*, *Nedokonavé / Dokonavé*, examples *Každý den píšu e-maily.* / *Napíšu ti e-mail.*, *Bezchybně.* | Natural? |
+| verbs | *Rodina* (motion family), *Příklady* | OK? |
+| guides | *Naučte se* (sidebar heading), plates *Doprava, Kultura, Zabydlení* | OK? |
+| settings | *Podle zařízení, Den, Noční tramvaj, jak to říkají Pražáci, přesná diakritika* | OK? |
+| gender marker | *m·živ, m·neživ, ž, s* | Clear abbreviations for rod mužský životný / neživotný, ženský, střední? |
+| transit practice | *Příští stanice: Můstek. Přestup na linku B.*; sign *VÝSTUP* | Exact wording of real announcements? |
+| u02-l01 | First lens annotations: *kávu* (acc, object), *mlékem* (ins, with s), *vodu* (acc, object) | Functions right? |
+

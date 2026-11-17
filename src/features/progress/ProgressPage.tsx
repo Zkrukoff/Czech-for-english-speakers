@@ -6,7 +6,8 @@ import { PageHeader } from '@/components/PageHeader';
 import { GoalList } from '@/components/GoalList';
 import { CASE_BG } from '@/components/caseColors';
 import { db } from '@/db/db';
-import { useGoalProgress, useLessonProgress } from '@/db/hooks';
+import { useGoalProgress, useLessonProgress, useStamps } from '@/db/hooks';
+import { LineBadge, Stamp, Ticket } from '@/components/ui';
 import { useDueSummary } from '@/db/useDue';
 import { computeAllMastery, MASTERY_ACCURACY, MASTERY_MIN_ATTEMPTS, MASTERY_WINDOW, type SkillMastery } from '@/lib/progress/mastery';
 import { relativeTime } from '@/lib/time';
@@ -43,6 +44,8 @@ export function ProgressPage() {
   const goals = useGoalProgress();
   const lessons = useLessonProgress();
   const due = useDueSummary();
+  const stampsList = useStamps() ?? [];
+  const missionCount = stampsList.filter((x) => x.kind === 'mission').length;
 
   const skills = ['alphabet', ...course.guides.map((g) => `guide:${g.id}`), ...CASES.map((c) => `case:${c}`), ...VERB_TOPICS.map((t) => `verb:${t}`)];
   const mastery = computeAllMastery(skills, attempts ?? []);
@@ -53,16 +56,77 @@ export function ProgressPage() {
 
   return (
     <>
-      <PageHeader title="What you can do" subtitle="Progress here is measured by what you can actually do and how accurately you answer, not by time spent." />
+      <PageHeader eyebrow="Jízdenky" title="Ticket wallet" subtitle="Every finished station gets its ticket stamped. Progress here is what you can do, not how many days in a row you opened the app." />
+
+      <dl className="mb-10 grid grid-cols-2 border-2 border-ink bg-surface shadow-offset sm:grid-cols-4">
+        {[
+          [stampsList.filter((x) => x.kind === 'unit').length, 'stations stamped', 'Stanice'],
+          [lessonsDone, `of ${allLessons.length} lessons`, 'Lekce'],
+          [goalsDone, `of ${allGoals.length} goals`, 'Cíle'],
+          [missionCount, 'missions done', 'Mise'],
+        ].map(([n, label, cs], i) => (
+          <div key={i} className={`p-4 ${i % 2 ? 'border-l-2' : ''} ${i >= 2 ? 'border-t-2 sm:border-t-0' : ''} ${i === 2 ? 'sm:border-l-2' : ''} border-ink`}>
+            <dt className="label-board text-ink-3" lang="cs">{cs}</dt>
+            <dd className="mt-1 font-display text-4xl font-extrabold tabular-nums">
+              {n} <span className="block font-ui text-sm font-normal text-ink-2">{label}</span>
+            </dd>
+          </div>
+        ))}
+      </dl>
+
+      <section aria-labelledby="tickets-h" className="mb-12">
+        <h2 id="tickets-h" className="label-board mb-4 text-ink-3">Linka A · stations</h2>
+        <ul className="grid gap-6 sm:grid-cols-2">
+          {course.units.map((u) => {
+            const stop = course.stopByUnit.get(u.id)!;
+            const st = stampsList.find((x) => x.id === `unit:${u.id}`);
+            return (
+              <li key={u.id}>
+                <Link to={unitPath(u.id)} aria-label={`${stop.stationInfo.name}: ${st ? 'stamped' : 'not stamped yet'}`} className="block transition-transform hover:-translate-y-0.5">
+                  <Ticket
+                    line={<LineBadge line={stop.line} size={22} />}
+                    title={stop.stationInfo.name}
+                    from={`Unit ${u.number} · ${u.title}`}
+                    date={st ? new Date(st.at).toLocaleDateString('cs-CZ') : 'neoznačeno · not stamped yet'}
+                    tone={st ? 'var(--ticket)' : 'var(--ticket-void)'}
+                    stamp={st ? <Stamp main={`U${String(u.number).padStart(2, '0')}`} bottom={new Date(st.at).toLocaleDateString('cs-CZ')} size={84} animate={false} /> : undefined}
+                  />
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+
+      <section aria-labelledby="missions-h" className="mb-12">
+        <h2 id="missions-h" className="label-board mb-4 text-ink-3">Mise · missions</h2>
+        {missionCount === 0 ? (
+          <p className="border-2 border-dashed border-rule-strong p-4 text-ink-2">
+            <span lang="cs">Zatím nic.</span> Each station has a real-world mission, like ordering a coffee in Czech start to finish. Tick it off on the station page and it lands here.
+          </p>
+        ) : (
+          <ul className="flex flex-wrap gap-4">
+            {stampsList.filter((x) => x.kind === 'mission').map((m) => {
+              const info = course.missionsById.get(m.refId);
+              return (
+                <li key={m.id} className="flex w-40 flex-col items-center text-center">
+                  <Stamp main="MISE" bottom={new Date(m.at).toLocaleDateString('cs-CZ')} size={88} colour="var(--stamp-blue)" animate={false} />
+                  <span className="mt-1 text-sm font-semibold">{info?.mission.title ?? m.refId}</span>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </section>
 
       <section className="mb-10">
-        <h2 className="mb-1 text-lg font-semibold">Can-do goals</h2>
+        <h2 className="mb-1 text-2xl font-extrabold">Can-do goals</h2>
         <p className="mb-4 text-sm text-ink-2">
           {goalsDone} of {allGoals.length} goals completed in unit checks · {lessonsDone} of {allLessons.length} lessons practised
         </p>
         <div className="grid gap-4 md:grid-cols-3">
           {course.units.map((u) => (
-            <div key={u.id} className="rounded-xl border border-rule bg-surface p-4">
+            <div key={u.id} className="rounded-md border-2 border-ink bg-surface p-4">
               <div className="mb-2 flex items-baseline justify-between gap-2">
                 <Link to={unitPath(u.id)} className="font-semibold hover:underline">{u.number}. {u.title}</Link>
                 <Link to={unitCheckPath(u.id)} className="shrink-0 text-xs text-vltava underline">unit check</Link>
@@ -74,9 +138,9 @@ export function ProgressPage() {
       </section>
 
       <section className="mb-10">
-        <h2 className="mb-1 text-lg font-semibold">Reviews</h2>
+        <h2 className="mb-2 text-2xl font-extrabold">Reviews</h2>
         {due && (
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-3 rounded-xl border border-rule bg-surface p-4">
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-3 rounded-md border-2 border-ink bg-surface p-4">
             <Stat n={due.dueNow} label="due now" />
             <Stat n={due.dueToday} label="due today" />
             <Stat n={due.dueThisWeek} label="due this week" />
@@ -93,16 +157,16 @@ export function ProgressPage() {
       </section>
 
       <section className="mb-10">
-        <h2 className="mb-1 text-lg font-semibold">Alphabet and pronunciation</h2>
-        <ul className="divide-y divide-rule overflow-hidden rounded-xl border border-rule bg-surface">
+        <h2 className="mb-2 text-2xl font-extrabold">Alphabet and pronunciation</h2>
+        <ul className="divide-y divide-rule overflow-hidden rounded-md border-2 border-ink bg-surface">
           <MasteryRow label="Letters, sounds and spelling" href="/alphabet?tab=practice" m={mastery.get('alphabet')!} />
         </ul>
       </section>
 
       {course.guides.some((g) => g.practice.length > 0) && (
         <section className="mb-10">
-          <h2 className="mb-1 text-lg font-semibold">Guides</h2>
-          <ul className="divide-y divide-rule overflow-hidden rounded-xl border border-rule bg-surface">
+          <h2 className="mb-2 text-2xl font-extrabold">Guides</h2>
+          <ul className="divide-y divide-rule overflow-hidden rounded-md border-2 border-ink bg-surface">
             {course.guides.filter((g) => g.practice.length > 0).map((g) => (
               <MasteryRow key={g.id} label={g.title} href={`/guides/${g.id}?tab=practice`} m={mastery.get(`guide:${g.id}`)!} />
             ))}
@@ -111,9 +175,9 @@ export function ProgressPage() {
       )}
 
       <section className="mb-10">
-        <h2 className="mb-1 text-lg font-semibold">The seven cases</h2>
+        <h2 className="mb-2 text-2xl font-extrabold">The seven cases</h2>
         <MasteryNote />
-        <ul className="divide-y divide-rule overflow-hidden rounded-xl border border-rule bg-surface">
+        <ul className="divide-y divide-rule overflow-hidden rounded-md border-2 border-ink bg-surface">
           {CASES.map((c, i) => (
             <MasteryRow key={c} label={`${CASE_INFO[c].number}. ${c[0]!.toUpperCase()}${c.slice(1)}`} href={`/grammar/${c}`} m={mastery.get(`case:${c}`)!} dot={CASE_BG[CASE_KEYS[i]!]} />
           ))}
@@ -121,9 +185,9 @@ export function ProgressPage() {
       </section>
 
       <section>
-        <h2 className="mb-1 text-lg font-semibold">Verb topics</h2>
+        <h2 className="mb-2 text-2xl font-extrabold">Verb topics</h2>
         <MasteryNote />
-        <ul className="divide-y divide-rule overflow-hidden rounded-xl border border-rule bg-surface">
+        <ul className="divide-y divide-rule overflow-hidden rounded-md border-2 border-ink bg-surface">
           {VERB_TOPICS.map((t) => {
             const page = course.grammarBySkill.get(`verb:${t}`);
             return <MasteryRow key={t} label={page?.title.split(':')[0] ?? t} href={page ? `/verbs/${page.id}` : undefined} m={mastery.get(`verb:${t}`)!} />;

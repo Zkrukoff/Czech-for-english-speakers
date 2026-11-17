@@ -176,7 +176,9 @@ describe('pattern and function review cards', () => {
     expect((await db.cards.get('fn:object'))?.skills).toEqual(['case:accusative']);
     expect(exerciseForCard('fn:object', course, 0)?.id).toBe('lens-1');
     expect(exerciseForCard('fn:object', course, 1)?.id).toBe('lens-2');
-    expect(exerciseForCard('pattern:zena:ins.pl', course)).toBeNull();
+    // No annotated sentence: an ending pattern is drilled on a lexicon noun of that vzor; none at all → null.
+    expect(exerciseForCard('pattern:zena:ins.pl', course)?.id).toMatch(/^vzor-.*-ins-pl$/);
+    expect(exerciseForCard('pattern:kure:ins.pl', course)).toBeNull();
     db.close();
   });
 });

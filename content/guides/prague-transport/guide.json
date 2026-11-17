@@ -388,6 +388,66 @@
             "guide:prague-transport"
           ],
           "nativeReviewed": false
+        },
+        {
+          "id": "tr-hear-doors",
+          "type": "listenType",
+          "audio": "rec-ukoncete-vystup",
+          "cs": "Ukončete, prosím, výstup a nástup, dveře se zavírají.",
+          "en": "Please finish getting on and off, the doors are closing.",
+          "answers": [
+            "Ukončete[,] prosím[,] výstup a nástup[,] dveře se zavírají"
+          ],
+          "why": "The metro door announcement: ukončete (finish) … výstup a nástup (getting off and on), dveře se zavírají (the doors are closing).",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-read-next",
+          "type": "readReal",
+          "realia": {
+            "kind": "announcement",
+            "title": "Linka A",
+            "lines": [
+              "Příští stanice: Můstek.",
+              "Přestup na linku B."
+            ]
+          },
+          "prompt": "You're on Line A. What can you do at the next station?",
+          "answerLang": "en",
+          "answers": [
+            "{change|transfer|switch} to [the] [line] B[ line]"
+          ],
+          "why": "Přestup na linku B: change to line B. Přestup is a transfer; na linku is na + accusative (where to).",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-read-exit",
+          "type": "readReal",
+          "realia": {
+            "kind": "sign",
+            "lines": [
+              "VÝSTUP"
+            ]
+          },
+          "prompt": "Where does this sign send you?",
+          "answerLang": "en",
+          "answers": [
+            "{[the] exit|[the] way out|out}"
+          ],
+          "why": "Výstup is the exit (literally \"getting out\"). Its opposite at the platform is nástup, getting on.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport"
+          ],
+          "nativeReviewed": false
         }
       ]
     },

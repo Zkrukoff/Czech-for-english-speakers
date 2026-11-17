@@ -16,7 +16,7 @@ export function VerbsIndex() {
           if (!page) return null;
           return (
             <li key={t}>
-              <Link to={`/verbs/${page.id}`} className="flex gap-4 rounded-lg border border-rule bg-surface px-4 py-3 hover:border-rule-strong">
+              <Link to={`/verbs/${page.id}`} className="flex gap-4 rounded-md border-2 border-ink bg-surface px-4 py-3 hover:-translate-y-0.5">
                 <span className="w-5 text-sm font-medium text-ink-3">{i + 1}</span>
                 <span>
                   <span className="block font-medium">{page.title}</span>
