@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { ALPHABET_SKILL, CASES, CASE_KEYS, GRAMMAR_SKILLS } from './taxonomy';
+import { ALPHABET_SKILL, CASES, CASE_KEYS, GRAMMAR_SKILLS, LISTENING_SKILL } from './taxonomy';
 
 /**
  * Zod schemas for everything in /content. These are the source of truth for
@@ -14,8 +14,8 @@ const id = z.string().regex(/^[a-z0-9][a-z0-9-]*$/, 'ids use lowercase letters, 
 
 export const SkillTagSchema = z
   .string()
-  .refine((s) => GRAMMAR_SKILLS.includes(s) || s === ALPHABET_SKILL || /^(vocab|guide):[a-z0-9-]+$/.test(s), {
-    message: 'skill must be case:<case>, verb:<topic>, vocab:<vocabId>, guide:<guideId> or alphabet',
+  .refine((s) => GRAMMAR_SKILLS.includes(s) || s === ALPHABET_SKILL || s === LISTENING_SKILL || /^(vocab|guide):[a-z0-9-]+$/.test(s), {
+    message: 'skill must be case:<case>, verb:<topic>, vocab:<vocabId>, guide:<guideId>, alphabet or listening',
   });
 
 export const SpokenFormSchema = z.object({
@@ -235,7 +235,26 @@ export const ReadRealExerciseSchema = z.object({
   answerLang: z.enum(['cs', 'en']).default('en'),
 });
 
+/**
+ * Multiple choice, for knowledge *about* Czechia (transport, customs, history,
+ * social conventions) and for listening comprehension. Producing Czech stays
+ * typed. Explain each wrong option in `hints` (wrong = the option's text), so a
+ * wrong pick teaches something.
+ */
+export const MultipleChoiceExerciseSchema = z.object({
+  ...exerciseBase,
+  type: z.literal('multipleChoice'),
+  /** The question, in English. "**bold**" allowed. */
+  prompt: z.string().min(1),
+  /** Optional Czech shown above the question (a sign, a line someone says). */
+  cs: z.string().optional(),
+  options: z.array(z.string().min(1)).min(2).max(5),
+  /** Language of the options, for lang attributes and fonts. */
+  optionsLang: z.enum(['en', 'cs']).default('en'),
+});
+
 export const ExerciseSchema = z.discriminatedUnion('type', [
+  MultipleChoiceExerciseSchema,
   TranslateExerciseSchema,
   FillEndingExerciseSchema,
   CaseSelectExerciseSchema,
@@ -573,6 +592,43 @@ export const FunctionsFileSchema = z.object({
   nativeReviewed: reviewed,
 });
 
+/* ---------- Overheard in Prague (listening scenes) ---------- */
+
+/** Where a line's wording comes from, when it's an official text (announcements). */
+const VerifiedSchema = z.object({ source: z.string().min(1), url: z.string().url(), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) });
+
+export const OverheardLineSchema = z.object({
+  speaker: z.string().min(1),
+  /** Standard Czech (case-lens markup allowed). */
+  cs: z.string().min(1),
+  /** How it's actually said, if different (obecná čeština). */
+  spoken: z.string().optional(),
+  en: z.string().min(1),
+  /** Recording id in content/audio/manifest.json, once a real recording exists. */
+  audio: z.string().optional(),
+  /** For official wording (e.g. PID announcements): where it was checked. Absent = not an official text, or not verified. */
+  verified: VerifiedSchema.optional(),
+  /** For lines that imitate an official text we could NOT verify. */
+  unverifiedNote: z.string().optional(),
+  nativeReviewed: reviewed,
+});
+
+export const OverheardSceneSchema = z.object({
+  id,
+  title: z.string().min(1),
+  titleCs: z.string().min(1),
+  /** Where you are, in English. */
+  setting: z.string().min(1),
+  kind: z.enum(['transport', 'shop', 'pub', 'health', 'work']),
+  order: z.number().default(0),
+  lines: z.array(OverheardLineSchema).min(2),
+  /** A short "good to know" for after the scene. */
+  note: z.string().optional(),
+  /** 2–3 comprehension questions (multiple choice). */
+  questions: z.array(z.lazy(() => MultipleChoiceExerciseSchema)).min(2).max(3),
+  nativeReviewed: reviewed,
+});
+
 /* ---------- Name days and audio ---------- */
 
 export const NamedaysSchema = z.object({
@@ -646,6 +702,7 @@ export type Noun = z.infer<typeof NounSchema>;
 export type Gender = z.infer<typeof GenderSchema>;
 export type Mission = z.infer<typeof MissionSchema>;
 export type NamedaysData = z.infer<typeof NamedaysSchema>;
+export type OverheardScene = z.infer<typeof OverheardSceneSchema>;
 export type HolidaysData = z.infer<typeof HolidaysSchema>;
 export type Holiday = HolidaysData['holidays'][number];
 export type AudioManifest = z.infer<typeof AudioManifestSchema>;

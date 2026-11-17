@@ -45,3 +45,43 @@ Generated from the content (every `listenType`, `minimalPair` and `speak` exerci
 | `rec-ukoncete-vystup` | Ukončete, prosím, výstup a nástup, dveře se zavírají. | listenType `tr-hear-doors` (guides/prague-transport/guide.json) |
 
 For a minimal pair, record the word given; the exercise asks which of the two the learner heard. More recordings can be added at any time: speaking exercises use them as soon as they're listed.
+
+## Overheard in Prague
+
+Each line is played by a placeholder synthetic voice until its recording is listed in the manifest. Record the **spoken** version where one is given: that's how people actually talk, and it's what the scenes teach. For announcements, record the official wording exactly (or use an official recording only if PID/DPP grants permission).
+
+| Recording id | Say (standard) | Spoken version, if recording it that way | Scene |
+|---|---|---|---|
+| `oh-bus-1` | Příští zastávka: Nádraží Veleslavín. |  | On the bus |
+| `oh-bus-2` | Pro výstup stiskněte tlačítko. |  | On the bus |
+| `oh-bus-3` | Promiňte, vystupujete? | Pardon, vystupujete? | On the bus |
+| `oh-bus-4` | Ne, pustím vás. |  | On the bus |
+| `oh-bus-5` | Děkuju. |  | On the bus |
+| `oh-checkout-1` | Dobrý den. |  | At the checkout |
+| `oh-checkout-2` | Dobrý den. |  | At the checkout |
+| `oh-checkout-3` | Máte zákaznickou kartu? | Máte kartičku? | At the checkout |
+| `oh-checkout-4` | Nemám, děkuju. |  | At the checkout |
+| `oh-checkout-5` | Dvě stě čtyřicet osm korun. |  | At the checkout |
+| `oh-checkout-6` | Kartou, prosím. |  | At the checkout |
+| `oh-checkout-7` | Chcete účtenku? | Účtenku chcete? | At the checkout |
+| `oh-checkout-8` | Ne, nemusím. |  | At the checkout |
+| `oh-checkout-9` | Na shledanou. |  | At the checkout |
+| `oh-metro-1` | Ukončete, prosím, výstup a nástup, dveře se zavírají. |  | On the metro |
+| `oh-metro-2` | Příští stanice: Můstek. Přestup na linku B. |  | On the metro |
+| `oh-metro-3` | Vystupujeme na Můstku, že? | Vystupujem na Můstku, jo? | On the metro |
+| `oh-metro-4` | Ano, a pak přestoupíme na linku B. | Jo, a pak přestoupíme na béčko. | On the metro |
+| `oh-pharmacy-1` | Dobrý den, co pro vás? |  | At the pharmacy |
+| `oh-pharmacy-2` | Dobrý den, máte něco na bolest v krku? | Máte něco na krk? | At the pharmacy |
+| `oh-pharmacy-3` | Máte i kašel nebo horečku? |  | At the pharmacy |
+| `oh-pharmacy-4` | Ne, jen mě bolí v krku. |  | At the pharmacy |
+| `oh-pharmacy-5` | Tak tyhle pastilky. Jednu třikrát denně, nejdéle pět dní. |  | At the pharmacy |
+| `oh-pharmacy-6` | Děkuju. Kolik to stojí? |  | At the pharmacy |
+| `oh-pharmacy-7` | Sto dvacet korun. |  | At the pharmacy |
+| `oh-pub-1` | Dobrý den, co to bude? |  | At the pub |
+| `oh-pub-2` | Jedno pivo, prosím. |  | At the pub |
+| `oh-pub-3` | Velké, nebo malé? | Velký, nebo malý? | At the pub |
+| `oh-pub-4` | Velké. | Velký. | At the pub |
+| `oh-pub-5` | Ještě jedno? |  | At the pub |
+| `oh-pub-6` | Ano, ještě jedno. A pak zaplatíme. | Jo, ještě jedno. A pak zaplatíme. | At the pub |
+| `oh-pub-7` | Dohromady, nebo zvlášť? |  | At the pub |
+| `oh-pub-8` | Zvlášť, prosím. |  | At the pub |

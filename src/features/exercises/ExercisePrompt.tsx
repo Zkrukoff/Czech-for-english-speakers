@@ -35,6 +35,7 @@ const TYPE_LABEL: Record<Exercise['type'], string> = {
   minimalPair: 'Which word do you hear?',
   speak: 'Say it',
   readReal: 'Read it',
+  multipleChoice: 'Choose one',
 };
 
 export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
@@ -120,6 +121,16 @@ export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
         <>
           <RealiaCard realia={exercise.realia} />
           <p className="font-medium">{exercise.prompt}</p>
+        </>
+      )}
+      {exercise.type === 'multipleChoice' && (
+        <>
+          {exercise.cs && (
+            <p className="flex items-center gap-2 rounded-sm border-l-4 border-ink bg-paper-2 px-4 py-3 text-2xl" lang="cs">
+              <CzechText text={exercise.cs} />
+            </p>
+          )}
+          <p className="text-xl font-medium"><InlineCzech text={exercise.prompt} /></p>
         </>
       )}
       {exercise.type === 'dialogueComplete' && (

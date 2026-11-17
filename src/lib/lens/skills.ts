@@ -31,6 +31,8 @@ export function czechStrings(ex: Exercise): string[] {
       return ex.tiles;
     case 'minimalPair':
       return [];
+    case 'multipleChoice':
+      return ex.cs ? [ex.cs] : [];
     default:
       return [ex.prompt];
   }

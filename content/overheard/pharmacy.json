@@ -1,0 +1,150 @@
+{
+  "id": "oh-pharmacy",
+  "title": "At the pharmacy",
+  "titleCs": "V lékárně",
+  "setting": "A pharmacy near the tram stop, with a sore throat.",
+  "kind": "health",
+  "order": 5,
+  "lines": [
+    {
+      "speaker": "Lékárnice",
+      "cs": "Dobrý den, co pro vás?",
+      "en": "Hello, what can I do for you?",
+      "audio": "oh-pharmacy-1",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "Dobrý den, máte něco na bolest v krku?",
+      "spoken": "Máte něco na krk?",
+      "en": "Hello, do you have anything for a sore throat?",
+      "audio": "oh-pharmacy-2",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Lékárnice",
+      "cs": "Máte i kašel nebo horečku?",
+      "en": "Do you also have a cough or a temperature?",
+      "audio": "oh-pharmacy-3",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "Ne, jen mě bolí v krku.",
+      "en": "No, just a sore throat.",
+      "audio": "oh-pharmacy-4",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Lékárnice",
+      "cs": "Tak tyhle pastilky. Jednu třikrát denně, nejdéle pět dní.",
+      "en": "Then these lozenges. One three times a day, for five days at most.",
+      "audio": "oh-pharmacy-5",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "Děkuju. Kolik to stojí?",
+      "en": "Thanks. How much is it?",
+      "audio": "oh-pharmacy-6",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Lékárnice",
+      "cs": "Sto dvacet [[korun|koruna|gen.pl|quantity-5plus]].",
+      "en": "A hundred and twenty crowns.",
+      "audio": "oh-pharmacy-7",
+      "nativeReviewed": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "oh-pharmacy-q1",
+      "type": "multipleChoice",
+      "prompt": "How often should you take a lozenge?",
+      "options": [
+        "Three times a day",
+        "Every three hours",
+        "Once a day for three days"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Three times a day"
+      ],
+      "why": "Třikrát denně: three times a day.",
+      "hints": [
+        {
+          "wrong": "Every three hours",
+          "explain": "That would be každé tři hodiny."
+        },
+        {
+          "wrong": "Once a day for three days",
+          "explain": "Jednou denně is once a day; she said třikrát denně."
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "oh-pharmacy-q2",
+      "type": "multipleChoice",
+      "prompt": "What does she ask about?",
+      "options": [
+        "A cough or a temperature",
+        "Your prescription",
+        "Your insurance card"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "A cough or a temperature"
+      ],
+      "why": "Máte i kašel nebo horečku? Do you also have a cough or a temperature?",
+      "hints": [
+        {
+          "wrong": "Your prescription",
+          "explain": "A prescription is recept; lozenges don't need one."
+        },
+        {
+          "wrong": "Your insurance card",
+          "explain": "You show that at the doctor's, not for lozenges."
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "oh-pharmacy-q3",
+      "type": "multipleChoice",
+      "prompt": "**Co pro vás?** means…",
+      "options": [
+        "What can I do for you?",
+        "What's wrong with you?",
+        "Who is it for?"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "What can I do for you?"
+      ],
+      "why": "Co pro vás? Literally \"what for you?\": the standard opener in shops and pharmacies.",
+      "hints": [
+        {
+          "wrong": "What's wrong with you?",
+          "explain": "That would be Co vám je?"
+        },
+        {
+          "wrong": "Who is it for?",
+          "explain": "That would be Pro koho to je?"
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    }
+  ],
+  "nativeReviewed": false
+}

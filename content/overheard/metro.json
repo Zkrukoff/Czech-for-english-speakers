@@ -1,0 +1,133 @@
+{
+  "id": "oh-metro",
+  "title": "On the metro",
+  "titleCs": "V metru",
+  "setting": "Line A towards the centre, with a friend.",
+  "kind": "transport",
+  "order": 2,
+  "lines": [
+    {
+      "speaker": "Hlášení",
+      "cs": "Ukončete, prosím, výstup a nástup, dveře se zavírají.",
+      "en": "Please finish getting off and on, the doors are closing.",
+      "unverifiedNote": "The usual wording, but not found on an official PID/DPP page: flagged for checking.",
+      "audio": "oh-metro-1",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Hlášení",
+      "cs": "Příští stanice: Můstek. Přestup na linku B.",
+      "en": "Next station: Můstek. Change here for line B.",
+      "unverifiedNote": "The usual wording, but not found on an official PID/DPP page: flagged for checking.",
+      "audio": "oh-metro-2",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Kamarád",
+      "cs": "Vystupujeme na Můstku, že?",
+      "spoken": "Vystupujem na Můstku, jo?",
+      "en": "We get off at Můstek, right?",
+      "audio": "oh-metro-3",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "Ano, a pak přestoupíme na linku B.",
+      "spoken": "Jo, a pak přestoupíme na béčko.",
+      "en": "Yes, and then we change to line B.",
+      "audio": "oh-metro-4",
+      "nativeReviewed": false
+    }
+  ],
+  "note": "Locals call the lines áčko, béčko and céčko (A, B, C).",
+  "questions": [
+    {
+      "id": "oh-metro-q1",
+      "type": "multipleChoice",
+      "prompt": "What happens right after **Ukončete, prosím, výstup a nástup**?",
+      "options": [
+        "The doors close",
+        "The train waits for everyone",
+        "You must show your ticket"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "The doors close"
+      ],
+      "why": "Dveře se zavírají: the doors are closing. Don't run for it.",
+      "hints": [
+        {
+          "wrong": "The train waits for everyone",
+          "explain": "The opposite: it's the last call. Dveře se zavírají means the doors are closing."
+        },
+        {
+          "wrong": "You must show your ticket",
+          "explain": "Nobody checks tickets at the doors: inspectors walk through the trains and stations."
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "oh-metro-q2",
+      "type": "multipleChoice",
+      "prompt": "Where do they get off?",
+      "options": [
+        "Můstek",
+        "Muzeum",
+        "Florenc"
+      ],
+      "optionsLang": "cs",
+      "answers": [
+        "Můstek"
+      ],
+      "why": "Vystupujeme na Můstku: Můstek in the locative, after na (where).",
+      "hints": [
+        {
+          "wrong": "Muzeum",
+          "explain": "Muzeum is the change to line C. The announcement says přestup na linku B, at Můstek."
+        },
+        {
+          "wrong": "Florenc",
+          "explain": "Florenc is where lines B and C meet, not on line A."
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "oh-metro-q3",
+      "type": "multipleChoice",
+      "prompt": "In spoken Czech, what is **béčko**?",
+      "options": [
+        "Line B",
+        "The B exit",
+        "A bus"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Line B"
+      ],
+      "why": "Áčko, béčko, céčko: the everyday names for metro lines A, B and C.",
+      "hints": [
+        {
+          "wrong": "The B exit",
+          "explain": "Exits are marked výstup, often with a letter, but béčko here is the line."
+        },
+        {
+          "wrong": "A bus",
+          "explain": "A bus is autobus. Béčko is line B."
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    }
+  ],
+  "nativeReviewed": false
+}

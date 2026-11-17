@@ -1,0 +1,165 @@
+{
+  "id": "oh-checkout",
+  "title": "At the checkout",
+  "titleCs": "U pokladny",
+  "setting": "A supermarket near work, at lunchtime.",
+  "kind": "shop",
+  "order": 3,
+  "lines": [
+    {
+      "speaker": "Pokladní",
+      "cs": "Dobrý den.",
+      "en": "Hello.",
+      "audio": "oh-checkout-1",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "Dobrý den.",
+      "en": "Hello.",
+      "audio": "oh-checkout-2",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Pokladní",
+      "cs": "Máte zákaznickou kartu?",
+      "spoken": "Máte kartičku?",
+      "en": "Do you have a loyalty card?",
+      "audio": "oh-checkout-3",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "Nemám, děkuju.",
+      "en": "No, thanks.",
+      "audio": "oh-checkout-4",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Pokladní",
+      "cs": "Dvě stě čtyřicet osm [[korun|koruna|gen.pl|quantity-5plus]].",
+      "en": "Two hundred and forty-eight crowns.",
+      "audio": "oh-checkout-5",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "[[Kartou|karta|ins|means]], prosím.",
+      "en": "By card, please.",
+      "audio": "oh-checkout-6",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Pokladní",
+      "cs": "Chcete účtenku?",
+      "spoken": "Účtenku chcete?",
+      "en": "Do you want the receipt?",
+      "audio": "oh-checkout-7",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "Ne, nemusím.",
+      "en": "No, I don't need it.",
+      "audio": "oh-checkout-8",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Pokladní",
+      "cs": "Na shledanou.",
+      "en": "Goodbye.",
+      "audio": "oh-checkout-9",
+      "nativeReviewed": false
+    }
+  ],
+  "questions": [
+    {
+      "id": "oh-checkout-q1",
+      "type": "multipleChoice",
+      "prompt": "What does the cashier ask you first?",
+      "options": [
+        "If you have a loyalty card",
+        "If you want a bag",
+        "If you're paying by card"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "If you have a loyalty card"
+      ],
+      "why": "Máte zákaznickou kartu? Do you have a loyalty (customer) card? Spoken: Máte kartičku?",
+      "hints": [
+        {
+          "wrong": "If you want a bag",
+          "explain": "That would be Chcete tašku?"
+        },
+        {
+          "wrong": "If you're paying by card",
+          "explain": "You said kartou yourself; she didn't ask."
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "oh-checkout-q2",
+      "type": "multipleChoice",
+      "prompt": "How much is it?",
+      "options": [
+        "248 Kč",
+        "48 Kč",
+        "2,480 Kč"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "248 Kč"
+      ],
+      "why": "Dvě stě čtyřicet osm: 200 + 40 + 8.",
+      "hints": [
+        {
+          "wrong": "48 Kč",
+          "explain": "Listen for dvě stě (two hundred) first."
+        },
+        {
+          "wrong": "2,480 Kč",
+          "explain": "That would be dva tisíce čtyři sta osmdesát."
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "oh-checkout-q3",
+      "type": "multipleChoice",
+      "prompt": "What is **účtenka**?",
+      "options": [
+        "The receipt",
+        "The bag",
+        "The change"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "The receipt"
+      ],
+      "why": "Účtenka is the receipt (also paragon).",
+      "hints": [
+        {
+          "wrong": "The bag",
+          "explain": "A bag is taška."
+        },
+        {
+          "wrong": "The change",
+          "explain": "Change is drobné (small coins) or vrátit (to give back)."
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    }
+  ],
+  "nativeReviewed": false
+}

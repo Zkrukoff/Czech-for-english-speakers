@@ -53,6 +53,7 @@ function DiffText({ result }: { result: CheckResult }) {
 export function answerIsCzech(ex: Exercise): boolean {
   if (ex.type === 'translate') return ex.direction === 'en-cs';
   if (ex.type === 'question' || ex.type === 'readReal') return ex.answerLang === 'cs';
+  if (ex.type === 'multipleChoice') return ex.optionsLang === 'cs';
   return ex.type !== 'caseSelect';
 }
 

@@ -124,7 +124,7 @@ function fillEndingStem(exercise: Exercise): string | undefined {
 }
 
 /** Exercises answered by picking an option: matched exactly, never diacritics-tolerant. */
-export const CHOICE_TYPES = new Set<Exercise['type']>(['caseSelect', 'chooseEnding', 'aspectChoice', 'minimalPair']);
+export const CHOICE_TYPES = new Set<Exercise['type']>(['caseSelect', 'chooseEnding', 'aspectChoice', 'minimalPair', 'multipleChoice']);
 
 /** Values the speaking exercise sends after the learner judges their own recording. */
 export const SELF_ASSESSED = { good: 'self:good', again: 'self:again' } as const;

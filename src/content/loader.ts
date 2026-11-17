@@ -12,6 +12,7 @@ import {
   FunctionsFileSchema,
   NamedaysSchema,
   HolidaysSchema,
+  OverheardSceneSchema,
   AudioManifestSchema,
   UnitSchema,
   VerbFileSchema,
@@ -28,6 +29,7 @@ import {
   type GrammarFunction,
   type NamedaysData,
   type HolidaysData,
+  type OverheardScene,
   type AudioManifest,
   type Mission,
   type StationData,
@@ -66,7 +68,8 @@ export type ExerciseSource =
   | { kind: 'lesson'; unitId: string; lessonId: string }
   | { kind: 'unitCheck'; unitId: string }
   | { kind: 'alphabet'; setId: string }
-  | { kind: 'guide'; guideId: string; setId: string };
+  | { kind: 'guide'; guideId: string; setId: string }
+  | { kind: 'overheard'; sceneId: string };
 
 export interface Guide extends GuideData {
   /** Folder name under content/guides/. */
@@ -145,6 +148,8 @@ export interface Course {
   namedays: NamedaysData | null;
   /** Czech public holidays (content/calendar/holidays.json). */
   holidays: HolidaysData | null;
+  /** Listening scenes (content/overheard/*.json), in order. */
+  overheard: OverheardScene[];
   /** Recorded audio by id (content/audio/manifest.json). */
   audio: Map<string, AudioManifest['recordings'][number]>;
   /** Pattern and function SRS keys each exercise practises (from its lens markup). */
@@ -211,6 +216,7 @@ export function loadContent(files: ContentFiles): LoadResult {
     guideLinksByLesson: new Map(),
     namedays: null,
     holidays: null,
+    overheard: [],
     audio: new Map(),
     hiddenExercises: [],
     lensKeysByExercise: new Map(),
@@ -441,6 +447,18 @@ export function loadContent(files: ContentFiles): LoadResult {
   }
 
   /* ---- Name days and audio ---- */
+  for (const [path, raw] of Object.entries(files.json)) {
+    if (!/^overheard\/[^/]+\.json$/.test(path)) continue;
+    const scene = parse(OverheardSceneSchema, path, raw);
+    if (!scene) continue;
+    claimId('overheard scene', scene.id, path);
+    for (const q of scene.questions) {
+      claimId('exercise', q.id, path);
+      course.exercisesById.set(q.id, { exercise: q, source: { kind: 'overheard', sceneId: scene.id } });
+    }
+    course.overheard.push(scene);
+  }
+  course.overheard.sort((a, b) => a.order - b.order);
   if ('calendar/holidays.json' in files.json) course.holidays = parse(HolidaysSchema, 'calendar/holidays.json', files.json['calendar/holidays.json']);
   if ('calendar/namedays.json' in files.json) course.namedays = parse(NamedaysSchema, 'calendar/namedays.json', files.json['calendar/namedays.json']);
   if ('audio/manifest.json' in files.json) {
@@ -561,6 +579,7 @@ export function loadContent(files: ContentFiles): LoadResult {
   }
   for (const g of [...course.guides, ...course.draftGuides]) checkLens(g, `guide ${g.id}`);
   if (course.alphabet) checkLens(course.alphabet, 'alphabet');
+  for (const sc of course.overheard) checkLens(sc.lines, `overheard ${sc.id}`);
 
   /* ---- Cross-reference checks ---- */
   for (const [exId, { exercise, source }] of course.exercisesById) {
@@ -571,6 +590,8 @@ export function loadContent(files: ContentFiles): LoadResult {
           ? `unit ${source.unitId} check`
           : source.kind === 'guide'
             ? `guide ${source.guideId}, set ${source.setId}`
+            : source.kind === 'overheard'
+              ? `overheard ${source.sceneId}`
             : `alphabet set ${source.setId}`;
     for (const p of [...exercise.answers, ...exercise.hints.map((h) => h.wrong)]) {
       const err = validatePattern(p);
@@ -609,6 +630,14 @@ export function loadContent(files: ContentFiles): LoadResult {
       }
     }
     if (exercise.type === 'minimalPair') mustBeOptions(exercise.pair, 'pair');
+    if (exercise.type === 'multipleChoice') {
+      mustBeOptions(exercise.options, 'options');
+      if (new Set(exercise.options).size !== exercise.options.length) errors.push(`${where}, exercise ${exId}: duplicate options`);
+      const explained = new Set(exercise.hints.map((h) => h.wrong));
+      for (const o of exercise.options) {
+        if (!exercise.answers.includes(o) && !explained.has(o)) errors.push(`${where}, exercise ${exId}: wrong option "${o}" needs an explanation in hints`);
+      }
+    }
     if (exercise.type === 'aspectChoice') {
       mustBeOptions(exercise.options, 'options');
       const [impf, pf] = exercise.verbs.map((v) => course.verbsByLemma.get(v));

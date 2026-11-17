@@ -1,0 +1,131 @@
+{
+  "id": "oh-pub",
+  "title": "At the pub",
+  "titleCs": "V hospodě",
+  "setting": "A pub after work, with colleagues.",
+  "kind": "pub",
+  "order": 4,
+  "lines": [
+    {
+      "speaker": "Číšník",
+      "cs": "Dobrý den, co to bude?",
+      "en": "Hello, what'll it be?",
+      "audio": "oh-pub-1",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "Jedno [[pivo|pivo|acc|object]], prosím.",
+      "en": "One beer, please.",
+      "audio": "oh-pub-2",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Číšník",
+      "cs": "Velké, nebo malé?",
+      "spoken": "Velký, nebo malý?",
+      "en": "Large or small?",
+      "audio": "oh-pub-3",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "Velké.",
+      "spoken": "Velký.",
+      "en": "Large.",
+      "audio": "oh-pub-4",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Číšník",
+      "cs": "Ještě jedno?",
+      "en": "Another one?",
+      "audio": "oh-pub-5",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "Ano, ještě jedno. A pak zaplatíme.",
+      "spoken": "Jo, ještě jedno. A pak zaplatíme.",
+      "en": "Yes, one more. And then we'll pay.",
+      "audio": "oh-pub-6",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Číšník",
+      "cs": "Dohromady, nebo zvlášť?",
+      "en": "Together or separately?",
+      "audio": "oh-pub-7",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "Zvlášť, prosím.",
+      "en": "Separately, please.",
+      "audio": "oh-pub-8",
+      "nativeReviewed": false
+    }
+  ],
+  "note": "In many pubs the waiter keeps count of your beers with marks on a slip of paper on the table, and may bring another when your glass is nearly empty unless you say no.",
+  "questions": [
+    {
+      "id": "oh-pub-q1",
+      "type": "multipleChoice",
+      "prompt": "**Ještě jedno?** means…",
+      "options": [
+        "Another one?",
+        "Just one?",
+        "The same tomorrow?"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Another one?"
+      ],
+      "why": "Ještě jedno: one more (literally \"still one\").",
+      "hints": [
+        {
+          "wrong": "Just one?",
+          "explain": "Just one would be jen jedno."
+        },
+        {
+          "wrong": "The same tomorrow?",
+          "explain": "Tomorrow is zítra; ještě jedno is about right now."
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "oh-pub-q2",
+      "type": "multipleChoice",
+      "prompt": "You want to pay only for your own drinks. What do you say?",
+      "options": [
+        "Zvlášť",
+        "Dohromady",
+        "Ještě jedno"
+      ],
+      "optionsLang": "cs",
+      "answers": [
+        "Zvlášť"
+      ],
+      "why": "Zvlášť: separately. Each person pays for their own.",
+      "hints": [
+        {
+          "wrong": "Dohromady",
+          "explain": "Dohromady means together: one bill for the table."
+        },
+        {
+          "wrong": "Ještě jedno",
+          "explain": "That orders another beer."
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    }
+  ],
+  "nativeReviewed": false
+}

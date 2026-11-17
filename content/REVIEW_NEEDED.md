@@ -182,3 +182,13 @@ check first. When an item is confirmed or corrected, remove it here and set
 | calendar/holidays.json | The one-line descriptions, greetings (*Šťastný nový rok!, Veselé Velikonoce!, Veselé Vánoce!*) and which days large shops close (from the culture guide) | Accurate and current? |
 | home | *Dnes · úterý 17. listopadu*, *Státní svátek*, *Příští svátek*, *za 37 dní / za 2 dny / zítra* | Natural? |
 | page titles | Czech names under English titles: *Mluvnice, Slovesa, Vyhledávání sloves, Průvodce, Jízdenky, Nastavení, Opakování, Česká abeceda, Skloňování* | OK? |
+
+## Round 2 · A1 Overheard in Prague
+
+| Where | Text | Question |
+|---|---|---|
+| all 5 scenes | Every line, standard and spoken versions (*Pardon, vystupujete?*, *Vystupujem na Můstku, jo?*, *béčko*, *Máte kartičku?*, *Účtenku chcete?*, *Ne, nemusím*, *Co to bude?*, *Velký, nebo malý?*, *Co pro vás?*, *Máte něco na krk?*) | Natural? Is the spoken version how people actually say it? |
+| bus, metro | Announcements *Příští zastávka: …*, *Ukončete, prosím, výstup a nástup, dveře se zavírají*, *Příští stanice: Můstek. Přestup na linku B.* | Exact current wording? (Not found on an official page. *Pro výstup stiskněte tlačítko* **is** verified on pid.cz.) |
+| pub | The note about the waiter's tally slip and bringing another beer | Accurate enough as a general note? |
+| pharmacy | *Jednu třikrát denně, nejdéle pět dní* | Natural dosage phrasing? |
+| questions | Wrong-option explanations (e.g. *Co vám je?*, *Pro koho to je?*, *drobné*, *paragon*) | Correct? |
