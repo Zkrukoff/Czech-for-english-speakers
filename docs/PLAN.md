@@ -691,7 +691,7 @@ Kept typed, because they produce Czech: the alphabet letters, letter names and s
 3. **Discoverability, both:** the page `<title>`, meta description, web manifest and any app-store text say "Czechia (Czech Republic)" once, so search engines and people who only know one name find it.
 4. **Czech in lessons:** *Česko* in everyday sentences (*Bydlím v Česku*) and *Česká republika* in formal ones, with a short note in the lesson that both exist, because learners will hear both.
 
-Today the app says "Czechia" in 10 places and "Czech Republic" in 3. Once you approve, I'll apply the rule everywhere, list every change, and add a test that flags "Czech Republic" outside the allowed contexts.
+Today the app's content and code say "Czechia" in 9 places and "Czech Republic" in 3. Once you approve, I'll apply the rule everywhere, list every change, and add a test that flags "Czech Republic" outside the allowed contexts.
 
 ### 6.14 C13 · Other things I'd do differently, or conflicts
 
