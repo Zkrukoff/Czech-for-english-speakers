@@ -448,7 +448,7 @@ I'd avoid names already tied to famous Czech characters.
 
 ---
 
-## 6. Round 2: new features and changes (plan, awaiting approval)
+## 6. Round 2: new features and changes (approved)
 
 **Ground rules for this round**
 - Everything follows the brief: tokens only, the four fonts, the anti-AI checklist, the voice.
@@ -704,7 +704,18 @@ Today the app's content and code say "Czechia" in 9 places and "Czech Republic" 
 7. **"Today" is getting full:** the Home *Dnes* panel would gain the holiday prep and the idiom of the week. I'd keep the panel to holiday, name day and countdown, and give the idiom its own small card below it, so Home doesn't turn into a dashboard.
 8. **Build order:** you asked for A1–A9, then B10, B11, C12. Two shared pieces have to come first: the multiple-choice type (B11), because A1 and A3 use it, and the service worker (§ 6.1). I'll build them **as part of the first feature that needs them**, so the order and the one-commit-per-feature rule still hold. The B11 *content conversion* stays in its place.
 
-### 6.15 What I need from you
+### 6.15 Decisions (approved)
+
+1. **A7:** ticket streaks approved as designed (72-hour tier, *výluka* freezes, "no streaks" copy updated).
+2. **A3:** open all year; highlighted, and featured on the home page, in the 7 days before each holiday. Public holidays only for now.
+3. **A5:** Emergency link in the footer and on Home only.
+4. **A4:** "Today's ride" is a daily commute option: the learner picks a start and an end station, and the session is that many stops long.
+5. **A2:** text only for now (word, meaning, note, where seen). No photos, so backups stay small; the data model leaves room to add them later.
+6. **A9:** guide only.
+7. **B10:** "Sounds" as its own section; Verbs folded into "Grammar & verbs".
+8. **C12:** naming rule approved.
+
+### 6.16 Questions as asked
 
 1. **A7:** go ahead with ticket streaks as designed, including changing the "no streaks" copy? And 72-hour ticket or "7-day pass"?
 2. **A3:** highlighted or locked? And add the non-public days (Mikuláš, Čarodějnice, Dušičky)?
