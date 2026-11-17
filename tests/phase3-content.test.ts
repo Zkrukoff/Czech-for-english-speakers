@@ -82,9 +82,14 @@ describe('missions, verb families and guide links', () => {
 
   it('generates lesson → guide back-links, leaving out draft guides', () => {
     expect(course.guideLinksByLesson.get('u03-l04')).toEqual([{ guideId: 'prague-transport', sectionId: 'tickets', title: 'Tickets and rules' }]);
-    expect(course.guides.map((g) => g.id)).not.toContain('settling-in');
-    expect(course.draftGuides.map((g) => g.id)).toEqual(['settling-in']);
-    expect(course.guideLinksByLesson.get('u02-l04')?.map((l) => l.guideId)).toEqual(['culture']);
+    expect(course.guideLinksByLesson.get('u02-l04')?.map((l) => l.guideId).sort()).toEqual(['culture', 'settling-in']);
+    // A draft guide is validated but neither listed nor linked from lessons.
+    const json = structuredClone(contentFiles.json) as Record<string, any>;
+    json['guides/settling-in/guide.json'].draft = true;
+    const drafted = loadContent({ ...contentFiles, json }).course;
+    expect(drafted.guides.map((g) => g.id)).not.toContain('settling-in');
+    expect(drafted.draftGuides.map((g) => g.id)).toEqual(['settling-in']);
+    expect(drafted.guideLinksByLesson.get('u02-l04')?.map((l) => l.guideId)).toEqual(['culture']);
   });
 
   it('rejects a guide link to a lesson that does not exist', () => {

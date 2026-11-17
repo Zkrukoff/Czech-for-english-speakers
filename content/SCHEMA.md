@@ -86,6 +86,7 @@ after a native speaker has checked that item. Anything `false` shows a
 | `canDo` | string[] | Goal ids of the unit this lesson works towards |
 | `explanation` | string | Markdown file name, default `explanation.md` |
 | `grammarRefs` | skill[] | Grammar pages linked from the lesson |
+| `grammarPreview` | skill[] | Grammar met here only as fixed phrases before it's taught (e.g. *Jsem z Anglie* in unit 1). The case lens says where it's taught properly. Cases must be formally taught (`grammarRefs`) in the order nominative → accusative → locative → genitive → instrumental → dative → vocative; a test checks it |
 | `vocab` | VocabItem[] | |
 | `dialogue` | `{setting?, lines: DialogueLine[]}` | |
 | `exercises` | Exercise[] | At least one |

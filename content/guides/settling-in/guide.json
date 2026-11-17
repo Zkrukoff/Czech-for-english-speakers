@@ -4,14 +4,212 @@
   "titleCs": "Zabydlení",
   "summary": "The Czech you need for the paperwork and errands of moving here: the flat, the bank, the doctor and the post office. Practical, dated, and never legal advice.",
   "order": 3,
-  "draft": true,
+  "draft": false,
   "sections": [
-    { "id": "home", "title": "Finding and running a flat", "file": "home.md", "lessons": [] },
-    { "id": "offices", "title": "Offices and paperwork", "file": "offices.md", "lessons": [] },
-    { "id": "money", "title": "Bank, bills and payments", "file": "money.md", "lessons": ["u02-l03", "u02-l04"] },
-    { "id": "health", "title": "Doctors and pharmacies", "file": "health.md", "lessons": ["u03-l01"] },
-    { "id": "post", "title": "Post and parcels", "file": "post.md", "lessons": [] }
+    {
+      "id": "home",
+      "title": "Finding and running a flat",
+      "file": "home.md",
+      "lessons": [
+        "u03-l03"
+      ]
+    },
+    {
+      "id": "offices",
+      "title": "Offices and paperwork",
+      "file": "offices.md",
+      "lessons": [
+        "u05-l01"
+      ]
+    },
+    {
+      "id": "money",
+      "title": "Bank, bills and payments",
+      "file": "money.md",
+      "lessons": [
+        "u02-l03",
+        "u02-l04"
+      ]
+    },
+    {
+      "id": "health",
+      "title": "Doctors and pharmacies",
+      "file": "health.md",
+      "lessons": [
+        "u03-l01"
+      ]
+    },
+    {
+      "id": "post",
+      "title": "Post and parcels",
+      "file": "post.md",
+      "lessons": [
+        "u03-l02"
+      ]
+    }
   ],
-  "sources": [],
-  "nativeReviewed": false
+  "sources": [
+    {
+      "title": "Ministry of the Interior: information for foreigners",
+      "url": "https://www.mvcr.cz/mvcren/"
+    },
+    {
+      "title": "Czech Post (Česká pošta)",
+      "url": "https://www.ceskaposta.cz/"
+    }
+  ],
+  "nativeReviewed": false,
+  "phrasebook": [
+    {
+      "id": "settle-flat",
+      "title": "The flat",
+      "phrases": [
+        {
+          "cs": "Volám kvůli inzerátu na byt.",
+          "en": "I'm calling about the flat advert.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Kolik je nájem včetně poplatků?",
+          "en": "How much is the rent including charges?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Nejde topení.",
+          "en": "The heating isn't working.",
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "settle-office",
+      "title": "Offices",
+      "phrases": [
+        {
+          "cs": "Mám objednaný termín na deset.",
+          "en": "I have an appointment at ten.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Jaké doklady potřebuju?",
+          "en": "Which documents do I need?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Můžete mi to napsat?",
+          "en": "Could you write it down for me?",
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "settle-health",
+      "title": "Doctor and pharmacy",
+      "phrases": [
+        {
+          "cs": "Potřebuju se objednat k lékaři.",
+          "en": "I need to make a doctor's appointment.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Bolí mě v krku.",
+          "en": "I have a sore throat.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Máte něco na kašel?",
+          "en": "Do you have anything for a cough?",
+          "nativeReviewed": false
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "id": "settle-say",
+      "title": "Say it",
+      "description": "The sentences you need on the phone, at the counter and at the doctor's.",
+      "exercises": [
+        {
+          "id": "st-1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "The heating isn't working.",
+          "answers": [
+            "Nejde topení[.]",
+            "Topení nejde[.]"
+          ],
+          "why": "Nejde (literally \"doesn't go\") is how Czech says something isn't working: Nejde topení.",
+          "hints": [],
+          "skills": [
+            "guide:settling-in"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "st-2",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Could you write it down for me? (formal)",
+          "answers": [
+            "Můžete mi to napsat?",
+            "Mohl{|a} byste mi to napsat?"
+          ],
+          "why": "Můžete mi to napsat? Polite vy form, with mi (for me).",
+          "hints": [],
+          "skills": [
+            "guide:settling-in"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "st-3",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "I have a sore throat.",
+          "answers": [
+            "Bolí mě v krku[.]"
+          ],
+          "why": "Czech says \"it hurts me in the throat\": Bolí mě v krku.",
+          "hints": [],
+          "skills": [
+            "guide:settling-in"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "st-4",
+          "type": "translate",
+          "direction": "cs-en",
+          "prompt": "Jaké doklady potřebuju?",
+          "answers": [
+            "{What|Which} documents do I need?"
+          ],
+          "why": "Doklady are documents (ID, certificates); potřebuju is I need.",
+          "hints": [],
+          "skills": [
+            "guide:settling-in"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "st-5",
+          "type": "question",
+          "prompt": "An advert says **3+kk**. How many rooms, and is the kitchen separate? Type: **3, no** or **3, yes**.",
+          "answers": [
+            "3[,] no",
+            "three[,] no"
+          ],
+          "answerLang": "en",
+          "why": "3+kk: three rooms, with a kitchenette (kk) in one of them, so no separate kitchen. 3+1 would have a separate kitchen.",
+          "hints": [],
+          "skills": [
+            "guide:settling-in"
+          ],
+          "nativeReviewed": false
+        }
+      ]
+    }
+  ],
+  "lastChecked": "17 November 2026 (language and general practice; check rules and fees with the linked authorities)"
 }

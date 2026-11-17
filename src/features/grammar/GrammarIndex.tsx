@@ -76,7 +76,10 @@ export function GrammarIndex() {
             </ul>
           </div>
         ))}
-        <Link to="/grammar/tables" className="btn btn-secondary mt-6">All tables, incl. adjectives and pronouns</Link>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Link to="/grammar/numbers" className="btn btn-primary"><span lang="cs">Čísla</span> · numbers + nouns</Link>
+          <Link to="/grammar/tables" className="btn btn-secondary">All tables, incl. adjectives and pronouns</Link>
+        </div>
       </section>
 
       <section aria-labelledby="verbs-h">

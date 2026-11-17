@@ -1,3 +1,4 @@
+import { LineBadge, type LineId } from '@/components/ui';
 import { useMemo, useState } from 'react';
 import type { MetroData } from '@/content/loader';
 import { SpeakButton } from '@/components/SpeakButton';
@@ -111,7 +112,7 @@ export function MetroMap({ metro }: { metro: MetroData }) {
                 return (
                   <g key={`${l.id}-${i}`} aria-hidden>
                     <circle cx={bx} cy={by} r={15} fill={LINE_FILL[l.id]} />
-                    <text x={bx} y={by + 6} textAnchor="middle" fontSize={17} fontWeight={800} fill={TEXT_ON[l.id]} className="font-display">
+                    <text x={bx} y={by + 6.5} textAnchor="middle" fontSize={19} fontWeight={800} fill={TEXT_ON[l.id]} className="font-display">
                       {l.id}
                     </text>
                   </g>
@@ -142,6 +143,8 @@ export function MetroMap({ metro }: { metro: MetroData }) {
                   className="group cursor-pointer outline-none"
                 >
                   <circle cx={x} cy={y} r={18} fill="transparent" />
+                  {/* Keyboard focus ring (an SVG group can't show a CSS outline). */}
+                  <circle cx={x} cy={y} r={15} className="fill-none stroke-vltava opacity-0 group-focus-visible:opacity-100" strokeWidth={3} aria-hidden />
                   <circle
                     cx={x}
                     cy={y}
@@ -179,8 +182,9 @@ export function MetroMap({ metro }: { metro: MetroData }) {
             {selLines.map((id) => {
               const l = lineById.get(id)!;
               return (
-                <span key={id} className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-bold" style={{ background: LINE_FILL[id], color: TEXT_ON[id] }}>
-                  Line {id} <span className="font-normal opacity-80" lang="cs">{l.nickname}</span>
+                <span key={id} className="chip normal-case tracking-normal">
+                  <LineBadge line={id as LineId} size={22} />
+                  <span className="font-ui text-sm font-bold">Line {id}</span> <span className="font-ui text-sm text-ink-2" lang="cs">{l.nickname}</span>
                 </span>
               );
             })}

@@ -57,7 +57,8 @@
         },
         {
           "station": "hradcanska",
-          "kind": "planned"
+          "kind": "unit",
+          "unit": "u05"
         },
         {
           "station": "malostranska",
@@ -328,16 +329,18 @@
     },
     "petriny": {
       "name": "Petřiny",
-      "tile": "02"
+      "tile": "02",
+      "aboveGround": "A 1960s–70s housing estate (sídliště). The Hvězda game reserve (obora Hvězda), a big wooded park, is a short walk away."
     },
     "nadrazi-veleslavin": {
       "name": "Nádraží Veleslavín",
       "tile": "03",
-      "aboveGround": "Trolleybus 59 to the airport. Despite the name, it's a metro station, not a railway station."
+      "aboveGround": "Named after the Veleslavín railway stop next door. Trolleybus 59 to the airport leaves from here."
     },
     "borislavka": {
       "name": "Bořislavka",
-      "tile": "04"
+      "tile": "04",
+      "aboveGround": "Offices and shops along Evropská, the long avenue out towards the airport. Mostly a work-day stop."
     },
     "dejvicka": {
       "name": "Dejvická",
@@ -385,7 +388,8 @@
       "status": {
         "note": "No Line A trains call at Flora in the PID GTFS feed for 16–29 Nov 2026, although the station is still listed. Probably a temporary closure; the reason is not in the data. Check pid.cz before relying on it.",
         "checked": "2026-11-17"
-      }
+      },
+      "aboveGround": "The Atrium Flora shopping centre sits on top of the station; Olšany Cemetery starts across the road."
     },
     "zelivskeho": {
       "name": "Želivského",
@@ -394,15 +398,18 @@
     },
     "strasnicka": {
       "name": "Strašnická",
-      "tile": "15"
+      "tile": "15",
+      "aboveGround": "Residential Strašnice in Prague 10: a quiet, everyday neighbourhood stop."
     },
     "skalka": {
       "name": "Skalka",
-      "tile": "16"
+      "tile": "16",
+      "aboveGround": "Housing estates in Prague 10, and buses for the eastern suburbs."
     },
     "depo-hostivar": {
       "name": "Depo Hostivař",
-      "tile": "17"
+      "tile": "17",
+      "aboveGround": "The eastern end of line A, named after (and partly built inside) the metro depot here. Opened in 2006."
     },
     "zlicin": {
       "name": "Zličín",

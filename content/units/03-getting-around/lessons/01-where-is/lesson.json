@@ -123,7 +123,7 @@
     "lines": [
       {
         "speaker": "Turista",
-        "cs": "Promiňte, kde je tady nejbližší lékárna?",
+        "cs": "Promiňte, kde je tady nejbližší [[lékárna|lékárna|nom|subject]]?",
         "en": "Excuse me, where's the nearest pharmacy?",
         "nativeReviewed": false
       },
@@ -141,7 +141,7 @@
       },
       {
         "speaker": "Paní",
-        "cs": "Ne, je to asi pět minut pěšky. Je to vedle banky.",
+        "cs": "Ne, je to asi pět [[minut|minuta|gen.pl|quantity-5plus]] pěšky. Je to vedle [[banky|banka|gen|after-vedle]].",
         "en": "No, it's about five minutes' walk. It's next to the bank.",
         "nativeReviewed": false
       },
@@ -202,7 +202,7 @@
     {
       "id": "u03-l01-e3",
       "type": "fillEnding",
-      "prompt": "Je to vedle bank___.",
+      "prompt": "Je to vedle [[bank___|banka|gen|after-vedle]].",
       "base": "banka",
       "en": "It's next to the bank.",
       "answers": [

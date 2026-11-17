@@ -26,6 +26,19 @@
       ]
     },
     {
+      "id": "after-jako",
+      "case": "nom",
+      "label": "after jako (as)",
+      "explain": "Jako (\"as\") describing a role keeps the noun in the nominative: pracuje jako asistentka.",
+      "example": {
+        "cs": "Pracuje jako asistentka.",
+        "en": "She works as an assistant."
+      },
+      "triggers": [
+        "jako"
+      ]
+    },
+    {
       "id": "after-z",
       "case": "gen",
       "label": "after z (from, out of)",
@@ -102,6 +115,21 @@
       }
     },
     {
+      "id": "after-vedle",
+      "case": "gen",
+      "label": "after vedle, blízko (next to, near)",
+      "explain": "Vedle (\"next to\"), blízko (\"near\") and naproti (\"opposite\") take the genitive.",
+      "example": {
+        "cs": "Je to vedle banky.",
+        "en": "It's next to the bank."
+      },
+      "triggers": [
+        "vedle",
+        "blízko",
+        "naproti"
+      ]
+    },
+    {
       "id": "quantity-5plus",
       "case": "gen",
       "label": "after 5 and more",
@@ -121,7 +149,7 @@
       "id": "quantity-2-4",
       "case": "nom",
       "label": "after 2, 3, 4",
-      "explain": "After dva/dvě, tři and čtyři, the noun is in the nominative plural.",
+      "explain": "After dva/dvě, tři and čtyři, the noun takes its plural form, the same as the nominative plural (dvě koruny, tři rohlíky). For inanimate nouns this is also the accusative plural, so it works for ordering too.",
       "example": {
         "cs": "Dvě kávy, prosím.",
         "en": "Two coffees, please."
@@ -157,6 +185,20 @@
         "cs": "Je mi zima.",
         "en": "I'm cold."
       }
+    },
+    {
+      "id": "age",
+      "case": "dat",
+      "label": "how old someone is",
+      "explain": "Czech says age \"to someone\": the person is in the dative. Je mi třicet (I am thirty), Kolik ti je? (How old are you?)",
+      "example": {
+        "cs": "Synovi je sedm.",
+        "en": "My son is seven."
+      },
+      "triggers": [
+        "je mi",
+        "kolik ti je"
+      ]
     },
     {
       "id": "after-k",

@@ -117,12 +117,8 @@ function LetterDetail({ letter: l }: { letter: Letter }) {
             {l.spellingWord && <span className="text-ink-2">· <span lang="cs">{l.upper} jako {l.spellingWord}</span></span>}
           </dd>
         </div>
-        {l.tip && (
-          <div className="rounded-lg bg-champagne-tint px-3 py-2 text-ink">
-            {l.tip}
-          </div>
-        )}
       </dl>
+      {l.tip && <p className="mt-3 border-l-4 border-champagne bg-champagne-tint px-3 py-2 text-sm text-ink">{l.tip}</p>}
     </section>
   );
 }

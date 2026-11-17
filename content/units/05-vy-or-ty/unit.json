@@ -1,0 +1,156 @@
+{
+  "id": "u05",
+  "title": "Vy, or ty?",
+  "titleCs": "Vykání a tykání",
+  "situation": "Your office has a mix of formal and first-name relationships. Knowing who gets vy, who gets ty and when to switch is a social skill as much as grammar.",
+  "canDo": [
+    {
+      "id": "u05-g1",
+      "text": "You can choose vy or ty for the person in front of you."
+    },
+    {
+      "id": "u05-g2",
+      "text": "You can ask simple questions in both the vy and the ty form."
+    },
+    {
+      "id": "u05-g3",
+      "text": "You can recognise the offer to switch to ty, and accept it."
+    }
+  ],
+  "lessons": [
+    "01-vy-or-ty",
+    "02-shall-we-say-ty"
+  ],
+  "missions": [
+    {
+      "id": "u05-m1",
+      "title": "Notice the switch",
+      "task": "Listen out at work this week: who says ty to whom, and who says vy? If someone offers ty (Můžeme si tykat?), accept it the Czech way.",
+      "phrases": [
+        {
+          "cs": "Můžeme si tykat?",
+          "en": "Shall we say ty?"
+        },
+        {
+          "cs": "Jasně, rád. / Jasně, ráda.",
+          "en": "Sure, gladly. (man / woman)"
+        },
+        {
+          "cs": "Tak na zdraví!",
+          "en": "Cheers, then!"
+        }
+      ],
+      "ifStuck": "Když nevíš, vykej. When in doubt, say vy: nobody minds being treated politely.",
+      "nativeReviewed": false
+    }
+  ],
+  "check": {
+    "passRatio": 0.8,
+    "exercises": [
+      {
+        "id": "u05-c1",
+        "type": "question",
+        "prompt": "A police officer asks for your ID. **vy** or **ty**?",
+        "answers": [
+          "vy"
+        ],
+        "answerLang": "cs",
+        "goalId": "u05-g1",
+        "why": "A police officer is a stranger doing their job: always vy.",
+        "hints": [],
+        "skills": [
+          "vocab:v-vykat"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u05-c2",
+        "type": "question",
+        "prompt": "Your neighbour's ten-year-old son says hello. **vy** or **ty**?",
+        "answers": [
+          "ty"
+        ],
+        "answerLang": "cs",
+        "goalId": "u05-g1",
+        "why": "Children get ty from everyone.",
+        "hints": [],
+        "skills": [
+          "vocab:v-tykat"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u05-c3",
+        "type": "conjugate",
+        "verb": "bydlet",
+        "person": "2pl",
+        "prompt": "Kde ___? (to your neighbour, Mrs Nováková)",
+        "answers": [
+          "bydlíte"
+        ],
+        "goalId": "u05-g2",
+        "why": "With vy the verb is 2nd person plural, even to one person: Kde bydlíte?",
+        "hints": [
+          {
+            "wrong": "bydlíš",
+            "explain": "Bydlíš is the ty form. To a neighbour you say vy to: bydlíte."
+          }
+        ],
+        "skills": [
+          "verb:present-classes"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u05-c4",
+        "type": "conjugate",
+        "verb": "bydlet",
+        "person": "2sg",
+        "prompt": "Kde ___? (to Ondra, a colleague you say ty to)",
+        "answers": [
+          "bydlíš"
+        ],
+        "goalId": "u05-g2",
+        "why": "Friends get ty, so the verb is 2nd person singular: Kde bydlíš?",
+        "hints": [
+          {
+            "wrong": "bydlíte",
+            "explain": "Bydlíte is the vy form. With Ondra you say ty: bydlíš."
+          }
+        ],
+        "skills": [
+          "verb:present-classes"
+        ],
+        "nativeReviewed": false
+      },
+      {
+        "id": "u05-c5",
+        "type": "dialogueComplete",
+        "context": [
+          {
+            "speaker": "Petra",
+            "cs": "Můžeme si tykat? Já jsem Petra.",
+            "en": "Shall we say ty? I'm Petra."
+          }
+        ],
+        "prompt": "Accept, as a man, and say your name is Tom.",
+        "answers": [
+          "[{Jasně|Ano|Rád}][,] [rád][.] [Já] jsem Tom"
+        ],
+        "goalId": "u05-g3",
+        "why": "To accept, say yes (jasně, rád / ráda) and give your first name.",
+        "hints": [
+          {
+            "wrong": "[{Jasně|Ano}][,] ráda[.] [Já] jsem Tom",
+            "explain": "Ráda is the feminine form. A man says rád."
+          }
+        ],
+        "skills": [
+          "vocab:v-tykat"
+        ],
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "nativeReviewed": false
+}

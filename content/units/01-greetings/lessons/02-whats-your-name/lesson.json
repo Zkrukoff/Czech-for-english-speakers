@@ -133,6 +133,10 @@
         "speaker": "Martin",
         "cs": "Mě taky. Jsi tady nová?",
         "en": "Likewise. Are you new here?",
+        "spoken": {
+          "form": "Mě taky. Seš tady nová?",
+          "note": "seš for jsi."
+        },
         "nativeReviewed": false
       },
       {
@@ -153,13 +157,13 @@
       },
       {
         "speaker": "Sarah",
-        "cs": "To je moje kolegyně. Jmenuje se Emma.",
+        "cs": "To je moje [[kolegyně|kolegyně|nom|naming]]. Jmenuje se Emma.",
         "en": "That's my colleague. Her name's Emma.",
         "nativeReviewed": false
       },
       {
         "speaker": "Martin",
-        "cs": "Ahoj, Emmo!",
+        "cs": "Ahoj, [[Emmo|Emma|voc|addressing]]!",
         "en": "Hi, Emma!",
         "nativeReviewed": false
       },
@@ -329,7 +333,7 @@
       "id": "u01-l02-e7",
       "type": "translate",
       "direction": "cs-en",
-      "prompt": "To je moje kolegyně.",
+      "prompt": "To je moje [[kolegyně|kolegyně|nom|naming]].",
       "answers": [
         "{This is|That is|That's|She is|She's} my colleague[.]"
       ],

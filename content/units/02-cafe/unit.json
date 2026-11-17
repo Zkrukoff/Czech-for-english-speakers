@@ -83,7 +83,7 @@
       {
         "id": "u02-c2",
         "type": "fillEnding",
-        "prompt": "Dám si vod___, prosím.",
+        "prompt": "Dám si [[vod___|voda|acc|object]], prosím.",
         "base": "voda",
         "en": "I'll have some water, please.",
         "goalId": "u02-g1",
@@ -171,7 +171,7 @@
       {
         "id": "u02-c6",
         "type": "fillEnding",
-        "prompt": "Pět rohlík___, prosím.",
+        "prompt": "Pět [[rohlík___|rohlík|gen.pl|quantity-5plus]], prosím.",
         "base": "rohlík",
         "en": "Five rolls, please.",
         "goalId": "u02-g3",

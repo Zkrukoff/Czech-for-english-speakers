@@ -338,7 +338,31 @@ only and added to `/styleguide` as a pattern.
 **Risk:** the case lens has to stay readable on a 375 px phone (popover vs.
 bottom sheet; I'll prototype both in the styleguide).
 
-### Phase 5: Content pass and QA
+### Phase 5: Content pass and QA ✅ done
+
+**Content**
+- **Case lens on every lesson:** 97 annotations across units 1–4, plus the new unit. Every form is checked against generated declensions, and the lexicon has grown to 115 nouns.
+- **Case order (D9):** cases are formally taught in the brief's order. A new `grammarPreview` field marks earlier uses (genitive and vocative in unit 1, instrumental in unit 2) as phrases, and the lens says where each is taught properly. Unit 3 now starts with the locative. Lesson ids are unchanged, so progress is unaffected.
+- **New station, Hradčanská (unit 5, "Vy, or ty?"):** two lessons, a check and a mission, plus *tykat* / *vykat* in the verb lookup.
+- **Pronunciation:**
+  - 7 speaking exercises and 6 listening exercises (minimal pairs and dictation), built around recordings.
+  - Core sounds never fall back to a synthetic voice.
+  - `docs/AUDIO.md` lists the 14 recordings needed.
+- **Numbers + case:** `/grammar/numbers` with a drill generated from the lexicon.
+- **Aspect and motion in the transit guide:** 4 aspect choices in the past tense (no ambiguous present-for-future items) and 3 *jet/jezdit*, *jít/chodit* items.
+- **Other content:**
+  - Spoken-Czech variants on 5 more dialogue lines.
+  - "Above ground" notes for all 17 Line A stations; the Veleslavín note is corrected.
+  - The Zabydlení guide, written and published (sections, phrasebook, practice, official sources).
+- **Transport facts re-checked on pid.cz (17 November 2026):** prices, free travel, and the Petřín funicular, where the earlier text wrongly implied normal tickets were valid. The inspector surcharge and the app activation delay weren't on those pages and remain unverified.
+
+**QA**
+- A progress-survival test runs a realistic old-version database through the copy, the v2 upgrade and profile inference, then checks settings, lessons, goals, stamps, review cards (all still resolve to exercises) and the answer history.
+- Keyboard sweep of 24 screens: every focus stop is visible and has a ring. This added a focus ring to the metro map stations.
+- Lighthouse accessibility scores 100 on every audited page. This meant fixing small text on line fills in the metro map, ticket link names, the alphabet definition list, and empty table headers in markdown (fixed in the renderer).
+- 375px screenshots of all 28 screens; long station names now wrap.
+- The pangram, contrast and no-hex tests all pass.
+
 
 **Content**
 - Re-sequence the case teaching to the brief's order (D9).

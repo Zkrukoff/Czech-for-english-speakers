@@ -101,7 +101,7 @@
     "lines": [
       {
         "speaker": "Martina",
-        "cs": "To je moje rodina. To je můj manžel Petr a tohle jsou naše děti.",
+        "cs": "To je moje [[rodina|rodina|nom|naming]]. To je můj [[manžel|manžel|nom|naming]] Petr a tohle jsou naše [[děti|dítě|nom.pl|naming]].",
         "en": "This is my family. That's my husband Petr and these are our children.",
         "nativeReviewed": false
       },
@@ -113,7 +113,7 @@
       },
       {
         "speaker": "Martina",
-        "cs": "Synovi je sedm a dceři čtyři.",
+        "cs": "[[Synovi|syn|dat|age]] je sedm a [[dceři|dcera|dat|age]] čtyři.",
         "en": "My son is seven and my daughter four.",
         "nativeReviewed": false
       },
@@ -125,13 +125,13 @@
       },
       {
         "speaker": "Martina",
-        "cs": "A ty máš děti?",
+        "cs": "A ty máš [[děti|dítě|acc.pl|object]]?",
         "en": "And do you have children?",
         "nativeReviewed": false
       },
       {
         "speaker": "Daniel",
-        "cs": "Ne, ale mám přítelkyni. Taky je z Anglie a pracuje tady v Brně.",
+        "cs": "Ne, ale mám [[přítelkyni|přítelkyně|acc|object]]. Taky je z [[Anglie|Anglie|gen|after-z]] a pracuje tady v [[Brně|Brno|loc|location-v-na]].",
         "en": "No, but I have a girlfriend. She's from England too and works here in Brno.",
         "nativeReviewed": false
       }
@@ -141,7 +141,7 @@
     {
       "id": "u04-l03-e1",
       "type": "fillEnding",
-      "prompt": "Mám bratr___.",
+      "prompt": "Mám [[bratr___|bratr|acc|object]].",
       "base": "bratr",
       "en": "I have a brother.",
       "answers": [
@@ -257,7 +257,7 @@
       "id": "u04-l03-e6",
       "type": "translate",
       "direction": "cs-en",
-      "prompt": "To je moje přítelkyně.",
+      "prompt": "To je moje [[přítelkyně|přítelkyně|nom|naming]].",
       "answers": [
         "{This is|That is|That's|She is|She's} my {girlfriend|partner}[.]"
       ],
@@ -320,7 +320,7 @@
       "context": [
         {
           "speaker": "Martina",
-          "cs": "A ty máš děti?",
+          "cs": "A ty máš [[děti|dítě|acc.pl|object]]?",
           "en": "And do you have children?"
         }
       ],

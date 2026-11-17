@@ -23,15 +23,25 @@ Only use recordings you have the rights to. If you use openly licensed clips
 (e.g. from Wikimedia Commons), put the exact licence and author in `licence`
 and `speaker`.
 
-## Suggested first batch
+## Recordings the course is waiting for
 
-The pronunciation station needs, at minimum:
+Generated from the content (every `listenType`, `minimalPair` and `speak` exercise that names a recording). Record each as its own file named after the id.
 
-- each vowel short and long (*a/á, e/é, i/í, o/ó, u/ú/ů*), in a word;
-- *ř* against *ž* and *r* (e.g. *řeka / žena*, *tři / trh*);
-- *ch* against *h* (*chlap / hlad*);
-- *ě* after *d, t, n* and *b, p, v, m* (*děti, tělo, něco, běžet, město*);
-- *ď ť ň* against *d t n*;
-- stress on the first syllable in longer words (*nádraží, kavárna, vlakové nádraží*).
+| Recording id | Say exactly | Used by |
+|---|---|---|
+| `rec-byt` | být  (one word of the pair byt / být) | minimalPair `pron-p2` (alphabet/alphabet.json) |
+| `rec-byt-byt` | byt, být | speak `pron-s5` (alphabet/alphabet.json) |
+| `rec-chlad` | chlad  (one word of the pair chlad / hlad) | minimalPair `pron-p3` (alphabet/alphabet.json) |
+| `rec-chleba` | chleba | speak `pron-s3` (alphabet/alphabet.json) |
+| `rec-dobry-den` | Dobrý den. | listenType `pron-l2` (alphabet/alphabet.json) |
+| `rec-dum` | dům | speak `pron-s4` (alphabet/alphabet.json) |
+| `rec-dvorak` | Dvořák | speak `pron-s2` (alphabet/alphabet.json) |
+| `rec-nadrazi` | nádraží | speak `pron-s7` (alphabet/alphabet.json) |
+| `rec-pas` | pás  (one word of the pair pas / pás) | minimalPair `pron-p4` (alphabet/alphabet.json) |
+| `rec-rada` | řada  (one word of the pair rada / řada) | minimalPair `pron-p1` (alphabet/alphabet.json) |
+| `rec-strc-prst` | Strč prst skrz krk. | listenType `pron-l1` (alphabet/alphabet.json) |
+| `rec-strc-prst` | Strč prst skrz krk. | speak `pron-s6` (alphabet/alphabet.json) |
+| `rec-tri` | tři | speak `pron-s1` (alphabet/alphabet.json) |
+| `rec-ukoncete-vystup` | Ukončete, prosím, výstup a nástup, dveře se zavírají. | listenType `tr-hear-doors` (guides/prague-transport/guide.json) |
 
-The phase 5 content pass will turn this into exact item ids.
+For a minimal pair, record the word given; the exercise asks which of the two the learner heard. More recordings can be added at any time: speaking exercises use them as soon as they're listed.

@@ -1290,6 +1290,231 @@
           "nativeReviewed": false
         }
       ]
+    },
+    {
+      "id": "pron-hard-sounds",
+      "title": "Hard sounds, out loud",
+      "description": "Say the sounds English doesn't have: ř, ch, ů and the long vowels, then the famous vowel-less tongue twister. Record yourself and compare.",
+      "exercises": [
+        {
+          "id": "pron-s1",
+          "type": "speak",
+          "answers": [],
+          "cs": "tři",
+          "en": "three",
+          "audio": "rec-tri",
+          "focus": "ř: tongue tip trilling and buzzing at once, like r and ž together",
+          "why": "Ř is one sound: a short trilled r with ž (the s in \"measure\") mixed in. Start from r and add the buzz.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "pron-s2",
+          "type": "speak",
+          "answers": [],
+          "cs": "Dvořák",
+          "en": "Dvořák (the composer)",
+          "audio": "rec-dvorak",
+          "focus": "ř in the middle, and stress on the first syllable: DVO-řák",
+          "why": "Stress is always on the first syllable in Czech. The long á keeps its length even though it isn't stressed.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "pron-s3",
+          "type": "speak",
+          "answers": [],
+          "cs": "chleba",
+          "en": "bread",
+          "audio": "rec-chleba",
+          "focus": "ch: rough, from the back of the throat, like Scottish \"loch\"",
+          "why": "Ch is never \"tch\". It's the sound in Scottish \"loch\" or German \"Bach\".",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "pron-s4",
+          "type": "speak",
+          "answers": [],
+          "cs": "dům",
+          "en": "house",
+          "audio": "rec-dum",
+          "focus": "ů: a long u, like \"oo\" in \"food\"",
+          "why": "Ů and ú are the same sound: a long u. The kroužek (ring) is just spelling history.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "pron-s5",
+          "type": "speak",
+          "answers": [],
+          "cs": "byt, být",
+          "en": "flat; to be",
+          "audio": "rec-byt-byt",
+          "focus": "short y, then long ý",
+          "why": "Length changes meaning: byt (flat) is short, být (to be) is long. Hold the long vowel about twice as long.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "pron-s6",
+          "type": "speak",
+          "answers": [],
+          "cs": "Strč prst skrz krk.",
+          "en": "Stick a finger through your throat.",
+          "audio": "rec-strc-prst",
+          "focus": "r and l can carry a syllable on their own: strč · prst · skrz · krk",
+          "why": "No vowels needed: r acts as the vowel. Say each word as one beat, and roll the r.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "pron-s7",
+          "type": "speak",
+          "answers": [],
+          "cs": "nádraží",
+          "en": "station",
+          "audio": "rec-nadrazi",
+          "focus": "stress on NÁ-, and the long á and í",
+          "why": "Stress the first syllable and keep both long vowels long: NÁ-dra-ží.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "pron-hear",
+      "title": "Hear the difference",
+      "description": "Minimal pairs and short dictation with real Czech speakers. These appear once the recordings are in.",
+      "exercises": [
+        {
+          "id": "pron-p1",
+          "type": "minimalPair",
+          "pair": [
+            "rada",
+            "řada"
+          ],
+          "audio": "rec-rada",
+          "sound": "r / ř",
+          "answers": [
+            "řada"
+          ],
+          "why": "Řada (a row, a queue) has ř: a trill with a buzz. Rada (advice) has a plain rolled r.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "pron-p2",
+          "type": "minimalPair",
+          "pair": [
+            "byt",
+            "být"
+          ],
+          "audio": "rec-byt",
+          "sound": "short / long y",
+          "answers": [
+            "být"
+          ],
+          "why": "Být has a long ý, held about twice as long as the y in byt.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "pron-p3",
+          "type": "minimalPair",
+          "pair": [
+            "chlad",
+            "hlad"
+          ],
+          "audio": "rec-chlad",
+          "sound": "ch / h",
+          "answers": [
+            "chlad"
+          ],
+          "why": "Ch is rough and voiceless (loch); h is breathy and voiced, deeper than English h.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "pron-p4",
+          "type": "minimalPair",
+          "pair": [
+            "pas",
+            "pás"
+          ],
+          "audio": "rec-pas",
+          "sound": "short / long a",
+          "answers": [
+            "pás"
+          ],
+          "why": "Pás (belt; strip) has a long á; pas (passport) is short. Length alone changes the word.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "pron-l1",
+          "type": "listenType",
+          "audio": "rec-strc-prst",
+          "cs": "Strč prst skrz krk.",
+          "answers": [
+            "Strč prst skrz krk"
+          ],
+          "why": "Strč prst skrz krk: four words, no vowels, each with r at its heart.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "pron-l2",
+          "type": "listenType",
+          "audio": "rec-dobry-den",
+          "cs": "Dobrý den.",
+          "answers": [
+            "Dobrý den"
+          ],
+          "why": "Dobrý den: stress on DO- and DEN, long ý.",
+          "hints": [],
+          "skills": [
+            "alphabet"
+          ],
+          "nativeReviewed": false
+        }
+      ]
     }
   ],
   "nativeReviewed": false

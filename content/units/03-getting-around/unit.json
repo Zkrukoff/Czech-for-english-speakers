@@ -22,9 +22,9 @@
     }
   ],
   "lessons": [
+    "03-where-are-you",
     "01-where-is",
     "02-going-places",
-    "03-where-are-you",
     "04-tickets"
   ],
   "missions": [
@@ -122,7 +122,7 @@
       {
         "id": "u03-c4",
         "type": "fillEnding",
-        "prompt": "Jedu vlak___.",
+        "prompt": "Jedu [[vlak___|vlak|ins|means]].",
         "base": "vlak",
         "en": "I'm going by train.",
         "goalId": "u03-g2",
@@ -166,7 +166,7 @@
       {
         "id": "u03-c6",
         "type": "fillEnding",
-        "prompt": "Jsem na pošt___.",
+        "prompt": "Jsem na [[pošt___|pošta|loc|location-v-na]].",
         "base": "pošta",
         "en": "I'm at the post office.",
         "goalId": "u03-g3",
@@ -217,7 +217,7 @@
         "id": "u03-c8",
         "type": "translate",
         "direction": "cs-en",
-        "prompt": "Vlak odjíždí v půl deváté.",
+        "prompt": "[[Vlak|vlak|nom|subject]] odjíždí v půl deváté.",
         "goalId": "u03-g4",
         "answers": [
           "The train {leaves|departs} at {half past eight|eight thirty|8:30|8.30|half eight}[.]"

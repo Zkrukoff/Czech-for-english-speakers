@@ -136,6 +136,8 @@ export interface Course {
   /** Case-lens functions (content/grammar/functions.json). */
   functions: Map<string, GrammarFunction>;
   missionsById: Map<string, { mission: Mission; unitId: string }>;
+  /** The first lesson that formally teaches each grammar skill (from grammarRefs, in course order). */
+  taughtIn: Map<string, string>;
   /** Guide sections that use each lesson's language (generated from guide.json). */
   guideLinksByLesson: Map<string, { guideId: string; sectionId: string; title: string }[]>;
   namedays: NamedaysData | null;
@@ -201,6 +203,7 @@ export function loadContent(files: ContentFiles): LoadResult {
     lexicon: new Map(),
     functions: new Map(),
     missionsById: new Map(),
+    taughtIn: new Map(),
     guideLinksByLesson: new Map(),
     namedays: null,
     audio: new Map(),
@@ -441,6 +444,8 @@ export function loadContent(files: ContentFiles): LoadResult {
       course.audio.set(r.id, r);
     }
   }
+
+  for (const u of course.units) for (const l of u.lessonList) for (const r of l.grammarRefs) if (!course.taughtIn.has(r)) course.taughtIn.set(r, l.id);
 
   /* ---- Lines and stations ---- */
   if ('lines/lines.json' in files.json) loadLines(files.json['lines/lines.json']);

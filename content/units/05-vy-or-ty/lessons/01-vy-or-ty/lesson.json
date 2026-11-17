@@ -1,0 +1,287 @@
+{
+  "id": "u05-l01",
+  "title": "Vy or ty?",
+  "canDo": [
+    "u05-g1",
+    "u05-g2"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [
+    "verb:present-classes"
+  ],
+  "grammarPreview": [],
+  "vocab": [
+    {
+      "id": "v-vykat",
+      "cs": "vykat",
+      "en": "to say vy (to someone)",
+      "pos": "verb",
+      "aspect": "impf",
+      "notes": "Vykat někomu. The polite default with adults you don't know.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-tykat",
+      "cs": "tykat",
+      "en": "to say ty (to someone)",
+      "pos": "verb",
+      "aspect": "impf",
+      "notes": "Tykat někomu; tykat si: to say ty to each other.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kafe",
+      "cs": "kafe",
+      "en": "coffee (everyday word)",
+      "pos": "noun",
+      "gender": "n",
+      "notes": "Kafe is the everyday word; káva is the neutral, written one. Both are fine at work.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-od-vas-mile",
+      "cs": "to je od vás milé",
+      "en": "that's kind of you (vy)",
+      "pos": "phrase",
+      "notes": "To a friend: to je od tebe milé.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-kdyby-neco",
+      "cs": "kdyby něco",
+      "en": "if you need anything",
+      "pos": "phrase",
+      "notes": "Short for \"if anything comes up\". Very common at work.",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "Your first week. In the office kitchen you meet the head of finance, then a colleague from your own team.",
+    "lines": [
+      {
+        "speaker": "Paní Kovářová",
+        "cs": "Dobrý den. Vy jste ten nový kolega z [[Londýna|Londýn|gen|after-z]]?",
+        "en": "Hello. Are you the new colleague from London?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tom",
+        "cs": "Ano, dobrý den. Jmenuju se Tom Baker.",
+        "en": "Yes, hello. My name is Tom Baker.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Paní Kovářová",
+        "cs": "Těší mě, Kovářová. Vedu účetní [[oddělení|oddělení|acc|object]]. Jak se vám tu líbí?",
+        "en": "Nice to meet you, Kovářová. I run the accounts department. How do you like it here?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tom",
+        "cs": "Moc. Všichni jsou tu milí.",
+        "en": "A lot. Everyone here is nice.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Paní Kovářová",
+        "cs": "To ráda slyším. Kdyby něco, přijďte za mnou.",
+        "en": "Glad to hear it. If you need anything, come and find me.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tom",
+        "cs": "Děkuju, to je od vás milé.",
+        "en": "Thank you, that's kind of you.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Ondra",
+        "cs": "Čau, ty jsi Tom, ne? Já jsem Ondra, sedím vedle tebe.",
+        "en": "Hi, you're Tom, right? I'm Ondra, I sit next to you.",
+        "spoken": {
+          "form": "Čau, ty seš Tom, ne?",
+          "note": "seš for jsi: very common in Prague speech."
+        },
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tom",
+        "cs": "Ahoj, [[Ondro|Ondra|voc|addressing]]. Jo, to jsem já.",
+        "en": "Hi, Ondra. Yep, that's me.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Ondra",
+        "cs": "Dáš si kafe?",
+        "en": "Do you want a coffee?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tom",
+        "cs": "Jasně, díky.",
+        "en": "Sure, thanks.",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u05-l01-e1",
+      "type": "question",
+      "prompt": "Your new boss, on day one. **vy** or **ty**?",
+      "answers": [
+        "vy"
+      ],
+      "answerLang": "cs",
+      "why": "Your boss gets vy, at least until they offer ty.",
+      "hints": [],
+      "skills": [
+        "vocab:v-vykat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l01-e2",
+      "type": "question",
+      "prompt": "Your colleague's six-year-old daughter. **vy** or **ty**?",
+      "answers": [
+        "ty"
+      ],
+      "answerLang": "cs",
+      "why": "Children get ty. Saying vy to a child sounds like a joke.",
+      "hints": [],
+      "skills": [
+        "vocab:v-tykat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l01-e3",
+      "type": "conjugate",
+      "verb": "být",
+      "person": "2pl",
+      "prompt": "Odkud ___? (to paní Kovářová)",
+      "answers": [
+        "jste"
+      ],
+      "why": "With vy, the verb is 2nd person plural, even when you talk to one person: Odkud jste?",
+      "hints": [
+        {
+          "wrong": "jsi",
+          "explain": "Jsi is the ty form. Paní Kovářová gets vy: Odkud jste?"
+        }
+      ],
+      "skills": [
+        "verb:present-classes"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l01-e4",
+      "type": "conjugate",
+      "verb": "být",
+      "person": "2sg",
+      "prompt": "Odkud ___? (to Ondra)",
+      "answers": [
+        "jsi"
+      ],
+      "why": "With ty, the verb is 2nd person singular: Odkud jsi?",
+      "hints": [
+        {
+          "wrong": "jste",
+          "explain": "Jste is the vy form. Ondra already says ty to you, so: Odkud jsi?"
+        }
+      ],
+      "skills": [
+        "verb:present-classes"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l01-e5",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Do you want a coffee? (to Ondra)",
+      "answers": [
+        "Dáš si {kafe|kávu}?"
+      ],
+      "why": "To someone you say ty to: Dáš si kafe? (or kávu).",
+      "hints": [
+        {
+          "wrong": "Dáte si {kafe|kávu}?",
+          "explain": "Dáte si is the vy form. Ondra gets ty: Dáš si kafe?"
+        }
+      ],
+      "skills": [
+        "vocab:v-kafe",
+        "vocab:v-tykat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l01-e6",
+      "type": "translate",
+      "direction": "en-cs",
+      "prompt": "Would you like a coffee? (to paní Kovářová)",
+      "answers": [
+        "Dáte si {kafe|kávu}?"
+      ],
+      "why": "To someone you say vy to: Dáte si kafe? (or kávu).",
+      "hints": [
+        {
+          "wrong": "Dáš si {kafe|kávu}?",
+          "explain": "Dáš si is the ty form. To paní Kovářová, use vy: Dáte si kafe?"
+        }
+      ],
+      "skills": [
+        "vocab:v-kafe",
+        "vocab:v-vykat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l01-e7",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Paní Kovářová",
+          "cs": "Kdyby něco, přijďte za mnou.",
+          "en": "If you need anything, come and find me."
+        }
+      ],
+      "prompt": "Thank her and say that's kind of her.",
+      "answers": [
+        "{Děkuju|Děkuji|Díky}[,] to je od vás milé",
+        "To je od vás milé[, {děkuju|děkuji}]"
+      ],
+      "why": "To someone you say vy to: to je od vás milé.",
+      "hints": [
+        {
+          "wrong": "[{Děkuju|Děkuji|Díky}][,] to je od tebe milé",
+          "explain": "Od tebe is ty. Paní Kovářová gets vy: od vás."
+        }
+      ],
+      "skills": [
+        "vocab:v-od-vas-mile"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l01-e8",
+      "type": "fillEnding",
+      "prompt": "Ahoj, [[Ondr___|Ondra|voc|addressing]]!",
+      "base": "Ondra",
+      "en": "Hi, Ondra!",
+      "answers": [
+        "o"
+      ],
+      "why": "Ondra is addressed in the vocative: -a becomes -o, like Jana → Jano.",
+      "hints": [],
+      "skills": [
+        "case:vocative"
+      ],
+      "nativeReviewed": false
+    }
+  ],
+  "nativeReviewed": false
+}

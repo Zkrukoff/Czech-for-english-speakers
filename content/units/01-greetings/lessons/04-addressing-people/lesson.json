@@ -5,9 +5,8 @@
     "u01-g4"
   ],
   "explanation": "explanation.md",
-  "grammarRefs": [
-    "case:vocative"
-  ],
+  "grammarRefs": [],
+  "grammarPreview": ["case:vocative"],
   "nativeReviewed": false,
   "vocab": [
     {
@@ -116,13 +115,13 @@
     "lines": [
       {
         "speaker": "Lucie",
-        "cs": "Dobrý den, pane Nováku!",
+        "cs": "Dobrý den, [[pane|pan|voc|addressing]] [[Nováku|Novák|voc|addressing]]!",
         "en": "Good morning, Mr Novák!",
         "nativeReviewed": false
       },
       {
         "speaker": "Pan Novák",
-        "cs": "Dobrý den, Lucie. Jak se máte?",
+        "cs": "Dobrý den, [[Lucie|Lucie|voc|addressing]]. Jak se máte?",
         "en": "Good morning, Lucie. How are you?",
         "nativeReviewed": false
       },
@@ -152,13 +151,13 @@
       },
       {
         "speaker": "Lucie",
-        "cs": "Ahoj, Petře! Kam jdeš?",
+        "cs": "Ahoj, [[Petře|Petr|voc|addressing]]! Kam jdeš?",
         "en": "Hi, Petr! Where are you going?",
         "nativeReviewed": false
       },
       {
         "speaker": "Petr",
-        "cs": "Na trh. A ty?",
+        "cs": "Na [[trh|trh|acc|after-na-motion]]. A ty?",
         "en": "To the market. And you?",
         "nativeReviewed": false
       },

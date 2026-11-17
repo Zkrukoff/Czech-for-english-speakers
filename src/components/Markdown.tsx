@@ -44,6 +44,20 @@ export function Markdown({
     },
     a: ({ href = '', children: c }) =>
       href.startsWith('/') ? <Link to={href}>{c}</Link> : <a href={href} target="_blank" rel="noreferrer">{c}</a>,
+    // Accessibility: a header row with no text is a layout table: drop it. A single
+    // empty corner cell gets a screen-reader label so every cell has a header.
+    thead: ({ node, children: c }) => {
+      const text = (n: unknown): string =>
+        typeof n === 'object' && n !== null
+          ? 'value' in n && typeof (n as { value: unknown }).value === 'string'
+            ? (n as { value: string }).value
+            : ((n as { children?: unknown[] }).children ?? []).map(text).join('')
+          : '';
+      return text(node).trim() ? <thead>{c}</thead> : null;
+    },
+    th: ({ children: c, node: _node, ...rest }) => (
+      <th {...rest}>{(Array.isArray(c) ? c.length > 0 : c != null && c !== '') ? c : <span className="sr-only">Row</span>}</th>
+    ),
     table: ({ children: c }) => (
       <div className="overflow-x-auto">
         <table>{c}</table>

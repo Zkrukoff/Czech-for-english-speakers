@@ -118,19 +118,23 @@
       },
       {
         "speaker": "Jana",
-        "cs": "Pavel? Je vysoký, má krátké tmavé vlasy a brýle.",
+        "cs": "Pavel? Je vysoký, má krátké tmavé [[vlasy|vlas|acc.pl|object]] a [[brýle|brýle|acc.pl|object]].",
         "en": "Pavel? He's tall, with short dark hair and glasses.",
+        "spoken": {
+          "form": "Je vysokej, má krátký tmavý vlasy a brýle.",
+          "note": "-ej for -ý (vysokej), and -ý for the plural -é (krátký tmavý vlasy)."
+        },
         "nativeReviewed": false
       },
       {
         "speaker": "Daniel",
-        "cs": "Má vousy?",
+        "cs": "Má [[vousy|vous|acc.pl|object]]?",
         "en": "Does he have a beard?",
         "nativeReviewed": false
       },
       {
         "speaker": "Jana",
-        "cs": "Ne, nemá. Dnes má modrou košili. Sedí tamhle u okna.",
+        "cs": "Ne, nemá. Dnes má modrou [[košili|košile|acc|object]]. Sedí tamhle u [[okna|okno|gen|after-u]].",
         "en": "No, he doesn't. Today he's wearing a blue shirt. He sits over there by the window.",
         "nativeReviewed": false
       },
@@ -249,7 +253,7 @@
       "id": "u04-l01-e5",
       "type": "translate",
       "direction": "cs-en",
-      "prompt": "Je vysoký a má tmavé vlasy.",
+      "prompt": "Je vysoký a má tmavé [[vlasy|vlas|acc.pl|object]].",
       "answers": [
         "{He is|He's} tall and {has|he has|he's got|has got} dark hair[.]",
         "{He is|He's} tall with dark hair[.]"
@@ -320,7 +324,7 @@
       "id": "u04-l01-e8",
       "type": "conjugate",
       "verb": "mít",
-      "prompt": "Moje sestra ___ dlouhé vlasy.",
+      "prompt": "Moje [[sestra|sestra|nom|subject]] ___ dlouhé [[vlasy|vlas|acc.pl|object]].",
       "en": "My sister has long hair.",
       "person": "3sg",
       "answers": [

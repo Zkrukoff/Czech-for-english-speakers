@@ -261,6 +261,11 @@ export const LessonSchema = z.object({
   explanation: z.string().default('explanation.md'),
   /** Grammar skills this lesson teaches; links to the reference. */
   grammarRefs: z.array(SkillTagSchema).default([]),
+  /**
+   * Grammar met here as fixed phrases before it is taught (D9): e.g. "Jsem z Anglie"
+   * in unit 1, long before the genitive. The case lens points ahead to where it's taught.
+   */
+  grammarPreview: z.array(SkillTagSchema).default([]),
   vocab: z.array(VocabItemSchema).default([]),
   dialogue: DialogueSchema,
   exercises: z.array(ExerciseSchema).min(1),

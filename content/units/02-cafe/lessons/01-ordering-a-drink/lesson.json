@@ -80,12 +80,20 @@
         "speaker": "Zákazník",
         "cs": "Dobrý den. Dám si [[kávu|káva|acc|object]], prosím.",
         "en": "Hello. I'll have a coffee, please.",
+        "spoken": {
+          "form": "Dobrej den. Dám si kafe.",
+          "note": "dobrej for dobrý, and kafe, the everyday word for káva."
+        },
         "nativeReviewed": false
       },
       {
         "speaker": "Číšník",
         "cs": "S [[mlékem|mléko|ins|with-s]]?",
         "en": "With milk?",
+        "spoken": {
+          "form": "S mlíkem?",
+          "note": "mlíko for mléko: in Prague speech é often becomes í."
+        },
         "nativeReviewed": false
       },
       {

@@ -55,9 +55,9 @@ describe('exercises are self-consistent', async () => {
   const { course, warnings } = loadContent(contentFiles);
   const all = [...course.exercisesById.values()].map((e) => e.exercise);
 
-  it('has four units of four lessons, each with exercises', () => {
-    expect(course.units).toHaveLength(4);
-    for (const u of course.units) expect(u.lessonList).toHaveLength(4);
+  it('has five units: four of four lessons, and the two-lesson vykání station', () => {
+    expect(course.units.map((u) => u.lessonList.length)).toEqual([4, 4, 4, 4, 2]);
+    for (const u of course.units) for (const l of u.lessonList) expect(l.exercises.length).toBeGreaterThan(0);
   });
 
   it('marks every accepted answer as correct (tolerant and strict)', () => {
@@ -118,8 +118,8 @@ describe('alphabet', () => {
 describe('guides', () => {
   const { course } = loadContent(contentFiles);
 
-  it('has the culture and Prague transport guides, in order', () => {
-    expect(course.guides.map((g) => g.id)).toEqual(['culture', 'prague-transport']);
+  it('has the culture, Prague transport and settling-in guides, in order', () => {
+    expect(course.guides.map((g) => g.id)).toEqual(['culture', 'prague-transport', 'settling-in']);
   });
 
   it('loads every section with content', () => {

@@ -99,7 +99,7 @@
     "lines": [
       {
         "speaker": "Paní Dvořáková",
-        "cs": "Tak, Danieli, tohle je náš tým. To je Pavel, náš vývojář.",
+        "cs": "Tak, [[Danieli|Daniel|voc|addressing]], tohle je náš [[tým|tým|nom|naming]]. To je Pavel, náš [[vývojář|vývojář|nom|naming]].",
         "en": "So, Daniel, this is our team. This is Pavel, our developer.",
         "nativeReviewed": false
       },
@@ -111,7 +111,7 @@
       },
       {
         "speaker": "Paní Dvořáková",
-        "cs": "Tohle je paní Horáková, naše účetní. Má na starosti faktury.",
+        "cs": "Tohle je paní Horáková, naše [[účetní|účetní|nom|naming]]. Má na starosti faktury.",
         "en": "This is Mrs Horáková, our accountant. She's in charge of invoices.",
         "nativeReviewed": false
       },
@@ -123,7 +123,7 @@
       },
       {
         "speaker": "Paní Dvořáková",
-        "cs": "A tohle je Lenka. Pracuje jako asistentka a ví úplně všechno.",
+        "cs": "A tohle je Lenka. Pracuje jako [[asistentka|asistentka|nom|after-jako]] a ví úplně všechno.",
         "en": "And this is Lenka. She works as an assistant and knows absolutely everything.",
         "nativeReviewed": false
       },
@@ -192,7 +192,7 @@
       "id": "u04-l04-e3",
       "type": "translate",
       "direction": "cs-en",
-      "prompt": "Má na starosti marketing.",
+      "prompt": "Má na starosti [[marketing|marketing|acc|object]].",
       "answers": [
         "{He|She} {is|'s} {in charge of|responsible for} marketing[.]",
         "{He|She} {looks after|handles|runs|manages} marketing[.]"
@@ -207,7 +207,7 @@
     {
       "id": "u04-l04-e4",
       "type": "fillEnding",
-      "prompt": "Pracuje v marketing___.",
+      "prompt": "Pracuje v [[marketing___|marketing|loc|location-v-na]].",
       "base": "marketing",
       "en": "He works in marketing.",
       "answers": [

@@ -82,7 +82,7 @@ export function ProgressPage() {
             const st = stampsList.find((x) => x.id === `unit:${u.id}`);
             return (
               <li key={u.id}>
-                <Link to={unitPath(u.id)} aria-label={`${stop.stationInfo.name}: ${st ? 'stamped' : 'not stamped yet'}`} className="block transition-transform hover:-translate-y-0.5">
+                <Link to={unitPath(u.id)} className="block transition-transform hover:-translate-y-0.5">
                   <Ticket
                     line={<LineBadge line={stop.line} size={22} />}
                     title={stop.stationInfo.name}

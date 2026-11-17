@@ -160,3 +160,17 @@ check first. When an item is confirmed or corrected, remove it here and set
 | transit practice | *Příští stanice: Můstek. Přestup na linku B.*; sign *VÝSTUP* | Exact wording of real announcements? |
 | u02-l01 | First lens annotations: *kávu* (acc, object), *mlékem* (ins, with s), *vodu* (acc, object) | Functions right? |
 
+## Phase 5: content pass
+
+| Where | Text | Question |
+|---|---|---|
+| all lessons | 97 lens annotations: each word's case and *function* (why the case is used) | Are the functions right? Especially *Kolik stojí ty rohlíky* (subject), *dvě piva* as "after 2–4" (it's an object, but the same form), *Synovi je sedm* (dative of age) |
+| lexicon | New nouns: names (vocatives *Danieli, Jano, Emmo, Petře, Jakube, Ondro, Tome, Petro, Nováku*), *Londýn* (z Londýna), *Olomouc*, *dům* (z domu), *okno* (gen. pl. *oken*), *taška*, *místo*, *marketing* (v marketingu), *brambory* switched to masculine (*s brambory*) | Correct? |
+| unit 5 (Hradčanská) | All dialogue and explanations; *Těší mě, Kovářová* (surname only), *Kdyby něco, přijďte za mnou*, *To ráda slyším*, *Jen si ještě pletu, komu tykat a komu vykat*, *Když nevíš, vykej. Nikdo se neurazí.*; the claim that between a man and a woman of similar age the woman traditionally offers *ty* | Natural? Accurate? |
+| pronunciation | Speaking prompts and descriptions (ř as "trill with a buzz", ch as in "loch"), minimal pairs *rada/řada, byt/být, chlad/hlad, pas/pás* | Good choices? |
+| transit practice | *Každý den jezdím do práce tramvají*, *Dnes jedu metrem, tramvaje nejezdí*, *Loni jsem přicházel do práce pozdě skoro každý den*, *Vždycky jsem odcházel z kanceláře poslední*, *Kdy jsi přijel do Prahy?* | Natural, and is the aspect choice unambiguous in each? |
+| spoken Czech | *Dobrej den. Dám si kafe.*, *S mlíkem?*, *Seš tady nová?*, *Ahoj, kde seš? Já už sem na místě.*, *Je vysokej, má krátký tmavý vlasy a brýle.* | Is this how people in Prague actually say it? |
+| Line A notes | Petřiny (obora Hvězda), Bořislavka (Evropská), Flora (Atrium Flora, Olšany), Strašnická, Skalka, Depo Hostivař (opened 2006, inside the depot), Nádraží Veleslavín (named after the railway stop; trolleybus 59 to the airport) | Accurate and current? |
+| Zabydlení | All five sections: flat sizes (2+kk vs 2+1), *zálohy na energie*, *obvoďák*, *eRecept*, 155 / 112, *pohotovost*, the phrasebook | Accurate, natural, current? |
+| transport | Inspector surcharge "over a thousand crowns" and the app ticket's activation delay | Not on the pid.cz pages checked: verify. |
+

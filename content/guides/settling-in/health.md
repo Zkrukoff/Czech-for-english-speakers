@@ -1,7 +1,19 @@
-<!-- Draft outline (phase 5). Practical language only; link to official sources and date every fact; no legal or immigration advice. -->
+## Doctors
 
-## To write
+Your first stop is a GP (***praktický lékař***, in everyday speech ***obvoďák***). You register with one; specialists usually need a referral (***doporučení***). Your health insurance company's card (***kartička pojišťovny***) goes everywhere with you.
 
-- Key vocabulary and phrases for this situation, with the case lens.
-- What to expect, step by step, from the learner's point of view.
-- Where to check current rules (official sites), with the date checked.
+> *Potřebuju se objednat k lékaři.*  I need to make a doctor's appointment.
+> *Bolí mě v krku.*  I have a sore throat.
+> *Mám horečku.*  I have a temperature.
+> *Bolí mě tady.*  It hurts here.
+
+## Pharmacy (lékárna)
+
+Prescriptions are electronic (***eRecept***): you get a code by text message or on paper, and any pharmacy can scan it.
+
+> *Máte něco na kašel?*  Do you have anything for a cough?
+> *Potřebuju to na předpis?*  Do I need a prescription for it?
+
+## Emergencies
+
+**155** is the ambulance (*záchranka*), **112** the general emergency number (answered in English too). For urgent but not life-threatening problems outside surgery hours, look for ***pohotovost*** (out-of-hours service).

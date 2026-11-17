@@ -16,6 +16,7 @@ import { PracticeSummary } from './PracticeSummary';
 import { useLessonAnswerHandler } from './useLessonAnswerHandler';
 import { IconArrowLeft, IconArrowRight, IconBook, IconHacek } from '@/components/icons';
 import { LineBadge } from '@/components/ui';
+import { LessonContext } from '@/features/lens/LessonContext';
 import { hasLens as hasLensMarkup } from '@/lib/lens';
 
 const STEPS = [
@@ -30,7 +31,11 @@ export function LessonPage() {
   const { lessonId = '' } = useParams();
   const lesson = course.lessonsById.get(lessonId);
   if (!lesson) return <NotFound what="lesson" />;
-  return <LessonView key={lesson.id} lesson={lesson} />;
+  return (
+    <LessonContext.Provider value={lesson.id}>
+      <LessonView key={lesson.id} lesson={lesson} />
+    </LessonContext.Provider>
+  );
 }
 
 function LessonView({ lesson }: { lesson: Lesson }) {
@@ -52,7 +57,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
   const hasLens =
     lesson.dialogue.lines.some((l) => hasLensMarkup(l.cs)) || lesson.exercises.some((e) => course.lensKeysByExercise.has(e.id));
 
-  const grammarLinks = lesson.grammarRefs
+  const grammarLinks = [...lesson.grammarRefs, ...lesson.grammarPreview]
     .map((r) => course.grammarBySkill.get(r))
     .filter((p) => p !== undefined);
 

@@ -1,0 +1,205 @@
+{
+  "id": "u05-l02",
+  "title": "Shall we say ty?",
+  "canDo": [
+    "u05-g3"
+  ],
+  "explanation": "explanation.md",
+  "grammarRefs": [],
+  "grammarPreview": [
+    "case:vocative"
+  ],
+  "vocab": [
+    {
+      "id": "v-muzeme-si-tykat",
+      "cs": "Můžeme si tykat?",
+      "en": "Shall we say ty (to each other)?",
+      "pos": "phrase",
+      "notes": "The offer to switch. Usually made by the older or more senior person.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-jasne-rad",
+      "cs": "Jasně, rád / ráda.",
+      "en": "Sure, gladly. (man / woman)",
+      "pos": "phrase",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-na-zdravi",
+      "cs": "na zdraví",
+      "en": "cheers!",
+      "pos": "phrase",
+      "notes": "Look the other person in the eye when you clink glasses.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "v-plest-si",
+      "cs": "plést si",
+      "en": "to mix up",
+      "pos": "verb",
+      "aspect": "impf",
+      "notes": "Pletu si to: I mix it up.",
+      "nativeReviewed": false
+    }
+  ],
+  "dialogue": {
+    "setting": "Friday drinks after work. Paní Kovářová has had a good week.",
+    "lines": [
+      {
+        "speaker": "Paní Kovářová",
+        "cs": "[[Tome|Tom|voc|addressing]], víte co? Můžeme si tykat. Já jsem Petra.",
+        "en": "Tom, you know what? Let's say ty. I'm Petra.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tom",
+        "cs": "Jasně, rád. Tak na zdraví, [[Petro|Petra|voc|addressing]]!",
+        "en": "Sure, gladly. Cheers then, Petra!",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Petra",
+        "cs": "Na zdraví! A jak se ti tu zatím líbí?",
+        "en": "Cheers! So how do you like it here so far?",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Tom",
+        "cs": "Moc. Jen si ještě pletu, komu tykat a komu vykat.",
+        "en": "A lot. I just still mix up who to say ty to and who to say vy to.",
+        "nativeReviewed": false
+      },
+      {
+        "speaker": "Petra",
+        "cs": "To je normální. Když nevíš, vykej. Nikdo se neurazí.",
+        "en": "That's normal. When you don't know, say vy. Nobody will be offended.",
+        "nativeReviewed": false
+      }
+    ]
+  },
+  "exercises": [
+    {
+      "id": "u05-l02-e1",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Petra",
+          "cs": "Můžeme si tykat? Já jsem Petra.",
+          "en": "Shall we say ty? I'm Petra."
+        }
+      ],
+      "prompt": "Accept, as a man, and say your name is Tom.",
+      "answers": [
+        "[{Jasně|Ano|Rád}][,] [rád][.] [Já] jsem Tom"
+      ],
+      "why": "Accept with jasně, rád (a man) or ráda (a woman), then give your first name.",
+      "hints": [
+        {
+          "wrong": "[{Jasně|Ano}][,] ráda[.] [Já] jsem Tom",
+          "explain": "Ráda is the feminine form. A man says rád."
+        }
+      ],
+      "skills": [
+        "vocab:v-muzeme-si-tykat",
+        "vocab:v-jasne-rad"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l02-e2",
+      "type": "dialogueComplete",
+      "context": [
+        {
+          "speaker": "Pavel",
+          "cs": "Můžeme si tykat? Já jsem Pavel.",
+          "en": "Shall we say ty? I'm Pavel."
+        }
+      ],
+      "prompt": "Accept, as a woman, and say your name is Kate.",
+      "answers": [
+        "[{Jasně|Ano|Ráda}][,] [ráda][.] [Já] jsem Kate"
+      ],
+      "why": "A woman accepts with jasně, ráda.",
+      "hints": [
+        {
+          "wrong": "[{Jasně|Ano}][,] rád[.] [Já] jsem Kate",
+          "explain": "Rád is the masculine form. A woman says ráda."
+        }
+      ],
+      "skills": [
+        "vocab:v-muzeme-si-tykat",
+        "vocab:v-jasne-rad"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l02-e3",
+      "type": "question",
+      "prompt": "Who usually offers to switch to ty: the **older** person or the **younger** one?",
+      "answers": [
+        "[the] older[ {one|person}]"
+      ],
+      "answerLang": "en",
+      "why": "The older or more senior person offers ty. Between a man and a woman of about the same age, traditionally the woman offers.",
+      "hints": [],
+      "skills": [
+        "vocab:v-muzeme-si-tykat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l02-e4",
+      "type": "conjugate",
+      "verb": "mít",
+      "person": "2sg",
+      "prompt": "Jak se ___? (to Petra, now that you say ty)",
+      "answers": [
+        "máš"
+      ],
+      "why": "After switching to ty, use 2nd person singular: Jak se máš?",
+      "hints": [
+        {
+          "wrong": "máte",
+          "explain": "Máte is vy. You now say ty to Petra: Jak se máš?"
+        }
+      ],
+      "skills": [
+        "verb:irregulars"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l02-e5",
+      "type": "translate",
+      "direction": "cs-en",
+      "prompt": "Když nevíš, vykej.",
+      "answers": [
+        "{When|If} {you don't know|you're not sure|you are not sure|in doubt}[,] {say|use} vy"
+      ],
+      "why": "Když nevíš, vykej: when you don't know, say vy (vykej is the ty imperative of vykat).",
+      "hints": [],
+      "skills": [
+        "vocab:v-vykat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l02-e6",
+      "type": "fillEnding",
+      "prompt": "Tak na zdraví, [[Petr___|Petra|voc|addressing]]!",
+      "base": "Petra",
+      "en": "Cheers then, Petra!",
+      "answers": [
+        "o"
+      ],
+      "why": "Petra in the vocative: -a becomes -o, Petra → Petro.",
+      "hints": [],
+      "skills": [
+        "case:vocative"
+      ],
+      "nativeReviewed": false
+    }
+  ],
+  "nativeReviewed": false
+}

@@ -134,3 +134,22 @@ describe('lens words around a blank', () => {
     expect(course.lensKeysByExercise.get('u02-l01-e1')).toEqual(['fn:object', 'pattern:zena:acc.sg']);
   });
 });
+
+describe('case teaching order (D9)', () => {
+  it('formally teaches the cases in the brief order: nom → acc → loc → gen → ins → dat → voc', () => {
+    const order = ['nominative', 'accusative', 'locative', 'genitive', 'instrumental', 'dative', 'vocative'];
+    const lessons = course.units.flatMap((u) => u.lessonList.map((l) => l.id));
+    const pos = (c: string) => {
+      const l = course.taughtIn.get(`case:${c}`);
+      return l === undefined ? Infinity : lessons.indexOf(l);
+    };
+    const first = order.map((c) => [c, pos(c)] as const).filter(([c]) => c !== 'nominative');
+    for (let i = 1; i < first.length; i++) {
+      expect(first[i]![1], `${first[i]![0]} must come after ${first[i - 1]![0]}`).toBeGreaterThanOrEqual(first[i - 1]![1]);
+    }
+  });
+
+  it('every preview case is taught later or is on the line ahead', () => {
+    for (const l of course.lessonsById.values()) for (const p of l.grammarPreview) expect(course.grammarBySkill.has(p)).toBe(true);
+  });
+});

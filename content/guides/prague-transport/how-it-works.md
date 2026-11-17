@@ -1,6 +1,6 @@
 ## One system, one ticket
 
-Prague's public transport is one integrated network called **PID** (*Pražská integrovaná doprava*). The same ticket works on the metro, trams, buses, trolleybuses, the Petřín funicular, river ferries and, within the city, most trains. Most of it is run by **DPP** (*Dopravní podnik hl. m. Prahy*), the city transport company. Locals just call it all ***MHD*** (*městská hromadná doprava*, "city public transport").
+Prague's public transport is one integrated network called **PID** (*Pražská integrovaná doprava*). The same ticket works on the metro, trams, buses, trolleybuses, river ferries and, within the city, most trains (the Petřín funicular has its own rules, below). Most of it is run by **DPP** (*Dopravní podnik hl. m. Prahy*), the city transport company. Locals just call it all ***MHD*** (*městská hromadná doprava*, "city public transport").
 
 | Czech | English | Lines are numbered… |
 |---|---|---|
@@ -57,7 +57,7 @@ A **90-minute ticket** covers the whole trip, including the metro. The **Airport
 
 - **Trains** marked **S** (*esko*) within Prague accept PID tickets and are often the fastest way across the city, for example from the main station (*Hlavní nádraží*) to the outer districts.
 - **Ferries** (*přívozy*) cross the Vltava at several points, mostly April to October. They're part of PID: hop on with your normal ticket.
-- **The Petřín funicular** (*lanovka na Petřín*) climbs from Újezd to Petřín Hill. Check current fares and opening on pid.cz: it has had its own pricing rules.
+- **The Petřín funicular** (*lanovka na Petřín*) climbs from Újezd to Petřín Hill. The 30- and 90-minute tickets **don't** cover it: a single ride is 100 Kč (90 Kč in the Lítačka app). 24-hour, 72-hour and monthly or yearly passes do. *(Checked on pid.cz, 17 November 2026.)*
 
 ## Accessibility
 

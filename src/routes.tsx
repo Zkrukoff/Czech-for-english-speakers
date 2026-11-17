@@ -32,6 +32,7 @@ export const routes: RouteObject[] = [
       { path: 'lessons/:lessonId', ...page(() => import('./features/lessons/LessonPage'), 'LessonPage') },
       { path: 'grammar', ...page(() => import('./features/grammar/GrammarIndex'), 'GrammarIndex') },
       { path: 'grammar/vzory/:vzorId', ...page(() => import('./features/grammar/VzorPage'), 'VzorPage') },
+      { path: 'grammar/numbers', ...page(() => import('./features/grammar/NumbersPage'), 'NumbersPage') },
       { path: 'grammar/aspect-pairs', ...page(() => import('./features/grammar/AspectPairsPage'), 'AspectPairsPage') },
       { path: 'grammar/tables', ...page(() => import('./features/grammar/TablesPage'), 'TablesPage') },
       { path: 'grammar/:pageId', ...page(() => import('./features/grammar/GrammarPageView'), 'GrammarPageView') },

@@ -811,6 +811,182 @@
           "nativeReviewed": false
         }
       ]
+    },
+    {
+      "id": "transport-motion",
+      "title": "Coming and going",
+      "description": "Motion verbs on your commute: one trip or every day (jet / jezdit), and finished or ongoing (přijít / přicházet).",
+      "exercises": [
+        {
+          "id": "tr-mo-1",
+          "type": "conjugate",
+          "verb": "jezdit",
+          "person": "1sg",
+          "prompt": "Každý den ___ do práce tramvají.",
+          "answers": [
+            "jezdím"
+          ],
+          "en": "I go to work by tram every day.",
+          "why": "Every day = a habit, so the \"regular\" verb jezdit: jezdím. Jet is for one particular trip.",
+          "hints": [
+            {
+              "wrong": "jedu",
+              "explain": "Jedu is one trip (now or a planned one). For every day, use jezdit: jezdím."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport",
+            "verb:motion"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-mo-2",
+          "type": "conjugate",
+          "verb": "jet",
+          "person": "1sg",
+          "prompt": "Dnes ___ metrem, tramvaje nejezdí.",
+          "answers": [
+            "jedu"
+          ],
+          "en": "Today I'm going by metro, the trams aren't running.",
+          "why": "One trip today: jet → jedu.",
+          "hints": [
+            {
+              "wrong": "jezdím",
+              "explain": "Jezdím is for regular trips. Today is one trip: jedu."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport",
+            "verb:motion"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-mo-3",
+          "type": "conjugate",
+          "verb": "chodit",
+          "person": "1sg",
+          "prompt": "Do práce ___ pěšky, bydlím blízko.",
+          "answers": [
+            "chodím"
+          ],
+          "en": "I walk to work, I live close by.",
+          "why": "A habit on foot: chodit → chodím.",
+          "hints": [
+            {
+              "wrong": "jdu",
+              "explain": "Jdu is one walk, now. As a habit: chodím."
+            }
+          ],
+          "skills": [
+            "guide:prague-transport",
+            "verb:motion"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-as-1",
+          "type": "aspectChoice",
+          "prompt": "Včera jsem ___ do práce pozdě.",
+          "options": [
+            "přicházel",
+            "přišel"
+          ],
+          "verbs": [
+            "přicházet",
+            "přijít"
+          ],
+          "answers": [
+            "přišel"
+          ],
+          "en": "Yesterday I got to work late.",
+          "why": "One arrival, finished: the perfective přišel.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport",
+            "verb:aspect",
+            "verb:motion"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-as-2",
+          "type": "aspectChoice",
+          "prompt": "Loni jsem ___ do práce pozdě skoro každý den.",
+          "options": [
+            "přicházel",
+            "přišel"
+          ],
+          "verbs": [
+            "přicházet",
+            "přijít"
+          ],
+          "answers": [
+            "přicházel"
+          ],
+          "en": "Last year I got to work late almost every day.",
+          "why": "A repeated action: the imperfective přicházel.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport",
+            "verb:aspect",
+            "verb:motion"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-as-3",
+          "type": "aspectChoice",
+          "prompt": "Kdy jsi ___ do Prahy?",
+          "options": [
+            "přijížděl",
+            "přijel"
+          ],
+          "verbs": [
+            "přijíždět",
+            "přijet"
+          ],
+          "answers": [
+            "přijel"
+          ],
+          "en": "When did you arrive in Prague?",
+          "why": "One arrival, finished: the perfective přijel.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport",
+            "verb:aspect",
+            "verb:motion"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "tr-as-4",
+          "type": "aspectChoice",
+          "prompt": "Vždycky jsem ___ z kanceláře poslední.",
+          "options": [
+            "odcházel",
+            "odešel"
+          ],
+          "verbs": [
+            "odcházet",
+            "odejít"
+          ],
+          "answers": [
+            "odcházel"
+          ],
+          "en": "I was always the last to leave the office.",
+          "why": "Vždycky (always) = repeated: the imperfective odcházel.",
+          "hints": [],
+          "skills": [
+            "guide:prague-transport",
+            "verb:aspect",
+            "verb:motion"
+          ],
+          "nativeReviewed": false
+        }
+      ]
     }
   ],
   "sources": [
@@ -839,6 +1015,6 @@
       "url": "https://www.prg.aero/en/public-transport-buses-to-airport"
     }
   ],
-  "lastChecked": "November 2026",
+  "lastChecked": "17 November 2026 (prices, free travel and the Petřín funicular, against pid.cz)",
   "nativeReviewed": false
 }

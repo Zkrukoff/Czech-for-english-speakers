@@ -21,7 +21,7 @@ export function StationHeader({ stop, kicker }: { stop: Stop; kicker?: string })
           <p className="label-board text-ink-3">
             Linka {stop.line} · {line.levels.join('–')} · {stop.position}/{line.stops.length}
           </p>
-          <h1 lang="cs" className="truncate font-display text-4xl font-extrabold leading-none tracking-tight sm:text-5xl">
+          <h1 lang="cs" className="break-words font-display text-3xl font-extrabold leading-none tracking-tight [hyphens:manual] sm:text-5xl">
             {info.name}
           </h1>
         </div>

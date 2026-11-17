@@ -5,9 +5,8 @@
     "u02-g3"
   ],
   "explanation": "explanation.md",
-  "grammarRefs": [
-    "case:genitive"
-  ],
+  "grammarRefs": [],
+  "grammarPreview": ["case:genitive"],
   "nativeReviewed": false,
   "vocab": [
     {
@@ -112,19 +111,19 @@
     "lines": [
       {
         "speaker": "Zákazník",
-        "cs": "Dobrý den. Kolik stojí ty rohlíky?",
+        "cs": "Dobrý den. Kolik stojí ty [[rohlíky|rohlík|nom.pl|subject]]?",
         "en": "Good morning. How much are those rolls?",
         "nativeReviewed": false
       },
       {
         "speaker": "Prodavačka",
-        "cs": "Tři koruny kus.",
+        "cs": "Tři [[koruny|koruna|nom.pl|quantity-2-4]] kus.",
         "en": "Three crowns each.",
         "nativeReviewed": false
       },
       {
         "speaker": "Zákazník",
-        "cs": "Tak deset rohlíků, prosím. A dva koláče.",
+        "cs": "Tak deset [[rohlíků|rohlík|gen.pl|quantity-5plus]], prosím. A dva [[koláče|koláč|nom.pl|quantity-2-4]].",
         "en": "Then ten rolls, please. And two kolaches.",
         "nativeReviewed": false
       },
@@ -142,13 +141,13 @@
       },
       {
         "speaker": "Prodavačka",
-        "cs": "Deset rohlíků a dva koláče, to je dohromady osmdesát korun.",
+        "cs": "Deset [[rohlíků|rohlík|gen.pl|quantity-5plus]] a dva [[koláče|koláč|nom.pl|quantity-2-4]], to je dohromady osmdesát [[korun|koruna|gen.pl|quantity-5plus]].",
         "en": "Ten rolls and two kolaches, that's eighty crowns altogether.",
         "nativeReviewed": false
       },
       {
         "speaker": "Zákazník",
-        "cs": "Můžu platit kartou?",
+        "cs": "Můžu platit [[kartou|karta|ins|means]]?",
         "en": "Can I pay by card?",
         "nativeReviewed": false
       },
@@ -164,7 +163,7 @@
     {
       "id": "u02-l03-e1",
       "type": "fillEnding",
-      "prompt": "To stojí dvě korun___.",
+      "prompt": "To stojí dvě [[korun___|koruna|nom.pl|quantity-2-4]].",
       "base": "koruna",
       "en": "It costs two crowns.",
       "answers": [
@@ -186,7 +185,7 @@
     {
       "id": "u02-l03-e2",
       "type": "fillEnding",
-      "prompt": "Tak deset rohlík___, prosím.",
+      "prompt": "Tak deset [[rohlík___|rohlík|gen.pl|quantity-5plus]], prosím.",
       "base": "rohlík",
       "en": "Ten rolls, please.",
       "answers": [
@@ -225,7 +224,7 @@
       "id": "u02-l03-e4",
       "type": "translate",
       "direction": "cs-en",
-      "prompt": "Tři koruny kus.",
+      "prompt": "Tři [[koruny|koruna|nom.pl|quantity-2-4]] kus.",
       "answers": [
         "Three crowns {each|a piece|apiece|per piece|for one}[.]"
       ],
@@ -288,7 +287,7 @@
       "id": "u02-l03-e7",
       "type": "translate",
       "direction": "cs-en",
-      "prompt": "To je dohromady osmdesát korun.",
+      "prompt": "To je dohromady osmdesát [[korun|koruna|gen.pl|quantity-5plus]].",
       "answers": [
         "{That's|That is|It's|It is} {eighty|80} crowns[ {altogether|in total|all together}][.]",
         "{That's|That is|It's|It is} {altogether|in total} {eighty|80} crowns[.]",

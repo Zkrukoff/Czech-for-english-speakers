@@ -136,37 +136,37 @@
     "lines": [
       {
         "speaker": "Eva",
-        "cs": "Ahoj, Jakube! Kam jdeš?",
+        "cs": "Ahoj, [[Jakube|Jakub|voc|addressing]]! Kam jdeš?",
         "en": "Hi, Jakub! Where are you going?",
         "nativeReviewed": false
       },
       {
         "speaker": "Jakub",
-        "cs": "Ahoj! Jdu na nádraží. Jedu na víkend do Olomouce.",
+        "cs": "Ahoj! Jdu na [[nádraží|nádraží|acc|after-na-motion]]. Jedu na víkend do [[Olomouce|Olomouc|gen|after-do]].",
         "en": "Hi! I'm going to the station. I'm going to Olomouc for the weekend.",
         "nativeReviewed": false
       },
       {
         "speaker": "Eva",
-        "cs": "Jedeš vlakem?",
+        "cs": "Jedeš [[vlakem|vlak|ins|means]]?",
         "en": "Are you going by train?",
         "nativeReviewed": false
       },
       {
         "speaker": "Jakub",
-        "cs": "Ano, vlakem. Je to pohodlnější než autobus.",
+        "cs": "Ano, [[vlakem|vlak|ins|means]]. Je to pohodlnější než autobus.",
         "en": "Yes, by train. It's more comfortable than the bus.",
         "nativeReviewed": false
       },
       {
         "speaker": "Eva",
-        "cs": "A na nádraží jdeš pěšky?",
+        "cs": "A na [[nádraží|nádraží|acc|after-na-motion]] jdeš pěšky?",
         "en": "And are you walking to the station?",
         "nativeReviewed": false
       },
       {
         "speaker": "Jakub",
-        "cs": "Ne, pojedu tramvají. S tou taškou je to daleko.",
+        "cs": "Ne, pojedu [[tramvají|tramvaj|ins|means]]. S tou [[taškou|taška|ins|with-s]] je to daleko.",
         "en": "No, I'll take the tram. With this bag it's a long way.",
         "nativeReviewed": false
       },
@@ -189,7 +189,7 @@
       "id": "u03-l02-e1",
       "type": "conjugate",
       "verb": "jet",
-      "prompt": "___ vlakem?",
+      "prompt": "___ [[vlakem|vlak|ins|means]]?",
       "en": "Are you going by train?",
       "person": "2sg",
       "answers": [
@@ -242,7 +242,7 @@
     {
       "id": "u03-l02-e3",
       "type": "fillEnding",
-      "prompt": "Pojedu tramvaj___.",
+      "prompt": "Pojedu [[tramvaj___|tramvaj|ins|means]].",
       "base": "tramvaj",
       "en": "I'll go by tram.",
       "answers": [
@@ -286,7 +286,7 @@
     {
       "id": "u03-l02-e5",
       "type": "fillEnding",
-      "prompt": "Jdu do kin___.",
+      "prompt": "Jdu do [[kin___|kino|gen|after-do]].",
       "base": "kino",
       "en": "I'm going to the cinema.",
       "answers": [

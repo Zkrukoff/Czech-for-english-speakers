@@ -113,25 +113,29 @@
     "lines": [
       {
         "speaker": "Ondřej",
-        "cs": "Ahoj, kde jsi? Já už jsem na místě.",
+        "cs": "Ahoj, kde jsi? Já už jsem na [[místě|místo|loc|location-v-na]].",
         "en": "Hi, where are you? I'm already there.",
+        "spoken": {
+          "form": "Ahoj, kde seš? Já už sem na místě.",
+          "note": "seš and sem for jsi and jsem."
+        },
         "nativeReviewed": false
       },
       {
         "speaker": "Klára",
-        "cs": "Promiň, jsem ještě v tramvaji. Budu tam za deset minut.",
+        "cs": "Promiň, jsem ještě v [[tramvaji|tramvaj|loc|location-v-na]]. Budu tam za deset [[minut|minuta|gen.pl|quantity-5plus]].",
         "en": "Sorry, I'm still on the tram. I'll be there in ten minutes.",
         "nativeReviewed": false
       },
       {
         "speaker": "Ondřej",
-        "cs": "Dobře. Čekám v kavárně na náměstí.",
+        "cs": "Dobře. Čekám v [[kavárně|kavárna|loc|location-v-na]] na [[náměstí|náměstí|loc|location-v-na]].",
         "en": "OK. I'm waiting in the café on the square.",
         "nativeReviewed": false
       },
       {
         "speaker": "Klára",
-        "cs": "V té kavárně vedle muzea?",
+        "cs": "V té [[kavárně|kavárna|loc|location-v-na]] vedle [[muzea|muzeum|gen|after-vedle]]?",
         "en": "In the café next to the museum?",
         "nativeReviewed": false
       },
@@ -186,7 +190,7 @@
     {
       "id": "u03-l03-e2",
       "type": "fillEnding",
-      "prompt": "Čekám v kavárn___.",
+      "prompt": "Čekám v [[kavárn___|kavárna|loc|location-v-na]].",
       "base": "kavárna",
       "en": "I'm waiting in the café.",
       "answers": [
@@ -279,7 +283,7 @@
     {
       "id": "u03-l03-e6",
       "type": "fillEnding",
-      "prompt": "Sedím v tramvaj___.",
+      "prompt": "Sedím v [[tramvaj___|tramvaj|loc|location-v-na]].",
       "base": "tramvaj",
       "en": "I'm sitting in the tram.",
       "answers": [
@@ -328,7 +332,7 @@
       "id": "u03-l03-e8",
       "type": "conjugate",
       "verb": "čekat",
-      "prompt": "___ v kavárně.",
+      "prompt": "___ v [[kavárně|kavárna|loc|location-v-na]].",
       "en": "I'm waiting in the café.",
       "person": "1sg",
       "answers": [

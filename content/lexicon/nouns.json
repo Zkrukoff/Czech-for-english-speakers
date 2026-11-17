@@ -525,12 +525,12 @@
     {
       "lemma": "brambory",
       "en": "potatoes",
-      "gender": "f",
-      "vzor": "noun-zena",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
       "number": "pl",
       "stem": "brambor",
       "uncertain": true,
-      "note": "Also used as masculine (gen. pl. bramborů). Lesson vocab lists it as masculine: flagged for native review.",
+      "note": "Used here as masculine (s brambory, gen. pl. bramborů), as in the lessons. The feminine brambora (gen. pl. brambor, s bramborami) is also common: flagged for native review.",
       "nativeReviewed": false
     },
     {
@@ -903,6 +903,249 @@
         "ins.pl": "šéfovými"
       },
       "note": "Declined like a hard adjective.",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Kanada",
+      "en": "Canada",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Manchester",
+      "en": "Manchester",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Olomouc",
+      "en": "Olomouc",
+      "gender": "f",
+      "vzor": "noun-pisen",
+      "number": "sg",
+      "stem": "Olomouc",
+      "note": "Declined like píseň without the vowel change: z Olomouce, v Olomouci.",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Jana",
+      "en": "Jana (name)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Emma",
+      "en": "Emma (name)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Lucie",
+      "en": "Lucie (name)",
+      "gender": "f",
+      "vzor": "noun-ruze",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Daniel",
+      "en": "Daniel (name)",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "number": "sg",
+      "forms": {
+        "voc.sg": "Danieli"
+      },
+      "note": "Vocative Danieli (but Pavel → Pavle, with the e dropped).",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Petr",
+      "en": "Petr (name)",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Jakub",
+      "en": "Jakub (name)",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Pavel",
+      "en": "Pavel (name)",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "number": "sg",
+      "stem": "Pavl",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Novák",
+      "en": "Novák (surname)",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "pán",
+      "en": "gentleman; sir",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "forms": {
+        "voc.sg": "pane"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "dům",
+      "en": "house; home",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "stem": "dom",
+      "forms": {
+        "nom.sg": "dům",
+        "acc.sg": "dům",
+        "voc.sg": "dome",
+        "loc.sg": "domě / domu"
+      },
+      "note": "z domu, doma, domů are fixed phrases.",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "angličtina",
+      "en": "English (language)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "čeština",
+      "en": "Czech (language)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "okno",
+      "en": "window",
+      "gender": "n",
+      "vzor": "noun-mesto",
+      "forms": {
+        "loc.sg": "okně",
+        "gen.pl": "oken"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "pití",
+      "en": "drink, drinking",
+      "gender": "n",
+      "vzor": "noun-staveni",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "salát",
+      "en": "salad",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "karta",
+      "en": "card",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "karet"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "minuta",
+      "en": "minute",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "taška",
+      "en": "bag",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "forms": {
+        "gen.pl": "tašek"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "místo",
+      "en": "place, seat",
+      "gender": "n",
+      "vzor": "noun-mesto",
+      "forms": {
+        "loc.sg": "místě"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "marketing",
+      "en": "marketing",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Londýn",
+      "en": "London",
+      "gender": "m-inan",
+      "vzor": "noun-hrad",
+      "number": "sg",
+      "forms": {
+        "gen.sg": "Londýna"
+      },
+      "note": "Genitive z Londýna (with -a), unlike most inanimate nouns.",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Ondra",
+      "en": "Ondra (name; short for Ondřej)",
+      "gender": "m-anim",
+      "vzor": "noun-predseda",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Tom",
+      "en": "Tom (name)",
+      "gender": "m-anim",
+      "vzor": "noun-pan",
+      "number": "sg",
+      "nativeReviewed": false
+    },
+    {
+      "lemma": "Petra",
+      "en": "Petra (name)",
+      "gender": "f",
+      "vzor": "noun-zena",
+      "number": "sg",
       "nativeReviewed": false
     }
   ]

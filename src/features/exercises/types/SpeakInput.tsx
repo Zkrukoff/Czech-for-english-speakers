@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { IconMic } from '@/components/icons';
-import { RecordingButton } from './RecordingButton';
+import { RecordingButton, recordingUrl } from './RecordingButton';
 import { SpeakButton } from '@/components/SpeakButton';
 
 import { SELF_ASSESSED } from '@/lib/answers/check';
@@ -48,7 +48,14 @@ export function SpeakInput({ cs, audio, disabled, onAssess }: Props) {
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-3">
         <span className="text-sm text-ink-2">Reference:</span>
-        {audio ? <RecordingButton id={audio} /> : <SpeakButton text={cs} label="Listen (synthetic voice)" />}
+        {audio && recordingUrl(audio) ? (
+          <RecordingButton id={audio} />
+        ) : audio ? (
+          // A core sound: real speakers only (D6), never a synthetic voice.
+          <span className="text-sm text-ink-2">A native-speaker recording is on its way. Go by the description for now.</span>
+        ) : (
+          <SpeakButton text={cs} label="Listen (synthetic voice)" />
+        )}
       </div>
       {state === 'unsupported' && <p className="text-sm text-ink-2">This browser can't record. Say it out loud anyway, then judge yourself.</p>}
       {state === 'denied' && <p className="text-sm text-ink-2">No microphone access. Say it out loud anyway, then judge yourself.</p>}

@@ -1,7 +1,16 @@
-<!-- Draft outline (phase 5). Practical language only; link to official sources and date every fact; no legal or immigration advice. -->
+## Post and parcels
 
-## To write
+| Czech | English |
+|---|---|
+| ***balík*** | parcel |
+| ***dopis*** | letter |
+| ***známka*** | stamp (for post) |
+| ***zásilka*** | consignment, delivery |
+| ***výdejní místo*** | pick-up point |
+| ***sledování zásilky*** | tracking |
 
-- Key vocabulary and phrases for this situation, with the case lens.
-- What to expect, step by step, from the learner's point of view.
-- Where to check current rules (official sites), with the date checked.
+Much of it now happens at pick-up points and parcel lockers rather than at the counter.
+
+> *Chtěl / chtěla bych poslat balík do Anglie.*  I'd like to send a parcel to England.
+> *Jdu si vyzvednout balík.*  I'm here to pick up a parcel.
+> *Tady je kód.*  Here's the code.

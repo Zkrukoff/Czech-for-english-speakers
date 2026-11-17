@@ -116,13 +116,13 @@
     "lines": [
       {
         "speaker": "Daniel",
-        "cs": "Ahoj, Jano!",
+        "cs": "Ahoj, [[Jano|Jana|voc|addressing]]!",
         "en": "Hi, Jana!",
         "nativeReviewed": false
       },
       {
         "speaker": "Jana",
-        "cs": "Ahoj, Danieli! Jak se máš?",
+        "cs": "Ahoj, [[Danieli|Daniel|voc|addressing]]! Jak se máš?",
         "en": "Hi, Daniel! How are you?",
         "nativeReviewed": false
       },
@@ -146,7 +146,7 @@
       },
       {
         "speaker": "Paní Dvořáková",
-        "cs": "Dobrý den, Danieli. Jak se máte?",
+        "cs": "Dobrý den, [[Danieli|Daniel|voc|addressing]]. Jak se máte?",
         "en": "Good morning, Daniel. How are you?",
         "nativeReviewed": false
       },
@@ -164,7 +164,7 @@
       },
       {
         "speaker": "Jana",
-        "cs": "Tak čau, Danieli. Měj se!",
+        "cs": "Tak čau, [[Danieli|Daniel|voc|addressing]]. Měj se!",
         "en": "Right, bye, Daniel. Take care!",
         "nativeReviewed": false
       },
@@ -295,7 +295,7 @@
       "id": "u01-l01-e6",
       "type": "conjugate",
       "verb": "mít",
-      "prompt": "Jak se ___, pane Nováku?",
+      "prompt": "Jak se ___, [[pane|pan|voc|addressing]] [[Nováku|Novák|voc|addressing]]?",
       "en": "How are you, Mr Novák?",
       "person": "2pl",
       "answers": [

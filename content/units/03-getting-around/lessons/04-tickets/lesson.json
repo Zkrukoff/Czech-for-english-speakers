@@ -103,7 +103,7 @@
     "lines": [
       {
         "speaker": "Cestující",
-        "cs": "Dobrý den, jednu jízdenku do Brna, prosím.",
+        "cs": "Dobrý den, jednu [[jízdenku|jízdenka|acc|object]] do [[Brna|Brno|gen|after-do]], prosím.",
         "en": "Hello, one ticket to Brno, please.",
         "nativeReviewed": false
       },
@@ -115,13 +115,13 @@
       },
       {
         "speaker": "Cestující",
-        "cs": "Zpáteční. V kolik jede nejbližší vlak?",
+        "cs": "Zpáteční. V kolik jede nejbližší [[vlak|vlak|nom|subject]]?",
         "en": "Return. What time is the next train?",
         "nativeReviewed": false
       },
       {
         "speaker": "Pokladní",
-        "cs": "V půl jedenácté, z nástupiště číslo pět.",
+        "cs": "V půl jedenácté, z [[nástupiště|nástupiště|gen|after-z]] číslo pět.",
         "en": "At half past ten, from platform number five.",
         "nativeReviewed": false
       },
@@ -181,7 +181,7 @@
     {
       "id": "u03-l04-e2",
       "type": "fillEnding",
-      "prompt": "Jednu zpáteční jízdenk___, prosím.",
+      "prompt": "Jednu zpáteční [[jízdenk___|jízdenka|acc|object]], prosím.",
       "base": "jízdenka",
       "en": "One return ticket, please.",
       "answers": [
@@ -204,7 +204,7 @@
       "id": "u03-l04-e3",
       "type": "translate",
       "direction": "cs-en",
-      "prompt": "V kolik odjíždí vlak?",
+      "prompt": "V kolik odjíždí [[vlak|vlak|nom|subject]]?",
       "answers": [
         "{What time|When} does the train {leave|depart|go}[?]"
       ],
@@ -240,7 +240,7 @@
       "id": "u03-l04-e5",
       "type": "conjugate",
       "verb": "odjíždět",
-      "prompt": "Vlak ___ v deset.",
+      "prompt": "[[Vlak|vlak|nom|subject]] ___ v deset.",
       "en": "The train leaves at ten.",
       "person": "3sg",
       "answers": [

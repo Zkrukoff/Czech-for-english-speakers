@@ -5,10 +5,8 @@
     "u02-g4"
   ],
   "explanation": "explanation.md",
-  "grammarRefs": [
-    "verb:aspect",
-    "case:instrumental"
-  ],
+  "grammarRefs": ["verb:aspect"],
+  "grammarPreview": ["case:instrumental"],
   "nativeReviewed": false,
   "vocab": [
     {
@@ -127,7 +125,7 @@
       },
       {
         "speaker": "Číšník",
-        "cs": "Takže dvakrát pivo, polévka, smažený sýr a guláš. To bude čtyři sta šedesát korun.",
+        "cs": "Takže dvakrát pivo, polévka, smažený sýr a guláš. To bude čtyři sta šedesát [[korun|koruna|gen.pl|quantity-5plus]].",
         "en": "So two beers, a soup, fried cheese and goulash. That'll be four hundred and sixty crowns.",
         "nativeReviewed": false
       },
@@ -182,7 +180,7 @@
       "id": "u02-l04-e2",
       "type": "conjugate",
       "verb": "platit",
-      "prompt": "___ kartou, nebo hotově?",
+      "prompt": "___ [[kartou|karta|ins|means]], nebo hotově?",
       "en": "Are you paying by card or in cash?",
       "person": "2pl",
       "answers": [
@@ -220,7 +218,7 @@
       "id": "u02-l04-e4",
       "type": "translate",
       "direction": "cs-en",
-      "prompt": "Platíte kartou, nebo hotově?",
+      "prompt": "Platíte [[kartou|karta|ins|means]], nebo hotově?",
       "answers": [
         "{Are you paying|Will you pay|Do you pay|Are you going to pay|Will you be paying} by card or {in cash|cash|with cash}[?]",
         "Card or cash[?]"
@@ -236,7 +234,7 @@
     {
       "id": "u02-l04-e5",
       "type": "fillEnding",
-      "prompt": "Platím kart___.",
+      "prompt": "Platím [[kart___|karta|ins|means]].",
       "base": "karta",
       "en": "I'm paying by card.",
       "answers": [

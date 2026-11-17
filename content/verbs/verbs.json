@@ -2791,6 +2791,70 @@
    ],
    "notes": "Umíš plavat? (Can you swim?) Umím trochu česky. (I speak a little Czech.)",
    "nativeReviewed": false
-  }
- ]
+  },
+ {
+  "lemma": "tykat",
+  "en": "to say ty (to someone), be on first-name terms",
+  "aspect": "impf",
+  "partner": [],
+  "class": "5 · -á- (dělá)",
+  "present": {
+   "1sg": "tykám",
+   "2sg": "tykáš",
+   "3sg": "tyká",
+   "1pl": "tykáme",
+   "2pl": "tykáte",
+   "3pl": "tykají"
+  },
+  "past": {
+   "m": "tykal",
+   "f": "tykala",
+   "n": "tykalo",
+   "mpl": "tykali",
+   "fpl": "tykaly"
+  },
+  "imperative": {
+   "2sg": "tykej",
+   "1pl": "tykejme",
+   "2pl": "tykejte"
+  },
+  "topics": [
+   "present-classes"
+  ],
+  "notes": "tykat někomu: to say ty to someone. Tykat si: to say ty to each other: Můžeme si tykat? (Shall we say ty?)",
+  "nativeReviewed": false
+ },
+ {
+  "lemma": "vykat",
+  "en": "to say vy (to someone), be formal",
+  "aspect": "impf",
+  "partner": [],
+  "class": "5 · -á- (dělá)",
+  "present": {
+   "1sg": "vykám",
+   "2sg": "vykáš",
+   "3sg": "vyká",
+   "1pl": "vykáme",
+   "2pl": "vykáte",
+   "3pl": "vykají"
+  },
+  "past": {
+   "m": "vykal",
+   "f": "vykala",
+   "n": "vykalo",
+   "mpl": "vykali",
+   "fpl": "vykaly"
+  },
+  "imperative": {
+   "2sg": "vykej",
+   "1pl": "vykejme",
+   "2pl": "vykejte"
+  },
+  "topics": [
+   "present-classes"
+  ],
+  "notes": "vykat někomu: to say vy to someone. Když nevíš, vykej: when in doubt, use vy.",
+  "nativeReviewed": false
+ }
+]
 }

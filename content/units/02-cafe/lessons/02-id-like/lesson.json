@@ -132,55 +132,55 @@
       },
       {
         "speaker": "Anna",
-        "cs": "Ano. Chtěla bych gulášovou polévku a smažený sýr.",
+        "cs": "Ano. Chtěla bych gulášovou [[polévku|polévka|acc|object]] a smažený sýr.",
         "en": "Yes. I'd like the goulash soup and the fried cheese.",
         "nativeReviewed": false
       },
       {
         "speaker": "Číšnice",
-        "cs": "S hranolky, nebo s brambory?",
+        "cs": "S [[hranolky|hranolky|ins.pl|with-s]], nebo s [[brambory|brambory|ins.pl|with-s]]?",
         "en": "With chips or with potatoes?",
         "nativeReviewed": false
       },
       {
         "speaker": "Anna",
-        "cs": "S hranolky, prosím.",
+        "cs": "S [[hranolky|hranolky|ins.pl|with-s]], prosím.",
         "en": "With chips, please.",
         "nativeReviewed": false
       },
       {
         "speaker": "Číšnice",
-        "cs": "A pro pána?",
+        "cs": "A pro [[pána|pán|acc|after-pro]]?",
         "en": "And for the gentleman?",
         "nativeReviewed": false
       },
       {
         "speaker": "Tom",
-        "cs": "Já bych si dal řízek s bramborovým salátem.",
+        "cs": "Já bych si dal [[řízek|řízek|acc|object]] s bramborovým [[salátem|salát|ins|with-s]].",
         "en": "I'd have the schnitzel with potato salad.",
         "nativeReviewed": false
       },
       {
         "speaker": "Číšnice",
-        "cs": "Řízek už bohužel nemáme.",
+        "cs": "[[Řízek|řízek|acc|object]] už bohužel nemáme.",
         "en": "I'm afraid we've run out of schnitzel.",
         "nativeReviewed": false
       },
       {
         "speaker": "Tom",
-        "cs": "Tak guláš s knedlíkem, prosím.",
+        "cs": "Tak [[guláš|guláš|acc|object]] s [[knedlíkem|knedlík|ins|with-s]], prosím.",
         "en": "Then the goulash with dumplings, please.",
         "nativeReviewed": false
       },
       {
         "speaker": "Číšnice",
-        "cs": "Dobře. Něco k pití?",
+        "cs": "Dobře. Něco k [[pití|pití|dat|after-k]]?",
         "en": "OK. Anything to drink?",
         "nativeReviewed": false
       },
       {
         "speaker": "Tom",
-        "cs": "Dvě piva, prosím.",
+        "cs": "Dvě [[piva|pivo|nom.pl|quantity-2-4]], prosím.",
         "en": "Two beers, please.",
         "nativeReviewed": false
       }
@@ -191,7 +191,7 @@
       "id": "u02-l02-e1",
       "type": "conjugate",
       "verb": "chtít",
-      "prompt": "___ bych guláš.",
+      "prompt": "___ bych [[guláš|guláš|acc|object]].",
       "tense": "conditional",
       "en": "I'd like the goulash. (a man speaking)",
       "person": "1sg",
@@ -217,7 +217,7 @@
     {
       "id": "u02-l02-e2",
       "type": "fillEnding",
-      "prompt": "Chtěla bych zeleninov___ polévku.",
+      "prompt": "Chtěla bych zeleninov___ [[polévku|polévka|acc|object]].",
       "base": "zeleninová",
       "en": "I'd like the vegetable soup.",
       "answers": [
@@ -341,7 +341,7 @@
       "id": "u02-l02-e7",
       "type": "translate",
       "direction": "cs-en",
-      "prompt": "Řízek už bohužel nemáme.",
+      "prompt": "[[Řízek|řízek|acc|object]] už bohužel nemáme.",
       "answers": [
         "{Unfortunately|Sorry|I'm afraid}[,] we {don't have|have no} {schnitzel|schnitzels|the schnitzel|any schnitzel} {anymore|any more|left}[.]",
         "We don't have {schnitzel|any schnitzel|the schnitzel} {anymore|any more|left}[,] unfortunately[.]",
@@ -358,7 +358,7 @@
     {
       "id": "u02-l02-e8",
       "type": "fillEnding",
-      "prompt": "A pro pán___?",
+      "prompt": "A pro [[pán___|pán|acc|after-pro]]?",
       "base": "pán",
       "en": "And for the gentleman?",
       "answers": [

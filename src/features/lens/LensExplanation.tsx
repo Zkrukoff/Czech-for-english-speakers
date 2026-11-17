@@ -3,6 +3,7 @@ import { CASE_TEXT } from '@/components/caseColors';
 import { GenderMark } from '@/components/GenderMark';
 import { IconArrowRight } from '@/components/icons';
 import type { LensInfo } from './lensInfo';
+import { useTaughtLater } from './LessonContext';
 
 /**
  * What the lens says about one word: the case (number, name, colour), why
@@ -11,6 +12,7 @@ import type { LensInfo } from './lensInfo';
  */
 export function LensExplanation({ info, compact = false }: { info: LensInfo; compact?: boolean }) {
   const { token, fn, noun } = info;
+  const later = useTaughtLater(`case:${info.caseEn}`);
   return (
     <div className="space-y-3 text-left">
       <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
@@ -25,6 +27,18 @@ export function LensExplanation({ info, compact = false }: { info: LensInfo; com
       {fn && (
         <p className="text-ink">
           <span className="font-semibold">Why: {fn.label}.</span> {fn.explain}
+        </p>
+      )}
+      {later && (
+        <p className="border-l-4 border-champagne bg-champagne-tint px-3 py-2 text-sm text-ink">
+          For now, learn this as a phrase. The {info.caseEn} is taught properly{' '}
+          {later.station ? (
+            <>
+              at <span lang="cs">{later.station}</span> ("{later.lesson}").
+            </>
+          ) : (
+            'further down the line.'
+          )}
         </p>
       )}
       {!compact && (

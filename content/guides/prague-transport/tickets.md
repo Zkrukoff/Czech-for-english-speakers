@@ -10,7 +10,7 @@
 
 Prices change most years, so check the current list before you rely on these.
 
-- **Children under 15** and **people aged 65 and over** travel free in Prague. Carry ID to prove your age.
+- **Children under 15** and **people aged 65 and over** travel free in Prague. From age 6, carry proof of age. *(Prices and free travel checked on pid.cz, 17 November 2026.)*
 - **If you commute every day, buy an annual pass** (*roční jízdenka*). It works out at a fraction of the cost of single tickets, and some employers contribute to it.
 
 ## Where to buy

@@ -3,31 +3,38 @@
 ***Mluv jako Pražák.*** Czech for people who actually live here.
 
 A *Pražák* is a Prague local. Pražák is a web app that teaches Czech to
-**English speakers who have moved to Czechia for work**, from absolute beginner towards CEFR A2. Lessons are set in the
-situations of a working week: meeting colleagues and your manager, coffee and
-the daily lunch menu, paying with meal vouchers, the commute, describing the
-people around you, spelling your name at an office. It is built around
-fluency rather than gamification:
+**English speakers who have moved to Czechia for work**, from absolute beginner towards CEFR A2.
+
+**The course is a metro map.** Prague's three metro lines are the three CEFR
+levels: **Linka A** (green) is A1–A2, **B** (yellow) B1–B2, **C** (red) C1–C2.
+Units are real stations in their real order (checked against PID open data),
+transfer stations are milestones, and a finished station gets an ink stamp on
+your ticket. No confetti.
 
 - **No streaks, points, leagues, hearts or guilt notifications.** Progress is
-  what you can do: can-do goals passed in unit checks, and how accurately you
-  use each case and verb topic.
-- **Natural Czech only.** Every sentence is meant to be something a native
-  speaker would say. Spoken Czech (obecná čeština) is labelled where learners
-  will hear it. All content is marked as not yet native-reviewed until it is.
-- **Real grammar explanations** for English speakers: a page for each of the
-  seven cases, full declension tables with colour-coded endings, and a verb
-  track (conjugation classes, aspect, motion, reflexives, modals, imperative,
-  conditional) with a searchable verb lookup.
-- **Typed answers that explain mistakes.** Diacritics are tolerated (flagged)
-  by default, and wrong answers say *why* ("After do, use the genitive: do Prahy").
-- **Spaced repetition (FSRS)** scheduled from the learner's actual answers.
-- **The whole alphabet**: all 42 letters with sounds, letter names and the
-  Czech phone-spelling alphabet, plus practice in reading rules and in
-  spelling names and e-mail addresses.
-- **Guides to life in Czechia**: Czech culture, history and holidays (with
-  holiday phrases to practise), and a complete guide to Prague's public
-  transport with the Czech signs and announcements you'll meet.
+  what you can do: can-do goals passed at each station, stamped tickets and
+  missions done in real life.
+- **The case lens.** Underlined endings in lessons can be tapped: the case
+  (number, name and colour), *why* it's used here, and the model noun (vzor) it
+  follows. Every annotated form is checked against generated declensions.
+- **Cases by function, in order of usefulness** (nominative → accusative →
+  locative → genitive → instrumental → dative → vocative), with early
+  survival phrases flagged as "learn it as a phrase for now".
+- **Vzory, aspect pairs, motion verbs, numbers**: each model noun has a page
+  and a drill; aspect is taught in pairs; motion verbs live in the transit guide;
+  *1 pivo, 2 piva, 5 piv* is its own skill.
+- **Vykání and tykání** as a social skill, including *Můžeme si tykat?*
+- **Spoken Czech**: "how Pražáci actually say it" notes (*dobrej, mlíko, seš*).
+- **Typed answers that explain mistakes**: the wrong ending underlined, the
+  right one shown, and the case lens explaining why.
+- **Spaced repetition (FSRS)** for words, exercises, *ending patterns* and
+  *case uses*.
+- **Pronunciation with real speakers only** for core sounds (recordings pending:
+  see [docs/AUDIO.md](docs/AUDIO.md)).
+- **Today's name day** (*Dnes má svátek…*) on the home screen.
+- **Guides linked to lessons**: Doprava (Prague transport), Kultura (culture,
+  history, holidays) and Zabydlení (settling in), each linking the lessons that
+  teach their Czech.
 
 Live: https://zkrukoff.github.io/Czech-for-english-speakers/ (moving to
 `https://zkrukoff.github.io/prazak/` when the repo is renamed; see
@@ -42,24 +49,31 @@ The redesign is planned in [docs/PLAN.md](docs/PLAN.md), from the brief in
 
 ## Course
 
-| | Unit | Situations |
-|---|---|---|
-| | **Alphabet** | Letters and sounds, reading rules, spelling on the phone |
-| 1 | Meeting people at work | First days in the office: greetings, ty/vy, introductions, where you're from, addressing people |
-| 2 | Coffee and lunch near the office | Ordering, the daily lunch menu, prices, the bill, meal vouchers |
-| 3 | Getting around and commuting | Directions, trams and trains, where you are, tickets and passes |
-| 4 | People at work | Appearance, personality, family and age, introducing your team |
+Linka A, west to east (station: content):
 
-The grammar reference (seven cases, declension tables) and the verb track
-(ten topics, 80+ verbs) are available at any time.
+| # | Station | Content |
+|---|---|---|
+| 1 | Nemocnice Motol | Pronunciation and the alphabet |
+| 2 | Petřiny | Unit 1 · Meeting people at work |
+| 3 | Nádraží Veleslavín | Unit 2 · Coffee and lunch near the office |
+| 4 | Bořislavka | Unit 3 · Getting around and commuting |
+| 5 | Dejvická | Unit 4 · People at work |
+| 6 | Hradčanská | Unit 5 · Vy, or ty? |
+| 7–8 | Malostranská, Staroměstská | *výluka*: still being written |
+| 9–10 | Můstek, Muzeum | **Václavák**: review, then the A1 can-do check |
+| 11–17 | Náměstí Míru … Depo Hostivař | *výluka*; Depo Hostivař is the A2 check |
+
+Lines B and C are on the map but not yet in service. The grammar reference
+(cases, vzory, aspect pairs, numbers) and the verb lookup are available at any time.
 
 | Guide | Contents |
 |---|---|
-| **Czech culture and traditions** | Everyday life and work (greetings, titles, e-mails, name days, homes, humour); history from Great Moravia to the EU and where to see it in Prague; all 13 public holidays, Christmas and Easter traditions; phrase practice for each |
-| **Getting around Prague** | Metro, trams, buses, trolleybuses, trains, ferries, funicular, night lines, the airport; tickets, validation, inspectors and etiquette; signs and announcements in Czech; station names in their declined forms; journey planning and closures |
+| **Kultura**: Czech culture and traditions | Everyday life and work, history and where to see it in Prague, holidays; phrase practice |
+| **Doprava**: Getting around Prague | The metro map, tickets, signs and announcements, motion verbs and aspect in context |
+| **Zabydlení**: Settling in | The flat, offices, bank and bills, doctors and pharmacies, post; no legal advice |
 
-The transport guide's prices and lines were checked against pid.cz in
-November 2026 and link to their sources; re-check them yearly.
+Transport prices, free travel and the Petřín funicular were checked against
+pid.cz on 17 November 2026. Re-check them yearly.
 
 Everything runs in the browser. Learner data is stored locally in IndexedDB;
 there is no backend and no account.
@@ -100,34 +114,36 @@ paid GitHub plan; on a free plan, make the repository public.)
 
 ## Design
 
-The look, tone and interaction rules are in **[docs/DESIGN.md](docs/DESIGN.md)**.
-The frame takes its identity from Prague: the metro line colours, the
-"bubble" wall panels of the metro stations, departure boards, units drawn as
-metro lines with lessons as stops, and a bold display typeface. The learning
-itself stays calm: Czech in its own serif, colour for grammar only in tables,
-light and dark themes, and full support for reduced motion.
-
-Interactive pieces: a scroll-driven history timeline (culture guide) and an
-interactive metro map with all 61 stations (transport guide).
+The design system, its rules and its tests are in **[docs/DESIGN.md](docs/DESIGN.md)**,
+and everything is visible at **`/styleguide`**: tokens (in one file, enforced
+by a no-hex test), four Czech-complete fonts (tested with the pangram), contrast
+checked in both themes (*noční tramvaj* is the dark mode), the case lens, the
+strip map, stamps and tickets. Phone first (375 px), keyboard accessible,
+reduced-motion safe, Lighthouse accessibility 100.
 
 ## Project layout
 
 ```
-content/              course content (JSON + Markdown), incl. alphabet/ and guides/. See content/SCHEMA.md
-docs/DESIGN.md        design guide
-scripts/              build helpers (dark-mode palette generator)
-public/audio/         recorded audio (optional, replaces text-to-speech per item)
+content/              course content (JSON + Markdown). See content/SCHEMA.md
+  lines/              the course map (lines, stations, milestones)
+  lexicon/            nouns for the case lens
+  grammar/            case pages, tables, functions.json (why a case is used)
+  calendar/           name days (bundled, with source and licence)
+  audio/              manifest of real-speaker recordings
+docs/                 brief, plan, design system, audio guide
+scripts/              pid_stations.py: re-check stations against PID open data
+public/audio/         recordings listed in content/audio/manifest.json
 src/
-  content/            schemas (zod), loader, cross-reference checks
+  content/            schemas (zod), loader, cross-reference and lens checks
+  lib/lens/           lens markup parser, declension generator, SRS keys
+  lib/drills/         number and vzor drills generated from the lexicon
   lib/answers/        answer patterns and answer checking
   lib/srs/            FSRS scheduler wrapper, review items
-  lib/progress/       mastery calculation
-  lib/audio/          speech abstraction (Web Speech now, recordings later)
-  lib/verbs.ts        verb form generation and search
-  db/                 IndexedDB (Dexie): settings, answers, review cards, progress
-  components/         shared UI (tables, markdown, badges…)
-  features/           pages: lessons, exercises, grammar, verbs, review, progress, settings
-tests/                Vitest
+  db/                 IndexedDB (Dexie v2): progress, reviews, profile, missions, stamps
+  components/         design-system components (ui/, icons/, brand/)
+  features/           screens: home, line, onboarding, lessons, lens, review,
+                      grammar, verbs, guides, progress (wallet), settings, styleguide
+tests/                Vitest (content, lens, contrast, fonts, no-hex, migration, progress survival…)
 ```
 
 ## How to add a lesson

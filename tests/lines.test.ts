@@ -43,7 +43,8 @@ describe('lines.json (course map)', () => {
   it('puts every unit at a station, in course order, with pronunciation first', () => {
     const a = course.lines[0]!.stops;
     expect(a[0]!.kind).toBe('pronunciation');
-    expect(course.units.map((u) => course.stopByUnit.get(u.id)!.position)).toEqual([2, 3, 4, 5]);
+    expect(course.units.map((u) => course.stopByUnit.get(u.id)!.position)).toEqual([2, 3, 4, 5, 6]);
+    expect(course.stopByUnit.get('u05')!.stationInfo.name).toBe('Hradčanská');
   });
 
   it('has the Václavák double milestone: review at Můstek, A1 check at Muzeum', () => {

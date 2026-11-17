@@ -112,19 +112,19 @@
     "lines": [
       {
         "speaker": "Kateřina",
-        "cs": "Tak co, jak se ti líbí nová práce?",
+        "cs": "Tak co, jak se ti líbí nová [[práce|práce|nom|subject]]?",
         "en": "So, how do you like the new job?",
         "nativeReviewed": false
       },
       {
         "speaker": "Sarah",
-        "cs": "Moc. Kolegové jsou milí a pomáhají mi s češtinou.",
+        "cs": "Moc. [[Kolegové|kolega|nom.pl|subject]] jsou milí a pomáhají mi s [[češtinou|čeština|ins|with-s]].",
         "en": "A lot. My colleagues are nice and they help me with my Czech.",
         "nativeReviewed": false
       },
       {
         "speaker": "Kateřina",
-        "cs": "A jaký je tvůj šéf?",
+        "cs": "A jaký je tvůj [[šéf|šéf|nom|subject]]?",
         "en": "And what's your boss like?",
         "nativeReviewed": false
       },
@@ -136,7 +136,7 @@
       },
       {
         "speaker": "Kateřina",
-        "cs": "To zní dobře. Můj šéf je strašně náročný.",
+        "cs": "To zní dobře. Můj [[šéf|šéf|nom|subject]] je strašně náročný.",
         "en": "That sounds good. My boss is terribly demanding.",
         "spoken": {
           "form": "strašně",
@@ -305,7 +305,7 @@
       "context": [
         {
           "speaker": "Kateřina",
-          "cs": "Můj šéf je strašně náročný.",
+          "cs": "Můj [[šéf|šéf|nom|subject]] je strašně náročný.",
           "en": "My boss is terribly demanding."
         }
       ],

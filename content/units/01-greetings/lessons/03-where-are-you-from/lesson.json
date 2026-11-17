@@ -5,9 +5,8 @@
     "u01-g3"
   ],
   "explanation": "explanation.md",
-  "grammarRefs": [
-    "case:genitive"
-  ],
+  "grammarRefs": [],
+  "grammarPreview": ["case:genitive"],
   "nativeReviewed": false,
   "vocab": [
     {
@@ -142,13 +141,13 @@
       },
       {
         "speaker": "Sam",
-        "cs": "Jsem z Anglie, z Manchesteru. A ty? Jsi z Prahy?",
+        "cs": "Jsem z [[Anglie|Anglie|gen|after-z]], z [[Manchesteru|Manchester|gen|after-z]]. A ty? Jsi z [[Prahy|Praha|gen|after-z]]?",
         "en": "I'm from England, from Manchester. And you? Are you from Prague?",
         "nativeReviewed": false
       },
       {
         "speaker": "Petra",
-        "cs": "Ne, jsem z Brna, ale bydlím v Praze.",
+        "cs": "Ne, jsem z [[Brna|Brno|gen|after-z]], ale bydlím v [[Praze|Praha|loc|location-v-na]].",
         "en": "No, I'm from Brno, but I live in Prague.",
         "nativeReviewed": false
       },
@@ -160,13 +159,13 @@
       },
       {
         "speaker": "Petra",
-        "cs": "Jsem učitelka. Učím angličtinu. A ty?",
+        "cs": "Jsem [[učitelka|učitelka|nom|naming]]. Učím [[angličtinu|angličtina|acc|object]]. A ty?",
         "en": "I'm a teacher. I teach English. And you?",
         "nativeReviewed": false
       },
       {
         "speaker": "Sam",
-        "cs": "Já jsem programátor. Pracuju z domu.",
+        "cs": "Já jsem programátor. Pracuju z [[domu|dům|gen|after-z]].",
         "en": "I'm a programmer. I work from home.",
         "nativeReviewed": false
       },
@@ -182,7 +181,7 @@
     {
       "id": "u01-l03-e1",
       "type": "fillEnding",
-      "prompt": "Jsem z Kanad___.",
+      "prompt": "Jsem z [[Kanad___|Kanada|gen|after-z]].",
       "base": "Kanada",
       "en": "I'm from Canada.",
       "answers": [
@@ -203,7 +202,7 @@
     {
       "id": "u01-l03-e2",
       "type": "fillEnding",
-      "prompt": "Petra je z Brn___.",
+      "prompt": "Petra je z [[Brn___|Brno|gen|after-z]].",
       "base": "Brno",
       "en": "Petra is from Brno.",
       "answers": [
@@ -225,7 +224,7 @@
     {
       "id": "u01-l03-e3",
       "type": "fillEnding",
-      "prompt": "Jsem z Angli___.",
+      "prompt": "Jsem z [[Angli___|Anglie|gen|after-z]].",
       "base": "Anglie",
       "en": "I'm from England.",
       "answers": [
@@ -341,7 +340,7 @@
       "id": "u01-l03-e8",
       "type": "conjugate",
       "verb": "pracovat",
-      "prompt": "___ z domu.",
+      "prompt": "___ z [[domu|dům|gen|after-z]].",
       "en": "I work from home.",
       "person": "1sg",
       "answers": [
