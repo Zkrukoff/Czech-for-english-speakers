@@ -13,19 +13,19 @@ const a11y = (title: string) => ({ role: 'img', 'aria-label': title });
 /* ---------- A · Pantograf: monoline; the háček is a tram pantograph on its wire ---------- */
 export function WordmarkPantograf({ className = 'h-12 w-auto', title = 'Pražák' }: Props) {
   return (
-    <svg viewBox="0 0 216 92" className={className} {...a11y(title)}>
+    <svg viewBox="0 0 240 92" className={className} {...a11y(title)}>
       <g fill="none" stroke="currentColor" strokeWidth="8.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M11 80.5V15.8c8.2-1.2 17.4-1.6 24.8.6 9.2 2.8 12.6 9.6 12.2 17.1-.5 8.9-7.2 15.4-17.3 16-6.4.4-13 .2-19.4-.4" />
         <path d="M62 80.8V45.4M62.3 58.1c3.4-8.6 9.6-13 19.3-12.6" />
         <path d="M118.4 56.7c-1.7-7.5-7.6-11.8-15.4-11.6-10.4.3-16.4 8.8-16.2 18.4.2 10.2 6.6 17.8 16.4 17.6 8.4-.1 14.2-6.4 15.4-14.6M118.6 45.6v35.1" />
         <path d="M133.3 46.1h27.4L133.9 80.2h28" />
-        <g transform="translate(-14 0)">
+        <g transform="translate(13 0)">
           <path d="M190.4 56.7c-1.7-7.5-7.6-11.8-15.4-11.6-10.4.3-16.4 8.8-16.2 18.4.2 10.2 6.6 17.8 16.4 17.6 8.4-.1 14.2-6.4 15.4-14.6M190.6 45.6v35.1" />
           <path d="M204.4 11.4v69.4M221 45.6 205.4 63.2M211.6 57.4l11.8 23.4" />
         </g>
       </g>
       {/* acute on á */}
-      <path d="M159.8 34.6 170 20.4" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" />
+      <path d="M186.8 34.6 197 20.4" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" />
       {/* háček as pantograph: the contact bar on the wire, and the folding arm */}
       <g fill="none" stroke="var(--line-c)" strokeLinecap="round" strokeLinejoin="round">
         <path d="M128 9.6h37.6" strokeWidth="3" />
