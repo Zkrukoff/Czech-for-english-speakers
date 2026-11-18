@@ -49,15 +49,24 @@
     "exercises": [
       {
         "id": "u05-c1",
-        "type": "question",
+        "type": "multipleChoice",
         "prompt": "A police officer asks for your ID. **vy** or **ty**?",
+        "options": [
+          "vy",
+          "ty"
+        ],
+        "optionsLang": "cs",
         "answers": [
           "vy"
         ],
-        "answerLang": "cs",
-        "goalId": "u05-g1",
+        "hints": [
+          {
+            "wrong": "ty",
+            "explain": "A police officer is a stranger doing their job: always vy."
+          }
+        ],
         "why": "A police officer is a stranger doing their job: always vy.",
-        "hints": [],
+        "goalId": "u05-g1",
         "skills": [
           "vocab:v-vykat"
         ],
@@ -65,15 +74,24 @@
       },
       {
         "id": "u05-c2",
-        "type": "question",
+        "type": "multipleChoice",
         "prompt": "Your neighbour's ten-year-old son says hello. **vy** or **ty**?",
+        "options": [
+          "vy",
+          "ty"
+        ],
+        "optionsLang": "cs",
         "answers": [
           "ty"
         ],
-        "answerLang": "cs",
-        "goalId": "u05-g1",
+        "hints": [
+          {
+            "wrong": "vy",
+            "explain": "Children get ty from everyone, neighbours included."
+          }
+        ],
         "why": "Children get ty from everyone.",
-        "hints": [],
+        "goalId": "u05-g1",
         "skills": [
           "vocab:v-tykat"
         ],

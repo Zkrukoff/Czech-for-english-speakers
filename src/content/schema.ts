@@ -233,6 +233,8 @@ export const ReadRealExerciseSchema = z.object({
   /** The question, in English. */
   prompt: z.string().min(1),
   answerLang: z.enum(['cs', 'en']).default('en'),
+  /** When set, answered by picking one (knowledge questions, B11); every wrong option needs a hint. */
+  options: z.array(z.string().min(1)).min(2).max(5).optional(),
 });
 
 /**

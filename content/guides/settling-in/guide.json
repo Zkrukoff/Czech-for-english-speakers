@@ -194,15 +194,28 @@
         },
         {
           "id": "st-5",
-          "type": "question",
-          "prompt": "An advert says **3+kk**. How many rooms, and is the kitchen separate? Type: **3, no** or **3, yes**.",
-          "answers": [
-            "3[,] no",
-            "three[,] no"
+          "type": "multipleChoice",
+          "prompt": "A flat advert says **3+kk**. What does it mean?",
+          "options": [
+            "3 rooms, with a kitchenette in one of them",
+            "3 rooms plus a separate kitchen",
+            "3 bedrooms plus a living room"
           ],
-          "answerLang": "en",
+          "optionsLang": "en",
+          "answers": [
+            "3 rooms, with a kitchenette in one of them"
+          ],
+          "hints": [
+            {
+              "wrong": "3 rooms plus a separate kitchen",
+              "explain": "That's 3+1: the +1 is a separate kitchen. kk is kuchyňský kout, a kitchenette."
+            },
+            {
+              "wrong": "3 bedrooms plus a living room",
+              "explain": "The number counts every room, the living room included: 3+kk is three rooms in all."
+            }
+          ],
           "why": "3+kk: three rooms, with a kitchenette (kk) in one of them, so no separate kitchen. 3+1 would have a separate kitchen.",
-          "hints": [],
           "skills": [
             "guide:settling-in"
           ],

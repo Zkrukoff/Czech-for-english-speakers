@@ -9,25 +9,37 @@
       "id": "network",
       "title": "How it works",
       "file": "how-it-works.md",
-      "lessons": ["u03-l01", "u03-l02", "u03-l03"]
+      "lessons": [
+        "u03-l01",
+        "u03-l02",
+        "u03-l03"
+      ]
     },
     {
       "id": "tickets",
       "title": "Tickets and rules",
       "file": "tickets.md",
-      "lessons": ["u03-l04", "u02-l03"]
+      "lessons": [
+        "u03-l04",
+        "u02-l03"
+      ]
     },
     {
       "id": "signs",
       "title": "Signs and announcements",
       "file": "signs.md",
-      "lessons": ["u03-l01"]
+      "lessons": [
+        "u03-l01"
+      ]
     },
     {
       "id": "planning",
       "title": "Planning and help",
       "file": "planning.md",
-      "lessons": ["u03-l02", "u03-l03"]
+      "lessons": [
+        "u03-l02",
+        "u03-l03"
+      ]
     }
   ],
   "phrasebook": [
@@ -284,24 +296,29 @@
         },
         {
           "id": "tr-h4",
-          "type": "question",
-          "prompt": "You hear **\"Zastávka na znamení.\"** What do you have to do if you want to get off?",
-          "cs": "Zastávka na znamení.",
-          "answerLang": "en",
-          "answers": [
-            "press the button",
-            "[I |you ]{press|push} the [stop ]button",
-            "ring the bell",
-            "press [the ]stop",
-            "request the stop"
+          "type": "multipleChoice",
+          "prompt": "On a bus you hear **\"Pro výstup stiskněte tlačítko.\"** What do you do if you want to get off?",
+          "cs": "Pro výstup stiskněte tlačítko.",
+          "options": [
+            "Press the stop button",
+            "Nothing: the bus stops anyway",
+            "Tell the driver"
           ],
-          "why": "zastávka na znamení = request stop: the tram or bus only stops if someone presses the button (or waits at the stop with a raised hand).",
+          "optionsLang": "en",
+          "answers": [
+            "Press the stop button"
+          ],
           "hints": [
             {
-              "wrong": "nothing",
-              "explain": "At a request stop the vehicle won't stop unless you press the button."
+              "wrong": "Nothing: the bus stops anyway",
+              "explain": "Not any more: since 29 June 2024 every bus and trolleybus stop in Prague is a request stop (na znamení), so the bus only stops if someone wants it to."
+            },
+            {
+              "wrong": "Tell the driver",
+              "explain": "No need: pressing the button tells the driver."
             }
           ],
+          "why": "\"Pro výstup stiskněte tlačítko\" = press the button to get off. Since 29 June 2024 all bus and trolleybus stops are request stops, and this announcement replaced \"příští zastávka je na znamení\". (pid.cz, checked 18 Nov 2026.)",
           "skills": [
             "guide:prague-transport"
           ],
@@ -333,22 +350,29 @@
         },
         {
           "id": "tr-h6",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "A yellow poster at your stop says **výluka**. What does it mean?",
           "cs": "Výluka",
-          "answerLang": "en",
+          "options": [
+            "A planned closure or diversion",
+            "A strike",
+            "A delay"
+          ],
+          "optionsLang": "en",
           "answers": [
-            "[a ]planned closure",
-            "[a ]closure",
-            "[a ]diversion",
-            "[the ]line is closed",
-            "planned works",
-            "engineering works",
-            "disruption",
-            "closed"
+            "A planned closure or diversion"
+          ],
+          "hints": [
+            {
+              "wrong": "A strike",
+              "explain": "A strike is stávka. Výluka is planned works, with a replacement service (náhradní doprava)."
+            },
+            {
+              "wrong": "A delay",
+              "explain": "A delay is zpoždění. Výluka is a planned closure or diversion."
+            }
           ],
           "why": "výluka = a planned closure or diversion; náhradní doprava = the replacement service.",
-          "hints": [],
           "skills": [
             "guide:prague-transport"
           ],
@@ -371,19 +395,29 @@
         },
         {
           "id": "tr-h8",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "An electronic board says **\"za 4 min\"**. When does the tram leave?",
           "cs": "22  Bílá Hora  za 4 min",
-          "answerLang": "en",
+          "options": [
+            "In 4 minutes",
+            "4 stops away",
+            "Every 4 minutes"
+          ],
+          "optionsLang": "en",
           "answers": [
-            "in 4 minutes",
-            "in four minutes",
-            "4 minutes",
-            "four minutes",
-            "in 4 min"
+            "In 4 minutes"
+          ],
+          "hints": [
+            {
+              "wrong": "4 stops away",
+              "explain": "Stops are zastávky. za + a time means \"in\": za 4 minuty, za hodinu."
+            },
+            {
+              "wrong": "Every 4 minutes",
+              "explain": "Every 4 minutes would be každé 4 minuty. za 4 min = in 4 minutes."
+            }
           ],
           "why": "za + time = in (time from now): za 4 minuty, za hodinu.",
-          "hints": [],
           "skills": [
             "guide:prague-transport"
           ],
@@ -418,11 +452,25 @@
           },
           "prompt": "You're on Line A. What can you do at the next station?",
           "answerLang": "en",
+          "options": [
+            "Change to line B",
+            "Line B is closed",
+            "It's the last stop"
+          ],
           "answers": [
-            "{change|transfer|switch} to [the] [line] B[ line]"
+            "Change to line B"
+          ],
+          "hints": [
+            {
+              "wrong": "Line B is closed",
+              "explain": "A closure would be výluka. Přestup na linku B = change to line B."
+            },
+            {
+              "wrong": "It's the last stop",
+              "explain": "The last stop is konečná. Přestup is a transfer."
+            }
           ],
           "why": "Přestup na linku B: change to line B. Přestup is a transfer; na linku is na + accusative (where to).",
-          "hints": [],
           "skills": [
             "guide:prague-transport"
           ],
@@ -439,11 +487,25 @@
           },
           "prompt": "Where does this sign send you?",
           "answerLang": "en",
+          "options": [
+            "The exit",
+            "The entrance",
+            "A transfer to another line"
+          ],
           "answers": [
-            "{[the] exit|[the] way out|out}"
+            "The exit"
+          ],
+          "hints": [
+            {
+              "wrong": "The entrance",
+              "explain": "The entrance is vstup (or vchod). Výstup, with the ý, is the way out."
+            },
+            {
+              "wrong": "A transfer to another line",
+              "explain": "A transfer is přestup. Výstup is the exit."
+            }
           ],
           "why": "Výstup is the exit (literally \"getting out\"). Its opposite at the platform is nástup, getting on.",
-          "hints": [],
           "skills": [
             "guide:prague-transport"
           ],
@@ -458,16 +520,28 @@
       "exercises": [
         {
           "id": "tr-n1",
-          "type": "question",
-          "prompt": "Which metro line is **yellow**? (A, B or C)",
-          "answerLang": "en",
-          "answers": [
+          "type": "multipleChoice",
+          "prompt": "Which metro line is **yellow**?",
+          "options": [
+            "A",
             "B",
-            "line B",
-            "béčko"
+            "C"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "B"
+          ],
+          "hints": [
+            {
+              "wrong": "A",
+              "explain": "A is green."
+            },
+            {
+              "wrong": "C",
+              "explain": "C is red."
+            }
           ],
           "why": "A is green, B is yellow, C is red.",
-          "hints": [],
           "skills": [
             "guide:prague-transport"
           ],
@@ -475,16 +549,28 @@
         },
         {
           "id": "tr-n2",
-          "type": "question",
-          "prompt": "Which metro line is **red**? (A, B or C)",
-          "answerLang": "en",
+          "type": "multipleChoice",
+          "prompt": "Which metro line is **red**?",
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "optionsLang": "en",
           "answers": [
-            "C",
-            "line C",
-            "céčko"
+            "C"
+          ],
+          "hints": [
+            {
+              "wrong": "A",
+              "explain": "A is green."
+            },
+            {
+              "wrong": "B",
+              "explain": "B is yellow."
+            }
           ],
           "why": "A is green, B is yellow, C is red.",
-          "hints": [],
           "skills": [
             "guide:prague-transport"
           ],
@@ -492,13 +578,18 @@
         },
         {
           "id": "tr-n3",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "At which station can you change between lines **A and B**?",
-          "answerLang": "cs",
+          "options": [
+            "Můstek",
+            "Muzeum",
+            "Florenc",
+            "Náměstí Republiky"
+          ],
+          "optionsLang": "cs",
           "answers": [
             "Můstek"
           ],
-          "why": "Můstek (A/B), Muzeum (A/C), Florenc (B/C).",
           "hints": [
             {
               "wrong": "Muzeum",
@@ -507,8 +598,13 @@
             {
               "wrong": "Florenc",
               "explain": "Florenc connects B and C. A and B meet at Můstek."
+            },
+            {
+              "wrong": "Náměstí Republiky",
+              "explain": "Náměstí Republiky is on line B only, between Můstek and Florenc."
             }
           ],
+          "why": "Můstek (A/B), Muzeum (A/C), Florenc (B/C).",
           "skills": [
             "guide:prague-transport"
           ],
@@ -516,19 +612,33 @@
         },
         {
           "id": "tr-n4",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "At which station can you change between lines **A and C**?",
-          "answerLang": "cs",
+          "options": [
+            "Muzeum",
+            "Můstek",
+            "Florenc",
+            "Hlavní nádraží"
+          ],
+          "optionsLang": "cs",
           "answers": [
             "Muzeum"
           ],
-          "why": "Muzeum (A/C), Můstek (A/B), Florenc (B/C).",
           "hints": [
             {
               "wrong": "Můstek",
               "explain": "Můstek connects A and B. A and C meet at Muzeum."
+            },
+            {
+              "wrong": "Florenc",
+              "explain": "Florenc connects B and C. A and C meet at Muzeum."
+            },
+            {
+              "wrong": "Hlavní nádraží",
+              "explain": "The main station is on line C only, one stop from Muzeum."
             }
           ],
+          "why": "Muzeum (A/C), Můstek (A/B), Florenc (B/C).",
           "skills": [
             "guide:prague-transport"
           ],
@@ -536,14 +646,33 @@
         },
         {
           "id": "tr-n5",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "At which station can you change between lines **B and C**?",
-          "answerLang": "cs",
+          "options": [
+            "Florenc",
+            "Můstek",
+            "Muzeum",
+            "Náměstí Republiky"
+          ],
+          "optionsLang": "cs",
           "answers": [
             "Florenc"
           ],
+          "hints": [
+            {
+              "wrong": "Můstek",
+              "explain": "Můstek connects A and B. B and C meet at Florenc."
+            },
+            {
+              "wrong": "Muzeum",
+              "explain": "Muzeum connects A and C. B and C meet at Florenc."
+            },
+            {
+              "wrong": "Náměstí Republiky",
+              "explain": "Náměstí Republiky is on line B only, one stop short of Florenc."
+            }
+          ],
           "why": "Florenc (B/C), Můstek (A/B), Muzeum (A/C).",
-          "hints": [],
           "skills": [
             "guide:prague-transport"
           ],
@@ -551,19 +680,28 @@
         },
         {
           "id": "tr-n6",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "Night trams have numbers in which range?",
-          "answerLang": "en",
-          "answers": [
-            "91–99",
-            "91-99",
-            "91 to 99",
-            "90s",
-            "the 90s",
-            "91 99"
+          "options": [
+            "90–99",
+            "901 and up",
+            "There are no night trams"
           ],
-          "why": "Night trams are 91–99 and all meet at Lazarská; night buses are 901–915.",
-          "hints": [],
+          "optionsLang": "en",
+          "answers": [
+            "90–99"
+          ],
+          "hints": [
+            {
+              "wrong": "901 and up",
+              "explain": "Those are the night buses. Night trams are 90–99."
+            },
+            {
+              "wrong": "There are no night trams",
+              "explain": "There are: night trams 90–99 run all night, with night buses from 901."
+            }
+          ],
+          "why": "Night trams are 90–99; night buses are numbered from 901. (pid.cz, checked 18 Nov 2026.)",
           "skills": [
             "guide:prague-transport"
           ],
@@ -571,21 +709,33 @@
         },
         {
           "id": "tr-n7",
-          "type": "question",
-          "prompt": "Which trolleybus connects the airport with metro line A (Nádraží Veleslavín)?",
-          "answerLang": "en",
-          "answers": [
+          "type": "multipleChoice",
+          "prompt": "Which line goes from the airport to metro line A (Nádraží Veleslavín)?",
+          "options": [
             "59",
-            "fifty-nine",
-            "line 59"
+            "100",
+            "AE",
+            "910"
           ],
-          "why": "Trolleybus 59 (it replaced bus 119). Bus 100 goes to Zličín on line B; night bus 910 runs when the metro is closed.",
+          "optionsLang": "en",
+          "answers": [
+            "59"
+          ],
           "hints": [
             {
-              "wrong": "119",
-              "explain": "Bus 119 no longer runs: trolleybus 59 replaced it."
+              "wrong": "100",
+              "explain": "Line 100 goes from the airport to Zličín, on metro line B."
+            },
+            {
+              "wrong": "AE",
+              "explain": "The Airport Express goes to the main station (Hlavní nádraží: line C and trains) and has its own fare, so ordinary PID tickets aren't valid on it."
+            },
+            {
+              "wrong": "910",
+              "explain": "910 is a night line (to Na Beránku), for when the metro is closed."
             }
           ],
+          "why": "Line 59: Letiště ⇆ Nádraží Veleslavín, then metro line A. About 35 minutes to the centre on an ordinary ticket. (pid.cz, checked 18 Nov 2026.)",
           "skills": [
             "guide:prague-transport"
           ],
@@ -593,19 +743,33 @@
         },
         {
           "id": "tr-n8",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "You have a **paper** ticket. Where do you validate it before taking the metro?",
-          "answerLang": "en",
-          "answers": [
-            "[at the ]entrance",
-            "[at the ]entrance to the platforms",
-            "before the escalators",
-            "[in the ]{machine|validator} at the entrance",
-            "before going down",
-            "at the top of the escalators"
+          "options": [
+            "In a validator before you go into the metro",
+            "On the platform",
+            "On the train",
+            "At the exit"
           ],
-          "why": "In the metro, validate at the entrance to the platforms, before the escalators. On trams and buses, validate on board.",
-          "hints": [],
+          "optionsLang": "en",
+          "answers": [
+            "In a validator before you go into the metro"
+          ],
+          "hints": [
+            {
+              "wrong": "On the platform",
+              "explain": "By the platform you're already in the part of the metro where you need a validated ticket. Validate before you go in."
+            },
+            {
+              "wrong": "On the train",
+              "explain": "Too late: a paper ticket has to be validated before you enter the metro."
+            },
+            {
+              "wrong": "At the exit",
+              "explain": "Much too late: you need a validated ticket the whole time you're in the metro."
+            }
+          ],
+          "why": "A paper ticket from a machine has to be validated (označit) before you enter the metro. Tickets from the touch-screen terminals already carry a time stamp. (pid.cz, checked 18 Nov 2026.)",
           "skills": [
             "guide:prague-transport"
           ],
@@ -1015,6 +1179,6 @@
       "url": "https://www.prg.aero/en/public-transport-buses-to-airport"
     }
   ],
-  "lastChecked": "17 November 2026 (prices, free travel and the Petřín funicular, against pid.cz)",
+  "lastChecked": "18 November 2026 (prices, free travel, the Petřín funicular, night lines, airport links, request stops and validation, against pid.cz)",
   "nativeReviewed": false
 }

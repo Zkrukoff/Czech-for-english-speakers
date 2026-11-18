@@ -682,11 +682,11 @@ export function loadContent(files: ContentFiles): LoadResult {
       }
     }
     if (exercise.type === 'minimalPair') mustBeOptions(exercise.pair, 'pair');
-    if (exercise.type === 'multipleChoice') {
-      mustBeOptions(exercise.options, 'options');
-      if (new Set(exercise.options).size !== exercise.options.length) errors.push(`${where}, exercise ${exId}: duplicate options`);
+    if (exercise.type === 'multipleChoice' || (exercise.type === 'readReal' && exercise.options)) {
+      mustBeOptions(exercise.options!, 'options');
+      if (new Set(exercise.options).size !== exercise.options!.length) errors.push(`${where}, exercise ${exId}: duplicate options`);
       const explained = new Set(exercise.hints.map((h) => h.wrong));
-      for (const o of exercise.options) {
+      for (const o of exercise.options!) {
         if (!exercise.answers.includes(o) && !explained.has(o)) errors.push(`${where}, exercise ${exId}: wrong option "${o}" needs an explanation in hints`);
       }
     }

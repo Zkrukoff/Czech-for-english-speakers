@@ -840,25 +840,28 @@
       "exercises": [
         {
           "id": "alpha-r1",
-          "type": "question",
-          "prompt": "Which syllable of a Czech word is stressed? (first, second or last)",
-          "answerLang": "en",
-          "answers": [
-            "first[ syllable]",
-            "[the ]first[ one]",
-            "1st"
+          "type": "multipleChoice",
+          "prompt": "Which syllable of a Czech word is stressed?",
+          "options": [
+            "The first",
+            "The second",
+            "The last"
           ],
-          "why": "Czech stress is always on the first syllable: Olomouc = O-lo-mouc. A čárka shows a long vowel, not stress.",
+          "optionsLang": "en",
+          "answers": [
+            "The first"
+          ],
           "hints": [
             {
-              "wrong": "last[ syllable]",
+              "wrong": "The second",
               "explain": "Czech always stresses the first syllable, even in long words."
             },
             {
-              "wrong": "second[ syllable]",
-              "explain": "Czech always stresses the first syllable."
+              "wrong": "The last",
+              "explain": "Czech always stresses the first syllable: O-lo-mouc. A čárka marks a long vowel, not stress."
             }
           ],
+          "why": "Czech stress is always on the first syllable: Olomouc = O-lo-mouc. A čárka shows a long vowel, not stress.",
           "skills": [
             "alphabet"
           ],
@@ -980,18 +983,29 @@
         },
         {
           "id": "alpha-r7",
-          "type": "question",
-          "prompt": "How many vowels are there in this famous tongue-twister? Type a number.",
+          "type": "multipleChoice",
+          "prompt": "How many vowels are there in this famous tongue-twister?",
           "cs": "Strč prst skrz krk.",
-          "answerLang": "en",
-          "answers": [
+          "options": [
             "0",
-            "none",
-            "zero",
-            "no vowels"
+            "1",
+            "4"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "0"
+          ],
+          "hints": [
+            {
+              "wrong": "1",
+              "explain": "None at all: r and l can carry a syllable on their own, as in Brno and vlk."
+            },
+            {
+              "wrong": "4",
+              "explain": "Four syllables, but no vowels: the r in each word does the vowel's job."
+            }
           ],
           "why": "None. \"Strč prst skrz krk\" (Stick a finger through your throat) works because r and l can form syllables on their own, as in Brno and vlk.",
-          "hints": [],
           "skills": [
             "alphabet"
           ],

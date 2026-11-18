@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Card } from '@/components/ui';
 import { RideProgress } from './RideProgress';
 import type { Exercise } from '@/content/schema';
-import { checkAnswer, type CheckResult } from '@/lib/answers/check';
+import { checkAnswer, isChoice, type CheckResult } from '@/lib/answers/check';
 import { recordAttempt, type AttemptContext } from '@/db/progress';
 import { useSettings } from '@/db/settings';
 import { AnswerInput } from './AnswerInput';
@@ -141,13 +141,13 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
               onChoose={(o) => submit(o)}
               render={exercise.type === 'chooseEnding' ? (o) => <>–{o || '∅'}</> : undefined}
             />
-          ) : exercise.type === 'multipleChoice' ? (
+          ) : exercise.type === 'multipleChoice' || (exercise.type === 'readReal' && exercise.options) ? (
             <ChoiceInput
-              options={exercise.options}
+              options={exercise.options!}
               chosen={result ? answer : undefined}
               correct={exercise.answers}
               onChoose={(o) => submit(o)}
-              lang={exercise.optionsLang}
+              lang={exercise.type === 'multipleChoice' ? exercise.optionsLang : exercise.answerLang}
             />
           ) : exercise.type === 'selfCheck' ? (
             <SelfCheckInput reveal={exercise.reveal} disabled={!!result} onAssess={(v) => submit(v)} />
@@ -178,7 +178,7 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
             {index + 1 >= queue.length ? 'Finish' : 'Continue'}
           </button>
         ) : (
-          !SELF_SUBMITTING.has(exercise.type) && (
+          !SELF_SUBMITTING.has(exercise.type) && !isChoice(exercise) && (
             <button type="button" onClick={() => submit()} disabled={!answer.trim()} className="btn btn-primary">
               Check
             </button>

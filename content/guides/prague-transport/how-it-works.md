@@ -5,8 +5,8 @@ Prague's public transport is one integrated network called **PID** (*Pražská i
 | Czech | English | Lines are numbered… |
 |---|---|---|
 | **metro** | underground | A, B, C |
-| **tramvaj** (*tramvaje*) | tram | 1–2 digits by day, **91–99** at night |
-| **autobus** (*autobusy*) | bus | 3 digits by day, **901–915** at night |
+| **tramvaj** (*tramvaje*) | tram | 1–2 digits by day, **90–99** at night |
+| **autobus** (*autobusy*) | bus | 3 digits by day, from **901** at night |
 | **trolejbus** | trolleybus | e.g. **59** to the airport |
 | **vlak** (*esko*) | suburban train | **S** + number (S1, S7…) |
 | **přívoz** | river ferry | **P** + number |
@@ -37,19 +37,19 @@ The metro runs from about **5:00 to midnight**. Trains come every 2–3 minutes 
 
 Trams are the backbone of the city centre and the best way to see it. Buses serve the outer districts. At each stop (*zastávka*) a board shows the stop name, the lines and a timetable (*jízdní řád*); bigger stops have electronic departure boards (*odjezdy*).
 
-Many stops are **request stops** (*zastávka na znamení*): press the button inside the vehicle to get off, or raise your hand at the stop so the driver stops for you.
+Since 29 June 2024 **every bus and trolleybus stop** in Prague is a **request stop** (*zastávka na znamení*), and many tram stops are too: press the button inside the vehicle to get off. Buses now announce it as ***Pro výstup stiskněte tlačítko*** ("press the button to get off"). *(pid.cz)*
 
 ## At night
 
-When the metro closes, **night trams 91–99** take over, running about every 30 minutes (more often on Friday and Saturday nights). All night trams meet at **Lazarská**, in the centre, so you can change there. **Night buses 901–915** cover the outer districts.
+When the metro closes, **night trams 90–99** take over, and **night buses**, numbered from **901**, cover the rest of the city. *(pid.cz night timetables, checked 18 November 2026.)*
 
 ## To and from the airport
 
 Václav Havel Airport is connected to the metro by:
 
-- **trolleybus 59** to **Nádraží Veleslavín** (line A), the quickest way to the centre
+- **line 59** to **Nádraží Veleslavín** (line A), about 35 minutes to the centre
 - **bus 100** to **Zličín** (line B)
-- **night bus 910** when the metro is closed
+- **night lines 907 and 910** when the metro is closed
 
 A **90-minute ticket** covers the whole trip, including the metro. The **Airport Express (AE)** bus to the main station is a separate service with its own fare: PID tickets aren't valid on it.
 
