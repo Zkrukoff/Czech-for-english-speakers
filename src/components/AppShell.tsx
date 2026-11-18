@@ -1,6 +1,7 @@
 import { UpdateNotice } from './UpdateNotice';
 import { NavLink, Outlet, useRouteError } from 'react-router-dom';
 import { contentErrors } from '@/content';
+import { useHashScroll } from '@/lib/useHashScroll';
 import { ContentErrorScreen } from './ContentErrorScreen';
 import { useDueSummary } from '@/db/useDue';
 import { MetroLineStripe } from './brand/Metro';
@@ -28,6 +29,7 @@ function Wordmark() {
 }
 
 export function AppShell({ error = false }: { error?: boolean }) {
+  useHashScroll();
   const due = useDueSummary();
   return (
     <div className="flex min-h-screen flex-col">

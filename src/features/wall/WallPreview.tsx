@@ -10,7 +10,7 @@ export function WallPreview() {
   if (!blocks?.length) return null;
   const { filled, total } = wallCounts(blocks);
   return (
-    <Link to="/wallet" className="card card-link group block p-4">
+    <Link to="/wallet#wall" className="card card-link group block p-4">
       <span className="flex items-center justify-between gap-3">
         <span className="label-board text-ink-3" lang="cs">Tvoje stěna</span>
         <span className="text-sm text-ink-2"><span className="font-semibold tabular-nums text-ink">{filled} / {total}</span> circles</span>

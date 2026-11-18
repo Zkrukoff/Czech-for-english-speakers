@@ -574,7 +574,7 @@ These come out of the items below. I'm listing them first because they change th
 
   If you'd still rather have "7-day pass", I'll check whether PID sells one and, if not, call it something that doesn't pretend to be a product.
 - **A missed day:** the ticket *expires*, and the copy is light: *"Platnost vypršela. It happens: the tram still runs. Validate a new one with one exercise."* The expired ticket goes into the wallet, stamped with its length ("Your longest: 23 days"), so nothing earned is taken away.
-- **Freezes, as planned closures (*výluka*):** you can announce a *výluka* in advance for days you know you'll be away, and a missed day uses one automatically if you have one. You get one per 72-hour tier reached, up to 3 at a time.
+- **Freezes, as planned closures (*výluka*):** you can announce a *výluka* in advance for days you know you'll be away, and a missed day uses one automatically if you have one. You get one per 72-hour tier reached, up to 3 at a time. *(As built: one for every 3 days practised in a row, so a long ticket keeps earning them; still capped at 3.)*
 - **No notifications.** The app has none and won't get any.
 - **Settings:** "Show my ticket" on/off (default: on, if you approve this).
 - **Files:**

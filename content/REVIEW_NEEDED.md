@@ -226,3 +226,12 @@ check first. When an item is confirmed or corrected, remove it here and set
 | wallet, home | *Tvoje stěna* (in the app), *Moje stěna* (on the shared image) | Natural for "your wall" / "my wall"? |
 | shared image | *Linka A · Moje stěna*, *1 stanice / 3 stanice / 5 stanic*, *zatím žádná stanice* | Right plurals? Does "N stanic" read as "N stations done" without a verb? |
 | wall design | "after the Line A wall panels" | The brief credits the panels to Jaroslav Otruba; still unverified, so the app doesn't name him. |
+
+## Round 2 · A7 Ticket streaks
+
+| Where | Text | Question |
+|---|---|---|
+| ticket | *24hodinová jízdenka*, *72hodinová jízdenka*, *Měsíční / Čtvrtletní / Roční kupon* | Product names as on pid.cz (checked 18 Nov 2026); re-check yearly. |
+| ticket | *Označeno.*, *Platí do 04:00*, *Platnost vypršela*, *Neplatná*, *Den 8 · od 10. 11.*, *Výluka.* | Natural on a ticket? |
+| ticket | *výluka* used for a planned day off ("planned works") | Does the joke land for a Czech speaker? |
+| plurals | *1 den / 2 dny / 5 dní*, *1 výluka / 2 výluky / 5 výluk* | Right? |

@@ -13,6 +13,7 @@ import { computeAllMastery, MASTERY_ACCURACY, MASTERY_MIN_ATTEMPTS, MASTERY_WIND
 import { relativeTime } from '@/lib/time';
 import { StationWall } from '@/features/wall/StationWall';
 import { useWall } from '@/features/wall/useWall';
+import { TicketWallet } from '@/features/ticket/TicketWallet';
 
 function WallSection() {
   const blocks = useWall();
@@ -69,7 +70,9 @@ export function ProgressPage() {
 
   return (
     <>
-      <PageHeader title="Ticket wallet" cs="Jízdenky" subtitle="Every finished station gets its ticket stamped. Progress here is what you can do, not how many days in a row you opened the app." />
+      <PageHeader title="Ticket wallet" cs="Jízdenky" subtitle="Every finished station gets its ticket stamped. Your day ticket grows as you practise; when one runs out, it stays here and nothing you earned goes with it." />
+
+      <TicketWallet />
 
       <WallSection />
 

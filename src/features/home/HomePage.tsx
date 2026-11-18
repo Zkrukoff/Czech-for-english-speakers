@@ -11,6 +11,7 @@ import { Today } from './Today';
 import { HolidayPrepBanner } from './HolidayPrepBanner';
 import { RideCard } from './RideCard';
 import { WallPreview } from '@/features/wall/WallPreview';
+import { TicketCard } from '@/features/ticket/TicketCard';
 import { useLinePosition } from './useLinePosition';
 
 /** Home: the line you're riding, where you are, what's next, and today's name day. */
@@ -78,6 +79,7 @@ export function HomePage() {
           </div>
         )}
         <div className="grid min-w-0 gap-5">
+          <TicketCard />
           <RideCard />
           <Link to="/review" className="card card-link group flex items-center gap-4 p-5">
             <IconReview size={32} className="shrink-0" />
@@ -114,7 +116,7 @@ export function HomePage() {
         <section className="mb-12 max-w-2xl">
           <p className="text-lg text-ink-2">
             Short lessons built around your week in Prague: colleagues, lunch near the office, the tram home. Real grammar, answers you type yourself,
-            reviews timed to your mistakes. No streaks, no points: you ride the line, and finished stations get a stamp on your ticket.
+            reviews timed to your mistakes. No points, no leagues, no nagging: you ride the line, finished stations get a stamp, and each day you practise your ticket gets a little longer.
           </p>
           <Link to="/alphabet" className="btn btn-secondary mt-4">First: the sounds of Czech</Link>
         </section>

@@ -15,6 +15,10 @@ export interface Settings {
   /** Today's ride: the learner's usual commute, as station slugs (content/lines/lines.json). */
   rideFrom?: string;
   rideTo?: string;
+  /** Ticket streaks on Home and in the wallet (A7). Undefined means on. */
+  showTicket?: boolean;
+  /** Days ("YYYY-MM-DD", 04:00 boundary) the learner announced a výluka for. */
+  vylukaDays?: string[];
 }
 
 export const DEFAULT_SETTINGS: Settings = {

@@ -11,9 +11,13 @@ Units are real stations in their real order (checked against PID open data),
 transfer stations are milestones, and a finished station gets an ink stamp on
 your ticket. No confetti.
 
-- **No streaks, points, leagues, hearts or guilt notifications.** Progress is
-  what you can do: can-do goals passed at each station, stamped tickets and
-  missions done in real life.
+- **No points, leagues, hearts or guilt notifications.** Progress is what you
+  can do: can-do goals passed at each station, stamped tickets and missions
+  done in real life. The one daily habit tracker is a *ticket*: each day you
+  practise it grows, through real PID products (24 and 72 hours, then monthly,
+  quarterly and annual passes). A missed day uses a *výluka* (planned works)
+  if you have one; otherwise the ticket expires, stays in the wallet, and
+  nothing you earned is taken away. It can be switched off in Settings.
 - **The case lens.** Underlined endings in lessons can be tapped: the case
   (number, name and colour), *why* it's used here, and the model noun (vzor) it
   follows. Every annotated form is checked against generated declensions.
