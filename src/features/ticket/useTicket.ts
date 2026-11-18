@@ -14,15 +14,16 @@ export function useToday(): string {
   return today;
 }
 
-/** undefined while loading or when the learner has switched tickets off. */
-export function useTicket(): (TicketState & { today: string; planned: string[] }) | undefined {
+/** undefined while loading; null when the learner has switched tickets off. */
+export function useTicket(): (TicketState & { today: string; planned: string[] }) | null | undefined {
   const settings = useSettings();
   const today = useToday();
   const days = useLiveQuery(async () => {
     const stamps = (await db.attempts.orderBy('timestamp').keys()) as number[];
     return [...new Set(stamps.map((t) => dayKey(t)))];
   }, []);
-  if (settings.showTicket === false || !days) return undefined;
+  if (settings.showTicket === false) return null;
+  if (!days) return undefined;
   const planned = settings.vylukaDays ?? [];
   return { ...computeTicket(days, planned, today), today, planned };
 }

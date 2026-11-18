@@ -209,6 +209,14 @@ check first. When an item is confirmed or corrected, remove it here and set
 | 28 Oct | "the president awards state honours at Prague Castle" | Accurate? |
 | verified | Dates (mzv.gov.cz) and shop closures (coi.gov.cz), checked 17 Nov 2026 | Re-check yearly. |
 
+## Round 2 · A4 Today's ride
+
+| Where | Text | Question |
+|---|---|---|
+| ride page, home | *nástup / výstup* (from / to), *Jedeme*, *Příští stanice*, *(konečná)* | Natural as labels? |
+| end of a ride | *Konečná: X. Vystupujte, prosím.* | Is this what the metro actually says at the terminus? Not checked against a recording. |
+| same station twice | *To není žádná jízda.* | Natural? |
+
 ## Round 2 · A5 Emergency cards
 
 | Where | Text | Question |
@@ -257,6 +265,12 @@ check first. When an item is confirmed or corrected, remove it here and set
 | going.md | "In the stadium" tips (kotel, colours, beer, pískot) | No official source; flagged in the text. Accurate? |
 | phrasebook, practice | All phrases, especially *Budou nájezdy*, *Jdou do prodloužení*, *Byla to remíza* | Natural? |
 | facts | League names, Pardubice champions, venues, O2 arena tickets, 2024 final, Slavia colours (checked 18 Nov 2026) | Re-check each season. |
+
+## Round 2 · B10 Sounds section
+
+| Where | Text | Question |
+|---|---|---|
+| menu, page titles | *Výslovnost* (Sounds), *Mluvnice a slovesa* (Grammar & verbs) | Right words for the sections? |
 
 ## Round 2 · B11 Multiple choice for practical knowledge
 

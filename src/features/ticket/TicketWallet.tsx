@@ -8,7 +8,9 @@ const WEEKDAY = ['ne', 'po', 'út', 'st', 'čt', 'pá', 'so'];
 /** Wallet: the current ticket, výluka planning, and every ticket that has run out. */
 export function TicketWallet() {
   const t = useTicket();
-  if (!t) return null;
+  if (t === null) return null;
+  // Keep the section's space while the answer log loads, so the page doesn't jump.
+  if (t === undefined) return <section aria-hidden className="mb-12 min-h-24" />;
   const upcoming = Array.from({ length: 7 }, (_, i) => addDays(t.today, i + 1));
   const plannedAhead = t.planned.filter((d) => d > t.today);
   const canPlan = t.freezes - plannedAhead.length;

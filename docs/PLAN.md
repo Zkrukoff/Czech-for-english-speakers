@@ -725,3 +725,14 @@ Today the app's content and code say "Czechia" in 9 places and "Czech Republic" 
 6. **A9:** guide only, or a sports station too?
 7. **B10:** OK with Sounds as its own section and Verbs folded into "Grammar & verbs"?
 8. **C12:** OK with the naming rule?
+
+### 6.17 Status (18 November 2026)
+
+All of round 2 is built on the `round-2` branch, one commit per feature: A1–A9, B10, B11, C12, then the wrap-up (review list complete, QA at 375 px light and 1280 px dark on 22 pages, Lighthouse, offline check). Not merged or deployed: that waits for approval.
+
+Changes from the plan made while building, each noted in its commit:
+- A7: a *výluka* is earned every 3 days in a row (not once per ticket); the top tier is the annual pass (*Roční kupon*), since Lítačka is the card, not a ticket.
+- A8: example sentences are plain text, not lens-annotated (most of their nouns aren't in the lexicon); *mít knedlík v krku* dropped (no definition in the source).
+- A9: rival chants included at the user's request, each sourced; the antisemitic one is named only so learners recognise it.
+- B11: 27 exercises converted (one more vy/ty item than counted); pid.cz showed night trams are 90–99, so the transport guide was corrected too.
+- Wrap-up: the wallet no longer shifts while it loads (CLS 0.28 → 0.01); robots.txt added.

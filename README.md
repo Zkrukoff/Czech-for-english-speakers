@@ -37,8 +37,24 @@ your ticket. No confetti.
   see [docs/AUDIO.md](docs/AUDIO.md)).
 - **Today's name day** (*Dnes má svátek…*) on the home screen.
 - **Guides linked to lessons**: Doprava (Prague transport), Kultura (culture,
-  history, holidays) and Zabydlení (settling in), each linking the lessons that
-  teach their Czech.
+  history, holidays), Zabydlení (settling in) and Sport (hockey, football and
+  the chants), each linking the lessons that teach their Czech.
+- **Sounds** (*Výslovnost*): the alphabet, how to say it, practice, and
+  *Overheard in Prague*, short everyday scenes to listen to (placeholder voice
+  until real recordings arrive).
+- **Your own words**: save words you meet in daily life; they're linked to the
+  dictionary where possible and reviewed with everything else.
+- **Holiday prep**: a short lesson for each public holiday, featured the week
+  before, with a countdown on the home screen.
+- **Today's ride**: set your usual metro trip and practise for as many
+  exercises as it has stops.
+- **Emergency cards** with verified numbers and a big-text "Show to a Czech"
+  mode. The whole app is saved for offline use.
+- **Your station wall**, filled lesson by lesson, and **idiom of the week**,
+  both shareable as images (made on the device, nothing uploaded).
+- **Every changeable fact is dated and sourced** (pid.cz, gov.cz, ČTK…); all
+  Czech is listed for native review in
+  [content/REVIEW_NEEDED.md](content/REVIEW_NEEDED.md).
 
 Live: https://zkrukoff.github.io/Czech-for-english-speakers/ (moving to
 `https://zkrukoff.github.io/prazak/` when the repo is renamed; see

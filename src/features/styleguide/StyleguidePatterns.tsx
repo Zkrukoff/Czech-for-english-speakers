@@ -12,6 +12,11 @@ import { LensExplanation } from '@/features/lens/LensExplanation';
 import { parseLens } from '@/lib/lens';
 import type { CheckResult } from '@/lib/answers/check';
 import type { Stop } from '@/content/loader';
+import { IdiomPlate } from '@/features/idioms/IdiomPlate';
+import { StreakTicket } from '@/features/ticket/StreakTicket';
+import { WallBlockSvg } from '@/features/wall/WallBlockSvg';
+import { computeTicket } from '@/lib/streak';
+import { buildWall } from '@/lib/wall';
 
 const Demo = ({ title, note, children }: { title: string; note?: string; children: React.ReactNode }) => (
   <div className="border-t-2 border-ink pt-4">
@@ -77,6 +82,18 @@ export function StyleguidePatterns() {
         <div className="grid max-w-3xl gap-5 sm:grid-cols-2">
           <Today date={new Date(2026, 11, 24)} />
           <Today date={new Date(2026, 2, 10)} />
+        </div>
+      </Demo>
+
+      <Demo title="Round 2: wall, ticket, idiom plate" note="The station wall fills one circle per lesson (done = raised or sunken circle, started = dashed ring) and frames a stamped station in red. The day ticket grows through real PID products and expires without guilt. The idiom sits on a blue enamel plate; all three keep fixed colours in both themes.">
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid grid-cols-3 content-start gap-2 self-start">
+            {buildWall(course, { lessons: new Map([['u01-l01', { completedAt: 1, stepsDone: [] }], ['u01-l02', { completedAt: 1, stepsDone: [] }], ['u02-l01', { stepsDone: ['explanation'] }]]), stamps: new Set(['unit:u01']), alphabetPractised: true })
+              .slice(0, 6)
+              .map((b) => <span key={b.slug} className="block border-2 border-ink"><WallBlockSvg block={b} /></span>)}
+          </div>
+          <StreakTicket t={{ ...computeTicket(['2026-11-10', '2026-11-11', '2026-11-12', '2026-11-13'], [], '2026-11-13'), today: '2026-11-13' }} />
+          {course.idioms[0] && <IdiomPlate idiom={course.idioms[0]} week={47} />}
         </div>
       </Demo>
 

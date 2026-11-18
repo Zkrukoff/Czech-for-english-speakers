@@ -13,7 +13,10 @@ import { computeAllMastery, MASTERY_ACCURACY, MASTERY_MIN_ATTEMPTS, MASTERY_WIND
 import { relativeTime } from '@/lib/time';
 import { StationWall } from '@/features/wall/StationWall';
 import { useWall } from '@/features/wall/useWall';
+import { buildWall } from '@/lib/wall';
 import { TicketWallet } from '@/features/ticket/TicketWallet';
+
+const emptyWall = buildWall(course, { lessons: new Map(), stamps: new Set(), alphabetPractised: false });
 
 function WallSection() {
   const blocks = useWall();
@@ -21,7 +24,8 @@ function WallSection() {
     <section id="wall" aria-labelledby="wall-h" className="mb-12">
       <h2 id="wall-h" className="label-board mb-1 text-ink-3"><span lang="cs">Tvoje stěna</span> · your wall</h2>
       <p className="mb-4 max-w-2xl text-ink-2">Line A as a wall of panels in each station's colour. Every lesson you finish fills a circle; a stamped station gets a red frame.</p>
-      {blocks && <StationWall blocks={blocks} />}
+      {/* While progress loads, draw the empty wall so nothing below moves. */}
+      <StationWall blocks={blocks ?? emptyWall} />
     </section>
   );
 }

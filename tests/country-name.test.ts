@@ -16,6 +16,7 @@ const ALLOWED: { file: string; text: string; why: string }[] = [
   { file: 'index.html', text: 'Czechia (the Czech Republic)', why: 'search metadata, both names once' },
   { file: 'public/manifest.webmanifest', text: 'Czechia (Czech Republic)', why: 'install metadata, both names once' },
   { file: 'tests/country-name.test.ts', text: '', why: 'this file' },
+  { file: 'content/REVIEW_NEEDED.md', text: 'C12 Czechia / the Czech Republic', why: 'the reviewers\' list, naming the rule itself' },
 ];
 
 function* files(dir: string): Generator<string> {
