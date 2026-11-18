@@ -19,6 +19,10 @@ export interface Settings {
   showTicket?: boolean;
   /** Days ("YYYY-MM-DD", 04:00 boundary) the learner announced a výluka for. */
   vylukaDays?: string[];
+  /** First day (04:00 Prague) the 5-answer ticket rule applied on this device; earlier days keep the 1-answer rule. */
+  ticketRuleFrom?: string;
+  /** Days on which the review queue was emptied (they validate the ticket too). Last 60 kept. */
+  reviewClearedDays?: string[];
 }
 
 export const DEFAULT_SETTINGS: Settings = {

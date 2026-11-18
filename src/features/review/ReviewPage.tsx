@@ -6,9 +6,11 @@ import type { Exercise } from '@/content/schema';
 import { PageHeader } from '@/components/PageHeader';
 import { ExerciseRunner, type ExerciseOutcome } from '@/features/exercises/ExerciseRunner';
 import { db } from '@/db/db';
-import { dueByKind, dueCards, scheduleAnswer } from '@/db/srs';
+import { dueByKind, dueCards, dueSummary, scheduleAnswer } from '@/db/srs';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { DepartureBoard, Stamp } from '@/components/ui';
+import { markReviewCleared } from '@/features/ticket/useTicket';
+import { dayKey } from '@/lib/streak';
 import { useDueSummary } from '@/db/useDue';
 import { exerciseForCard, ownWordExercise } from '@/lib/srs/reviewItems';
 import { relativeTime } from '@/lib/time';
@@ -74,7 +76,11 @@ export function ReviewPage() {
             const key = keyOf.get(o.exercise);
             if (key) await scheduleAnswer(key, o.exercise.skills, o.result.status);
           }}
-          onFinish={(outcomes) => setPhase({ kind: 'done', outcomes, run: phase.run })}
+          onFinish={(outcomes) => {
+            setPhase({ kind: 'done', outcomes, run: phase.run });
+            // Emptying the queue validates today's ticket.
+            void dueSummary(Date.now()).then((d) => (d.dueNow === 0 ? markReviewCleared(dayKey(Date.now())) : undefined));
+          }}
         />
       </>
     );

@@ -4,10 +4,11 @@ import { PageHeader } from '@/components/PageHeader';
 import { EnamelPlate } from '@/components/ui';
 import { IconArrowRight } from '@/components/icons';
 import { featuredPrep, inDaysCs, nextDateFor } from '@/lib/holidays';
+import { pragueNow } from '@/lib/pragueTime';
 
 /** All holiday prep lessons, soonest first. Open all year; the one coming up is highlighted. */
 export function HolidaysIndex() {
-  const now = new Date();
+  const now = pragueNow();
   const featured = featuredPrep(now, course.holidays, course.holidayLessons);
   const rows = course.holidayLessons
     .map((l) => ({ l, date: nextDateFor(l.holidays, now, course.holidays) }))

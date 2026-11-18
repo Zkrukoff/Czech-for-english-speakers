@@ -3,9 +3,10 @@ import { course } from '@/content';
 import { EnamelPlate, TileGrid } from '@/components/ui';
 import { IconArrowRight } from '@/components/icons';
 import { featuredPrep, inDaysCs } from '@/lib/holidays';
+import { pragueNow } from '@/lib/pragueTime';
 
 /** In the week before a holiday (and on the day), its prep lesson is featured on Home. */
-export function HolidayPrepBanner({ date = new Date() }: { date?: Date }) {
+export function HolidayPrepBanner({ date = pragueNow() }: { date?: Date }) {
   const f = featuredPrep(date, course.holidays, course.holidayLessons);
   if (!f) return null;
   return (

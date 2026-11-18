@@ -133,7 +133,7 @@ export function SettingsPage() {
             Sessions are as long as your commute, counted in metro stops.
           </p>
           <Link to="/ride" className="btn btn-secondary">Change your ride</Link>
-          {toggle('Show my ticket', 'moje jízdenka', 'A ticket that gets longer for each day you practise: 24 hours, 72 hours, then monthly, quarterly and annual passes. No notifications, ever, and a missed day costs nothing you have earned.', s.showTicket !== false, (v) => updateSettings({ showTicket: v }))}
+          {toggle('Show my ticket', 'moje jízdenka', 'A ticket that gets longer for each day you practise (five answers, or clearing your reviews): 24 hours, 72 hours, then monthly, quarterly and annual passes. No notifications, ever, and a missed day costs nothing you have earned.', s.showTicket !== false, (v) => updateSettings({ showTicket: v }))}
         </section>
 
         <section aria-labelledby="s-me" className="space-y-4">

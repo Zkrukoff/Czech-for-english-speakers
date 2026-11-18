@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { addDays, computeTicket, dayKey, tierFor } from '@/lib/streak';
+import { addDays, computeTicket, dayKey, tierFor, validatedDays } from '@/lib/streak';
 
 const run = (from: string, n: number) => Array.from({ length: n }, (_, i) => addDays(from, i));
 
 describe('Ticket streaks', () => {
-  it('starts the day at 04:00', () => {
-    expect(dayKey(new Date(2026, 10, 18, 3, 59))).toBe('2026-11-17');
-    expect(dayKey(new Date(2026, 10, 18, 4, 0))).toBe('2026-11-18');
+  it('starts the day at 04:00 Prague time (UTC+1 in winter)', () => {
+    expect(dayKey(Date.parse('2026-11-18T02:59:00Z'))).toBe('2026-11-17');
+    expect(dayKey(Date.parse('2026-11-18T03:00:00Z'))).toBe('2026-11-18');
   });
 
   it('uses real PID tiers', () => {
@@ -49,5 +49,12 @@ describe('Ticket streaks', () => {
   it('has no ticket before the first answer', () => {
     const t = computeTicket([], [], '2026-11-18');
     expect(t).toMatchObject({ days: 0, tier: null, justExpired: null, longest: 0 });
+  });
+
+  it('needs five answers (or cleared reviews) from the start day, and keeps the old rule before it', () => {
+    const answers = new Map([['2026-11-15', 1], ['2026-11-16', 2], ['2026-11-18', 4], ['2026-11-19', 5], ['2026-11-20', 1]]);
+    expect(validatedDays(answers, ['2026-11-20'], '2026-11-18').sort()).toEqual(['2026-11-15', '2026-11-16', '2026-11-19', '2026-11-20']);
+    // Without a start day (older data), every answered day counts.
+    expect(validatedDays(answers, [], undefined)).toHaveLength(5);
   });
 });

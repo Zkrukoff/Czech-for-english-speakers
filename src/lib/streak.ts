@@ -2,7 +2,8 @@
  * Ticket streaks (A7). Derived from the answer log: nothing is stored except
  * the výluka days a learner plans ahead (in Settings).
  *
- * - A day runs 04:00 to 04:00, so a late-night session counts for the evening.
+ * - A day runs 04:00 to 04:00 Prague time, so a late-night session counts for
+ *   the evening, and a trip abroad doesn't move the day.
  * - Practising (any answer) validates the day.
  * - A missed day uses a výluka (freeze) if you have one: planned ones first,
  *   then automatically. You earn one for every 3 days you practise in a row,
@@ -12,9 +13,23 @@
  * Tiers are real PID products, checked on pid.cz/jizdne-a-tarif (2026-11-18).
  */
 
+import { pragueParts } from './pragueTime';
+
 export const DAY_STARTS_AT_HOUR = 4;
 export const MAX_FREEZES = 3;
 export const FREEZE_EVERY = 3;
+/** Answers that validate a day under the current rule (or an emptied review queue). */
+export const ANSWERS_PER_DAY = 5;
+
+/**
+ * Which days count as practised. Days before `ruleFrom` keep the original rule
+ * (one answer), so nobody loses a ticket when the rule changed; from then on a
+ * day needs ANSWERS_PER_DAY answers or an emptied review queue.
+ */
+export function validatedDays(answersByDay: Map<string, number>, reviewCleared: Iterable<string>, ruleFrom: string | undefined): string[] {
+  const cleared = new Set(reviewCleared);
+  return [...answersByDay].filter(([day, n]) => (ruleFrom && day >= ruleFrom ? n >= ANSWERS_PER_DAY || cleared.has(day) : n > 0)).map(([day]) => day);
+}
 
 export type TierId = '24h' | '72h' | 'month' | 'quarter' | 'year';
 
@@ -28,11 +43,11 @@ export const TIERS: { id: TierId; minDays: number; cs: string; en: string }[] = 
 
 export const TICKET_SOURCE = { url: 'https://pid.cz/jizdne-a-tarif/', date: '2026-11-18' };
 
-/** "YYYY-MM-DD" of the learner's day (local time, day starts at 04:00). */
+/** "YYYY-MM-DD" of the learner's day: Prague time, and the day starts at 04:00. */
 export function dayKey(ts: number | Date): string {
-  const d = new Date(typeof ts === 'number' ? ts : ts.getTime());
-  d.setHours(d.getHours() - DAY_STARTS_AT_HOUR);
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  const p = pragueParts(ts);
+  const key = `${p.year}-${String(p.month).padStart(2, '0')}-${String(p.day).padStart(2, '0')}`;
+  return p.hour < DAY_STARTS_AT_HOUR ? addDays(key, -1) : key;
 }
 
 export function addDays(key: string, n: number): string {

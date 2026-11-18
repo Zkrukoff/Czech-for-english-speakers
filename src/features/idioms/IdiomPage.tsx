@@ -5,6 +5,7 @@ import { NotFound } from '@/components/NotFound';
 import { IconArrowLeft } from '@/components/icons';
 import { isoWeek } from '@/lib/idioms';
 import { IdiomDetail } from './IdiomDetail';
+import { pragueNow } from '@/lib/pragueTime';
 
 export function IdiomPage() {
   const { idiomId = '' } = useParams();
@@ -14,7 +15,7 @@ export function IdiomPage() {
     <>
       <Link to="/idioms" className="inline-flex items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> All idioms</Link>
       <PageHeader title="Czech idiom" cs="Idiom" />
-      <IdiomDetail idiom={idiom} week={isoWeek(new Date())} />
+      <IdiomDetail idiom={idiom} week={isoWeek(pragueNow())} />
     </>
   );
 }

@@ -3,9 +3,10 @@ import { course } from '@/content';
 import { PageHeader } from '@/components/PageHeader';
 import { idiomOfWeek, isoWeek } from '@/lib/idioms';
 import { IdiomDetail } from './IdiomDetail';
+import { pragueNow } from '@/lib/pragueTime';
 
 export function IdiomsIndex() {
-  const now = new Date();
+  const now = pragueNow();
   const current = idiomOfWeek(course.idioms, now);
   return (
     <>

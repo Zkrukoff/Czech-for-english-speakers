@@ -3,6 +3,7 @@ import { course } from '@/content';
 import { EnamelPlate } from '@/components/ui';
 import { namesOn, needsCheck } from '@/lib/namedays';
 import { featuredPrep, holidaysOn, inDaysCs, nextHoliday } from '@/lib/holidays';
+import { pragueNow } from '@/lib/pragueTime';
 
 const SHOPS = { closed: 'Large shops are closed today (by law).', noon: 'Large shops close at midday (by law).', open: 'Shops are open as usual.' } as const;
 
@@ -10,7 +11,7 @@ const SHOPS = { closed: 'Large shops are closed today (by law).', noon: 'Large s
  * "Dnes": the daily hook on the home screen. Today's public holiday (if
  * there is one), today's name day, and a countdown to the next holiday.
  */
-export function Today({ date = new Date() }: { date?: Date }) {
+export function Today({ date = pragueNow() }: { date?: Date }) {
   const day = date.toLocaleDateString('cs-CZ', { weekday: 'long', day: 'numeric', month: 'long' });
   const holidays = holidaysOn(date, course.holidays);
   const names = namesOn(date, course.namedays);

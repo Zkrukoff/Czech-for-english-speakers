@@ -12,6 +12,7 @@ import { useLessonAnswerHandler } from '@/features/lessons/useLessonAnswerHandle
 import { completeLesson } from '@/db/progress';
 import { ensureVocabCards } from '@/db/srs';
 import { inDaysCs, nextDateFor } from '@/lib/holidays';
+import { pragueNow } from '@/lib/pragueTime';
 
 /** A holiday prep mini-lesson: words, customs, greetings, etiquette, a few exercises. */
 export function HolidayLessonPage() {
@@ -21,7 +22,7 @@ export function HolidayLessonPage() {
   const [score, setScore] = useState('');
   const onAnswer = useLessonAnswerHandler();
   if (!l) return <NotFound what="holiday lesson" />;
-  const now = new Date();
+  const now = pragueNow();
   const date = nextDateFor(l.holidays, now, course.holidays);
   const days = date ? Math.round((date.getTime() - new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime()) / 86_400_000) : null;
   const shops = course.holidays?.holidays.filter((h) => l.holidays.includes(h.id)) ?? [];
