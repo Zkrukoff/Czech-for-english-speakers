@@ -12,21 +12,26 @@ const USEFUL_ORDER: CaseKey[] = ['nom', 'acc', 'loc', 'gen', 'ins', 'dat', 'voc'
 
 export function GrammarIndex() {
   const overview = course.grammarById.get('how-cases-work');
+  const wordOrder = course.grammarById.get('word-order');
   const fns = [...course.functions.values()].filter((f) => f.id !== 'chunk');
   return (
     <>
       <PageHeader title="Grammar & verbs" cs="Mluvnice a slovesa" subtitle="Cases by what they do, the model nouns behind every ending, and verbs in pairs. Every underlined ending in a lesson links here." />
 
-      {overview && (
-        <Link to={`/grammar/${overview.id}`} className="card card-link mb-12 flex items-center justify-between gap-4 p-5">
-          <span>
-            <span className="label-board block text-ink-3">Start here</span>
-            <span className="mt-1 block text-xl font-bold">{overview.title}</span>
-            {overview.summary && <span className="mt-1 block text-sm text-ink-2">{overview.summary}</span>}
-          </span>
-          <IconArrowRight size={20} className="shrink-0" />
-        </Link>
-      )}
+      <div className="mb-12 grid gap-4 md:grid-cols-2">
+        {[{ page: overview, kicker: 'Start here' }, { page: wordOrder, kicker: 'Then this' }].map(({ page, kicker }) =>
+          page ? (
+            <Link key={page.id} to={`/grammar/${page.id}`} className="card card-link flex items-center justify-between gap-4 p-5">
+              <span>
+                <span className="label-board block text-ink-3">{kicker}</span>
+                <span className="mt-1 block text-xl font-bold">{page.title}</span>
+                {page.summary && <span className="mt-1 block text-sm text-ink-2">{page.summary}</span>}
+              </span>
+              <IconArrowRight size={20} className="shrink-0" />
+            </Link>
+          ) : null,
+        )}
+      </div>
 
       <section aria-labelledby="cases-h" className="mb-14">
         <SectionNumber n={1} id="cases-h">Seven cases, by what they do</SectionNumber>

@@ -20,6 +20,8 @@ The conditional uses the same **l-participle** as the [past tense](/verbs/past),
 
 Like *jsem*, these forms go in the **second position**: ***Chtěl bych** kávu.* / *Já **bych** chtěl kávu.*
 
+More on where these little words go: [Word order and the little words](/grammar/word-order).
+
 > **Heard on the street:** ***bysme*** instead of *bychom*: *Mohli bysme jít ven.* Very common, but write *bychom*.
 
 ## Polite requests

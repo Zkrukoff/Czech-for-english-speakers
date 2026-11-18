@@ -66,7 +66,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
 
   return (
     <>
-      <Link to={unitPath(unit.id)} className="inline-flex items-center gap-2 text-sm text-vltava hover:underline">
+      <Link to={unitPath(unit.id)} className="inline-flex min-h-11 items-center gap-2 text-sm text-vltava hover:underline">
         <IconArrowLeft size={16} />
         {stop && <LineBadge line={stop.line} size={22} />}
         <span lang="cs">{stop?.stationInfo.name}</span>
@@ -151,7 +151,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
           <ul className="mt-3 flex flex-wrap gap-2">
             {guideLinks.map((g) => (
               <li key={`${g.guideId}-${g.sectionId}`}>
-                <Link to={`/guides/${g.guideId}?tab=${g.sectionId}`} className="chip hover:border-ink">
+                <Link to={`/guides/${g.guideId}?tab=${g.sectionId}`} className="chip min-h-11 hover:border-ink">
                   <IconBook size={16} /> {course.guidesById.get(g.guideId)?.title}: {g.title}
                 </Link>
               </li>

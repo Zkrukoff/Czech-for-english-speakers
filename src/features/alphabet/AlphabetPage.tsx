@@ -40,7 +40,7 @@ export function SoundsPage() {
             type="button"
             onClick={() => setParams(t.id === 'letters' ? {} : { tab: t.id }, { replace: true })}
             aria-current={t.id === tab ? 'page' : undefined}
-            className={`-mb-px whitespace-nowrap border-b-2 px-4 py-2 text-sm font-medium ${t.id === tab ? 'border-ink text-ink' : 'border-transparent text-ink-3 hover:text-ink'}`}
+            className={`-mb-px min-h-11 whitespace-nowrap border-b-2 px-4 py-2 text-sm font-medium ${t.id === tab ? 'border-ink text-ink' : 'border-transparent text-ink-3 hover:text-ink'}`}
           >
             {t.label}
           </button>

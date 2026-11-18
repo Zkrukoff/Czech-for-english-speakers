@@ -68,7 +68,7 @@ export function GuidePage() {
                     const stop = course.stopByUnit.get(l.unitId);
                     return (
                       <li key={id}>
-                        <Link to={`/lessons/${id}`} className="group flex items-start gap-2">
+                        <Link to={`/lessons/${id}`} className="group flex min-h-11 items-start gap-2 py-1">
                           {stop && <LineBadge line={stop.line} size={22} />}
                           <span>
                             <span className="block font-semibold group-hover:underline">{l.title}</span>

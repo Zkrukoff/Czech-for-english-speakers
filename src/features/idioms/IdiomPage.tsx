@@ -13,7 +13,7 @@ export function IdiomPage() {
   if (!idiom) return <NotFound what="idiom" />;
   return (
     <>
-      <Link to="/idioms" className="inline-flex items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> All idioms</Link>
+      <Link to="/idioms" className="inline-flex min-h-11 items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> All idioms</Link>
       <PageHeader title="Czech idiom" cs="Idiom" />
       <IdiomDetail idiom={idiom} week={isoWeek(pragueNow())} />
     </>

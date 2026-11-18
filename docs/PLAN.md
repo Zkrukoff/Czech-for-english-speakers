@@ -901,3 +901,189 @@ and a push. **Not merged or deployed** until you say so.
 2. **Ticket threshold:** 5 answers a day (or an empty review queue).
 3. **Minimal pairs:** recording-only, as above.
 4. **Phrase deck:** opt-in by situation, 5 new phrases a day.
+
+### 7.9 Step 1 status
+
+Built, merged and deployed on 18 November 2026 (`5c224c5`): P2, P5 (with
+Prague time), P4, P1, A7 and the polish fixes I1, I4, I6, I7, I10, N1 and N3.
+Still open from the audit: **I2** (Home), **I3** (overlapping sections),
+**I5** (touch targets), **I8** (the course chunk, now 694 kB), **I9**
+(unverified culture facts), N2, N4, N5.
+
+## 8. Round 3, step 2: word order, balance, aspect
+
+**Where Line A stands** [Data, 18 Nov 2026]: 177 lesson exercises.
+
+| Kind | Count | Share |
+|---|---|---|
+| English → Czech translation | 56 | 32% |
+| Listening (new in step 1) | 36 | 20% |
+| Fill the ending | 23 | 13% |
+| Dialogue complete | 16 | 9% |
+| Czech → English | 16 | 9% |
+| Conjugate | 14 | 8% |
+| Case select | 13 | 7% |
+| Other multiple choice | 3 | 2% |
+| **Sentence building** | **0** | — |
+| **Aspect choice** | **0** (all 4 are in the transport guide) | — |
+
+The grammar pages on *být*, the past, reflexives and the conditional each
+mention second-position clitics, but nothing practises them.
+
+### 8.1 A3 · Word order and clitics
+
+- **A new grammar page, "Word order" (*Slovosled*),** under Grammar & verbs →
+  "How Czech works", next to "How cases work". It covers:
+  1. **Known first, new last:** Czech puts the new or important information at
+     the end (*Kávu si dám.* vs *Dám si kávu.*), where English uses stress.
+  2. **The second position:** the little unstressed words (clitics) go after the
+     first word or phrase, in a fixed order:
+     1. *jsem, jsi, jsme, jste* and *bych, bys*;
+     2. *se, si*;
+     3. the dative pronouns: *mi, ti, mu, jí, nám, vám, jim*;
+     4. the accusative pronouns: *mě, tě, ho, ji, nás, vás, je*.
+
+     So: *Dal **jsem** **mu** **ho**.*, *Jmenuju **se** Sarah.*, *Líbí **se**
+     **mi** to.*
+  3. **The usual traps for English speakers:** *se* first in a sentence; *jsem*
+     with *on/ona* (*Byl doma*, not *Byl je doma*); a pronoun at the end where
+     English puts it (*Dám ti ho*, not *Dám ho ti*).
+
+  Every example sentence is marked for the case lens where it can be, and
+  flagged for native review. The four existing pages link to it.
+- **Sentence-building exercises:** 2 per lesson from u01-l02 onwards (**34**).
+  - They use the existing `buildSentence` type (tap tiles into order), with the
+    lesson's own words and one distractor tile where it teaches something (e.g.
+    a spare *jsem*).
+  - **All accepted orders** are listed as answers, because Czech allows several.
+    A test checks every answer uses only the tiles, and every tile is used in at
+    least one answer.
+  - **Targeted feedback:** common wrong orders get their own hint, e.g. "*se*
+    can't come first: it goes in the second position." This needs one small
+    addition: hints can match a wrong *order*, not just a wrong string.
+- **Files:**
+  - `content/grammar/overview/word-order.md` (new);
+  - the four grammar pages (links);
+  - 17 lesson files;
+  - `check.ts` (order hints);
+  - `BuildSentenceInput` (keyboard and 44 px tiles);
+  - tests;
+  - `REVIEW_NEEDED.md`.
+
+### 8.2 P3 · Rebalanced practice
+
+**Target:** English → Czech translation at about **20% or less** of Line A
+practice, with more reading for meaning.
+
+- **Reading for meaning:** 1 per lesson (**18**). A short new text of 2–4
+  sentences, built only from the lesson's words and earlier ones (tested like
+  the listening items), with one multiple-choice question about its meaning.
+  - Unit 1: a colleague's intro message.
+  - Unit 2: a menu board and a bakery receipt.
+  - Unit 3: directions and a train message.
+  - Unit 4: an e-mail introducing the team.
+  - Unit 5: a note from a neighbour.
+
+  These use `readReal` with options (the sign-reading type from B11).
+- **Direction swaps:** in each lesson with 3 or more English → Czech items, one
+  becomes Czech → English, about **14** items. They keep their ids, so review
+  history is kept; the card simply asks the other way.
+- **Result:** about 56 − 14 = 42 English → Czech items out of about 245, so
+  **≈ 17%**, with 70 input items (36 listening, 18 reading, 16 Czech → English)
+  against 42 + 34 production. A test pins the share, so it can't drift back.
+
+### 8.3 P6 · Aspect as pairs
+
+- **Vocabulary shows the pair.** When a lesson's vocabulary item is a verb with
+  a partner in `verbs.json`, the loader fills in the partner automatically and
+  the existing "pair" mark shows it (*platit · pair zaplatit*). No content
+  edits are needed.
+- **Aspect-choice exercises:** 12, in lessons where the contrast is natural,
+  all using pairs already in `verbs.json`:
+
+  | Lesson | Pair | Example |
+  |---|---|---|
+  | u02-l01 | *dávat / dát (si)* | *Ráno si vždycky ___ kávu.* vs *Teď si ___ kávu.* |
+  | u02-l02 | *jíst / sníst* | |
+  | u02-l04 | *platit / zaplatit* | *Zaplatíme.* vs *Platíte kartou?* |
+  | u03-l03 | *čekat / počkat* | |
+  | u03-l04 | *kupovat / koupit*, *odjíždět / odjet* | |
+  | u04-l02 | *pomáhat / pomoct* | |
+  | u01-l03 / u04-l04 | *dělat / udělat* | |
+
+  Each item explains the choice in one line: habit or process → imperfective;
+  one completed result → perfective.
+- **An aspect row on the wallet's mastery list,** so the learner sees it as a
+  skill.
+- **Files:** `loader.ts` (partner fill-in), 8 lesson files, tests,
+  `REVIEW_NEEDED.md`.
+
+### 8.4 Audit items that fit here
+
+- **I5 · Touch targets, 44 px** (M). Menu items and footer links get a 44 px
+  minimum. The strip-map and metro-map stations and the wallet's mastery links
+  get bigger hit areas, without changing the drawings. The design doc says
+  44. A test measures interactive elements on key screens at 375 px.
+- **I8 · The course chunk** (M). Content is validated at build time; the tests
+  already do it, so the build fails on bad content. The app then ships
+  pre-validated data, split into "core" (line, today, review) and per-unit and
+  per-guide parts loaded on demand.
+  - Target: Home's JavaScript under 350 kB gzipped total, and LCP under
+    3.5 s on Lighthouse's slow 4G profile.
+  - The offline cache still holds everything.
+
+### 8.2a P3 as built
+
+The 14 "direction swaps" became **recognition multiple choice** (read the
+Czech, pick its meaning; the other options are the lesson's other sentences),
+not typed Czech → English. Typed English has too many correct phrasings to
+check reliably. Same ids, so review history stays. Line A is now 241
+exercises, of which 42 (17%) are English → Czech; a test keeps it at or
+below 20%.
+
+### 8.4a I8 as built, and what it showed (18 Nov 2026)
+
+- **Built:** production loads content in a "trusted" mode that skips the
+  authoring checks (lens forms, cross-references). The tests and the deploy
+  workflow still run the full validation, so bad content can't ship. A test
+  proves both modes build the same course. The Prague-time formatter is now
+  created on first use.
+- **Measured** (CPU profile at 4× throttling, cold start): the remaining
+  startup cost is spread out:
+  - zod parsing and compiling, about 185 ms;
+  - evaluating the content module, about 100 ms;
+  - React rendering.
+
+  Lighthouse attributed it all to the `db` chunk because that's where the
+  call chain starts; content validation itself was only part of it.
+- **The real limit is download size, not CPU:** first paint is about 3.5 s on
+  slow 4G because about 420 kB of compressed JavaScript has to arrive first,
+  half of it the course content. Only splitting the content fixes that.
+  Splitting means making `course` asynchronous for its 58 users (load the
+  line and today's data first, units and guides on demand). That's an **L**
+  change, not the M estimated in § 8.4, so it's **deferred to its own
+  item** rather than rushed inside step 2.
+
+### 8.5 Order and commits
+
+One commit each, on `round-3-step2`:
+1. I8 (performance first, so the new content doesn't make it worse);
+2. P6;
+3. A3;
+4. P3;
+5. I5.
+
+Then QA (five widths, both themes, Lighthouse, the offline check) and a push.
+Not merged or deployed until you say so. **Estimate: about two weeks of work
+at the same pace as step 1.**
+
+### 8.6 Decisions (defaults unless you say otherwise)
+
+1. **Step 2 includes I5 and I8.** I2 and I3 (the Home and section
+   restructure) are a separate, visible change, best done as their own small
+   step after this one, with screenshots for approval first.
+2. **Sentence building** accepts every grammatical order. Unusual-but-correct
+   orders are accepted with a note ("correct, but stresses X"), not marked
+   wrong.
+3. **Direction swaps** keep exercise ids, so review history stays: the next
+   review of that card asks Czech → English.

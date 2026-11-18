@@ -214,6 +214,68 @@
       "nativeReviewed": false
     },
     {
+      "id": "u04-l02-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Moje nová práce je super. Kolegové jsou milí. Šéf je trochu přísný, ale spravedlivý."
+        ]
+      },
+      "prompt": "What is the boss like?",
+      "options": [
+        "A bit strict, but fair",
+        "Very lazy",
+        "Funny and nice"
+      ],
+      "answers": [
+        "A bit strict, but fair"
+      ],
+      "hints": [
+        {
+          "wrong": "Very lazy",
+          "explain": "Lazy is \"líný\". The boss is \"přísný\", strict, but \"spravedlivý\", fair."
+        },
+        {
+          "wrong": "Funny and nice",
+          "explain": "\"Milí\" (nice) describes the colleagues. The boss is strict but fair."
+        }
+      ],
+      "why": "\"My new job is great. My colleagues are nice. The boss is a bit strict, but fair.\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-bld1",
+      "type": "buildSentence",
+      "prompt": "How do you like the new job?",
+      "tiles": [
+        "jak",
+        "se",
+        "ti",
+        "líbí",
+        "nová",
+        "práce"
+      ],
+      "answers": [
+        "Jak se ti líbí nová práce[?]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "jak ti se líbí nová práce",
+          "explain": "In a group of little words, se comes before ti: Jak se ti líbí…?"
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l02-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -330,28 +392,54 @@
       "nativeReviewed": false
     },
     {
-      "id": "u04-l02-e6",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "My colleagues are nice. (a mixed team)",
-      "answers": [
-        "{Moji|Mí} kolegové jsou {milí|moc milí|sympatičtí}[.]"
+      "id": "u04-l02-bld2",
+      "type": "buildSentence",
+      "prompt": "My colleagues help me.",
+      "tiles": [
+        "kolegové",
+        "mi",
+        "pomáhají"
       ],
-      "why": "Masculine animate plural: kolegové, with adjectives in -í (milí). sympatický → sympatičtí.",
+      "answers": [
+        "{Kolegové mi pomáhají|Pomáhají mi kolegové}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
       "hints": [
         {
-          "wrong": "{Moji|Mí} kolegové jsou milý[.]",
-          "explain": "milý is singular. With kolegové use the plural: milí."
-        },
-        {
-          "wrong": "{Moji|Mí} kolegové jsou milé[.]",
-          "explain": "milé is for women or things. For a mixed group (kolegové): milí."
-        },
-        {
-          "wrong": "Moje kolegové jsou milí[.]",
-          "explain": "For masculine animate plurals, \"my\" is moji (or mí): moji kolegové."
+          "wrong": "kolegové pomáhají mi",
+          "explain": "Mi goes second, not at the end: Kolegové mi pomáhají."
         }
       ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-e6",
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Moji kolegové jsou milí.",
+      "options": [
+        "My colleagues are nice. (a mixed team)",
+        "What's your boss like? (informal; a male boss)",
+        "He's very funny."
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "My colleagues are nice. (a mixed team)"
+      ],
+      "hints": [
+        {
+          "wrong": "What's your boss like? (informal; a male boss)",
+          "explain": "That one is “Jaký je tvůj šéf?”."
+        },
+        {
+          "wrong": "He's very funny.",
+          "explain": "That one is “On je velmi vtipný.”."
+        }
+      ],
+      "why": "Masculine animate plural: kolegové, with adjectives in -í (milí). sympatický → sympatičtí.",
       "skills": [
         "case:nominative",
         "vocab:v-mily",
@@ -409,6 +497,62 @@
       "hints": [],
       "skills": [
         "case:nominative"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-asp1",
+      "type": "aspectChoice",
+      "prompt": "Kolegové mi ___ s češtinou.",
+      "options": [
+        "pomáhají",
+        "pomůžou"
+      ],
+      "verbs": [
+        "pomáhat",
+        "pomoct"
+      ],
+      "answers": [
+        "pomáhají"
+      ],
+      "en": "My colleagues help me with my Czech.",
+      "why": "They do it regularly: the imperfective pomáhat → pomáhají.",
+      "hints": [
+        {
+          "wrong": "pomůžou",
+          "explain": "Pomůžou is \"they will help\" once. Regularly: pomáhají."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-asp2",
+      "type": "aspectChoice",
+      "prompt": "Nevím, jak to udělat. ___ mi?",
+      "options": [
+        "Pomáháš",
+        "Pomůžeš"
+      ],
+      "verbs": [
+        "pomáhat",
+        "pomoct"
+      ],
+      "answers": [
+        "Pomůžeš"
+      ],
+      "en": "I don't know how to do it. Will you help me?",
+      "why": "Asking for help with this one thing: the perfective pomoct → pomůžeš.",
+      "hints": [
+        {
+          "wrong": "Pomáháš",
+          "explain": "Pomáháš mi? is \"are you helping me / do you help me?\". Asking for one-off help: Pomůžeš mi?"
+        }
+      ],
+      "skills": [
+        "verb:aspect"
       ],
       "nativeReviewed": false
     }

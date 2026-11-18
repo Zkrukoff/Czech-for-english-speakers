@@ -8,6 +8,8 @@ summary: Many Czech verbs come with se or si. Learn the little word together wit
 nativeReviewed: false
 ---
 
+More on where these little words go: [Word order and the little words](/grammar/word-order).
+
 ## What se and si are
 
 *se* and *si* mean "oneself": ***se*** is the accusative (myself as the object) and ***si*** is the dative (to/for myself). The same word is used for every person:

@@ -221,6 +221,61 @@
       "nativeReviewed": false
     },
     {
+      "id": "u03-l01-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Lékárna je vedle banky. Jděte rovně a pak doleva. Je to blízko."
+        ]
+      },
+      "prompt": "Where is the pharmacy?",
+      "options": [
+        "Next to the bank, close by",
+        "Next to the station, far away",
+        "Straight on, then right"
+      ],
+      "answers": [
+        "Next to the bank, close by"
+      ],
+      "hints": [
+        {
+          "wrong": "Next to the station, far away",
+          "explain": "\"Vedle banky\" is next to the bank, and \"blízko\" is close (far is daleko)."
+        },
+        {
+          "wrong": "Straight on, then right",
+          "explain": "The way there is straight on, then left (doleva). The pharmacy itself is next to the bank."
+        }
+      ],
+      "why": "\"The pharmacy is next to the bank. Go straight on and then left. It's close.\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l01-bld1",
+      "type": "buildSentence",
+      "prompt": "Where is the nearest pharmacy?",
+      "tiles": [
+        "kde",
+        "je",
+        "nejbližší",
+        "lékárna"
+      ],
+      "answers": [
+        "Kde je nejbližší lékárna[?]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l01-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -306,6 +361,26 @@
       "nativeReviewed": false
     },
     {
+      "id": "u03-l01-bld2",
+      "type": "buildSentence",
+      "prompt": "It's next to the bank.",
+      "tiles": [
+        "je",
+        "to",
+        "vedle",
+        "banky"
+      ],
+      "answers": [
+        "{Je to vedle banky|To je vedle banky}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l01-e5",
       "type": "translate",
       "direction": "en-cs",
@@ -364,19 +439,29 @@
     },
     {
       "id": "u03-l01-e8",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "Turn right. (to a stranger)",
-      "answers": [
-        "{Jděte|Zahněte|Odbočte} doprava[.]"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Jděte doprava.",
+      "options": [
+        "Turn right. (to a stranger)",
+        "Excuse me, where is the station?",
+        "Is it far?"
       ],
-      "why": "doprava = to the right. Jděte doprava (\"go right\") is the simplest; zahněte or odbočte = turn.",
+      "optionsLang": "en",
+      "answers": [
+        "Turn right. (to a stranger)"
+      ],
       "hints": [
         {
-          "wrong": "{Jdi|Zahni|Odboč} doprava[.]",
-          "explain": "That's the ty form. To a stranger, use vy: Jděte doprava."
+          "wrong": "Excuse me, where is the station?",
+          "explain": "That one is “Promiňte, kde je tady nádraží?”."
+        },
+        {
+          "wrong": "Is it far?",
+          "explain": "That one is “Je to daleko?”."
         }
       ],
+      "why": "doprava = to the right. Jděte doprava (\"go right\") is the simplest; zahněte or odbočte = turn.",
       "skills": [
         "verb:imperative",
         "vocab:v-doleva"

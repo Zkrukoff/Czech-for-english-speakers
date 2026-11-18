@@ -42,7 +42,7 @@ function MasteryRow({ label, href, m, dot }: { label: string; href?: string; m: 
     <li className="grid grid-cols-[1fr_auto] items-center gap-x-4 gap-y-1 px-4 py-3 sm:grid-cols-[14rem_1fr_auto]">
       <span className="flex items-center gap-2 font-medium">
         {dot && <span className={`h-2.5 w-2.5 rounded-full ${dot}`} aria-hidden />}
-        {href ? <Link to={href} className="hover:underline">{label}</Link> : label}
+        {href ? <Link to={href} className="inline-flex min-h-11 min-w-11 items-center hover:underline">{label}</Link> : label}
       </span>
       <span className={`justify-self-end rounded-full px-2 py-0.5 text-xs font-medium sm:order-last ${STATUS_STYLE[m.status]}`}>{STATUS_LABEL[m.status]}</span>
       <span className="col-span-2 flex items-center gap-3 sm:col-span-1">
@@ -65,7 +65,7 @@ export function ProgressPage() {
   const stampsList = useStamps() ?? [];
   const missionCount = stampsList.filter((x) => x.kind === 'mission').length;
 
-  const skills = ['alphabet', ...course.guides.map((g) => `guide:${g.id}`), ...CASES.map((c) => `case:${c}`), ...VERB_TOPICS.map((t) => `verb:${t}`)];
+  const skills = ['alphabet', 'listening', 'reading', 'word-order', ...course.guides.map((g) => `guide:${g.id}`), ...CASES.map((c) => `case:${c}`), ...VERB_TOPICS.map((t) => `verb:${t}`)];
   const mastery = computeAllMastery(skills, attempts ?? []);
   const allGoals = course.units.flatMap((u) => u.canDo);
   const goalsDone = allGoals.filter((g) => goals.get(g.id)?.completedAt).length;
@@ -150,8 +150,8 @@ export function ProgressPage() {
           {course.units.map((u) => (
             <div key={u.id} className="rounded-md border-2 border-ink bg-surface p-4">
               <div className="mb-2 flex items-baseline justify-between gap-2">
-                <Link to={unitPath(u.id)} className="font-semibold hover:underline">{u.number}. {u.title}</Link>
-                <Link to={unitCheckPath(u.id)} className="shrink-0 text-xs text-vltava underline">unit check</Link>
+                <Link to={unitPath(u.id)} className="inline-flex min-h-11 items-center font-semibold hover:underline">{u.number}. {u.title}</Link>
+                <Link to={unitCheckPath(u.id)} className="inline-flex min-h-11 shrink-0 items-center text-xs text-vltava underline">unit check</Link>
               </div>
               <div className="text-sm"><GoalList goals={u.canDo} /></div>
             </div>
@@ -182,6 +182,9 @@ export function ProgressPage() {
         <h2 className="mb-2 text-2xl font-extrabold">Alphabet and pronunciation</h2>
         <ul className="divide-y divide-rule overflow-hidden rounded-md border-2 border-ink bg-surface">
           <MasteryRow label="Letters, sounds and spelling" href="/sounds?tab=practice" m={mastery.get('alphabet')!} />
+          <MasteryRow label="Listening" href="/sounds?tab=overheard" m={mastery.get('listening')!} />
+          <MasteryRow label="Reading" m={mastery.get('reading')!} />
+          <MasteryRow label="Word order and the little words" href="/grammar/word-order" m={mastery.get('word-order')!} />
         </ul>
       </section>
 

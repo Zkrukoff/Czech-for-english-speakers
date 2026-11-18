@@ -17,7 +17,7 @@ export function EmergencyCardPage() {
   let n = 0;
   return (
     <>
-      <Link to="/emergency" className="inline-flex items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Emergency</Link>
+      <Link to="/emergency" className="inline-flex min-h-11 items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Emergency</Link>
       <PageHeader title={c.title} cs={c.titleCs} subtitle={c.intro}>
         <Button variant="primary" className="mt-5" onClick={() => setShowing(true)}>Show to a Czech</Button>
       </PageHeader>

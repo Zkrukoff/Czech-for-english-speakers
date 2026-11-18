@@ -199,6 +199,65 @@
       "nativeReviewed": false
     },
     {
+      "id": "u04-l03-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "To je moje rodina: manžel Petr a naše děti. Synovi je sedm a dceři čtyři."
+        ]
+      },
+      "prompt": "How many children does she have?",
+      "options": [
+        "Two: a son and a daughter",
+        "One son",
+        "Three"
+      ],
+      "answers": [
+        "Two: a son and a daughter"
+      ],
+      "hints": [
+        {
+          "wrong": "One son",
+          "explain": "She mentions a son (synovi) and a daughter (dceři)."
+        },
+        {
+          "wrong": "Three",
+          "explain": "Two children: synovi je sedm (the son is 7), dceři čtyři (the daughter is 4)."
+        }
+      ],
+      "why": "\"This is my family: my husband Petr and our children. My son is seven and my daughter four.\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l03-bld1",
+      "type": "buildSentence",
+      "prompt": "How old are they?",
+      "tiles": [
+        "kolik",
+        "jim",
+        "je"
+      ],
+      "answers": [
+        "Kolik jim je[?]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "kolik je jim",
+          "explain": "Jim is one of the little words: it goes straight after kolik. Kolik jim je?"
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l03-e1",
       "type": "fillEnding",
       "prompt": "Mám [[bratr___|bratr|acc|object]].",
@@ -314,6 +373,25 @@
       "nativeReviewed": false
     },
     {
+      "id": "u04-l03-bld2",
+      "type": "buildSentence",
+      "prompt": "My son is seven.",
+      "tiles": [
+        "synovi",
+        "je",
+        "sedm"
+      ],
+      "answers": [
+        "Synovi je sedm[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l03-e6",
       "type": "translate",
       "direction": "cs-en",
@@ -335,19 +413,29 @@
     },
     {
       "id": "u04-l03-e7",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "This is my husband.",
-      "answers": [
-        "To je můj {manžel|muž}[.]"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "To je můj manžel.",
+      "options": [
+        "This is my husband.",
+        "I have a sister.",
+        "I'm thirty (years old)."
       ],
-      "why": "manžel is masculine, so \"my\" is můj.",
+      "optionsLang": "en",
+      "answers": [
+        "This is my husband."
+      ],
       "hints": [
         {
-          "wrong": "To je {moje|má} {manžel|muž}[.]",
-          "explain": "moje / má is for feminine (and neuter) nouns. manžel is masculine: můj manžel."
+          "wrong": "I have a sister.",
+          "explain": "That one is “Já mám sestru.”."
+        },
+        {
+          "wrong": "I'm thirty (years old).",
+          "explain": "That one is “Je mi třicet let.”."
         }
       ],
+      "why": "manžel is masculine, so \"my\" is můj.",
       "skills": [
         "vocab:v-manzel"
       ],
@@ -355,20 +443,29 @@
     },
     {
       "id": "u04-l03-e8",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "This is my wife.",
-      "answers": [
-        "To je {moje|má} manželka[.]",
-        "To je {moje|má} žena[.]"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "To je moje manželka.",
+      "options": [
+        "This is my wife.",
+        "I have a sister.",
+        "I'm thirty (years old)."
       ],
-      "why": "manželka is feminine, so \"my\" is moje (or má).",
+      "optionsLang": "en",
+      "answers": [
+        "This is my wife."
+      ],
       "hints": [
         {
-          "wrong": "To je můj {manželka|žena}[.]",
-          "explain": "můj is masculine. manželka is feminine: moje manželka."
+          "wrong": "I have a sister.",
+          "explain": "That one is “Já mám sestru.”."
+        },
+        {
+          "wrong": "I'm thirty (years old).",
+          "explain": "That one is “Je mi třicet let.”."
         }
       ],
+      "why": "manželka is feminine, so \"my\" is moje (or má).",
       "skills": [
         "vocab:v-manzel"
       ],

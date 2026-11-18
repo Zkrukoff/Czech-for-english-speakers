@@ -14,7 +14,7 @@ export function AspectPairsPage() {
     .sort((a, b) => compareCs(a[0].lemma, b[0].lemma));
   return (
     <>
-      <Link to="/grammar" className="inline-flex items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Mluvnice</Link>
+      <Link to="/grammar" className="inline-flex min-h-11 items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Mluvnice</Link>
       <PageHeader
         eyebrow="Vid · aspect"
         title="Aspect pairs"

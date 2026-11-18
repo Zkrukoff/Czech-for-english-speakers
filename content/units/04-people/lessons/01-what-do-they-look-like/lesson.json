@@ -208,6 +208,61 @@
       "nativeReviewed": false
     },
     {
+      "id": "u04-l01-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Pavel je vysoký, má krátké tmavé vlasy a brýle. Dnes má modrou košili."
+        ]
+      },
+      "prompt": "What colour is Pavel's shirt today?",
+      "options": [
+        "Blue",
+        "Dark",
+        "White"
+      ],
+      "answers": [
+        "Blue"
+      ],
+      "hints": [
+        {
+          "wrong": "Dark",
+          "explain": "\"Tmavé\" describes his hair. The shirt is \"modrou\", blue."
+        },
+        {
+          "wrong": "White",
+          "explain": "White would be \"bílou\". \"Modrou košili\" is a blue shirt."
+        }
+      ],
+      "why": "\"Dnes má modrou košili\": today he's wearing a blue shirt.",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l01-bld1",
+      "type": "buildSentence",
+      "prompt": "He has short dark hair.",
+      "tiles": [
+        "má",
+        "krátké",
+        "tmavé",
+        "vlasy"
+      ],
+      "answers": [
+        "Má krátké tmavé vlasy[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l01-e1",
       "type": "fillEnding",
       "prompt": "Moje manažerka je vysok___.",
@@ -306,6 +361,30 @@
       ],
       "skills": [
         "vocab:v-vypadat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l01-bld2",
+      "type": "buildSentence",
+      "prompt": "I can see him now.",
+      "tiles": [
+        "už",
+        "ho",
+        "vidím"
+      ],
+      "answers": [
+        "Už ho vidím[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "už vidím ho",
+          "explain": "Ho is one of the little words: it goes second, not at the end. Už ho vidím."
+        }
+      ],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

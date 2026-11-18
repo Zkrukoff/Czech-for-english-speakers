@@ -41,6 +41,8 @@ English has *I worked, I was working, I have worked, I had worked*. Czech has **
 
 ## Word order: the second position
 
+More on where these little words go: [Word order and the little words](/grammar/word-order).
+
 *jsem, jsi, jsme, jste* must be the **second element** in the sentence:
 
 - ***Byl jsem** v kině.* I was at the cinema.

@@ -219,6 +219,60 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l04-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Zaplatíme dohromady, nebo zvlášť? Tom"
+        ]
+      },
+      "prompt": "What does Tom want to know?",
+      "options": [
+        "Whether to pay together or separately",
+        "Whether the food was good",
+        "How big the tip should be"
+      ],
+      "answers": [
+        "Whether to pay together or separately"
+      ],
+      "hints": [
+        {
+          "wrong": "Whether the food was good",
+          "explain": "That would be \"Chutnalo ti?\". Tom asks about paying: dohromady, nebo zvlášť."
+        },
+        {
+          "wrong": "How big the tip should be",
+          "explain": "The tip (spropitné) isn't mentioned."
+        }
+      ],
+      "why": "\"Shall we pay together or separately? Tom\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-bld1",
+      "type": "buildSentence",
+      "prompt": "It was excellent.",
+      "tiles": [
+        "bylo",
+        "to",
+        "výborné"
+      ],
+      "answers": [
+        "{Bylo to výborné|To bylo výborné}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l04-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -347,6 +401,30 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l04-bld2",
+      "type": "buildSentence",
+      "prompt": "I paid by card. (a man says)",
+      "tiles": [
+        "zaplatil",
+        "jsem",
+        "kartou"
+      ],
+      "answers": [
+        "{Zaplatil jsem kartou|Kartou jsem zaplatil}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "jsem zaplatil kartou",
+          "explain": "Jsem can't come first: it goes in the second position, after the first word. Zaplatil jsem kartou."
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l04-e7",
       "type": "caseSelect",
       "prompt": "Hezký **večer**!",
@@ -387,27 +465,88 @@
     },
     {
       "id": "u02-l04-e9",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "Can I pay with meal vouchers?",
-      "answers": [
-        "{Můžu|Mohu} [za]platit {stravenkami|stravenkou|stravenkovou kartou}?",
-        "Berete stravenky?"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Můžu zaplatit stravenkami?",
+      "options": [
+        "Can I pay with meal vouchers?",
+        "We'd like to pay, please.",
+        "Together or separately?"
       ],
-      "why": "The means of payment is the bare instrumental: stravenka → stravenkou (one), stravenkami (several). A meal card: stravenkovou kartou. You can also ask Berete stravenky? (Do you take meal vouchers?)",
+      "optionsLang": "en",
+      "answers": [
+        "Can I pay with meal vouchers?"
+      ],
       "hints": [
         {
-          "wrong": "{Můžu|Mohu} [za]platit {se stravenkami|s stravenkami|se stravenkou|s stravenkou}?",
-          "explain": "Use the bare instrumental, without s/se: stravenkami."
+          "wrong": "We'd like to pay, please.",
+          "explain": "That one is “Zaplatíme, prosím.”."
         },
         {
-          "wrong": "{Můžu|Mohu} [za]platit stravenky?",
-          "explain": "stravenky is the plural nominative/accusative. \"With vouchers\" is the instrumental: stravenkami."
+          "wrong": "Together or separately?",
+          "explain": "That one is “Dohromady, nebo zvlášť?”."
         }
       ],
+      "why": "The means of payment is the bare instrumental: stravenka → stravenkou (one), stravenkami (several). A meal card: stravenkovou kartou. You can also ask Berete stravenky? (Do you take meal vouchers?)",
       "skills": [
         "case:instrumental",
         "vocab:v-stravenka"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-asp1",
+      "type": "aspectChoice",
+      "prompt": "Pane vrchní, ___, prosím.",
+      "options": [
+        "platíme",
+        "zaplatíme"
+      ],
+      "verbs": [
+        "platit",
+        "zaplatit"
+      ],
+      "answers": [
+        "zaplatíme"
+      ],
+      "en": "Excuse me, we'd like to pay, please.",
+      "why": "Asking for the bill: one act you want completed, so the perfective zaplatit → zaplatíme.",
+      "hints": [
+        {
+          "wrong": "platíme",
+          "explain": "Platíme is \"we pay / we're paying\" in general. For the bill now: zaplatíme."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-asp2",
+      "type": "aspectChoice",
+      "prompt": "V té kavárně vždycky ___ kartou.",
+      "options": [
+        "platím",
+        "zaplatím"
+      ],
+      "verbs": [
+        "platit",
+        "zaplatit"
+      ],
+      "answers": [
+        "platím"
+      ],
+      "en": "In that café I always pay by card.",
+      "why": "Vždycky: a habit, so the imperfective platit → platím.",
+      "hints": [
+        {
+          "wrong": "zaplatím",
+          "explain": "Zaplatím is \"I'll pay\" once. Always: platím."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
       ],
       "nativeReviewed": false
     }

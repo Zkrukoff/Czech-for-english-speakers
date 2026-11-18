@@ -219,6 +219,61 @@
       "nativeReviewed": false
     },
     {
+      "id": "u03-l03-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Promiň, jsem ještě v tramvaji. Budu tam za deset minut. Klára"
+        ]
+      },
+      "prompt": "When will Klára arrive?",
+      "options": [
+        "In ten minutes",
+        "In two minutes",
+        "She isn't coming"
+      ],
+      "answers": [
+        "In ten minutes"
+      ],
+      "hints": [
+        {
+          "wrong": "In two minutes",
+          "explain": "\"Za deset minut\" is in ten minutes (deset = 10)."
+        },
+        {
+          "wrong": "She isn't coming",
+          "explain": "\"Budu tam\" means \"I'll be there\", in ten minutes."
+        }
+      ],
+      "why": "\"Sorry, I'm still on the tram. I'll be there in ten minutes. Klára\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-bld1",
+      "type": "buildSentence",
+      "prompt": "I'm still on the tram.",
+      "tiles": [
+        "jsem",
+        "ještě",
+        "v",
+        "tramvaji"
+      ],
+      "answers": [
+        "{Jsem ještě v tramvaji|Ještě jsem v tramvaji}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l03-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -341,6 +396,35 @@
       "nativeReviewed": false
     },
     {
+      "id": "u03-l03-bld2",
+      "type": "buildSentence",
+      "prompt": "I was waiting in the café. (a man says)",
+      "tiles": [
+        "čekal",
+        "jsem",
+        "v",
+        "kavárně"
+      ],
+      "answers": [
+        "{Čekal jsem v kavárně|V kavárně jsem čekal}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "jsem čekal v kavárně",
+          "explain": "Jsem can't come first: it goes in the second position, after the first word. Čekal jsem v kavárně."
+        },
+        {
+          "wrong": "čekal v kavárně jsem",
+          "explain": "Jsem goes in the second position, straight after the first word: Čekal jsem v kavárně."
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l03-e6",
       "type": "fillEnding",
       "prompt": "Sedím v [[tramvaj___|tramvaj|loc|location-v-na]].",
@@ -368,19 +452,29 @@
     },
     {
       "id": "u03-l03-e7",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "I'm waiting in the square.",
-      "answers": [
-        "Čekám na náměstí[.]"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Čekám na náměstí.",
+      "options": [
+        "I'm waiting in the square.",
+        "I live in Prague.",
+        "I'm at home."
       ],
-      "why": "Open spaces like squares and streets take na, not v: na náměstí, na ulici.",
+      "optionsLang": "en",
+      "answers": [
+        "I'm waiting in the square."
+      ],
       "hints": [
         {
-          "wrong": "Čekám v náměstí[.]",
-          "explain": "Squares take na: na náměstí."
+          "wrong": "I live in Prague.",
+          "explain": "That one is “Bydlím v Praze.”."
+        },
+        {
+          "wrong": "I'm at home.",
+          "explain": "That one is “Já jsem doma.”."
         }
       ],
+      "why": "Open spaces like squares and streets take na, not v: na náměstí, na ulici.",
       "skills": [
         "case:locative",
         "vocab:v-namesti",
@@ -407,6 +501,62 @@
       ],
       "skills": [
         "verb:present-classes",
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-asp1",
+      "type": "aspectChoice",
+      "prompt": "___ v kavárně na náměstí.",
+      "options": [
+        "Čekám",
+        "Počkám"
+      ],
+      "verbs": [
+        "čekat",
+        "počkat"
+      ],
+      "answers": [
+        "Čekám"
+      ],
+      "en": "I'm waiting in the café on the square.",
+      "why": "Happening now, in progress: the imperfective čekat → čekám.",
+      "hints": [
+        {
+          "wrong": "Počkám",
+          "explain": "Počkám is \"I'll wait\", a promise about what you'll do. Right now: čekám."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-asp2",
+      "type": "aspectChoice",
+      "prompt": "Dobře, ___ venku.",
+      "options": [
+        "čekám",
+        "počkám"
+      ],
+      "verbs": [
+        "čekat",
+        "počkat"
+      ],
+      "answers": [
+        "počkám"
+      ],
+      "en": "OK, I'll wait outside.",
+      "why": "A promise about what you'll do next: the perfective počkat → počkám (its present form means the future).",
+      "hints": [
+        {
+          "wrong": "čekám",
+          "explain": "Čekám is \"I'm waiting\" right now. Promising to wait: počkám."
+        }
+      ],
+      "skills": [
         "verb:aspect"
       ],
       "nativeReviewed": false

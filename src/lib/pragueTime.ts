@@ -6,7 +6,9 @@
  */
 export const PRAGUE = 'Europe/Prague';
 
-const fmt = new Intl.DateTimeFormat('en-CA', {
+let fmt: Intl.DateTimeFormat | undefined;
+/** Created on first use: building an Intl formatter is slow on phones, and not every screen needs one. */
+const formatter = () => (fmt ??= new Intl.DateTimeFormat('en-CA', {
   timeZone: PRAGUE,
   year: 'numeric',
   month: '2-digit',
@@ -14,11 +16,11 @@ const fmt = new Intl.DateTimeFormat('en-CA', {
   hour: '2-digit',
   minute: '2-digit',
   hourCycle: 'h23',
-});
+}));
 
 /** Prague's wall-clock fields for a moment. */
 export function pragueParts(at: number | Date = Date.now()) {
-  const parts = Object.fromEntries(fmt.formatToParts(typeof at === 'number' ? at : at.getTime()).map((p) => [p.type, p.value]));
+  const parts = Object.fromEntries(formatter().formatToParts(typeof at === 'number' ? at : at.getTime()).map((p) => [p.type, p.value]));
   return { year: +parts.year!, month: +parts.month!, day: +parts.day!, hour: +parts.hour!, minute: +parts.minute! };
 }
 

@@ -237,6 +237,65 @@
       "nativeReviewed": false
     },
     {
+      "id": "u01-l02-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Ahoj, já jsem Emma. Jsem tady nová. Těší mě!"
+        ]
+      },
+      "prompt": "What does Emma tell you?",
+      "options": [
+        "She's new here",
+        "She's from England",
+        "She's your boss"
+      ],
+      "answers": [
+        "She's new here"
+      ],
+      "hints": [
+        {
+          "wrong": "She's from England",
+          "explain": "She doesn't say where she's from: \"Jsem tady nová\" means she's new here."
+        },
+        {
+          "wrong": "She's your boss",
+          "explain": "\"Nová\" means new: she's new here."
+        }
+      ],
+      "why": "\"Hi, I'm Emma. I'm new here. Nice to meet you!\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l02-bld1",
+      "type": "buildSentence",
+      "prompt": "My name is Sarah.",
+      "tiles": [
+        "jmenuju",
+        "se",
+        "Sarah"
+      ],
+      "answers": [
+        "{Jmenuju se Sarah|Sarah se jmenuju}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "se jmenuju Sarah",
+          "explain": "Se can't come first: it goes in the second position, after the first word. Jmenuju se Sarah."
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u01-l02-e1",
       "type": "conjugate",
       "verb": "být",
@@ -333,6 +392,30 @@
       ],
       "skills": [
         "vocab:v-jmenovat-se"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l02-bld2",
+      "type": "buildSentence",
+      "prompt": "Her name is Emma.",
+      "tiles": [
+        "jmenuje",
+        "se",
+        "Emma"
+      ],
+      "answers": [
+        "{Jmenuje se Emma|Emma se jmenuje}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "se jmenuje Emma",
+          "explain": "Se can't come first: it goes in the second position, after the first word. Jmenuje se Emma."
+        }
+      ],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

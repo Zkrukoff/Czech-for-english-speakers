@@ -203,6 +203,60 @@
       "nativeReviewed": false
     },
     {
+      "id": "u04-l04-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Tohle je náš tým: Pavel, náš vývojář, a paní Horáková, naše účetní. Vítej!"
+        ]
+      },
+      "prompt": "What does Mrs Horáková do?",
+      "options": [
+        "She's the accountant",
+        "She's the developer",
+        "She's the director"
+      ],
+      "answers": [
+        "She's the accountant"
+      ],
+      "hints": [
+        {
+          "wrong": "She's the developer",
+          "explain": "The developer (vývojář) is Pavel. Paní Horáková is \"účetní\", the accountant."
+        },
+        {
+          "wrong": "She's the director",
+          "explain": "A director would be \"ředitelka\". She's \"účetní\"."
+        }
+      ],
+      "why": "\"This is our team: Pavel, our developer, and Mrs Horáková, our accountant. Welcome!\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l04-bld1",
+      "type": "buildSentence",
+      "prompt": "She works as an assistant.",
+      "tiles": [
+        "pracuje",
+        "jako",
+        "asistentka"
+      ],
+      "answers": [
+        "{Pracuje jako asistentka|Jako asistentka pracuje}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l04-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -286,6 +340,26 @@
       "nativeReviewed": false
     },
     {
+      "id": "u04-l04-bld2",
+      "type": "buildSentence",
+      "prompt": "This is our team.",
+      "tiles": [
+        "tohle",
+        "je",
+        "náš",
+        "tým"
+      ],
+      "answers": [
+        "Tohle je náš tým[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l04-e5",
       "type": "translate",
       "direction": "en-cs",
@@ -330,14 +404,29 @@
     },
     {
       "id": "u04-l04-e7",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "Who is that?",
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Kdo je to?",
+      "options": [
+        "Who is that?",
+        "She works as a developer.",
+        "Pavel is our developer."
+      ],
+      "optionsLang": "en",
       "answers": [
-        "Kdo {je to|to je}?"
+        "Who is that?"
+      ],
+      "hints": [
+        {
+          "wrong": "She works as a developer.",
+          "explain": "That one is “Ona pracuje jako vývojářka.”."
+        },
+        {
+          "wrong": "Pavel is our developer.",
+          "explain": "That one is “Pavel je náš vývojář.”."
+        }
       ],
       "why": "Kdo je to? or Kdo to je? Both are natural.",
-      "hints": [],
       "skills": [
         "vocab:v-tym"
       ],

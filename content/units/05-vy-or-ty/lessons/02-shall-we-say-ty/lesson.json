@@ -140,6 +140,65 @@
       "nativeReviewed": false
     },
     {
+      "id": "u05-l02-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Tome, můžeme si tykat. Já jsem Petra. Na zdraví!"
+        ]
+      },
+      "prompt": "What is Petra offering?",
+      "options": [
+        "To say ty to each other",
+        "To buy him a coffee",
+        "Her phone number"
+      ],
+      "answers": [
+        "To say ty to each other"
+      ],
+      "hints": [
+        {
+          "wrong": "To buy him a coffee",
+          "explain": "No coffee here: \"Můžeme si tykat\" means we can say ty."
+        },
+        {
+          "wrong": "Her phone number",
+          "explain": "She gives her first name, Petra, because they're switching to ty."
+        }
+      ],
+      "why": "\"Tom, we can say ty. I'm Petra. Cheers!\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l02-bld1",
+      "type": "buildSentence",
+      "prompt": "We can say ty.",
+      "tiles": [
+        "můžeme",
+        "si",
+        "tykat"
+      ],
+      "answers": [
+        "Můžeme si tykat[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "můžeme tykat si",
+          "explain": "Si goes in the second position: Můžeme si tykat."
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u05-l02-e1",
       "type": "dialogueComplete",
       "context": [
@@ -219,6 +278,31 @@
       "why": "The older or more senior person offers ty. Between a man and a woman of about the same age, traditionally the woman offers.",
       "skills": [
         "vocab:v-muzeme-si-tykat"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l02-bld2",
+      "type": "buildSentence",
+      "prompt": "I still mix it up.",
+      "tiles": [
+        "ještě",
+        "si",
+        "to",
+        "pletu"
+      ],
+      "answers": [
+        "Ještě si to pletu[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "ještě to si pletu",
+          "explain": "Si comes before to here: Ještě si to pletu."
+        }
+      ],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

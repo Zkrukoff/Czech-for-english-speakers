@@ -248,6 +248,70 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l02-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "menu",
+        "lines": [
+          "Polévka",
+          "Smažený sýr, hranolky",
+          "Řízek, brambory",
+          "Guláš, knedlík"
+        ],
+        "title": "Polední menu"
+      },
+      "prompt": "Which dish comes with chips?",
+      "options": [
+        "The fried cheese",
+        "The schnitzel",
+        "The goulash"
+      ],
+      "answers": [
+        "The fried cheese"
+      ],
+      "hints": [
+        {
+          "wrong": "The schnitzel",
+          "explain": "The schnitzel (řízek) comes with potatoes (brambory). Chips are hranolky."
+        },
+        {
+          "wrong": "The goulash",
+          "explain": "The goulash comes with a dumpling (knedlík)."
+        }
+      ],
+      "why": "Smažený sýr, hranolky: fried cheese with chips.",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-bld1",
+      "type": "buildSentence",
+      "prompt": "I'd like the goulash soup. (a woman says)",
+      "tiles": [
+        "chtěla",
+        "bych",
+        "gulášovou",
+        "polévku"
+      ],
+      "answers": [
+        "{Chtěla bych gulášovou polévku|Gulášovou polévku bych chtěla}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "bych chtěla gulášovou polévku",
+          "explain": "Bych can't come first: it goes in the second position, after the first word. Chtěla bych…"
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l02-e1",
       "type": "conjugate",
       "verb": "chtít",
@@ -366,6 +430,32 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l02-bld2",
+      "type": "buildSentence",
+      "prompt": "I'd have the schnitzel. (a man says)",
+      "tiles": [
+        "já",
+        "bych",
+        "si",
+        "dal",
+        "řízek"
+      ],
+      "answers": [
+        "{Já bych si dal řízek|Dal bych si řízek|Řízek bych si dal}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "já si bych dal řízek",
+          "explain": "The little words keep their order: bych before si. Já bych si dal řízek."
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l02-e6",
       "type": "dialogueComplete",
       "context": [
@@ -433,6 +523,62 @@
       ],
       "skills": [
         "case:accusative"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-asp1",
+      "type": "aspectChoice",
+      "prompt": "Každý den ___ k obědu polévku.",
+      "options": [
+        "jím",
+        "sním"
+      ],
+      "verbs": [
+        "jíst",
+        "sníst"
+      ],
+      "answers": [
+        "jím"
+      ],
+      "en": "Every day I have soup for lunch.",
+      "why": "Každý den (every day) is a habit: imperfective jíst → jím.",
+      "hints": [
+        {
+          "wrong": "sním",
+          "explain": "Sním is \"I'll eat it up\", one finished meal. Every day: jím."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-asp2",
+      "type": "aspectChoice",
+      "prompt": "Už jsem to ___, děkuju.",
+      "options": [
+        "jedl",
+        "snědl"
+      ],
+      "verbs": [
+        "jíst",
+        "sníst"
+      ],
+      "answers": [
+        "snědl"
+      ],
+      "en": "I've already eaten it all, thanks.",
+      "why": "Finished, nothing left: the perfective sníst → snědl.",
+      "hints": [
+        {
+          "wrong": "jedl",
+          "explain": "Jedl jsem is \"I was eating / I ate\" (the activity). Eaten it all up: snědl."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
       ],
       "nativeReviewed": false
     }

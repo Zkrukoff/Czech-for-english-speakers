@@ -58,6 +58,10 @@ export const ALPHABET_SKILL = 'alphabet';
 
 /** Skill tag for listening comprehension (Overheard in Prague). */
 export const LISTENING_SKILL = 'listening';
+/** Word order and second-position clitics (A3); explained on the grammar page "word-order". */
+export const WORD_ORDER_SKILL = 'word-order';
+/** Reading short real-life texts for meaning (P3). */
+export const READING_SKILL = 'reading';
 
 export type SkillTag = `case:${CaseName}` | `verb:${VerbTopic}` | `vocab:${string}` | typeof ALPHABET_SKILL;
 

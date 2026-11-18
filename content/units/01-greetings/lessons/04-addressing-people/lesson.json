@@ -239,6 +239,66 @@
       "nativeReviewed": false
     },
     {
+      "id": "u01-l04-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Ahoj Petře, půjdeme spolu na trh? Lucie"
+        ]
+      },
+      "prompt": "What does Lucie suggest?",
+      "options": [
+        "Going to the market together",
+        "Meeting at the office",
+        "Going home"
+      ],
+      "answers": [
+        "Going to the market together"
+      ],
+      "hints": [
+        {
+          "wrong": "Meeting at the office",
+          "explain": "\"Na trh\" is to the market, \"spolu\" together."
+        },
+        {
+          "wrong": "Going home",
+          "explain": "Home would be \"domů\". She suggests \"na trh\", the market."
+        }
+      ],
+      "why": "\"Hi Petr, shall we go to the market together? Lucie\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l04-bld1",
+      "type": "buildSentence",
+      "prompt": "How are you, Petr?",
+      "tiles": [
+        "jak",
+        "se",
+        "máš",
+        "Petře"
+      ],
+      "answers": [
+        "{Jak se máš[,] Petře|Petře[,] jak se máš}[?]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "jak máš se petře",
+          "explain": "Se goes right after the first word: Jak se máš?"
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u01-l04-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -334,24 +394,56 @@
       "nativeReviewed": false
     },
     {
-      "id": "u01-l04-e5",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "Tomáš, wait!",
-      "answers": [
-        "Tomáši, počkej[!]"
+      "id": "u01-l04-bld2",
+      "type": "buildSentence",
+      "prompt": "Good morning, Mr Novák.",
+      "tiles": [
+        "dobrý",
+        "den",
+        "pane",
+        "pan",
+        "Nováku"
       ],
-      "why": "Names ending in a soft consonant (š, ž, č, ř, j…) add -i in the vocative: Tomáš → Tomáši. Tomáš is a friend, so use the ty form počkej.",
+      "answers": [
+        "Dobrý den[,] pane Nováku[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
       "hints": [
         {
-          "wrong": "Tomáš, počkej[!]",
-          "explain": "Use the vocative: Tomáš → Tomáši."
-        },
-        {
-          "wrong": "Tomáši, počkejte[!]",
-          "explain": "počkejte is the vy form. To a friend: počkej."
+          "wrong": "dobrý den pan nováku",
+          "explain": "Talking to him, use the vocative: pane Nováku."
         }
       ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l04-e5",
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Tomáši, počkej!",
+      "options": [
+        "Tomáš, wait!",
+        "Hi, Petr!",
+        "Good morning, Mr Novák."
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Tomáš, wait!"
+      ],
+      "hints": [
+        {
+          "wrong": "Hi, Petr!",
+          "explain": "That one is “Ahoj, Petře!”."
+        },
+        {
+          "wrong": "Good morning, Mr Novák.",
+          "explain": "That one is “Dobré ráno, pane Nováku.”."
+        }
+      ],
+      "why": "Names ending in a soft consonant (š, ž, č, ř, j…) add -i in the vocative: Tomáš → Tomáši. Tomáš is a friend, so use the ty form počkej.",
       "skills": [
         "case:vocative",
         "vocab:v-pockat"
@@ -383,19 +475,29 @@
     },
     {
       "id": "u01-l04-e7",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "Thanks, Mum!",
-      "answers": [
-        "{Děkuju|Děkuji|Díky}, {mami|mámo}[!]"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Děkuju, mami!",
+      "options": [
+        "Thanks, Mum!",
+        "Hi, Petr!",
+        "Good morning, Mr Novák."
       ],
-      "why": "When talking to your parents, Czechs say mami and tati.",
+      "optionsLang": "en",
+      "answers": [
+        "Thanks, Mum!"
+      ],
       "hints": [
         {
-          "wrong": "{Děkuju|Děkuji|Díky}, máma[!]",
-          "explain": "máma is the nominative. Speaking to her, use mami (or mámo)."
+          "wrong": "Hi, Petr!",
+          "explain": "That one is “Ahoj, Petře!”."
+        },
+        {
+          "wrong": "Good morning, Mr Novák.",
+          "explain": "That one is “Dobré ráno, pane Nováku.”."
         }
       ],
+      "why": "When talking to your parents, Czechs say mami and tati.",
       "skills": [
         "case:vocative",
         "vocab:v-mama"

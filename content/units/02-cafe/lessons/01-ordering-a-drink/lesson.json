@@ -178,6 +178,71 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l01-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "menu",
+        "lines": [
+          "káva 55 Kč",
+          "čaj 45 Kč",
+          "voda 30 Kč",
+          "pivo 50 Kč"
+        ]
+      },
+      "prompt": "Which is the cheapest?",
+      "options": [
+        "Water",
+        "Tea",
+        "Beer"
+      ],
+      "answers": [
+        "Water"
+      ],
+      "hints": [
+        {
+          "wrong": "Tea",
+          "explain": "Tea (čaj) is 45 Kč; water (voda) is 30."
+        },
+        {
+          "wrong": "Beer",
+          "explain": "Beer (pivo) is 50 Kč; water is 30."
+        }
+      ],
+      "why": "Voda (water) is 30 Kč, the cheapest.",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l01-bld1",
+      "type": "buildSentence",
+      "prompt": "I'll have a coffee, please.",
+      "tiles": [
+        "dám",
+        "si",
+        "kávu",
+        "prosím"
+      ],
+      "answers": [
+        "{Dám si kávu|Kávu si dám}[,] prosím[.]",
+        "Dám si[,] prosím[,] kávu[.]",
+        "Prosím[,] dám si kávu[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "si dám kávu prosím",
+          "explain": "Si can't come first: it goes in the second position, after the first word. Dám si kávu."
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l01-e1",
       "type": "fillEnding",
       "prompt": "Dám si [[káv___|káva|acc|object]], prosím.",
@@ -265,6 +330,30 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l01-bld2",
+      "type": "buildSentence",
+      "prompt": "I'll have a beer.",
+      "tiles": [
+        "dám",
+        "si",
+        "pivo"
+      ],
+      "answers": [
+        "{Dám si pivo|Pivo si dám}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "dám pivo si",
+          "explain": "Si goes in the second position, after the first word: Dám si pivo."
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l01-e5",
       "type": "dialogueComplete",
       "context": [
@@ -311,6 +400,62 @@
       "skills": [
         "case:accusative",
         "vocab:v-pivo"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l01-asp1",
+      "type": "aspectChoice",
+      "prompt": "Ráno si vždycky ___ kávu s mlékem.",
+      "options": [
+        "dávám",
+        "dám"
+      ],
+      "verbs": [
+        "dávat",
+        "dát"
+      ],
+      "answers": [
+        "dávám"
+      ],
+      "en": "In the morning I always have a coffee with milk.",
+      "why": "Vždycky (always) makes it a habit, so the imperfective: dávat → dávám.",
+      "hints": [
+        {
+          "wrong": "dám",
+          "explain": "Dám si is one particular coffee, now or next. With vždycky it's a habit: dávám."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l01-asp2",
+      "type": "aspectChoice",
+      "prompt": "Co si ___? Kávu, nebo čaj?",
+      "options": [
+        "dáváte",
+        "dáte"
+      ],
+      "verbs": [
+        "dávat",
+        "dát"
+      ],
+      "answers": [
+        "dáte"
+      ],
+      "en": "What will you have? Coffee or tea?",
+      "why": "One order, right now: the perfective dát → dáte. Its present form points to what happens next.",
+      "hints": [
+        {
+          "wrong": "dáváte",
+          "explain": "Dáváte si…? would ask what you usually have. The waiter means this one order: dáte."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
       ],
       "nativeReviewed": false
     }
