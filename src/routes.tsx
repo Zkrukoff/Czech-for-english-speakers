@@ -2,6 +2,7 @@ import { createBrowserRouter, type RouteObject } from 'react-router-dom';
 import { AppShell } from './components/AppShell';
 import { NotFound } from './components/NotFound';
 import { Navigate } from 'react-router-dom';
+import { KeepQuery, OverheardRedirect } from './components/Redirects';
 import { HomePage } from './features/home/HomePage';
 import { UnitRedirect } from './features/line/UnitRedirect';
 
@@ -28,9 +29,13 @@ export const routes: RouteObject[] = [
       { path: 'idioms/:idiomId', ...page(() => import('./features/idioms/IdiomPage'), 'IdiomPage') },
       { path: 'ride', ...page(() => import('./features/ride/RidePage'), 'RidePage') },
       { path: 'words', ...page(() => import('./features/words/WordsPage'), 'WordsPage') },
-      { path: 'overheard', ...page(() => import('./features/overheard/OverheardIndex'), 'OverheardIndex') },
-      { path: 'overheard/:sceneId', ...page(() => import('./features/overheard/ScenePage'), 'ScenePage') },
-      { path: 'alphabet', ...page(() => import('./features/alphabet/AlphabetPage'), 'AlphabetPage') },
+      { path: 'sounds', ...page(() => import('./features/alphabet/AlphabetPage'), 'SoundsPage') },
+      { path: 'sounds/overheard', ...page(() => import('./features/overheard/OverheardIndex'), 'OverheardIndex') },
+      { path: 'sounds/overheard/:sceneId', ...page(() => import('./features/overheard/ScenePage'), 'ScenePage') },
+      // Old addresses (bookmarks, shared links) keep working.
+      { path: 'alphabet', element: <KeepQuery to="/sounds" /> },
+      { path: 'overheard', element: <Navigate to="/sounds/overheard" replace /> },
+      { path: 'overheard/:sceneId', element: <OverheardRedirect /> },
       { path: 'guides', ...page(() => import('./features/guides/GuidesIndex'), 'GuidesIndex') },
       { path: 'guides/:guideId', ...page(() => import('./features/guides/GuidePage'), 'GuidePage') },
       { path: 'line/:line/:station', ...page(() => import('./features/line/StationPage'), 'StationPage') },

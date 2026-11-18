@@ -120,7 +120,7 @@ export function HomePage() {
             Short lessons built around your week in Prague: colleagues, lunch near the office, the tram home. Real grammar, answers you type yourself,
             reviews timed to your mistakes. No points, no leagues, no nagging: you ride the line, finished stations get a stamp, and each day you practise your ticket gets a little longer.
           </p>
-          <Link to="/alphabet" className="btn btn-secondary mt-4">First: the sounds of Czech</Link>
+          <Link to="/sounds" className="btn btn-secondary mt-4">First: the sounds of Czech</Link>
         </section>
       )}
 

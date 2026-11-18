@@ -9,15 +9,17 @@ import { SpeakButton } from '@/components/SpeakButton';
 import { ReviewStatusBadge } from '@/components/ReviewStatusBadge';
 import { NotFound } from '@/components/NotFound';
 import { PracticeSets } from '@/features/practice/PracticeSets';
+import { OverheardList } from '@/features/overheard/OverheardIndex';
 
 const TABS = [
   { id: 'letters', label: 'Letters' },
-  { id: 'guide', label: 'Pronunciation guide' },
+  { id: 'guide', label: 'How to say it' },
   { id: 'practice', label: 'Practice' },
+  { id: 'overheard', label: 'Overheard' },
 ] as const;
 type Tab = (typeof TABS)[number]['id'];
 
-export function AlphabetPage() {
+export function SoundsPage() {
   const alphabet = course.alphabet;
   const [params, setParams] = useSearchParams();
   const tab = (TABS.find((t) => t.id === params.get('tab'))?.id ?? 'letters') as Tab;
@@ -25,13 +27,13 @@ export function AlphabetPage() {
   return (
     <>
       <PageHeader
-        title="The Czech alphabet"
-        cs="Česká abeceda"
-        subtitle="42 letters. Learn them once and you can read any Czech word aloud, and spell your name and e-mail at the bank, the doctor's or the foreign police."
+        title="Sounds"
+        cs="Výslovnost"
+        subtitle="The alphabet, how Czech is said, and everyday Prague to listen to. 42 letters: learn them once and you can read any Czech word aloud, and spell your name at the bank, the doctor's or the foreign police."
       >
         <div className="mt-3"><ReviewStatusBadge reviewed={alphabet.nativeReviewed} /></div>
       </PageHeader>
-      <nav aria-label="Alphabet sections" className="mb-8 flex gap-1 overflow-x-auto border-b border-rule">
+      <nav aria-label="Sounds sections" className="mb-8 flex gap-1 overflow-x-auto border-b border-rule">
         {TABS.map((t) => (
           <button
             key={t.id}
@@ -47,6 +49,12 @@ export function AlphabetPage() {
       {tab === 'letters' && <LetterExplorer letters={alphabet.letters} />}
       {tab === 'guide' && <CourseMarkdown>{alphabet.introMd}</CourseMarkdown>}
       {tab === 'practice' && <PracticeSets sets={alphabet.practice} context="alphabet" />}
+      {tab === 'overheard' && (
+        <>
+          <p className="mb-6 max-w-2xl text-ink-2">Short everyday scenes: announcements, the checkout, the pub, the pharmacy. Listen, read along in textbook or spoken Czech, then check what you understood.</p>
+          <OverheardList />
+        </>
+      )}
     </>
   );
 }

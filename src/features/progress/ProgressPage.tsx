@@ -177,7 +177,7 @@ export function ProgressPage() {
       <section className="mb-10">
         <h2 className="mb-2 text-2xl font-extrabold">Alphabet and pronunciation</h2>
         <ul className="divide-y divide-rule overflow-hidden rounded-md border-2 border-ink bg-surface">
-          <MasteryRow label="Letters, sounds and spelling" href="/alphabet?tab=practice" m={mastery.get('alphabet')!} />
+          <MasteryRow label="Letters, sounds and spelling" href="/sounds?tab=practice" m={mastery.get('alphabet')!} />
         </ul>
       </section>
 

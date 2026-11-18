@@ -65,7 +65,7 @@ export function FeedbackPanel({ exercise, result, answer }: { exercise: Exercise
   const guide = grammarSkill?.startsWith('guide:') ? course.guidesById.get(grammarSkill.slice(6)) : undefined;
   const pageHref =
     grammarSkill === 'alphabet'
-      ? '/alphabet'
+      ? '/sounds'
       : guide
         ? `/guides/${guide.id}`
         : page

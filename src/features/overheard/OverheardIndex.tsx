@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { course } from '@/content';
 import { PageHeader } from '@/components/PageHeader';
 import { Card, EnamelPlate } from '@/components/ui';
-import { IconArrowRight, IconSpeaker } from '@/components/icons';
+import { IconArrowLeft, IconArrowRight, IconSpeaker } from '@/components/icons';
 import { isRecorded } from './playback';
 
 const KIND = { transport: 'Doprava', shop: 'Obchod', pub: 'Hospoda', health: 'Zdraví', work: 'Práce' } as const;
@@ -10,17 +10,27 @@ const KIND = { transport: 'Doprava', shop: 'Obchod', pub: 'Hospoda', health: 'Zd
 export function OverheardIndex() {
   return (
     <>
+      <Link to="/sounds" className="inline-flex items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Sounds</Link>
       <PageHeader
         title="Overheard in Prague"
         cs="Zaslechnuto v Praze"
         subtitle="Short everyday scenes: announcements, the checkout, the pub, the pharmacy. Listen, read along in textbook or spoken Czech, then check what you understood."
       />
+      <OverheardList />
+    </>
+  );
+}
+
+/** The scene cards, also shown on the Sounds page. */
+export function OverheardList() {
+  return (
+    <>
       <ul className="grid gap-6 sm:grid-cols-2">
         {course.overheard.map((sc) => {
           const recorded = sc.lines.every(isRecorded);
           return (
             <li key={sc.id}>
-              <Link to={`/overheard/${sc.id}`} className="group block h-full transition-transform hover:-translate-y-0.5">
+              <Link to={`/sounds/overheard/${sc.id}`} className="group block h-full transition-transform hover:-translate-y-0.5">
                 <Card corner="tr" className="h-full">
                   <div className="p-5">
                     <EnamelPlate tone="blue" size="sm">{KIND[sc.kind]}</EnamelPlate>

@@ -1,5 +1,5 @@
 import { UpdateNotice } from './UpdateNotice';
-import { NavLink, Outlet, useRouteError } from 'react-router-dom';
+import { NavLink, Outlet, useLocation, useRouteError } from 'react-router-dom';
 import { contentErrors } from '@/content';
 import { useHashScroll } from '@/lib/useHashScroll';
 import { ContentErrorScreen } from './ContentErrorScreen';
@@ -8,11 +8,11 @@ import { MetroLineStripe } from './brand/Metro';
 import { MarkKubismus, WordmarkKubismus } from './brand/Wordmarks';
 
 /** English labels for easy navigation; each page shows its Czech name under the title (and in the tooltip here). */
-const NAV = [
+const NAV: { to: string; label: string; cs: string; end?: boolean; also?: string[] }[] = [
   { to: '/', label: 'Home', cs: 'Linka', end: true },
   { to: '/review', label: 'Review', cs: 'Opakování' },
-  { to: '/grammar', label: 'Grammar', cs: 'Mluvnice' },
-  { to: '/verbs', label: 'Verbs', cs: 'Slovesa' },
+  { to: '/sounds', label: 'Sounds', cs: 'Výslovnost' },
+  { to: '/grammar', label: 'Grammar & verbs', cs: 'Mluvnice a slovesa', also: ['/verbs'] },
   { to: '/guides', label: 'Guides', cs: 'Průvodce' },
   { to: '/wallet', label: 'Ticket wallet', cs: 'Jízdenky' },
   { to: '/settings', label: 'Settings', cs: 'Nastavení' },
@@ -30,6 +30,7 @@ function Wordmark() {
 
 export function AppShell({ error = false }: { error?: boolean }) {
   useHashScroll();
+  const { pathname } = useLocation();
   const due = useDueSummary();
   return (
     <div className="flex min-h-screen flex-col">
@@ -49,7 +50,7 @@ export function AppShell({ error = false }: { error?: boolean }) {
                     end={n.end}
                     className={({ isActive }) =>
                       `relative inline-flex min-h-10 items-center whitespace-nowrap rounded-full px-3.5 text-sm font-semibold transition-colors ${
-                        isActive ? 'bg-ink text-paper' : 'text-ink-2 hover:bg-paper-2 hover:text-ink'
+                        isActive || n.also?.some((p) => pathname.startsWith(p)) ? 'bg-ink text-paper' : 'text-ink-2 hover:bg-paper-2 hover:text-ink'
                       }`
                     }
                   >

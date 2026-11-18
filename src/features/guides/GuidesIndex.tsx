@@ -41,7 +41,7 @@ export function GuidesIndex() {
           );
         })}
         <li>
-          <Link to="/overheard" className="group block h-full transition-transform hover:-translate-y-0.5">
+          <Link to="/sounds/overheard" className="group block h-full transition-transform hover:-translate-y-0.5">
             <Card corner="tr" className="h-full">
               <TileGrid tone="var(--tile-20)" cols={8} rows={1} size={36} className="w-full border-b-2 border-ink" />
               <div className="p-5">
