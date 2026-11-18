@@ -214,6 +214,33 @@
       "nativeReviewed": false
     },
     {
+      "id": "u04-l02-bld1",
+      "type": "buildSentence",
+      "prompt": "How do you like the new job?",
+      "tiles": [
+        "jak",
+        "se",
+        "ti",
+        "líbí",
+        "nová",
+        "práce"
+      ],
+      "answers": [
+        "Jak se ti líbí nová práce[?]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "jak ti se líbí nová práce",
+          "explain": "In a group of little words, se comes before ti: Jak se ti líbí…?"
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l02-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -326,6 +353,30 @@
       "skills": [
         "vocab:v-liny",
         "vocab:v-trochu"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-bld2",
+      "type": "buildSentence",
+      "prompt": "My colleagues help me.",
+      "tiles": [
+        "kolegové",
+        "mi",
+        "pomáhají"
+      ],
+      "answers": [
+        "{Kolegové mi pomáhají|Pomáhají mi kolegové}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "kolegové pomáhají mi",
+          "explain": "Mi goes second, not at the end: Kolegové mi pomáhají."
+        }
+      ],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

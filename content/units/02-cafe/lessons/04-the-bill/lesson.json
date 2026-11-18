@@ -219,6 +219,25 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l04-bld1",
+      "type": "buildSentence",
+      "prompt": "It was excellent.",
+      "tiles": [
+        "bylo",
+        "to",
+        "výborné"
+      ],
+      "answers": [
+        "{Bylo to výborné|To bylo výborné}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l04-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -343,6 +362,30 @@
       ],
       "skills": [
         "vocab:v-zvlast"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-bld2",
+      "type": "buildSentence",
+      "prompt": "I paid by card. (a man says)",
+      "tiles": [
+        "zaplatil",
+        "jsem",
+        "kartou"
+      ],
+      "answers": [
+        "{Zaplatil jsem kartou|Kartou jsem zaplatil}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "jsem zaplatil kartou",
+          "explain": "Jsem can't come first: it goes in the second position, after the first word. Zaplatil jsem kartou."
+        }
+      ],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

@@ -221,6 +221,26 @@
       "nativeReviewed": false
     },
     {
+      "id": "u03-l01-bld1",
+      "type": "buildSentence",
+      "prompt": "Where is the nearest pharmacy?",
+      "tiles": [
+        "kde",
+        "je",
+        "nejbližší",
+        "lékárna"
+      ],
+      "answers": [
+        "Kde je nejbližší lékárna[?]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l01-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -302,6 +322,26 @@
       "skills": [
         "case:genitive",
         "vocab:v-namesti"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l01-bld2",
+      "type": "buildSentence",
+      "prompt": "It's next to the bank.",
+      "tiles": [
+        "je",
+        "to",
+        "vedle",
+        "banky"
+      ],
+      "answers": [
+        "{Je to vedle banky|To je vedle banky}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

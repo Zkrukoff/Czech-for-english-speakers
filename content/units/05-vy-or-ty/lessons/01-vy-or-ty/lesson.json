@@ -186,6 +186,30 @@
       "nativeReviewed": false
     },
     {
+      "id": "u05-l01-bld1",
+      "type": "buildSentence",
+      "prompt": "Do you want a coffee? (to a friend)",
+      "tiles": [
+        "dáš",
+        "si",
+        "kafe"
+      ],
+      "answers": [
+        "{Dáš si kafe|Kafe si dáš}[?]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "si dáš kafe",
+          "explain": "Si can't come first: it goes in the second position, after the first word. Dáš si kafe?"
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u05-l01-e1",
       "type": "multipleChoice",
       "prompt": "Your new boss, on day one. **vy** or **ty**?",
@@ -272,6 +296,27 @@
       ],
       "skills": [
         "verb:present-classes"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l01-bld2",
+      "type": "buildSentence",
+      "prompt": "Are you the new colleague? (politely)",
+      "tiles": [
+        "vy",
+        "jste",
+        "ten",
+        "nový",
+        "kolega"
+      ],
+      "answers": [
+        "{Vy jste ten nový kolega|Jste ten nový kolega}[?]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

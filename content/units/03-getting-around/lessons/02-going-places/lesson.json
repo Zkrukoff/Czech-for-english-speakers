@@ -246,6 +246,27 @@
       "nativeReviewed": false
     },
     {
+      "id": "u03-l02-bld1",
+      "type": "buildSentence",
+      "prompt": "I'm going to Olomouc for the weekend.",
+      "tiles": [
+        "jedu",
+        "na",
+        "víkend",
+        "do",
+        "Olomouce"
+      ],
+      "answers": [
+        "{Jedu na víkend do Olomouce|Na víkend jedu do Olomouce|Jedu do Olomouce na víkend}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l02-e1",
       "type": "conjugate",
       "verb": "jet",
@@ -340,6 +361,24 @@
       "hints": [],
       "skills": [
         "case:accusative"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l02-bld2",
+      "type": "buildSentence",
+      "prompt": "Are you going by train?",
+      "tiles": [
+        "jedeš",
+        "vlakem"
+      ],
+      "answers": [
+        "{Jedeš vlakem|Vlakem jedeš}[?]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

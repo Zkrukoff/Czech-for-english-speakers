@@ -65,7 +65,7 @@ export function ProgressPage() {
   const stampsList = useStamps() ?? [];
   const missionCount = stampsList.filter((x) => x.kind === 'mission').length;
 
-  const skills = ['alphabet', ...course.guides.map((g) => `guide:${g.id}`), ...CASES.map((c) => `case:${c}`), ...VERB_TOPICS.map((t) => `verb:${t}`)];
+  const skills = ['alphabet', 'listening', 'word-order', ...course.guides.map((g) => `guide:${g.id}`), ...CASES.map((c) => `case:${c}`), ...VERB_TOPICS.map((t) => `verb:${t}`)];
   const mastery = computeAllMastery(skills, attempts ?? []);
   const allGoals = course.units.flatMap((u) => u.canDo);
   const goalsDone = allGoals.filter((g) => goals.get(g.id)?.completedAt).length;
@@ -182,6 +182,8 @@ export function ProgressPage() {
         <h2 className="mb-2 text-2xl font-extrabold">Alphabet and pronunciation</h2>
         <ul className="divide-y divide-rule overflow-hidden rounded-md border-2 border-ink bg-surface">
           <MasteryRow label="Letters, sounds and spelling" href="/sounds?tab=practice" m={mastery.get('alphabet')!} />
+          <MasteryRow label="Listening" href="/sounds?tab=overheard" m={mastery.get('listening')!} />
+          <MasteryRow label="Word order and the little words" href="/grammar/word-order" m={mastery.get('word-order')!} />
         </ul>
       </section>
 

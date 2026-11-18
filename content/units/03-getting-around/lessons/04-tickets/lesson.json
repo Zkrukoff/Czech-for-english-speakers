@@ -213,6 +213,26 @@
       "nativeReviewed": false
     },
     {
+      "id": "u03-l04-bld1",
+      "type": "buildSentence",
+      "prompt": "Do I have to change in Brno?",
+      "tiles": [
+        "musím",
+        "v",
+        "Brně",
+        "přestupovat"
+      ],
+      "answers": [
+        "{Musím v Brně přestupovat|Musím přestupovat v Brně|V Brně musím přestupovat}[?]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l04-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -316,6 +336,32 @@
       "skills": [
         "verb:motion",
         "verb:present-classes"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l04-bld2",
+      "type": "buildSentence",
+      "prompt": "I bought a return ticket. (a man says)",
+      "tiles": [
+        "koupil",
+        "jsem",
+        "si",
+        "zpáteční",
+        "jízdenku"
+      ],
+      "answers": [
+        "{Koupil jsem si zpáteční jízdenku|Zpáteční jízdenku jsem si koupil}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "koupil si jsem zpáteční jízdenku",
+          "explain": "In a group of little words, jsem comes before si: Koupil jsem si…"
+        }
+      ],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

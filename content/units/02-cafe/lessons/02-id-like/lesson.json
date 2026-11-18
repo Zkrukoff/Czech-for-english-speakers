@@ -248,6 +248,31 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l02-bld1",
+      "type": "buildSentence",
+      "prompt": "I'd like the goulash soup. (a woman says)",
+      "tiles": [
+        "chtěla",
+        "bych",
+        "gulášovou",
+        "polévku"
+      ],
+      "answers": [
+        "{Chtěla bych gulášovou polévku|Gulášovou polévku bych chtěla}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "bych chtěla gulášovou polévku",
+          "explain": "Bych can't come first: it goes in the second position, after the first word. Chtěla bych…"
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l02-e1",
       "type": "conjugate",
       "verb": "chtít",
@@ -362,6 +387,32 @@
       "skills": [
         "case:instrumental",
         "vocab:v-knedlik"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-bld2",
+      "type": "buildSentence",
+      "prompt": "I'd have the schnitzel. (a man says)",
+      "tiles": [
+        "já",
+        "bych",
+        "si",
+        "dal",
+        "řízek"
+      ],
+      "answers": [
+        "{Já bych si dal řízek|Dal bych si řízek|Řízek bych si dal}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "já si bych dal řízek",
+          "explain": "The little words keep their order: bych before si. Já bych si dal řízek."
+        }
+      ],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

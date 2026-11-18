@@ -241,6 +241,30 @@
       "nativeReviewed": false
     },
     {
+      "id": "u01-l03-bld1",
+      "type": "buildSentence",
+      "prompt": "I'm a teacher. (a woman says)",
+      "tiles": [
+        "jsem",
+        "je",
+        "učitelka"
+      ],
+      "answers": [
+        "{Jsem učitelka|Učitelka jsem}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "je učitelka",
+          "explain": "Je učitelka is \"she's a teacher\". I am: jsem."
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u01-l03-e1",
       "type": "fillEnding",
       "prompt": "Jsem z [[Kanad___|Kanada|gen|after-z]].",
@@ -325,6 +349,29 @@
       "skills": [
         "case:genitive",
         "vocab:v-praha"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l03-bld2",
+      "type": "buildSentence",
+      "prompt": "I'm from Brno, but I live in Prague.",
+      "tiles": [
+        "jsem",
+        "z",
+        "Brna",
+        "ale",
+        "bydlím",
+        "v",
+        "Praze"
+      ],
+      "answers": [
+        "{Jsem z Brna|Z Brna jsem}[,] ale {bydlím v Praze|v Praze bydlím}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

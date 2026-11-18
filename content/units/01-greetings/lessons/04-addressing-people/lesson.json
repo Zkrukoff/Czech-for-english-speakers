@@ -239,6 +239,31 @@
       "nativeReviewed": false
     },
     {
+      "id": "u01-l04-bld1",
+      "type": "buildSentence",
+      "prompt": "How are you, Petr?",
+      "tiles": [
+        "jak",
+        "se",
+        "máš",
+        "Petře"
+      ],
+      "answers": [
+        "{Jak se máš[,] Petře|Petře[,] jak se máš}[?]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "jak máš se petře",
+          "explain": "Se goes right after the first word: Jak se máš?"
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u01-l04-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -330,6 +355,32 @@
       ],
       "skills": [
         "case:vocative"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l04-bld2",
+      "type": "buildSentence",
+      "prompt": "Good morning, Mr Novák.",
+      "tiles": [
+        "dobrý",
+        "den",
+        "pane",
+        "pan",
+        "Nováku"
+      ],
+      "answers": [
+        "Dobrý den[,] pane Nováku[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "dobrý den pan nováku",
+          "explain": "Talking to him, use the vocative: pane Nováku."
+        }
+      ],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

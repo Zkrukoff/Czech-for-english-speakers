@@ -203,6 +203,25 @@
       "nativeReviewed": false
     },
     {
+      "id": "u04-l04-bld1",
+      "type": "buildSentence",
+      "prompt": "She works as an assistant.",
+      "tiles": [
+        "pracuje",
+        "jako",
+        "asistentka"
+      ],
+      "answers": [
+        "{Pracuje jako asistentka|Jako asistentka pracuje}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l04-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -282,6 +301,26 @@
       ],
       "skills": [
         "case:locative"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l04-bld2",
+      "type": "buildSentence",
+      "prompt": "This is our team.",
+      "tiles": [
+        "tohle",
+        "je",
+        "náš",
+        "tým"
+      ],
+      "answers": [
+        "Tohle je náš tým[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

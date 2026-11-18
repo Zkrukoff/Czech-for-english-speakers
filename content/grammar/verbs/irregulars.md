@@ -23,6 +23,8 @@ The most important verb in Czech, and completely irregular.
 
 The forms *jsem, jsi, jsme, jste* are **clitics**: unstressed little words that sit in the **second position** of the sentence. *Jsem doma.* but *Doma **jsem** v šest.* This matters a lot in the [past tense](/verbs/past).
 
+More on where these little words go: [Word order and the little words](/grammar/word-order).
+
 > **Heard on the street:** *seš* instead of *jsi*: *Kde seš?*
 
 ## mít: to have

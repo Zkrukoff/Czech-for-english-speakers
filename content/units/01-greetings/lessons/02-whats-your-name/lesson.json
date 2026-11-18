@@ -237,6 +237,30 @@
       "nativeReviewed": false
     },
     {
+      "id": "u01-l02-bld1",
+      "type": "buildSentence",
+      "prompt": "My name is Sarah.",
+      "tiles": [
+        "jmenuju",
+        "se",
+        "Sarah"
+      ],
+      "answers": [
+        "{Jmenuju se Sarah|Sarah se jmenuju}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "se jmenuju Sarah",
+          "explain": "Se can't come first: it goes in the second position, after the first word. Jmenuju se Sarah."
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u01-l02-e1",
       "type": "conjugate",
       "verb": "být",
@@ -333,6 +357,30 @@
       ],
       "skills": [
         "vocab:v-jmenovat-se"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l02-bld2",
+      "type": "buildSentence",
+      "prompt": "Her name is Emma.",
+      "tiles": [
+        "jmenuje",
+        "se",
+        "Emma"
+      ],
+      "answers": [
+        "{Jmenuje se Emma|Emma se jmenuje}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "se jmenuje Emma",
+          "explain": "Se can't come first: it goes in the second position, after the first word. Jmenuje se Emma."
+        }
+      ],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },

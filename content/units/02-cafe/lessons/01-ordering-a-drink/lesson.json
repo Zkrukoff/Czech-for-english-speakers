@@ -178,6 +178,33 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l01-bld1",
+      "type": "buildSentence",
+      "prompt": "I'll have a coffee, please.",
+      "tiles": [
+        "dám",
+        "si",
+        "kávu",
+        "prosím"
+      ],
+      "answers": [
+        "{Dám si kávu|Kávu si dám}[,] prosím[.]",
+        "Dám si[,] prosím[,] kávu[.]",
+        "Prosím[,] dám si kávu[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "si dám kávu prosím",
+          "explain": "Si can't come first: it goes in the second position, after the first word. Dám si kávu."
+        }
+      ],
+      "skills": [
+        "word-order"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l01-e1",
       "type": "fillEnding",
       "prompt": "Dám si [[káv___|káva|acc|object]], prosím.",
@@ -261,6 +288,30 @@
       ],
       "skills": [
         "verb:present-classes"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l01-bld2",
+      "type": "buildSentence",
+      "prompt": "I'll have a beer.",
+      "tiles": [
+        "dám",
+        "si",
+        "pivo"
+      ],
+      "answers": [
+        "{Dám si pivo|Pivo si dám}[.]"
+      ],
+      "why": "See \"Word order and the little words\": new information goes last, and jsem, se, si, mi, ho… go second.",
+      "hints": [
+        {
+          "wrong": "dám pivo si",
+          "explain": "Si goes in the second position, after the first word: Dám si pivo."
+        }
+      ],
+      "skills": [
+        "word-order"
       ],
       "nativeReviewed": false
     },
