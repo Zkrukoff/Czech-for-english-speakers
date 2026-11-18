@@ -1,5 +1,5 @@
 import type { Course } from '@/content/loader';
-import type { DeckPhrase, Exercise, PhraseSituation, VocabItem } from '@/content/schema';
+import type { DeckPhrase, DeckWord, Exercise, PhraseSituation, VocabItem, WordDeck } from '@/content/schema';
 import type { CellKey } from '@/lib/lens';
 import { vzorDrill } from '@/lib/drills/vzor';
 
@@ -85,6 +85,15 @@ export function exerciseForCard(itemKey: string, course: Course, rotation = 0): 
     return course.exercisesById.get(ids[rotation % ids.length]!)?.exercise ?? null;
   }
   if (itemKey.startsWith('ex:')) return course.exercisesById.get(itemKey.slice(3))?.exercise ?? null;
+  if (itemKey.startsWith('word:')) {
+    const hit = course.wordsById.get(itemKey.slice(5));
+    const deck = hit && course.decks.find((d) => d.id === hit.deckId);
+    if (!hit || !deck) return null;
+    // Typed answers also accept true synonyms: deck words with the same gloss and aspect.
+    const same = (w: DeckWord) => w.id !== hit.word.id && w.en === hit.word.en && w.pos === hit.word.pos && w.aspect === hit.word.aspect;
+    const synonyms = [...course.wordsById.values()].map((v) => v.word).filter(same).flatMap((w) => [w.cs, ...w.alt]);
+    return deckWordExercise(hit.word, deck, rotation, synonyms);
+  }
   if (itemKey.startsWith('chunk:')) {
     const hit = course.phrasesById.get(itemKey.slice(6));
     const situation = hit && course.phrases.find((s) => s.id === hit.situationId);
@@ -168,6 +177,48 @@ export function phraseExercise(phrase: DeckPhrase, situation: PhraseSituation, r
     prompt: phrase.en,
     answers: phrase.answers ?? [end ? `${literal(literalCs)}[${end}]` : literal(phrase.cs)],
     why: `${phrase.cs}${note}`,
+    hints: [],
+  };
+}
+
+const GENDER_NAME = { 'm-anim': 'masculine animate', 'm-inan': 'masculine inanimate', f: 'feminine', n: 'neuter' } as const;
+
+/** A core-vocabulary card (step 3): recognise it first, then produce it, like the phrase deck. */
+export function deckWordExercise(word: DeckWord, deck: WordDeck, reps: number, synonyms: string[] = []): Exercise {
+  const facts = [
+    word.gender && GENDER_NAME[word.gender],
+    word.aspect && word.aspect !== 'both' && (word.aspect === 'impf' ? 'imperfective' : 'perfective'),
+    word.partner && `pair: ${word.partner}`,
+    word.note,
+  ].filter(Boolean).join(' · ');
+  const why = `${word.cs} = ${word.en}${facts ? ` (${facts})` : ''}.${word.example ? ` ${word.example.cs} ${word.example.en}` : ''}`;
+  const base = { id: `word-${word.id}`, skills: ['vocab:deck'], nativeReviewed: word.nativeReviewed };
+  if (reps === 0) {
+    const i = deck.words.findIndex((w) => w.id === word.id);
+    // Neighbours in the same deck, skipping any with the same meaning.
+    const others = deck.words.filter((w) => w.id !== word.id && w.en !== word.en);
+    const wrong = [others[i % others.length]!, others[(i + 3) % others.length]!].filter((w, k, a) => a.findIndex((x) => x.en === w.en) === k);
+    const options = [word.en, ...wrong.map((w) => w.en)];
+    const order = options.map((_, k) => k).sort((a, b) => ((a * 5 + i) % options.length) - ((b * 5 + i) % options.length));
+    return {
+      ...base,
+      type: 'multipleChoice',
+      prompt: 'What does this mean?',
+      cs: word.cs,
+      options: order.map((k) => options[k]!),
+      optionsLang: 'en',
+      answers: [word.en],
+      hints: wrong.map((w) => ({ wrong: w.en, explain: `That one is “${w.cs}”.` })),
+      why,
+    };
+  }
+  return {
+    ...base,
+    type: 'translate',
+    direction: 'en-cs',
+    prompt: `${word.en}${word.pos === 'verb' && word.aspect && word.aspect !== 'both' ? ` (${word.aspect === 'impf' ? 'imperfective' : 'perfective'})` : ''}`,
+    answers: [word.cs, ...word.alt, ...synonyms].map(literal),
+    why,
     hints: [],
   };
 }

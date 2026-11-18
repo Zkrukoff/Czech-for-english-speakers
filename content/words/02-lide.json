@@ -1,0 +1,1002 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "lide",
+  "title": "People and family",
+  "titleCs": "Lidé a rodina",
+  "order": 2,
+  "units": [
+    "u01",
+    "u04"
+  ],
+  "words": [
+    {
+      "id": "clovek",
+      "cs": "člověk",
+      "en": "person",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Plural: lidé (lidi)",
+      "rank": 40,
+      "example": {
+        "cs": "Je to hodný člověk.",
+        "en": "He's a kind person."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "lide",
+      "cs": "lidé",
+      "en": "people",
+      "pos": "noun",
+      "note": "Plural of člověk; spoken lidi",
+      "alt": [
+        "lidi"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "muz",
+      "cs": "muž",
+      "en": "man",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 123,
+      "example": {
+        "cs": "Ten muž je řidič.",
+        "en": "That man is a driver."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zena",
+      "cs": "žena",
+      "en": "woman; wife",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 121,
+      "example": {
+        "cs": "To je moje žena.",
+        "en": "This is my wife."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dite",
+      "cs": "dítě",
+      "en": "child",
+      "pos": "noun",
+      "gender": "n",
+      "note": "Plural: děti (feminine plural)",
+      "rank": 86,
+      "example": {
+        "cs": "Máte děti?",
+        "en": "Do you have children?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "kluk",
+      "cs": "kluk",
+      "en": "boy (casual)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "alt": [
+        "chlapec"
+      ],
+      "rank": 671,
+      "example": {
+        "cs": "Mají kluka a holku.",
+        "en": "They have a boy and a girl."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "holka",
+      "cs": "holka",
+      "en": "girl (casual)",
+      "pos": "noun",
+      "gender": "f",
+      "alt": [
+        "dívka"
+      ],
+      "rank": 1188,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pan",
+      "cs": "pán",
+      "en": "gentleman, man (polite)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 356,
+      "example": {
+        "cs": "Ten pán čeká na vás.",
+        "en": "That gentleman is waiting for you."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dama",
+      "cs": "dáma",
+      "en": "lady",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1896,
+      "nativeReviewed": false
+    },
+    {
+      "id": "babicka",
+      "cs": "babička",
+      "en": "grandmother",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1334,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dedecek",
+      "cs": "dědeček",
+      "en": "grandfather",
+      "pos": "noun",
+      "gender": "m-anim",
+      "alt": [
+        "děda"
+      ],
+      "rank": 2568,
+      "nativeReviewed": false
+    },
+    {
+      "id": "matka",
+      "cs": "matka",
+      "en": "mother (formal)",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Everyday: máma",
+      "rank": 252,
+      "example": {
+        "cs": "Jméno matky",
+        "en": "Mother's name (on a form)"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "otec",
+      "cs": "otec",
+      "en": "father (formal)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Everyday: táta",
+      "rank": 243,
+      "example": {
+        "cs": "Jméno otce",
+        "en": "Father's name (on a form)"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "bratranec",
+      "cs": "bratranec",
+      "en": "cousin (male)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 5623,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sestrenice",
+      "cs": "sestřenice",
+      "en": "cousin (female)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8823,
+      "nativeReviewed": false
+    },
+    {
+      "id": "teta",
+      "cs": "teta",
+      "en": "aunt",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2594,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stryc",
+      "cs": "strýc",
+      "en": "uncle",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 3284,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vnuk",
+      "cs": "vnuk",
+      "en": "grandson",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 6365,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vnucka",
+      "cs": "vnučka",
+      "en": "granddaughter",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8336,
+      "nativeReviewed": false
+    },
+    {
+      "id": "soused",
+      "cs": "soused",
+      "en": "neighbour (man)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1914,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sousedka",
+      "cs": "sousedka",
+      "en": "neighbour (woman)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8518,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cizinec",
+      "cs": "cizinec",
+      "en": "foreigner (man)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 2339,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cizinka",
+      "cs": "cizinka",
+      "en": "foreigner (woman)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 20111,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jmeno",
+      "cs": "jméno",
+      "en": "name; first name",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 259,
+      "example": {
+        "cs": "Jak se píše vaše jméno?",
+        "en": "How do you spell your name?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "prijmeni",
+      "cs": "příjmení",
+      "en": "surname",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 6292,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vek",
+      "cs": "věk",
+      "en": "age",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 577,
+      "example": {
+        "cs": "Věk: 35 let",
+        "en": "Age: 35 (on a form)"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "narozeniny",
+      "cs": "narozeniny",
+      "en": "birthday",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 2784,
+      "nativeReviewed": false
+    },
+    {
+      "id": "svatek",
+      "cs": "svátek",
+      "en": "name day; holiday",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2396,
+      "nativeReviewed": false
+    },
+    {
+      "id": "svatba",
+      "cs": "svatba",
+      "en": "wedding",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2283,
+      "nativeReviewed": false
+    },
+    {
+      "id": "manzele",
+      "cs": "manželé",
+      "en": "married couple",
+      "pos": "noun",
+      "note": "Plural of manžel",
+      "nativeReviewed": false
+    },
+    {
+      "id": "svobodny",
+      "cs": "svobodný",
+      "en": "single (not married)",
+      "pos": "adj",
+      "rank": 1948,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zenaty",
+      "cs": "ženatý",
+      "en": "married (of a man)",
+      "pos": "adj",
+      "rank": 6560,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vdana",
+      "cs": "vdaná",
+      "en": "married (of a woman)",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "rozvedeny",
+      "cs": "rozvedený",
+      "en": "divorced",
+      "pos": "adj",
+      "note": "Feminine rozvedená",
+      "alt": [
+        "rozvedená"
+      ],
+      "rank": 9393,
+      "nativeReviewed": false
+    },
+    {
+      "id": "narodit-se",
+      "cs": "narodit se",
+      "en": "to be born",
+      "pos": "verb",
+      "aspect": "pf",
+      "note": "Narodil jsem se v Londýně.",
+      "rank": 1264,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zit",
+      "cs": "žít",
+      "en": "to live, to be alive",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 222,
+      "example": {
+        "cs": "Žiju v Praze tři roky.",
+        "en": "I've lived in Prague for three years."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "bydliste",
+      "cs": "bydliště",
+      "en": "place of residence (on forms)",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 6081,
+      "nativeReviewed": false
+    },
+    {
+      "id": "adresa",
+      "cs": "adresa",
+      "en": "address",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1654,
+      "nativeReviewed": false
+    },
+    {
+      "id": "telefon",
+      "cs": "telefon",
+      "en": "phone",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 595,
+      "example": {
+        "cs": "Můžu si nabít telefon?",
+        "en": "Can I charge my phone?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "cislo",
+      "cs": "číslo",
+      "en": "number",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 420,
+      "example": {
+        "cs": "Jaké je vaše telefonní číslo?",
+        "en": "What's your phone number?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "e-mail",
+      "cs": "e-mail",
+      "en": "e-mail",
+      "pos": "noun",
+      "gender": "m-inan",
+      "alt": [
+        "email"
+      ],
+      "rank": 3127,
+      "nativeReviewed": false
+    },
+    {
+      "id": "narodnost",
+      "cs": "národnost",
+      "en": "nationality",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8332,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slovensko",
+      "cs": "Slovensko",
+      "en": "Slovakia",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1897,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nemecko",
+      "cs": "Německo",
+      "en": "Germany",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 928,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rakousko",
+      "cs": "Rakousko",
+      "en": "Austria",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2591,
+      "nativeReviewed": false
+    },
+    {
+      "id": "polsko",
+      "cs": "Polsko",
+      "en": "Poland",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2138,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ukrajina",
+      "cs": "Ukrajina",
+      "en": "Ukraine",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3656,
+      "nativeReviewed": false
+    },
+    {
+      "id": "francie",
+      "cs": "Francie",
+      "en": "France",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1504,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spanelsko",
+      "cs": "Španělsko",
+      "en": "Spain",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 3101,
+      "nativeReviewed": false
+    },
+    {
+      "id": "italie",
+      "cs": "Itálie",
+      "en": "Italy",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2150,
+      "nativeReviewed": false
+    },
+    {
+      "id": "anglicky",
+      "cs": "anglicky",
+      "en": "in English",
+      "pos": "adv",
+      "note": "Mluvíte anglicky?",
+      "rank": 4702,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cesky",
+      "cs": "česky",
+      "en": "in Czech",
+      "pos": "adv",
+      "note": "Mluvím trochu česky.",
+      "rank": 4979,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nemecky",
+      "cs": "německy",
+      "en": "in German",
+      "pos": "adv",
+      "rank": 6685,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jazyk",
+      "cs": "jazyk",
+      "en": "language; tongue",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 552,
+      "example": {
+        "cs": "Jaké jazyky mluvíte?",
+        "en": "What languages do you speak?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "hezky",
+      "cs": "hezký",
+      "en": "nice, pretty",
+      "pos": "adj",
+      "rank": 1268,
+      "nativeReviewed": false
+    },
+    {
+      "id": "osklivy",
+      "cs": "ošklivý",
+      "en": "ugly",
+      "pos": "adj",
+      "rank": 4753,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hodny",
+      "cs": "hodný",
+      "en": "kind, good (of people)",
+      "pos": "adj",
+      "rank": 2234,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chytry",
+      "cs": "chytrý",
+      "en": "clever",
+      "pos": "adj",
+      "rank": 2041,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vesely",
+      "cs": "veselý",
+      "en": "cheerful",
+      "pos": "adj",
+      "rank": 2932,
+      "nativeReviewed": false
+    },
+    {
+      "id": "smutny",
+      "cs": "smutný",
+      "en": "sad",
+      "pos": "adj",
+      "rank": 2177,
+      "nativeReviewed": false
+    },
+    {
+      "id": "unaveny",
+      "cs": "unavený",
+      "en": "tired",
+      "pos": "adj",
+      "rank": 2552,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sourozenci",
+      "cs": "sourozenci",
+      "en": "brothers and sisters",
+      "pos": "noun",
+      "note": "Plural",
+      "nativeReviewed": false
+    },
+    {
+      "id": "partner",
+      "cs": "partner",
+      "en": "partner (man)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1031,
+      "nativeReviewed": false
+    },
+    {
+      "id": "partnerka",
+      "cs": "partnerka",
+      "en": "partner (woman)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5522,
+      "nativeReviewed": false
+    },
+    {
+      "id": "miminko",
+      "cs": "miminko",
+      "en": "baby",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 4398,
+      "nativeReviewed": false
+    },
+    {
+      "id": "host",
+      "cs": "host",
+      "en": "guest",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 773,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dospely",
+      "cs": "dospělý",
+      "en": "adult",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1178,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slovak",
+      "cs": "Slovák",
+      "en": "Slovak (man)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 5827,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slovenka",
+      "cs": "Slovenka",
+      "en": "Slovak (woman)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 28966,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nemec",
+      "cs": "Němec",
+      "en": "German (man)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1551,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nemka",
+      "cs": "Němka",
+      "en": "German (woman)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 15049,
+      "nativeReviewed": false
+    },
+    {
+      "id": "american",
+      "cs": "Američan",
+      "en": "American (man)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 2317,
+      "nativeReviewed": false
+    },
+    {
+      "id": "americanka",
+      "cs": "Američanka",
+      "en": "American (woman)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 12883,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ukrajinec",
+      "cs": "Ukrajinec",
+      "en": "Ukrainian (man)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 15059,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ukrajinka",
+      "cs": "Ukrajinka",
+      "en": "Ukrainian (woman)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 40867,
+      "nativeReviewed": false
+    },
+    {
+      "id": "krasny",
+      "cs": "krásný",
+      "en": "beautiful",
+      "pos": "adj",
+      "rank": 455,
+      "example": {
+        "cs": "To je krásné!",
+        "en": "That's beautiful!"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "tlusty",
+      "cs": "tlustý",
+      "en": "fat",
+      "pos": "adj",
+      "rank": 2508,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hubeny",
+      "cs": "hubený",
+      "en": "thin",
+      "pos": "adj",
+      "rank": 4474,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stihly",
+      "cs": "štíhlý",
+      "en": "slim",
+      "pos": "adj",
+      "rank": 3469,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zly",
+      "cs": "zlý",
+      "en": "bad, nasty",
+      "pos": "adj",
+      "rank": 1697,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pratelsky",
+      "cs": "přátelský",
+      "en": "friendly",
+      "pos": "adj",
+      "rank": 3745,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stastny",
+      "cs": "šťastný",
+      "en": "happy",
+      "pos": "adj",
+      "rank": 799,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nervozni",
+      "cs": "nervózní",
+      "en": "nervous",
+      "pos": "adj",
+      "rank": 4131,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pozdravit",
+      "cs": "pozdravit",
+      "en": "to greet, to say hello",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 4305,
+      "nativeReviewed": false
+    },
+    {
+      "id": "seznamit",
+      "cs": "seznámit",
+      "en": "to introduce",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1935,
+      "nativeReviewed": false
+    },
+    {
+      "id": "maminka",
+      "cs": "maminka",
+      "en": "mum",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1076,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tatinek",
+      "cs": "tatínek",
+      "en": "dad",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 2194,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rodic",
+      "cs": "rodič",
+      "en": "parent",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Plural: rodiče",
+      "rank": 404,
+      "example": {
+        "cs": "Moji rodiče bydlí v Kanadě.",
+        "en": "My parents live in Canada."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "slecna",
+      "cs": "slečna",
+      "en": "young woman; Miss",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1852,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mladsi",
+      "cs": "mladší",
+      "en": "younger",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "starsi",
+      "cs": "starší",
+      "en": "older",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "pekny",
+      "cs": "pěkný",
+      "en": "nice, pretty",
+      "pos": "adj",
+      "rank": 1376,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hloupy",
+      "cs": "hloupý",
+      "en": "stupid",
+      "pos": "adj",
+      "rank": 2948,
+      "nativeReviewed": false
+    },
+    {
+      "id": "silny",
+      "cs": "silný",
+      "en": "strong",
+      "pos": "adj",
+      "rank": 361,
+      "example": {
+        "cs": "Je to silná káva.",
+        "en": "It's strong coffee."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "klidny",
+      "cs": "klidný",
+      "en": "calm",
+      "pos": "adj",
+      "rank": 1608,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prijemny",
+      "cs": "příjemný",
+      "en": "pleasant",
+      "pos": "adj",
+      "rank": 637,
+      "example": {
+        "cs": "Příjemný večer!",
+        "en": "Have a pleasant evening!"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "tehotna",
+      "cs": "těhotná",
+      "en": "pregnant",
+      "pos": "adj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "krestni-jmeno",
+      "cs": "křestní jméno",
+      "en": "first name",
+      "pos": "noun",
+      "gender": "n",
+      "nativeReviewed": false
+    },
+    {
+      "id": "pozdrav",
+      "cs": "pozdrav",
+      "en": "greeting",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4787,
+      "nativeReviewed": false
+    },
+    {
+      "id": "radost",
+      "cs": "radost",
+      "en": "joy",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Mám radost = I'm pleased.",
+      "rank": 701,
+      "example": {
+        "cs": "Mám velkou radost.",
+        "en": "I'm very pleased."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "strach",
+      "cs": "strach",
+      "en": "fear",
+      "pos": "noun",
+      "gender": "m-inan",
+      "note": "Mám strach = I'm scared.",
+      "rank": 679,
+      "example": {
+        "cs": "Mám strach z letadla.",
+        "en": "I'm scared of flying."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "napad",
+      "cs": "nápad",
+      "en": "idea",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1224,
+      "nativeReviewed": false
+    }
+  ]
+}

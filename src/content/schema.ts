@@ -786,6 +786,39 @@ export const PhrasesSchema = z.object({
     .min(1),
 });
 
+/** Core vocabulary decks by topic (step 3); one file per deck in content/words/. */
+export const WordDeckSchema = z.object({
+  $comment: z.string().optional(),
+  id,
+  title: z.string().min(1),
+  titleCs: z.string().min(1),
+  order: z.number(),
+  /** Units whose lessons point here ("words for this topic"). */
+  units: z.array(z.string()).default([]),
+  words: z
+    .array(
+      z.object({
+        id,
+        cs: z.string().min(1),
+        en: z.string().min(1),
+        pos: z.enum(['noun', 'verb', 'adj', 'adv', 'pron', 'num', 'prep', 'conj', 'part', 'interj']),
+        gender: z.enum(['m-anim', 'm-inan', 'f', 'n']).optional(),
+        aspect: z.enum(['impf', 'pf', 'both']).optional(),
+        /** Aspect partner, e.g. "zaplatit" for "platit". */
+        partner: z.string().optional(),
+        /** Plural-only nouns, irregular forms and the like. */
+        note: z.string().optional(),
+        /** Other accepted answers when typing the Czech (e.g. "chléb" for "chleba"). */
+        alt: z.array(z.string()).default([]),
+        /** Rank in the Czech National Corpus SYN2015 lemma list (CC BY 4.0). */
+        rank: z.number().int().positive().optional(),
+        example: z.object({ cs: z.string().min(1), en: z.string().min(1) }).optional(),
+        nativeReviewed: reviewed,
+      }),
+    )
+    .min(5),
+});
+
 /**
  * Real-speaker recordings (D6). Files live in public/audio/<id>.<ext>.
  * Exercises that need a recording stay hidden until it is listed here.
@@ -835,6 +868,8 @@ export type EmergencyNumbers = z.infer<typeof EmergencyNumbersSchema>;
 export type EmergencyCards = z.infer<typeof EmergencyCardsSchema>;
 export type PhraseSituation = z.infer<typeof PhrasesSchema>['situations'][number];
 export type DeckPhrase = PhraseSituation['phrases'][number];
+export type WordDeck = z.infer<typeof WordDeckSchema>;
+export type DeckWord = WordDeck['words'][number];
 export type Idiom = z.infer<typeof IdiomsSchema>['idioms'][number];
 export type HolidaysData = z.infer<typeof HolidaysSchema>;
 export type Holiday = HolidaysData['holidays'][number];

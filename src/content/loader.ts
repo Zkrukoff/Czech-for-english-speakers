@@ -18,6 +18,7 @@ import {
   EmergencyCardsSchema,
   IdiomsSchema,
   PhrasesSchema,
+  WordDeckSchema,
   AudioManifestSchema,
   UnitSchema,
   VerbFileSchema,
@@ -41,6 +42,8 @@ import {
   type Idiom,
   type PhraseSituation,
   type DeckPhrase,
+  type WordDeck,
+  type DeckWord,
   type AudioManifest,
   type Mission,
   type StationData,
@@ -169,6 +172,9 @@ export interface Course {
   /** The phrase deck by situation (content/phrases/phrases.json). */
   phrases: PhraseSituation[];
   phrasesById: Map<string, { phrase: DeckPhrase; situationId: string }>;
+  /** Core vocabulary decks (content/words/*.json), in order. */
+  decks: WordDeck[];
+  wordsById: Map<string, { word: DeckWord; deckId: string }>;
   /** Recorded audio by id (content/audio/manifest.json). */
   audio: Map<string, AudioManifest['recordings'][number]>;
   /** Pattern and function SRS keys each exercise practises (from its lens markup). */
@@ -247,6 +253,8 @@ export function loadContent(files: ContentFiles, options: { validate?: boolean }
     idioms: [],
     phrases: [],
     phrasesById: new Map(),
+    decks: [],
+    wordsById: new Map(),
     audio: new Map(),
     hiddenExercises: [],
     lensKeysByExercise: new Map(),
@@ -530,6 +538,29 @@ export function loadContent(files: ContentFiles, options: { validate?: boolean }
         course.phrasesById.set(ph.id, { phrase: ph, situationId: sit.id });
         if (ph.source.kind === 'lesson' && !course.lessonsById.has(ph.source.ref)) errors.push(`phrases/phrases.json: ${ph.id} cites unknown lesson "${ph.source.ref}"`);
       }
+  }
+  {
+    const lessonWords = new Set([...course.vocabById.values()].map((v) => v.item.cs.toLowerCase()));
+    const seen = new Map<string, string>();
+    for (const [path, raw] of Object.entries(files.json).filter(([p]) => p.startsWith('words/')).sort()) {
+      const deck = parse(WordDeckSchema, path, raw);
+      if (!deck) continue;
+      course.decks.push(deck);
+      for (const w of deck.words) {
+        if (course.wordsById.has(w.id)) errors.push(`${path}: duplicate word id "${w.id}"`);
+        course.wordsById.set(w.id, { word: w, deckId: deck.id });
+        if (!validate) continue;
+        const key = `${w.cs.toLowerCase()}|${w.pos}`;
+        if (seen.has(key)) errors.push(`${path}: "${w.cs}" (${w.pos}) is already in ${seen.get(key)}`);
+        seen.set(key, path);
+        if (lessonWords.has(w.cs.toLowerCase())) errors.push(`${path}: "${w.cs}" is already taught in a lesson; leave it out of the deck`);
+        if (w.pos === 'noun' && !w.gender && !w.note) errors.push(`${path}: noun "${w.cs}" needs a gender (or a note, for plural-only nouns)`);
+        if (w.pos === 'verb' && !w.aspect) errors.push(`${path}: verb "${w.cs}" needs an aspect`);
+        const verb = w.pos === 'verb' ? course.verbsByLemma.get(w.cs) : undefined;
+        if (verb && verb.partner.length && w.partner && !verb.partner.includes(w.partner)) errors.push(`${path}: "${w.cs}" partner "${w.partner}" doesn't match verbs.json (${verb.partner.join(', ')})`);
+      }
+    }
+    course.decks.sort((a, b) => a.order - b.order);
   }
   if (files.json['idioms/idioms.json']) {
     const data = parse(IdiomsSchema, 'idioms/idioms.json', files.json['idioms/idioms.json']);

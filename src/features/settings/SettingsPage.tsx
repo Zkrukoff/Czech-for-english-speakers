@@ -194,6 +194,14 @@ export function SettingsPage() {
           </div>
           {message && <p role="status" className="text-sm text-ink">{message}</p>}
         </section>
+
+        <section aria-labelledby="s-sources" className="space-y-2 text-sm text-ink-2">
+          <SectionNumber n={7} id="s-sources">Sources</SectionNumber>
+          <p>Lines and stations: PID open data. Times, prices and rules: the official pages named next to each fact, with the date checked.</p>
+          <p>Word frequencies: Czech National Corpus, SYN2015 lemma list (Křen, M., Ústav Českého národního korpusu FF UK), licensed CC BY 4.0.</p>
+          <p>Idioms: SSČ and SSJČ via the Internetová jazyková příručka (ÚJČ AV ČR). Phrase-deck entries marked "A1 inventory" cite NPI ČR's <span lang="cs">Soupis lexikálních jednotek</span>.</p>
+          <p>All Czech in Pražák is awaiting review by a native speaker.</p>
+        </section>
       </div>
     </>
   );

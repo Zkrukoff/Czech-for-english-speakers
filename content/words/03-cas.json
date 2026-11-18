@@ -1,0 +1,914 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "cas",
+  "title": "Numbers, time and the calendar",
+  "titleCs": "Čísla, čas, kalendář",
+  "order": 3,
+  "units": [
+    "u02",
+    "u03"
+  ],
+  "words": [
+    {
+      "id": "cas",
+      "cs": "čas",
+      "en": "time",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 119,
+      "example": {
+        "cs": "Nemám čas.",
+        "en": "I don't have time."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "hodina",
+      "cs": "hodina",
+      "en": "hour; lesson",
+      "pos": "noun",
+      "gender": "f",
+      "note": "V kolik hodin? = at what time?",
+      "rank": 162,
+      "example": {
+        "cs": "Je jedna hodina.",
+        "en": "It's one o'clock."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "minuta",
+      "cs": "minuta",
+      "en": "minute",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 297,
+      "example": {
+        "cs": "Počkejte minutu.",
+        "en": "Wait a minute."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vterina",
+      "cs": "vteřina",
+      "en": "second",
+      "pos": "noun",
+      "gender": "f",
+      "alt": [
+        "sekunda"
+      ],
+      "rank": 1669,
+      "nativeReviewed": false
+    },
+    {
+      "id": "den",
+      "cs": "den",
+      "en": "day",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 80,
+      "example": {
+        "cs": "Hezký den!",
+        "en": "Have a nice day!"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "tyden",
+      "cs": "týden",
+      "en": "week",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 257,
+      "example": {
+        "cs": "Příští týden mám dovolenou.",
+        "en": "Next week I'm on holiday."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "mesic",
+      "cs": "měsíc",
+      "en": "month; moon",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 246,
+      "example": {
+        "cs": "Nájem platím každý měsíc.",
+        "en": "I pay rent every month."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dnes",
+      "cs": "dnes",
+      "en": "today",
+      "pos": "adv",
+      "note": "Spoken: dneska",
+      "alt": [
+        "dneska"
+      ],
+      "rank": 166,
+      "example": {
+        "cs": "Dnes je pondělí.",
+        "en": "Today is Monday."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zitra",
+      "cs": "zítra",
+      "en": "tomorrow",
+      "pos": "adv",
+      "rank": 1577,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vcera",
+      "cs": "včera",
+      "en": "yesterday",
+      "pos": "adv",
+      "rank": 603,
+      "example": {
+        "cs": "Včera jsem byl doma.",
+        "en": "Yesterday I was at home."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pozitri",
+      "cs": "pozítří",
+      "en": "the day after tomorrow",
+      "pos": "adv",
+      "rank": 15654,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rano",
+      "cs": "ráno",
+      "en": "in the morning",
+      "pos": "adv",
+      "rank": 431,
+      "example": {
+        "cs": "Ráno piju kávu.",
+        "en": "In the morning I drink coffee."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dopoledne",
+      "cs": "dopoledne",
+      "en": "in the morning (before noon)",
+      "pos": "adv",
+      "rank": 3106,
+      "nativeReviewed": false
+    },
+    {
+      "id": "poledne",
+      "cs": "poledne",
+      "en": "noon",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 3796,
+      "nativeReviewed": false
+    },
+    {
+      "id": "odpoledne",
+      "cs": "odpoledne",
+      "en": "in the afternoon",
+      "pos": "adv",
+      "rank": 1192,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vecer",
+      "cs": "večer",
+      "en": "in the evening",
+      "pos": "adv",
+      "rank": 340,
+      "example": {
+        "cs": "Večer jsem doma.",
+        "en": "I'm at home in the evening."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "noc",
+      "cs": "noc",
+      "en": "night",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 282,
+      "example": {
+        "cs": "Dobrou noc!",
+        "en": "Good night!"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pondeli",
+      "cs": "pondělí",
+      "en": "Monday",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2196,
+      "nativeReviewed": false
+    },
+    {
+      "id": "utery",
+      "cs": "úterý",
+      "en": "Tuesday",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2854,
+      "nativeReviewed": false
+    },
+    {
+      "id": "streda",
+      "cs": "středa",
+      "en": "Wednesday",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2275,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ctvrtek",
+      "cs": "čtvrtek",
+      "en": "Thursday",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2451,
+      "nativeReviewed": false
+    },
+    {
+      "id": "patek",
+      "cs": "pátek",
+      "en": "Friday",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1664,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sobota",
+      "cs": "sobota",
+      "en": "Saturday",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1138,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nedele",
+      "cs": "neděle",
+      "en": "Sunday",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1296,
+      "nativeReviewed": false
+    },
+    {
+      "id": "leden",
+      "cs": "leden",
+      "en": "January",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1230,
+      "nativeReviewed": false
+    },
+    {
+      "id": "unor",
+      "cs": "únor",
+      "en": "February",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1637,
+      "nativeReviewed": false
+    },
+    {
+      "id": "brezen",
+      "cs": "březen",
+      "en": "March",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1403,
+      "nativeReviewed": false
+    },
+    {
+      "id": "duben",
+      "cs": "duben",
+      "en": "April",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1399,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kveten",
+      "cs": "květen",
+      "en": "May",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1232,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cerven",
+      "cs": "červen",
+      "en": "June",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1328,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cervenec",
+      "cs": "červenec",
+      "en": "July",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1589,
+      "nativeReviewed": false
+    },
+    {
+      "id": "srpen",
+      "cs": "srpen",
+      "en": "August",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1436,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zari",
+      "cs": "září",
+      "en": "September",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1027,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rijen",
+      "cs": "říjen",
+      "en": "October",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1351,
+      "nativeReviewed": false
+    },
+    {
+      "id": "listopad",
+      "cs": "listopad",
+      "en": "November",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1404,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prosinec",
+      "cs": "prosinec",
+      "en": "December",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1557,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jaro",
+      "cs": "jaro",
+      "en": "spring",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1234,
+      "nativeReviewed": false
+    },
+    {
+      "id": "leto",
+      "cs": "léto",
+      "en": "summer",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 897,
+      "nativeReviewed": false
+    },
+    {
+      "id": "podzim",
+      "cs": "podzim",
+      "en": "autumn",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1467,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zima",
+      "cs": "zima",
+      "en": "winter; cold",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 877,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tisic",
+      "cs": "tisíc",
+      "en": "thousand",
+      "pos": "num",
+      "rank": 230,
+      "example": {
+        "cs": "Stojí to tisíc korun.",
+        "en": "It costs a thousand crowns."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "milion",
+      "cs": "milion",
+      "en": "million",
+      "pos": "num",
+      "alt": [
+        "milión"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "prvni",
+      "cs": "první",
+      "en": "first",
+      "pos": "num",
+      "rank": 68,
+      "example": {
+        "cs": "Je to můj první den.",
+        "en": "It's my first day."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "druhy",
+      "cs": "druhý",
+      "en": "second",
+      "pos": "num",
+      "rank": 84,
+      "example": {
+        "cs": "Bydlím ve druhém patře.",
+        "en": "I live on the second floor."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "treti",
+      "cs": "třetí",
+      "en": "third",
+      "pos": "num",
+      "rank": 441,
+      "example": {
+        "cs": "Je to třetí dveře vlevo.",
+        "en": "It's the third door on the left."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "posledni",
+      "cs": "poslední",
+      "en": "last",
+      "pos": "adj",
+      "rank": 135,
+      "example": {
+        "cs": "Kdy jede poslední tramvaj?",
+        "en": "When does the last tram go?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "polovina",
+      "cs": "polovina",
+      "en": "half",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 500,
+      "example": {
+        "cs": "Polovina lidí pracuje z domu.",
+        "en": "Half the people work from home."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "ctvrt",
+      "cs": "čtvrt",
+      "en": "quarter",
+      "pos": "noun",
+      "gender": "f",
+      "note": "čtvrt na osm = 7:15",
+      "rank": 2383,
+      "nativeReviewed": false
+    },
+    {
+      "id": "datum",
+      "cs": "datum",
+      "en": "date",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 648,
+      "example": {
+        "cs": "Jaké je dnes datum?",
+        "en": "What's the date today?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "kalendar",
+      "cs": "kalendář",
+      "en": "calendar",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4140,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dovolena",
+      "cs": "dovolená",
+      "en": "holiday, time off (from work)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1837,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prazdniny",
+      "cs": "prázdniny",
+      "en": "school holidays",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 2961,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zacatek",
+      "cs": "začátek",
+      "en": "beginning",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 448,
+      "example": {
+        "cs": "Na začátku je to těžké.",
+        "en": "At the beginning it's hard."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "konec",
+      "cs": "konec",
+      "en": "end",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 183,
+      "example": {
+        "cs": "Konec měsíce.",
+        "en": "The end of the month."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "brzky",
+      "cs": "brzký",
+      "en": "early",
+      "pos": "adj",
+      "rank": 9793,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pozdni",
+      "cs": "pozdní",
+      "en": "late",
+      "pos": "adj",
+      "rank": 1727,
+      "nativeReviewed": false
+    },
+    {
+      "id": "denne",
+      "cs": "denně",
+      "en": "daily",
+      "pos": "adv",
+      "rank": 1420,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dlouho",
+      "cs": "dlouho",
+      "en": "for a long time",
+      "pos": "adv",
+      "rank": 262,
+      "example": {
+        "cs": "Jak dlouho to trvá?",
+        "en": "How long does it take?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "chvile",
+      "cs": "chvíle",
+      "en": "moment, a while",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 156,
+      "example": {
+        "cs": "Moment, chvíli počkejte.",
+        "en": "One moment, wait a while."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zacit",
+      "cs": "začít",
+      "en": "to begin, to start",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "začínat",
+      "rank": 92,
+      "example": {
+        "cs": "Kurz začne v září.",
+        "en": "The course starts in September."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "skoncit",
+      "cs": "skončit",
+      "en": "to end, to finish",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "končit",
+      "rank": 403,
+      "example": {
+        "cs": "Kdy skončí porada?",
+        "en": "When will the meeting end?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "koncit",
+      "cs": "končit",
+      "en": "to end, to finish",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "skončit",
+      "rank": 1168,
+      "nativeReviewed": false
+    },
+    {
+      "id": "trvat",
+      "cs": "trvat",
+      "en": "to last, to take (time)",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Jak dlouho to trvá?",
+      "rank": 473,
+      "example": {
+        "cs": "Cesta trvá hodinu.",
+        "en": "The journey takes an hour."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vstavat",
+      "cs": "vstávat",
+      "en": "to get up",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "vstát",
+      "rank": 4465,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spat",
+      "cs": "spát",
+      "en": "to sleep",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Present: spím",
+      "rank": 763,
+      "nativeReviewed": false
+    },
+    {
+      "id": "minuly",
+      "cs": "minulý",
+      "en": "last, previous",
+      "pos": "adj",
+      "note": "minulý týden",
+      "rank": 606,
+      "example": {
+        "cs": "Minulý týden jsem byl nemocný.",
+        "en": "Last week I was ill."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pristi",
+      "cs": "příští",
+      "en": "next",
+      "pos": "adj",
+      "note": "příští týden",
+      "rank": 635,
+      "example": {
+        "cs": "Příští zastávka: Můstek.",
+        "en": "Next stop: Můstek."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dnesni",
+      "cs": "dnešní",
+      "en": "today's",
+      "pos": "adj",
+      "rank": 749,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zitrejsi",
+      "cs": "zítřejší",
+      "en": "tomorrow's",
+      "pos": "adj",
+      "rank": 11418,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vcerejsi",
+      "cs": "včerejší",
+      "en": "yesterday's",
+      "pos": "adj",
+      "rank": 3512,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jednou",
+      "cs": "jednou",
+      "en": "once",
+      "pos": "adv",
+      "rank": 242,
+      "example": {
+        "cs": "Jednou týdně cvičím.",
+        "en": "I exercise once a week."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dvakrat",
+      "cs": "dvakrát",
+      "en": "twice",
+      "pos": "adv",
+      "rank": 1257,
+      "nativeReviewed": false
+    },
+    {
+      "id": "trikrat",
+      "cs": "třikrát",
+      "en": "three times",
+      "pos": "adv",
+      "rank": 2658,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kolikrat",
+      "cs": "kolikrát",
+      "en": "how many times",
+      "pos": "adv",
+      "rank": 5306,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obcas",
+      "cs": "občas",
+      "en": "now and then",
+      "pos": "adv",
+      "rank": 631,
+      "example": {
+        "cs": "Občas chodím plavat.",
+        "en": "Now and then I go swimming."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "obvykle",
+      "cs": "obvykle",
+      "en": "usually",
+      "pos": "adv",
+      "rank": 665,
+      "example": {
+        "cs": "Obvykle vstávám v sedm.",
+        "en": "I usually get up at seven."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "nejdriv",
+      "cs": "nejdřív",
+      "en": "first (of all)",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "nakonec",
+      "cs": "nakonec",
+      "en": "in the end",
+      "pos": "adv",
+      "rank": 224,
+      "example": {
+        "cs": "Nakonec jsme šli pěšky.",
+        "en": "In the end we walked."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "tydne",
+      "cs": "týdně",
+      "en": "weekly",
+      "pos": "adv",
+      "rank": 4266,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rocne",
+      "cs": "ročně",
+      "en": "yearly",
+      "pos": "adv",
+      "rank": 2105,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hodiny",
+      "cs": "hodiny",
+      "en": "clock",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 19981,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pulnoc",
+      "cs": "půlnoc",
+      "en": "midnight",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3841,
+      "nativeReviewed": false
+    },
+    {
+      "id": "predevcirem",
+      "cs": "předevčírem",
+      "en": "the day before yesterday",
+      "pos": "adv",
+      "rank": 19123,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kolikaty",
+      "cs": "kolikátý",
+      "en": "which (in order)",
+      "pos": "num",
+      "note": "Kolikátého je dnes? = What's the date today?",
+      "rank": 25953,
+      "nativeReviewed": false
+    },
+    {
+      "id": "paty",
+      "cs": "pátý",
+      "en": "fifth",
+      "pos": "num",
+      "rank": 2098,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ctvrty",
+      "cs": "čtvrtý",
+      "en": "fourth",
+      "pos": "num",
+      "rank": 1438,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nula",
+      "cs": "nula",
+      "en": "zero",
+      "pos": "num",
+      "rank": 2869,
+      "nativeReviewed": false
+    },
+    {
+      "id": "procento",
+      "cs": "procento",
+      "en": "per cent",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 330,
+      "example": {
+        "cs": "Sleva dvacet procent.",
+        "en": "Twenty per cent off."
+      },
+      "nativeReviewed": false
+    }
+  ]
+}
