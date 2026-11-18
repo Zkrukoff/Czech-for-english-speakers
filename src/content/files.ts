@@ -4,7 +4,8 @@ import type { ContentFiles } from './loader';
  * Collects every file under /content at build time. Vite bundles these, and
  * in dev a change to any content file hot-reloads the app.
  */
-const jsonModules = import.meta.glob('/content/**/*.json', { eager: true, import: 'default' });
+// The exam's content loads only with the exam pages (src/features/exam/examContent.ts).
+const jsonModules = import.meta.glob(['/content/**/*.json', '!/content/exam/**'], { eager: true, import: 'default' });
 const mdModules = import.meta.glob('/content/**/*.md', { eager: true, query: '?raw', import: 'default' });
 
 const strip = (p: string) => p.replace(/^\/content\//, '');

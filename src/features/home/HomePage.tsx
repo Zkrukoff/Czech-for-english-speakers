@@ -95,6 +95,13 @@ export function HomePage() {
             <IconArrowRight size={18} className="text-ink-3 group-hover:text-ink" />
           </Link>
           <WallPreview />
+          <Link to="/exam" className="card card-link group flex items-center justify-between gap-3 p-4">
+            <span>
+              <span className="label-board block text-ink-3" lang="cs">Zkouška A2</span>
+              <span className="text-ink-2">Preparing for the permanent-residence exam? Practise it part by part.</span>
+            </span>
+            <IconArrowRight size={18} className="text-ink-3 group-hover:text-ink" />
+          </Link>
           <Link to="/words" className="card card-link group flex items-center justify-between gap-3 p-4">
             <span>
               <span className="label-board block text-ink-3" lang="cs">Moje slova</span>

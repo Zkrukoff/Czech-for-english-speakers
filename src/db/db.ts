@@ -113,6 +113,24 @@ export interface Stamp {
 }
 
 /** A word or phrase the learner saved from daily life. Reviewed as "own:<id>". */
+/** One go at an exam task, in practice or inside a mock exam. Recordings are never stored. */
+export interface ExamAttempt {
+  id?: number;
+  taskId: string;
+  part: 'reading' | 'writing' | 'listening' | 'speaking';
+  task: number;
+  mode: 'practice' | 'exam';
+  /** Set when the attempt is part of a mock exam: which mock, and the run (its start time). */
+  mock?: 'mock1' | 'mock2';
+  run?: number;
+  score: number;
+  max: number;
+  /** Writing and speaking are scored by the learner, not by the app. */
+  selfAssessed: boolean;
+  at: number;
+  durationMs?: number;
+}
+
 export interface OwnWord {
   id?: number;
   cs: string;
@@ -142,7 +160,7 @@ export const DB_NAME = 'prazak';
 export const LEGACY_DB_NAMES = ['czech-for-english-speakers'] as const;
 
 /** The tables that hold learner data, in the order they are copied and backed up. */
-export const DATA_TABLES = ['settings', 'attempts', 'cards', 'lessonProgress', 'goalProgress', 'profile', 'missions', 'stamps', 'ownWords'] as const;
+export const DATA_TABLES = ['settings', 'attempts', 'cards', 'lessonProgress', 'goalProgress', 'profile', 'missions', 'stamps', 'ownWords', 'examAttempts'] as const;
 
 /** The tables that existed in schema v1 (and in the legacy database). */
 export const V1_TABLES = ['settings', 'attempts', 'cards', 'lessonProgress', 'goalProgress'] as const;
@@ -158,6 +176,7 @@ export class PrazakDB extends Dexie {
   missions!: EntityTable<MissionRecord, 'missionId'>;
   stamps!: EntityTable<Stamp, 'id'>;
   ownWords!: EntityTable<OwnWord, 'id'>;
+  examAttempts!: EntityTable<ExamAttempt, 'id'>;
 
   constructor(name: string = DB_NAME) {
     super(name);
@@ -181,6 +200,10 @@ export class PrazakDB extends Dexie {
     // v3 (round 2): additive. Words the learner saves themselves.
     this.version(3).stores({
       ownWords: '++id, createdAt',
+    });
+    // v4 (round 3, step 4): additive. Exam practice and mock results.
+    this.version(4).stores({
+      examAttempts: '++id, taskId, part, run, at',
     });
   }
 }
