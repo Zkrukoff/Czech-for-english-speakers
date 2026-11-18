@@ -1,0 +1,548 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "urady",
+  "title": "Offices and services",
+  "titleCs": "Úřady a služby",
+  "order": 10,
+  "units": [
+    "u05"
+  ],
+  "words": [
+    {
+      "id": "urad",
+      "cs": "úřad",
+      "en": "office (public authority)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 530,
+      "example": {
+        "cs": "Kde je úřad?",
+        "en": "Where is the office?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "doklad",
+      "cs": "doklad",
+      "en": "document, ID",
+      "pos": "noun",
+      "gender": "m-inan",
+      "note": "Doklady, prosím.",
+      "rank": 2517,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obcansky-prukaz",
+      "cs": "občanský průkaz",
+      "en": "ID card",
+      "pos": "noun",
+      "gender": "m-inan",
+      "note": "Everyday: občanka",
+      "alt": [
+        "občanka"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "pas",
+      "cs": "pas",
+      "en": "passport",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2725,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vizum",
+      "cs": "vízum",
+      "en": "visa",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 9565,
+      "nativeReviewed": false
+    },
+    {
+      "id": "povoleni",
+      "cs": "povolení",
+      "en": "permit",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 3124,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pobyt",
+      "cs": "pobyt",
+      "en": "stay; residence",
+      "pos": "noun",
+      "gender": "m-inan",
+      "note": "trvalý pobyt = permanent residence",
+      "rank": 1748,
+      "nativeReviewed": false
+    },
+    {
+      "id": "formular",
+      "cs": "formulář",
+      "en": "form",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5828,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zadost",
+      "cs": "žádost",
+      "en": "application, request",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1611,
+      "nativeReviewed": false
+    },
+    {
+      "id": "podpis",
+      "cs": "podpis",
+      "en": "signature",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3247,
+      "nativeReviewed": false
+    },
+    {
+      "id": "razitko",
+      "cs": "razítko",
+      "en": "stamp",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 8218,
+      "nativeReviewed": false
+    },
+    {
+      "id": "poplatek",
+      "cs": "poplatek",
+      "en": "fee",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2447,
+      "nativeReviewed": false
+    },
+    {
+      "id": "termin",
+      "cs": "termín",
+      "en": "appointment; date; deadline",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1541,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prepazka",
+      "cs": "přepážka",
+      "en": "counter (at an office)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8850,
+      "nativeReviewed": false
+    },
+    {
+      "id": "fronta",
+      "cs": "fronta",
+      "en": "queue",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2334,
+      "nativeReviewed": false
+    },
+    {
+      "id": "poradove-cislo",
+      "cs": "pořadové číslo",
+      "en": "queue number (ticket)",
+      "pos": "noun",
+      "gender": "n",
+      "nativeReviewed": false
+    },
+    {
+      "id": "policie",
+      "cs": "policie",
+      "en": "police",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 574,
+      "example": {
+        "cs": "Zavolejte policii!",
+        "en": "Call the police!"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dopis",
+      "cs": "dopis",
+      "en": "letter",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 768,
+      "nativeReviewed": false
+    },
+    {
+      "id": "balik",
+      "cs": "balík",
+      "en": "parcel",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4218,
+      "nativeReviewed": false
+    },
+    {
+      "id": "znamka",
+      "cs": "známka",
+      "en": "stamp (postage); mark (at school)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2367,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obalka",
+      "cs": "obálka",
+      "en": "envelope",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3233,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pojistka",
+      "cs": "pojistka",
+      "en": "insurance policy",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 7257,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cislo-uctu",
+      "cs": "číslo účtu",
+      "en": "account number",
+      "pos": "noun",
+      "gender": "n",
+      "nativeReviewed": false
+    },
+    {
+      "id": "heslo",
+      "cs": "heslo",
+      "en": "password",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2630,
+      "nativeReviewed": false
+    },
+    {
+      "id": "internet",
+      "cs": "internet",
+      "en": "internet",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1086,
+      "nativeReviewed": false
+    },
+    {
+      "id": "odbor",
+      "cs": "odbor",
+      "en": "department (of an office)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3766,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyplnit",
+      "cs": "vyplnit",
+      "en": "to fill in",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 4164,
+      "nativeReviewed": false
+    },
+    {
+      "id": "podepsat",
+      "cs": "podepsat",
+      "en": "to sign",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1890,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zadat",
+      "cs": "žádat",
+      "en": "to apply, to ask for",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1443,
+      "nativeReviewed": false
+    },
+    {
+      "id": "platny",
+      "cs": "platný",
+      "en": "valid",
+      "pos": "adj",
+      "rank": 2445,
+      "nativeReviewed": false
+    },
+    {
+      "id": "povinny",
+      "cs": "povinný",
+      "en": "compulsory",
+      "pos": "adj",
+      "rank": 2123,
+      "nativeReviewed": false
+    },
+    {
+      "id": "osobni",
+      "cs": "osobní",
+      "en": "personal",
+      "pos": "adj",
+      "rank": 616,
+      "example": {
+        "cs": "Osobní údaje",
+        "en": "Personal details (on a form)"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "trvaly",
+      "cs": "trvalý",
+      "en": "permanent",
+      "pos": "adj",
+      "rank": 2473,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cizinecka-policie",
+      "cs": "cizinecká policie",
+      "en": "foreign police",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "ministerstvo",
+      "cs": "ministerstvo",
+      "en": "ministry",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 706,
+      "example": {
+        "cs": "Ministerstvo vnitra",
+        "en": "The Ministry of the Interior"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "rodne-cislo",
+      "cs": "rodné číslo",
+      "en": "birth number (Czech personal ID number)",
+      "pos": "noun",
+      "gender": "n",
+      "nativeReviewed": false
+    },
+    {
+      "id": "datum-narozeni",
+      "cs": "datum narození",
+      "en": "date of birth",
+      "pos": "noun",
+      "gender": "n",
+      "nativeReviewed": false
+    },
+    {
+      "id": "misto-narozeni",
+      "cs": "místo narození",
+      "en": "place of birth",
+      "pos": "noun",
+      "gender": "n",
+      "nativeReviewed": false
+    },
+    {
+      "id": "obcanstvi",
+      "cs": "občanství",
+      "en": "citizenship",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 8338,
+      "nativeReviewed": false
+    },
+    {
+      "id": "potvrzeni",
+      "cs": "potvrzení",
+      "en": "confirmation, certificate",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 5797,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kopie",
+      "cs": "kopie",
+      "en": "copy",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3986,
+      "nativeReviewed": false
+    },
+    {
+      "id": "original",
+      "cs": "originál",
+      "en": "original",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5110,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pobocka",
+      "cs": "pobočka",
+      "en": "branch (of a bank)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3546,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prevod",
+      "cs": "převod",
+      "en": "transfer (money)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5074,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dan",
+      "cs": "daň",
+      "en": "tax",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1350,
+      "nativeReviewed": false
+    },
+    {
+      "id": "podat",
+      "cs": "podat",
+      "en": "to submit; to hand",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 983,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyridit",
+      "cs": "vyřídit",
+      "en": "to sort out, to deal with",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 4083,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prihlaska",
+      "cs": "přihláška",
+      "en": "application form; registration",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 7143,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prihlasit-se",
+      "cs": "přihlásit se",
+      "en": "to register, to sign up",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 2607,
+      "nativeReviewed": false
+    },
+    {
+      "id": "predstavit-se",
+      "cs": "představit se",
+      "en": "to introduce yourself",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 429,
+      "example": {
+        "cs": "Můžu se představit?",
+        "en": "May I introduce myself?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "predlozit",
+      "cs": "předložit",
+      "en": "to present (a document)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 3636,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kontrola",
+      "cs": "kontrola",
+      "en": "check, inspection",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 949,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pohlednice",
+      "cs": "pohlednice",
+      "en": "postcard",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 7749,
+      "nativeReviewed": false
+    },
+    {
+      "id": "odesilatel",
+      "cs": "odesílatel",
+      "en": "sender",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 25488,
+      "nativeReviewed": false
+    },
+    {
+      "id": "adresat",
+      "cs": "adresát",
+      "en": "addressee",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 11898,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kraj",
+      "cs": "kraj",
+      "en": "region",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 367,
+      "example": {
+        "cs": "Bydlím ve Středočeském kraji.",
+        "en": "I live in the Central Bohemian Region."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pravo",
+      "cs": "právo",
+      "en": "right; law",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 345,
+      "example": {
+        "cs": "Máte právo na tlumočníka.",
+        "en": "You have the right to an interpreter."
+      },
+      "nativeReviewed": false
+    }
+  ]
+}

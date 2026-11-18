@@ -15,8 +15,7 @@ export function PhraseSituations() {
   }, []) ?? new Map();
   // The situations are static content: draw them at once (as "Add") so nothing below jumps when cards load.
   return (
-    <section aria-labelledby="phrases-h" className="mt-12">
-      <h2 id="phrases-h" className="label-board mb-1 text-ink-3"><span lang="cs">Fráze</span> · phrases by situation</h2>
+    <div>
       <p className="mb-5 max-w-2xl text-ink-2">
         Whole sentences you'll need before you could build them yourself. Add a situation and its phrases join your reviews, {NEW_PHRASES_PER_DAY} new
         ones a day: first you recognise them, then you say them.
@@ -66,6 +65,6 @@ export function PhraseSituations() {
       <p className="mt-4 text-xs text-ink-3">
         Most phrases are from the official A1 word list for the Czech residence exam (NPI ČR); the rest are from Pražák's lessons and guides. All await native review.
       </p>
-    </section>
+    </div>
   );
 }

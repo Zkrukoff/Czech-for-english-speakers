@@ -1,0 +1,749 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "volny-cas",
+  "title": "Free time",
+  "titleCs": "Volný čas",
+  "order": 11,
+  "units": [],
+  "words": [
+    {
+      "id": "film",
+      "cs": "film",
+      "en": "film",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 296,
+      "example": {
+        "cs": "Ten film byl dobrý.",
+        "en": "That film was good."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "kniha",
+      "cs": "kniha",
+      "en": "book",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 232,
+      "example": {
+        "cs": "Čtu dobrou knihu.",
+        "en": "I'm reading a good book."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "hudba",
+      "cs": "hudba",
+      "en": "music",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 636,
+      "example": {
+        "cs": "Jakou hudbu posloucháš?",
+        "en": "What music do you listen to?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pisnicka",
+      "cs": "písnička",
+      "en": "song",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2682,
+      "nativeReviewed": false
+    },
+    {
+      "id": "koncert",
+      "cs": "koncert",
+      "en": "concert",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1355,
+      "nativeReviewed": false
+    },
+    {
+      "id": "divadlo",
+      "cs": "divadlo",
+      "en": "theatre",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 562,
+      "example": {
+        "cs": "Jdeme do divadla.",
+        "en": "We're going to the theatre."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vystava",
+      "cs": "výstava",
+      "en": "exhibition",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 998,
+      "nativeReviewed": false
+    },
+    {
+      "id": "galerie",
+      "cs": "galerie",
+      "en": "gallery",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2112,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hra",
+      "cs": "hra",
+      "en": "game; play",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 294,
+      "example": {
+        "cs": "Jdeme na hru do divadla.",
+        "en": "We're going to a play."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "sport",
+      "cs": "sport",
+      "en": "sport",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1109,
+      "nativeReviewed": false
+    },
+    {
+      "id": "fotbal",
+      "cs": "fotbal",
+      "en": "football",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1545,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hokej",
+      "cs": "hokej",
+      "en": "hockey",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2988,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tenis",
+      "cs": "tenis",
+      "en": "tennis",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5205,
+      "nativeReviewed": false
+    },
+    {
+      "id": "plavani",
+      "cs": "plavání",
+      "en": "swimming",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 7036,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bazen",
+      "cs": "bazén",
+      "en": "swimming pool",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2346,
+      "nativeReviewed": false
+    },
+    {
+      "id": "posilovna",
+      "cs": "posilovna",
+      "en": "gym",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 10644,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vylet",
+      "cs": "výlet",
+      "en": "trip, outing",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2391,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hory",
+      "cs": "hory",
+      "en": "mountains",
+      "pos": "noun",
+      "note": "Plural of hora",
+      "nativeReviewed": false
+    },
+    {
+      "id": "more",
+      "cs": "moře",
+      "en": "sea",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 795,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zahrada",
+      "cs": "zahrada",
+      "en": "garden",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 568,
+      "example": {
+        "cs": "Máme malou zahradu.",
+        "en": "We have a small garden."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pes",
+      "cs": "pes",
+      "en": "dog",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 575,
+      "example": {
+        "cs": "Máme psa.",
+        "en": "We have a dog."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "kocka",
+      "cs": "kočka",
+      "en": "cat",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1461,
+      "nativeReviewed": false
+    },
+    {
+      "id": "fotka",
+      "cs": "fotka",
+      "en": "photo",
+      "pos": "noun",
+      "gender": "f",
+      "alt": [
+        "fotografie"
+      ],
+      "rank": 1801,
+      "nativeReviewed": false
+    },
+    {
+      "id": "televize",
+      "cs": "televize",
+      "en": "television",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 871,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zpravy",
+      "cs": "zprávy",
+      "en": "the news",
+      "pos": "noun",
+      "note": "Plural",
+      "nativeReviewed": false
+    },
+    {
+      "id": "noviny",
+      "cs": "noviny",
+      "en": "newspaper",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 1110,
+      "nativeReviewed": false
+    },
+    {
+      "id": "casopis",
+      "cs": "časopis",
+      "en": "magazine",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1150,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zabava",
+      "cs": "zábava",
+      "en": "fun, entertainment",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2100,
+      "nativeReviewed": false
+    },
+    {
+      "id": "konicek",
+      "cs": "koníček",
+      "en": "hobby",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 6155,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hrat",
+      "cs": "hrát",
+      "en": "to play",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 185,
+      "example": {
+        "cs": "Hraju tenis.",
+        "en": "I play tennis."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zpivat",
+      "cs": "zpívat",
+      "en": "to sing",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1527,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tancovat",
+      "cs": "tancovat",
+      "en": "to dance",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 7148,
+      "nativeReviewed": false
+    },
+    {
+      "id": "plavat",
+      "cs": "plavat",
+      "en": "to swim",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 3915,
+      "nativeReviewed": false
+    },
+    {
+      "id": "behat",
+      "cs": "běhat",
+      "en": "to run (jog)",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 3451,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cestovat",
+      "cs": "cestovat",
+      "en": "to travel",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 2953,
+      "nativeReviewed": false
+    },
+    {
+      "id": "fotit",
+      "cs": "fotit",
+      "en": "to take photos",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 5409,
+      "nativeReviewed": false
+    },
+    {
+      "id": "divat-se",
+      "cs": "dívat se",
+      "en": "to watch, to look",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "podívat se",
+      "rank": 398,
+      "example": {
+        "cs": "Díváme se na film.",
+        "en": "We're watching a film."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "poslouchat",
+      "cs": "poslouchat",
+      "en": "to listen",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 989,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bavit",
+      "cs": "bavit",
+      "en": "to entertain, to be fun",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Baví mě to = I enjoy it.",
+      "rank": 807,
+      "nativeReviewed": false
+    },
+    {
+      "id": "odpocivat",
+      "cs": "odpočívat",
+      "en": "to rest",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "odpočinout si",
+      "rank": 4864,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tesit-se",
+      "cs": "těšit se",
+      "en": "to look forward",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Těším se na víkend.",
+      "rank": 927,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zoo",
+      "cs": "zoo",
+      "en": "zoo",
+      "pos": "noun",
+      "gender": "n",
+      "nativeReviewed": false
+    },
+    {
+      "id": "klub",
+      "cs": "klub",
+      "en": "club",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 517,
+      "example": {
+        "cs": "Jdeme do klubu.",
+        "en": "We're going to a club."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "party",
+      "cs": "párty",
+      "en": "party",
+      "pos": "noun",
+      "gender": "f",
+      "alt": [
+        "večírek"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "oslava",
+      "cs": "oslava",
+      "en": "celebration",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2149,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kytara",
+      "cs": "kytara",
+      "en": "guitar",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5565,
+      "nativeReviewed": false
+    },
+    {
+      "id": "klavir",
+      "cs": "klavír",
+      "en": "piano",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5019,
+      "nativeReviewed": false
+    },
+    {
+      "id": "malovat",
+      "cs": "malovat",
+      "en": "to paint",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 4209,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kreslit",
+      "cs": "kreslit",
+      "en": "to draw",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 5458,
+      "nativeReviewed": false
+    },
+    {
+      "id": "knihovna",
+      "cs": "knihovna",
+      "en": "library; bookcase",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1373,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prochazka",
+      "cs": "procházka",
+      "en": "walk",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2908,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stan",
+      "cs": "stan",
+      "en": "tent",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3674,
+      "nativeReviewed": false
+    },
+    {
+      "id": "lyzovat",
+      "cs": "lyžovat",
+      "en": "to ski",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 12807,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bruslit",
+      "cs": "bruslit",
+      "en": "to skate",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 18679,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hrad",
+      "cs": "hrad",
+      "en": "castle",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1242,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zamek",
+      "cs": "zámek",
+      "en": "chateau; lock",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1314,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kostel",
+      "cs": "kostel",
+      "en": "church",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1053,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pamatka",
+      "cs": "památka",
+      "en": "monument, sight",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1865,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hriste",
+      "cs": "hřiště",
+      "en": "playground; pitch",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1477,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stadion",
+      "cs": "stadion",
+      "en": "stadium",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "mic",
+      "cs": "míč",
+      "en": "ball",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2018,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cvicit",
+      "cs": "cvičit",
+      "en": "to exercise",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 4435,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sportovat",
+      "cs": "sportovat",
+      "en": "to do sport",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 11908,
+      "nativeReviewed": false
+    },
+    {
+      "id": "fotografovat",
+      "cs": "fotografovat",
+      "en": "to take photos",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 8331,
+      "nativeReviewed": false
+    },
+    {
+      "id": "serial",
+      "cs": "seriál",
+      "en": "TV series",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1943,
+      "nativeReviewed": false
+    },
+    {
+      "id": "program",
+      "cs": "program",
+      "en": "programme",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 287,
+      "example": {
+        "cs": "Jaký máte program na víkend?",
+        "en": "What are your plans for the weekend?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "komedie",
+      "cs": "komedie",
+      "en": "comedy",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3557,
+      "nativeReviewed": false
+    },
+    {
+      "id": "muzikal",
+      "cs": "muzikál",
+      "en": "musical",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5995,
+      "nativeReviewed": false
+    },
+    {
+      "id": "orchestr",
+      "cs": "orchestr",
+      "en": "orchestra",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4547,
+      "nativeReviewed": false
+    },
+    {
+      "id": "diskoteka",
+      "cs": "diskotéka",
+      "en": "disco",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 11259,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ples",
+      "cs": "ples",
+      "en": "ball (dance)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 6210,
+      "nativeReviewed": false
+    },
+    {
+      "id": "karty",
+      "cs": "karty",
+      "en": "cards (game)",
+      "pos": "noun",
+      "note": "Plural",
+      "nativeReviewed": false
+    },
+    {
+      "id": "sachy",
+      "cs": "šachy",
+      "en": "chess",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "nativeReviewed": false
+    },
+    {
+      "id": "cirkus",
+      "cs": "cirkus",
+      "en": "circus",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 7615,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pruvodce",
+      "cs": "průvodce",
+      "en": "guide; guidebook",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 3036,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prohlidka-mesta",
+      "cs": "prohlídka města",
+      "en": "city tour",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "prochazet-se",
+      "cs": "procházet se",
+      "en": "to stroll",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1392,
+      "nativeReviewed": false
+    }
+  ]
+}

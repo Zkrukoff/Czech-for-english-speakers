@@ -126,6 +126,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
           <PracticeSummary
             outcomes={outcomes}
             onAgain={() => { setOutcomes(null); setRun((r) => r + 1); }}
+            decks={course.decks.filter((d) => d.units.includes(unit.id))}
             next={nextLesson ? { to: `/lessons/${nextLesson.id}`, label: `Next: ${nextLesson.title}` } : { to: unitCheckPath(unit.id), label: 'Unit check: what can you do now?' }}
           />
         ) : (

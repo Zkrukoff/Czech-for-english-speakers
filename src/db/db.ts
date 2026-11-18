@@ -23,6 +23,8 @@ export interface Settings {
   ticketRuleFrom?: string;
   /** Days on which the review queue was emptied (they validate the ticket too). Last 60 kept. */
   reviewClearedDays?: string[];
+  /** New words a day from vocabulary decks (5, 10 or 20). Undefined means 10. */
+  newWordsPerDay?: number;
 }
 
 export const DEFAULT_SETTINGS: Settings = {

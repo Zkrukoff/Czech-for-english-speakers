@@ -1,0 +1,983 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "jidlo",
+  "title": "Food and drink",
+  "titleCs": "Jídlo a pití",
+  "order": 4,
+  "units": [
+    "u02"
+  ],
+  "words": [
+    {
+      "id": "jidlo",
+      "cs": "jídlo",
+      "en": "food; meal; dish",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 641,
+      "example": {
+        "cs": "Jídlo bylo výborné.",
+        "en": "The food was excellent."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "piti",
+      "cs": "pití",
+      "en": "drink(s)",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 3207,
+      "nativeReviewed": false
+    },
+    {
+      "id": "snidane",
+      "cs": "snídaně",
+      "en": "breakfast",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3270,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obed",
+      "cs": "oběd",
+      "en": "lunch",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2064,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vecere",
+      "cs": "večeře",
+      "en": "dinner",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1533,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chleb",
+      "cs": "chléb",
+      "en": "bread",
+      "pos": "noun",
+      "gender": "m-inan",
+      "note": "Everyday: chleba",
+      "alt": [
+        "chleba"
+      ],
+      "rank": 2082,
+      "nativeReviewed": false
+    },
+    {
+      "id": "maslo",
+      "cs": "máslo",
+      "en": "butter",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2840,
+      "nativeReviewed": false
+    },
+    {
+      "id": "syr",
+      "cs": "sýr",
+      "en": "cheese",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3197,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sunka",
+      "cs": "šunka",
+      "en": "ham",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8927,
+      "nativeReviewed": false
+    },
+    {
+      "id": "maso",
+      "cs": "maso",
+      "en": "meat",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1069,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kure",
+      "cs": "kuře",
+      "en": "chicken",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 5073,
+      "nativeReviewed": false
+    },
+    {
+      "id": "veprove",
+      "cs": "vepřové",
+      "en": "pork",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 18435,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hovezi",
+      "cs": "hovězí",
+      "en": "beef",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 6397,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ryba",
+      "cs": "ryba",
+      "en": "fish",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1361,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vejce",
+      "cs": "vejce",
+      "en": "egg",
+      "pos": "noun",
+      "gender": "n",
+      "note": "Spoken: vajíčko",
+      "alt": [
+        "vajíčko"
+      ],
+      "rank": 2374,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zelenina",
+      "cs": "zelenina",
+      "en": "vegetables",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2354,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ovoce",
+      "cs": "ovoce",
+      "en": "fruit",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2322,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jablko",
+      "cs": "jablko",
+      "en": "apple",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 3587,
+      "nativeReviewed": false
+    },
+    {
+      "id": "banan",
+      "cs": "banán",
+      "en": "banana",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 8330,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pomeranc",
+      "cs": "pomeranč",
+      "en": "orange",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 9326,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rajce",
+      "cs": "rajče",
+      "en": "tomato",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 5247,
+      "nativeReviewed": false
+    },
+    {
+      "id": "okurka",
+      "cs": "okurka",
+      "en": "cucumber",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8102,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cibule",
+      "cs": "cibule",
+      "en": "onion",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3879,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mrkev",
+      "cs": "mrkev",
+      "en": "carrot",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 7437,
+      "nativeReviewed": false
+    },
+    {
+      "id": "salat",
+      "cs": "salát",
+      "en": "salad; lettuce",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3709,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ryze",
+      "cs": "rýže",
+      "en": "rice",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5111,
+      "nativeReviewed": false
+    },
+    {
+      "id": "testoviny",
+      "cs": "těstoviny",
+      "en": "pasta",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "nativeReviewed": false
+    },
+    {
+      "id": "cukr",
+      "cs": "cukr",
+      "en": "sugar",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1810,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sul",
+      "cs": "sůl",
+      "en": "salt",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1881,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pepr",
+      "cs": "pepř",
+      "en": "pepper",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4703,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dort",
+      "cs": "dort",
+      "en": "cake (layered)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5196,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zmrzlina",
+      "cs": "zmrzlina",
+      "en": "ice cream",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6488,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cokolada",
+      "cs": "čokoláda",
+      "en": "chocolate",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3904,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dzus",
+      "cs": "džus",
+      "en": "juice",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 9729,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vino",
+      "cs": "víno",
+      "en": "wine",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 806,
+      "nativeReviewed": false
+    },
+    {
+      "id": "limonada",
+      "cs": "limonáda",
+      "en": "soft drink",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 9362,
+      "nativeReviewed": false
+    },
+    {
+      "id": "lahev",
+      "cs": "láhev",
+      "en": "bottle",
+      "pos": "noun",
+      "gender": "f",
+      "alt": [
+        "lahev"
+      ],
+      "rank": 2418,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sklenice",
+      "cs": "sklenice",
+      "en": "glass",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2313,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hrnek",
+      "cs": "hrnek",
+      "en": "mug",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5120,
+      "nativeReviewed": false
+    },
+    {
+      "id": "talir",
+      "cs": "talíř",
+      "en": "plate",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2599,
+      "nativeReviewed": false
+    },
+    {
+      "id": "lzice",
+      "cs": "lžíce",
+      "en": "spoon",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2763,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vidlicka",
+      "cs": "vidlička",
+      "en": "fork",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8535,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nuz",
+      "cs": "nůž",
+      "en": "knife",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2045,
+      "nativeReviewed": false
+    },
+    {
+      "id": "restaurace",
+      "cs": "restaurace",
+      "en": "restaurant",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1254,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hospoda",
+      "cs": "hospoda",
+      "en": "pub",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2435,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jidelni-listek",
+      "cs": "jídelní lístek",
+      "en": "menu",
+      "pos": "noun",
+      "gender": "m-inan",
+      "alt": [
+        "menu"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "cisnik",
+      "cs": "číšník",
+      "en": "waiter",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: číšnice",
+      "alt": [
+        "číšnice"
+      ],
+      "rank": 5319,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vegetarian",
+      "cs": "vegetarián",
+      "en": "vegetarian",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: vegetariánka",
+      "alt": [
+        "vegetariánka"
+      ],
+      "rank": 19772,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dobrou-chut",
+      "cs": "dobrou chuť",
+      "en": "enjoy your meal",
+      "pos": "interj",
+      "nativeReviewed": false
+    },
+    {
+      "id": "hlad",
+      "cs": "hlad",
+      "en": "hunger",
+      "pos": "noun",
+      "gender": "m-inan",
+      "note": "Mám hlad = I'm hungry.",
+      "rank": 2596,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zizen",
+      "cs": "žízeň",
+      "en": "thirst",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Mám žízeň = I'm thirsty.",
+      "rank": 6556,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jist",
+      "cs": "jíst",
+      "en": "to eat",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "sníst",
+      "note": "Present: jím, jíš, jí",
+      "rank": 1297,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pit",
+      "cs": "pít",
+      "en": "to drink",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "vypít",
+      "note": "Present: piju, piješ",
+      "rank": 1389,
+      "nativeReviewed": false
+    },
+    {
+      "id": "varit",
+      "cs": "vařit",
+      "en": "to cook",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "uvařit",
+      "rank": 2209,
+      "nativeReviewed": false
+    },
+    {
+      "id": "objednat-si",
+      "cs": "objednat si",
+      "en": "to order (for yourself)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 2883,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chutnat",
+      "cs": "chutnat",
+      "en": "to taste (good)",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Chutná ti? = Do you like it?",
+      "rank": 3545,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sladky",
+      "cs": "sladký",
+      "en": "sweet",
+      "pos": "adj",
+      "rank": 2443,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slany",
+      "cs": "slaný",
+      "en": "salty",
+      "pos": "adj",
+      "rank": 6413,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kysely",
+      "cs": "kyselý",
+      "en": "sour",
+      "pos": "adj",
+      "rank": 5955,
+      "nativeReviewed": false
+    },
+    {
+      "id": "palivy",
+      "cs": "pálivý",
+      "en": "spicy, hot",
+      "pos": "adj",
+      "rank": 17807,
+      "nativeReviewed": false
+    },
+    {
+      "id": "teply",
+      "cs": "teplý",
+      "en": "warm",
+      "pos": "adj",
+      "rank": 1379,
+      "nativeReviewed": false
+    },
+    {
+      "id": "studeny",
+      "cs": "studený",
+      "en": "cold",
+      "pos": "adj",
+      "rank": 1717,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cerstvy",
+      "cs": "čerstvý",
+      "en": "fresh",
+      "pos": "adj",
+      "rank": 1574,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dobry",
+      "cs": "dobrý",
+      "en": "good",
+      "pos": "adj",
+      "rank": 71,
+      "example": {
+        "cs": "Dobrý den!",
+        "en": "Hello! (Good day!)"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "spatny",
+      "cs": "špatný",
+      "en": "bad",
+      "pos": "adj",
+      "rank": 327,
+      "example": {
+        "cs": "To je špatný nápad.",
+        "en": "That's a bad idea."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyborny",
+      "cs": "výborný",
+      "en": "excellent",
+      "pos": "adj",
+      "rank": 2233,
+      "nativeReviewed": false
+    },
+    {
+      "id": "houska",
+      "cs": "houska",
+      "en": "bread roll",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 12687,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pecivo",
+      "cs": "pečivo",
+      "en": "bread and pastries",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 5715,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jogurt",
+      "cs": "jogurt",
+      "en": "yoghurt",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 7852,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tvaroh",
+      "cs": "tvaroh",
+      "en": "quark, curd cheese",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 11084,
+      "nativeReviewed": false
+    },
+    {
+      "id": "smetana",
+      "cs": "smetana",
+      "en": "cream",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5228,
+      "nativeReviewed": false
+    },
+    {
+      "id": "med",
+      "cs": "med",
+      "en": "honey",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3600,
+      "nativeReviewed": false
+    },
+    {
+      "id": "marmelada",
+      "cs": "marmeláda",
+      "en": "jam",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 11104,
+      "nativeReviewed": false
+    },
+    {
+      "id": "olej",
+      "cs": "olej",
+      "en": "oil",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1511,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mouka",
+      "cs": "mouka",
+      "en": "flour",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3530,
+      "nativeReviewed": false
+    },
+    {
+      "id": "parek",
+      "cs": "párek",
+      "en": "frankfurter",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 10694,
+      "nativeReviewed": false
+    },
+    {
+      "id": "salam",
+      "cs": "salám",
+      "en": "salami",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 12682,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kachna",
+      "cs": "kachna",
+      "en": "duck",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 7448,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zeli",
+      "cs": "zelí",
+      "en": "cabbage",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 7072,
+      "nativeReviewed": false
+    },
+    {
+      "id": "paprika",
+      "cs": "paprika",
+      "en": "pepper (vegetable)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6869,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cesnek",
+      "cs": "česnek",
+      "en": "garlic",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4115,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hruska",
+      "cs": "hruška",
+      "en": "pear",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 10188,
+      "nativeReviewed": false
+    },
+    {
+      "id": "svestka",
+      "cs": "švestka",
+      "en": "plum",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 9990,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jahoda",
+      "cs": "jahoda",
+      "en": "strawberry",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8034,
+      "nativeReviewed": false
+    },
+    {
+      "id": "citron",
+      "cs": "citron",
+      "en": "lemon",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 7859,
+      "nativeReviewed": false
+    },
+    {
+      "id": "orech",
+      "cs": "ořech",
+      "en": "nut",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5394,
+      "nativeReviewed": false
+    },
+    {
+      "id": "susenka",
+      "cs": "sušenka",
+      "en": "biscuit",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 7868,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bonbon",
+      "cs": "bonbon",
+      "en": "sweet, candy",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "mineralka",
+      "cs": "minerálka",
+      "en": "mineral water",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 14488,
+      "nativeReviewed": false
+    },
+    {
+      "id": "svacina",
+      "cs": "svačina",
+      "en": "snack",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 9419,
+      "nativeReviewed": false
+    },
+    {
+      "id": "priloha",
+      "cs": "příloha",
+      "en": "side dish",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3930,
+      "nativeReviewed": false
+    },
+    {
+      "id": "porce",
+      "cs": "porce",
+      "en": "portion",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4749,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ochutnat",
+      "cs": "ochutnat",
+      "en": "to taste, to try",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 5265,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cukrarna",
+      "cs": "cukrárna",
+      "en": "cake shop, café",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 11978,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jidelna",
+      "cs": "jídelna",
+      "en": "canteen",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3520,
+      "nativeReviewed": false
+    },
+    {
+      "id": "napoj",
+      "cs": "nápoj",
+      "en": "drink, beverage",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3387,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kakao",
+      "cs": "kakao",
+      "en": "cocoa",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 11469,
+      "nativeReviewed": false
+    },
+    {
+      "id": "omacka",
+      "cs": "omáčka",
+      "en": "sauce",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4221,
+      "nativeReviewed": false
+    },
+    {
+      "id": "horcice",
+      "cs": "hořčice",
+      "en": "mustard",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 13110,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kecup",
+      "cs": "kečup",
+      "en": "ketchup",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 17661,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dezert",
+      "cs": "dezert",
+      "en": "dessert",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 10838,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spagety",
+      "cs": "špagety",
+      "en": "spaghetti",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "nativeReviewed": false
+    },
+    {
+      "id": "pizza",
+      "cs": "pizza",
+      "en": "pizza",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 9006,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pribor",
+      "cs": "příbor",
+      "en": "cutlery",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 10617,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nadobi",
+      "cs": "nádobí",
+      "en": "dishes (plates, pots)",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 4285,
+      "nativeReviewed": false
+    }
+  ]
+}
