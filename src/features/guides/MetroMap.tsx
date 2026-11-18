@@ -220,7 +220,7 @@ export function MetroMap({ metro }: { metro: MetroData }) {
               <ol className="list-decimal pl-5 text-ink-2" lang="cs">
                 {l.stations.map((s) => (
                   <li key={s}>
-                    <button type="button" onClick={() => setSelected(s)} className="text-left hover:underline">
+                    <button type="button" onClick={() => setSelected(s)} className="min-h-11 min-w-11 text-left hover:underline">
                       {s}
                     </button>
                   </li>

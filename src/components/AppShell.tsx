@@ -22,7 +22,7 @@ const NAV: { to: string; label: string; cs: string; end?: boolean; also?: string
 /** Wordmark B (Kubismus, chosen in D11) with the tagline. */
 function Wordmark() {
   return (
-    <NavLink to="/" className="group flex items-center gap-3" aria-label="Pražák, home">
+    <NavLink to="/" className="group flex min-h-11 items-center gap-3" aria-label="Pražák, home">
       <WordmarkKubismus className="h-9 w-auto text-ink" title="Pražák" />
       <span lang="cs" className="label-board hidden text-2xs text-ink-3 sm:block">Mluv jako Pražák.</span>
     </NavLink>
@@ -50,7 +50,7 @@ export function AppShell({ error = false }: { error?: boolean }) {
                     to={n.to}
                     end={n.end}
                     className={({ isActive }) =>
-                      `relative inline-flex min-h-10 items-center whitespace-nowrap rounded-full px-3.5 text-sm font-semibold transition-colors ${
+                      `relative inline-flex min-h-11 items-center whitespace-nowrap rounded-full px-3.5 text-sm font-semibold transition-colors ${
                         isActive || n.also?.some((p) => pathname.startsWith(p)) ? 'bg-ink text-paper' : 'text-ink-2 hover:bg-paper-2 hover:text-ink'
                       }`
                     }
@@ -80,9 +80,9 @@ export function AppShell({ error = false }: { error?: boolean }) {
             <span><span lang="cs" className="font-semibold text-ink-2">Pražák</span>: Czech for people who actually live here.</span>
           </span>
           <span className="text-xs">
-            <NavLink to="/emergency" className="font-semibold text-ink-2 underline decoration-2 underline-offset-2 hover:text-ink">Emergency: 112</NavLink> ·{' '}
+            <NavLink to="/emergency" className="inline-flex min-h-11 items-center font-semibold text-ink-2 underline decoration-2 underline-offset-2 hover:text-ink">Emergency: 112</NavLink> ·{' '}
             Progress stays in this browser · Czech content awaiting native review ·{' '}
-            <NavLink to="/styleguide" className="underline decoration-2 underline-offset-2 hover:text-ink">Style guide</NavLink>
+            <NavLink to="/styleguide" className="inline-flex min-h-11 items-center underline decoration-2 underline-offset-2 hover:text-ink">Style guide</NavLink>
           </span>
         </div>
       </footer>

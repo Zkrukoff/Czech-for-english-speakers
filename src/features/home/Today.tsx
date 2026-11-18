@@ -87,7 +87,7 @@ export function Today({ date = pragueNow() }: { date?: Date }) {
                 Prep lesson: {prep.lesson.title}
               </Link>
             )}
-            <Link to="/holidays" className="text-vltava underline">All Czech holidays</Link>
+            <Link to="/holidays" className="inline-flex min-h-11 items-center text-vltava underline">All Czech holidays</Link>
           </p>
         </div>
       )}

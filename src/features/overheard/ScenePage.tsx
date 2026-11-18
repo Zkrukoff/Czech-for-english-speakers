@@ -36,7 +36,7 @@ export function ScenePage() {
 
   return (
     <>
-      <Link to="/sounds/overheard" className="inline-flex items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Overheard in Prague</Link>
+      <Link to="/sounds/overheard" className="inline-flex min-h-11 items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Overheard in Prague</Link>
       <PageHeader title={scene.title} cs={scene.titleCs} subtitle={scene.setting} />
 
       {placeholder && (

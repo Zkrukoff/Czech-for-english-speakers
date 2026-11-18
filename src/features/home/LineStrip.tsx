@@ -55,7 +55,7 @@ export function LineStrip({ line, stateOf, homeKey, compact = false }: Props) {
                 <Link
                   to={stationPath(stop)}
                   aria-current={state === 'current' ? 'location' : undefined}
-                  className="group absolute bottom-0 left-0 flex w-full flex-col items-center"
+                  className="group absolute bottom-0 left-0 flex min-h-11 w-full flex-col items-center justify-end"
                 >
                   <span className="sr-only">{label}</span>
                   {/* Name, angled like on the real strip maps. */}

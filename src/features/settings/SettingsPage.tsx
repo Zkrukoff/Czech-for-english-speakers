@@ -110,7 +110,7 @@ export function SettingsPage() {
           )}
           <label className="block">
             <span className="font-semibold">Speech rate: <span className="font-mono">{s.speechRate.toFixed(1)}×</span></span>
-            <input type="range" min={0.5} max={1.5} step={0.1} value={s.speechRate} onChange={(e) => updateSettings({ speechRate: Number(e.target.value) })} className="mt-2 block w-full accent-ink" />
+            <input type="range" min={0.5} max={1.5} step={0.1} value={s.speechRate} onChange={(e) => updateSettings({ speechRate: Number(e.target.value) })} className="h-11 mt-2 block w-full accent-ink" />
           </label>
           {voices.length > 0 && (
             <button type="button" onClick={() => speech.speak('Dobrý den, jak se máte?', { rate: s.speechRate, voiceURI: s.voiceURI })} className="btn btn-secondary">

@@ -136,7 +136,7 @@ specific. Empty states have personality (*"Tady nic není. Like a tram stop at 3
 
 - WCAG AA contrast for all text, tested in both themes.
 - Visible 3 px Vltava focus ring; keyboard reachable everywhere; skip link.
-- Touch targets ≥ 40 px (buttons are 44 px high).
+- Touch targets ≥ 44 px for every control (buttons, menu items, links that stand alone, map stations); links inside a sentence are exempt, and the metro map's SVG stations have the station list as their equivalent. `npm run check:targets` measures key screens at 375 px.
 - Never colour alone: cases carry their number, lines their letter, feedback its words.
 - Phone first: designed at 375 px, then scaled up; no sideways scrolling except deliberate scroll areas (wide tables, the metro map, the strip map).
 - Dialogs (the lens) take focus when opened, close on Escape or outside tap, and return focus to the word. After an answer, focus moves to *Continue*.

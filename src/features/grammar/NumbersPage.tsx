@@ -39,7 +39,7 @@ export function NumbersPage() {
   ];
   return (
     <>
-      <Link to="/grammar" className="inline-flex items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Mluvnice</Link>
+      <Link to="/grammar" className="inline-flex min-h-11 items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Mluvnice</Link>
       <PageHeader eyebrow="Čísla · numbers" title="Numbers change the noun" subtitle="One beer, two beers, five beers: in Czech the noun's ending depends on the number. It comes up all day: prices, tram numbers, minutes, colleagues." />
       <div className="-mx-4 overflow-x-auto px-4 pb-2">
       <table className="w-full min-w-[34rem] border-2 border-ink bg-surface text-left shadow-offset-sm">

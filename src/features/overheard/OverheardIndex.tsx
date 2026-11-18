@@ -10,7 +10,7 @@ const KIND = { transport: 'Doprava', shop: 'Obchod', pub: 'Hospoda', health: 'Zd
 export function OverheardIndex() {
   return (
     <>
-      <Link to="/sounds" className="inline-flex items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Sounds</Link>
+      <Link to="/sounds" className="inline-flex min-h-11 items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Sounds</Link>
       <PageHeader
         title="Overheard in Prague"
         cs="Zaslechnuto v Praze"

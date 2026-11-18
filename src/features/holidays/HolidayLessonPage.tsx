@@ -29,7 +29,7 @@ export function HolidayLessonPage() {
 
   return (
     <>
-      <Link to="/holidays" className="inline-flex items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Czech holidays</Link>
+      <Link to="/holidays" className="inline-flex min-h-11 items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Czech holidays</Link>
       <PageHeader title={l.title} cs={l.titleCs} subtitle={l.intro}>
         {date && (
           <p className="label-board mt-3 text-ink-3">

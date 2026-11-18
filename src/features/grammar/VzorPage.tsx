@@ -35,7 +35,7 @@ export function VzorPage() {
 
   return (
     <>
-      <Link to="/grammar" className="inline-flex items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Mluvnice</Link>
+      <Link to="/grammar" className="inline-flex min-h-11 items-center gap-1 text-sm text-vltava hover:underline"><IconArrowLeft size={16} /> Mluvnice</Link>
       <PageHeader eyebrow="Vzor · model noun" title={table.title} subtitle={`${table.subtitle ?? ''}. Every noun below declines like ${table.title}: learn one, and you have them all.`}>
         <div className="mt-3"><GenderMark gender={GENDER_OF[vzorId]!} /></div>
       </PageHeader>
