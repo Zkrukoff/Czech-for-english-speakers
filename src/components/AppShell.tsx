@@ -1,4 +1,5 @@
 import { UpdateNotice } from './UpdateNotice';
+import { PageHeader } from './PageHeader';
 import { NavLink, Outlet, useLocation, useRouteError } from 'react-router-dom';
 import { contentErrors } from '@/content';
 import { useHashScroll } from '@/lib/useHashScroll';
@@ -23,7 +24,7 @@ function Wordmark() {
   return (
     <NavLink to="/" className="group flex items-center gap-3" aria-label="Pražák, home">
       <WordmarkKubismus className="h-9 w-auto text-ink" title="Pražák" />
-      <span lang="cs" className="label-board hidden text-[11px] text-ink-3 sm:block">Mluv jako Pražák.</span>
+      <span lang="cs" className="label-board hidden text-2xs text-ink-3 sm:block">Mluv jako Pražák.</span>
     </NavLink>
   );
 }
@@ -37,7 +38,7 @@ export function AppShell({ error = false }: { error?: boolean }) {
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-20 focus:rounded focus:bg-surface focus:px-3 focus:py-2">
         Skip to content
       </a>
-      <header className="sticky top-0 z-10 border-b border-rule/70 bg-paper/85 backdrop-blur-md">
+      <header className="sticky top-0 z-10 border-b-2 border-ink bg-paper">
         <MetroLineStripe className="h-1" />
         <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 pt-3 md:flex-row md:items-center md:justify-between md:gap-6 md:py-3">
           <Wordmark />
@@ -92,9 +93,17 @@ export function AppShell({ error = false }: { error?: boolean }) {
 function RouteError() {
   const err = useRouteError();
   return (
-    <div className="rounded-lg border border-ink bg-paper-2 p-6">
-      <h1 className="text-lg font-semibold text-ink">Something went wrong</h1>
-      <p className="mt-2 text-sm text-ink">{err instanceof Error ? err.message : 'Unknown error'}</p>
-    </div>
+    <>
+      <PageHeader
+        title="Something broke"
+        cs="Výluka"
+        subtitle="This screen hit an error. Your progress is safe: it's stored in this browser and nothing was lost."
+      />
+      <p className="mb-6 rounded-sm border-l-4 border-ink bg-paper-2 px-4 py-3 font-mono text-sm text-ink-2">{err instanceof Error ? err.message : 'Unknown error'}</p>
+      <div className="flex flex-wrap gap-3">
+        <button type="button" onClick={() => window.location.reload()} className="btn btn-primary">Reload</button>
+        <NavLink to="/" className="btn btn-secondary">Back to the line</NavLink>
+      </div>
+    </>
   );
 }

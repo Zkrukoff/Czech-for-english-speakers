@@ -51,7 +51,7 @@ export function LineVertical({ line, stateOf, homeKey }: { line: Line; stateOf: 
                       {stop.stationInfo.name}
                     </span>
                     {stop.transfers.map((t) => <LineBadge key={t} line={t} size={20} />)}
-                    {isHome && <span className="label-board text-[10px] text-ink-2">domov</span>}
+                    {isHome && <span className="label-board text-2xs text-ink-2">domov</span>}
                   </span>
                   <span className={`block text-sm leading-snug ${state === 'vyluka' ? 'text-ink-3' : 'text-ink-2'}`}>
                     {state === 'current' && <b className="text-ink">You are here · </b>}
@@ -65,7 +65,7 @@ export function LineVertical({ line, stateOf, homeKey }: { line: Line; stateOf: 
       </ol>
       <div className="mt-2 flex items-center justify-between gap-3 pl-[3.25rem]">
         {to < line.stops.length && !all && <p className="whitespace-nowrap text-xs text-ink-3">↓ {line.stops.length - to} more stations</p>}
-        <button type="button" onClick={() => setAll((a) => !a)} className="btn btn-quiet ml-auto whitespace-nowrap text-sm" aria-expanded={all}>
+        <button type="button" onClick={() => setAll((a) => !a)} className="btn btn-quiet ml-auto text-sm" aria-expanded={all}>
           {all ? 'Show less' : `Whole line (${line.stops.length})`}
         </button>
       </div>

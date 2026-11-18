@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { IconArrowLeft, IconArrowRight, IconClose } from '@/components/icons';
 
 type Msg = { cs: string; en: string };
@@ -18,11 +19,15 @@ export function ShowMode({ messages, onClose }: { messages: Msg[]; onClose: () =
     closeRef.current?.focus();
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
+    // Keep focus in the dialog: everything behind it is inert while it's open.
+    const root = document.getElementById('root');
+    root?.setAttribute('inert', '');
     let lock: Sentinel | null = null;
     const wl = (navigator as Navigator & { wakeLock?: { request(t: 'screen'): Promise<Sentinel> } }).wakeLock;
     wl?.request('screen').then((s) => (lock = s)).catch(() => {});
     return () => {
       document.body.style.overflow = prevOverflow;
+      root?.removeAttribute('inert');
       lock?.release().catch(() => {});
     };
   }, []);
@@ -37,7 +42,7 @@ export function ShowMode({ messages, onClose }: { messages: Msg[]; onClose: () =
     return () => window.removeEventListener('keydown', onKey);
   }, [messages.length, onClose]);
 
-  return (
+  return createPortal(
     <div role="dialog" aria-modal="true" aria-label="Show to a Czech" className="fixed inset-0 z-50 flex flex-col bg-ticket text-on-fill-dark">
       <div className="flex items-center justify-between gap-3 border-b-2 border-on-fill-dark px-4 py-3">
         <span className="label-board">
@@ -61,6 +66,7 @@ export function ShowMode({ messages, onClose }: { messages: Msg[]; onClose: () =
           </button>
         </div>
       )}
-    </div>
+    </div>,
+    document.body,
   );
 }

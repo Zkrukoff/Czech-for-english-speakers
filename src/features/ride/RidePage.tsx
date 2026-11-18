@@ -150,7 +150,7 @@ export function RidePage() {
                   <li key={`${s}-${i}`} className="flex items-center gap-3">
                     <span aria-hidden className={`h-3 w-3 rounded-full border-2 border-ink ${i === 0 || i === route.stations.length - 1 ? 'bg-ink' : 'bg-surface'}`} />
                     <span className={i === 0 || i === route.stations.length - 1 ? 'font-semibold' : 'text-ink-2'}>{s}</span>
-                    {route.changes.includes(s) && i > 0 && <span className="label-board text-[10px] text-ink-3">přestup</span>}
+                    {route.changes.includes(s) && i > 0 && <span className="label-board text-2xs text-ink-3">přestup</span>}
                   </li>
                 ))}
               </ol>

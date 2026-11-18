@@ -2,7 +2,7 @@ import 'fake-indexeddb/auto';
 import { describe, expect, it } from 'vitest';
 import { PrazakDB } from '@/db/db';
 import { createScheduler, gradeFor, Rating, State } from '@/lib/srs/scheduler';
-import { dueCards, dueSummary, ensureVocabCards, scheduleAnswer, scheduleExerciseAnswer } from '@/db/srs';
+import { dueByKind, dueCards, dueSummary, ensureVocabCards, scheduleAnswer, scheduleExerciseAnswer } from '@/db/srs';
 
 const MIN = 60 * 1000;
 const DAY = 24 * 60 * MIN;
@@ -139,5 +139,22 @@ describe('card storage', () => {
     expect(sum).toMatchObject({ dueNow: 2, total: 3 });
     expect(sum.dueThisWeek).toBe(3);
     expect(sum.nextDue).toBeGreaterThan(T0 + 15 * MIN);
+  });
+});
+
+
+describe('Due counts only include cards that can be shown (I10)', () => {
+  it('skips unresolvable cards when a resolver is given', async () => {
+    const database = new PrazakDB(`due-${Math.random()}`);
+    const now = Date.parse('2026-11-18T10:00:00Z');
+    const base = { skills: [], stability: 1, difficulty: 5, elapsedDays: 0, scheduledDays: 0, learningSteps: 0, reps: 1, lapses: 0, state: 1 };
+    await database.cards.bulkPut([
+      { ...base, itemKey: 'ex:u01-l01-e1', due: now - 1 },
+      { ...base, itemKey: 'pattern:nowhere:acc.sg', due: now - 1 },
+    ] as never);
+    const resolvable = (k: string) => !k.startsWith('pattern:nowhere');
+    expect((await dueSummary(now, database)).dueNow).toBe(2);
+    expect((await dueSummary(now, database, resolvable)).dueNow).toBe(1);
+    expect((await dueByKind(now, database, resolvable)).pattern).toBe(0);
   });
 });

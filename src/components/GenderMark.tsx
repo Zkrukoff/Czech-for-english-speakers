@@ -19,7 +19,7 @@ export function GenderMark({ gender, className = '' }: { gender: Gender; classNa
       title={l.long}
       aria-label={l.long}
       lang="cs"
-      className={`inline-flex items-center rounded-sm border border-rule-strong px-1 font-mono text-[11px] font-semibold uppercase leading-4 tracking-wider text-ink-2 no-underline ${className}`}
+      className={`inline-flex items-center rounded-sm border border-rule-strong px-1 font-mono text-2xs font-semibold uppercase leading-4 tracking-wider text-ink-2 no-underline ${className}`}
     >
       {l.short}
     </abbr>

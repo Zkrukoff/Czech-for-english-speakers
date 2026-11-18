@@ -73,10 +73,16 @@ export function Timeline({ events }: { events: TimelineEvent[] }) {
       <ol ref={listRef} className="relative" aria-label="Timeline of Czech history">
         {/* The track, and a three-colour fill that grows as you scroll. */}
         <div aria-hidden className="absolute left-[11px] top-2 bottom-2 w-1 rounded-full bg-paper-3 md:left-[7.75rem]" />
+        {/* Three flat bands in the line colours (no blended gradient), sized to the whole list so they don't move as the fill grows. */}
         <div
           aria-hidden
-          className="absolute left-[11px] top-2 w-1 rounded-full bg-gradient-to-b from-line-a via-line-b to-line-c md:left-[7.75rem]"
-          style={{ height: still ? 'calc(100% - 1rem)' : `calc(${progress * 100}% - 0.5rem)` }}
+          className="absolute left-[11px] top-2 w-1 rounded-full md:left-[7.75rem]"
+          style={{
+            height: still ? 'calc(100% - 1rem)' : `calc(${progress * 100}% - 0.5rem)`,
+            backgroundImage: 'linear-gradient(to bottom, var(--line-a) 0 33.33%, var(--line-b) 33.33% 66.66%, var(--line-c) 66.66% 100%)',
+            backgroundSize: `100% ${listRef.current?.offsetHeight ?? 1000}px`,
+            backgroundRepeat: 'no-repeat',
+          }}
         />
         {events.map((e, i) => {
           const open = still || i <= revealed;

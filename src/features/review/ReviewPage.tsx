@@ -11,6 +11,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { DepartureBoard, Stamp } from '@/components/ui';
 import { markReviewCleared } from '@/features/ticket/useTicket';
 import { dayKey } from '@/lib/streak';
+import { isResolvable } from '@/lib/srs/resolvable';
 import { PhraseSituations } from '@/features/phrases/PhraseSituations';
 import { useDueSummary } from '@/db/useDue';
 import { exerciseForCard, ownWordExercise } from '@/lib/srs/reviewItems';
@@ -54,7 +55,7 @@ async function buildSession(): Promise<SessionItem[]> {
 export function ReviewPage() {
   const due = useDueSummary();
   const [phase, setPhase] = useState<Phase>({ kind: 'idle' });
-  const kinds = useLiveQuery(() => dueByKind(Date.now()), [due?.dueNow]);
+  const kinds = useLiveQuery(() => dueByKind(Date.now(), undefined, isResolvable), [due?.dueNow]);
 
   async function start(run = 0) {
     const items = await buildSession();
@@ -80,7 +81,7 @@ export function ReviewPage() {
           onFinish={(outcomes) => {
             setPhase({ kind: 'done', outcomes, run: phase.run });
             // Emptying the queue validates today's ticket.
-            void dueSummary(Date.now()).then((d) => (d.dueNow === 0 ? markReviewCleared(dayKey(Date.now())) : undefined));
+            void dueSummary(Date.now(), undefined, isResolvable).then((d) => (d.dueNow === 0 ? markReviewCleared(dayKey(Date.now())) : undefined));
           }}
         />
       </>
@@ -128,7 +129,9 @@ export function ReviewPage() {
   return (
     <>
       <PageHeader title="Review" cs="Opakování" subtitle="Things come back just before you'd forget them, timed from how you answered last time." />
-      {!due ? null : due.total === 0 ? (
+      {!due ? (
+        <div aria-hidden className="min-h-48" />
+      ) : due.total === 0 ? (
         <div className="rounded-md border-2 border-dashed border-ink bg-paper-2 p-6">
           <p className="font-display text-2xl font-extrabold" lang="cs">Tady nic není.</p>
           <p className="mt-1 text-ink-2">Like a tram stop at 3 a.m. Words and exercises arrive here as you practise lessons.</p>

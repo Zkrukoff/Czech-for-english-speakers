@@ -81,10 +81,21 @@ export interface DueSummary {
   nextDue?: number;
 }
 
-export async function dueSummary(now = Date.now(), database: PrazakDB = db): Promise<DueSummary> {
+/**
+ * Counts for the review board. With `resolvable`, cards that can't currently
+ * become an exercise (e.g. an ending pattern with no sentence yet) aren't
+ * counted, so the badge never promises more than a session can show.
+ */
+export async function dueSummary(now = Date.now(), database: PrazakDB = db, resolvable?: (itemKey: string) => boolean): Promise<DueSummary> {
   const day = 24 * 60 * 60 * 1000;
   const endOfToday = new Date(now);
   endOfToday.setHours(23, 59, 59, 999);
+  if (resolvable) {
+    const cards = (await database.cards.toArray()).filter((c) => resolvable(c.itemKey));
+    const upTo = (t: number) => cards.filter((c) => c.due <= t).length;
+    const next = cards.filter((c) => c.due > now).sort((a, b) => a.due - b.due)[0];
+    return { dueNow: upTo(now), dueToday: upTo(endOfToday.getTime()), dueThisWeek: upTo(now + 7 * day), total: cards.length, nextDue: next?.due };
+  }
   const [dueNow, dueToday, dueThisWeek, total, next] = await Promise.all([
     database.cards.where('due').belowOrEqual(now).count(),
     database.cards.where('due').belowOrEqual(endOfToday.getTime()).count(),
@@ -99,9 +110,10 @@ export type CardKind = 'vocab' | 'ex' | 'pattern' | 'fn' | 'own' | 'chunk';
 export const cardKind = (itemKey: string): CardKind => (itemKey.split(':')[0] as CardKind) ?? 'ex';
 
 /** Cards due now, counted by kind (words, exercises, ending patterns, case uses). */
-export async function dueByKind(now = Date.now(), database: PrazakDB = db): Promise<Record<CardKind, number>> {
+export async function dueByKind(now = Date.now(), database: PrazakDB = db, resolvable?: (itemKey: string) => boolean): Promise<Record<CardKind, number>> {
   const counts: Record<CardKind, number> = { vocab: 0, ex: 0, pattern: 0, fn: 0, own: 0, chunk: 0 };
   await database.cards.where('due').belowOrEqual(now).each((c) => {
+    if (resolvable && !resolvable(c.itemKey)) return;
     const k = cardKind(c.itemKey);
     if (k in counts) counts[k]++;
   });

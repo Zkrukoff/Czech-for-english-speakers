@@ -12,8 +12,8 @@ export function PhraseSituations() {
   const cards = useLiveQuery(async () => {
     const list = await db.cards.where('itemKey').startsWith('chunk:').toArray();
     return new Map(list.map((c) => [c.itemKey, c]));
-  }, []);
-  if (!cards) return null;
+  }, []) ?? new Map();
+  // The situations are static content: draw them at once (as "Add") so nothing below jumps when cards load.
   return (
     <section aria-labelledby="phrases-h" className="mt-12">
       <h2 id="phrases-h" className="label-board mb-1 text-ink-3"><span lang="cs">Fráze</span> · phrases by situation</h2>
