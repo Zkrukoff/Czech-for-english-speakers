@@ -136,6 +136,7 @@ export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
           {exercise.cs && (
             <p className="flex items-center gap-2 rounded-sm border-l-4 border-ink bg-paper-2 px-4 py-3 text-2xl" lang="cs">
               <CzechText text={exercise.cs} />
+              <SpeakButton text={exercise.cs} />
             </p>
           )}
           <p className="text-xl font-medium"><InlineCzech text={exercise.prompt} /></p>

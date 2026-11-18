@@ -17,6 +17,7 @@ import {
   EmergencyNumbersSchema,
   EmergencyCardsSchema,
   IdiomsSchema,
+  PhrasesSchema,
   AudioManifestSchema,
   UnitSchema,
   VerbFileSchema,
@@ -38,6 +39,8 @@ import {
   type EmergencyNumbers,
   type EmergencyCards,
   type Idiom,
+  type PhraseSituation,
+  type DeckPhrase,
   type AudioManifest,
   type Mission,
   type StationData,
@@ -163,6 +166,9 @@ export interface Course {
   holidayLessons: HolidayLesson[];
   emergency: { numbers: EmergencyNumbers['numbers']; cards: EmergencyCards['cards'] };
   idioms: Idiom[];
+  /** The phrase deck by situation (content/phrases/phrases.json). */
+  phrases: PhraseSituation[];
+  phrasesById: Map<string, { phrase: DeckPhrase; situationId: string }>;
   /** Recorded audio by id (content/audio/manifest.json). */
   audio: Map<string, AudioManifest['recordings'][number]>;
   /** Pattern and function SRS keys each exercise practises (from its lens markup). */
@@ -233,6 +239,8 @@ export function loadContent(files: ContentFiles): LoadResult {
     holidayLessons: [],
     emergency: { numbers: [], cards: [] },
     idioms: [],
+    phrases: [],
+    phrasesById: new Map(),
     audio: new Map(),
     hiddenExercises: [],
     lensKeysByExercise: new Map(),
@@ -500,6 +508,16 @@ export function loadContent(files: ContentFiles): LoadResult {
     course.emergency = { numbers: nums?.numbers ?? [], cards: cards?.cards ?? [] };
     const known = new Set(course.emergency.numbers.map((n) => n.id));
     for (const c of course.emergency.cards) for (const n of c.numbers) if (!known.has(n)) errors.push(`emergency/cards.json: card ${c.id} uses unknown number "${n}"`);
+  }
+  if (files.json['phrases/phrases.json']) {
+    const data = parse(PhrasesSchema, 'phrases/phrases.json', files.json['phrases/phrases.json']);
+    course.phrases = data?.situations ?? [];
+    for (const sit of course.phrases)
+      for (const ph of sit.phrases) {
+        if (course.phrasesById.has(ph.id)) errors.push(`phrases/phrases.json: duplicate phrase id "${ph.id}"`);
+        course.phrasesById.set(ph.id, { phrase: ph, situationId: sit.id });
+        if (ph.source.kind === 'lesson' && !course.lessonsById.has(ph.source.ref)) errors.push(`phrases/phrases.json: ${ph.id} cites unknown lesson "${ph.source.ref}"`);
+      }
   }
   if (files.json['idioms/idioms.json']) {
     const data = parse(IdiomsSchema, 'idioms/idioms.json', files.json['idioms/idioms.json']);

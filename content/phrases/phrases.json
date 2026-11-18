@@ -1,0 +1,647 @@
+{
+  "$comment": "Phrase deck (A7). Sources: NPI ČR Soupis lexikálních jednotek A1 (inventory entries, retrieved 18 Nov 2026), Pražák lessons and guides; \"ours\" items are flagged. All Czech awaits native review.",
+  "situations": [
+    {
+      "id": "understand",
+      "title": "When you don't understand",
+      "titleCs": "Když nerozumíte",
+      "phrases": [
+        {
+          "id": "nerozumim",
+          "cs": "Promiňte, nerozumím.",
+          "en": "Sorry, I don't understand.",
+          "source": {
+            "kind": "inventory",
+            "ref": "promiň/te, nerozumím"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Promiňte, nerozumím[.]",
+            "Promiň, nerozumím[.]"
+          ]
+        },
+        {
+          "id": "pomaleji",
+          "cs": "Můžete mluvit pomaleji, prosím?",
+          "en": "Can you speak more slowly, please?",
+          "source": {
+            "kind": "inventory",
+            "ref": "můžete mluvit pomaleji, prosím"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "jeste-jednou",
+          "cs": "Můžete to říct ještě jednou?",
+          "en": "Can you say that again?",
+          "source": {
+            "kind": "inventory",
+            "ref": "můžete to říct ještě jednou?"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "rekne-cesky",
+          "cs": "Jak se řekne česky…?",
+          "en": "How do you say … in Czech?",
+          "source": {
+            "kind": "inventory",
+            "ref": "jak se řekne česky"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Jak se řekne česky[…][?]",
+            "Jak se česky řekne[…][?]"
+          ]
+        },
+        {
+          "id": "co-znamena",
+          "cs": "Co znamená…?",
+          "en": "What does … mean?",
+          "source": {
+            "kind": "inventory",
+            "ref": "co znamená"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Co znamená[…][?]"
+          ]
+        },
+        {
+          "id": "napsat",
+          "cs": "Můžete mi to napsat?",
+          "en": "Can you write it down for me?",
+          "source": {
+            "kind": "inventory",
+            "ref": "můžeš/můžete mi to napsat"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Můžete mi to napsat[?]",
+            "Můžeš mi to napsat[?]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cafe",
+      "title": "Café and bakery",
+      "titleCs": "Kavárna a pekárna",
+      "phrases": [
+        {
+          "id": "dam-si-kavu",
+          "cs": "Dám si kávu, prosím.",
+          "en": "I'll have a coffee, please.",
+          "source": {
+            "kind": "lesson",
+            "ref": "u02-l01"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Dám si kávu[,] prosím[.]",
+            "Prosím kávu[.]",
+            "Kávu[,] prosím[.]"
+          ]
+        },
+        {
+          "id": "neco-k-piti",
+          "cs": "Něco k pití?",
+          "en": "Anything to drink?",
+          "source": {
+            "kind": "lesson",
+            "ref": "u02-l02"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "ne-dekuju",
+          "cs": "Ne, děkuju.",
+          "en": "No, thank you.",
+          "source": {
+            "kind": "inventory",
+            "ref": "ne, děkuju"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Ne[,] děkuju[.]",
+            "Ne[,] děkuji[.]",
+            "Ne[,] díky[.]"
+          ]
+        },
+        {
+          "id": "dobrou-chut",
+          "cs": "Dobrou chuť!",
+          "en": "Enjoy your meal!",
+          "source": {
+            "kind": "inventory",
+            "ref": "dobrou chuť"
+          },
+          "nativeReviewed": false,
+          "note": "Said before eating, to everyone at the table."
+        },
+        {
+          "id": "na-zdravi",
+          "cs": "Na zdraví!",
+          "en": "Cheers!",
+          "source": {
+            "kind": "inventory",
+            "ref": "na zdraví"
+          },
+          "nativeReviewed": false,
+          "note": "Also \"bless you\" after a sneeze."
+        },
+        {
+          "id": "chutna",
+          "cs": "Jak vám chutná?",
+          "en": "How do you like it? (the food)",
+          "source": {
+            "kind": "inventory",
+            "ref": "jak ti/vám chutná"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Jak vám chutná[?]",
+            "Jak ti chutná[?]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paying",
+      "title": "Paying",
+      "titleCs": "Placení",
+      "phrases": [
+        {
+          "id": "kolik-stoji",
+          "cs": "Kolik to stojí?",
+          "en": "How much is it?",
+          "source": {
+            "kind": "lesson",
+            "ref": "u02-l03"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Kolik to stojí[?]",
+            "Kolik stojí[?]"
+          ]
+        },
+        {
+          "id": "kartou",
+          "cs": "Můžu platit kartou?",
+          "en": "Can I pay by card?",
+          "source": {
+            "kind": "lesson",
+            "ref": "u02-l03"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Můžu {platit|zaplatit} kartou[?]",
+            "Můžu kartou[?]",
+            "Můžu platit kartou[,] prosím[?]"
+          ]
+        },
+        {
+          "id": "zaplatime",
+          "cs": "Zaplatíme, prosím.",
+          "en": "We'd like to pay, please.",
+          "source": {
+            "kind": "lesson",
+            "ref": "u02-l04"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Zaplatíme[,] prosím[.]",
+            "Zaplatím[,] prosím[.]"
+          ]
+        },
+        {
+          "id": "zvlast",
+          "cs": "Dohromady, nebo zvlášť?",
+          "en": "Together or separately?",
+          "source": {
+            "kind": "lesson",
+            "ref": "u02-l04"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Dohromady[,] nebo zvlášť[?]"
+          ]
+        },
+        {
+          "id": "v-poradku",
+          "cs": "To je v pořádku.",
+          "en": "That's fine. (also: keep the change)",
+          "source": {
+            "kind": "inventory",
+            "ref": "to je v pořádku"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "To je v pořádku[.]"
+          ]
+        },
+        {
+          "id": "hotove",
+          "cs": "Platím hotově.",
+          "en": "I'm paying cash.",
+          "source": {
+            "kind": "lesson",
+            "ref": "u02-l04"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Platím hotově[.]",
+            "Zaplatím hotově[.]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "title": "At work",
+      "titleCs": "V práci",
+      "phrases": [
+        {
+          "id": "predstavit",
+          "cs": "Rád bych se vám představil.",
+          "en": "I'd like to introduce myself.",
+          "source": {
+            "kind": "inventory",
+            "ref": "rád bych se vám představil/a"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Rád bych se vám představil[.]",
+            "Ráda bych se vám představila[.]"
+          ],
+          "note": "A woman says: Ráda bych se vám představila."
+        },
+        {
+          "id": "tesi-me",
+          "cs": "Těší mě.",
+          "en": "Nice to meet you.",
+          "source": {
+            "kind": "inventory",
+            "ref": "těší mě"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "dobry-napad",
+          "cs": "To je dobrý nápad.",
+          "en": "That's a good idea.",
+          "source": {
+            "kind": "inventory",
+            "ref": "to je dobrý nápad"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "proc-ne",
+          "cs": "Proč ne?",
+          "en": "Why not?",
+          "source": {
+            "kind": "inventory",
+            "ref": "proč ne"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "nemuzu",
+          "cs": "Bohužel, nemůžu.",
+          "en": "Unfortunately I can't.",
+          "source": {
+            "kind": "inventory",
+            "ref": "bohužel, nemůžu"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Bohužel[,] nemůžu[.]"
+          ]
+        },
+        {
+          "id": "nevadi",
+          "cs": "To nevadí.",
+          "en": "That doesn't matter. / No problem.",
+          "source": {
+            "kind": "inventory",
+            "ref": "to nevadí"
+          },
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "phone",
+      "title": "On the phone",
+      "titleCs": "Telefon",
+      "phrases": [
+        {
+          "id": "slysite",
+          "cs": "Haló, slyšíte mě?",
+          "en": "Hello, can you hear me?",
+          "source": {
+            "kind": "inventory",
+            "ref": "haló, slyšíš/slyšíte mě?"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Haló[,] slyšíte mě[?]",
+            "Haló[,] slyšíš mě[?]"
+          ]
+        },
+        {
+          "id": "kdo-vola",
+          "cs": "Kdo volá, prosím?",
+          "en": "Who's calling, please?",
+          "source": {
+            "kind": "inventory",
+            "ref": "kdo volá, prosím"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Kdo volá[,] prosím[?]"
+          ]
+        },
+        {
+          "id": "u-telefonu",
+          "cs": "U telefonu Novák.",
+          "en": "Novák speaking.",
+          "source": {
+            "kind": "inventory",
+            "ref": "u telefonu (mluví X.Y.)"
+          },
+          "nativeReviewed": false,
+          "note": "Your own surname goes at the end."
+        },
+        {
+          "id": "hlaskovat",
+          "cs": "Můžete mi to hláskovat?",
+          "en": "Can you spell it for me?",
+          "source": {
+            "kind": "inventory",
+            "ref": "můžeš/můžete mi to hláskovat"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Můžete mi to hláskovat[?]",
+            "Můžeš mi to hláskovat[?]"
+          ]
+        },
+        {
+          "id": "omyl",
+          "cs": "To je omyl.",
+          "en": "Wrong number. / That's a mistake.",
+          "source": {
+            "kind": "inventory",
+            "ref": "to je omyl"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "mejte-se",
+          "cs": "Mějte se hezky.",
+          "en": "Take care. (goodbye)",
+          "source": {
+            "kind": "inventory",
+            "ref": "mějte se hezky"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Mějte se hezky[.]",
+            "Měj se hezky[.]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doctor",
+      "title": "Doctor and pharmacy",
+      "titleCs": "U lékaře a v lékárně",
+      "phrases": [
+        {
+          "id": "objednat",
+          "cs": "Potřebuju se objednat k lékaři.",
+          "en": "I need to make a doctor's appointment.",
+          "source": {
+            "kind": "guide",
+            "ref": "settling-in/health"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Potřebuju se objednat k lékaři[.]",
+            "Potřebuji se objednat k lékaři[.]"
+          ]
+        },
+        {
+          "id": "co-boli",
+          "cs": "Co vás bolí?",
+          "en": "What hurts? (you'll hear this)",
+          "source": {
+            "kind": "inventory",
+            "ref": "co tě/vás bolí"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "boli-v-krku",
+          "cs": "Bolí mě v krku.",
+          "en": "I have a sore throat.",
+          "source": {
+            "kind": "guide",
+            "ref": "settling-in/health"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "horecka",
+          "cs": "Mám horečku.",
+          "en": "I have a temperature.",
+          "source": {
+            "kind": "guide",
+            "ref": "settling-in/health"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "dychejte",
+          "cs": "Dýchejte zhluboka.",
+          "en": "Breathe deeply. (you'll hear this)",
+          "source": {
+            "kind": "inventory",
+            "ref": "dýchejte zhluboka"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "na-kasel",
+          "cs": "Máte něco na kašel?",
+          "en": "Do you have anything for a cough?",
+          "source": {
+            "kind": "guide",
+            "ref": "settling-in/health"
+          },
+          "nativeReviewed": false
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "Getting around",
+      "titleCs": "Doprava",
+      "phrases": [
+        {
+          "id": "jizdenka-brno",
+          "cs": "Jednu jízdenku do Brna, prosím.",
+          "en": "One ticket to Brno, please.",
+          "source": {
+            "kind": "lesson",
+            "ref": "u03-l04"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Jednu jízdenku do Brna[,] prosím[.]"
+          ]
+        },
+        {
+          "id": "prestupovat",
+          "cs": "Musím přestupovat?",
+          "en": "Do I have to change?",
+          "source": {
+            "kind": "lesson",
+            "ref": "u03-l04"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "v-kolik",
+          "cs": "V kolik jede nejbližší vlak?",
+          "en": "What time is the next train?",
+          "source": {
+            "kind": "lesson",
+            "ref": "u03-l04"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "V kolik jede nejbližší vlak[?]",
+            "V kolik jede další vlak[?]"
+          ]
+        },
+        {
+          "id": "kde-zastavka",
+          "cs": "Kde je tady nejbližší zastávka?",
+          "en": "Where's the nearest stop?",
+          "source": {
+            "kind": "lesson",
+            "ref": "u03-l01"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Kde je {tady |}nejbližší zastávka[?]"
+          ]
+        },
+        {
+          "id": "daleko",
+          "cs": "Je to daleko?",
+          "en": "Is it far?",
+          "source": {
+            "kind": "lesson",
+            "ref": "u03-l01"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "vystupujete",
+          "cs": "Vystupujete?",
+          "en": "Are you getting off?",
+          "source": {
+            "kind": "ours"
+          },
+          "nativeReviewed": false,
+          "note": "Said to someone between you and the door. Not yet verified with a native speaker."
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "title": "The flat",
+      "titleCs": "Byt",
+      "phrases": [
+        {
+          "id": "inzerat",
+          "cs": "Je byt ještě volný?",
+          "en": "Is the flat still available?",
+          "source": {
+            "kind": "guide",
+            "ref": "settling-in/home"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Je {byt |}ještě volný[?]"
+          ]
+        },
+        {
+          "id": "najem",
+          "cs": "Kolik je nájem včetně poplatků?",
+          "en": "How much is the rent including charges?",
+          "source": {
+            "kind": "guide",
+            "ref": "settling-in/home"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Kolik je nájem včetně poplatků[?]"
+          ]
+        },
+        {
+          "id": "topeni",
+          "cs": "Nejde topení.",
+          "en": "The heating isn't working.",
+          "source": {
+            "kind": "guide",
+            "ref": "settling-in/home"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "kohoutek",
+          "cs": "Kape kohoutek.",
+          "en": "The tap is dripping.",
+          "source": {
+            "kind": "guide",
+            "ref": "settling-in/home"
+          },
+          "nativeReviewed": false
+        },
+        {
+          "id": "podivat",
+          "cs": "Mohl by se na to někdo podívat?",
+          "en": "Could someone take a look at it?",
+          "source": {
+            "kind": "guide",
+            "ref": "settling-in/home"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Mohl by se na to někdo podívat[?]"
+          ]
+        },
+        {
+          "id": "pomoct",
+          "cs": "Nechcete pomoct?",
+          "en": "Can I help you? / Do you need a hand?",
+          "source": {
+            "kind": "inventory",
+            "ref": "nechcete pomoct"
+          },
+          "nativeReviewed": false,
+          "answers": [
+            "Nechcete pomoct[?]",
+            "Nechceš pomoct[?]"
+          ],
+          "note": "Offering help to a neighbour with their shopping."
+        }
+      ]
+    }
+  ]
+}

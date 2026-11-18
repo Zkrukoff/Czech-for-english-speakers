@@ -11,6 +11,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { DepartureBoard, Stamp } from '@/components/ui';
 import { markReviewCleared } from '@/features/ticket/useTicket';
 import { dayKey } from '@/lib/streak';
+import { PhraseSituations } from '@/features/phrases/PhraseSituations';
 import { useDueSummary } from '@/db/useDue';
 import { exerciseForCard, ownWordExercise } from '@/lib/srs/reviewItems';
 import { relativeTime } from '@/lib/time';
@@ -121,6 +122,7 @@ export function ReviewPage() {
     { kind: 'pattern', cs: 'Koncovky', en: 'endings' },
     { kind: 'fn', cs: 'Pády', en: 'case uses' },
     { kind: 'own', cs: 'Moje slova', en: 'your words' },
+    { kind: 'chunk', cs: 'Fráze', en: 'phrases' },
   ];
 
   return (
@@ -160,6 +162,7 @@ export function ReviewPage() {
           )}
         </section>
       )}
+      <PhraseSituations />
       <p className="mt-6 text-sm">
         <Link to="/words" className="text-vltava underline">Your own words</Link>: save words you meet in daily life, and they come back here too.
       </p>

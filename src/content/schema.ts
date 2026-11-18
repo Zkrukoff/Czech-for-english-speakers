@@ -753,6 +753,39 @@ export const IdiomsSchema = z.object({
     .min(1),
 });
 
+export const PhrasesSchema = z.object({
+  $comment: z.string().optional(),
+  situations: z
+    .array(
+      z.object({
+        id,
+        title: z.string().min(1),
+        titleCs: z.string().min(1),
+        phrases: z
+          .array(
+            z.object({
+              id,
+              cs: z.string().min(1),
+              en: z.string().min(1),
+              /** Accepted typed answers (answer patterns); defaults to `cs` with optional final punctuation. */
+              answers: z.array(z.string().min(1)).optional(),
+              note: z.string().optional(),
+              /** Where it comes from: the official A1 inventory entry, a lesson, a guide, or ours. */
+              source: z.discriminatedUnion('kind', [
+                z.object({ kind: z.literal('inventory'), ref: z.string().min(1) }),
+                z.object({ kind: z.literal('lesson'), ref: z.string().min(1) }),
+                z.object({ kind: z.literal('guide'), ref: z.string().min(1) }),
+                z.object({ kind: z.literal('ours') }),
+              ]),
+              nativeReviewed: reviewed,
+            }),
+          )
+          .min(3),
+      }),
+    )
+    .min(1),
+});
+
 /**
  * Real-speaker recordings (D6). Files live in public/audio/<id>.<ext>.
  * Exercises that need a recording stay hidden until it is listed here.
@@ -800,6 +833,8 @@ export type OverheardScene = z.infer<typeof OverheardSceneSchema>;
 export type HolidayLesson = z.infer<typeof HolidayLessonSchema>;
 export type EmergencyNumbers = z.infer<typeof EmergencyNumbersSchema>;
 export type EmergencyCards = z.infer<typeof EmergencyCardsSchema>;
+export type PhraseSituation = z.infer<typeof PhrasesSchema>['situations'][number];
+export type DeckPhrase = PhraseSituation['phrases'][number];
 export type Idiom = z.infer<typeof IdiomsSchema>['idioms'][number];
 export type HolidaysData = z.infer<typeof HolidaysSchema>;
 export type Holiday = HolidaysData['holidays'][number];
