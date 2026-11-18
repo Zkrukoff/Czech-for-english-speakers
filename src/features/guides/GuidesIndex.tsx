@@ -54,6 +54,20 @@ export function GuidesIndex() {
             </Card>
           </Link>
         </li>
+        <li>
+          <Link to="/idioms" className="group block h-full transition-transform hover:-translate-y-0.5">
+            <Card corner="tr" className="h-full">
+              <TileGrid tone="var(--tile-23)" cols={8} rows={1} size={36} className="w-full border-b-2 border-ink" />
+              <div className="p-5">
+                <EnamelPlate tone="blue">Idiomy</EnamelPlate>
+                <h2 className="mt-4 text-2xl font-extrabold tracking-tight">Idiom of the week</h2>
+                <p className="mt-2 text-ink-2">Butter on your head, a hare in a sack, a buried dog: what Czechs say, word for word and what it means.</p>
+                <p className="label-board mt-4 text-ink-3">{course.idioms.length} idioms</p>
+                <span className="mt-4 inline-flex items-center gap-1 font-semibold text-vltava group-hover:underline">Read <IconArrowRight size={16} /></span>
+              </div>
+            </Card>
+          </Link>
+        </li>
         {course.draftGuides.map((g) => (
           <li key={g.id} className="border-2 border-dashed border-rule-strong bg-paper-2 p-5">
             <EnamelPlate tone="paper">{PLATE[g.id] ?? g.title}</EnamelPlate>

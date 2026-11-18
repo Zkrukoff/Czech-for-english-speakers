@@ -16,6 +16,7 @@ import {
   HolidayLessonsSchema,
   EmergencyNumbersSchema,
   EmergencyCardsSchema,
+  IdiomsSchema,
   AudioManifestSchema,
   UnitSchema,
   VerbFileSchema,
@@ -36,6 +37,7 @@ import {
   type HolidayLesson,
   type EmergencyNumbers,
   type EmergencyCards,
+  type Idiom,
   type AudioManifest,
   type Mission,
   type StationData,
@@ -160,6 +162,7 @@ export interface Course {
   /** Holiday prep mini-lessons, in calendar order. */
   holidayLessons: HolidayLesson[];
   emergency: { numbers: EmergencyNumbers['numbers']; cards: EmergencyCards['cards'] };
+  idioms: Idiom[];
   /** Recorded audio by id (content/audio/manifest.json). */
   audio: Map<string, AudioManifest['recordings'][number]>;
   /** Pattern and function SRS keys each exercise practises (from its lens markup). */
@@ -229,6 +232,7 @@ export function loadContent(files: ContentFiles): LoadResult {
     overheard: [],
     holidayLessons: [],
     emergency: { numbers: [], cards: [] },
+    idioms: [],
     audio: new Map(),
     hiddenExercises: [],
     lensKeysByExercise: new Map(),
@@ -496,6 +500,15 @@ export function loadContent(files: ContentFiles): LoadResult {
     course.emergency = { numbers: nums?.numbers ?? [], cards: cards?.cards ?? [] };
     const known = new Set(course.emergency.numbers.map((n) => n.id));
     for (const c of course.emergency.cards) for (const n of c.numbers) if (!known.has(n)) errors.push(`emergency/cards.json: card ${c.id} uses unknown number "${n}"`);
+  }
+  if (files.json['idioms/idioms.json']) {
+    const data = parse(IdiomsSchema, 'idioms/idioms.json', files.json['idioms/idioms.json']);
+    course.idioms = data?.idioms ?? [];
+    const seen = new Set<string>();
+    for (const i of course.idioms) {
+      if (seen.has(i.id)) errors.push(`idioms/idioms.json: duplicate id "${i.id}"`);
+      seen.add(i.id);
+    }
   }
   if ('calendar/namedays.json' in files.json) course.namedays = parse(NamedaysSchema, 'calendar/namedays.json', files.json['calendar/namedays.json']);
   if ('audio/manifest.json' in files.json) {

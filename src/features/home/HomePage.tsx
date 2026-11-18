@@ -12,6 +12,7 @@ import { HolidayPrepBanner } from './HolidayPrepBanner';
 import { RideCard } from './RideCard';
 import { WallPreview } from '@/features/wall/WallPreview';
 import { TicketCard } from '@/features/ticket/TicketCard';
+import { IdiomCard } from '@/features/idioms/IdiomCard';
 import { useLinePosition } from './useLinePosition';
 
 /** Home: the line you're riding, where you are, what's next, and today's name day. */
@@ -102,6 +103,7 @@ export function HomePage() {
             <IconArrowRight size={18} className="text-ink-3 group-hover:text-ink" />
           </Link>
           <Today />
+          <IdiomCard />
           <Link to="/emergency" className="card card-link group flex items-center justify-between gap-3 p-4">
             <span>
               <span className="label-board block text-ink-3" lang="cs">V nouzi</span>

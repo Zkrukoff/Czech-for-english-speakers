@@ -723,6 +723,30 @@ export const EmergencyCardsSchema = z.object({
   nativeReviewed: reviewed,
 });
 
+export const IdiomsSchema = z.object({
+  $comment: z.string().optional(),
+  idioms: z
+    .array(
+      z.object({
+        id,
+        cs: z.string().min(1),
+        /** Word for word. */
+        literal: z.string().min(1),
+        meaning: z.string().min(1),
+        /** The dictionary's own definition, quoted. */
+        definitionCs: z.string().min(1),
+        /** Dictionary label, e.g. "expr.", "hovor.", "pořek.". */
+        label: z.string().optional(),
+        /** Closest real English idiom; left out when there isn't one. */
+        english: z.string().optional(),
+        example: z.object({ cs: z.string().min(1), en: z.string().min(1) }),
+        source: z.object({ dictionaries: z.array(z.enum(['SSČ', 'SSJČ'])).min(1), url: z.string().url(), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) }),
+        nativeReviewed: reviewed,
+      }),
+    )
+    .min(1),
+});
+
 /**
  * Real-speaker recordings (D6). Files live in public/audio/<id>.<ext>.
  * Exercises that need a recording stay hidden until it is listed here.
@@ -770,6 +794,7 @@ export type OverheardScene = z.infer<typeof OverheardSceneSchema>;
 export type HolidayLesson = z.infer<typeof HolidayLessonSchema>;
 export type EmergencyNumbers = z.infer<typeof EmergencyNumbersSchema>;
 export type EmergencyCards = z.infer<typeof EmergencyCardsSchema>;
+export type Idiom = z.infer<typeof IdiomsSchema>['idioms'][number];
 export type HolidaysData = z.infer<typeof HolidaysSchema>;
 export type Holiday = HolidaysData['holidays'][number];
 export type AudioManifest = z.infer<typeof AudioManifestSchema>;

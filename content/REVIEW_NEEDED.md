@@ -235,3 +235,13 @@ check first. When an item is confirmed or corrected, remove it here and set
 | ticket | *Označeno.*, *Platí do 04:00*, *Platnost vypršela*, *Neplatná*, *Den 8 · od 10. 11.*, *Výluka.* | Natural on a ticket? |
 | ticket | *výluka* used for a planned day off ("planned works") | Does the joke land for a Czech speaker? |
 | plurals | *1 den / 2 dny / 5 dní*, *1 výluka / 2 výluky / 5 výluk* | Right? |
+
+## Round 2 · A8 Idiom of the week
+
+| Where | Text | Question |
+|---|---|---|
+| idioms/idioms.json | 21 idioms. Each idiom and its meaning is in SSČ and/or SSJČ (via prirucka.ujc.cas.cz, checked 18 Nov 2026) | Still current, not dated or odd today? |
+| idioms/idioms.json | All 21 example sentences (written for the app) | Natural? Right form of the idiom (e.g. *je jako hrách na stěnu házet*)? |
+| idioms/idioms.json | English equivalents (*beat around the bush*, *buy a pig in a poke*, *there's the rub*…) | Close enough? Dropped where none exists. |
+| dropped | *mít knedlík v krku*: only an example on the IJP page, no definition | Add back if a source defines it. |
+| plate, image | *Idiom týdne · týden 47*, *Zdroj: SSJČ* | Natural? |
