@@ -1507,3 +1507,143 @@ section before any code, and nothing is merged or deployed without your say.
    proposal** for you to approve, as the audit suggested. No redesign
    without your sign-off.
 4. **Graded reading and shadowing wait for recordings.**
+
+## 12. Round 4, step 1: a kit for reviewers and voice talent
+
+**Order approved 18 Nov 2026.** People are now the bottleneck:
+- **3,097 Czech items** are marked `nativeReviewed: false`, and none are
+  reviewed;
+- **46 recordings** are named in the content, and **none exist**.
+
+This step builds no lessons. It makes each hour a reviewer or speaker gives
+count, and makes "reviewed" a checked process rather than a hand edit.
+
+### 12.1 Review sheets
+
+- **`npm run review:export`** writes spreadsheets (CSV, UTF-8; opens in
+  Excel, Google Sheets or Numbers) to `review/`, one per batch. Each row is
+  one item:
+  - **Key**: a stable address, e.g. `units/u01/l01/vocab/v-ahoj`.
+  - **Area, Czech, English**, and **context**: the exercise prompt, the
+    dialogue setting, or where it appears.
+  - **What to check**, from the item type, plus the specific questions
+    already in REVIEW_NEEDED.md.
+  - Columns for the reviewer: **verdict** (OK / Fix / Unsure),
+    **corrected Czech**, **comment**, **initials**.
+- **Explanation and grammar pages** (Markdown) are one row per page, with a
+  link to the page in the app. Corrections there come as comments, which I
+  apply by hand.
+- **`npm run review:import <file.csv>`**:
+  - **OK** marks the item reviewed.
+  - **Fix** replaces the Czech, but only in plain fields. A fix that touches
+    lens markup, an exercise's accepted answers or a sentence other items
+    depend on goes to `review/fixes-to-apply.md` and stays unreviewed until
+    it's applied.
+  - **Unsure** and blank rows change nothing.
+  - The import then runs the full content validation and refuses if anything
+    breaks.
+  - Each import appends to `content/REVIEW_LOG.json`: date, initials,
+    counts. Initials only, never names or contact details.
+- **Batches, in priority order:**
+
+  | # | What | Items (approx.) | Why first |
+  |---|---|---|---|
+  | 1 | Emergency cards and phrases | 40 | Wrong Czech in an emergency does the most harm |
+  | 2 | Line A, units 1–2 (vocabulary, dialogues, exercises, explanations) | 330 | What every learner sees first |
+  | 3 | Pronunciation and the alphabet | 90 | Teaches the sounds; small |
+  | 4 | Deck 1 and the 300 example sentences | 450 | The most frequent words |
+  | 5 | Mock exam 1 and the speaking models | 40 tasks | Learners copy the models aloud |
+  | 6 | Phrase deck | 50 | Formulaic Czech, used daily |
+  | 7+ | Everything else, by area | about 2,100 | |
+
+- **Visible progress:** the footer line "Czech content awaiting native
+  review" becomes a live count, e.g. "312 of 3,097 items checked by a native
+  speaker". Settings → Sources shows it by area.
+
+### 12.2 Recording scripts and drop-in audio
+
+- **Stable recording ids for everything spoken**, derived from content ids,
+  so nothing needs editing by hand:
+
+  | Content | Id pattern |
+  |---|---|
+  | Dialogue lines | `dlg-<lesson>-<n>` |
+  | Lesson vocabulary | `voc-<id>` |
+  | Phrases | `chunk-<id>` |
+  | Exam listening lines | `exam-<task>-<item>-<n>` |
+  | Existing alphabet and *Overheard* clips | kept as they are |
+
+  The players (dialogues, listen buttons, exam audio) look these ids up. A
+  listed recording plays and the "computer voice" label goes away; anything
+  unlisted keeps the labelled voice. The audio player will check the
+  manifest before trying a file, so unrecorded items no longer request
+  missing files.
+- **`npm run audio:script`** writes a recording script per batch, as a CSV
+  and a printable page:
+  - the id;
+  - exactly what to say (lens markup removed; the spoken form where the
+    content gives one);
+  - the speaker role (A/B in dialogues);
+  - notes such as "station announcement: official wording".
+- **Batches:**
+
+  | # | What | Clips |
+  |---|---|---|
+  | R1 | Sounds, minimal pairs, the door announcement | 15 |
+  | R2 | Line A dialogues | 135 |
+  | R3 | Line A vocabulary | 199 |
+  | R4 | *Overheard in Prague* | about 31 |
+  | R5 | Phrases | 48 |
+  | R6 | Exam listening | 139 |
+  | | **Total** | **about 570** |
+
+- **`npm run audio:import <folder>`** takes files named by id (mp3, m4a or
+  ogg; no conversion), checks each id is in a script, copies it to
+  `public/audio/` and adds it to the manifest with the speaker and licence
+  from `content/audio/speakers.json`. Unknown ids are reported, not imported.
+  Then `npm test` runs. Minimal pairs and listening exercises switch
+  themselves on as their clips arrive, as they already do.
+
+### 12.3 The brief
+
+- `docs/REVIEWERS.md`: one page for reviewers. What we need, how to fill the
+  sheet, roughly how long a batch takes, the house rules (natural Prague
+  Czech at A1–A2; the standard form taught, the spoken form noted; vy and ty
+  as each lesson sets), and how they're credited.
+- `docs/AUDIO.md` gets the same for speakers: room, distance, speed, file
+  naming, two voices for dialogues.
+- **A short call for reviewers and speakers,** for you to post wherever you
+  like. I won't post anything.
+- **A consent and licence note** for speakers and reviewers to agree to.
+  Default: recordings under CC BY 4.0, credited by name or initials as each
+  person chooses. **This is a template, not legal advice.**
+
+### 12.4 Checks
+
+- An export → edit → import round trip on a temporary copy of the content:
+  - OK marks reviewed;
+  - Fix in a plain field applies;
+  - Fix in lens markup or answers is held back;
+  - a bad key or a broken result is refused and changes nothing.
+- Keys are stable: exporting twice gives the same keys.
+- Recording ids are unique and deterministic.
+- An imported clip plays, and its "computer voice" label goes away.
+- No change to learners' data.
+
+### 12.5 Order and effort
+
+On `round-4-step1`, one commit, **about 3–4 days**, then QA and a push. Not
+merged or deployed until you say so.
+
+### 12.6 Decisions (defaults unless you say otherwise)
+
+1. **The batch order above:** emergency first, then what learners see first.
+2. **CSV sheets,** not a review website. Sheets work in any spreadsheet app,
+   need no accounts, and keep everything in the repo. A review page inside
+   the app could come later if reviewers want it.
+3. **Risky fixes are held back for me to apply by hand,** never applied
+   automatically.
+4. **Credits by name or initials,** as each reviewer or speaker prefers, on
+   Settings → Sources.
+5. **Recordings under CC BY 4.0, with written consent.** You may prefer
+   assignment to the project. Tell me and I'll change the template.
