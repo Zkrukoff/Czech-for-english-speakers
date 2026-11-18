@@ -213,6 +213,7 @@
 .prose-cz strong:not(.not-prose *) { @apply font-bold text-ink; }
 .prose-cz em:not(.not-prose *) { @apply font-medium italic text-ink; }
 .prose-cz blockquote:not(.not-prose *) { @apply my-5 rounded-md border-2 border-ink bg-champagne-tint px-5 py-3 text-ink; }
+.prose-cz blockquote:not(.not-prose *) p { white-space: pre-line; }
 .prose-cz table:not(.not-prose *) { @apply my-4 w-full border-collapse text-sm; }
 .prose-cz th:not(.not-prose *) { @apply label-board border-b-2 border-ink px-3 py-2 text-left text-ink-2; }
 .prose-cz td:not(.not-prose *) { @apply border-b border-rule px-3 py-2; }

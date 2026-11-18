@@ -5,8 +5,8 @@ import { Card, EnamelPlate, TileGrid } from '@/components/ui';
 import { IconArrowRight } from '@/components/icons';
 
 /** Short Czech names used on the plates (the brief's section names). */
-const PLATE: Record<string, string> = { 'prague-transport': 'Doprava', culture: 'Kultura', 'settling-in': 'Zabydlení' };
-const TILE: Record<string, string> = { 'prague-transport': '16', culture: '04', 'settling-in': '10' };
+const PLATE: Record<string, string> = { 'prague-transport': 'Doprava', culture: 'Kultura', 'settling-in': 'Zabydlení', sports: 'Sport' };
+const TILE: Record<string, string> = { 'prague-transport': '16', culture: '04', 'settling-in': '10', sports: '13' };
 
 export function GuidesIndex() {
   return (

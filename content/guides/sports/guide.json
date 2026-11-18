@@ -1,0 +1,348 @@
+{
+  "id": "sports",
+  "title": "Sport",
+  "titleCs": "Sport",
+  "order": 4,
+  "draft": false,
+  "summary": "Hockey, football, the chants (including the rude ones, explained) and how to go to a game: what to say, where to stand, and what not to sing.",
+  "sections": [
+    {
+      "id": "hockey",
+      "title": "Hockey",
+      "file": "hockey.md",
+      "lessons": [
+        "u02-l03"
+      ]
+    },
+    {
+      "id": "football",
+      "title": "Football",
+      "file": "football.md",
+      "lessons": [
+        "u01-l04"
+      ]
+    },
+    {
+      "id": "chants",
+      "title": "Chants",
+      "file": "chants.md",
+      "lessons": []
+    },
+    {
+      "id": "going",
+      "title": "Going to a game",
+      "file": "going.md",
+      "lessons": [
+        "u03-l02",
+        "u02-l02"
+      ]
+    }
+  ],
+  "phrasebook": [
+    {
+      "id": "watching",
+      "title": "Watching a game",
+      "phrases": [
+        {
+          "cs": "Kolik je?",
+          "en": "What's the score?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Dva jedna pro Spartu.",
+          "en": "Two–one to Sparta.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Nula nula.",
+          "en": "Nil–nil.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Gól!",
+          "en": "Goal!",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "To byl faul!",
+          "en": "That was a foul!",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Rozhodčí!",
+          "en": "Ref!",
+          "nativeReviewed": false,
+          "note": "Shouted, in a tone that finishes the sentence for you."
+        },
+        {
+          "cs": "Jdou do prodloužení.",
+          "en": "It's going to overtime.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Budou nájezdy.",
+          "en": "It's going to a shootout.",
+          "nativeReviewed": false,
+          "note": "Hockey: nájezdy are the penalty shots after overtime."
+        }
+      ]
+    },
+    {
+      "id": "talking",
+      "title": "Talking about it",
+      "phrases": [
+        {
+          "cs": "Komu fandíš?",
+          "en": "Who do you support?",
+          "nativeReviewed": false,
+          "note": "fandit + dative: komu?"
+        },
+        {
+          "cs": "Fandím Slavii.",
+          "en": "I support Slavia.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Fandím Spartě.",
+          "en": "I support Sparta.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Jdeme na hokej.",
+          "en": "We're going to the hockey.",
+          "nativeReviewed": false,
+          "note": "na + accusative for events: na hokej, na fotbal, na zápas."
+        },
+        {
+          "cs": "Viděl jsi včera ten zápas?",
+          "en": "Did you see the game yesterday?",
+          "nativeReviewed": false,
+          "note": "To a woman: Viděla jsi…"
+        },
+        {
+          "cs": "Vyhráli jsme!",
+          "en": "We won!",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Prohráli jsme.",
+          "en": "We lost.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Byla to remíza.",
+          "en": "It was a draw.",
+          "nativeReviewed": false
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "id": "sports-basics",
+      "title": "At the game",
+      "description": "Scores, who you support, and getting a ticket.",
+      "exercises": [
+        {
+          "id": "spo-x1",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "Who do you support?",
+          "answers": [
+            "Komu fandíš[?]",
+            "Komu fandíte[?]"
+          ],
+          "why": "fandit takes the dative (komu?), so the question word is komu, not koho.",
+          "hints": [],
+          "skills": [
+            "guide:sports"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "spo-x2",
+          "type": "translate",
+          "direction": "en-cs",
+          "prompt": "We're going to the hockey.",
+          "answers": [
+            "Jdeme na hokej[.]",
+            "Jedeme na hokej[.]"
+          ],
+          "why": "na + accusative for events you go to: na hokej, na fotbal.",
+          "hints": [],
+          "skills": [
+            "guide:sports"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "spo-x3",
+          "type": "multipleChoice",
+          "prompt": "\"I support Slavia.\" Which form of Slavia?",
+          "options": [
+            "Fandím Slavii.",
+            "Fandím Slavia.",
+            "Fandím Slavie."
+          ],
+          "optionsLang": "cs",
+          "answers": [
+            "Fandím Slavii."
+          ],
+          "hints": [
+            {
+              "wrong": "Fandím Slavia.",
+              "explain": "Slavia is the dictionary form (1st case). fandit needs the 3rd case (dative): Slavii."
+            },
+            {
+              "wrong": "Fandím Slavie.",
+              "explain": "Slavie is the 2nd case (genitive), as in \"fanoušci Slavie\". After fandit you need the dative: Slavii."
+            }
+          ],
+          "why": "fandit + dative (komu?). Slavia → Slavii, like růže → růži.",
+          "skills": [
+            "guide:sports"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "spo-x4",
+          "type": "multipleChoice",
+          "prompt": "What do fans mean by \"Kdo neskáče, není Čech!\"?",
+          "options": [
+            "Everyone jump: you're not Czech if you don't.",
+            "Nobody jump: Czechs stay seated.",
+            "Who's the Czech who isn't jumping?"
+          ],
+          "optionsLang": "cs",
+          "answers": [
+            "Everyone jump: you're not Czech if you don't."
+          ],
+          "hints": [
+            {
+              "wrong": "Nobody jump: Czechs stay seated.",
+              "explain": "It's the opposite: \"whoever doesn't jump isn't Czech\", so everybody jumps."
+            },
+            {
+              "wrong": "Who's the Czech who isn't jumping?",
+              "explain": "kdo here means \"whoever\", not \"who?\": whoever isn't jumping isn't Czech."
+            }
+          ],
+          "why": "kdo… není… = whoever… isn't…. Then: hop, hop, hop!",
+          "skills": [
+            "guide:sports"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "spo-x5",
+          "type": "multipleChoice",
+          "prompt": "Your colleague says \"Bylo to dva dva.\" What happened?",
+          "options": [
+            "It was a draw, 2–2.",
+            "We won 2–0.",
+            "It was two games."
+          ],
+          "optionsLang": "cs",
+          "answers": [
+            "It was a draw, 2–2."
+          ],
+          "hints": [
+            {
+              "wrong": "We won 2–0.",
+              "explain": "Nil is nula: 2–0 would be \"dva nula\". Dva dva is two–two."
+            },
+            {
+              "wrong": "It was two games.",
+              "explain": "Scores are read as two numbers: dva dva = 2–2."
+            }
+          ],
+          "why": "Scores are just the two numbers: dva jedna (2–1), nula nula (0–0).",
+          "skills": [
+            "guide:sports"
+          ],
+          "nativeReviewed": false
+        },
+        {
+          "id": "spo-x6",
+          "type": "translate",
+          "direction": "cs-en",
+          "prompt": "Dvě vstupenky na sobotu, prosím.",
+          "answers": [
+            "Two tickets for Saturday[,] please[.]",
+            "Two tickets for Saturday[.]"
+          ],
+          "why": "na + accusative for the day it's for: na sobotu.",
+          "hints": [],
+          "skills": [
+            "guide:sports"
+          ],
+          "nativeReviewed": false
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "ČTK: the 2026/27 Tipsport extraliga schedule (2 June 2026)",
+      "url": "https://www.ceskenoviny.cz/zpravy/2833441"
+    },
+    {
+      "title": "Prague City Tourism: HC Sparta at O2 arena, 2026–27",
+      "url": "https://prague.eu/en/akce/tipsport-extraliga-hc-sparta-praha-matches-in-o2-arena/"
+    },
+    {
+      "title": "AC Sparta Praha: the stadium",
+      "url": "https://sparta.cz/en/klub/stadium"
+    },
+    {
+      "title": "Prague City Tourism: Fortuna Arena (SK Slavia Praha)",
+      "url": "https://prague.eu/cs/objevujte/fortuna-arena-eden-arena-sk-slavia-praha/"
+    },
+    {
+      "title": "ČT24: Sešívaní drží spolu (Slavia's colours)",
+      "url": "https://ct24.ceskatelevize.cz/clanek/archiv/sesivani-drzi-spolu-uz-120-let-290173"
+    },
+    {
+      "title": "The Hockey News: Czechia wins the 2024 World Championship",
+      "url": "https://thehockeynews.com/news/world-championship-david-pastrnak-lukas-dostal-power-czechia-to-gold-over-switzerland"
+    },
+    {
+      "title": "ČTK: the champions on Old Town Square (27 May 2024)",
+      "url": "https://www.ceskenoviny.cz/zpravy/hokejiste-oslavi-zlato-z-domaciho-ms-s-fanousky-na-staromestskem-namesti/2523926"
+    },
+    {
+      "title": "CNN Prima News: Euro 2020 fans in Budapest (June 2021)",
+      "url": "https://cnn.iprima.cz/podivejte-se-na-postup-cechu-ocima-fanouska-nizozemce-jsme-prejeli-na-hristi-i-v-hledisti-28388"
+    },
+    {
+      "title": "eFotbal: Bony remembers Sparta's chants",
+      "url": "https://www.efotbal.cz/article/fotbal-liga-mistru-kdo-neskace-neni-spartan-bony-vzpomina-na-pusobeni-v-praze-a-vypravi-proc-to-nevyslo-v-city-22bdd706-3a6a-48b4-8eca-a42af33bdf58"
+    },
+    {
+      "title": "iSport: \"Slavia, do toho!\" in Eden (September 2026)",
+      "url": "https://isport.blesk.cz/clanek/fotbal-chance-liga/479510/spolecny-protest-fanousku-jeb-t-tvrdika-kriceli-banikovci-v-edenu-se-piskalo-na-fandici.html"
+    },
+    {
+      "title": "iSport: Pardubice's title celebrations (April 2026)",
+      "url": "https://isport.blesk.cz/clanek/hokej-tipsport-extraliga/474944/jak-vypadaly-oslavy-dynama-subban-bavil-plne-namesti-cesky-cervenka-pripomnel-otvirak.html"
+    },
+    {
+      "title": "Aktuálně.cz: Sparta v Pardubice final, the fans (2007)",
+      "url": "https://sport.aktualne.cz/hokej/fanousci-sparty-se-mohli-smat-naposled/r~i:article:394889/"
+    },
+    {
+      "title": "Deník: \"Smrt Spartě\" and the 30,000 Kč fine (27 October 2025)",
+      "url": "https://www.denik.cz/fotbal-prvni-liga/fanousci-se-slozili-na-pokutu-pavel-rehak-slavia-pokrik-smrt-sparte-derby.html"
+    },
+    {
+      "title": "PrahaIN: the derby chants",
+      "url": "https://www.prahain.cz/sport/fotbal/v-edenu-smrt-sparte-na-letne-jude-slavie-rivalita-rozdeluje-fanousky-vlastnich-taboru-9162.html"
+    },
+    {
+      "title": "Seznam Zprávy: Chance Liga 2025/26",
+      "url": "https://www.seznamzpravy.cz/clanek/sport-fotbal-chance-liga-2025-2026-info-279541"
+    }
+  ],
+  "lastChecked": "2026-11-18",
+  "nativeReviewed": false
+}

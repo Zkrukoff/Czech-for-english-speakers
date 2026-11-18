@@ -118,8 +118,8 @@ describe('alphabet', () => {
 describe('guides', () => {
   const { course } = loadContent(contentFiles);
 
-  it('has the culture, Prague transport and settling-in guides, in order', () => {
-    expect(course.guides.map((g) => g.id)).toEqual(['culture', 'prague-transport', 'settling-in']);
+  it('has the culture, Prague transport, settling-in and sports guides, in order', () => {
+    expect(course.guides.map((g) => g.id)).toEqual(['culture', 'prague-transport', 'settling-in', 'sports']);
   });
 
   it('loads every section with content', () => {

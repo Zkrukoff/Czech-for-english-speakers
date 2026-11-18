@@ -245,3 +245,15 @@ check first. When an item is confirmed or corrected, remove it here and set
 | idioms/idioms.json | English equivalents (*beat around the bush*, *buy a pig in a poke*, *there's the rub*…) | Close enough? Dropped where none exists. |
 | dropped | *mít knedlík v krku*: only an example on the IJP page, no definition | Add back if a source defines it. |
 | plate, image | *Idiom týdne · týden 47*, *Zdroj: SSJČ* | Natural? |
+
+## Round 2 · A9 Sports guide
+
+| Where | Text | Question |
+|---|---|---|
+| chants.md | Every chant and its gloss: *Kdo neskáče, není Čech/sparťan/Tesla*, *Češi/Sparta/Slavia, do toho!*, *Par-Par-Pardubice*, *Pardubice u Hradce!*, *Smrt Spartě!* | Wording and translation right? Still current? |
+| chants.md | *Tesla* "a name from the club's past" (Pardubice) | Not in the source article; please confirm. |
+| chants.md | *Jude Slavie* named only in "What not to repeat", per PrahaIN (2022) | Right call to name it so learners recognise it? |
+| football.md | *Fandím Bohemce* as the neutral answer; "Bohemians, the third Prague club" | Natural? Fair? |
+| going.md | "In the stadium" tips (kotel, colours, beer, pískot) | No official source; flagged in the text. Accurate? |
+| phrasebook, practice | All phrases, especially *Budou nájezdy*, *Jdou do prodloužení*, *Byla to remíza* | Natural? |
+| facts | League names, Pardubice champions, venues, O2 arena tickets, 2024 final, Slavia colours (checked 18 Nov 2026) | Re-check each season. |
