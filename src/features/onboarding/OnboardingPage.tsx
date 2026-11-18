@@ -89,7 +89,7 @@ export function OnboardingPage() {
       {id === 'level' && (
         <fieldset>
           <legend className="font-display text-4xl font-extrabold leading-tight tracking-tight">How much Czech do you have?</legend>
-          <p className="mt-2 text-ink-2">Everyone rides Line A first; it's short if you know it. No test, no judgement.</p>
+          <p className="mt-2 text-ink-2">Everyone rides Line A first. The stations built so far cover early A1, so it's quick if you know it. No test, no judgement.</p>
           <Choices options={LEVEL} value={level} onChange={setLevel} name="level" />
         </fieldset>
       )}

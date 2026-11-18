@@ -551,7 +551,7 @@ export const StopSchema = z.discriminatedUnion('kind', [
 export const LinesSchema = z.object({
   $comment: z.string().optional(),
   verified: z.object({ source: z.string().min(1), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), note: z.string().optional() }),
-  milestones: z.array(z.object({ id, name: z.string().min(1), en: z.string().min(1), summary: z.string().min(1), level: LevelSchema })),
+  milestones: z.array(z.object({ id, name: z.string().min(1), en: z.string().min(1), summary: z.string().min(1), level: LevelSchema, /** What the check is called, when it doesn't cover a whole level (e.g. "Part 1 check"). */ checkLabel: z.string().optional() })),
   lines: z
     .array(
       z.object({

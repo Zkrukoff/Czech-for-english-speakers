@@ -37,7 +37,7 @@ export function HomePage() {
             </h1>
           </div>
           <p className="text-sm text-ink-2">
-            <span className="font-mono">A1–A2</span> · {pos.practised} of {pos.total} lessons practised
+            Built so far: <span className="font-mono">early A1</span> · {pos.practised} of {pos.total} lessons practised
           </p>
         </div>
         {/* Phones: the line runs top to bottom with unit names written out. Wider screens: a strip map, unit names on hover. */}

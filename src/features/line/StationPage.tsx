@@ -51,7 +51,7 @@ export function StationPage() {
           <EnamelPlate tone="red">{milestone.name} · {milestone.en}</EnamelPlate>
           <p className="mt-4 text-ink-2">{milestone.summary}</p>
           <p className="mt-2 text-sm text-ink-3">
-            Here: {stop.milestone.part === 'review' ? 'a review of everything so far' : `the ${stop.milestone.level} can-do check`}. This screen arrives with the redesign.
+            Here: {stop.milestone.part === 'review' ? 'a review of everything so far' : `the ${milestone.checkLabel ?? `${stop.milestone.level} can-do check`}`}. This screen arrives with the redesign.
           </p>
         </section>
       )}

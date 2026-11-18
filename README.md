@@ -6,7 +6,7 @@ A *Pražák* is a Prague local. Pražák is a web app that teaches Czech to
 **English speakers who have moved to Czechia for work**, from absolute beginner towards CEFR A2.
 
 **The course is a metro map.** Prague's three metro lines are the three CEFR
-levels: **Linka A** (green) is A1–A2, **B** (yellow) B1–B2, **C** (red) C1–C2.
+levels: **Linka A** (green) is A1–A2 when complete (the stations built so far cover early A1), **B** (yellow) B1–B2, **C** (red) C1–C2.
 Units are real stations in their real order (checked against PID open data),
 transfer stations are milestones, and a finished station gets an ink stamp on
 your ticket. No confetti.
@@ -80,7 +80,7 @@ Linka A, west to east (station: content):
 | 5 | Dejvická | Unit 4 · People at work |
 | 6 | Hradčanská | Unit 5 · Vy, or ty? |
 | 7–8 | Malostranská, Staroměstská | *výluka*: still being written |
-| 9–10 | Můstek, Muzeum | **Václavák**: review, then the A1 can-do check |
+| 9–10 | Můstek, Muzeum | **Václavák**: review, then the Part 1 check (the five built stations: early A1) |
 | 11–17 | Náměstí Míru … Depo Hostivař | *výluka*; Depo Hostivař is the A2 check |
 
 Lines B and C are on the map but not yet in service. The grammar reference

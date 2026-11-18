@@ -10,8 +10,9 @@
       "id": "vaclavak",
       "name": "Václavák",
       "en": "Wenceslas Square",
-      "summary": "A double milestone at the two ends of Wenceslas Square: a review of everything so far at Můstek, then the A1 can-do check at Muzeum.",
-      "level": "A1"
+      "summary": "A double milestone at the two ends of Wenceslas Square: a review of everything so far at Můstek, then the Part 1 check at Muzeum. It checks the can-do goals of the five stations built so far, which is early A1, not all of it.",
+      "level": "A1",
+      "checkLabel": "Part 1 check"
     },
     {
       "id": "konecna-a",
