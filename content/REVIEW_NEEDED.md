@@ -285,3 +285,11 @@ check first. When an item is confirmed or corrected, remove it here and set
 | Where | Text | Question |
 |---|---|---|
 | u01-l03 note | *Česko (Czechia) is the everyday short name: Bydlím v Česku. Česká republika … z České republiky.* | Fair description of how each is used? |
+
+## Round 3 · P1 Listening
+
+| Where | Text | Question |
+|---|---|---|
+| all 18 Line A lessons | 36 listening questions (`<lesson>-lis1/2`): the line played (a dialogue line or a short recombination), the question and wrong-answer explanations | Natural? Is each recombination something a Czech would say (e.g. *Dám si kávu s mlékem, prosím.*)? |
+| dialogue step | *Poslechněte si · listen*, *Ukázat text · show the text*, *Přehrávám…*, *Poslechnout* | Natural as button labels? |
+| labels | *Computer voice · hlas počítače* | Natural? |

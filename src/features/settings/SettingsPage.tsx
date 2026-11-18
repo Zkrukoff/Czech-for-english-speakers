@@ -92,7 +92,7 @@ export function SettingsPage() {
         <section aria-labelledby="s-audio" className="space-y-4">
           <SectionNumber n={3} id="s-audio">Audio</SectionNumber>
           <p className="text-sm text-ink-2">
-            Core sounds are taught only with real Czech speakers. {course.audio.size === 0 ? 'No recordings are in yet, so listening exercises are switched off for now.' : `${course.audio.size} recordings so far.`}{' '}
+            Core sounds are taught only with real Czech speakers. {course.audio.size === 0 ? 'No recordings are in yet: listening uses your device\'s Czech voice, marked "computer voice", and the minimal pairs wait for real recordings.' : `${course.audio.size} recordings so far.`}{' '}
             Other phrases use your browser's Czech voice, which is marked "synthetic voice" where it matters.
           </p>
           {voices.length === 0 ? (

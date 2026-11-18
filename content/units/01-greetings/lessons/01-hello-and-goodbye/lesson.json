@@ -178,6 +178,66 @@
   },
   "exercises": [
     {
+      "id": "u01-l01-lis1",
+      "type": "multipleChoice",
+      "prompt": "What does Daniel want to know?",
+      "listen": "Ahoj, Jano! Jak se máš?",
+      "options": [
+        "How Jana is",
+        "Where Jana is going",
+        "What Jana's name is"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "How Jana is"
+      ],
+      "hints": [
+        {
+          "wrong": "Where Jana is going",
+          "explain": "\"Kam jdeš?\" would ask where. \"Jak se máš?\" asks how you are."
+        },
+        {
+          "wrong": "What Jana's name is",
+          "explain": "A name question would be \"Jak se jmenuješ?\". \"Jak se máš?\" asks how you are."
+        }
+      ],
+      "why": "\"Ahoj, Jano! Jak se máš?\" Hi, Jana! How are you? Ty form: they're friends.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l01-lis2",
+      "type": "multipleChoice",
+      "prompt": "Who is Daniel talking to, and how?",
+      "listen": "Dobrý den, paní Dvořáková. Jak se máte?",
+      "options": [
+        "Mrs Dvořáková, politely (vy)",
+        "A friend, informally (ty)",
+        "A child"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Mrs Dvořáková, politely (vy)"
+      ],
+      "hints": [
+        {
+          "wrong": "A friend, informally (ty)",
+          "explain": "\"Jak se máte?\" with -te is the polite vy form, and \"paní\" is formal too."
+        },
+        {
+          "wrong": "A child",
+          "explain": "Children get ty (\"Jak se máš?\"). \"Jak se máte?\" and \"paní\" are polite."
+        }
+      ],
+      "why": "\"Dobrý den, paní Dvořáková. Jak se máte?\" Formal greeting, vy form.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u01-l01-e1",
       "type": "translate",
       "direction": "en-cs",

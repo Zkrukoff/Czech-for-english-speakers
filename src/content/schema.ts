@@ -250,6 +250,10 @@ export const MultipleChoiceExerciseSchema = z.object({
   prompt: z.string().min(1),
   /** Optional Czech shown above the question (a sign, a line someone says). */
   cs: z.string().optional(),
+  /** Listening: Czech that is played, never shown before answering (put it in `why` for afterwards). */
+  listen: z.string().optional(),
+  /** Recording of `listen`, when there is one. */
+  audio: z.string().optional(),
   options: z.array(z.string().min(1)).min(2).max(5),
   /** Language of the options, for lang attributes and fonts. */
   optionsLang: z.enum(['en', 'cs']).default('en'),

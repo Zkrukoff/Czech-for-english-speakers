@@ -139,6 +139,66 @@
   },
   "exercises": [
     {
+      "id": "u04-l03-lis1",
+      "type": "multipleChoice",
+      "prompt": "How old are the children?",
+      "listen": "Synovi je sedm a dceři čtyři.",
+      "options": [
+        "Son 7, daughter 4",
+        "Son 4, daughter 7",
+        "Son 17, daughter 14"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Son 7, daughter 4"
+      ],
+      "hints": [
+        {
+          "wrong": "Son 4, daughter 7",
+          "explain": "\"Synovi je sedm\": the son is seven; \"dceři čtyři\": the daughter four."
+        },
+        {
+          "wrong": "Son 17, daughter 14",
+          "explain": "\"Sedm\" is seven (seventeen is \"sedmnáct\"), \"čtyři\" is four."
+        }
+      ],
+      "why": "\"Synovi je sedm a dceři čtyři.\" My son is seven and my daughter four. Age uses the dative: synovi, dceři.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l03-lis2",
+      "type": "multipleChoice",
+      "prompt": "Does Daniel have children?",
+      "listen": "Ne, ale mám přítelkyni. Taky je z Anglie.",
+      "options": [
+        "No, but he has a girlfriend from England",
+        "Yes, a daughter in England",
+        "No, and he lives alone in Brno"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "No, but he has a girlfriend from England"
+      ],
+      "hints": [
+        {
+          "wrong": "Yes, a daughter in England",
+          "explain": "\"Ne\" is no; \"přítelkyni\" is girlfriend, not a daughter (\"dcera\")."
+        },
+        {
+          "wrong": "No, and he lives alone in Brno",
+          "explain": "He does say no, but \"mám přítelkyni\": he has a girlfriend."
+        }
+      ],
+      "why": "\"Ne, ale mám přítelkyni. Taky je z Anglie.\" No, but I have a girlfriend. She's from England too.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l03-e1",
       "type": "fillEnding",
       "prompt": "Mám [[bratr___|bratr|acc|object]].",

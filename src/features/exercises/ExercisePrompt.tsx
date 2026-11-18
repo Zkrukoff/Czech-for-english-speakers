@@ -1,3 +1,4 @@
+import { ListenButton } from '@/components/ListenButton';
 import { RecordingButton } from './types/RecordingButton';
 import { RealiaCard } from './types/RealiaCard';
 import { CzechText } from '@/components/CzechText';
@@ -43,7 +44,7 @@ export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
   return (
     <div className="space-y-3">
       <div className="text-sm font-medium uppercase tracking-wide text-ink-3">
-        {exercise.type === 'translate' ? (exercise.direction === 'en-cs' ? 'Translate into Czech' : 'Translate into English') : TYPE_LABEL[exercise.type]}
+        {exercise.type === 'translate' ? (exercise.direction === 'en-cs' ? 'Translate into Czech' : 'Translate into English') : exercise.type === 'multipleChoice' && exercise.listen ? 'Listen' : TYPE_LABEL[exercise.type]}
       </div>
       {exercise.type === 'translate' && (
         <p className="flex items-center gap-2 text-2xl font-medium" lang={exercise.direction === 'en-cs' ? 'en' : 'cs'}>
@@ -90,9 +91,9 @@ export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
         </>
       )}
       {exercise.type === 'listenType' && (
-        <div className="flex flex-wrap items-center gap-3">
-          <RecordingButton id={exercise.audio} />
-          <span className="text-sm text-ink-2">Type what you hear, in Czech.</span>
+        <div className="space-y-2">
+          <p className="text-sm text-ink-2">Type what you hear, in Czech.</p>
+          <ListenButton text={exercise.cs} audioId={exercise.audio} fallback={<p className="mt-1 text-xl" lang="cs">{exercise.cs}</p>} />
         </div>
       )}
       {(exercise.type === 'chooseEnding' || exercise.type === 'aspectChoice') && (
@@ -127,6 +128,11 @@ export function ExercisePrompt({ exercise }: { exercise: Exercise }) {
       {exercise.type === 'selfCheck' && <p className="text-3xl font-semibold" lang="cs">{exercise.cs}</p>}
       {exercise.type === 'multipleChoice' && (
         <>
+          {exercise.listen && (
+            <div className="rounded-sm border-l-4 border-ink bg-paper-2 px-4 py-3">
+              <ListenButton text={exercise.listen} audioId={exercise.audio} fallback={<p className="mt-1 text-xl" lang="cs">{exercise.listen}</p>} />
+            </div>
+          )}
           {exercise.cs && (
             <p className="flex items-center gap-2 rounded-sm border-l-4 border-ink bg-paper-2 px-4 py-3 text-2xl" lang="cs">
               <CzechText text={exercise.cs} />

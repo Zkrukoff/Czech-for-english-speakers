@@ -89,8 +89,10 @@ Existing progress survives all of it (details in § 6).
    goals.
 
 **A lesson.** Explanation (with grammar previews) → vocabulary (4–14 items) →
-a dialogue (5–10 lines, read, not heard) → practice (6–9 exercises, missed
-ones retried at the end).
+a dialogue (5–10 lines, read; a play button reads it aloud with the device's
+Czech voice, but the text is always visible, so it isn't listening practice)
+→ practice (6–9 exercises, missed ones retried at the end). *Corrected 18 Nov
+2026: the first version said dialogues weren't heard at all.*
 
 **Topic order for grammar** (by the skills tags on exercises):
 - **u01:** the verb *být*, the present tense, reflexives (*jmenovat se*);

@@ -143,6 +143,66 @@
   },
   "exercises": [
     {
+      "id": "u04-l04-lis1",
+      "type": "multipleChoice",
+      "prompt": "What does Mrs Horáková do?",
+      "listen": "Tohle je paní Horáková, naše účetní. Má na starosti faktury.",
+      "options": [
+        "She's the accountant, in charge of invoices",
+        "She's the director",
+        "She's a developer"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "She's the accountant, in charge of invoices"
+      ],
+      "hints": [
+        {
+          "wrong": "She's the director",
+          "explain": "A director would be \"ředitelka\". \"Účetní\" is an accountant."
+        },
+        {
+          "wrong": "She's a developer",
+          "explain": "A developer is \"vývojář(ka)\"; that's Pavel. She's \"účetní\", the accountant."
+        }
+      ],
+      "why": "\"Tohle je paní Horáková, naše účetní. Má na starosti faktury.\" This is Mrs Horáková, our accountant. She's in charge of invoices.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l04-lis2",
+      "type": "multipleChoice",
+      "prompt": "What do we learn about Lenka?",
+      "listen": "Pracuje jako asistentka a ví úplně všechno.",
+      "options": [
+        "She's an assistant and knows everything",
+        "She's new and knows nobody",
+        "She's the boss's assistant and is leaving"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "She's an assistant and knows everything"
+      ],
+      "hints": [
+        {
+          "wrong": "She's new and knows nobody",
+          "explain": "\"Ví úplně všechno\" means she knows absolutely everything."
+        },
+        {
+          "wrong": "She's the boss's assistant and is leaving",
+          "explain": "Nothing about leaving: \"pracuje jako asistentka\", she works as an assistant."
+        }
+      ],
+      "why": "\"Pracuje jako asistentka a ví úplně všechno.\" She works as an assistant and knows absolutely everything.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l04-e1",
       "type": "translate",
       "direction": "en-cs",

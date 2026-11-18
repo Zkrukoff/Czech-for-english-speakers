@@ -6,7 +6,9 @@
   ],
   "explanation": "explanation.md",
   "grammarRefs": [],
-  "grammarPreview": ["case:genitive"],
+  "grammarPreview": [
+    "case:genitive"
+  ],
   "nativeReviewed": false,
   "vocab": [
     {
@@ -160,6 +162,66 @@
     ]
   },
   "exercises": [
+    {
+      "id": "u02-l03-lis1",
+      "type": "multipleChoice",
+      "prompt": "How much is one roll?",
+      "listen": "Tři koruny kus.",
+      "options": [
+        "3 crowns",
+        "30 crowns",
+        "3 rolls for one crown"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "3 crowns"
+      ],
+      "hints": [
+        {
+          "wrong": "30 crowns",
+          "explain": "Thirty would be \"třicet\". \"Tři koruny\" is three crowns."
+        },
+        {
+          "wrong": "3 rolls for one crown",
+          "explain": "\"Kus\" means each, a piece: three crowns a piece."
+        }
+      ],
+      "why": "\"Tři koruny kus.\" Three crowns each. 2–4 take koruny; 5+ take korun.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l03-lis2",
+      "type": "multipleChoice",
+      "prompt": "How much is it altogether?",
+      "listen": "To je dohromady osmdesát korun.",
+      "options": [
+        "80 crowns",
+        "18 crowns",
+        "800 crowns"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "80 crowns"
+      ],
+      "hints": [
+        {
+          "wrong": "18 crowns",
+          "explain": "Eighteen is \"osmnáct\". \"Osmdesát\" is eighty."
+        },
+        {
+          "wrong": "800 crowns",
+          "explain": "Eight hundred is \"osm set\". \"Osmdesát\" is eighty."
+        }
+      ],
+      "why": "\"To je dohromady osmdesát korun.\" That's eighty crowns altogether.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
     {
       "id": "u02-l03-e1",
       "type": "fillEnding",

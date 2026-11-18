@@ -5,8 +5,12 @@
     "u02-g4"
   ],
   "explanation": "explanation.md",
-  "grammarRefs": ["verb:aspect"],
-  "grammarPreview": ["case:instrumental"],
+  "grammarRefs": [
+    "verb:aspect"
+  ],
+  "grammarPreview": [
+    "case:instrumental"
+  ],
   "nativeReviewed": false,
   "vocab": [
     {
@@ -154,6 +158,66 @@
     ]
   },
   "exercises": [
+    {
+      "id": "u02-l04-lis1",
+      "type": "multipleChoice",
+      "prompt": "What is the waiter asking?",
+      "listen": "Dohromady, nebo zvlášť?",
+      "options": [
+        "Paying together or separately?",
+        "Card or cash?",
+        "Was it good?"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Paying together or separately?"
+      ],
+      "hints": [
+        {
+          "wrong": "Card or cash?",
+          "explain": "That would be \"kartou, nebo hotově?\". \"Zvlášť\" means separately."
+        },
+        {
+          "wrong": "Was it good?",
+          "explain": "That comes next (\"Chutnalo vám?\"). This is: together or separately?"
+        }
+      ],
+      "why": "\"Dohromady, nebo zvlášť?\" Together or separately?",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l04-lis2",
+      "type": "multipleChoice",
+      "prompt": "How much is the bill?",
+      "listen": "To bude čtyři sta šedesát korun.",
+      "options": [
+        "460 crowns",
+        "416 crowns",
+        "540 crowns"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "460 crowns"
+      ],
+      "hints": [
+        {
+          "wrong": "416 crowns",
+          "explain": "Sixteen would be \"šestnáct\". \"Šedesát\" is sixty: 460."
+        },
+        {
+          "wrong": "540 crowns",
+          "explain": "\"Čtyři sta šedesát\" is 400 + 60 = 460. Five hundred is what Tom pays."
+        }
+      ],
+      "why": "\"To bude čtyři sta šedesát korun.\" That'll be 460 crowns.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
     {
       "id": "u02-l04-e1",
       "type": "translate",

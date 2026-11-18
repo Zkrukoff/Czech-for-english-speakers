@@ -9,6 +9,8 @@ export interface SpeakOptions {
   audioId?: string;
   rate?: number;
   voiceURI?: string;
+  /** 0–2; used to tell two speakers apart when the device has one Czech voice. */
+  pitch?: number;
 }
 
 export interface SpeechProvider {
@@ -35,6 +37,7 @@ export class WebSpeechProvider implements SpeechProvider {
       const u = new SpeechSynthesisUtterance(text);
       u.lang = 'cs-CZ';
       u.rate = options.rate ?? 0.9;
+      if (options.pitch !== undefined) u.pitch = options.pitch;
       const voices = czechVoices();
       const voice = voices.find((v) => v.voiceURI === options.voiceURI) ?? voices[0];
       if (voice) u.voice = voice;

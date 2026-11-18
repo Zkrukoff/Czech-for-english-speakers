@@ -188,6 +188,66 @@
   },
   "exercises": [
     {
+      "id": "u02-l02-lis1",
+      "type": "multipleChoice",
+      "prompt": "What is the waitress asking?",
+      "listen": "S hranolky, nebo s brambory?",
+      "options": [
+        "Chips or potatoes on the side?",
+        "Soup or goulash?",
+        "Beer or water?"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Chips or potatoes on the side?"
+      ],
+      "hints": [
+        {
+          "wrong": "Soup or goulash?",
+          "explain": "Those would be \"polévku, nebo guláš?\". \"Hranolky\" are chips, \"brambory\" potatoes."
+        },
+        {
+          "wrong": "Beer or water?",
+          "explain": "Drinks come later (\"Něco k pití?\"). This asks: chips or potatoes?"
+        }
+      ],
+      "why": "\"S hranolky, nebo s brambory?\" With chips or with potatoes?",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-lis2",
+      "type": "multipleChoice",
+      "prompt": "What does the waitress say?",
+      "listen": "Řízek už bohužel nemáme.",
+      "options": [
+        "The schnitzel has run out",
+        "The schnitzel is very good today",
+        "The schnitzel takes a long time"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "The schnitzel has run out"
+      ],
+      "hints": [
+        {
+          "wrong": "The schnitzel is very good today",
+          "explain": "\"Bohužel nemáme\" means \"unfortunately we don't have\": it's run out."
+        },
+        {
+          "wrong": "The schnitzel takes a long time",
+          "explain": "No: \"už nemáme\" means they don't have it any more."
+        }
+      ],
+      "why": "\"Řízek už bohužel nemáme.\" I'm afraid we've run out of schnitzel.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l02-e1",
       "type": "conjugate",
       "verb": "chtít",

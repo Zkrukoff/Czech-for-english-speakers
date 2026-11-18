@@ -161,6 +161,66 @@
   },
   "exercises": [
     {
+      "id": "u03-l01-lis1",
+      "type": "multipleChoice",
+      "prompt": "Which way should you go?",
+      "listen": "Jděte rovně a pak doleva.",
+      "options": [
+        "Straight on, then left",
+        "Straight on, then right",
+        "Left, then straight on"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Straight on, then left"
+      ],
+      "hints": [
+        {
+          "wrong": "Straight on, then right",
+          "explain": "Right is \"doprava\". \"Doleva\" is left."
+        },
+        {
+          "wrong": "Left, then straight on",
+          "explain": "The order is \"rovně a pak doleva\": straight on first, then left."
+        }
+      ],
+      "why": "\"Jděte rovně a pak doleva.\" Go straight on and then left.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l01-lis2",
+      "type": "multipleChoice",
+      "prompt": "Where is the pharmacy?",
+      "listen": "Je to asi pět minut pěšky. Je to vedle banky.",
+      "options": [
+        "Five minutes' walk, next to the bank",
+        "Five minutes by tram, by the station",
+        "Fifteen minutes' walk, opposite the bank"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Five minutes' walk, next to the bank"
+      ],
+      "hints": [
+        {
+          "wrong": "Five minutes by tram, by the station",
+          "explain": "\"Pěšky\" means on foot, and \"vedle banky\" is next to the bank."
+        },
+        {
+          "wrong": "Fifteen minutes' walk, opposite the bank",
+          "explain": "\"Pět\" is five (fifteen is \"patnáct\"), and \"vedle\" is next to."
+        }
+      ],
+      "why": "\"Je to asi pět minut pěšky. Je to vedle banky.\" About five minutes on foot. Next to the bank.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l01-e1",
       "type": "translate",
       "direction": "en-cs",

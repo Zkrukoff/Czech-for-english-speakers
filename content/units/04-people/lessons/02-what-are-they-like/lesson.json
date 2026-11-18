@@ -154,6 +154,66 @@
   },
   "exercises": [
     {
+      "id": "u04-l02-lis1",
+      "type": "multipleChoice",
+      "prompt": "What is Sarah's boss like?",
+      "listen": "Je trochu přísný, ale spravedlivý.",
+      "options": [
+        "A bit strict, but fair",
+        "Very lazy, but funny",
+        "A bit funny, but demanding"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "A bit strict, but fair"
+      ],
+      "hints": [
+        {
+          "wrong": "Very lazy, but funny",
+          "explain": "\"Přísný\" is strict, \"spravedlivý\" fair; lazy would be \"líný\"."
+        },
+        {
+          "wrong": "A bit funny, but demanding",
+          "explain": "\"Přísný\" is strict (funny is \"vtipný\"); \"spravedlivý\" is fair."
+        }
+      ],
+      "why": "\"Je trochu přísný, ale spravedlivý.\" He's a bit strict, but fair.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-lis2",
+      "type": "multipleChoice",
+      "prompt": "How are her colleagues?",
+      "listen": "Kolegové jsou milí a pomáhají mi s češtinou.",
+      "options": [
+        "Nice, and they help with her Czech",
+        "Strict, and they speak only English",
+        "Nice, but she rarely sees them"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Nice, and they help with her Czech"
+      ],
+      "hints": [
+        {
+          "wrong": "Strict, and they speak only English",
+          "explain": "\"Milí\" is nice, and \"pomáhají mi s češtinou\": they help me with Czech."
+        },
+        {
+          "wrong": "Nice, but she rarely sees them",
+          "explain": "\"Pomáhají mi s češtinou\" means they help her with Czech."
+        }
+      ],
+      "why": "\"Kolegové jsou milí a pomáhají mi s češtinou.\" My colleagues are nice and help me with my Czech.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l02-e1",
       "type": "translate",
       "direction": "en-cs",

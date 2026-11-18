@@ -339,7 +339,9 @@ exists).
 
 ### C2 · No audio (Critical, XL)
 
-`course.audio.size` is **0**:
+`course.audio.size` is **0**. (Correction: dialogues and listen buttons
+already used the device's Czech voice where one exists; what was missing was
+listening with the text hidden, and any real recordings.)
 - the 3 listening exercises and the 4 minimal pairs are switched off;
 - the 7 speaking exercises have no model to compare against;
 - the pronunciation guide is text only;

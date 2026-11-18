@@ -706,7 +706,9 @@ export function loadContent(files: ContentFiles): LoadResult {
         if (missing.length) errors.push(`${where}, exercise ${exId}: answer "${ans}" uses words that are not tiles: ${missing.join(', ')}`);
       }
     }
-    if ((exercise.type === 'listenType' || exercise.type === 'minimalPair') && !course.audio.has(exercise.audio)) {
+    // Minimal pairs need real recordings (a synthetic voice may blur the very contrast they teach);
+    // typed listening falls back to the device's Czech voice.
+    if (exercise.type === 'minimalPair' && !course.audio.has(exercise.audio)) {
       course.hiddenExercises.push({ id: exId, audio: exercise.audio });
     }
     if (exercise.type === 'speak' && exercise.audio && !course.audio.has(exercise.audio)) {

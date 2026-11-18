@@ -126,6 +126,66 @@
   },
   "exercises": [
     {
+      "id": "u05-l01-lis1",
+      "type": "multipleChoice",
+      "prompt": "How does Mrs Kovářová speak to Tom?",
+      "listen": "Vy jste ten nový kolega z Londýna?",
+      "options": [
+        "Politely, with vy",
+        "Informally, with ty",
+        "She asks his name"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Politely, with vy"
+      ],
+      "hints": [
+        {
+          "wrong": "Informally, with ty",
+          "explain": "\"Vy jste\" is the polite vy form; ty would be \"ty jsi\"."
+        },
+        {
+          "wrong": "She asks his name",
+          "explain": "She asks if he's the new colleague from London, using vy."
+        }
+      ],
+      "why": "\"Vy jste ten nový kolega z Londýna?\" Are you the new colleague from London? Vy: polite.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l01-lis2",
+      "type": "multipleChoice",
+      "prompt": "How does Ondra speak to Tom?",
+      "listen": "Čau, ty jsi Tom, ne? Já jsem Ondra.",
+      "options": [
+        "Informally, with ty",
+        "Politely, with vy",
+        "He asks Tom to say ty"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Informally, with ty"
+      ],
+      "hints": [
+        {
+          "wrong": "Politely, with vy",
+          "explain": "\"Čau\" and \"ty jsi\" are informal: ty. Polite would be \"Dobrý den, vy jste…\"."
+        },
+        {
+          "wrong": "He asks Tom to say ty",
+          "explain": "He just uses ty straight away; colleagues of the same age often do."
+        }
+      ],
+      "why": "\"Čau, ty jsi Tom, ne? Já jsem Ondra.\" Hi, you're Tom, right? I'm Ondra. Ty: informal.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u05-l01-e1",
       "type": "multipleChoice",
       "prompt": "Your new boss, on day one. **vy** or **ty**?",

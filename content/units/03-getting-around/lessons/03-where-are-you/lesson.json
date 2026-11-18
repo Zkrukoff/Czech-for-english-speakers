@@ -159,6 +159,66 @@
   },
   "exercises": [
     {
+      "id": "u03-l03-lis1",
+      "type": "multipleChoice",
+      "prompt": "Where is Klára, and when will she arrive?",
+      "listen": "Promiň, jsem ještě v tramvaji. Budu tam za deset minut.",
+      "options": [
+        "On the tram; in ten minutes",
+        "In the café; in two minutes",
+        "At home; in an hour"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "On the tram; in ten minutes"
+      ],
+      "hints": [
+        {
+          "wrong": "In the café; in two minutes",
+          "explain": "She's \"v tramvaji\", on the tram, and \"za deset minut\" is in ten minutes."
+        },
+        {
+          "wrong": "At home; in an hour",
+          "explain": "\"V tramvaji\" is on the tram; \"za deset minut\", in ten minutes."
+        }
+      ],
+      "why": "\"Promiň, jsem ještě v tramvaji. Budu tam za deset minut.\" Sorry, I'm still on the tram. I'll be there in ten minutes.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-lis2",
+      "type": "multipleChoice",
+      "prompt": "Where is Ondřej waiting?",
+      "listen": "Čekám v kavárně na náměstí.",
+      "options": [
+        "In the café on the square",
+        "At the museum",
+        "At the tram stop"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "In the café on the square"
+      ],
+      "hints": [
+        {
+          "wrong": "At the museum",
+          "explain": "The museum comes up next (\"vedle muzea\"). He's \"v kavárně na náměstí\"."
+        },
+        {
+          "wrong": "At the tram stop",
+          "explain": "A stop is \"zastávka\". He's waiting \"v kavárně\", in the café."
+        }
+      ],
+      "why": "\"Čekám v kavárně na náměstí.\" I'm waiting in the café on the square. v / na + locative.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l03-e1",
       "type": "translate",
       "direction": "en-cs",

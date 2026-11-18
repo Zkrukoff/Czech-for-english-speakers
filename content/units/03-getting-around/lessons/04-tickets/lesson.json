@@ -153,6 +153,66 @@
   },
   "exercises": [
     {
+      "id": "u03-l04-lis1",
+      "type": "multipleChoice",
+      "prompt": "What does the cashier ask?",
+      "listen": "Jednosměrnou, nebo zpáteční?",
+      "options": [
+        "Single or return?",
+        "First or second class?",
+        "Today or tomorrow?"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Single or return?"
+      ],
+      "hints": [
+        {
+          "wrong": "First or second class?",
+          "explain": "That isn't asked here. \"Jednosměrnou\" is single (one way), \"zpáteční\" return."
+        },
+        {
+          "wrong": "Today or tomorrow?",
+          "explain": "No: \"jednosměrnou, nebo zpáteční\" is single or return."
+        }
+      ],
+      "why": "\"Jednosměrnou, nebo zpáteční?\" Single or return?",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l04-lis2",
+      "type": "multipleChoice",
+      "prompt": "When and where does the train leave?",
+      "listen": "V půl jedenácté, z nástupiště číslo pět.",
+      "options": [
+        "At 10:30, from platform 5",
+        "At 11:30, from platform 5",
+        "At 10:30, from platform 15"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "At 10:30, from platform 5"
+      ],
+      "hints": [
+        {
+          "wrong": "At 11:30, from platform 5",
+          "explain": "\"Půl jedenácté\" is half (way) to eleven: 10:30. Czech counts towards the next hour."
+        },
+        {
+          "wrong": "At 10:30, from platform 15",
+          "explain": "\"Pět\" is five; fifteen would be \"patnáct\"."
+        }
+      ],
+      "why": "\"V půl jedenácté, z nástupiště číslo pět.\" At half past ten, from platform five. Půl jedenácté = 10:30.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l04-e1",
       "type": "translate",
       "direction": "en-cs",
