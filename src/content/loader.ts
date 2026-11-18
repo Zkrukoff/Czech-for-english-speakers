@@ -12,6 +12,11 @@ import {
   FunctionsFileSchema,
   NamedaysSchema,
   HolidaysSchema,
+  OverheardSceneSchema,
+  HolidayLessonsSchema,
+  EmergencyNumbersSchema,
+  EmergencyCardsSchema,
+  IdiomsSchema,
   AudioManifestSchema,
   UnitSchema,
   VerbFileSchema,
@@ -28,6 +33,11 @@ import {
   type GrammarFunction,
   type NamedaysData,
   type HolidaysData,
+  type OverheardScene,
+  type HolidayLesson,
+  type EmergencyNumbers,
+  type EmergencyCards,
+  type Idiom,
   type AudioManifest,
   type Mission,
   type StationData,
@@ -66,7 +76,9 @@ export type ExerciseSource =
   | { kind: 'lesson'; unitId: string; lessonId: string }
   | { kind: 'unitCheck'; unitId: string }
   | { kind: 'alphabet'; setId: string }
-  | { kind: 'guide'; guideId: string; setId: string };
+  | { kind: 'guide'; guideId: string; setId: string }
+  | { kind: 'overheard'; sceneId: string }
+  | { kind: 'holiday'; lessonId: string };
 
 export interface Guide extends GuideData {
   /** Folder name under content/guides/. */
@@ -145,6 +157,12 @@ export interface Course {
   namedays: NamedaysData | null;
   /** Czech public holidays (content/calendar/holidays.json). */
   holidays: HolidaysData | null;
+  /** Listening scenes (content/overheard/*.json), in order. */
+  overheard: OverheardScene[];
+  /** Holiday prep mini-lessons, in calendar order. */
+  holidayLessons: HolidayLesson[];
+  emergency: { numbers: EmergencyNumbers['numbers']; cards: EmergencyCards['cards'] };
+  idioms: Idiom[];
   /** Recorded audio by id (content/audio/manifest.json). */
   audio: Map<string, AudioManifest['recordings'][number]>;
   /** Pattern and function SRS keys each exercise practises (from its lens markup). */
@@ -211,6 +229,10 @@ export function loadContent(files: ContentFiles): LoadResult {
     guideLinksByLesson: new Map(),
     namedays: null,
     holidays: null,
+    overheard: [],
+    holidayLessons: [],
+    emergency: { numbers: [], cards: [] },
+    idioms: [],
     audio: new Map(),
     hiddenExercises: [],
     lensKeysByExercise: new Map(),
@@ -441,7 +463,53 @@ export function loadContent(files: ContentFiles): LoadResult {
   }
 
   /* ---- Name days and audio ---- */
+  for (const [path, raw] of Object.entries(files.json)) {
+    if (!/^overheard\/[^/]+\.json$/.test(path)) continue;
+    const scene = parse(OverheardSceneSchema, path, raw);
+    if (!scene) continue;
+    claimId('overheard scene', scene.id, path);
+    for (const q of scene.questions) {
+      claimId('exercise', q.id, path);
+      course.exercisesById.set(q.id, { exercise: q, source: { kind: 'overheard', sceneId: scene.id } });
+    }
+    course.overheard.push(scene);
+  }
+  course.overheard.sort((a, b) => a.order - b.order);
   if ('calendar/holidays.json' in files.json) course.holidays = parse(HolidaysSchema, 'calendar/holidays.json', files.json['calendar/holidays.json']);
+  if ('calendar/holiday-lessons.json' in files.json) {
+    const where = 'calendar/holiday-lessons.json';
+    const data = parse(HolidayLessonsSchema, where, files.json[where]);
+    const known = new Set(course.holidays?.holidays.map((h) => h.id) ?? []);
+    for (const l of data?.lessons ?? []) {
+      claimId('holiday lesson', l.id, where);
+      for (const h of l.holidays) if (!known.has(h)) errors.push(`${where}: lesson ${l.id} refers to unknown holiday "${h}"`);
+      for (const v of l.vocab) {
+        claimId('vocab', v.id, where);
+        course.vocabById.set(v.id, { item: v, lessonId: l.id });
+      }
+      for (const ex of l.exercises) {
+        claimId('exercise', ex.id, where);
+        course.exercisesById.set(ex.id, { exercise: ex, source: { kind: 'holiday', lessonId: l.id } });
+      }
+      course.holidayLessons.push(l);
+    }
+  }
+  {
+    const nums = files.json['emergency/numbers.json'] ? parse(EmergencyNumbersSchema, 'emergency/numbers.json', files.json['emergency/numbers.json']) : null;
+    const cards = files.json['emergency/cards.json'] ? parse(EmergencyCardsSchema, 'emergency/cards.json', files.json['emergency/cards.json']) : null;
+    course.emergency = { numbers: nums?.numbers ?? [], cards: cards?.cards ?? [] };
+    const known = new Set(course.emergency.numbers.map((n) => n.id));
+    for (const c of course.emergency.cards) for (const n of c.numbers) if (!known.has(n)) errors.push(`emergency/cards.json: card ${c.id} uses unknown number "${n}"`);
+  }
+  if (files.json['idioms/idioms.json']) {
+    const data = parse(IdiomsSchema, 'idioms/idioms.json', files.json['idioms/idioms.json']);
+    course.idioms = data?.idioms ?? [];
+    const seen = new Set<string>();
+    for (const i of course.idioms) {
+      if (seen.has(i.id)) errors.push(`idioms/idioms.json: duplicate id "${i.id}"`);
+      seen.add(i.id);
+    }
+  }
   if ('calendar/namedays.json' in files.json) course.namedays = parse(NamedaysSchema, 'calendar/namedays.json', files.json['calendar/namedays.json']);
   if ('audio/manifest.json' in files.json) {
     const manifest = parse(AudioManifestSchema, 'audio/manifest.json', files.json['audio/manifest.json']);
@@ -561,6 +629,7 @@ export function loadContent(files: ContentFiles): LoadResult {
   }
   for (const g of [...course.guides, ...course.draftGuides]) checkLens(g, `guide ${g.id}`);
   if (course.alphabet) checkLens(course.alphabet, 'alphabet');
+  for (const sc of course.overheard) checkLens(sc.lines, `overheard ${sc.id}`);
 
   /* ---- Cross-reference checks ---- */
   for (const [exId, { exercise, source }] of course.exercisesById) {
@@ -571,6 +640,10 @@ export function loadContent(files: ContentFiles): LoadResult {
           ? `unit ${source.unitId} check`
           : source.kind === 'guide'
             ? `guide ${source.guideId}, set ${source.setId}`
+            : source.kind === 'overheard'
+              ? `overheard ${source.sceneId}`
+              : source.kind === 'holiday'
+                ? `holiday lesson ${source.lessonId}`
             : `alphabet set ${source.setId}`;
     for (const p of [...exercise.answers, ...exercise.hints.map((h) => h.wrong)]) {
       const err = validatePattern(p);
@@ -609,6 +682,14 @@ export function loadContent(files: ContentFiles): LoadResult {
       }
     }
     if (exercise.type === 'minimalPair') mustBeOptions(exercise.pair, 'pair');
+    if (exercise.type === 'multipleChoice' || (exercise.type === 'readReal' && exercise.options)) {
+      mustBeOptions(exercise.options!, 'options');
+      if (new Set(exercise.options).size !== exercise.options!.length) errors.push(`${where}, exercise ${exId}: duplicate options`);
+      const explained = new Set(exercise.hints.map((h) => h.wrong));
+      for (const o of exercise.options!) {
+        if (!exercise.answers.includes(o) && !explained.has(o)) errors.push(`${where}, exercise ${exId}: wrong option "${o}" needs an explanation in hints`);
+      }
+    }
     if (exercise.type === 'aspectChoice') {
       mustBeOptions(exercise.options, 'options');
       const [impf, pf] = exercise.verbs.map((v) => course.verbsByLemma.get(v));

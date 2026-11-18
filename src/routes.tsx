@@ -2,6 +2,7 @@ import { createBrowserRouter, type RouteObject } from 'react-router-dom';
 import { AppShell } from './components/AppShell';
 import { NotFound } from './components/NotFound';
 import { Navigate } from 'react-router-dom';
+import { KeepQuery, OverheardRedirect } from './components/Redirects';
 import { HomePage } from './features/home/HomePage';
 import { UnitRedirect } from './features/line/UnitRedirect';
 
@@ -20,7 +21,21 @@ export const routes: RouteObject[] = [
       { index: true, element: <HomePage /> },
       { path: 'welcome', ...page(() => import('./features/onboarding/OnboardingPage'), 'OnboardingPage') },
       { path: 'styleguide', ...page(() => import('./features/styleguide/StyleguidePage'), 'StyleguidePage') },
-      { path: 'alphabet', ...page(() => import('./features/alphabet/AlphabetPage'), 'AlphabetPage') },
+      { path: 'holidays', ...page(() => import('./features/holidays/HolidaysIndex'), 'HolidaysIndex') },
+      { path: 'holidays/:lessonId', ...page(() => import('./features/holidays/HolidayLessonPage'), 'HolidayLessonPage') },
+      { path: 'emergency', ...page(() => import('./features/emergency/EmergencyIndex'), 'EmergencyIndex') },
+      { path: 'emergency/:cardId', ...page(() => import('./features/emergency/EmergencyCardPage'), 'EmergencyCardPage') },
+      { path: 'idioms', ...page(() => import('./features/idioms/IdiomsIndex'), 'IdiomsIndex') },
+      { path: 'idioms/:idiomId', ...page(() => import('./features/idioms/IdiomPage'), 'IdiomPage') },
+      { path: 'ride', ...page(() => import('./features/ride/RidePage'), 'RidePage') },
+      { path: 'words', ...page(() => import('./features/words/WordsPage'), 'WordsPage') },
+      { path: 'sounds', ...page(() => import('./features/alphabet/AlphabetPage'), 'SoundsPage') },
+      { path: 'sounds/overheard', ...page(() => import('./features/overheard/OverheardIndex'), 'OverheardIndex') },
+      { path: 'sounds/overheard/:sceneId', ...page(() => import('./features/overheard/ScenePage'), 'ScenePage') },
+      // Old addresses (bookmarks, shared links) keep working.
+      { path: 'alphabet', element: <KeepQuery to="/sounds" /> },
+      { path: 'overheard', element: <Navigate to="/sounds/overheard" replace /> },
+      { path: 'overheard/:sceneId', element: <OverheardRedirect /> },
       { path: 'guides', ...page(() => import('./features/guides/GuidesIndex'), 'GuidesIndex') },
       { path: 'guides/:guideId', ...page(() => import('./features/guides/GuidePage'), 'GuidePage') },
       { path: 'line/:line/:station', ...page(() => import('./features/line/StationPage'), 'StationPage') },

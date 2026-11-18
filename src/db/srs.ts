@@ -95,12 +95,12 @@ export async function dueSummary(now = Date.now(), database: PrazakDB = db): Pro
   return { dueNow, dueToday, dueThisWeek, total, nextDue: next?.due };
 }
 
-export type CardKind = 'vocab' | 'ex' | 'pattern' | 'fn';
+export type CardKind = 'vocab' | 'ex' | 'pattern' | 'fn' | 'own';
 export const cardKind = (itemKey: string): CardKind => (itemKey.split(':')[0] as CardKind) ?? 'ex';
 
 /** Cards due now, counted by kind (words, exercises, ending patterns, case uses). */
 export async function dueByKind(now = Date.now(), database: PrazakDB = db): Promise<Record<CardKind, number>> {
-  const counts: Record<CardKind, number> = { vocab: 0, ex: 0, pattern: 0, fn: 0 };
+  const counts: Record<CardKind, number> = { vocab: 0, ex: 0, pattern: 0, fn: 0, own: 0 };
   await database.cards.where('due').belowOrEqual(now).each((c) => {
     const k = cardKind(c.itemKey);
     if (k in counts) counts[k]++;

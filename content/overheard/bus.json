@@ -1,0 +1,119 @@
+{
+  "id": "oh-bus",
+  "title": "On the bus",
+  "titleCs": "V autobusu",
+  "setting": "A city bus, two stops before the metro.",
+  "kind": "transport",
+  "order": 1,
+  "lines": [
+    {
+      "speaker": "Hlášení",
+      "cs": "Příští zastávka: Nádraží Veleslavín.",
+      "en": "Next stop: Nádraží Veleslavín.",
+      "unverifiedNote": "The usual wording, but not found on an official PID/DPP page: flagged for checking.",
+      "audio": "oh-bus-1",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Hlášení",
+      "cs": "Pro výstup stiskněte tlačítko.",
+      "en": "To get off, press the button.",
+      "verified": {
+        "source": "PID press release: all bus and trolleybus stops become request stops from 29 June 2024",
+        "url": "https://pid.cz/vsechny-autobusove-a-trolejbusove-zastavky-budou-od-29-6-2024-na-znameni/",
+        "date": "2026-11-17"
+      },
+      "audio": "oh-bus-2",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Paní",
+      "cs": "Promiňte, vystupujete?",
+      "spoken": "Pardon, vystupujete?",
+      "en": "Excuse me, are you getting off?",
+      "audio": "oh-bus-3",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Ty",
+      "cs": "Ne, pustím vás.",
+      "en": "No, let me get out of your way.",
+      "audio": "oh-bus-4",
+      "nativeReviewed": false
+    },
+    {
+      "speaker": "Paní",
+      "cs": "Děkuju.",
+      "en": "Thank you.",
+      "audio": "oh-bus-5",
+      "nativeReviewed": false
+    }
+  ],
+  "note": "Since 29 June 2024 every bus and trolleybus stop in the PID network is a request stop: inside, press the button; at the stop, you no longer have to wave (pid.cz, checked 17 Nov 2026).",
+  "questions": [
+    {
+      "id": "oh-bus-q1",
+      "type": "multipleChoice",
+      "prompt": "What does the announcement ask you to do if you want to get off?",
+      "options": [
+        "Press the button",
+        "Wave at the driver",
+        "Stand by the door",
+        "Nothing: the bus stops everywhere"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Press the button"
+      ],
+      "why": "Pro výstup stiskněte tlačítko: to get off, press the button.",
+      "hints": [
+        {
+          "wrong": "Wave at the driver",
+          "explain": "Waving was for stopping the bus from outside, and PID says you no longer need to do even that. Inside, you press the button."
+        },
+        {
+          "wrong": "Stand by the door",
+          "explain": "Standing by the door tells the driver nothing: press the button."
+        },
+        {
+          "wrong": "Nothing: the bus stops everywhere",
+          "explain": "Not any more: since June 2024 all PID bus and trolleybus stops are request stops. If nobody presses, the bus may drive on."
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "oh-bus-q2",
+      "type": "multipleChoice",
+      "prompt": "The woman asks **Vystupujete?** What does she want?",
+      "options": [
+        "To get past you to the door",
+        "A seat",
+        "To know the next stop"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "To get past you to the door"
+      ],
+      "why": "Vystupujete? means \"Are you getting off?\": she wants to get past you. Ne, pustím vás: no, I'll let you through.",
+      "hints": [
+        {
+          "wrong": "A seat",
+          "explain": "That would be Je tady volno? (Is this seat free?)."
+        },
+        {
+          "wrong": "To know the next stop",
+          "explain": "That would be Jaká je příští zastávka?"
+        }
+      ],
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    }
+  ],
+  "nativeReviewed": false
+}

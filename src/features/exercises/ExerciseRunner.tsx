@@ -1,16 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
 import { Card } from '@/components/ui';
+import { RideProgress } from './RideProgress';
 import type { Exercise } from '@/content/schema';
-import { checkAnswer, type CheckResult } from '@/lib/answers/check';
+import { checkAnswer, isChoice, type CheckResult } from '@/lib/answers/check';
 import { recordAttempt, type AttemptContext } from '@/db/progress';
 import { useSettings } from '@/db/settings';
 import { AnswerInput } from './AnswerInput';
 import { ChoiceInput } from './types/ChoiceInput';
 import { SpeakInput } from './types/SpeakInput';
 import { BuildSentenceInput } from './types/BuildSentenceInput';
+import { SelfCheckInput } from './types/SelfCheckInput';
 
 /** Types whose input submits by itself (a choice, or a self-assessment). */
-const SELF_SUBMITTING = new Set<Exercise['type']>(['caseSelect', 'chooseEnding', 'aspectChoice', 'minimalPair', 'speak']);
+const SELF_SUBMITTING = new Set<Exercise['type']>(['caseSelect', 'chooseEnding', 'aspectChoice', 'minimalPair', 'multipleChoice', 'speak', 'selfCheck']);
 import { FeedbackPanel, answerIsCzech } from './FeedbackPanel';
 import { ExercisePrompt, caseOptionLabel } from './ExercisePrompt';
 
@@ -32,6 +34,8 @@ interface Props {
   onFinish: (outcomes: ExerciseOutcome[]) => void;
   /** Key under which answers are logged (defaults to "ex:<id>"). */
   itemKeyOf?: (exercise: Exercise) => string;
+  /** Today's ride: show progress as the stations of the route instead of dots. */
+  route?: string[];
 }
 
 interface QueueItem {
@@ -39,7 +43,7 @@ interface QueueItem {
   firstTry: boolean;
 }
 
-export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFinish, itemKeyOf }: Props) {
+export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFinish, itemKeyOf, route }: Props) {
   const settings = useSettings();
   const [queue, setQueue] = useState<QueueItem[]>(() => exercises.map((exercise) => ({ exercise, firstTry: true })));
   const [index, setIndex] = useState(0);
@@ -83,6 +87,9 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
 
   return (
     <div className="space-y-5">
+      {route && route.length > 1 ? (
+        <RideProgress route={route} done={index / queue.length} />
+      ) : (
       <div className="flex items-center gap-4">
         <span className="label-board shrink-0 text-ink-3">
           {index + 1} / {queue.length}
@@ -100,6 +107,8 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
           ))}
         </ol>
       </div>
+      )}
+
       <Card key={`${exercise.id}-${index}`} corner="tr" className="block" >
         <div className="p-5 sm:p-6">
         <ExercisePrompt exercise={exercise} />
@@ -132,6 +141,16 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
               onChoose={(o) => submit(o)}
               render={exercise.type === 'chooseEnding' ? (o) => <>–{o || '∅'}</> : undefined}
             />
+          ) : exercise.type === 'multipleChoice' || (exercise.type === 'readReal' && exercise.options) ? (
+            <ChoiceInput
+              options={exercise.options!}
+              chosen={result ? answer : undefined}
+              correct={exercise.answers}
+              onChoose={(o) => submit(o)}
+              lang={exercise.type === 'multipleChoice' ? exercise.optionsLang : exercise.answerLang}
+            />
+          ) : exercise.type === 'selfCheck' ? (
+            <SelfCheckInput reveal={exercise.reveal} disabled={!!result} onAssess={(v) => submit(v)} />
           ) : exercise.type === 'speak' ? (
             <SpeakInput cs={exercise.cs} audio={exercise.audio} disabled={!!result} onAssess={(v) => submit(v)} />
           ) : exercise.type === 'buildSentence' ? (
@@ -159,7 +178,7 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
             {index + 1 >= queue.length ? 'Finish' : 'Continue'}
           </button>
         ) : (
-          !SELF_SUBMITTING.has(exercise.type) && (
+          !SELF_SUBMITTING.has(exercise.type) && !isChoice(exercise) && (
             <button type="button" onClick={() => submit()} disabled={!answer.trim()} className="btn btn-primary">
               Check
             </button>

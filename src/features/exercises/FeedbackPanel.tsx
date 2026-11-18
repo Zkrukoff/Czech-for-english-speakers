@@ -53,6 +53,7 @@ function DiffText({ result }: { result: CheckResult }) {
 export function answerIsCzech(ex: Exercise): boolean {
   if (ex.type === 'translate') return ex.direction === 'en-cs';
   if (ex.type === 'question' || ex.type === 'readReal') return ex.answerLang === 'cs';
+  if (ex.type === 'multipleChoice') return ex.optionsLang === 'cs';
   return ex.type !== 'caseSelect';
 }
 
@@ -64,7 +65,7 @@ export function FeedbackPanel({ exercise, result, answer }: { exercise: Exercise
   const guide = grammarSkill?.startsWith('guide:') ? course.guidesById.get(grammarSkill.slice(6)) : undefined;
   const pageHref =
     grammarSkill === 'alphabet'
-      ? '/alphabet'
+      ? '/sounds'
       : guide
         ? `/guides/${guide.id}`
         : page

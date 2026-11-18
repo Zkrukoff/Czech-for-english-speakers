@@ -3,12 +3,13 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { fileURLToPath } from 'node:url';
+import { serviceWorker } from './build/serviceWorker.ts';
 
 export default defineConfig({
   // GitHub Pages serves the app from /<repo-name>/; the deploy workflow sets
   // BASE_PATH. Locally (and on a root-domain host) it stays "/".
   base: process.env.BASE_PATH ?? '/',
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), serviceWorker()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

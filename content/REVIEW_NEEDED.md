@@ -182,3 +182,106 @@ check first. When an item is confirmed or corrected, remove it here and set
 | calendar/holidays.json | The one-line descriptions, greetings (*Šťastný nový rok!, Veselé Velikonoce!, Veselé Vánoce!*) and which days large shops close (from the culture guide) | Accurate and current? |
 | home | *Dnes · úterý 17. listopadu*, *Státní svátek*, *Příští svátek*, *za 37 dní / za 2 dny / zítra* | Natural? |
 | page titles | Czech names under English titles: *Mluvnice, Slovesa, Vyhledávání sloves, Průvodce, Jízdenky, Nastavení, Opakování, Česká abeceda, Skloňování* | OK? |
+
+## Round 2 · A1 Overheard in Prague
+
+| Where | Text | Question |
+|---|---|---|
+| all 5 scenes | Every line, standard and spoken versions (*Pardon, vystupujete?*, *Vystupujem na Můstku, jo?*, *béčko*, *Máte kartičku?*, *Účtenku chcete?*, *Ne, nemusím*, *Co to bude?*, *Velký, nebo malý?*, *Co pro vás?*, *Máte něco na krk?*) | Natural? Is the spoken version how people actually say it? |
+| bus, metro | Announcements *Příští zastávka: …*, *Ukončete, prosím, výstup a nástup, dveře se zavírají*, *Příští stanice: Můstek. Přestup na linku B.* | Exact current wording? (Not found on an official page. *Pro výstup stiskněte tlačítko* **is** verified on pid.cz.) |
+| pub | The note about the waiter's tally slip and bringing another beer | Accurate enough as a general note? |
+| pharmacy | *Jednu třikrát denně, nejdéle pět dní* | Natural dosage phrasing? |
+| questions | Wrong-option explanations (e.g. *Co vám je?*, *Pro koho to je?*, *drobné*, *paragon*) | Correct? |
+
+## Round 2 · A2 Your words
+
+| Where | Text | Question |
+|---|---|---|
+| words page | *Přidat slovo*, *Uložit*, *Moje slova*, examples *výdejní místo*, *obvoďák* | OK? |
+| pattern guess | The ending-based vzor suggestions (shown as "a guess: check it") | Are the default guesses sensible? |
+
+## Round 2 · A3 Holiday prep lessons
+
+| Where | Text | Question |
+|---|---|---|
+| calendar/holiday-lessons.json | All nine lessons: customs (lentils and no poultry at New Year; pomlázka, ribbons, a shot for adults; kissing under a blossoming cherry, Mácha's statue on Petřín; carp, Ježíšek, golden piglet, apple, walnut-shell candles), greetings, etiquette tips, vocabulary | Accurate, current, not stereotyped? |
+| greetings | *Všechno nejlepší do nového roku!*, *Hezký prodloužený víkend!*, *Krásné svátky!* | Natural? |
+| 28 Oct | "the president awards state honours at Prague Castle" | Accurate? |
+| verified | Dates (mzv.gov.cz) and shop closures (coi.gov.cz), checked 17 Nov 2026 | Re-check yearly. |
+
+## Round 2 · A4 Today's ride
+
+| Where | Text | Question |
+|---|---|---|
+| ride page, home | *nástup / výstup* (from / to), *Jedeme*, *Příští stanice*, *(konečná)* | Natural as labels? |
+| end of a ride | *Konečná: X. Vystupujte, prosím.* | Is this what the metro actually says at the terminus? Not checked against a recording. |
+| same station twice | *To není žádná jízda.* | Natural? |
+
+## Round 2 · A5 Emergency cards
+
+| Where | Text | Question |
+|---|---|---|
+| emergency/cards.json | All six cards (doctor, pharmacy, police, locked out, lost, accident): the "show to a Czech" messages and every phrase | Natural, polite enough for a stranger, and right for the situation? |
+| emergency/cards.json | Masculine/feminine pairs (*Zabouchl / Zabouchla jsem si dveře*, *Ztratil / Ztratila jsem…*); the show messages use the masculine form | Should the show screens offer both? |
+| pharmacy | "Prescriptions are electronic (eRecept)" | Still accurate? Not yet verified against an official page. |
+| ShowMode.tsx | Label *Ukažte to* on the single-screen show mode | Natural? |
+| verified | 112, 150, 155, 158 (portal.gov.cz, mv.gov.cz) and 156 (mv.gov.cz); DPP line and lost-and-found office (pid.cz), checked 17 Nov 2026 | Re-check yearly. |
+
+## Round 2 · A6 Station wall
+
+| Where | Text | Question |
+|---|---|---|
+| wallet, home | *Tvoje stěna* (in the app), *Moje stěna* (on the shared image) | Natural for "your wall" / "my wall"? |
+| shared image | *Linka A · Moje stěna*, *1 stanice / 3 stanice / 5 stanic*, *zatím žádná stanice* | Right plurals? Does "N stanic" read as "N stations done" without a verb? |
+| wall design | "after the Line A wall panels" | The brief credits the panels to Jaroslav Otruba; still unverified, so the app doesn't name him. |
+
+## Round 2 · A7 Ticket streaks
+
+| Where | Text | Question |
+|---|---|---|
+| ticket | *24hodinová jízdenka*, *72hodinová jízdenka*, *Měsíční / Čtvrtletní / Roční kupon* | Product names as on pid.cz (checked 18 Nov 2026); re-check yearly. |
+| ticket | *Označeno.*, *Platí do 04:00*, *Platnost vypršela*, *Neplatná*, *Den 8 · od 10. 11.*, *Výluka.* | Natural on a ticket? |
+| ticket | *výluka* used for a planned day off ("planned works") | Does the joke land for a Czech speaker? |
+| plurals | *1 den / 2 dny / 5 dní*, *1 výluka / 2 výluky / 5 výluk* | Right? |
+
+## Round 2 · A8 Idiom of the week
+
+| Where | Text | Question |
+|---|---|---|
+| idioms/idioms.json | 21 idioms. Each idiom and its meaning is in SSČ and/or SSJČ (via prirucka.ujc.cas.cz, checked 18 Nov 2026) | Still current, not dated or odd today? |
+| idioms/idioms.json | All 21 example sentences (written for the app) | Natural? Right form of the idiom (e.g. *je jako hrách na stěnu házet*)? |
+| idioms/idioms.json | English equivalents (*beat around the bush*, *buy a pig in a poke*, *there's the rub*…) | Close enough? Dropped where none exists. |
+| dropped | *mít knedlík v krku*: only an example on the IJP page, no definition | Add back if a source defines it. |
+| plate, image | *Idiom týdne · týden 47*, *Zdroj: SSJČ* | Natural? |
+
+## Round 2 · A9 Sports guide
+
+| Where | Text | Question |
+|---|---|---|
+| chants.md | Every chant and its gloss: *Kdo neskáče, není Čech/sparťan/Tesla*, *Češi/Sparta/Slavia, do toho!*, *Par-Par-Pardubice*, *Pardubice u Hradce!*, *Smrt Spartě!* | Wording and translation right? Still current? |
+| chants.md | *Tesla* "a name from the club's past" (Pardubice) | Not in the source article; please confirm. |
+| chants.md | *Jude Slavie* named only in "What not to repeat", per PrahaIN (2022) | Right call to name it so learners recognise it? |
+| football.md | *Fandím Bohemce* as the neutral answer; "Bohemians, the third Prague club" | Natural? Fair? |
+| going.md | "In the stadium" tips (kotel, colours, beer, pískot) | No official source; flagged in the text. Accurate? |
+| phrasebook, practice | All phrases, especially *Budou nájezdy*, *Jdou do prodloužení*, *Byla to remíza* | Natural? |
+| facts | League names, Pardubice champions, venues, O2 arena tickets, 2024 final, Slavia colours (checked 18 Nov 2026) | Re-check each season. |
+
+## Round 2 · B10 Sounds section
+
+| Where | Text | Question |
+|---|---|---|
+| menu, page titles | *Výslovnost* (Sounds), *Mluvnice a slovesa* (Grammar & verbs) | Right words for the sections? |
+
+## Round 2 · B11 Multiple choice for practical knowledge
+
+| Where | Text | Question |
+|---|---|---|
+| 27 exercises (transport, culture, settling in, alphabet, vy/ty) | The new wrong options and their explanations, e.g. *stávka* (strike), *zpoždění* (delay), *každé 4 minuty*, *vstup / vchod*, *konečná* | Czech words right and natural? |
+| tr-h4 | Now asks about the bus announcement *Pro výstup stiskněte tlačítko* (all bus and trolleybus stops are request stops since 29 June 2024, pid.cz) | — |
+| transport guide | Corrected against pid.cz on 18 Nov 2026: night trams 90–99 (not 91–99), night buses from 901, airport lines 59 / 100 / AE / 907 / 910; removed the Lazarská and "every 30 minutes" claims (not on pid.cz) | Re-check each timetable change. |
+
+## Round 2 · C12 Czechia / the Czech Republic
+
+| Where | Text | Question |
+|---|---|---|
+| u01-l03 note | *Česko (Czechia) is the everyday short name: Bydlím v Česku. Česká republika … z České republiky.* | Fair description of how each is used? |

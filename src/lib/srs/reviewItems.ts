@@ -91,3 +91,38 @@ export function exerciseForCard(itemKey: string, course: Course, rotation = 0): 
   }
   return null;
 }
+
+/** Strip answer-pattern syntax from learner-typed text, so it's matched literally. */
+const literal = (t: string) => t.replace(/[[\]{}|]/g, '').trim();
+
+/**
+ * A saved word as a review exercise: English → Czech when it has a meaning,
+ * otherwise a self-graded recall card.
+ */
+export function ownWordExercise(word: { id?: number; cs: string; en?: string; note?: string; place?: string }): Exercise {
+  const extra = [word.note, word.place && `Seen: ${word.place}`].filter(Boolean).join('\n');
+  if (word.en?.trim()) {
+    return {
+      id: `own-${word.id}`,
+      type: 'translate',
+      direction: 'en-cs',
+      prompt: word.en.trim(),
+      answers: [literal(word.cs)],
+      why: `You saved this as: ${word.cs}.${extra ? ' ' + extra.replace('\n', ' · ') : ''}`,
+      hints: [],
+      skills: ['vocab:own'],
+      nativeReviewed: false,
+    };
+  }
+  return {
+    id: `own-${word.id}`,
+    type: 'selfCheck',
+    cs: word.cs,
+    reveal: extra || undefined,
+    answers: [],
+    why: 'It will come back soon.',
+    hints: [],
+    skills: ['vocab:own'],
+    nativeReviewed: false,
+  };
+}

@@ -41,3 +41,32 @@ describe('Czech public holidays', () => {
     expect([1, 2, 4, 5, 22, 37].map(inDaysCs)).toEqual(['zítra', 'za 2 dny', 'za 4 dny', 'za 5 dní', 'za 22 dní', 'za 37 dní']);
   });
 });
+
+import { featuredPrep, nextDateFor } from '@/lib/holidays';
+
+describe('holiday prep lessons', () => {
+  it('has a lesson for every public holiday, each with words, customs and exercises', () => {
+    const covered = new Set(course.holidayLessons.flatMap((l) => l.holidays));
+    expect([...covered].sort()).toEqual(course.holidays!.holidays.map((h) => h.id).sort());
+    for (const l of course.holidayLessons) {
+      expect(l.vocab.length + l.exercises.length).toBeGreaterThan(4);
+      expect(l.nativeReviewed).toBe(false);
+    }
+  });
+
+  it('features a lesson on the day and in the 7 days before, and not earlier', () => {
+    expect(featuredPrep(d(2026, 11, 17), course.holidays, course.holidayLessons)).toMatchObject({ lesson: { id: 'hol-17-listopad' }, days: 0 });
+    expect(featuredPrep(d(2026, 12, 17), course.holidays, course.holidayLessons)).toMatchObject({ lesson: { id: 'hol-vanoce' }, days: 7 });
+    expect(featuredPrep(d(2026, 12, 16), course.holidays, course.holidayLessons)).toBeNull();
+    expect(featuredPrep(d(2026, 12, 25), course.holidays, course.holidayLessons)?.lesson.id).toBe('hol-vanoce');
+    expect(featuredPrep(d(2026, 3, 30), course.holidays, course.holidayLessons)).toMatchObject({ lesson: { id: 'hol-velikonoce' }, days: 4 });
+  });
+
+  it('knows when each lesson’s holiday comes next', () => {
+    expect(nextDateFor(['velky-patek', 'velikonocni-pondeli'], d(2026, 11, 17), course.holidays)).toEqual(d(2027, 3, 26));
+  });
+
+  it('records official sources for dates and shop rules', () => {
+    expect(course.holidays!.verified.map((v) => new URL(v.url).hostname)).toEqual(['mzv.gov.cz', 'coi.gov.cz']);
+  });
+});

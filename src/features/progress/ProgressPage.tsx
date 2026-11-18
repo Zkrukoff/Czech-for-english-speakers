@@ -11,6 +11,24 @@ import { LineBadge, Stamp, Ticket } from '@/components/ui';
 import { useDueSummary } from '@/db/useDue';
 import { computeAllMastery, MASTERY_ACCURACY, MASTERY_MIN_ATTEMPTS, MASTERY_WINDOW, type SkillMastery } from '@/lib/progress/mastery';
 import { relativeTime } from '@/lib/time';
+import { StationWall } from '@/features/wall/StationWall';
+import { useWall } from '@/features/wall/useWall';
+import { buildWall } from '@/lib/wall';
+import { TicketWallet } from '@/features/ticket/TicketWallet';
+
+const emptyWall = buildWall(course, { lessons: new Map(), stamps: new Set(), alphabetPractised: false });
+
+function WallSection() {
+  const blocks = useWall();
+  return (
+    <section id="wall" aria-labelledby="wall-h" className="mb-12">
+      <h2 id="wall-h" className="label-board mb-1 text-ink-3"><span lang="cs">Tvoje stěna</span> · your wall</h2>
+      <p className="mb-4 max-w-2xl text-ink-2">Line A as a wall of panels in each station's colour. Every lesson you finish fills a circle; a stamped station gets a red frame.</p>
+      {/* While progress loads, draw the empty wall so nothing below moves. */}
+      <StationWall blocks={blocks ?? emptyWall} />
+    </section>
+  );
+}
 
 const STATUS_LABEL = { 'not-started': 'not started', learning: 'practising', mastered: 'mastered' } as const;
 const STATUS_STYLE = {
@@ -56,7 +74,11 @@ export function ProgressPage() {
 
   return (
     <>
-      <PageHeader title="Ticket wallet" cs="Jízdenky" subtitle="Every finished station gets its ticket stamped. Progress here is what you can do, not how many days in a row you opened the app." />
+      <PageHeader title="Ticket wallet" cs="Jízdenky" subtitle="Every finished station gets its ticket stamped. Your day ticket grows as you practise; when one runs out, it stays here and nothing you earned goes with it." />
+
+      <TicketWallet />
+
+      <WallSection />
 
       <dl className="mb-10 grid grid-cols-2 border-2 border-ink bg-surface shadow-offset sm:grid-cols-4">
         {[
@@ -159,7 +181,7 @@ export function ProgressPage() {
       <section className="mb-10">
         <h2 className="mb-2 text-2xl font-extrabold">Alphabet and pronunciation</h2>
         <ul className="divide-y divide-rule overflow-hidden rounded-md border-2 border-ink bg-surface">
-          <MasteryRow label="Letters, sounds and spelling" href="/alphabet?tab=practice" m={mastery.get('alphabet')!} />
+          <MasteryRow label="Letters, sounds and spelling" href="/sounds?tab=practice" m={mastery.get('alphabet')!} />
         </ul>
       </section>
 

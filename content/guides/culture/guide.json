@@ -9,7 +9,12 @@
       "id": "life",
       "title": "Everyday life and work",
       "file": "life-and-work.md",
-      "lessons": ["u01-l01", "u01-l04", "u02-l04", "u04-l04"]
+      "lessons": [
+        "u01-l01",
+        "u01-l04",
+        "u02-l04",
+        "u04-l04"
+      ]
     },
     {
       "id": "history",
@@ -290,15 +295,28 @@
         },
         {
           "id": "cul-x6",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "What does **PF** stand for on a Czech New Year card?",
-          "answerLang": "en",
-          "answers": [
+          "options": [
             "pour féliciter",
-            "pour feliciter"
+            "post festum",
+            "Pražský festival"
+          ],
+          "optionsLang": "en",
+          "answers": [
+            "pour féliciter"
+          ],
+          "hints": [
+            {
+              "wrong": "post festum",
+              "explain": "Post festum is Latin for \"after the party\": too late. PF is French: pour féliciter."
+            },
+            {
+              "wrong": "Pražský festival",
+              "explain": "Nothing to do with Prague: PF is French, pour féliciter, \"to congratulate\"."
+            }
           ],
           "why": "PF = pour féliciter (French, \"to congratulate\"): PF 2027 means \"Happy New Year 2027\".",
-          "hints": [],
           "skills": [
             "guide:culture"
           ],
@@ -538,27 +556,28 @@
         },
         {
           "id": "cul-c5",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "On your birthday or name day at a Czech office, who usually brings the cake or snacks?",
-          "answerLang": "en",
-          "answers": [
-            "[the ]person celebrating",
-            "the person whose {birthday|name day} it is",
-            "[the ]{birthday|name day} person",
-            "[the ]celebrant",
-            "I do",
-            "you do",
-            "me",
-            "they do",
-            "the one celebrating"
+          "options": [
+            "The person celebrating",
+            "Their colleagues, as a surprise",
+            "The boss"
           ],
-          "why": "The person celebrating brings the treat (cake, biscuits, chlebíčky), and colleagues congratulate them.",
+          "optionsLang": "en",
+          "answers": [
+            "The person celebrating"
+          ],
           "hints": [
             {
-              "wrong": "[the ]colleagues",
-              "explain": "In Czechia it's the other way round: the person celebrating brings the treat."
+              "wrong": "Their colleagues, as a surprise",
+              "explain": "In Czechia it's the other way round: the person celebrating brings the treat, and colleagues congratulate them."
+            },
+            {
+              "wrong": "The boss",
+              "explain": "Not the boss: the person celebrating brings the cake, biscuits or chlebíčky."
             }
           ],
+          "why": "The person celebrating brings the treat (cake, biscuits, chlebíčky), and colleagues congratulate them.",
           "skills": [
             "guide:culture"
           ],
@@ -601,28 +620,28 @@
       "exercises": [
         {
           "id": "cul-h1",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "Which date is the anniversary of the Velvet Revolution, now a public holiday?",
-          "answerLang": "en",
-          "answers": [
+          "options": [
             "17 November",
-            "November 17",
-            "17th November",
-            "17th of November",
-            "the 17th of November",
-            "November 17th",
-            "17. 11.",
-            "17. listopadu",
-            "17/11",
-            "17.11"
+            "28 October",
+            "1 January"
           ],
-          "why": "17 November: Struggle for Freedom and Democracy Day, remembering the student protests of 1939 and 1989.",
+          "optionsLang": "en",
+          "answers": [
+            "17 November"
+          ],
           "hints": [
             {
               "wrong": "28 October",
-              "explain": "28 October is the founding of Czechoslovakia. The Velvet Revolution began on 17 November 1989."
+              "explain": "28 October is the founding of Czechoslovakia (1918). The Velvet Revolution began on 17 November 1989."
+            },
+            {
+              "wrong": "1 January",
+              "explain": "1 January is New Year's Day and the restoration of the independent Czech state (1993)."
             }
           ],
+          "why": "17 November: Struggle for Freedom and Democracy Day, remembering the student protests of 1939 and 1989.",
           "skills": [
             "guide:culture"
           ],
@@ -630,19 +649,33 @@
         },
         {
           "id": "cul-h2",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "Czechoslovakia was founded on 28 October of which year?",
-          "answerLang": "en",
+          "options": [
+            "1918",
+            "1938",
+            "1968",
+            "1993"
+          ],
+          "optionsLang": "en",
           "answers": [
             "1918"
           ],
-          "why": "28 October 1918, after the collapse of Austria-Hungary. Tomáš Garrigue Masaryk became the first president.",
           "hints": [
+            {
+              "wrong": "1938",
+              "explain": "1938 is the year of the Munich Agreement. Czechoslovakia was founded twenty years earlier."
+            },
+            {
+              "wrong": "1968",
+              "explain": "1968 is the Prague Spring and the invasion that ended it."
+            },
             {
               "wrong": "1993",
               "explain": "1993 is when Czechoslovakia split into Czechia and Slovakia. It was founded in 1918."
             }
           ],
+          "why": "28 October 1918, after the collapse of Austria-Hungary. Tomáš Garrigue Masaryk became the first president.",
           "skills": [
             "guide:culture"
           ],
@@ -650,16 +683,28 @@
         },
         {
           "id": "cul-h3",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "Which saint, the patron of the Czech lands, is remembered on 28 September?",
-          "answerLang": "en",
+          "options": [
+            "St Wenceslas",
+            "St Vitus",
+            "Jan Hus"
+          ],
+          "optionsLang": "en",
           "answers": [
-            "[St |Saint ]Wenceslas",
-            "[svatý |sv ]Václav",
-            "Good King Wenceslas"
+            "St Wenceslas"
+          ],
+          "hints": [
+            {
+              "wrong": "St Vitus",
+              "explain": "St Vitus gives his name to the cathedral at Prague Castle, but 28 September is St Wenceslas."
+            },
+            {
+              "wrong": "Jan Hus",
+              "explain": "Jan Hus is remembered on 6 July."
+            }
           ],
           "why": "28 September is St Wenceslas (svatý Václav), now Czech Statehood Day. Wenceslas Square is named after him.",
-          "hints": [],
           "skills": [
             "guide:culture"
           ],
@@ -667,14 +712,28 @@
         },
         {
           "id": "cul-h4",
-          "type": "question",
+          "type": "multipleChoice",
           "prompt": "Which religious reformer, burned at the stake in 1415, is remembered on 6 July?",
-          "answerLang": "en",
+          "options": [
+            "Jan Hus",
+            "Jan Žižka",
+            "Tomáš Garrigue Masaryk"
+          ],
+          "optionsLang": "en",
           "answers": [
-            "[Jan |John |Master Jan |mistr Jan ]Hus"
+            "Jan Hus"
+          ],
+          "hints": [
+            {
+              "wrong": "Jan Žižka",
+              "explain": "Žižka was the Hussite general in the wars that followed Hus's death."
+            },
+            {
+              "wrong": "Tomáš Garrigue Masaryk",
+              "explain": "Masaryk was the first president of Czechoslovakia, in 1918."
+            }
           ],
           "why": "Jan Hus preached in Czech and challenged the Church; his death led to the Hussite wars.",
-          "hints": [],
           "skills": [
             "guide:culture"
           ],

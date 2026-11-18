@@ -11,9 +11,13 @@ Units are real stations in their real order (checked against PID open data),
 transfer stations are milestones, and a finished station gets an ink stamp on
 your ticket. No confetti.
 
-- **No streaks, points, leagues, hearts or guilt notifications.** Progress is
-  what you can do: can-do goals passed at each station, stamped tickets and
-  missions done in real life.
+- **No points, leagues, hearts or guilt notifications.** Progress is what you
+  can do: can-do goals passed at each station, stamped tickets and missions
+  done in real life. The one daily habit tracker is a *ticket*: each day you
+  practise it grows, through real PID products (24 and 72 hours, then monthly,
+  quarterly and annual passes). A missed day uses a *výluka* (planned works)
+  if you have one; otherwise the ticket expires, stays in the wallet, and
+  nothing you earned is taken away. It can be switched off in Settings.
 - **The case lens.** Underlined endings in lessons can be tapped: the case
   (number, name and colour), *why* it's used here, and the model noun (vzor) it
   follows. Every annotated form is checked against generated declensions.
@@ -33,8 +37,24 @@ your ticket. No confetti.
   see [docs/AUDIO.md](docs/AUDIO.md)).
 - **Today's name day** (*Dnes má svátek…*) on the home screen.
 - **Guides linked to lessons**: Doprava (Prague transport), Kultura (culture,
-  history, holidays) and Zabydlení (settling in), each linking the lessons that
-  teach their Czech.
+  history, holidays), Zabydlení (settling in) and Sport (hockey, football and
+  the chants), each linking the lessons that teach their Czech.
+- **Sounds** (*Výslovnost*): the alphabet, how to say it, practice, and
+  *Overheard in Prague*, short everyday scenes to listen to (placeholder voice
+  until real recordings arrive).
+- **Your own words**: save words you meet in daily life; they're linked to the
+  dictionary where possible and reviewed with everything else.
+- **Holiday prep**: a short lesson for each public holiday, featured the week
+  before, with a countdown on the home screen.
+- **Today's ride**: set your usual metro trip and practise for as many
+  exercises as it has stops.
+- **Emergency cards** with verified numbers and a big-text "Show to a Czech"
+  mode. The whole app is saved for offline use.
+- **Your station wall**, filled lesson by lesson, and **idiom of the week**,
+  both shareable as images (made on the device, nothing uploaded).
+- **Every changeable fact is dated and sourced** (pid.cz, gov.cz, ČTK…); all
+  Czech is listed for native review in
+  [content/REVIEW_NEEDED.md](content/REVIEW_NEEDED.md).
 
 Live: https://zkrukoff.github.io/Czech-for-english-speakers/ (moving to
 `https://zkrukoff.github.io/prazak/` when the repo is renamed; see
@@ -249,3 +269,12 @@ native speaker**; it is all marked `"nativeReviewed": false` and labelled in
 the app. `content/REVIEW_NEEDED.md` lists the specific sentences and claims
 that most need checking. When an item is verified, set `nativeReviewed` to
 `true` on it and remove it from that list.
+
+### Offline check
+
+The build ships a small service worker (`build/serviceWorker.ts`) that precaches
+the app, so the emergency cards work without a signal. To check it:
+
+```bash
+npm run build && npm run check:offline
+```

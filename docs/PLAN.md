@@ -445,3 +445,294 @@ I'd avoid names already tied to famous Czech characters.
 - That the Line A wall panels are by Jaroslav Otruba, as the brief says. I'll cite this or soften the wording before it appears in the app.
 - Current PID ticket rules and prices.
 - That Metron (Storm Type) is licensable as described. It only matters if you license it later; fonts sit behind CSS variables either way.
+
+---
+
+## 6. Round 2: new features and changes (approved)
+
+**Ground rules for this round**
+- Everything follows the brief: tokens only, the four fonts, the anti-AI checklist, the voice.
+- Every fact that can change is stored with `verified: { source, url, date }`. Anything I can't verify against an official source is marked `unverified` and listed in `content/REVIEW_NEEDED.md` instead of being guessed. All new Czech is `nativeReviewed: false`.
+- I build in the order below and commit after each feature, with tests, a 375 px light and dark check, and Lighthouse accessibility.
+- **Database:** the changes stay additive. One new Dexie version (v3) adds an `ownWords` table, and everything else is derived from existing tables. There's a migration test from v2 fixtures, and backups move to version 3, with versions 1 and 2 still importing.
+
+### 6.1 Changes that affect several features
+
+These come out of the items below. I'm listing them first because they change the plan.
+
+1. **Offline support (needed by A5).** The app has no service worker today, so "works fully offline" means adding one. I'd use `vite-plugin-pwa` (Workbox) to precache the app shell, every page chunk, the fonts and the content. When an update is available, the app shows a small "Nová verze · reload" notice rather than swapping content mid-lesson. Side effect: **the whole app** then works offline, not just the cards.
+2. **A multiple-choice type (needed by B11, and reused by A1 and A3).** A new `multipleChoice` exercise type: `prompt`, `options[]`, `answers[]`, and an explanation per wrong option, so a wrong pick teaches something. The existing `hints` mechanism already supports per-answer explanations, so this reuses it.
+3. **One image-export utility (A6 and A8).** It renders SVG to a canvas, then to PNG. The image downloads, or opens the system share sheet where the Web Share API can share files. Only the image is shared: no tracking, no upload.
+4. **Day boundary at 04:00 (A7, A3).** A "day" runs until 4:00 the next morning, the way PID day tickets do: the pid.cz ticket page I fetched on 17 Nov lists the family ticket as "1 den (do 4:00 následujícího dne)". That means a late-night practice session counts for the evening it belongs to. I'll re-verify this when I build A7.
+
+### 6.2 A1 · Overheard in Prague (*Zaslechnuto v Praze*)
+
+- **Approach:** short scenes, each with:
+  - a transcript in two versions, standard and spoken, with a toggle (the spoken version is the existing "Jak to říkají Pražáci" setting, per scene);
+  - an English translation (toggle);
+  - 2–3 multiple-choice comprehension questions with teaching wrong answers;
+  - case-lens markup in the standard transcript.
+
+  First set: a tram announcement, a metro announcement, a supermarket checkout, ordering at a pub (*Ještě jedno?*), and a pharmacy visit.
+- **Audio:** each line has `audio: { status: 'placeholder' | 'recorded', id? }`.
+  - Placeholder lines play the browser's Czech text-to-speech voice, with a fixed, visible label: "Placeholder voice: not a real recording".
+  - Recorded lines play the file listed in `content/audio/manifest.json`, the same mechanism as the pronunciation work. Swapping in a real recording is a data change only.
+  - `docs/AUDIO.md` gets the full list of lines to record.
+  - No scraped or third-party audio.
+- **Facts:** announcement wording is checked against dpp.cz / pid.cz pages, or marked unverified (for example, the exact wording of tram stop announcements).
+- **Files:**
+  - `content/overheard/*.json` (new) with a schema in `schema.ts` and loading in `loader.ts`;
+  - `src/features/overheard/*` (new: list, player, transcript toggle);
+  - routes;
+  - placed in the new Sounds section (B10).
+- **Data:** no new table. Answers are logged as attempts with the new context `overheard`, and questions join reviews like any exercise.
+- **Open question:** shops and pubs vary. I'll keep the scenes generic, with no chain names. OK?
+
+### 6.3 A2 · Your own words (*Moje slova*)
+
+- **Approach:** an "Add a word" sheet, reachable from Home, Review and the word list.
+  - **Fields:** Czech (required), English (optional), note, where you saw it (free text plus an optional station or place), and a photo (optional).
+  - **Photos:** the browser camera or file picker, scaled down to at most 1280 px JPEG on the device, stored as a Blob in IndexedDB, and never uploaded.
+- **Linking to a vzor or verb:**
+  - First, look the word up in the lexicon, including every generated form, so *kávu* finds *káva* → vzor *žena*.
+  - Otherwise, look it up as a verb, by infinitive or by any conjugated form, using the existing verb search.
+  - If neither finds it, the learner can pick a gender and vzor themselves. I'll offer a suggestion from the word's ending, clearly labelled "a guess: check it".
+  - Linked words show the gender marker and link to the vzor page or verb page.
+- **Reviews:** each word becomes a card `own:<id>` in the same review queue.
+  - With an English meaning, it's reviewed English → Czech, typed, using the existing checker.
+  - Without one, a new "recall" card shows the Czech, photo and note, then *Vím / Ještě ne* (I know it / not yet), self-graded.
+- **Files:** `src/db/db.ts` (v3, `ownWords`), `src/db/ownWords.ts`, `src/features/words/*` (new), `src/lib/srs/reviewItems.ts`, `src/db/backup.ts`.
+- **Data:** `ownWords { id, cs, en?, note?, place?, photo?: Blob, link?: { kind: 'noun' | 'verb', lemma, vzor? }, createdAt }`.
+- **Open question:** backups include photos as base64 by default, which can get large. Should that be a checkbox ("include photos", on by default)?
+
+### 6.4 A3 · Holiday prep lessons
+
+- **Approach:** one mini-lesson per holiday or holiday cluster, nine in all: New Year; Easter (Good Friday and Easter Monday together); 1 May; 8 May; 5–6 July together; 28 Sep; 28 Oct; 17 Nov; Christmas (24–26 Dec together).
+  - **Content:** 6–8 key words, "what people actually do", greetings and wishes, 2–3 etiquette tips, and 4–6 exercises (typed for language, multiple choice for customs).
+  - **Home:** from 7 days before the holiday until the day itself, the *Dnes* panel shows "Prep lesson open" next to the countdown, linking to it.
+  - **Afterwards:** each lesson stays in the culture guide's Holidays tab.
+- **Facts:** holiday dates come from the law (Act 245/2000 Coll.), checked on e-sbirka.cz. Shop closing (Act 223/2016 Coll.) is checked the same way. Both are stored with a date. Customs that can't be sourced are marked unverified.
+- **Files:**
+  - `content/calendar/holiday-lessons/*.json` (new), with schema and loader;
+  - `src/features/home/Today.tsx`;
+  - `src/features/holidays/HolidayLesson.tsx` (new), reusing the lesson player;
+  - culture guide links.
+- **Data:** none new. Progress uses `lessonProgress` with ids like `hol-vanoce`.
+- **Open questions:**
+  1. Should lessons be **locked** before the 7-day window, or just **highlighted** then and always open? I recommend highlighted: locking something you could prepare early feels artificial.
+  2. Should I also cover well-loved non-public days (Mikuláš on 5 Dec, *Čarodějnice* on 30 Apr, *Dušičky* on 2 Nov), marked "not a public holiday"?
+
+### 6.5 A4 · Session length in tram stops
+
+- **Proposed mapping:** **1 stop ≈ 3 exercises ≈ 1½–2 minutes.**
+  - The time per exercise comes from the learner's own answer log (the median time between answers in a session), so after a few sessions "3 stops" matches how fast *you* actually go. Until there's enough data, it uses 3 exercises per stop.
+  - I won't claim a real-world tram stop interval: I haven't found an official DPP figure for average time between stops. If I find one on dpp.cz I'll cite it; otherwise the copy says "about".
+- **Settings, "Your usual ride":** quick picks of 3 / 5 / 8 / 12 stops, *or* pick two metro stations and the app counts the stops from the verified line data (Flora → Můstek = 4 stops). It's labelled "metro stops on your ride".
+- **Where it shows:**
+  - a new **"Today's ride"** session on Home: reviews first, then new practice, sized to your ride;
+  - review sessions sized the same way (instead of a fixed 20);
+  - lesson cards with "≈ 4 stops";
+  - the runner's progress line, already drawn as stops, so one dot is one stop.
+- **Files:** `src/db/db.ts` (`Settings.rideStops`, a field addition only), `src/lib/ride.ts` (new), `SettingsPage`, `ReviewPage`, `HomePage`, `ExerciseRunner`, and the unit and station pages.
+- **Open question:** on the home screen, should "Today's ride" replace the separate Reviews card, or sit next to it?
+
+### 6.6 A5 · Emergency phrase cards (*V nouzi*)
+
+- **Cards:** doctor, pharmacy, police, locked out, lost items, accident. Each card has:
+  - the situation in English;
+  - 5–8 phrases (Czech and English) with case-lens markup;
+  - what to expect;
+  - **"Show to a Czech"** mode: full screen, very large Czech text in `--on-fill-dark` on `--ticket` (about 13:1, the same in both themes), one sentence per screen with large next and back buttons, and the screen kept awake (Wake Lock API, where supported).
+- **Numbers:** 112, 155 (ambulance), 150 (fire), 158 (police), 156 (city police), verified against gov.cz / policie.cz / mvcr.cz and stored with dates. Each card has tap-to-call `tel:` links. The pharmacy and doctor cards explain *pohotovost* (out-of-hours service) without listing specific addresses unless they can be verified.
+- **Offline:** service worker (§ 6.1). It's tested by loading the cards with the browser offline in Playwright.
+- **Where:** a calm, always-visible "Emergency · *V nouzi*" link in the header on every page, plus the home screen and the Zabydlení guide. No red alarm styling: the enamel red plate.
+- **Files:** `content/emergency/cards.json` (new) with schema and loader, `src/features/emergency/*` (new), `vite.config.ts` (PWA), `AppShell`.
+- **Open question:** is a header link on every page OK, given the header is already full on phones? The alternative is a link in the footer and on Home only.
+
+### 6.7 A6 · Your own station wall (*Tvoje stěna*)
+
+- **Approach:** a wall of convex and concave circles (the `TileGrid` look), in the tile colours of your stations.
+  - Each station is a block; each practised lesson fills one circle of its block, and a finished (stamped) station's block is completed with its stamp.
+  - Lessons filling circles is an addition to your idea. With five built stations, a wall that only grows per station would stay nearly empty for weeks; this way it grows every time you practise.
+- **Export and share:** a PNG of the wall, framed with the wordmark, "Linka A", your station count and the date. It downloads, or uses the system share sheet where supported.
+- **Where:** the ticket wallet (top) and a small preview on Home.
+- **Files:** `src/features/wall/*` (new), `src/lib/exportImage.ts` (new), `ProgressPage`, `HomePage`.
+- **Data:** none, derived from stamps and lesson progress.
+- **Note:** earlier, the brief's attribution of the Line A panels to Jaroslav Otruba wasn't verified. The app keeps saying "inspired by the Line A wall panels" unless I can cite a source.
+
+### 6.8 A7 · Ticket-based streaks (*Jízdenky*) — conflict to resolve first
+
+**There's a conflict here.** Your original spec, and the app's own copy since then, say *"No streaks, points, leagues, hearts or guilt notifications"* (README; onboarding; the wallet header "not how many days in a row you opened the app"). The Pražák brief, on the other hand, lists tram tickets "for progress, rewards and streaks". I can build this in a way that stays guilt-free, but the copy promising "no streaks" has to change, so I need your explicit go-ahead.
+
+**The design I'd propose (if you confirm):**
+- **Tiers should mirror real PID products, verified on pid.cz:**
+  - **24 hours:** you practised today.
+  - **72 hours** (instead of a 7-day pass): the 72-hour ticket exists, and I didn't see a 7-day pass on the pid.cz page I checked. Using real tickets keeps the theme honest.
+  - **Monthly pass:** 30 days.
+  - **Quarterly pass:** 90 days.
+  - **Annual Lítačka:** 365 days.
+
+  If you'd still rather have "7-day pass", I'll check whether PID sells one and, if not, call it something that doesn't pretend to be a product.
+- **A missed day:** the ticket *expires*, and the copy is light: *"Platnost vypršela. It happens: the tram still runs. Validate a new one with one exercise."* The expired ticket goes into the wallet, stamped with its length ("Your longest: 23 days"), so nothing earned is taken away.
+- **Freezes, as planned closures (*výluka*):** you can announce a *výluka* in advance for days you know you'll be away, and a missed day uses one automatically if you have one. You get one per 72-hour tier reached, up to 3 at a time. *(As built: one for every 3 days practised in a row, so a long ticket keeps earning them; still capped at 3.)*
+- **No notifications.** The app has none and won't get any.
+- **Settings:** "Show my ticket" on/off (default: on, if you approve this).
+- **Files:**
+  - `src/lib/streak.ts` (new: derived from the answer log with the 04:00 day boundary);
+  - `src/db/db.ts` (*výluka* days in `meta`, no new table);
+  - wallet, home and settings;
+  - README and onboarding copy.
+
+### 6.9 A8 · Idiom of the week (*Idiom týdne*)
+
+- **Approach:** chosen by ISO week number, deterministically, so everyone sees the same idiom that week. Each idiom has:
+  - the Czech;
+  - a word-for-word literal translation;
+  - the real meaning;
+  - an example sentence (case-lens marked);
+  - the closest English equivalent, only if there is a real one.
+
+  It shows as a card on Home, with an archive at `/idioms`.
+- **Sharing:** a PNG card (enamel plate style), a link to `/idioms/<id>`, and the system share sheet. No third-party share widgets.
+- **Sourcing:** only idioms I can find in an authoritative source, recorded per idiom:
+  - the Czech Academy of Sciences' language reference sites (Internetová jazyková příručka, prirucka.ujc.cas.cz; SSJČ, ssjc.ujc.cas.cz);
+  - or a documented dictionary entry.
+
+  I'll start with about 20 (for example *mít máslo na hlavě*, *chodit kolem horké kaše*, *házet hrách na stěnu*, *nosit dříví do lesa*, *kupovat zajíce v pytli*, *v tom je zakopaný pes*). Any I can't find in a source are dropped, not kept.
+- **Files:** `content/idioms/idioms.json` (new) with schema and loader, `src/features/idioms/*` (new), `HomePage`.
+
+### 6.10 A9 · Sports in Czechia (*Sport*)
+
+- **A new guide with these sections:**
+  - hockey (the extraliga, the national team, big tournaments in Prague);
+  - football;
+  - chants;
+  - going to a game (tickets, getting there, etiquette, beer, colours and sections, rivalries);
+  - vocabulary.
+
+  It links to lessons: numbers and scores (u02-l03), motion verbs on the way to the stadium (u03-l02), and the vocative for cheering (u01-l04). It has a phrasebook and a practice set.
+- **Chants:**
+  - Only chants that are widely used and documented in mainstream Czech media (ČT sport, iRozhlas, major newspapers), with lyrics, a literal translation and when they're used.
+  - Candidates I'm fairly sure are mainstream and harmless: *Kdo neskáče, není Čech, hop hop hop!*, *Češi, do toho!*, *Do toho!*, *My chceme gól!*. Each will be sourced or dropped.
+  - Club ultras' chants are left out (that's where offensive material lives). Anything I can't source stays out, even if I believe it's common.
+  - All chants are flagged for native review.
+- **Facts verified at build:**
+  - venues and how to get there (pid.cz / dpp.cz for lines; O2 arena at Českomoravská);
+  - club colours and stadiums (the clubs' official sites);
+  - ticket sales (the clubs' and the hockey association's official sites);
+  - the 2024 IIHF World Championship in Prague and Ostrava (iihf.com).
+
+  Etiquette and beer culture stay general and are flagged where there's no source.
+- **Files:** `content/guides/sports/*` (new), `content/lexicon/nouns.json` (sports nouns), plus tests.
+- **Open question:** should sports also get a **station** on Line A (a short unit about watching a game with colleagues), or stay a guide only for now? Guide only is my recommendation for this round.
+
+### 6.11 B10 · Alphabet and pronunciation: recommendation
+
+**I recommend its own section, as you lean towards, called "Sounds" (*Výslovnost*), and folding Verbs into Grammar to keep the menu the same length.**
+
+- **Why its own section:**
+  - Pronunciation is the foundation of every station, not a grammar topic.
+  - It's also where all the **listening** lives: the alphabet, the pronunciation practice, the minimal pairs, and the new Overheard in Prague (A1).
+  - Hidden inside Grammar, it would be invisible to the people who need it most, and today the alphabet is only reachable from the home page and the Nemocnice Motol station.
+- **Why merge Verbs into Grammar:**
+  - The menu has seven items, which already scroll on a phone.
+  - The Grammar page already has a Verbs section (aspect pairs, the verb track, lookup), and the case lens links into both. "Grammar & verbs" is one reference shelf to learners.
+  - The menu would then be: **Home · Review · Sounds · Grammar & verbs · Guides · Ticket wallet · Settings** (still seven).
+- **Routes:** `/sounds` (with `/alphabet` redirecting), `/sounds/overheard`; Verbs pages stay at their URLs but are filed under Grammar & verbs in the menu.
+- **Files:** `AppShell`, routes, `AlphabetPage` (it becomes the Sounds hub), `GrammarIndex`, `StationPage` (the Motol link).
+
+### 6.12 B11 · Multiple choice for practical knowledge
+
+**The rule:** knowledge *about* Czechia (transport, customs, history, social conventions) is multiple choice, while producing Czech (endings, translation, spelling, writing a Czech word) stays typed. A test enforces it: no `question` exercise may expect an English typed answer.
+
+**To convert (26):**
+
+| Id | Question | Notes on the wrong options I'd write (all facts verified at build) |
+|---|---|---|
+| tr-n7 | Trolleybus from the airport to line A | 59 ✓; the wrong options are other airport routes, each with what it really is (e.g. the bus to Zličín, the Airport Express) |
+| tr-n8 | Where you validate a paper ticket for the metro | entrance to the metro ✓; on the platform / on the train / at the exit, each explained |
+| tr-n1, tr-n2 | Which line is yellow / red | A, B, C with their colours |
+| tr-n3, tr-n4, tr-n5 | Transfer stations | Můstek / Muzeum / Florenc plus a near-miss (e.g. Náměstí Republiky, "one stop short of Florenc") |
+| tr-n6 | Night tram numbers | 91–99 ✓ vs day ranges and night buses (verified) |
+| tr-h4 | *Zastávka na znamení* | press the button ✓ / the tram stops anyway / tell the driver |
+| tr-h6 | *výluka* | planned closure ✓ / strike / delay |
+| tr-h8 | *za 4 min* | in 4 minutes ✓ / 4 stops away / every 4 minutes |
+| tr-read-next | *Přestup na linku B* | change to line B ✓ / line B is closed / last stop |
+| tr-read-exit | *VÝSTUP* | exit ✓ / entrance (*vstup*) / transfer (*přestup*): the near-misses teach the related words |
+| cul-c5 | Who brings the cake | the person celebrating ✓ / colleagues / the boss |
+| cul-x6 | PF | *pour féliciter* ✓ / … |
+| cul-h1, h2, h3, h4 | 17 Nov, 1918, St Wenceslas, Jan Hus | dates, years and names with neighbouring events as distractors |
+| st-5 | 3+kk | 3 rooms, kitchenette ✓ / 3+1 / 4 rooms |
+| alpha-r1 | Which syllable is stressed | first ✓ / second / last |
+| alpha-r7 | Vowels in *strč prst skrz krk* | 0 ✓ / 1 / 4 (the r works as the vowel) |
+| u05-l01-e1, e2; u05-c1, c2 | vy or ty | two options, with the social reason |
+| u05-l02-e3 | Who offers *ty* | older ✓ / younger / whoever is the man |
+
+Kept typed, because they produce Czech: the alphabet letters, letter names and spelling (`alpha-s*`, `alpha-n*`, `alpha-l*`, `alpha-r2–r6`), the culture vocabulary (*kapr*, *pomlázka*, *kraslice*, *čarodějnice*, *o nás bez nás*), and the transit Czech words (*Výstup*, *náhradní doprava*).
+
+- **Files:** `schema.ts` (`multipleChoice`, plus optional `options` on `readReal`), the exercise runner (reusing `ChoiceInput`), the content files above, `SCHEMA.md`, and tests.
+
+### 6.13 C12 · "Czech Republic" or "Czechia"?
+
+- **Official status:**
+  - **Czech Republic** (*Česká republika*) is the formal name and stays so.
+  - **Czechia** (*Česko*) is the official **short** name. The Czech government approved it in 2016, and it was registered with the UN that year.
+  - Both are correct, and they aren't interchangeable in tone: "Czechia" is like "France", "the Czech Republic" like "the French Republic".
+  - I'll cite the Ministry of Foreign Affairs (mzv.gov.cz) and UN sources when applying the change.
+- **What people say and search:** in everyday English, "Czech Republic" is still the more familiar name, and expats search with it, for example "Czech Republic visa" and "work permit Czech Republic". I believe this is true, but I can't measure search volume from here, so it's flagged as a judgement, not data.
+- **Bureaucracy:** residence permits, visas and contracts use the formal name. The Ministry of the Interior's English pages and Czech passports ("CZECH REPUBLIC") use it too, as far as I know; I'll verify that before citing it.
+
+**Recommended rule:**
+1. **In the app's own voice, "Czechia":** headings, lessons, guides and UI ("living and working in Czechia"). It's the official short name, it's shorter, and it's what the country itself promotes.
+2. **"The Czech Republic":**
+   - when naming official things: institutions (*Embassy of the Czech Republic*), documents, laws and forms;
+   - in the Zabydlení paperwork sections and the emergency cards;
+   - wherever we quote an official text.
+3. **Discoverability, both:** the page `<title>`, meta description, web manifest and any app-store text say "Czechia (Czech Republic)" once, so search engines and people who only know one name find it.
+4. **Czech in lessons:** *Česko* in everyday sentences (*Bydlím v Česku*) and *Česká republika* in formal ones, with a short note in the lesson that both exist, because learners will hear both.
+
+Today the app's content and code say "Czechia" in 9 places and "Czech Republic" in 3. Once you approve, I'll apply the rule everywhere, list every change, and add a test that flags "Czech Republic" outside the allowed contexts.
+
+### 6.14 C13 · Other things I'd do differently, or conflicts
+
+1. **Streaks vs. "no streaks" (A7):** see § 6.8. This needs your decision.
+2. **Placeholder voices (A1) vs. "never text-to-speech for core sounds" (D6):** I think the clips can use placeholder text-to-speech, since they're about understanding, not core sounds. But the browser's voice can't do spoken Czech convincingly (*dobrej*, *seš*), so the spoken-Czech toggle will change the transcript but the voice will still read it in a textbook accent. The label says so, and real recordings fix it.
+3. **Offline (A5):** this makes the whole app a PWA (§ 6.1). There's a small risk of stale content after a deploy, which the update notice handles.
+4. **The wall (A6):** it fills per lesson, not only per station, so it isn't empty for weeks (§ 6.7).
+5. **Session length (A4):** I'd calibrate from the learner's own pace rather than fixing a number, and avoid claiming real-world stop intervals I can't source.
+6. **Holiday prep (A3):** highlighted, not locked (open question in § 6.4).
+7. **"Today" is getting full:** the Home *Dnes* panel would gain the holiday prep and the idiom of the week. I'd keep the panel to holiday, name day and countdown, and give the idiom its own small card below it, so Home doesn't turn into a dashboard.
+8. **Build order:** you asked for A1–A9, then B10, B11, C12. Two shared pieces have to come first: the multiple-choice type (B11), because A1 and A3 use it, and the service worker (§ 6.1). I'll build them **as part of the first feature that needs them**, so the order and the one-commit-per-feature rule still hold. The B11 *content conversion* stays in its place.
+
+### 6.15 Decisions (approved)
+
+1. **A7:** ticket streaks approved as designed (72-hour tier, *výluka* freezes, "no streaks" copy updated).
+2. **A3:** open all year; highlighted, and featured on the home page, in the 7 days before each holiday. Public holidays only for now.
+3. **A5:** Emergency link in the footer and on Home only.
+4. **A4:** "Today's ride" is a daily commute option: the learner picks a start and an end station, and the session is that many stops long.
+5. **A2:** text only for now (word, meaning, note, where seen). No photos, so backups stay small; the data model leaves room to add them later.
+6. **A9:** guide only.
+7. **B10:** "Sounds" as its own section; Verbs folded into "Grammar & verbs".
+8. **C12:** naming rule approved.
+
+### 6.16 Questions as asked
+
+1. **A7:** go ahead with ticket streaks as designed, including changing the "no streaks" copy? And 72-hour ticket or "7-day pass"?
+2. **A3:** highlighted or locked? And add the non-public days (Mikuláš, Čarodějnice, Dušičky)?
+3. **A5:** an Emergency link in the header on every page, or footer and Home only?
+4. **A4:** should "Today's ride" replace the Reviews card on Home, or sit beside it?
+5. **A2:** include photos in backups by default?
+6. **A9:** guide only, or a sports station too?
+7. **B10:** OK with Sounds as its own section and Verbs folded into "Grammar & verbs"?
+8. **C12:** OK with the naming rule?
+
+### 6.17 Status (18 November 2026)
+
+All of round 2 is built on the `round-2` branch, one commit per feature: A1–A9, B10, B11, C12, then the wrap-up (review list complete, QA at 375 px light and 1280 px dark on 22 pages, Lighthouse, offline check). Not merged or deployed: that waits for approval.
+
+Changes from the plan made while building, each noted in its commit:
+- A7: a *výluka* is earned every 3 days in a row (not once per ticket); the top tier is the annual pass (*Roční kupon*), since Lítačka is the card, not a ticket.
+- A8: example sentences are plain text, not lens-annotated (most of their nouns aren't in the lexicon); *mít knedlík v krku* dropped (no definition in the source).
+- A9: rival chants included at the user's request, each sourced; the antisemitic one is named only so learners recognise it.
+- B11: 27 exercises converted (one more vy/ty item than counted); pid.cz showed night trams are 90–99, so the transport guide was corrected too.
+- Wrap-up: the wallet no longer shifts while it loads (CLS 0.28 → 0.01); robots.txt added.

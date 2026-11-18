@@ -65,3 +65,36 @@ export function inDaysCs(n: number): string {
   const word = n >= 2 && n <= 4 ? 'dny' : 'dní';
   return `za ${n} ${word}`;
 }
+
+/**
+ * The prep lesson to feature on the home screen: today's holiday, or one
+ * coming up within `window` days (7 by default). Lessons stay open all year.
+ */
+export function featuredPrep<L extends { holidays: string[] }>(
+  date: Date,
+  data: HolidaysData | null,
+  lessons: L[],
+  window = 7,
+): { lesson: L; holiday: Holiday; days: number } | null {
+  const today = holidaysOn(date, data)[0];
+  if (today) {
+    const lesson = lessons.find((l) => l.holidays.includes(today.id));
+    if (lesson) return { lesson, holiday: today, days: 0 };
+  }
+  const next = nextHoliday(date, data);
+  if (!next || next.days > window) return null;
+  const lesson = lessons.find((l) => l.holidays.includes(next.holiday.id));
+  return lesson ? { lesson, holiday: next.holiday, days: next.days } : null;
+}
+
+/** When a lesson's (first) holiday falls next, from today (inclusive). */
+export function nextDateFor(ids: string[], date: Date, data: HolidaysData | null): Date | null {
+  if (!data) return null;
+  const today = new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
+  const dates = data.holidays
+    .filter((h) => ids.includes(h.id))
+    .flatMap((h) => [holidayDate(h, date.getFullYear()), holidayDate(h, date.getFullYear() + 1)])
+    .filter((d) => d.getTime() >= today)
+    .sort((a, b) => a.getTime() - b.getTime());
+  return dates[0] ?? null;
+}

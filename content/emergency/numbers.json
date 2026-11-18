@@ -1,0 +1,92 @@
+{
+  "$comment": "Czech emergency numbers. Every entry is verified against an official page, with the date.",
+  "numbers": [
+    {
+      "id": "112",
+      "number": "112",
+      "cs": "Jednotné evropské číslo tísňového volání",
+      "en": "European emergency number: any emergency",
+      "note": "Works even if you don't speak Czech (operators speak other languages), and from any phone, even without credit or a SIM card.",
+      "verified": [
+        {
+          "source": "Ministry of the Interior: Tísňové volání",
+          "url": "https://mv.gov.cz/clanek/tisnove-volani.aspx",
+          "date": "2026-11-17"
+        },
+        {
+          "source": "Portál veřejné správy: 112, 150, 155 a 158",
+          "url": "https://portal.gov.cz/sluzby-vs/112-150-155-a-158-S2824",
+          "date": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "id": "155",
+      "number": "155",
+      "cs": "Zdravotnická záchranná služba",
+      "en": "Ambulance",
+      "verified": [
+        {
+          "source": "Ministry of the Interior: Tísňové volání",
+          "url": "https://mv.gov.cz/clanek/tisnove-volani.aspx",
+          "date": "2026-11-17"
+        },
+        {
+          "source": "Portál veřejné správy: 112, 150, 155 a 158",
+          "url": "https://portal.gov.cz/sluzby-vs/112-150-155-a-158-S2824",
+          "date": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "id": "158",
+      "number": "158",
+      "cs": "Policie ČR",
+      "en": "Police",
+      "verified": [
+        {
+          "source": "Ministry of the Interior: Tísňové volání",
+          "url": "https://mv.gov.cz/clanek/tisnove-volani.aspx",
+          "date": "2026-11-17"
+        },
+        {
+          "source": "Portál veřejné správy: 112, 150, 155 a 158",
+          "url": "https://portal.gov.cz/sluzby-vs/112-150-155-a-158-S2824",
+          "date": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "id": "150",
+      "number": "150",
+      "cs": "Hasičský záchranný sbor",
+      "en": "Fire brigade",
+      "verified": [
+        {
+          "source": "Ministry of the Interior: Tísňové volání",
+          "url": "https://mv.gov.cz/clanek/tisnove-volani.aspx",
+          "date": "2026-11-17"
+        },
+        {
+          "source": "Portál veřejné správy: 112, 150, 155 a 158",
+          "url": "https://portal.gov.cz/sluzby-vs/112-150-155-a-158-S2824",
+          "date": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "id": "156",
+      "number": "156",
+      "cs": "Městská policie",
+      "en": "City police",
+      "verified": [
+        {
+          "source": "Ministry of the Interior: Tísňové volání",
+          "url": "https://mv.gov.cz/clanek/tisnove-volani.aspx",
+          "date": "2026-11-17"
+        }
+      ]
+    }
+  ],
+  "nativeReviewed": false
+}

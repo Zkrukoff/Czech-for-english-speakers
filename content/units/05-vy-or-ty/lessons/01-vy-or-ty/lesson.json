@@ -127,14 +127,23 @@
   "exercises": [
     {
       "id": "u05-l01-e1",
-      "type": "question",
+      "type": "multipleChoice",
       "prompt": "Your new boss, on day one. **vy** or **ty**?",
+      "options": [
+        "vy",
+        "ty"
+      ],
+      "optionsLang": "cs",
       "answers": [
         "vy"
       ],
-      "answerLang": "cs",
+      "hints": [
+        {
+          "wrong": "ty",
+          "explain": "Not on day one: your boss gets vy until they offer ty."
+        }
+      ],
       "why": "Your boss gets vy, at least until they offer ty.",
-      "hints": [],
       "skills": [
         "vocab:v-vykat"
       ],
@@ -142,14 +151,23 @@
     },
     {
       "id": "u05-l01-e2",
-      "type": "question",
+      "type": "multipleChoice",
       "prompt": "Your colleague's six-year-old daughter. **vy** or **ty**?",
+      "options": [
+        "vy",
+        "ty"
+      ],
+      "optionsLang": "cs",
       "answers": [
         "ty"
       ],
-      "answerLang": "cs",
+      "hints": [
+        {
+          "wrong": "vy",
+          "explain": "Saying vy to a child sounds like a joke: children get ty."
+        }
+      ],
       "why": "Children get ty. Saying vy to a child sounds like a joke.",
-      "hints": [],
       "skills": [
         "vocab:v-tykat"
       ],

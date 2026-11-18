@@ -56,6 +56,9 @@ export type VerbTopic = (typeof VERB_TOPICS)[number];
 /** Skill tag for the alphabet and pronunciation section. */
 export const ALPHABET_SKILL = 'alphabet';
 
+/** Skill tag for listening comprehension (Overheard in Prague). */
+export const LISTENING_SKILL = 'listening';
+
 export type SkillTag = `case:${CaseName}` | `verb:${VerbTopic}` | `vocab:${string}` | typeof ALPHABET_SKILL;
 
 export const GRAMMAR_SKILLS: string[] = [

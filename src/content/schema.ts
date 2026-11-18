@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { ALPHABET_SKILL, CASES, CASE_KEYS, GRAMMAR_SKILLS } from './taxonomy';
+import { ALPHABET_SKILL, CASES, CASE_KEYS, GRAMMAR_SKILLS, LISTENING_SKILL } from './taxonomy';
 
 /**
  * Zod schemas for everything in /content. These are the source of truth for
@@ -14,8 +14,8 @@ const id = z.string().regex(/^[a-z0-9][a-z0-9-]*$/, 'ids use lowercase letters, 
 
 export const SkillTagSchema = z
   .string()
-  .refine((s) => GRAMMAR_SKILLS.includes(s) || s === ALPHABET_SKILL || /^(vocab|guide):[a-z0-9-]+$/.test(s), {
-    message: 'skill must be case:<case>, verb:<topic>, vocab:<vocabId>, guide:<guideId> or alphabet',
+  .refine((s) => GRAMMAR_SKILLS.includes(s) || s === ALPHABET_SKILL || s === LISTENING_SKILL || /^(vocab|guide):[a-z0-9-]+$/.test(s), {
+    message: 'skill must be case:<case>, verb:<topic>, vocab:<vocabId>, guide:<guideId>, alphabet or listening',
   });
 
 export const SpokenFormSchema = z.object({
@@ -233,9 +233,44 @@ export const ReadRealExerciseSchema = z.object({
   /** The question, in English. */
   prompt: z.string().min(1),
   answerLang: z.enum(['cs', 'en']).default('en'),
+  /** When set, answered by picking one (knowledge questions, B11); every wrong option needs a hint. */
+  options: z.array(z.string().min(1)).min(2).max(5).optional(),
+});
+
+/**
+ * Multiple choice, for knowledge *about* Czechia (transport, customs, history,
+ * social conventions) and for listening comprehension. Producing Czech stays
+ * typed. Explain each wrong option in `hints` (wrong = the option's text), so a
+ * wrong pick teaches something.
+ */
+export const MultipleChoiceExerciseSchema = z.object({
+  ...exerciseBase,
+  type: z.literal('multipleChoice'),
+  /** The question, in English. "**bold**" allowed. */
+  prompt: z.string().min(1),
+  /** Optional Czech shown above the question (a sign, a line someone says). */
+  cs: z.string().optional(),
+  options: z.array(z.string().min(1)).min(2).max(5),
+  /** Language of the options, for lang attributes and fonts. */
+  optionsLang: z.enum(['en', 'cs']).default('en'),
+});
+
+/**
+ * Recall, graded by the learner: show the Czech, reveal the meaning, then
+ * "Vím / Ještě ne". Used for saved words that have no English meaning.
+ */
+export const SelfCheckExerciseSchema = z.object({
+  ...exerciseBase,
+  type: z.literal('selfCheck'),
+  answers: z.array(z.string()).default([]),
+  cs: z.string().min(1),
+  /** Revealed after "show": meaning, note, where it was seen. */
+  reveal: z.string().optional(),
 });
 
 export const ExerciseSchema = z.discriminatedUnion('type', [
+  MultipleChoiceExerciseSchema,
+  SelfCheckExerciseSchema,
   TranslateExerciseSchema,
   FillEndingExerciseSchema,
   CaseSelectExerciseSchema,
@@ -573,6 +608,43 @@ export const FunctionsFileSchema = z.object({
   nativeReviewed: reviewed,
 });
 
+/* ---------- Overheard in Prague (listening scenes) ---------- */
+
+/** Where a line's wording comes from, when it's an official text (announcements). */
+const VerifiedSchema = z.object({ source: z.string().min(1), url: z.string().url(), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) });
+
+export const OverheardLineSchema = z.object({
+  speaker: z.string().min(1),
+  /** Standard Czech (case-lens markup allowed). */
+  cs: z.string().min(1),
+  /** How it's actually said, if different (obecná čeština). */
+  spoken: z.string().optional(),
+  en: z.string().min(1),
+  /** Recording id in content/audio/manifest.json, once a real recording exists. */
+  audio: z.string().optional(),
+  /** For official wording (e.g. PID announcements): where it was checked. Absent = not an official text, or not verified. */
+  verified: VerifiedSchema.optional(),
+  /** For lines that imitate an official text we could NOT verify. */
+  unverifiedNote: z.string().optional(),
+  nativeReviewed: reviewed,
+});
+
+export const OverheardSceneSchema = z.object({
+  id,
+  title: z.string().min(1),
+  titleCs: z.string().min(1),
+  /** Where you are, in English. */
+  setting: z.string().min(1),
+  kind: z.enum(['transport', 'shop', 'pub', 'health', 'work']),
+  order: z.number().default(0),
+  lines: z.array(OverheardLineSchema).min(2),
+  /** A short "good to know" for after the scene. */
+  note: z.string().optional(),
+  /** 2–3 comprehension questions (multiple choice). */
+  questions: z.array(z.lazy(() => MultipleChoiceExerciseSchema)).min(2).max(3),
+  nativeReviewed: reviewed,
+});
+
 /* ---------- Name days and audio ---------- */
 
 export const NamedaysSchema = z.object({
@@ -586,6 +658,8 @@ export const NamedaysSchema = z.object({
 export const HolidaysSchema = z.object({
   $comment: z.string().optional(),
   source: z.object({ title: z.string(), checked: z.string() }),
+  verified: z.array(z.object({ source: z.string(), url: z.string().url(), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) })).default([]),
+  shopsNote: z.string().optional(),
   holidays: z
     .array(
       z.object({
@@ -601,6 +675,78 @@ export const HolidaysSchema = z.object({
     )
     .min(1),
   nativeReviewed: reviewed,
+});
+
+export const HolidayLessonSchema = z.object({
+  id,
+  /** Holiday ids (calendar/holidays.json) this lesson prepares for. */
+  holidays: z.array(z.string()).min(1),
+  title: z.string().min(1),
+  titleCs: z.string().min(1),
+  intro: z.string().min(1),
+  whatPeopleDo: z.array(z.string().min(1)).min(1),
+  greetings: z.array(z.object({ cs: z.string().min(1), en: z.string().min(1), note: z.string().optional() })).default([]),
+  etiquette: z.array(z.string().min(1)).default([]),
+  vocab: z.array(VocabItemSchema).default([]),
+  exercises: z.array(z.lazy(() => ExerciseSchema)).min(3),
+  nativeReviewed: reviewed,
+});
+
+export const HolidayLessonsSchema = z.object({ $comment: z.string().optional(), lessons: z.array(HolidayLessonSchema), nativeReviewed: reviewed });
+
+const Verified = z.object({ source: z.string().min(1), url: z.string().url(), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) });
+
+export const EmergencyNumbersSchema = z.object({
+  $comment: z.string().optional(),
+  numbers: z.array(z.object({ id: z.string(), number: z.string().regex(/^\d{3}$/), cs: z.string(), en: z.string(), note: z.string().optional(), verified: z.array(Verified).min(1) })),
+  nativeReviewed: reviewed,
+});
+
+const EmergencyPhrase = z.object({ cs: z.string().min(1), en: z.string().min(1), nativeReviewed: reviewed });
+
+export const EmergencyCardsSchema = z.object({
+  $comment: z.string().optional(),
+  cards: z.array(
+    z.object({
+      id,
+      title: z.string().min(1),
+      titleCs: z.string().min(1),
+      intro: z.string().min(1),
+      /** Ids from numbers.json. */
+      numbers: z.array(z.string()),
+      /** Large "Show to a Czech" screens, one message each. */
+      show: z.array(EmergencyPhrase).min(1),
+      phrases: z.array(EmergencyPhrase).min(1),
+      expect: z.array(z.string()).default([]),
+      /** Other verified contacts, e.g. lost and found. */
+      contacts: z.array(z.object({ label: z.string(), tel: z.string().regex(/^\+?\d+$/), display: z.string(), verified: Verified })).default([]),
+    }),
+  ),
+  nativeReviewed: reviewed,
+});
+
+export const IdiomsSchema = z.object({
+  $comment: z.string().optional(),
+  idioms: z
+    .array(
+      z.object({
+        id,
+        cs: z.string().min(1),
+        /** Word for word. */
+        literal: z.string().min(1),
+        meaning: z.string().min(1),
+        /** The dictionary's own definition, quoted. */
+        definitionCs: z.string().min(1),
+        /** Dictionary label, e.g. "expr.", "hovor.", "pořek.". */
+        label: z.string().optional(),
+        /** Closest real English idiom; left out when there isn't one. */
+        english: z.string().optional(),
+        example: z.object({ cs: z.string().min(1), en: z.string().min(1) }),
+        source: z.object({ dictionaries: z.array(z.enum(['SSČ', 'SSJČ'])).min(1), url: z.string().url(), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) }),
+        nativeReviewed: reviewed,
+      }),
+    )
+    .min(1),
 });
 
 /**
@@ -646,6 +792,11 @@ export type Noun = z.infer<typeof NounSchema>;
 export type Gender = z.infer<typeof GenderSchema>;
 export type Mission = z.infer<typeof MissionSchema>;
 export type NamedaysData = z.infer<typeof NamedaysSchema>;
+export type OverheardScene = z.infer<typeof OverheardSceneSchema>;
+export type HolidayLesson = z.infer<typeof HolidayLessonSchema>;
+export type EmergencyNumbers = z.infer<typeof EmergencyNumbersSchema>;
+export type EmergencyCards = z.infer<typeof EmergencyCardsSchema>;
+export type Idiom = z.infer<typeof IdiomsSchema>['idioms'][number];
 export type HolidaysData = z.infer<typeof HolidaysSchema>;
 export type Holiday = HolidaysData['holidays'][number];
 export type AudioManifest = z.infer<typeof AudioManifestSchema>;

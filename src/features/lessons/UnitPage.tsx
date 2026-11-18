@@ -9,6 +9,7 @@ import { Card, EnamelPlate, Stamp } from '@/components/ui';
 import { StationHeader } from '@/features/line/StationHeader';
 import { useRouteUnit } from './useRouteUnit';
 import { unitCheckPath } from '@/lib/paths';
+import { usePerStop } from '@/features/ride/buildRide';
 
 const LINE_BG = { A: 'bg-line-a', B: 'bg-line-b', C: 'bg-line-c' } as const;
 
@@ -18,6 +19,7 @@ export function UnitPage() {
   const lessons = useLessonProgress();
   const missions = useMissions();
   const stamps = useStamps();
+  const perStop = usePerStop();
   if (!unit) return <NotFound what="unit" />;
   const stop = course.stopByUnit.get(unit.id)!;
   const stamped = stamps?.find((s) => s.id === `unit:${unit.id}`);
@@ -51,7 +53,9 @@ export function UnitPage() {
                     <span className="card card-link flex flex-1 items-center justify-between gap-3 px-4 py-3">
                       <span>
                         <span className="text-lg font-semibold text-ink">{l.title}</span>
-                        {done && <span className="block text-sm text-ink-3">Hotovo · practised</span>}
+                        <span className="block text-sm text-ink-3">
+                          {done ? 'Hotovo · practised · ' : ''}≈ {Math.max(1, Math.round(l.exercises.length / perStop))} stops
+                        </span>
                       </span>
                       <IconArrowRight size={18} className="shrink-0 text-ink-3 group-hover:text-ink" />
                     </span>

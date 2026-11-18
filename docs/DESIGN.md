@@ -130,6 +130,8 @@ saccharine. Czech words where context makes them clear (*Hotovo.* *Jedeme.*
 *Ještě jedno?*); English for explanations. No exclamation-mark overload. Errors are friendly and
 specific. Empty states have personality (*"Tady nic není. Like a tram stop at 3 a.m."*).
 
+**The country's name.** In the app's own voice it's **Czechia** (the official short name since 2016; *Česko* in Czech). **The Czech Republic** is for the state itself and official things: institutions, documents, laws, forms, quotes and the 1993 founding. Page metadata says "Czechia (the Czech Republic)" once, for search. In lessons, *Česko* in everyday sentences, *Česká republika* in formal ones. `tests/country-name.test.ts` enforces it with an allowlist.
+
 ## Accessibility
 
 - WCAG AA contrast for all text, tested in both themes.

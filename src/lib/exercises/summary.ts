@@ -6,6 +6,7 @@ export function exerciseSummary(ex: Exercise): string {
   switch (ex.type) {
     case 'listenType':
     case 'speak':
+    case 'selfCheck':
       return lensPlain(ex.cs);
     case 'minimalPair':
       return `${ex.pair[0]} / ${ex.pair[1]}`;

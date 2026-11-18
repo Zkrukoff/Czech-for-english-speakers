@@ -1,0 +1,439 @@
+{
+  "$comment": "Idiom of the week. Each idiom and its meaning is checked against SSČ/SSJČ as shown in the Internetová jazyková příručka (ÚJČ AV ČR); the example sentences are new and need native review.",
+  "idioms": [
+    {
+      "id": "maslo-na-hlave",
+      "cs": "mít máslo na hlavě",
+      "literal": "to have butter on your head",
+      "meaning": "to have done something wrong yourself, so you are in no position to criticise or act freely",
+      "definitionCs": "lze ho postihnout pro minulé provinění",
+      "example": {
+        "cs": "Neříkej mu nic o pozdních příchodech, sám má máslo na hlavě.",
+        "en": "Don't lecture him about being late: he's got butter on his head himself."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ",
+          "SSJČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=m%C3%A1slo",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "label": "expr."
+    },
+    {
+      "id": "horka-kase",
+      "cs": "chodit kolem horké kaše",
+      "literal": "to walk around hot porridge",
+      "meaning": "to avoid a subject or decision",
+      "definitionCs": "vyhýbat se řešení něčeho, mluvení o něčem",
+      "example": {
+        "cs": "Nechoď kolem horké kaše a řekni mi to.",
+        "en": "Stop walking around the hot porridge and tell me."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=ka%C5%A1e",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "to beat around the bush",
+      "label": "expr."
+    },
+    {
+      "id": "hrach-na-stenu",
+      "cs": "jako když hrách na stěnu hází",
+      "literal": "like throwing peas at a wall",
+      "meaning": "pointless: talking to someone who will not listen",
+      "definitionCs": "marné, zbytečné (domlouvání ap.)",
+      "example": {
+        "cs": "Domlouvat mu je jako hrách na stěnu házet.",
+        "en": "Reasoning with him is like throwing peas at a wall."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=hr%C3%A1ch",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "like talking to a brick wall"
+    },
+    {
+      "id": "drivi-do-lesa",
+      "cs": "nosit dříví do lesa",
+      "literal": "to carry wood into the forest",
+      "meaning": "to do something pointless, bringing what is already there",
+      "definitionCs": "konat něco zbytečného",
+      "example": {
+        "cs": "Nosit do Prahy pivo je jako nosit dříví do lesa.",
+        "en": "Bringing beer to Prague is carrying wood into the forest."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=d%C5%99%C3%ADv%C3%AD",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "to carry coals to Newcastle"
+    },
+    {
+      "id": "zajic-v-pytli",
+      "cs": "kupovat zajíce v pytli",
+      "literal": "to buy a hare in a sack",
+      "meaning": "to buy something without seeing or testing it",
+      "definitionCs": "(kupovat) něco nevyzkoušeného",
+      "example": {
+        "cs": "Byt bez prohlídky? To je kupovat zajíce v pytli.",
+        "en": "A flat without a viewing? That's buying a hare in a sack."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=zaj%C3%ADc",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "to buy a pig in a poke"
+    },
+    {
+      "id": "zakopany-pes",
+      "cs": "v tom je zakopaný pes",
+      "literal": "that is where the dog is buried",
+      "meaning": "that is the real problem, the catch",
+      "definitionCs": "hlavní potíž, překážka",
+      "example": {
+        "cs": "Nájem je levný, ale nikdo tam nechce bydlet. Kde je zakopaný pes?",
+        "en": "The rent is cheap but nobody wants to live there. Where's the dog buried?"
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=pes",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "there's the rub"
+    },
+    {
+      "id": "pod-obraz",
+      "cs": "zpít se pod obraz",
+      "literal": "to drink yourself under the picture",
+      "meaning": "to get completely drunk",
+      "definitionCs": "(zpít se) do němoty",
+      "example": {
+        "cs": "Na firemním večírku se zpil pod obraz.",
+        "en": "He drank himself under the picture at the office party."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=obraz",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "label": "expr."
+    },
+    {
+      "id": "sovy-do-athen",
+      "cs": "nosit sovy do Athén",
+      "literal": "to carry owls to Athens",
+      "meaning": "to teach someone something they know better than you, which is pointless",
+      "definitionCs": "poučovat někoho, kdo ví něco lépe, a tím dělat něco zbytečného",
+      "example": {
+        "cs": "Vysvětlovat Čechovi, jak se točí pivo? To je nosit sovy do Athén.",
+        "en": "Explaining to a Czech how to pour beer? That's carrying owls to Athens."
+      },
+      "source": {
+        "dictionaries": [
+          "SSJČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=sova",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "to teach your grandmother to suck eggs"
+    },
+    {
+      "id": "komar-velbloud",
+      "cs": "udělat z komára velblouda",
+      "literal": "to make a camel out of a mosquito",
+      "meaning": "to blow something up out of all proportion",
+      "definitionCs": "velmi zveličit něco",
+      "example": {
+        "cs": "Jedna chyba v e-mailu, nedělej z komára velblouda.",
+        "en": "One typo in an email: don't make a camel out of a mosquito."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=kom%C3%A1r",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "to make a mountain out of a molehill",
+      "label": "expr."
+    },
+    {
+      "id": "tma-v-pytli",
+      "cs": "tma jako v pytli",
+      "literal": "dark as in a sack",
+      "meaning": "pitch dark",
+      "definitionCs": "(tma) velká",
+      "example": {
+        "cs": "V listopadu je v pět večer tma jako v pytli.",
+        "en": "In November it's dark as in a sack by five."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ",
+          "SSJČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=pytel",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "pitch dark",
+      "label": "expr."
+    },
+    {
+      "id": "po-masle",
+      "cs": "jde to jako po másle",
+      "literal": "it goes as if on butter",
+      "meaning": "it goes smoothly, without problems",
+      "definitionCs": "bez potíží, hladce",
+      "example": {
+        "cs": "Na úřadě to dnes šlo jako po másle.",
+        "en": "At the office today it all went as if on butter."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ",
+          "SSJČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=m%C3%A1slo",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "to go like clockwork"
+    },
+    {
+      "id": "flinta-do-zita",
+      "cs": "hodit flintu do žita",
+      "literal": "to throw your rifle into the rye",
+      "meaning": "to give up, lose heart (usually after a first setback)",
+      "definitionCs": "ztratit, ztrácet odvahu pokračovat (po neúspěchu), vzdát se",
+      "example": {
+        "cs": "Čeština je těžká, ale flintu do žita neházej.",
+        "en": "Czech is hard, but don't throw your rifle into the rye."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ",
+          "SSJČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=flinta",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "to throw in the towel",
+      "label": "hovor."
+    },
+    {
+      "id": "pro-strach",
+      "cs": "mít pro strach uděláno",
+      "literal": "to have it done for fear",
+      "meaning": "to be fearless",
+      "definitionCs": "nebát se",
+      "example": {
+        "cs": "Jezdí na kole po Václaváku, ten má pro strach uděláno.",
+        "en": "He cycles down Wenceslas Square: nothing scares him."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=strach",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dve-zidle",
+      "cs": "sedět na dvou židlích",
+      "literal": "to sit on two chairs",
+      "meaning": "to play both sides, be two-faced",
+      "definitionCs": "jednat obojace",
+      "example": {
+        "cs": "Nemůžeš pracovat pro obě firmy, nesedí se na dvou židlích.",
+        "en": "You can't work for both companies: you can't sit on two chairs."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ",
+          "SSJČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=%C5%BEidle",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "to have a foot in both camps"
+    },
+    {
+      "id": "do-zeli",
+      "cs": "lézt někomu do zelí",
+      "literal": "to climb into someone's cabbage",
+      "meaning": "to meddle in someone else's business (also: to go after their partner)",
+      "definitionCs": "zasahovat do jeho působnosti; přebírat mu dívku",
+      "example": {
+        "cs": "Tohle je můj projekt, nelez mi do zelí.",
+        "en": "This is my project: stay out of my cabbage."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=zel%C3%AD",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "to tread on someone's toes"
+    },
+    {
+      "id": "spanelska-vesnice",
+      "cs": "to je pro mě španělská vesnice",
+      "literal": "that is a Spanish village to me",
+      "meaning": "I don't understand it at all",
+      "definitionCs": "nerozumím tomu",
+      "example": {
+        "cs": "Daňové přiznání je pro mě španělská vesnice.",
+        "en": "My tax return is a Spanish village to me."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ",
+          "SSJČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=vesnice",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "it's all Greek to me"
+    },
+    {
+      "id": "jablko",
+      "cs": "jablko nepadá daleko od stromu",
+      "literal": "the apple doesn't fall far from the tree",
+      "meaning": "children turn out like their parents",
+      "definitionCs": "dítě bývá stejné jako rodiče",
+      "example": {
+        "cs": "Její táta je taky kuchař. Jablko nepadá daleko od stromu.",
+        "en": "Her dad is a chef too. The apple doesn't fall far from the tree."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ",
+          "SSJČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=jablko",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "the apple doesn't fall far from the tree",
+      "label": "pořek."
+    },
+    {
+      "id": "do-vetru",
+      "cs": "mluvit do větru",
+      "literal": "to talk into the wind",
+      "meaning": "to talk in vain; to make empty promises",
+      "definitionCs": "zbytečně; planě slibovat",
+      "example": {
+        "cs": "Pronajímatel slíbil opravu, ale mluvil do větru.",
+        "en": "The landlord promised a repair, but he was talking into the wind."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ",
+          "SSJČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=v%C3%ADtr",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "hot air"
+    },
+    {
+      "id": "nad-slunce",
+      "cs": "je to nad slunce jasnější",
+      "literal": "it is clearer than the sun",
+      "meaning": "it is completely obvious",
+      "definitionCs": "naprosto zřejmé, nepochybné",
+      "example": {
+        "cs": "Že prší, když zapomenu deštník, je nad slunce jasnější.",
+        "en": "That it rains when I forget my umbrella is clearer than the sun."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=slunce",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "as clear as day"
+    },
+    {
+      "id": "spicka-nosu",
+      "cs": "vidět si jen na špičku nosu",
+      "literal": "to see only to the tip of your nose",
+      "meaning": "to be short-sighted, see only your own interests",
+      "definitionCs": "má malý rozhled",
+      "example": {
+        "cs": "Plánuje jen do pátku, vidí si jen na špičku nosu.",
+        "en": "He plans only until Friday: he sees only to the tip of his nose."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ",
+          "SSJČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=nos",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "can't see beyond the end of your nose",
+      "label": "hovor. expr."
+    },
+    {
+      "id": "vitr-z-plachet",
+      "cs": "vzít někomu vítr z plachet",
+      "literal": "to take the wind out of someone's sails",
+      "meaning": "to get ahead of someone and spoil their plans",
+      "definitionCs": "předejít ho v něčem, zhatit mu plány",
+      "example": {
+        "cs": "Kolega řekl můj nápad na poradě dřív a vzal mi vítr z plachet.",
+        "en": "A colleague said my idea at the meeting first and took the wind out of my sails."
+      },
+      "source": {
+        "dictionaries": [
+          "SSČ"
+        ],
+        "url": "https://prirucka.ujc.cas.cz/?slovo=v%C3%ADtr",
+        "date": "2026-11-18"
+      },
+      "nativeReviewed": false,
+      "english": "to take the wind out of someone's sails"
+    }
+  ]
+}

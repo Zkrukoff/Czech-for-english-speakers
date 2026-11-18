@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import { course } from '@/content';
 import { EnamelPlate } from '@/components/ui';
 import { namesOn, needsCheck } from '@/lib/namedays';
-import { holidaysOn, inDaysCs, nextHoliday } from '@/lib/holidays';
+import { featuredPrep, holidaysOn, inDaysCs, nextHoliday } from '@/lib/holidays';
 
-const SHOPS = { closed: 'Larger shops are closed today.', noon: 'Larger shops close at midday.', open: 'Shops are open as usual.' } as const;
+const SHOPS = { closed: 'Large shops are closed today (by law).', noon: 'Large shops close at midday (by law).', open: 'Shops are open as usual.' } as const;
 
 /**
  * "Dnes": the daily hook on the home screen. Today's public holiday (if
@@ -15,6 +15,7 @@ export function Today({ date = new Date() }: { date?: Date }) {
   const holidays = holidaysOn(date, course.holidays);
   const names = namesOn(date, course.namedays);
   const next = nextHoliday(date, course.holidays);
+  const prep = featuredPrep(date, course.holidays, course.holidayLessons);
 
   return (
     <section aria-labelledby="today-h" className="border-2 border-ink bg-surface shadow-offset-sm">
@@ -28,11 +29,19 @@ export function Today({ date = new Date() }: { date?: Date }) {
           <p lang="cs" className="mt-3 font-display text-2xl font-extrabold leading-tight">{h.cs}</p>
           <p className="mt-1 font-semibold">{h.en}</p>
           <p className="mt-2 text-sm">{h.about}</p>
-          <p className="mt-2 text-sm">{SHOPS[h.shops]}</p>
+          <p className="mt-2 text-sm">
+            {SHOPS[h.shops]}
+            {h.shops !== 'open' && course.holidays?.shopsNote && <span className="block text-xs">{course.holidays.shopsNote}</span>}
+          </p>
           {h.greeting && (
             <p className="mt-2 text-sm">
               Say <b lang="cs">{h.greeting.cs}</b> ({h.greeting.en})
             </p>
+          )}
+          {prep && prep.days === 0 && prep.lesson.holidays.includes(h.id) && (
+            <Link to={`/holidays/${prep.lesson.id}`} className="mt-2 inline-block text-sm font-semibold underline">
+              Today's lesson: {prep.lesson.title}
+            </Link>
           )}
         </div>
       ))}
@@ -71,7 +80,14 @@ export function Today({ date = new Date() }: { date?: Date }) {
               <span lang="cs" className="text-sm text-ink-2">{inDaysCs(next.days)}</span>
             </p>
           </div>
-          <Link to="/guides/culture?tab=holidays" className="mt-2 inline-block text-sm text-vltava underline">All Czech holidays</Link>
+          <p className="mt-2 flex flex-wrap gap-x-4 text-sm">
+            {prep && prep.days > 0 && (
+              <Link to={`/holidays/${prep.lesson.id}`} className="font-semibold text-vltava underline">
+                Prep lesson: {prep.lesson.title}
+              </Link>
+            )}
+            <Link to="/holidays" className="text-vltava underline">All Czech holidays</Link>
+          </p>
         </div>
       )}
     </section>

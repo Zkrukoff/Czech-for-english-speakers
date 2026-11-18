@@ -41,8 +41,8 @@ export function StationPage() {
             </p>
           )}
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link to="/alphabet" className="btn btn-primary">The alphabet</Link>
-            <Link to="/alphabet?tab=practice" className="btn btn-secondary">Practise the sounds</Link>
+            <Link to="/sounds" className="btn btn-primary">The alphabet</Link>
+            <Link to="/sounds?tab=practice" className="btn btn-secondary">Practise the sounds</Link>
           </div>
         </section>
       )}

@@ -135,14 +135,28 @@
     },
     {
       "id": "u05-l02-e3",
-      "type": "question",
-      "prompt": "Who usually offers to switch to ty: the **older** person or the **younger** one?",
-      "answers": [
-        "[the] older[ {one|person}]"
+      "type": "multipleChoice",
+      "prompt": "Who usually offers to switch to **ty**?",
+      "options": [
+        "The older or more senior person",
+        "The younger person",
+        "Always the man"
       ],
-      "answerLang": "en",
+      "optionsLang": "en",
+      "answers": [
+        "The older or more senior person"
+      ],
+      "hints": [
+        {
+          "wrong": "The younger person",
+          "explain": "It's the older or more senior person who offers; the younger one waits."
+        },
+        {
+          "wrong": "Always the man",
+          "explain": "No: the older or more senior one offers. Between a man and a woman of about the same age, traditionally the woman offers."
+        }
+      ],
       "why": "The older or more senior person offers ty. Between a man and a woman of about the same age, traditionally the woman offers.",
-      "hints": [],
       "skills": [
         "vocab:v-muzeme-si-tykat"
       ],

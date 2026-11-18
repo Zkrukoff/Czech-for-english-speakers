@@ -124,14 +124,19 @@ function fillEndingStem(exercise: Exercise): string | undefined {
 }
 
 /** Exercises answered by picking an option: matched exactly, never diacritics-tolerant. */
-export const CHOICE_TYPES = new Set<Exercise['type']>(['caseSelect', 'chooseEnding', 'aspectChoice', 'minimalPair']);
+export const CHOICE_TYPES = new Set<Exercise['type']>(['caseSelect', 'chooseEnding', 'aspectChoice', 'minimalPair', 'multipleChoice']);
+
+/** Answered by picking an option: the choice types, and a readReal with options. */
+export function isChoice(exercise: Exercise): boolean {
+  return CHOICE_TYPES.has(exercise.type) || (exercise.type === 'readReal' && !!exercise.options);
+}
 
 /** Values the speaking exercise sends after the learner judges their own recording. */
 export const SELF_ASSESSED = { good: 'self:good', again: 'self:again' } as const;
 
 export function checkAnswer(exercise: Exercise, rawAnswer: string, options: CheckOptions): CheckResult {
   const answer = rawAnswer.trim();
-  if (exercise.type === 'speak') {
+  if (exercise.type === 'speak' || exercise.type === 'selfCheck') {
     const good = answer === SELF_ASSESSED.good;
     return {
       status: good ? 'correct' : 'incorrect',
@@ -142,7 +147,7 @@ export function checkAnswer(exercise: Exercise, rawAnswer: string, options: Chec
       diacriticsOnly: false,
     };
   }
-  if (CHOICE_TYPES.has(exercise.type)) {
+  if (isChoice(exercise)) {
     const stemC = fillEndingStem(exercise);
     const right = exercise.answers.includes(answer);
     const hint = exercise.hints.find((h) => h.wrong === answer);
