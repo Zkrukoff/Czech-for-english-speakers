@@ -1,0 +1,905 @@
+{
+  "$comment": "A2 exam practice (round 3, step 4): our own tasks in the official formats of the new exam (NPI ČR, from 11 April 2026). The official model tests are linked from the app, never copied. Awaiting native review.",
+  "tasks": [
+    {
+      "id": "s1-practice1",
+      "part": "speaking",
+      "task": 1,
+      "use": "practice1",
+      "title": "Home; food and drink",
+      "kind": "interview",
+      "topics": [
+        {
+          "topic": "Bydlení",
+          "topicEn": "Housing",
+          "questions": [
+            {
+              "q": "Kde bydlíte?",
+              "model": "Bydlím v Praze, na Smíchově."
+            },
+            {
+              "q": "V jakém bytě bydlíte?",
+              "model": "Bydlím v malém bytě ve třetím patře."
+            },
+            {
+              "q": "S kým bydlíte?",
+              "model": "Bydlím s manželem a s dcerou."
+            },
+            {
+              "q": "Co se vám líbí na vašem bytě?",
+              "model": "Líbí se mi velký balkon a hezký výhled."
+            }
+          ]
+        },
+        {
+          "topic": "Jídlo a pití",
+          "topicEn": "Food and drink",
+          "questions": [
+            {
+              "q": "Co rád/a jíte?",
+              "model": "Rád jím ryby a zeleninu."
+            },
+            {
+              "q": "Kde obědváte?",
+              "model": "Obědvám v restauraci blízko práce."
+            },
+            {
+              "q": "Vaříte doma?",
+              "model": "Ano, vařím doma skoro každý večer."
+            },
+            {
+              "q": "Co pijete ráno?",
+              "model": "Ráno piju kávu s mlékem."
+            }
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "s1-practice2",
+      "part": "speaking",
+      "task": 1,
+      "use": "practice2",
+      "title": "Work; the weather",
+      "kind": "interview",
+      "topics": [
+        {
+          "topic": "Práce",
+          "topicEn": "Work",
+          "questions": [
+            {
+              "q": "Kde pracujete?",
+              "model": "Pracuju v jedné IT firmě v centru."
+            },
+            {
+              "q": "Jak jezdíte do práce?",
+              "model": "Do práce jezdím metrem a tramvají."
+            },
+            {
+              "q": "Kdy začínáte pracovat?",
+              "model": "Začínám pracovat v devět hodin."
+            },
+            {
+              "q": "Co děláte v práci?",
+              "model": "V práci píšu e-maily a mám hodně porad."
+            }
+          ]
+        },
+        {
+          "topic": "Počasí",
+          "topicEn": "Weather",
+          "questions": [
+            {
+              "q": "Jaké je dnes počasí?",
+              "model": "Dnes je zima a trochu prší."
+            },
+            {
+              "q": "Jaké počasí máte rád/a?",
+              "model": "Mám rád teplo a slunce."
+            },
+            {
+              "q": "Co děláte, když prší?",
+              "model": "Když prší, zůstanu doma a čtu."
+            },
+            {
+              "q": "Jaké počasí je v zimě ve vaší zemi?",
+              "model": "V mé zemi je v zimě teplo, nesněží."
+            }
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "s1-mock1",
+      "part": "speaking",
+      "task": 1,
+      "use": "mock1",
+      "title": "Free time; shopping",
+      "kind": "interview",
+      "topics": [
+        {
+          "topic": "Volný čas",
+          "topicEn": "Free time",
+          "questions": [
+            {
+              "q": "Co děláte o víkendu?",
+              "model": "O víkendu chodím na procházky a vařím."
+            },
+            {
+              "q": "Sportujete?",
+              "model": "Ano, dvakrát týdně chodím plavat."
+            },
+            {
+              "q": "Jaký film jste viděl/a naposledy?",
+              "model": "Naposledy jsem viděla jeden český film v kině."
+            },
+            {
+              "q": "Kam rád/a chodíte večer?",
+              "model": "Večer rád chodím s kamarády do hospody."
+            }
+          ]
+        },
+        {
+          "topic": "Nakupování",
+          "topicEn": "Shopping",
+          "questions": [
+            {
+              "q": "Kde nakupujete jídlo?",
+              "model": "Jídlo nakupuju v supermarketu u domu."
+            },
+            {
+              "q": "Jak často nakupujete?",
+              "model": "Nakupuju asi dvakrát týdně."
+            },
+            {
+              "q": "Platíte kartou, nebo hotově?",
+              "model": "Většinou platím kartou nebo mobilem."
+            },
+            {
+              "q": "Co jste si koupil/a naposledy?",
+              "model": "Naposledy jsem si koupil novou bundu."
+            }
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "s1-mock2",
+      "part": "speaking",
+      "task": 1,
+      "use": "mock2",
+      "title": "Health; travel",
+      "kind": "interview",
+      "topics": [
+        {
+          "topic": "Zdraví",
+          "topicEn": "Health",
+          "questions": [
+            {
+              "q": "Jak často chodíte k lékaři?",
+              "model": "K lékaři chodím jednou za rok na prohlídku."
+            },
+            {
+              "q": "Co děláte, když jste nemocný/á?",
+              "model": "Když jsem nemocná, zůstanu doma a piju čaj."
+            },
+            {
+              "q": "Co děláte pro své zdraví?",
+              "model": "Jím hodně zeleniny a chodím pěšky."
+            },
+            {
+              "q": "Kde je nejbližší lékárna?",
+              "model": "Nejbližší lékárna je vedle stanice metra."
+            }
+          ]
+        },
+        {
+          "topic": "Cestování",
+          "topicEn": "Travel",
+          "questions": [
+            {
+              "q": "Kam rád/a cestujete?",
+              "model": "Rád cestuju k moři a na hory."
+            },
+            {
+              "q": "Jak cestujete nejraději?",
+              "model": "Nejraději cestuju vlakem, je to pohodlné."
+            },
+            {
+              "q": "Kde jste byl/a loni na dovolené?",
+              "model": "Loni jsem byla na dovolené v Chorvatsku."
+            },
+            {
+              "q": "Kam chcete jet příští rok?",
+              "model": "Příští rok chci jet do Rakouska."
+            }
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "s2-practice1",
+      "part": "speaking",
+      "task": 2,
+      "use": "practice1",
+      "title": "At the bakery; the garage",
+      "kind": "roleplay",
+      "cards": [
+        {
+          "situation": "Jste v cukrárně. Chcete objednat dort na narozeniny.",
+          "situationEn": "You’re at a cake shop and want to order a birthday cake.",
+          "cues": [
+            "Dort na sobotu?",
+            "Cena?",
+            "Čokoládový?",
+            "…? (vaše otázka)"
+          ],
+          "model": [
+            {
+              "who": "examiner",
+              "cs": "Dobrý den, co si přejete?"
+            },
+            {
+              "who": "you",
+              "cs": "Dobrý den, můžu si objednat dort na sobotu?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, na sobotu to půjde."
+            },
+            {
+              "who": "you",
+              "cs": "Kolik stojí velký dort?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Velký dort stojí osm set korun."
+            },
+            {
+              "who": "you",
+              "cs": "Máte také čokoládový dort?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, čokoládový je náš nejlepší."
+            },
+            {
+              "who": "you",
+              "cs": "Můžete na dort napsat jméno?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Samozřejmě, jaké jméno?"
+            }
+          ]
+        },
+        {
+          "situation": "Voláte do autoservisu. Máte problém s autem.",
+          "situationEn": "You’re phoning a garage about a problem with your car.",
+          "cues": [
+            "Termín?",
+            "Cena opravy?",
+            "Jak dlouho?",
+            "…? (vaše otázka)"
+          ],
+          "model": [
+            {
+              "who": "examiner",
+              "cs": "Autoservis Brzda, dobrý den."
+            },
+            {
+              "who": "you",
+              "cs": "Dobrý den, nefungují mi brzdy. Máte volný termín?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Můžete přijet zítra v osm."
+            },
+            {
+              "who": "you",
+              "cs": "Kolik bude stát oprava?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Asi tři tisíce korun."
+            },
+            {
+              "who": "you",
+              "cs": "Jak dlouho bude oprava trvat?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Auto bude hotové odpoledne."
+            },
+            {
+              "who": "you",
+              "cs": "Můžu platit kartou?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, kartou platit můžete."
+            }
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "s2-practice2",
+      "part": "speaking",
+      "task": 2,
+      "use": "practice2",
+      "title": "At the cinema; at the post office",
+      "kind": "roleplay",
+      "cards": [
+        {
+          "situation": "Jste v kině u pokladny.",
+          "situationEn": "You’re at the cinema box office.",
+          "cues": [
+            "Lístky na film v osm?",
+            "Cena?",
+            "Sleva pro děti?",
+            "…? (vaše otázka)"
+          ],
+          "model": [
+            {
+              "who": "examiner",
+              "cs": "Dobrý večer, co si přejete?"
+            },
+            {
+              "who": "you",
+              "cs": "Dobrý večer, máte ještě lístky na film v osm?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, máme ještě volná místa."
+            },
+            {
+              "who": "you",
+              "cs": "Kolik stojí jeden lístek?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Lístek stojí dvě stě dvacet korun."
+            },
+            {
+              "who": "you",
+              "cs": "Je nějaká sleva pro děti?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, děti do dvanácti let platí sto padesát."
+            },
+            {
+              "who": "you",
+              "cs": "Jak dlouho film trvá?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Dvě hodiny."
+            }
+          ]
+        },
+        {
+          "situation": "Jste na poště. Chcete poslat balík do Anglie.",
+          "situationEn": "You’re at the post office and want to send a parcel to England.",
+          "cues": [
+            "Cena?",
+            "Jak dlouho?",
+            "Krabice?",
+            "…? (vaše otázka)"
+          ],
+          "model": [
+            {
+              "who": "examiner",
+              "cs": "Dobrý den, co pro vás můžu udělat?"
+            },
+            {
+              "who": "you",
+              "cs": "Dobrý den, kolik stojí poslat balík do Anglie?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Do dvou kil to stojí šest set korun."
+            },
+            {
+              "who": "you",
+              "cs": "Jak dlouho bude balík cestovat?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Asi pět dní."
+            },
+            {
+              "who": "you",
+              "cs": "Máte také krabice?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, krabici si můžete koupit tady."
+            },
+            {
+              "who": "you",
+              "cs": "Můžu zaplatit kartou?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, můžete."
+            }
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "s2-mock1",
+      "part": "speaking",
+      "task": 2,
+      "use": "mock1",
+      "title": "At the gym; a language school",
+      "kind": "roleplay",
+      "cards": [
+        {
+          "situation": "Jste na recepci fitness centra.",
+          "situationEn": "You’re at the reception of a gym.",
+          "cues": [
+            "Otevírací doba?",
+            "Cena za měsíc?",
+            "Bazén?",
+            "…? (vaše otázka)"
+          ],
+          "model": [
+            {
+              "who": "examiner",
+              "cs": "Dobrý den, co pro vás můžu udělat?"
+            },
+            {
+              "who": "you",
+              "cs": "Dobrý den, jakou máte otevírací dobu?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Máme otevřeno každý den od šesti do dvaceti dvou."
+            },
+            {
+              "who": "you",
+              "cs": "Kolik stojí permanentka na měsíc?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Měsíc stojí tisíc dvě stě korun."
+            },
+            {
+              "who": "you",
+              "cs": "Je tady také bazén?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ne, bazén nemáme, ale máme saunu."
+            },
+            {
+              "who": "you",
+              "cs": "Můžu si to dnes vyzkoušet?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, první vstup je zdarma."
+            }
+          ]
+        },
+        {
+          "situation": "Voláte do jazykové školy.",
+          "situationEn": "You’re phoning a language school.",
+          "cues": [
+            "Kurz pro začátečníky?",
+            "Kdy?",
+            "Cena?",
+            "…? (vaše otázka)"
+          ],
+          "model": [
+            {
+              "who": "examiner",
+              "cs": "Jazyková škola Most, dobrý den."
+            },
+            {
+              "who": "you",
+              "cs": "Dobrý den, máte kurz češtiny pro začátečníky?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, máme."
+            },
+            {
+              "who": "you",
+              "cs": "Kdy je kurz?"
+            },
+            {
+              "who": "examiner",
+              "cs": "V pondělí a ve středu večer."
+            },
+            {
+              "who": "you",
+              "cs": "Kolik kurz stojí?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Celý semestr stojí šest tisíc korun."
+            },
+            {
+              "who": "you",
+              "cs": "Kolik lidí je ve skupině?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Maximálně deset."
+            }
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "s2-mock2",
+      "part": "speaking",
+      "task": 2,
+      "use": "mock2",
+      "title": "Buying clothes; at the doctor’s",
+      "kind": "roleplay",
+      "cards": [
+        {
+          "situation": "Jste v obchodě s oblečením.",
+          "situationEn": "You’re in a clothes shop.",
+          "cues": [
+            "Bunda v jiné barvě?",
+            "Velikost M?",
+            "Vyzkoušet?",
+            "…? (vaše otázka)"
+          ],
+          "model": [
+            {
+              "who": "examiner",
+              "cs": "Dobrý den, můžu vám pomoct?"
+            },
+            {
+              "who": "you",
+              "cs": "Dobrý den, máte tuhle bundu v jiné barvě?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Máme ji ještě v modré a v černé."
+            },
+            {
+              "who": "you",
+              "cs": "Máte ji ve velikosti M?"
+            },
+            {
+              "who": "examiner",
+              "cs": "V černé ano."
+            },
+            {
+              "who": "you",
+              "cs": "Můžu si ji vyzkoušet?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Jistě, kabinky jsou vzadu."
+            },
+            {
+              "who": "you",
+              "cs": "Je bunda ve slevě?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, je o dvacet procent levnější."
+            }
+          ]
+        },
+        {
+          "situation": "Jste na recepci u lékaře.",
+          "situationEn": "You’re at the reception of a doctor’s surgery.",
+          "cues": [
+            "Termín dnes?",
+            "Jak dlouho čekat?",
+            "Kartička pojišťovny?",
+            "…? (vaše otázka)"
+          ],
+          "model": [
+            {
+              "who": "examiner",
+              "cs": "Dobrý den, co potřebujete?"
+            },
+            {
+              "who": "you",
+              "cs": "Dobrý den, můžu dnes přijít k doktorovi?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, dnes ordinujeme do dvanácti."
+            },
+            {
+              "who": "you",
+              "cs": "Jak dlouho budu čekat?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Asi půl hodiny."
+            },
+            {
+              "who": "you",
+              "cs": "Potřebuju kartičku pojišťovny?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, kartičku potřebujete."
+            },
+            {
+              "who": "you",
+              "cs": "Můžu počkat venku?"
+            },
+            {
+              "who": "examiner",
+              "cs": "Ano, zavoláme vás."
+            }
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "s3-practice1",
+      "part": "speaking",
+      "task": 3,
+      "use": "practice1",
+      "title": "A trip to the mountains",
+      "kind": "story",
+      "heading": "Výlet na hory",
+      "question": "Co dělala Jana minulou sobotu?",
+      "panels": [
+        "train",
+        "mountains",
+        "rain",
+        "restaurant"
+      ],
+      "panelsAlt": [
+        "A train.",
+        "Mountains.",
+        "Rain.",
+        "A fork and knife: a restaurant."
+      ],
+      "model": "Minulou sobotu jela Jana vlakem na hory. Ráno bylo hezky a Jana šla na dlouhý výlet. Odpoledne ale začalo pršet a Jana neměla deštník. Proto šla do restaurace, dala si čaj a polévku a počkala, až přestane pršet.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "s3-practice2",
+      "part": "speaking",
+      "task": 3,
+      "use": "practice2",
+      "title": "A lost wallet",
+      "kind": "story",
+      "heading": "Ztracená peněženka",
+      "question": "Co se stalo Tomášovi včera?",
+      "panels": [
+        "shop",
+        "wallet",
+        "phone",
+        "smile"
+      ],
+      "panelsAlt": [
+        "A shop.",
+        "A wallet.",
+        "A mobile phone.",
+        "A happy face."
+      ],
+      "model": "Včera byl Tomáš v obchodě a nakupoval jídlo. U pokladny zjistil, že nemá peněženku. Byl smutný a hned zavolal do kavárny, kde byl ráno. Paní z kavárny řekla, že peněženku našla. Tomáš si pro ni šel a měl velkou radost.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "s3-mock1",
+      "part": "speaking",
+      "task": 3,
+      "use": "mock1",
+      "title": "A day off sick",
+      "kind": "story",
+      "heading": "Nemocný den",
+      "question": "Co dělal Petr v pondělí?",
+      "panels": [
+        "thermometer",
+        "doctor",
+        "pill",
+        "bed"
+      ],
+      "panelsAlt": [
+        "A thermometer.",
+        "A doctor's surgery.",
+        "A pill.",
+        "A bed."
+      ],
+      "model": "V pondělí ráno se Petr necítil dobře, měl horečku a bolela ho hlava. Proto nešel do práce, ale šel k lékaři. Lékař mu dal recept a Petr si v lékárně koupil léky. Potom šel domů, vzal si prášek a celý den ležel v posteli.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "s3-mock2",
+      "part": "speaking",
+      "task": 3,
+      "use": "mock2",
+      "title": "Moving house",
+      "kind": "story",
+      "heading": "Stěhování",
+      "question": "Co dělali Novákovi minulý víkend?",
+      "panels": [
+        "car",
+        "house",
+        "warning",
+        "people"
+      ],
+      "panelsAlt": [
+        "A car.",
+        "A house.",
+        "A warning sign: a problem.",
+        "A group of people."
+      ],
+      "model": "Minulý víkend se Novákovi stěhovali do nového bytu. V sobotu ráno dali všechny věci do auta a jeli do nového domu. Tam ale nefungoval výtah a byt byl ve čtvrtém patře. Naštěstí jim pomohli noví sousedi a večer byli všichni v bytě.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "s4-practice1",
+      "part": "speaking",
+      "task": 4,
+      "use": "practice1",
+      "title": "Going out on Saturday",
+      "kind": "agree",
+      "situation": "V sobotu chcete jít s kamarádem někam ven. Vyberte spolu jednu věc.",
+      "situationEn": "You and a friend want to go out on Saturday. Choose one thing together.",
+      "options": [
+        {
+          "picture": "film",
+          "en": "the cinema"
+        },
+        {
+          "picture": "swimming",
+          "en": "the swimming pool"
+        },
+        {
+          "picture": "museum",
+          "en": "a museum"
+        }
+      ],
+      "turns": [
+        {
+          "friend": "Ahoj! Kam půjdeme v sobotu?",
+          "model": "Co takhle do kina? Hrají nový český film."
+        },
+        {
+          "friend": "Do kina se mi nechce, byl jsem tam minulý týden. Co jiného?",
+          "model": "Tak pojďme do bazénu. Bude teplo a plavání je zdravé."
+        },
+        {
+          "friend": "Dobře, to zní dobře. A kdy?",
+          "model": "Třeba v deset ráno. Potom můžeme jít na oběd."
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "s4-practice2",
+      "part": "speaking",
+      "task": 4,
+      "use": "practice2",
+      "title": "A present for a colleague",
+      "kind": "agree",
+      "situation": "Kupujete s kamarádkou dárek k narozeninám pro kolegu. Vyberte spolu jeden dárek.",
+      "situationEn": "You and a friend are buying a birthday present for a colleague. Choose one together.",
+      "options": [
+        {
+          "picture": "book",
+          "en": "a book"
+        },
+        {
+          "picture": "wine",
+          "en": "a bottle of wine"
+        },
+        {
+          "picture": "flowers",
+          "en": "flowers"
+        }
+      ],
+      "turns": [
+        {
+          "friend": "Co koupíme Pavlovi k narozeninám?",
+          "model": "Pavel rád čte, tak mu kupme knihu."
+        },
+        {
+          "friend": "Knihu? Nevím, jestli víme, co čte. Co víno?",
+          "model": "Víno ne, Pavel nepije alkohol. Kniha je lepší, můžeme se zeptat jeho ženy."
+        },
+        {
+          "friend": "Dobře, tak knihu. Kdo ji koupí?",
+          "model": "Já ji koupím zítra po práci."
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "s4-mock1",
+      "part": "speaking",
+      "task": 4,
+      "use": "mock1",
+      "title": "A weekend trip",
+      "kind": "agree",
+      "situation": "Plánujete s kamarádem výlet na víkend. Vyberte spolu jeden výlet.",
+      "situationEn": "You and a friend are planning a weekend trip. Choose one together.",
+      "options": [
+        {
+          "picture": "mountains",
+          "en": "the mountains"
+        },
+        {
+          "picture": "bike",
+          "en": "a bike ride"
+        },
+        {
+          "picture": "swimming",
+          "en": "an outdoor pool"
+        }
+      ],
+      "turns": [
+        {
+          "friend": "Kam pojedeme o víkendu?",
+          "model": "Pojeďme na hory. Můžeme jít na dlouhou procházku."
+        },
+        {
+          "friend": "Na hory je to daleko. Co kolo?",
+          "model": "Na kole jsem nejezdil rok. Hory jsou lepší, pojedeme vlakem a ve vlaku si odpočineme."
+        },
+        {
+          "friend": "Tak jo. V kolik pojedeme?",
+          "model": "V sobotu v osm ráno z hlavního nádraží."
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "s4-mock2",
+      "part": "speaking",
+      "task": 4,
+      "use": "mock2",
+      "title": "Dinner out",
+      "kind": "agree",
+      "situation": "Chcete jít s kamarádkou na večeři. Vyberte spolu jedno místo.",
+      "situationEn": "You and a friend want to go out for dinner. Choose one place together.",
+      "options": [
+        {
+          "picture": "pizza",
+          "en": "a pizzeria"
+        },
+        {
+          "picture": "restaurant",
+          "en": "a Czech restaurant"
+        },
+        {
+          "picture": "coffee",
+          "en": "a café"
+        }
+      ],
+      "turns": [
+        {
+          "friend": "Kam půjdeme dnes na večeři?",
+          "model": "Co třeba pizza? Je levná a rychlá."
+        },
+        {
+          "friend": "Pizzu jsem měla včera. Nechceš něco jiného?",
+          "model": "Tak pojďme do české restaurace. Mají tam výborný guláš."
+        },
+        {
+          "friend": "Super, guláš mám ráda. Kdy se sejdeme?",
+          "model": "V sedm u metra, jestli ti to vyhovuje."
+        }
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

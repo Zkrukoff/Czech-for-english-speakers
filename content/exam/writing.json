@@ -1,0 +1,253 @@
+{
+  "$comment": "A2 exam practice (round 3, step 4): our own tasks in the official formats of the new exam (NPI ČR, from 11 April 2026). The official model tests are linked from the app, never copied. Awaiting native review.",
+  "tasks": [
+    {
+      "id": "w1-practice1",
+      "part": "writing",
+      "task": 1,
+      "use": "practice1",
+      "title": "Joining a gym",
+      "kind": "form",
+      "situation": "Chcete se přihlásit do fitness centra. Odpovězte na otázky ve formuláři.",
+      "situationEn": "You want to join a gym. Answer the questions on the form.",
+      "heading": "Fitness Vinohrady: přihláška",
+      "questions": [
+        {
+          "q": "Jaký sport děláte rád/a?",
+          "model": "Rád plavu a o víkendu jezdím na kole, když je hezky."
+        },
+        {
+          "q": "Proč chcete chodit do fitness centra?",
+          "model": "Celý den sedím v kanceláři, a proto se chci víc hýbat."
+        },
+        {
+          "q": "Kdy máte čas na cvičení?",
+          "model": "Mám čas v pondělí a ve středu večer po práci, asi od šesti."
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "w1-practice2",
+      "part": "writing",
+      "task": 1,
+      "use": "practice2",
+      "title": "Looking for a flat",
+      "kind": "form",
+      "situation": "Hledáte nový byt. Vyplňte formulář realitní kanceláře.",
+      "situationEn": "You’re looking for a new flat. Fill in the estate agent’s form.",
+      "heading": "Realitní kancelář Domov: hledám byt",
+      "questions": [
+        {
+          "q": "Jaký byt hledáte?",
+          "model": "Hledám byt 2+kk s balkonem, blízko metra a ne moc drahý."
+        },
+        {
+          "q": "S kým budete v bytě bydlet?",
+          "model": "Budu tam bydlet s manželkou a s naším malým synem Adamem."
+        },
+        {
+          "q": "Proč se chcete stěhovat?",
+          "model": "Náš byt je teď malý a máme to daleko do práce i do školky."
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "w1-mock1",
+      "part": "writing",
+      "task": 1,
+      "use": "mock1",
+      "title": "A nursery school",
+      "kind": "form",
+      "situation": "Přihlašujete dítě do školky. Odpovězte na otázky ve formuláři.",
+      "situationEn": "You’re enrolling your child at a nursery school. Answer the questions on the form.",
+      "heading": "Mateřská škola Sluníčko: přihláška",
+      "questions": [
+        {
+          "q": "Co vaše dítě rádo dělá?",
+          "model": "Moje dcera ráda kreslí, zpívá písničky a hraje si venku s míčem."
+        },
+        {
+          "q": "Proč jste si vybrali naši školku?",
+          "model": "Vaše školka je blízko našeho domu a má velkou zahradu pro děti."
+        },
+        {
+          "q": "Kdo bude dítě ze školky vyzvedávat?",
+          "model": "Většinou ji bude vyzvedávat manžel, v pátek ji vyzvednu já nebo babička."
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "w1-mock2",
+      "part": "writing",
+      "task": 1,
+      "use": "mock2",
+      "title": "Volunteering at the zoo",
+      "kind": "form",
+      "situation": "Chcete pracovat jako dobrovolník v zoo. Odpovězte na otázky ve formuláři.",
+      "situationEn": "You want to volunteer at the zoo. Answer the questions on the form.",
+      "heading": "Zoo Praha: dobrovolníci",
+      "questions": [
+        {
+          "q": "Jakou práci jste dělal/a dřív?",
+          "model": "Dřív jsem pracoval v obchodě se zvířaty a dva roky jsem venčil psy."
+        },
+        {
+          "q": "Proč chcete pracovat v zoo?",
+          "model": "Mám moc rád zvířata a chci dělat něco užitečného ve volném čase."
+        },
+        {
+          "q": "Kdy můžete pracovat?",
+          "model": "Můžu pracovat každou sobotu dopoledne a někdy také v neděli odpoledne."
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "w2-practice1",
+      "part": "writing",
+      "task": 2,
+      "use": "practice1",
+      "title": "A party for a colleague",
+      "kind": "email",
+      "situation": "Váš kolega Martin slaví narozeniny. Pozvěte ostatní kolegy na oslavu a napište jim další informace.",
+      "situationEn": "Your colleague Martin has a birthday. Invite the other colleagues to the party and give them the details.",
+      "to": "kolegove@firma.cz",
+      "subject": "Oslava Martinových narozenin",
+      "prompts": [
+        {
+          "cs": "KDY BUDE OSLAVA?",
+          "picture": "calendar"
+        },
+        {
+          "cs": "KDE BUDE OSLAVA?",
+          "picture": "pin"
+        },
+        {
+          "cs": "CO BUDETE JÍST?",
+          "picture": "plate"
+        },
+        {
+          "cs": "CO MAJÍ KOLEGOVÉ PŘINÉST?",
+          "picture": "gift"
+        },
+        {
+          "cs": "JAK SE TAM DOSTANOU?",
+          "picture": "tram"
+        }
+      ],
+      "model": "Ahoj všichni,\n\nMartin bude mít ve čtvrtek narozeniny, a proto chceme udělat oslavu. Bude v pátek v pět hodin po práci. Sejdeme se v restauraci U Kocoura na Malé Straně. Budeme jíst pizzu a dort. Přineste prosím každý sto korun na dárek. Do restaurace pojedete tramvají číslo 22 do zastávky Malostranské náměstí.\n\nTěším se na vás!\nLucie",
+      "nativeReviewed": false
+    },
+    {
+      "id": "w2-practice2",
+      "part": "writing",
+      "task": 2,
+      "use": "practice2",
+      "title": "Missing a class",
+      "kind": "email",
+      "situation": "Jste nemocný/á a nemůžete jít na kurz češtiny. Napište e-mail učitelce.",
+      "situationEn": "You’re ill and can’t go to your Czech class. Write to the teacher.",
+      "to": "jana.novotna@jazykovka.cz",
+      "subject": "Omluva z kurzu",
+      "prompts": [
+        {
+          "cs": "PROČ NEPŘIJDETE?",
+          "picture": "thermometer"
+        },
+        {
+          "cs": "JAK DLOUHO BUDETE DOMA?",
+          "picture": "calendar"
+        },
+        {
+          "cs": "CO POTŘEBUJETE OD UČITELKY?",
+          "picture": "book"
+        },
+        {
+          "cs": "CO BUDETE DĚLAT DOMA?",
+          "picture": "bed"
+        },
+        {
+          "cs": "KDY PŘIJDETE ZNOVU?",
+          "picture": "clock"
+        }
+      ],
+      "model": "Dobrý den, paní Novotná,\n\nomlouvám se, ale tento týden nepřijdu na kurz. Jsem nemocný, mám horečku a bolí mě v krku. Doktor řekl, že musím zůstat doma pět dní. Můžete mi prosím poslat domácí úkol e-mailem? Doma budu hodně spát a pít čaj, ale můžu také trochu studovat. Na kurz přijdu znovu příští středu.\n\nDěkuji a s pozdravem\nDaniel Brown",
+      "nativeReviewed": false
+    },
+    {
+      "id": "w2-mock1",
+      "part": "writing",
+      "task": 2,
+      "use": "mock1",
+      "title": "Renting a flat",
+      "kind": "email",
+      "situation": "Na internetu jste viděl/a inzerát na byt. Napište e-mail majiteli bytu.",
+      "situationEn": "You saw an advert for a flat online. Write to the owner.",
+      "to": "pronajem.vinohrady@seznam.cz",
+      "subject": "Pronájem bytu",
+      "prompts": [
+        {
+          "cs": "JAKÝ BYT HLEDÁTE?",
+          "picture": "house"
+        },
+        {
+          "cs": "KOLIK LIDÍ BUDE V BYTĚ BYDLET?",
+          "picture": "people"
+        },
+        {
+          "cs": "MÁTE ZVÍŘE?",
+          "picture": "dog"
+        },
+        {
+          "cs": "KDY SE CHCETE NASTĚHOVAT?",
+          "picture": "calendar"
+        },
+        {
+          "cs": "KDY SE MŮŽETE PŘIJÍT PODÍVAT?",
+          "picture": "clock"
+        }
+      ],
+      "model": "Dobrý den,\n\nviděla jsem váš inzerát na internetu. Hledám byt 2+kk na Vinohradech blízko metra. V bytě budeme bydlet dva, já a můj přítel. Máme malého psa, je hodný a tichý. Chtěli bychom se nastěhovat od prvního března. Můžu se na byt přijít podívat v úterý nebo ve čtvrtek po páté hodině?\n\nDěkuji za odpověď.\nS pozdravem\nMaria Lopez",
+      "nativeReviewed": false
+    },
+    {
+      "id": "w2-mock2",
+      "part": "writing",
+      "task": 2,
+      "use": "mock2",
+      "title": "A problem with an order",
+      "kind": "email",
+      "situation": "Koupil/a jste si boty v e-shopu, ale máte s nimi problém. Napište e-mail obchodu.",
+      "situationEn": "You bought shoes from an online shop, but there’s a problem. Write to the shop.",
+      "to": "info@botyshop.cz",
+      "subject": "Reklamace bot",
+      "prompts": [
+        {
+          "cs": "CO JSTE KOUPIL/A?",
+          "picture": "shoe"
+        },
+        {
+          "cs": "KDY JSTE TO KOUPIL/A?",
+          "picture": "calendar"
+        },
+        {
+          "cs": "JAKÝ JE PROBLÉM?",
+          "picture": "warning"
+        },
+        {
+          "cs": "CO CHCETE?",
+          "picture": "money"
+        },
+        {
+          "cs": "JAK VÁS MOHOU KONTAKTOVAT?",
+          "picture": "phone"
+        }
+      ],
+      "model": "Dobrý den,\n\nminulý týden, v pondělí 10. 3., jsem si u vás koupil černé zimní boty, velikost 43. Boty mi přišly v pátek, ale jsou malé a jedna bota je na straně rozbitá. Chtěl bych je vrátit a dostat zpátky peníze. Můžete mi prosím napsat, jak boty poslat? Můžete mi také zavolat na číslo 777 123 456.\n\nS pozdravem\nAhmed Karimi",
+      "nativeReviewed": false
+    }
+  ]
+}

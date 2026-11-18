@@ -44,7 +44,7 @@ export interface Attempt {
   /** Accepted but with missing/wrong diacritics. */
   diacriticSlip: boolean;
   answer: string;
-  context: 'lesson' | 'unitCheck' | 'review' | 'alphabet' | 'guide' | 'overheard';
+  context: 'lesson' | 'unitCheck' | 'review' | 'alphabet' | 'guide' | 'overheard' | 'exam';
   timestamp: number;
 }
 
