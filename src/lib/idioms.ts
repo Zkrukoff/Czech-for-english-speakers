@@ -1,3 +1,5 @@
+import { pragueNow } from './pragueTime';
+
 /**
  * Idiom of the week: the same idiom for everyone in a given ISO week (Monday
  * to Sunday), cycling through the list in order.
@@ -15,7 +17,7 @@ export function weekIndex(date: Date): number {
   return Math.floor((mondayDay(date) - Date.UTC(2026, 0, 5) / 86_400_000) / 7);
 }
 
-export function idiomOfWeek<T>(idioms: T[], date = new Date()): T | undefined {
+export function idiomOfWeek<T>(idioms: T[], date = pragueNow()): T | undefined {
   if (!idioms.length) return undefined;
   const n = idioms.length;
   return idioms[((weekIndex(date) % n) + n) % n];

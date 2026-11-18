@@ -118,6 +118,66 @@
   },
   "exercises": [
     {
+      "id": "u02-l01-lis1",
+      "type": "multipleChoice",
+      "prompt": "What does the customer order?",
+      "listen": "Dám si kávu s mlékem, prosím.",
+      "options": [
+        "A coffee with milk",
+        "A tea with milk",
+        "A coffee and some water"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "A coffee with milk"
+      ],
+      "hints": [
+        {
+          "wrong": "A tea with milk",
+          "explain": "Tea is \"čaj\". \"Kávu\" is coffee (accusative of káva)."
+        },
+        {
+          "wrong": "A coffee and some water",
+          "explain": "Water (\"vodu\") comes later in the dialogue. Here it's \"kávu s mlékem\", coffee with milk."
+        }
+      ],
+      "why": "\"Dám si kávu s mlékem, prosím.\" I'll have a coffee with milk, please.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l01-lis2",
+      "type": "multipleChoice",
+      "prompt": "What is the waiter asking?",
+      "listen": "Perlivou, nebo neperlivou?",
+      "options": [
+        "Sparkling or still?",
+        "Big or small?",
+        "Hot or cold?"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Sparkling or still?"
+      ],
+      "hints": [
+        {
+          "wrong": "Big or small?",
+          "explain": "Big or small would be \"velkou, nebo malou?\". \"Perlivou\" is sparkling."
+        },
+        {
+          "wrong": "Hot or cold?",
+          "explain": "That would be \"teplou, nebo studenou?\". \"Perlivou, nebo neperlivou\" is sparkling or still."
+        }
+      ],
+      "why": "\"Perlivou, nebo neperlivou?\" Sparkling or still?",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l01-e1",
       "type": "fillEnding",
       "prompt": "Dám si [[káv___|káva|acc|object]], prosím.",

@@ -2,6 +2,8 @@ import { course } from '@/content';
 import type { Lesson, Stop } from '@/content/loader';
 import { useLessonProgress, useStamps } from '@/db/hooks';
 import type { StopState } from './LineStrip';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { db } from '@/db/db';
 
 export interface LinePosition {
   stateOf: (stop: Stop) => StopState;
@@ -18,6 +20,7 @@ export interface LinePosition {
  */
 export function useLinePosition(): LinePosition {
   const lessons = useLessonProgress();
+  const alphabetPractised = useLiveQuery(async () => !!(await db.attempts.filter((a) => a.context === 'alphabet').first()), []) ?? false;
   const stamps = useStamps() ?? [];
   const stamped = new Set(stamps.map((s) => s.id));
   const all = course.units.flatMap((u) => u.lessonList);
@@ -34,7 +37,8 @@ export function useLinePosition(): LinePosition {
     if (stop.kind === 'planned') return 'vyluka';
     if (current && stop.line === current.line && stop.slug === current.slug) return 'current';
     if (stop.kind === 'unit') return stamped.has(`unit:${stop.unit}`) || (current && stop.position < current.position) ? 'done' : 'open';
-    if (stop.kind === 'pronunciation') return practised > 0 ? 'done' : 'open';
+    // Same rule as the station wall: done once pronunciation has actually been practised.
+    if (stop.kind === 'pronunciation') return alphabetPractised ? 'done' : 'open';
     if (stop.kind === 'milestone') return stamped.has(`milestone:${stop.milestone.id}:${stop.milestone.part}`) ? 'done' : 'open';
     return 'open';
   };

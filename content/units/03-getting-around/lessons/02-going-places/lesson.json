@@ -186,6 +186,66 @@
   },
   "exercises": [
     {
+      "id": "u03-l02-lis1",
+      "type": "multipleChoice",
+      "prompt": "Where is Jakub going for the weekend?",
+      "listen": "Jedu na víkend do Olomouce.",
+      "options": [
+        "To Olomouc",
+        "To Brno",
+        "Home"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "To Olomouc"
+      ],
+      "hints": [
+        {
+          "wrong": "To Brno",
+          "explain": "Brno would be \"do Brna\". He says \"do Olomouce\"."
+        },
+        {
+          "wrong": "Home",
+          "explain": "Home would be \"domů\". He's going \"do Olomouce\"."
+        }
+      ],
+      "why": "\"Jedu na víkend do Olomouce.\" I'm going to Olomouc for the weekend. do + genitive.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l02-lis2",
+      "type": "multipleChoice",
+      "prompt": "How will Jakub get to the station?",
+      "listen": "Ne, pojedu tramvají.",
+      "options": [
+        "By tram",
+        "On foot",
+        "By bus"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "By tram"
+      ],
+      "hints": [
+        {
+          "wrong": "On foot",
+          "explain": "That's what Eva asked (\"pěšky?\"). He says no: \"pojedu tramvají\", I'll go by tram."
+        },
+        {
+          "wrong": "By bus",
+          "explain": "By bus would be \"autobusem\". \"Tramvají\" is by tram."
+        }
+      ],
+      "why": "\"Ne, pojedu tramvají.\" No, I'll take the tram. Instrumental for the means: tramvají.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l02-e1",
       "type": "conjugate",
       "verb": "jet",

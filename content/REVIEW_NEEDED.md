@@ -285,3 +285,20 @@ check first. When an item is confirmed or corrected, remove it here and set
 | Where | Text | Question |
 |---|---|---|
 | u01-l03 note | *Česko (Czechia) is the everyday short name: Bydlím v Česku. Česká republika … z České republiky.* | Fair description of how each is used? |
+
+## Round 3 · P1 Listening
+
+| Where | Text | Question |
+|---|---|---|
+| all 18 Line A lessons | 36 listening questions (`<lesson>-lis1/2`): the line played (a dialogue line or a short recombination), the question and wrong-answer explanations | Natural? Is each recombination something a Czech would say (e.g. *Dám si kávu s mlékem, prosím.*)? |
+| dialogue step | *Poslechněte si · listen*, *Ukázat text · show the text*, *Přehrávám…*, *Poslechnout* | Natural as button labels? |
+| labels | *Computer voice · hlas počítače* | Natural? |
+
+## Round 3 · A7 Phrase deck (*Fráze*)
+
+| Where | Text | Question |
+|---|---|---|
+| phrases/phrases.json | 48 phrases in 8 situations; 26 are entries from the official A1 inventory (NPI ČR), the rest from our lessons and guides | Natural as whole sentences? Right register (vy/ty)? |
+| phrases | *Vystupujete?* (ours) | Is this what you say to get past someone to the door? |
+| phrases | *Platím hotově.*, *Zaplatíme, prosím.*, *Je byt ještě volný?* | Natural? |
+| situation names | *Když nerozumíte, Kavárna a pekárna, Placení, V práci, Telefon, U lékaře a v lékárně, Doprava, Byt* | Natural titles? |

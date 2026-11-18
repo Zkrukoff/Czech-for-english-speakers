@@ -177,6 +177,66 @@
   },
   "exercises": [
     {
+      "id": "u01-l02-lis1",
+      "type": "multipleChoice",
+      "prompt": "What does she say after her name?",
+      "listen": "Ahoj, já jsem Sarah. Těší mě.",
+      "options": [
+        "Nice to meet you",
+        "See you tomorrow",
+        "Thank you"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Nice to meet you"
+      ],
+      "hints": [
+        {
+          "wrong": "See you tomorrow",
+          "explain": "That would be \"Uvidíme se zítra\". \"Těší mě\" is \"nice to meet you\"."
+        },
+        {
+          "wrong": "Thank you",
+          "explain": "Thanks is \"děkuju\". \"Těší mě\" is \"nice to meet you\"."
+        }
+      ],
+      "why": "\"Ahoj, já jsem Sarah. Těší mě.\" Hi, I'm Sarah. Nice to meet you.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l02-lis2",
+      "type": "multipleChoice",
+      "prompt": "Who is Emma?",
+      "listen": "To je moje kolegyně. Jmenuje se Emma.",
+      "options": [
+        "Her colleague",
+        "Her sister",
+        "Her teacher"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Her colleague"
+      ],
+      "hints": [
+        {
+          "wrong": "Her sister",
+          "explain": "A sister would be \"sestra\". \"Kolegyně\" is a (female) colleague."
+        },
+        {
+          "wrong": "Her teacher",
+          "explain": "A teacher would be \"učitelka\". \"Kolegyně\" is a colleague."
+        }
+      ],
+      "why": "\"To je moje kolegyně. Jmenuje se Emma.\" That's my colleague. Her name's Emma.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u01-l02-e1",
       "type": "conjugate",
       "verb": "být",

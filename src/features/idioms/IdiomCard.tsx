@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom';
 import { course } from '@/content';
 import { idiomOfWeek, isoWeek } from '@/lib/idioms';
 import { IdiomPlate } from './IdiomPlate';
+import { pragueNow } from '@/lib/pragueTime';
 
 /** Home: this week's idiom on its plate, with the meaning underneath. */
 export function IdiomCard() {
-  const now = new Date();
+  const now = pragueNow();
   const idiom = idiomOfWeek(course.idioms, now);
   if (!idiom) return null;
   return (

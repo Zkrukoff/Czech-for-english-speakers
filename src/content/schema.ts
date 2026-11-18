@@ -250,6 +250,10 @@ export const MultipleChoiceExerciseSchema = z.object({
   prompt: z.string().min(1),
   /** Optional Czech shown above the question (a sign, a line someone says). */
   cs: z.string().optional(),
+  /** Listening: Czech that is played, never shown before answering (put it in `why` for afterwards). */
+  listen: z.string().optional(),
+  /** Recording of `listen`, when there is one. */
+  audio: z.string().optional(),
   options: z.array(z.string().min(1)).min(2).max(5),
   /** Language of the options, for lang attributes and fonts. */
   optionsLang: z.enum(['en', 'cs']).default('en'),
@@ -551,7 +555,7 @@ export const StopSchema = z.discriminatedUnion('kind', [
 export const LinesSchema = z.object({
   $comment: z.string().optional(),
   verified: z.object({ source: z.string().min(1), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), note: z.string().optional() }),
-  milestones: z.array(z.object({ id, name: z.string().min(1), en: z.string().min(1), summary: z.string().min(1), level: LevelSchema })),
+  milestones: z.array(z.object({ id, name: z.string().min(1), en: z.string().min(1), summary: z.string().min(1), level: LevelSchema, /** What the check is called, when it doesn't cover a whole level (e.g. "Part 1 check"). */ checkLabel: z.string().optional() })),
   lines: z
     .array(
       z.object({
@@ -749,6 +753,39 @@ export const IdiomsSchema = z.object({
     .min(1),
 });
 
+export const PhrasesSchema = z.object({
+  $comment: z.string().optional(),
+  situations: z
+    .array(
+      z.object({
+        id,
+        title: z.string().min(1),
+        titleCs: z.string().min(1),
+        phrases: z
+          .array(
+            z.object({
+              id,
+              cs: z.string().min(1),
+              en: z.string().min(1),
+              /** Accepted typed answers (answer patterns); defaults to `cs` with optional final punctuation. */
+              answers: z.array(z.string().min(1)).optional(),
+              note: z.string().optional(),
+              /** Where it comes from: the official A1 inventory entry, a lesson, a guide, or ours. */
+              source: z.discriminatedUnion('kind', [
+                z.object({ kind: z.literal('inventory'), ref: z.string().min(1) }),
+                z.object({ kind: z.literal('lesson'), ref: z.string().min(1) }),
+                z.object({ kind: z.literal('guide'), ref: z.string().min(1) }),
+                z.object({ kind: z.literal('ours') }),
+              ]),
+              nativeReviewed: reviewed,
+            }),
+          )
+          .min(3),
+      }),
+    )
+    .min(1),
+});
+
 /**
  * Real-speaker recordings (D6). Files live in public/audio/<id>.<ext>.
  * Exercises that need a recording stay hidden until it is listed here.
@@ -796,6 +833,8 @@ export type OverheardScene = z.infer<typeof OverheardSceneSchema>;
 export type HolidayLesson = z.infer<typeof HolidayLessonSchema>;
 export type EmergencyNumbers = z.infer<typeof EmergencyNumbersSchema>;
 export type EmergencyCards = z.infer<typeof EmergencyCardsSchema>;
+export type PhraseSituation = z.infer<typeof PhrasesSchema>['situations'][number];
+export type DeckPhrase = PhraseSituation['phrases'][number];
 export type Idiom = z.infer<typeof IdiomsSchema>['idioms'][number];
 export type HolidaysData = z.infer<typeof HolidaysSchema>;
 export type Holiday = HolidaysData['holidays'][number];

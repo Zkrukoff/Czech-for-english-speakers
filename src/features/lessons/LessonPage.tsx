@@ -13,6 +13,7 @@ import { ExerciseRunner, type ExerciseOutcome } from '@/features/exercises/Exerc
 import { VocabList } from './VocabList';
 import { DialogueView } from './DialogueView';
 import { PracticeSummary } from './PracticeSummary';
+import { useLessonPractice } from './useLessonPractice';
 import { useLessonAnswerHandler } from './useLessonAnswerHandler';
 import { IconArrowLeft, IconArrowRight, IconBook, IconHacek } from '@/components/icons';
 import { LineBadge } from '@/components/ui';
@@ -44,6 +45,8 @@ function LessonView({ lesson }: { lesson: Lesson }) {
   const [outcomes, setOutcomes] = useState<ExerciseOutcome[] | null>(null);
   const [run, setRun] = useState(0);
   const onAnswer = useLessonAnswerHandler();
+  // P4: a couple of items from earlier lessons, mixed in.
+  const practice = useLessonPractice(lesson, run);
   const stepIndex = STEPS.findIndex((s) => s.id === step);
   const nextLesson = unit.lessonList[lesson.number];
 
@@ -126,9 +129,10 @@ function LessonView({ lesson }: { lesson: Lesson }) {
             next={nextLesson ? { to: `/lessons/${nextLesson.id}`, label: `Next: ${nextLesson.title}` } : { to: unitCheckPath(unit.id), label: 'Unit check: what can you do now?' }}
           />
         ) : (
-          <ExerciseRunner
+          practice && <ExerciseRunner
             key={run}
-            exercises={lesson.exercises}
+            exercises={practice.exercises}
+            fromBefore={practice.fromBefore}
             context="lesson"
             retryMissed
             onAnswer={onAnswer}

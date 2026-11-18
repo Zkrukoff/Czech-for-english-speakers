@@ -1,5 +1,5 @@
 import type { Course } from '@/content/loader';
-import type { Exercise, VocabItem } from '@/content/schema';
+import type { DeckPhrase, Exercise, PhraseSituation, VocabItem } from '@/content/schema';
 import type { CellKey } from '@/lib/lens';
 import { vzorDrill } from '@/lib/drills/vzor';
 
@@ -85,6 +85,11 @@ export function exerciseForCard(itemKey: string, course: Course, rotation = 0): 
     return course.exercisesById.get(ids[rotation % ids.length]!)?.exercise ?? null;
   }
   if (itemKey.startsWith('ex:')) return course.exercisesById.get(itemKey.slice(3))?.exercise ?? null;
+  if (itemKey.startsWith('chunk:')) {
+    const hit = course.phrasesById.get(itemKey.slice(6));
+    const situation = hit && course.phrases.find((s) => s.id === hit.situationId);
+    return hit && situation ? phraseExercise(hit.phrase, situation, rotation) : null;
+  }
   if (itemKey.startsWith('vocab:')) {
     const v = course.vocabById.get(itemKey.slice(6));
     return v ? vocabExercise(v.item, [...course.vocabById.values()].map((x) => x.item)) : null;
@@ -124,5 +129,45 @@ export function ownWordExercise(word: { id?: number; cs: string; en?: string; no
     hints: [],
     skills: ['vocab:own'],
     nativeReviewed: false,
+  };
+}
+
+/**
+ * A phrase-deck card (A7). The first time: recognise it (the Czech shown,
+ * three meanings from the same situation to choose from). After that:
+ * produce it (English → Czech, typed).
+ */
+export function phraseExercise(phrase: DeckPhrase, situation: PhraseSituation, reps: number): Exercise {
+  const note = phrase.note ? ` ${phrase.note}` : '';
+  const base = { id: `phrase-${phrase.id}`, skills: ['vocab:phrase'], nativeReviewed: phrase.nativeReviewed };
+  if (reps === 0) {
+    const others = situation.phrases.filter((p) => p.id !== phrase.id);
+    // Two neighbours in the situation, so the distractors are stable and plausible.
+    const i = situation.phrases.findIndex((p) => p.id === phrase.id);
+    const wrong = [others[i % others.length]!, others[(i + 1) % others.length]!];
+    const options = [phrase.en, ...wrong.map((w) => w.en)];
+    const order = [0, 1, 2].sort((a, b) => ((a * 7 + i) % 3) - ((b * 7 + i) % 3));
+    return {
+      ...base,
+      type: 'multipleChoice',
+      prompt: 'What does this mean?',
+      cs: phrase.cs,
+      options: order.map((k) => options[k]!),
+      optionsLang: 'en',
+      answers: [phrase.en],
+      hints: wrong.map((w) => ({ wrong: w.en, explain: `That one is “${w.cs}”.` })),
+      why: `${phrase.cs} = ${phrase.en}.${note}`,
+    };
+  }
+  const end = /[.?!]$/.exec(phrase.cs)?.[0];
+  const literalCs = phrase.cs.replace(/[.?!]$/, '');
+  return {
+    ...base,
+    type: 'translate',
+    direction: 'en-cs',
+    prompt: phrase.en,
+    answers: phrase.answers ?? [end ? `${literal(literalCs)}[${end}]` : literal(phrase.cs)],
+    why: `${phrase.cs}${note}`,
+    hints: [],
   };
 }

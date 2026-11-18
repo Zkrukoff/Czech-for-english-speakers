@@ -12,7 +12,7 @@ export function stopSummary(stop: Stop): { kicker: string; title: string } {
       return { kicker: 'Start here', title: 'Pronunciation and the alphabet' };
     case 'milestone': {
       const m = course.milestones.find((x) => x.id === stop.milestone.id);
-      return { kicker: `Milestone · ${m?.name ?? ''}`, title: stop.milestone.part === 'review' ? 'Review of everything so far' : `${stop.milestone.level} can-do check` };
+      return { kicker: `Milestone · ${m?.name ?? ''}`, title: stop.milestone.part === 'review' ? 'Review of everything so far' : m?.checkLabel ?? `${stop.milestone.level} can-do check` };
     }
     default:
       return { kicker: 'Výluka', title: 'Still being written' };

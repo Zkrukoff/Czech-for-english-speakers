@@ -46,17 +46,20 @@ describe('new exercise types', () => {
     expect(withExercise(bad).errors.join()).toMatch(/not an imperfective \/ perfective pair/);
   });
 
-  it('hides listening exercises until their recording exists, and shows them once it does', () => {
-    const ex = { id: 'x-listen', type: 'listenType', audio: 'rec-dobry-den', cs: 'Dobrý den.', answers: ['Dobrý den'] };
-    const hidden = withExercise(ex);
-    expect(hidden.course.hiddenExercises).toContainEqual({ id: 'x-listen', audio: 'rec-dobry-den' });
-    expect(hidden.course.hiddenExercises).toContainEqual({ id: 'tr-hear-doors', audio: 'rec-ukoncete-vystup' });
-    expect(hidden.course.exercisesById.has('x-listen')).toBe(false);
-    expect(hidden.course.units[0]!.lessonList[0]!.exercises.some((e) => e.id === 'x-listen')).toBe(false);
-    const shown = withExercise(ex, (json) => {
-      json['audio/manifest.json'].recordings.push({ id: 'rec-dobry-den', file: 'rec-dobry-den.mp3', cs: 'Dobrý den.', speaker: 'Test', licence: 'CC BY 4.0' });
+  it('hides minimal pairs until their recording exists; typed listening uses the device voice meanwhile', () => {
+    const pair = { id: 'x-pair', type: 'minimalPair', audio: 'rec-test-pair', pair: ['pas', 'pás'], sound: 'short / long a', answers: ['pás'] };
+    const hidden = withExercise(pair);
+    expect(hidden.course.hiddenExercises).toContainEqual({ id: 'x-pair', audio: 'rec-test-pair' });
+    expect(hidden.course.exercisesById.has('x-pair')).toBe(false);
+    expect(hidden.course.hiddenExercises).toContainEqual({ id: 'pron-p1', audio: 'rec-rada' });
+    const shown = withExercise(pair, (json) => {
+      json['audio/manifest.json'].recordings.push({ id: 'rec-test-pair', file: 'rec-test-pair.mp3', cs: 'pás', speaker: 'Test', licence: 'CC BY 4.0' });
     });
-    expect(shown.course.exercisesById.has('x-listen')).toBe(true);
+    expect(shown.course.exercisesById.has('x-pair')).toBe(true);
+    // Typed listening stays in, played by the computer voice until it's recorded.
+    const listen = withExercise({ id: 'x-listen', type: 'listenType', audio: 'rec-dobry-den', cs: 'Dobrý den.', answers: ['Dobrý den'] });
+    expect(listen.course.exercisesById.has('x-listen')).toBe(true);
+    expect(listen.course.exercisesById.has('tr-hear-doors')).toBe(true);
   });
 
   it('checks choices exactly and speaking by self-assessment', () => {

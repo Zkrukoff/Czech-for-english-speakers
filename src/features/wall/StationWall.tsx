@@ -43,7 +43,7 @@ export function StationWall({ blocks }: { blocks: WallBlock[] }) {
               <span className="block border-2 border-ink" ref={(el) => { refs.current[i] = el?.querySelector('svg') ?? null; }}>
                 <WallBlockSvg block={b} />
               </span>
-              <span className="mt-1.5 block font-mono text-[0.65rem] uppercase leading-tight tracking-wide text-ink-2 sm:text-xs">{b.name}</span>
+              <span className="mt-1.5 block font-mono text-2xs uppercase leading-tight tracking-wide text-ink-2 sm:text-xs">{b.name}</span>
             </>
           );
           return (

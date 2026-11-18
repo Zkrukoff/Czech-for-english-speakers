@@ -6,7 +6,9 @@
   ],
   "explanation": "explanation.md",
   "grammarRefs": [],
-  "grammarPreview": ["case:vocative"],
+  "grammarPreview": [
+    "case:vocative"
+  ],
   "nativeReviewed": false,
   "vocab": [
     {
@@ -176,6 +178,66 @@
     ]
   },
   "exercises": [
+    {
+      "id": "u01-l04-lis1",
+      "type": "multipleChoice",
+      "prompt": "What does Lucie ask Petr?",
+      "listen": "Ahoj, Petře! Kam jdeš?",
+      "options": [
+        "Where he's going",
+        "How he is",
+        "Where he lives"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Where he's going"
+      ],
+      "hints": [
+        {
+          "wrong": "How he is",
+          "explain": "That would be \"Jak se máš?\". \"Kam jdeš?\" means \"where are you going?\"."
+        },
+        {
+          "wrong": "Where he lives",
+          "explain": "That would be \"Kde bydlíš?\". \"Kam jdeš?\" asks where you're going."
+        }
+      ],
+      "why": "\"Ahoj, Petře! Kam jdeš?\" Hi, Petr! Where are you going? Petr → Petře: the vocative.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l04-lis2",
+      "type": "multipleChoice",
+      "prompt": "Where is Petr going?",
+      "listen": "Na trh. A ty?",
+      "options": [
+        "To the market",
+        "Home",
+        "To work"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "To the market"
+      ],
+      "hints": [
+        {
+          "wrong": "Home",
+          "explain": "Home would be \"domů\". \"Na trh\" is to the market."
+        },
+        {
+          "wrong": "To work",
+          "explain": "To work would be \"do práce\". \"Na trh\" is to the market."
+        }
+      ],
+      "why": "\"Na trh. A ty?\" To the market. And you?",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
     {
       "id": "u01-l04-e1",
       "type": "translate",

@@ -36,6 +36,8 @@ interface Props {
   itemKeyOf?: (exercise: Exercise) => string;
   /** Today's ride: show progress as the stations of the route instead of dots. */
   route?: string[];
+  /** Ids of items mixed in from earlier lessons (interleaving), marked as such. */
+  fromBefore?: Set<string>;
 }
 
 interface QueueItem {
@@ -43,7 +45,7 @@ interface QueueItem {
   firstTry: boolean;
 }
 
-export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFinish, itemKeyOf, route }: Props) {
+export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFinish, itemKeyOf, route, fromBefore }: Props) {
   const settings = useSettings();
   const [queue, setQueue] = useState<QueueItem[]>(() => exercises.map((exercise) => ({ exercise, firstTry: true })));
   const [index, setIndex] = useState(0);
@@ -111,6 +113,9 @@ export function ExerciseRunner({ exercises, context, retryMissed, onAnswer, onFi
 
       <Card key={`${exercise.id}-${index}`} corner="tr" className="block" >
         <div className="p-5 sm:p-6">
+        {fromBefore?.has(exercise.id) && (
+          <p className="label-board mb-2 text-ink-3"><span lang="cs">Z dřívějška</span> · from before</p>
+        )}
         <ExercisePrompt exercise={exercise} />
         <div className="mt-5">
           {exercise.type === 'caseSelect' ? (

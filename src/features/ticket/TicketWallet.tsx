@@ -25,7 +25,7 @@ export function TicketWallet() {
     <section id="ticket" aria-labelledby="ticket-h" className="mb-12">
       <h2 id="ticket-h" className="label-board mb-4 text-ink-3"><span lang="cs">Jízdenka</span> · your ticket</h2>
       {t.days === 0 && !t.justExpired ? (
-        <p className="text-ink-2">No ticket yet. Answer one exercise and a 24-hour ticket appears here.</p>
+        <p className="text-ink-2">No ticket yet. Five answers in a day (or clearing your reviews) and a 24-hour ticket appears here.</p>
       ) : (
         <div className="grid gap-8 md:grid-cols-2">
           <StreakTicket t={t} />
@@ -77,7 +77,7 @@ export function TicketWallet() {
         </div>
       )}
       <p className="mt-4 text-xs text-ink-3">
-        Ticket types as sold by PID, checked {TICKET_SOURCE.date} on <a href={TICKET_SOURCE.url} className="underline" target="_blank" rel="noreferrer">pid.cz</a>. Days start at 04:00. You can switch the ticket off in Settings.
+        Ticket types as sold by PID, checked {TICKET_SOURCE.date} on <a href={TICKET_SOURCE.url} className="underline" target="_blank" rel="noreferrer">pid.cz</a>. Days start at 04:00 Prague time. You can switch the ticket off in Settings.
       </p>
     </section>
   );

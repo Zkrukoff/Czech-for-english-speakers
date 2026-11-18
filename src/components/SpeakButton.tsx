@@ -1,20 +1,8 @@
 import { lensPlain } from '@/lib/lens';
-import { useEffect, useState } from 'react';
-import { czechVoices, speech } from '@/lib/audio/speech';
+import { speech } from '@/lib/audio/speech';
+import { useHasCzechVoice } from '@/lib/audio/useCzechVoice';
 import { useSettings } from '@/db/settings';
 
-/** Voices load asynchronously in most browsers. */
-function useHasCzechVoice(): boolean {
-  const [has, setHas] = useState(() => czechVoices().length > 0);
-  useEffect(() => {
-    if (typeof speechSynthesis === 'undefined') return;
-    const update = () => setHas(czechVoices().length > 0);
-    speechSynthesis.addEventListener('voiceschanged', update);
-    update();
-    return () => speechSynthesis.removeEventListener('voiceschanged', update);
-  }, []);
-  return has;
-}
 
 export function SpeakButton({ text: raw, audioId, label = 'Listen' }: { text: string; audioId?: string; label?: string }) {
   const text = lensPlain(raw);

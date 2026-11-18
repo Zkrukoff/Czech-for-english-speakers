@@ -61,7 +61,7 @@ export function LineStrip({ line, stateOf, homeKey, compact = false }: Props) {
                   {/* Name, angled like on the real strip maps. */}
                   <span
                     lang="cs"
-                    className={`absolute origin-bottom-left -rotate-45 whitespace-nowrap leading-none ${compact ? 'text-[11px]' : 'text-sm'} ${
+                    className={`absolute origin-bottom-left -rotate-45 whitespace-nowrap leading-none ${compact ? 'text-2xs' : 'text-sm'} ${
                       state === 'current' ? 'font-bold text-ink' : state === 'vyluka' ? 'text-ink-3' : 'font-medium text-ink-2'
                     } group-hover:text-ink group-hover:underline`}
                     style={{ left: 'calc(50% + 4px)', bottom: compact ? 42 : 64 }}
@@ -89,7 +89,7 @@ export function LineStrip({ line, stateOf, homeKey, compact = false }: Props) {
                     </span>
                   )}
                   {isHome && (
-                    <span aria-hidden className="absolute -bottom-0.5 label-board whitespace-nowrap text-[10px] text-ink-2">
+                    <span aria-hidden className="absolute -bottom-0.5 label-board whitespace-nowrap text-2xs text-ink-2">
                       domov
                     </span>
                   )}

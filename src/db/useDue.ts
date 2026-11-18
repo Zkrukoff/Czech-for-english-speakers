@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { dueSummary, type DueSummary } from './srs';
+import { isResolvable } from '@/lib/srs/resolvable';
 
 /** Current time, refreshed every minute so "due now" counts stay correct while the app is open. */
 export function useNow(intervalMs = 60_000): number {
@@ -14,5 +15,5 @@ export function useNow(intervalMs = 60_000): number {
 
 export function useDueSummary(): DueSummary | undefined {
   const now = useNow();
-  return useLiveQuery(() => dueSummary(now), [now]);
+  return useLiveQuery(() => dueSummary(now, undefined, isResolvable), [now]);
 }

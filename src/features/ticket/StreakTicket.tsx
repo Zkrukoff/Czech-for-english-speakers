@@ -5,7 +5,7 @@ import { daysCs, daysEn, shortDate, vylukyCs, type TicketState } from '@/lib/str
  * The ticket that grows with each day you practise. Playful, never a guilt
  * trip: no notifications, and an expired ticket keeps its place in the wallet.
  */
-export function StreakTicket({ t }: { t: TicketState & { today: string } }) {
+export function StreakTicket({ t }: { t: TicketState & { today: string; answersToday?: number; needed?: number } }) {
   if (t.days === 0 && t.justExpired) {
     const last = t.justExpired;
     return (
@@ -18,7 +18,7 @@ export function StreakTicket({ t }: { t: TicketState & { today: string } }) {
           stamp={<span className="label-board text-center">Neplatná</span>}
         />
         <p className="mt-3 text-ink-2">
-          It happens: the tram still runs. One exercise validates a new ticket. Your last one ran{' '}
+          It happens: the tram still runs. Five answers validate a new ticket. Your last one ran{' '}
           <span className="font-semibold text-ink">{daysEn(last.days)}</span>.
         </p>
       </div>
@@ -45,7 +45,12 @@ export function StreakTicket({ t }: { t: TicketState & { today: string } }) {
         ) : t.frozen.includes(t.today) ? (
           <><span lang="cs" className="font-semibold text-ink">Výluka.</span> Today is covered; enjoy the day off.</>
         ) : (
-          <>Still valid until 04:00. One exercise validates today.</>
+          <>
+            Still valid until 04:00.{' '}
+            {t.needed && (t.answersToday ?? 0) > 0
+              ? <>{t.answersToday} of {t.needed} answers today; {t.needed - t.answersToday!} more validates it (or clear your reviews).</>
+              : <>{t.needed ?? 5} answers validate today (or clear your reviews).</>}
+          </>
         )}{' '}
         {t.next && <>{t.next.inDays === 1 ? 'Tomorrow' : `In ${t.next.inDays} days`} it becomes a {t.next.tier.en.toLowerCase()}.</>}
       </p>

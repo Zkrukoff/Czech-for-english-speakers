@@ -25,6 +25,24 @@ describe('design tokens are the only source of colour and type', () => {
     expect(hits).toEqual([]);
   });
 
+  it('no rgb()/hsl() colours outside tokens.css (the hex check would miss them)', () => {
+    const rx = /\b(?:rgba?|hsla?)\(/;
+    const hits = SRC.filter((f) => !TOKEN_FILES.includes(relative(ROOT, f)))
+      .flatMap((f) => readFileSync(f, 'utf8').split('\n').map((l, i) => [l, i, f] as const))
+      .filter(([l]) => rx.test(l) && !l.trim().startsWith('//') && !l.trim().startsWith('*'))
+      .map(([l, i, f]) => `${relative(ROOT, f)}:${i + 1}: ${l.trim().slice(0, 80)}`);
+    expect(hits).toEqual([]);
+  });
+
+  it('no off-scale arbitrary font sizes (use the type scale, down to text-2xs)', () => {
+    const rx = /\btext-\[\d/;
+    const hits = SRC.filter((f) => f.endsWith('.tsx') && !f.includes('styleguide'))
+      .flatMap((f) => readFileSync(f, 'utf8').split('\n').map((l, i) => [l, i, f] as const))
+      .filter(([l]) => rx.test(l))
+      .map(([, i, f]) => `${relative(ROOT, f)}:${i + 1}`);
+    expect(hits).toEqual([]);
+  });
+
   it("no Tailwind default palette classes (they're switched off and would render nothing)", () => {
     const rx = /\b(?:bg|text|border|ring|outline|fill|stroke|from|via|to|decoration|divide|shadow|caret|accent)-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|white|black)(?:-\d{2,3})?\b/;
     const hits = SRC.filter((f) => f.endsWith('.tsx') || f.endsWith('.ts'))

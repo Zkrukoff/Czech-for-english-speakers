@@ -1,10 +1,16 @@
-import { Link } from 'react-router-dom';
+import { PageHeader } from './PageHeader';
+import { Button } from './ui';
 
+/** A link to something that doesn't exist (any more). */
 export function NotFound({ what = 'page' }: { what?: string }) {
   return (
-    <div className="py-16 text-center">
-      <h1 className="text-xl font-semibold">That {what} doesn't exist</h1>
-      <Link to="/" className="mt-4 inline-block text-vltava underline">Back to the course</Link>
-    </div>
+    <>
+      <PageHeader
+        title={`That ${what} doesn't exist`}
+        cs="Tady nic není"
+        subtitle="Like a tram stop at 3 a.m. The link may be old, or the address mistyped."
+      />
+      <Button variant="primary" to="/">Back to the line</Button>
+    </>
   );
 }

@@ -11,7 +11,7 @@ export function EnamelPlate({ children, tone = 'blue', size = 'md', className = 
   const bg = tone === 'red' ? 'var(--plate-red)' : tone === 'blue' ? 'var(--plate-blue)' : 'var(--surface)';
   const fg = tone === 'paper' ? 'var(--ink)' : 'var(--on-fill-light)';
   const rim = tone === 'paper' ? 'var(--ink)' : 'var(--on-fill-light)';
-  const pad = size === 'sm' ? 'px-2 py-0.5 text-[0.7rem]' : size === 'lg' ? 'px-4 py-2 text-sm' : 'px-3 py-1 text-xs';
+  const pad = size === 'sm' ? 'px-2 py-0.5 text-2xs' : size === 'lg' ? 'px-4 py-2 text-sm' : 'px-3 py-1 text-xs';
   return (
     <span
       className={`inline-flex items-center gap-1.5 rounded-md font-mono font-semibold uppercase ${pad} ${className}`}

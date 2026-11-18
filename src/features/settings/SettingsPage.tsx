@@ -92,7 +92,7 @@ export function SettingsPage() {
         <section aria-labelledby="s-audio" className="space-y-4">
           <SectionNumber n={3} id="s-audio">Audio</SectionNumber>
           <p className="text-sm text-ink-2">
-            Core sounds are taught only with real Czech speakers. {course.audio.size === 0 ? 'No recordings are in yet, so listening exercises are switched off for now.' : `${course.audio.size} recordings so far.`}{' '}
+            Core sounds are taught only with real Czech speakers. {course.audio.size === 0 ? 'No recordings are in yet: listening uses your device\'s Czech voice, marked "computer voice", and the minimal pairs wait for real recordings.' : `${course.audio.size} recordings so far.`}{' '}
             Other phrases use your browser's Czech voice, which is marked "synthetic voice" where it matters.
           </p>
           {voices.length === 0 ? (
@@ -133,7 +133,7 @@ export function SettingsPage() {
             Sessions are as long as your commute, counted in metro stops.
           </p>
           <Link to="/ride" className="btn btn-secondary">Change your ride</Link>
-          {toggle('Show my ticket', 'moje jízdenka', 'A ticket that gets longer for each day you practise: 24 hours, 72 hours, then monthly, quarterly and annual passes. No notifications, ever, and a missed day costs nothing you have earned.', s.showTicket !== false, (v) => updateSettings({ showTicket: v }))}
+          {toggle('Show my ticket', 'moje jízdenka', 'A ticket that gets longer for each day you practise (five answers, or clearing your reviews): 24 hours, 72 hours, then monthly, quarterly and annual passes. No notifications, ever, and a missed day costs nothing you have earned.', s.showTicket !== false, (v) => updateSettings({ showTicket: v }))}
         </section>
 
         <section aria-labelledby="s-me" className="space-y-4">

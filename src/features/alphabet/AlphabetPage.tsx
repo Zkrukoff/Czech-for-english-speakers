@@ -83,7 +83,7 @@ function LetterExplorer({ letters }: { letters: Letter[] }) {
                   className={`relative flex aspect-square w-full items-center justify-center rounded-full text-xl transition-all duration-200 hover:scale-110 ${
                     active
                       ? `scale-110 ${BUBBLE[l.letter.charCodeAt(0) % BUBBLE.length]} shadow-offset`
-                      : `bg-surface shadow-[inset_-3px_-4px_0_0_rgb(0_0_0/0.06)] ring-1 ring-rule hover:ring-rule-strong ${l.loanOnly ? 'text-ink-3' : 'text-ink'}`
+                      : `bg-surface shadow-[inset_-3px_-4px_0_0_color-mix(in_oklab,var(--ink)_6%,transparent)] ring-1 ring-rule hover:ring-rule-strong ${l.loanOnly ? 'text-ink-3' : 'text-ink'}`
                   } ${l.group === 'vowel' ? 'font-bold' : ''}`}
                 >
                   <span>{l.letter.length > 1 ? l.upper : `${l.upper}${l.letter}`}</span>

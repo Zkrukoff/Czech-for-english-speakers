@@ -80,6 +80,66 @@
   },
   "exercises": [
     {
+      "id": "u05-l02-lis1",
+      "type": "multipleChoice",
+      "prompt": "What does Petra suggest?",
+      "listen": "Tome, víte co? Můžeme si tykat.",
+      "options": [
+        "Switching to ty",
+        "Switching to vy",
+        "Going for a coffee"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Switching to ty"
+      ],
+      "hints": [
+        {
+          "wrong": "Switching to vy",
+          "explain": "They're already on vy (\"víte\"). \"Můžeme si tykat\" means we can say ty."
+        },
+        {
+          "wrong": "Going for a coffee",
+          "explain": "No coffee here: \"Můžeme si tykat?\" is the offer to say ty."
+        }
+      ],
+      "why": "\"Tome, víte co? Můžeme si tykat.\" Tom, you know what? Let's say ty.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u05-l02-lis2",
+      "type": "multipleChoice",
+      "prompt": "What is Petra's advice?",
+      "listen": "Když nevíš, vykej. Nikdo se neurazí.",
+      "options": [
+        "If you're not sure, say vy",
+        "If you're not sure, say ty",
+        "Always wait for people to speak first"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "If you're not sure, say vy"
+      ],
+      "hints": [
+        {
+          "wrong": "If you're not sure, say ty",
+          "explain": "\"Vykej\" means say vy. Nobody is offended by vy."
+        },
+        {
+          "wrong": "Always wait for people to speak first",
+          "explain": "Her rule is simpler: \"když nevíš, vykej\", when you don't know, say vy."
+        }
+      ],
+      "why": "\"Když nevíš, vykej. Nikdo se neurazí.\" When you don't know, say vy. Nobody will be offended.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u05-l02-e1",
       "type": "dialogueComplete",
       "context": [

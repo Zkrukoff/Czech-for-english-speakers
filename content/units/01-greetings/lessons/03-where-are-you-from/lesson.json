@@ -6,7 +6,9 @@
   ],
   "explanation": "explanation.md",
   "grammarRefs": [],
-  "grammarPreview": ["case:genitive"],
+  "grammarPreview": [
+    "case:genitive"
+  ],
   "nativeReviewed": false,
   "vocab": [
     {
@@ -178,6 +180,66 @@
     ]
   },
   "exercises": [
+    {
+      "id": "u01-l03-lis1",
+      "type": "multipleChoice",
+      "prompt": "Where is Sam from?",
+      "listen": "Jsem z Anglie, z Manchesteru.",
+      "options": [
+        "England (Manchester)",
+        "America",
+        "Prague"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "England (Manchester)"
+      ],
+      "hints": [
+        {
+          "wrong": "America",
+          "explain": "America would be \"z Ameriky\". He says \"z Anglie\": from England."
+        },
+        {
+          "wrong": "Prague",
+          "explain": "From Prague would be \"z Prahy\". He says \"z Anglie, z Manchesteru\"."
+        }
+      ],
+      "why": "\"Jsem z Anglie, z Manchesteru.\" I'm from England, from Manchester. z + genitive: Anglie, Manchesteru.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u01-l03-lis2",
+      "type": "multipleChoice",
+      "prompt": "Where does Petra live?",
+      "listen": "Ne, jsem z Brna, ale bydlím v Praze.",
+      "options": [
+        "In Prague, but she's from Brno",
+        "In Brno",
+        "In England"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "In Prague, but she's from Brno"
+      ],
+      "hints": [
+        {
+          "wrong": "In Brno",
+          "explain": "She's from Brno (\"z Brna\") but lives in Prague (\"bydlím v Praze\")."
+        },
+        {
+          "wrong": "In England",
+          "explain": "No mention of England here: \"bydlím v Praze\", I live in Prague."
+        }
+      ],
+      "why": "\"Ne, jsem z Brna, ale bydlím v Praze.\" No, I'm from Brno, but I live in Prague.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
     {
       "id": "u01-l03-e1",
       "type": "fillEnding",

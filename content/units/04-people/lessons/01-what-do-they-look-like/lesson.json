@@ -148,6 +148,66 @@
   },
   "exercises": [
     {
+      "id": "u04-l01-lis1",
+      "type": "multipleChoice",
+      "prompt": "What does Pavel look like?",
+      "listen": "Je vysoký, má krátké tmavé vlasy a brýle.",
+      "options": [
+        "Tall, short dark hair, glasses",
+        "Short, long dark hair, a beard",
+        "Tall, short fair hair, no glasses"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "Tall, short dark hair, glasses"
+      ],
+      "hints": [
+        {
+          "wrong": "Short, long dark hair, a beard",
+          "explain": "\"Vysoký\" is tall, \"krátké\" short (hair), and he has \"brýle\", glasses."
+        },
+        {
+          "wrong": "Tall, short fair hair, no glasses",
+          "explain": "\"Tmavé\" is dark (fair would be \"světlé\"), and he does have \"brýle\"."
+        }
+      ],
+      "why": "\"Je vysoký, má krátké tmavé vlasy a brýle.\" He's tall, with short dark hair and glasses.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l01-lis2",
+      "type": "multipleChoice",
+      "prompt": "What is Pavel wearing today?",
+      "listen": "Dnes má modrou košili.",
+      "options": [
+        "A blue shirt",
+        "A white shirt",
+        "Blue glasses"
+      ],
+      "optionsLang": "en",
+      "answers": [
+        "A blue shirt"
+      ],
+      "hints": [
+        {
+          "wrong": "A white shirt",
+          "explain": "White would be \"bílou\". \"Modrou\" is blue."
+        },
+        {
+          "wrong": "Blue glasses",
+          "explain": "\"Košili\" is a shirt; glasses are \"brýle\"."
+        }
+      ],
+      "why": "\"Dnes má modrou košili.\" Today he's wearing a blue shirt.",
+      "skills": [
+        "listening"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l01-e1",
       "type": "fillEnding",
       "prompt": "Moje manažerka je vysok___.",

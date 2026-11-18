@@ -77,6 +77,7 @@
   --font-read: 'Yrsa', Georgia, serif;                           /* long-form guide articles only */
 
   /* Modular scale, ratio 1.25 from 1rem (sm is the half step). */
+  --step--2: 0.6875rem; /* 11px    map labels and tiny marks only (strip map, gender mark) */
   --step--1: 0.8rem;    /* 12.8px  mono labels */
   --step-sm: 0.894rem;  /* 14.3px  secondary text */
   --step-0: 1rem;       /* 16px    body (17px from md, see index.css) */

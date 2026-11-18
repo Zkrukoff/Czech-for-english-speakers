@@ -81,10 +81,21 @@ export interface DueSummary {
   nextDue?: number;
 }
 
-export async function dueSummary(now = Date.now(), database: PrazakDB = db): Promise<DueSummary> {
+/**
+ * Counts for the review board. With `resolvable`, cards that can't currently
+ * become an exercise (e.g. an ending pattern with no sentence yet) aren't
+ * counted, so the badge never promises more than a session can show.
+ */
+export async function dueSummary(now = Date.now(), database: PrazakDB = db, resolvable?: (itemKey: string) => boolean): Promise<DueSummary> {
   const day = 24 * 60 * 60 * 1000;
   const endOfToday = new Date(now);
   endOfToday.setHours(23, 59, 59, 999);
+  if (resolvable) {
+    const cards = (await database.cards.toArray()).filter((c) => resolvable(c.itemKey));
+    const upTo = (t: number) => cards.filter((c) => c.due <= t).length;
+    const next = cards.filter((c) => c.due > now).sort((a, b) => a.due - b.due)[0];
+    return { dueNow: upTo(now), dueToday: upTo(endOfToday.getTime()), dueThisWeek: upTo(now + 7 * day), total: cards.length, nextDue: next?.due };
+  }
   const [dueNow, dueToday, dueThisWeek, total, next] = await Promise.all([
     database.cards.where('due').belowOrEqual(now).count(),
     database.cards.where('due').belowOrEqual(endOfToday.getTime()).count(),
@@ -95,15 +106,53 @@ export async function dueSummary(now = Date.now(), database: PrazakDB = db): Pro
   return { dueNow, dueToday, dueThisWeek, total, nextDue: next?.due };
 }
 
-export type CardKind = 'vocab' | 'ex' | 'pattern' | 'fn' | 'own';
+export type CardKind = 'vocab' | 'ex' | 'pattern' | 'fn' | 'own' | 'chunk';
 export const cardKind = (itemKey: string): CardKind => (itemKey.split(':')[0] as CardKind) ?? 'ex';
 
 /** Cards due now, counted by kind (words, exercises, ending patterns, case uses). */
-export async function dueByKind(now = Date.now(), database: PrazakDB = db): Promise<Record<CardKind, number>> {
-  const counts: Record<CardKind, number> = { vocab: 0, ex: 0, pattern: 0, fn: 0, own: 0 };
+export async function dueByKind(now = Date.now(), database: PrazakDB = db, resolvable?: (itemKey: string) => boolean): Promise<Record<CardKind, number>> {
+  const counts: Record<CardKind, number> = { vocab: 0, ex: 0, pattern: 0, fn: 0, own: 0, chunk: 0 };
   await database.cards.where('due').belowOrEqual(now).each((c) => {
+    if (resolvable && !resolvable(c.itemKey)) return;
     const k = cardKind(c.itemKey);
     if (k in counts) counts[k]++;
   });
   return counts;
+}
+
+export const phraseKey = (phraseId: string) => `chunk:${phraseId}`;
+/** New phrases per day when a situation is added to review (A7). */
+export const NEW_PHRASES_PER_DAY = 5;
+const DAY_MS = 86_400_000;
+
+/**
+ * Adds a situation's phrases to review, staggered NEW_PHRASES_PER_DAY a day
+ * after any phrases already waiting to be introduced. Returns how many were added.
+ */
+export async function addPhraseCards(phraseIds: string[], deps: SrsDeps = {}): Promise<number> {
+  const database = deps.database ?? db;
+  const s = deps.scheduler ?? defaultScheduler;
+  const now = deps.now ?? Date.now();
+  return database.transaction('rw', database.cards, async () => {
+    const waiting = await database.cards.where('itemKey').startsWith('chunk:').filter((c) => c.reps === 0).count();
+    let added = 0;
+    for (const id of phraseIds) {
+      const key = phraseKey(id);
+      if (await database.cards.get(key)) continue;
+      const card = s.newCard(key, ['vocab:phrase'], now);
+      // Today's batch is due at once (a minute back, so counts that refresh each minute see it).
+      const day = Math.floor((waiting + added) / NEW_PHRASES_PER_DAY);
+      card.due = day === 0 ? now - 60_000 : now + day * DAY_MS;
+      await database.cards.put(card);
+      added++;
+    }
+    return added;
+  });
+}
+
+/** Takes a situation out of review: phrases not yet seen go; ones already practised stay. */
+export async function removePhraseCards(phraseIds: string[], database: PrazakDB = db): Promise<void> {
+  const keys = phraseIds.map(phraseKey);
+  const cards = await database.cards.bulkGet(keys);
+  await database.cards.bulkDelete(cards.filter((c) => c && c.reps === 0).map((c) => c!.itemKey));
 }
