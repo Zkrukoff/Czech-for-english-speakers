@@ -265,3 +265,9 @@ check first. When an item is confirmed or corrected, remove it here and set
 | 27 exercises (transport, culture, settling in, alphabet, vy/ty) | The new wrong options and their explanations, e.g. *stávka* (strike), *zpoždění* (delay), *každé 4 minuty*, *vstup / vchod*, *konečná* | Czech words right and natural? |
 | tr-h4 | Now asks about the bus announcement *Pro výstup stiskněte tlačítko* (all bus and trolleybus stops are request stops since 29 June 2024, pid.cz) | — |
 | transport guide | Corrected against pid.cz on 18 Nov 2026: night trams 90–99 (not 91–99), night buses from 901, airport lines 59 / 100 / AE / 907 / 910; removed the Lazarská and "every 30 minutes" claims (not on pid.cz) | Re-check each timetable change. |
+
+## Round 2 · C12 Czechia / the Czech Republic
+
+| Where | Text | Question |
+|---|---|---|
+| u01-l03 note | *Česko (Czechia) is the everyday short name: Bydlím v Česku. Česká republika … z České republiky.* | Fair description of how each is used? |

@@ -1,7 +1,7 @@
 {
   "name": "Pražák",
   "short_name": "Pražák",
-  "description": "Mluv jako Pražák. Czech for people who actually live here.",
+  "description": "Mluv jako Pražák. Czech for people who actually live in Czechia (Czech Republic).",
   "lang": "en",
   "start_url": "./",
   "scope": "./",
