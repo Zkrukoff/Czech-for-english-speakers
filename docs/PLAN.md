@@ -736,3 +736,168 @@ Changes from the plan made while building, each noted in its commit:
 - A9: rival chants included at the user's request, each sourced; the antisemitic one is named only so learners recognise it.
 - B11: 27 exercises converted (one more vy/ty item than counted); pid.cz showed night trams are 90–99, so the transport guide was corrected too.
 - Wrap-up: the wallet no longer shifts while it loads (CLS 0.28 → 0.01); robots.txt added.
+
+## 7. Round 3: closing the learning gaps (order approved 18 November 2026)
+
+The audit (docs/AUDIT.md) and the teaching review (docs/PEDAGOGY_REVIEW.md)
+were approved with their suggested order:
+
+| Step | Contents | Estimate |
+|---|---|---|
+| 1 | P1 listening on (computer voice), P2 honest labels, P4 interleaving, P5 ticket rewards review, A7 phrase deck | about 1 week |
+| 2 | A3 word order and clitics, P3 rebalanced practice, P6 aspect pairs | about 2 weeks |
+| 3 | A2 core vocabulary from the official A1 inventory | about 2 weeks |
+| 4 | A5 the A2 exam track | 2–3 weeks |
+| ongoing | A1 recordings, A8 native review (people to recruit) | — |
+
+Polish fixes from the audit (I1–I10, N1–N6) go in alongside, each with the
+step it touches; the time-zone work (C3) goes with P5, since both touch daily
+logic.
+
+This section details **step 1**. Steps 2–4 get their own detailed section
+before any code is written for them.
+
+### 7.1 P1 · Listening on, with a clearly labelled computer voice
+
+Today the app has no recordings, so listening is switched off (AUDIT C2).
+
+- **The voice:** the device's own Czech voice (`speechSynthesis`, cs-CZ),
+  as the listen buttons already use. It's free and works offline, and iOS,
+  macOS, Android and Windows ship one. Where a device has no Czech voice,
+  listening steps say so and offer the text instead; nothing breaks.
+- **Labelling:** a small "Computer voice · *Hlas počítače*" mark wherever it's
+  used. A recording, when it exists, always wins, item by item.
+- **What gets sound:**
+  1. **Dialogues, listen first.** The dialogue step starts with "Poslechněte
+     si" (play all), with the text hidden until "Ukázat text". Two voices
+     (pitch and rate) for the two speakers where the device has only one Czech
+     voice.
+  2. **Listening comprehension:** 2 new multiple-choice items per lesson (36 in
+     all), each about a line of the lesson's dialogue or a short new utterance
+     that uses only the lesson's words ("What does she order?"). New optional
+     field `listen` on `multipleChoice`: the Czech that's spoken and never shown
+     before answering.
+  3. **The 3 typed listening exercises** (`listenType`) come back, spoken by
+     the computer voice until they're recorded.
+- **Not switched on:** the 4 **minimal pairs** stay recording-only. Their whole
+  point is fine contrasts (vowel length, ř), where a synthetic voice may
+  mislead [Opinion]. Their page keeps "recordings pending".
+- **Files:**
+  - `schema.ts` (`listen` on `multipleChoice`);
+  - `loader.ts` (`listenType` stays visible when a Czech voice may exist);
+  - `DialogueView`;
+  - `ExercisePrompt`;
+  - a small `useCzechVoice` hook (already half there);
+  - 18 lesson files;
+  - `REVIEW_NEEDED.md`.
+- **Tests:** schema; every new `listen` text uses only words from its lesson's
+  vocabulary and dialogue (a check, not perfect); a listening exercise falls
+  back to text with no voice.
+
+### 7.2 P2 · Honest labels
+
+- **Line A** keeps its planned range (A1–A2) on the line itself; the built
+  stations say what they are:
+  - Home: "Linka A · built so far: early A1" instead of "A1–A2".
+  - The Václavák milestone: "Review" at Můstek; the Muzeum check becomes the
+    **"Part 1 check"** (it tests units 1–5, not all of A1).
+  - The end-of-line "A2 check" stays, on the unbuilt part of the line.
+- Onboarding's level step says what Line A covers today.
+- No progress, stamp or wallet ticket changes; text and labels only.
+- **Files:** `lines.json` (milestone names and summaries), `HomePage`,
+  `OnboardingPage`, `UnitCheckPage`/milestone copy, README.
+
+### 7.3 P4 · Interleaving in lessons
+
+- Each lesson's practice adds **2 items from earlier lessons** (about 25%),
+  picked from lessons you've finished. It prefers items you got wrong, then
+  ones due soonest, then random. They're mixed in, not tacked on at the end,
+  and marked "*Z dřívějška* · from before".
+- Lesson 1 has none. Unit checks are unchanged (they test their own goals).
+- These count as reviews, so they update spaced-review cards like any other
+  answer.
+- **Files:** `LessonPage` / `buildLessonPractice` (new, pure and tested),
+  `ExerciseRunner` (the tag).
+
+### 7.4 P5 · The ticket rewards review, in Prague time
+
+- **New rule, from the day it ships:** a day is validated by **5 answers**
+  (any mix: lesson, review, ride, phrases), **or** by emptying the review
+  queue, whichever comes first. Five answers is about two minutes, so it's
+  still easy, but it means a session, not a tap.
+- **Past days keep the old rule** (one answer), so nobody loses a ticket
+  when this ships.
+- **Prague time (AUDIT C3):** the 04:00 boundary, today's holiday, today's
+  name day and the countdown all use **Europe/Prague** via one
+  `pragueDate()` helper, wherever the phone is.
+- **Tests:**
+  - DST in March and October;
+  - learners in New York and Tokyo answering at their local midnight;
+  - 03:59 vs 04:00 Prague time;
+  - holidays and name days on 31 December and 1 January;
+  - the countdown across a year end;
+  - the old rule for past days.
+- **Files:** `lib/streak.ts`, `lib/holidays.ts`, `lib/namedays.ts`, new
+  `lib/pragueTime.ts`, `useTicket`, ticket copy, `tests/`.
+
+### 7.5 A7 · A phrase deck by situation (*Fráze*)
+
+- **About 48 phrases in 8 situations:** café and bakery, shop and paying,
+  office, phone, doctor and pharmacy, transport, landlord and flat, "I don't
+  understand".
+- **Sources, in priority:**
+  1. the official **A1 phrase inventory** (NPI ČR *Soupis lexikálních
+     jednotek*, 226 phrases and fixed expressions), each item marked with its
+     inventory entry, e.g. *Můžete mluvit pomaleji, prosím?*, *Jak se řekne
+     česky…?*, *Promiňte, nerozumím*, *Dobrou chuť*;
+  2. phrases already in our lessons;
+  3. a few essentials the inventory has only in parts, starting with *Můžu
+     platit kartou?*, marked as ours.
+
+  All flagged for native review.
+- **How it's learned:** you add a situation (opt-in, so review isn't flooded);
+  then up to **5 new phrases a day** enter spaced review as `chunk:<id>` cards.
+  The first time, you recognise the phrase (Czech → meaning); after that you
+  produce it (English → Czech, typed, with the usual feedback). Each phrase
+  has a listen button (P1).
+- **Where:** a "Fráze" tab on the Review page (this starts the Practice merge
+  proposed in AUDIT I3), and lessons link to their situation.
+- **Data:** a new card kind (`chunk`) in the same `cards` table. No schema
+  version bump, and backups already include cards.
+- **Files:** `content/phrases/phrases.json` (new), schema, loader,
+  `reviewItems`, `db/srs` (`dueByKind` gets `chunk`), Review page, tests,
+  `REVIEW_NEEDED.md`.
+
+### 7.6 Polish fixes in step 1
+
+These are small and touch the same files:
+- I1: solid header, flat timeline.
+- I4: one rule for when Motol is done.
+- I6: focus trap in "Show to a Czech".
+- I7: Home at 320 px.
+- I10: due counts only resolvable cards.
+- N1: off-scale type and the `rgb()` check.
+- N3: "not found" and error screens in the design system.
+
+### 7.7 Order and commits
+
+One commit each, on a `round-3` branch:
+1. P2 labels;
+2. P5 with Prague time;
+3. P4 interleaving;
+4. P1 listening;
+5. A7 phrases;
+6. the polish fixes.
+
+Then QA (320/375/430/768/1280 px, both themes, Lighthouse, the offline check)
+and a push. **Not merged or deployed** until you say so.
+
+### 7.8 Decisions (defaults I'll use unless you say otherwise)
+
+1. **Voice:** the device's Czech voice (free, offline, varies by device).
+   *Alternative:* pre-generated audio files from a cloud speech service:
+   consistent everywhere, but it needs an account and API key, and costs a
+   little per character.
+2. **Ticket threshold:** 5 answers a day (or an empty review queue).
+3. **Minimal pairs:** recording-only, as above.
+4. **Phrase deck:** opt-in by situation, 5 new phrases a day.
