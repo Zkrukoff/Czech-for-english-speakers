@@ -1032,6 +1032,29 @@ practice, with more reading for meaning.
     3.5 s on Lighthouse's slow 4G profile.
   - The offline cache still holds everything.
 
+### 8.4a I8 as built, and what it showed (18 Nov 2026)
+
+- **Built:** production loads content in a "trusted" mode that skips the
+  authoring checks (lens forms, cross-references). The tests and the deploy
+  workflow still run the full validation, so bad content can't ship. A test
+  proves both modes build the same course. The Prague-time formatter is now
+  created on first use.
+- **Measured** (CPU profile at 4× throttling, cold start): the remaining
+  startup cost is spread out:
+  - zod parsing and compiling, about 185 ms;
+  - evaluating the content module, about 100 ms;
+  - React rendering.
+
+  Lighthouse attributed it all to the `db` chunk because that's where the
+  call chain starts; content validation itself was only part of it.
+- **The real limit is download size, not CPU:** first paint is about 3.5 s on
+  slow 4G because about 420 kB of compressed JavaScript has to arrive first,
+  half of it the course content. Only splitting the content fixes that.
+  Splitting means making `course` asynchronous for its 58 users (load the
+  line and today's data first, units and guides on demand). That's an **L**
+  change, not the M estimated in § 8.4, so it's **deferred to its own
+  item** rather than rushed inside step 2.
+
 ### 8.5 Order and commits
 
 One commit each, on `round-3-step2`:

@@ -5,7 +5,8 @@ export * from './loader';
 export * from './schema';
 export * from './taxonomy';
 
-const result = loadContent(contentFiles);
+// Production skips the authoring checks (the tests and CI run them on every deploy); dev keeps them.
+const result = loadContent(contentFiles, { validate: import.meta.env.DEV || import.meta.env.MODE === 'test' });
 
 if (result.warnings.length && import.meta.env.DEV) {
   console.warn(`[content] ${result.warnings.length} warning(s):\n` + result.warnings.join('\n'));

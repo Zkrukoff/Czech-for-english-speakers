@@ -201,7 +201,13 @@ const VERB_EMBED = /```verb\s+([^\n`]+?)\s*```/g;
 const GUIDE_EMBED = /```timeline\s+([a-z0-9-]+)\s*```/g;
 const METRO_EMBED = /```metro(?:\s+[a-z0-9-]+)?\s*```/g;
 
-export function loadContent(files: ContentFiles): LoadResult {
+export function loadContent(files: ContentFiles, options: { validate?: boolean } = {}): LoadResult {
+  /**
+   * validate: false skips the lens and cross-reference checks, which only
+   * find authoring mistakes. Production uses it: the tests and the deploy
+   * workflow run the full validation, so the build never ships bad content.
+   */
+  const validate = options.validate ?? true;
   const errors: string[] = [];
   const warnings: string[] = [];
 
@@ -641,16 +647,23 @@ export function loadContent(files: ContentFiles): LoadResult {
     } else if (Array.isArray(value)) value.forEach((v) => checkLens(v, where));
     else if (value && typeof value === 'object') for (const v of Object.values(value)) checkLens(v, where);
   };
-  for (const u of course.units) {
+  if (validate) for (const u of course.units) {
     checkLens({ ...u, lessonList: undefined }, `unit ${u.id}`);
     for (const l of u.lessonList) checkLens(l, `lesson ${l.id}`);
   }
-  for (const g of [...course.guides, ...course.draftGuides]) checkLens(g, `guide ${g.id}`);
-  if (course.alphabet) checkLens(course.alphabet, 'alphabet');
-  for (const sc of course.overheard) checkLens(sc.lines, `overheard ${sc.id}`);
+  if (validate) {
+    for (const g of [...course.guides, ...course.draftGuides]) checkLens(g, `guide ${g.id}`);
+    if (course.alphabet) checkLens(course.alphabet, 'alphabet');
+    for (const sc of course.overheard) checkLens(sc.lines, `overheard ${sc.id}`);
+  }
 
   /* ---- Cross-reference checks ---- */
   for (const [exId, { exercise, source }] of course.exercisesById) {
+    if (!validate) {
+      // Trusted content: only what changes the course (no recording yet → hide the minimal pair).
+      if (exercise.type === 'minimalPair' && !course.audio.has(exercise.audio)) course.hiddenExercises.push({ id: exId, audio: exercise.audio });
+      continue;
+    }
     const where =
       source.kind === 'lesson'
         ? `lesson ${source.lessonId}`
