@@ -1,3 +1,4 @@
+import { UpdateNotice } from './UpdateNotice';
 import { NavLink, Outlet, useRouteError } from 'react-router-dom';
 import { contentErrors } from '@/content';
 import { ContentErrorScreen } from './ContentErrorScreen';
@@ -66,6 +67,7 @@ export function AppShell({ error = false }: { error?: boolean }) {
       <main id="main" className="mx-auto w-full max-w-5xl flex-1 px-4 py-10 md:py-14">
         {contentErrors.length > 0 ? <ContentErrorScreen errors={contentErrors} /> : error ? <RouteError /> : <Outlet />}
       </main>
+      <UpdateNotice />
       <footer className="mt-16">
         <MetroLineStripe className="h-1" />
         <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-8 text-sm text-ink-3 sm:flex-row sm:items-center sm:justify-between">
@@ -74,6 +76,7 @@ export function AppShell({ error = false }: { error?: boolean }) {
             <span><span lang="cs" className="font-semibold text-ink-2">Pražák</span>: Czech for people who actually live here.</span>
           </span>
           <span className="text-xs">
+            <NavLink to="/emergency" className="font-semibold text-ink-2 underline decoration-2 underline-offset-2 hover:text-ink">Emergency: 112</NavLink> ·{' '}
             Progress stays in this browser · Czech content awaiting native review ·{' '}
             <NavLink to="/styleguide" className="underline decoration-2 underline-offset-2 hover:text-ink">Style guide</NavLink>
           </span>

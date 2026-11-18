@@ -208,3 +208,13 @@ check first. When an item is confirmed or corrected, remove it here and set
 | greetings | *Všechno nejlepší do nového roku!*, *Hezký prodloužený víkend!*, *Krásné svátky!* | Natural? |
 | 28 Oct | "the president awards state honours at Prague Castle" | Accurate? |
 | verified | Dates (mzv.gov.cz) and shop closures (coi.gov.cz), checked 17 Nov 2026 | Re-check yearly. |
+
+## Round 2 · A5 Emergency cards
+
+| Where | Text | Question |
+|---|---|---|
+| emergency/cards.json | All six cards (doctor, pharmacy, police, locked out, lost, accident): the "show to a Czech" messages and every phrase | Natural, polite enough for a stranger, and right for the situation? |
+| emergency/cards.json | Masculine/feminine pairs (*Zabouchl / Zabouchla jsem si dveře*, *Ztratil / Ztratila jsem…*); the show messages use the masculine form | Should the show screens offer both? |
+| pharmacy | "Prescriptions are electronic (eRecept)" | Still accurate? Not yet verified against an official page. |
+| ShowMode.tsx | Label *Ukažte to* on the single-screen show mode | Natural? |
+| verified | 112, 150, 155, 158 (portal.gov.cz, mv.gov.cz) and 156 (mv.gov.cz); DPP line and lost-and-found office (pid.cz), checked 17 Nov 2026 | Re-check yearly. |

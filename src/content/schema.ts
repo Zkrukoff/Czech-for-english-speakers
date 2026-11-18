@@ -692,6 +692,37 @@ export const HolidayLessonSchema = z.object({
 
 export const HolidayLessonsSchema = z.object({ $comment: z.string().optional(), lessons: z.array(HolidayLessonSchema), nativeReviewed: reviewed });
 
+const Verified = z.object({ source: z.string().min(1), url: z.string().url(), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) });
+
+export const EmergencyNumbersSchema = z.object({
+  $comment: z.string().optional(),
+  numbers: z.array(z.object({ id: z.string(), number: z.string().regex(/^\d{3}$/), cs: z.string(), en: z.string(), note: z.string().optional(), verified: z.array(Verified).min(1) })),
+  nativeReviewed: reviewed,
+});
+
+const EmergencyPhrase = z.object({ cs: z.string().min(1), en: z.string().min(1), nativeReviewed: reviewed });
+
+export const EmergencyCardsSchema = z.object({
+  $comment: z.string().optional(),
+  cards: z.array(
+    z.object({
+      id,
+      title: z.string().min(1),
+      titleCs: z.string().min(1),
+      intro: z.string().min(1),
+      /** Ids from numbers.json. */
+      numbers: z.array(z.string()),
+      /** Large "Show to a Czech" screens, one message each. */
+      show: z.array(EmergencyPhrase).min(1),
+      phrases: z.array(EmergencyPhrase).min(1),
+      expect: z.array(z.string()).default([]),
+      /** Other verified contacts, e.g. lost and found. */
+      contacts: z.array(z.object({ label: z.string(), tel: z.string().regex(/^\+?\d+$/), display: z.string(), verified: Verified })).default([]),
+    }),
+  ),
+  nativeReviewed: reviewed,
+});
+
 /**
  * Real-speaker recordings (D6). Files live in public/audio/<id>.<ext>.
  * Exercises that need a recording stay hidden until it is listed here.
@@ -737,6 +768,8 @@ export type Mission = z.infer<typeof MissionSchema>;
 export type NamedaysData = z.infer<typeof NamedaysSchema>;
 export type OverheardScene = z.infer<typeof OverheardSceneSchema>;
 export type HolidayLesson = z.infer<typeof HolidayLessonSchema>;
+export type EmergencyNumbers = z.infer<typeof EmergencyNumbersSchema>;
+export type EmergencyCards = z.infer<typeof EmergencyCardsSchema>;
 export type HolidaysData = z.infer<typeof HolidaysSchema>;
 export type Holiday = HolidaysData['holidays'][number];
 export type AudioManifest = z.infer<typeof AudioManifestSchema>;

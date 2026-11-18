@@ -14,6 +14,8 @@ import {
   HolidaysSchema,
   OverheardSceneSchema,
   HolidayLessonsSchema,
+  EmergencyNumbersSchema,
+  EmergencyCardsSchema,
   AudioManifestSchema,
   UnitSchema,
   VerbFileSchema,
@@ -32,6 +34,8 @@ import {
   type HolidaysData,
   type OverheardScene,
   type HolidayLesson,
+  type EmergencyNumbers,
+  type EmergencyCards,
   type AudioManifest,
   type Mission,
   type StationData,
@@ -155,6 +159,7 @@ export interface Course {
   overheard: OverheardScene[];
   /** Holiday prep mini-lessons, in calendar order. */
   holidayLessons: HolidayLesson[];
+  emergency: { numbers: EmergencyNumbers['numbers']; cards: EmergencyCards['cards'] };
   /** Recorded audio by id (content/audio/manifest.json). */
   audio: Map<string, AudioManifest['recordings'][number]>;
   /** Pattern and function SRS keys each exercise practises (from its lens markup). */
@@ -223,6 +228,7 @@ export function loadContent(files: ContentFiles): LoadResult {
     holidays: null,
     overheard: [],
     holidayLessons: [],
+    emergency: { numbers: [], cards: [] },
     audio: new Map(),
     hiddenExercises: [],
     lensKeysByExercise: new Map(),
@@ -483,6 +489,13 @@ export function loadContent(files: ContentFiles): LoadResult {
       }
       course.holidayLessons.push(l);
     }
+  }
+  {
+    const nums = files.json['emergency/numbers.json'] ? parse(EmergencyNumbersSchema, 'emergency/numbers.json', files.json['emergency/numbers.json']) : null;
+    const cards = files.json['emergency/cards.json'] ? parse(EmergencyCardsSchema, 'emergency/cards.json', files.json['emergency/cards.json']) : null;
+    course.emergency = { numbers: nums?.numbers ?? [], cards: cards?.cards ?? [] };
+    const known = new Set(course.emergency.numbers.map((n) => n.id));
+    for (const c of course.emergency.cards) for (const n of c.numbers) if (!known.has(n)) errors.push(`emergency/cards.json: card ${c.id} uses unknown number "${n}"`);
   }
   if ('calendar/namedays.json' in files.json) course.namedays = parse(NamedaysSchema, 'calendar/namedays.json', files.json['calendar/namedays.json']);
   if ('audio/manifest.json' in files.json) {

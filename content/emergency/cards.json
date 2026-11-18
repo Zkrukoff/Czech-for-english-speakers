@@ -1,0 +1,316 @@
+{
+  "$comment": "Emergency phrase cards. Phrases are for native review; numbers and contacts are verified (see numbers.json and each card's contacts).",
+  "cards": [
+    {
+      "id": "doctor",
+      "title": "Doctor",
+      "titleCs": "U lékaře",
+      "intro": "You feel ill or hurt and need a doctor. For anything life-threatening, call 155.",
+      "numbers": [
+        "155",
+        "112"
+      ],
+      "show": [
+        {
+          "cs": "Dobrý den, nemluvím dobře česky. Potřebuji lékaře. Můžete mi prosím pomoct?",
+          "en": "Hello, I don't speak Czech well. I need a doctor. Can you please help me?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Mám alergii na penicilin.",
+          "en": "I'm allergic to penicillin.",
+          "nativeReviewed": false
+        }
+      ],
+      "phrases": [
+        {
+          "cs": "Je mi špatně.",
+          "en": "I feel unwell.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Bolí mě tady.",
+          "en": "It hurts here.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Mám horečku.",
+          "en": "I have a temperature.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Beru tyto léky.",
+          "en": "I take these medicines.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Jsem těhotná.",
+          "en": "I'm pregnant.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Mluvíte anglicky?",
+          "en": "Do you speak English?",
+          "nativeReviewed": false
+        }
+      ],
+      "expect": [
+        "Outside surgery hours, look for pohotovost (out-of-hours service).",
+        "Have your health insurance card with you."
+      ],
+      "contacts": []
+    },
+    {
+      "id": "pharmacy",
+      "title": "Pharmacy",
+      "titleCs": "V lékárně",
+      "intro": "You need medicine, or advice on what to take.",
+      "numbers": [],
+      "show": [
+        {
+          "cs": "Dobrý den, potřebuji něco na bolest. Nemluvím dobře česky.",
+          "en": "Hello, I need something for pain. I don't speak Czech well.",
+          "nativeReviewed": false
+        }
+      ],
+      "phrases": [
+        {
+          "cs": "Máte něco na kašel?",
+          "en": "Do you have anything for a cough?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Máte něco na bolest hlavy?",
+          "en": "Do you have anything for a headache?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Mám recept.",
+          "en": "I have a prescription.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Je to na předpis?",
+          "en": "Is it prescription-only?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Kolikrát denně?",
+          "en": "How many times a day?",
+          "nativeReviewed": false
+        }
+      ],
+      "expect": [
+        "Prescriptions are electronic (eRecept): show the code from your text message or paper slip."
+      ],
+      "contacts": []
+    },
+    {
+      "id": "police",
+      "title": "Police",
+      "titleCs": "Policie",
+      "intro": "Something was stolen, or you need to report a crime. In an emergency, call 158.",
+      "numbers": [
+        "158",
+        "156",
+        "112"
+      ],
+      "show": [
+        {
+          "cs": "Dobrý den, chci nahlásit krádež. Nemluvím dobře česky.",
+          "en": "Hello, I want to report a theft. I don't speak Czech well.",
+          "nativeReviewed": false
+        }
+      ],
+      "phrases": [
+        {
+          "cs": "Ukradli mi peněženku.",
+          "en": "My wallet was stolen.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Ukradli mi telefon.",
+          "en": "My phone was stolen.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Ztratil jsem pas. / Ztratila jsem pas.",
+          "en": "I've lost my passport. (man / woman)",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Potřebuji potvrzení pro pojišťovnu.",
+          "en": "I need a confirmation for my insurance.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Kde je nejbližší policejní služebna?",
+          "en": "Where is the nearest police station?",
+          "nativeReviewed": false
+        }
+      ],
+      "expect": [
+        "158 is the state police (Policie ČR); 156 is the city police (městská policie)."
+      ],
+      "contacts": []
+    },
+    {
+      "id": "locked-out",
+      "title": "Locked out",
+      "titleCs": "Zabouchnuté dveře",
+      "intro": "The door has shut behind you and the keys are inside.",
+      "numbers": [],
+      "show": [
+        {
+          "cs": "Dobrý den, zabouchl jsem si dveře a klíče jsou uvnitř. Potřebuji zámečníka.",
+          "en": "Hello, I've locked myself out and the keys are inside. I need a locksmith.",
+          "nativeReviewed": false
+        }
+      ],
+      "phrases": [
+        {
+          "cs": "Zabouchl jsem si dveře. / Zabouchla jsem si dveře.",
+          "en": "I've locked myself out. (man / woman)",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Nemám klíče.",
+          "en": "I don't have my keys.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Potřebuji zámečníka.",
+          "en": "I need a locksmith.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Kolik to bude stát?",
+          "en": "How much will it cost?",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Bydlím tady.",
+          "en": "I live here.",
+          "nativeReviewed": false
+        }
+      ],
+      "expect": [
+        "Ask your landlord or the building administrator first: they may have a spare key.",
+        "Agree the price with a locksmith before they start."
+      ],
+      "contacts": []
+    },
+    {
+      "id": "lost",
+      "title": "Lost something",
+      "titleCs": "Ztráty a nálezy",
+      "intro": "You left something on a tram, a bus, the metro, or somewhere in town.",
+      "numbers": [],
+      "show": [
+        {
+          "cs": "Dobrý den, nechal jsem v tramvaji tašku. Můžete mi pomoct?",
+          "en": "Hello, I left a bag on the tram. Can you help me?",
+          "nativeReviewed": false
+        }
+      ],
+      "phrases": [
+        {
+          "cs": "Ztratil jsem peněženku. / Ztratila jsem peněženku.",
+          "en": "I've lost my wallet. (man / woman)",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Nechal jsem to v tramvaji. / Nechala jsem to v tramvaji.",
+          "en": "I left it on the tram. (man / woman)",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Byla to linka 22, asi v osm.",
+          "en": "It was line 22, at about eight.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Kde jsou ztráty a nálezy?",
+          "en": "Where is the lost-and-found office?",
+          "nativeReviewed": false
+        }
+      ],
+      "expect": [
+        "If you've just left it on Prague public transport, call DPP straight away: they contact the driver.",
+        "Unclaimed items go to the city's lost-and-found office once a week (on Tuesdays)."
+      ],
+      "contacts": [
+        {
+          "label": "DPP line, for items just left on Prague public transport",
+          "tel": "+420296191817",
+          "display": "+420 296 191 817",
+          "verified": {
+            "source": "PID: Ztráty a nálezy",
+            "url": "https://pid.cz/ztraty-a-nalezy/",
+            "date": "2026-11-17"
+          }
+        },
+        {
+          "label": "Ztráty a nálezy (lost and found), Karolíny Světlé 5, Praha 1",
+          "tel": "+420224235085",
+          "display": "224 235 085",
+          "verified": {
+            "source": "PID: Ztráty a nálezy",
+            "url": "https://pid.cz/ztraty-a-nalezy/",
+            "date": "2026-11-17"
+          }
+        }
+      ]
+    },
+    {
+      "id": "accident",
+      "title": "Accident",
+      "titleCs": "Nehoda",
+      "intro": "Someone is hurt, or there's been a crash. Call 155 for injuries, 112 if you're unsure or several services are needed.",
+      "numbers": [
+        "155",
+        "112",
+        "158"
+      ],
+      "show": [
+        {
+          "cs": "Stala se nehoda. Je tu zraněný člověk. Zavolejte prosím záchranku!",
+          "en": "There's been an accident. Someone is injured. Please call an ambulance!",
+          "nativeReviewed": false
+        }
+      ],
+      "phrases": [
+        {
+          "cs": "Stala se nehoda.",
+          "en": "There's been an accident.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Je někdo zraněný.",
+          "en": "Someone is injured.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Zavolejte záchranku!",
+          "en": "Call an ambulance!",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Jsem v pořádku.",
+          "en": "I'm all right.",
+          "nativeReviewed": false
+        },
+        {
+          "cs": "Jsme na …",
+          "en": "We're at … (say the street or stop)",
+          "nativeReviewed": false
+        }
+      ],
+      "expect": [
+        "Tell the operator what happened, where you are and how many people are hurt, then stay on the line."
+      ],
+      "contacts": []
+    }
+  ],
+  "nativeReviewed": false
+}

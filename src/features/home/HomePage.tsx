@@ -98,6 +98,13 @@ export function HomePage() {
             <IconArrowRight size={18} className="text-ink-3 group-hover:text-ink" />
           </Link>
           <Today />
+          <Link to="/emergency" className="card card-link group flex items-center justify-between gap-3 p-4">
+            <span>
+              <span className="label-board block text-ink-3" lang="cs">V nouzi</span>
+              <span className="text-ink-2">Emergency numbers and phrase cards. Works offline.</span>
+            </span>
+            <IconArrowRight size={18} className="text-ink-3 group-hover:text-ink" />
+          </Link>
         </div>
       </section>
 

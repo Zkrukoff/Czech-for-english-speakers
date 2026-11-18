@@ -16,4 +16,4 @@ Prescriptions are electronic (***eRecept***): you get a code by text message or 
 
 ## Emergencies
 
-**155** is the ambulance (*záchranka*), **112** the general emergency number (answered in English too). For urgent but not life-threatening problems outside surgery hours, look for ***pohotovost*** (out-of-hours service).
+**155** is the ambulance (*záchranka*), **112** the general emergency number: you can call it even if you don't speak Czech, and from any phone, even without credit. The [emergency cards](/emergency) have all the numbers and work offline. For urgent but not life-threatening problems outside surgery hours, look for ***pohotovost*** (out-of-hours service).

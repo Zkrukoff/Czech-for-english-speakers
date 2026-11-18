@@ -249,3 +249,12 @@ native speaker**; it is all marked `"nativeReviewed": false` and labelled in
 the app. `content/REVIEW_NEEDED.md` lists the specific sentences and claims
 that most need checking. When an item is verified, set `nativeReviewed` to
 `true` on it and remove it from that list.
+
+### Offline check
+
+The build ships a small service worker (`build/serviceWorker.ts`) that precaches
+the app, so the emergency cards work without a signal. To check it:
+
+```bash
+npm run build && npm run check:offline
+```

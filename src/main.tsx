@@ -6,6 +6,7 @@ import { migrateLegacyDatabase } from './db/migrate';
 import { ensureProfile } from './db/profile';
 import { course } from './content';
 import { getTheme } from './lib/theme';
+import { registerServiceWorker } from './lib/sw';
 import './index.css';
 
 function render() {
@@ -29,3 +30,6 @@ migrateLegacyDatabase()
   .then(() => ensureProfile(course.units.map((u) => ({ id: u.id, goalIds: u.canDo.map((g) => g.id) }))))
   .catch((e: unknown) => console.error('Could not set up the learner profile:', e))
   .finally(render);
+
+// Save the app for offline use (emergency cards must work without a signal).
+registerServiceWorker();
