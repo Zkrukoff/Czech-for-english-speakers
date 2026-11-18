@@ -947,7 +947,7 @@ mention second-position clitics, but nothing practises them.
      **mi** to.*
   3. **The usual traps for English speakers:** *se* first in a sentence; *jsem*
      with *on/ona* (*Byl doma*, not *Byl je doma*); a pronoun at the end where
-     English puts it (*Dám ti ho*, not *Dám ho ti* or *Dám ti to ho*).
+     English puts it (*Dám ti ho*, not *Dám ho ti*).
 
   Every example sentence is marked for the case lens where it can be, and
   flagged for native review. The four existing pages link to it.
