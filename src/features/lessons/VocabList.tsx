@@ -1,3 +1,4 @@
+import { vocabAudioId } from '@/lib/audio/ids';
 import type { VocabItem } from '@/content/schema';
 import { SpeakButton } from '@/components/SpeakButton';
 import { SpokenFormNote } from '@/components/SpokenFormNote';
@@ -11,7 +12,7 @@ export function VocabList({ items }: { items: VocabItem[] }) {
         <li key={v.id} className="px-4 py-3">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
             <span className="text-lg font-semibold" lang="cs">{v.cs}</span>
-            <SpeakButton text={v.cs} audioId={v.audio} />
+            <SpeakButton text={v.cs} audioId={v.audio ?? vocabAudioId(v.id)} />
             {v.genitive && <span className="text-sm text-ink-3" lang="cs">gen. {v.genitive}</span>}
             <span className="text-ink-2">{v.en}</span>
             <span className="ml-auto flex items-center gap-2 text-xs text-ink-3">

@@ -1,0 +1,140 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+units/01-greetings/lessons/04-addressing-people/lesson.json#exercises/u01-l04-e2,2,"answers: Dobré ráno, pane Nováku[.] | Dobrý den, pane Nováku[.]","prompt: Good morning, Mr Novák.",in: Addressing people · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#exercises/u01-l04-e3,2,"answers: Dobrý den, paní Nováková[.]","prompt: Hello, Mrs Nováková.",in: Addressing people · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#exercises/u01-l04-e4,2,"answers: {Ahoj|Čau}[,] Jano[!]","prompt: Hi, Jana!",in: Addressing people · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#exercises/u01-l04-e5,2,"Tomáši, počkej!","prompt: What does this mean?
+options: Tomáš, wait! | Hi, Petr! | Good morning, Mr Novák.
+answers: Tomáš, wait!",in: Addressing people · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#exercises/u01-l04-e6,2,"question: Which case is ""doktore""?
+answers: vocative","prompt: Dobrý den, pane **doktore**.
+options: nominative | genitive | accusative | vocative
+en: Hello, doctor.",in: Addressing people · exercise type: caseSelect,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#exercises/u01-l04-e7,2,"Děkuju, mami!","prompt: What does this mean?
+options: Thanks, Mum! | Hi, Petr! | Good morning, Mr Novák.
+answers: Thanks, Mum!",in: Addressing people · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#exercises/u01-l04-e8,2,"answers: [{Děkuju|Děkuji|Díky}, ]{Vám|vám} {taky|také}[!]",prompt: Wish him the same (formally).,in: Addressing people · exercise type: dialogueComplete,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#exercises/u01-l04-lis1,2,"listen: Ahoj, Petře! Kam jdeš?","prompt: What does Lucie ask Petr?
+options: Where he's going | How he is | Where he lives
+answers: Where he's going",in: Addressing people · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#exercises/u01-l04-lis2,2,listen: Na trh. A ty?,"prompt: Where is Petr going?
+options: To the market | Home | To work
+answers: To the market",in: Addressing people · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#exercises/u01-l04-read1,2,"realia 1: lines: Ahoj Petře, půjdeme spolu na trh? Lucie","prompt: What does Lucie suggest?
+options: Going to the market together | Meeting at the office | Going home
+answers: Going to the market together",in: Addressing people · exercise type: readReal,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#vocab/v-doktor,2,doktor / doktorka,doctor (male / female),in: Addressing people · gender: m-anim · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#vocab/v-hezky-den,2,Hezký den!,Have a nice day!,in: Addressing people · part of speech: phrase,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#vocab/v-jasne,2,jasně,"sure, of course",in: Addressing people · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#vocab/v-kam-jdes,2,Kam jdeš?,Where are you going?,in: Addressing people · part of speech: phrase,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#vocab/v-mama,2,máma,mum,in: Addressing people · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#vocab/v-pan,2,pan,Mr; gentleman,in: Addressing people · gender: m-anim · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#vocab/v-pani,2,paní,"Mrs, Ms; lady",in: Addressing people · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#vocab/v-pockat,2,počkat,to wait,in: Addressing people · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#vocab/v-spolu,2,spolu,together,in: Addressing people · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#vocab/v-tata,2,táta,dad,in: Addressing people · gender: m-anim · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#vocab/v-trh,2,trh,market,in: Addressing people · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/01-greetings/lessons/04-addressing-people/lesson.json#vocab/v-vam-taky,2,Vám taky.,You too. (formal),in: Addressing people · part of speech: phrase,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/01-greetings/unit.json#,2,"titleCs: Seznamujeme se
+situation: Your first days at a Czech workplace: greeting colleagues and your manager, introducing yourself, and small talk about where you're from.",title: Meeting people at work,in: Meeting people at work,Natural and correct?,,,,
+units/01-greetings/unit.json#check/exercises/u01-c1,2,answers: Na shledanou[!],prompt: Goodbye! (to a shop assistant),in: Meeting people at work · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/unit.json#check/exercises/u01-c2,2,answers: Jak se máte?,prompt: How are you? (to a neighbour you say vy to),in: Meeting people at work · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/unit.json#check/exercises/u01-c3,2,answers: Jak se jmenujete?,prompt: What's your name? (formal),in: Meeting people at work · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/unit.json#check/exercises/u01-c4,2,answers: {[Já ]jsem|{Jmenuju|Jmenuji} se|Já se {jmenuju|jmenuji}} Tom. Těší mě.,prompt: I'm Tom. Nice to meet you.,in: Meeting people at work · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/unit.json#check/exercises/u01-c5,2,answers: [Já ]jsem z Ameriky.,prompt: I'm from America.,in: Meeting people at work · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/unit.json#check/exercises/u01-c6,2,answers: [Já ]jsem student.,prompt: I'm a student. (a man speaking),in: Meeting people at work · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/unit.json#check/exercises/u01-c7,2,"answers: Dobrý den, pane Nováku[.]","prompt: Hello, Mr Novák.",in: Meeting people at work · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/unit.json#check/exercises/u01-c8,2,"answers: {Ahoj|Čau}[,] Marku[!]","prompt: Hi, Marek!",in: Meeting people at work · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/01-greetings/unit.json#missions/u01-m1,2,"phrases 1: cs: Dobrý den, já jsem …
+phrases 2: cs: Jsem nový kolega. / Jsem nová kolegyně.
+phrases 3: cs: Těší mě.
+phrases 4: cs: Jsem z Anglie.","title: Say hello properly
+phrases 1: en: Hello, I'm …
+phrases 2: en: I'm a new colleague. (man / woman)
+phrases 3: en: Nice to meet you.
+phrases 4: en: I'm from England.",in: Say hello properly,Natural and correct?,,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#,2,,title: Ordering a drink,in: Ordering a drink,Natural and correct?,,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#dialogue/lines/0,2,"Dobrý den, co si dáte?","Hello, what will you have?","in: Ordering a drink · speaker: Číšník · scene: A café near your office in Brno, before work. The waiter comes to your table.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#dialogue/lines/1,2,"Dobrý den. Dám si kávu, prosím.","Hello. I'll have a coffee, please.","in: Ordering a drink · speaker: Zákazník · scene: A café near your office in Brno, before work. The waiter comes to your table.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#dialogue/lines/2,2,S mlékem?,With milk?,"in: Ordering a drink · speaker: Číšník · scene: A café near your office in Brno, before work. The waiter comes to your table.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#dialogue/lines/3,2,"Ano, s mlékem. A ještě vodu.","Yes, with milk. And some water too.","in: Ordering a drink · speaker: Zákazník · scene: A café near your office in Brno, before work. The waiter comes to your table.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#dialogue/lines/4,2,"Perlivou, nebo neperlivou?",Sparkling or still?,"in: Ordering a drink · speaker: Číšník · scene: A café near your office in Brno, before work. The waiter comes to your table.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#dialogue/lines/5,2,"Neperlivou, prosím.","Still, please.","in: Ordering a drink · speaker: Zákazník · scene: A café near your office in Brno, before work. The waiter comes to your table.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-asp1,2,answers: dávám,"prompt: Ráno si vždycky ___ kávu s mlékem.
+options: dávám | dám
+en: In the morning I always have a coffee with milk.",in: Ordering a drink · exercise type: aspectChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-asp2,2,answers: dáte,"prompt: Co si ___? Kávu, nebo čaj?
+options: dáváte | dáte
+en: What will you have? Coffee or tea?",in: Ordering a drink · exercise type: aspectChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-bld1,2,"tiles: dám | si | kávu | prosím
+answers: {Dám si kávu|Kávu si dám}[,] prosím[.] | Dám si[,] prosím[,] kávu[.] | Prosím[,] dám si kávu[.]","prompt: I'll have a coffee, please.",in: Ordering a drink · exercise type: buildSentence,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-bld2,2,"tiles: dám | si | pivo
+answers: {Dám si pivo|Pivo si dám}[.]",prompt: I'll have a beer.,in: Ordering a drink · exercise type: buildSentence,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-e1,2,"base: káva
+answers: u","prompt: Dám si káv___, prosím.
+en: I'll have a coffee, please.",in: Ordering a drink · exercise type: fillEnding,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-e2,2,"answers: Dám si čaj[, prosím].","prompt: I'll have a tea, please.",in: Ordering a drink · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-e3,2,"question: Which case is 'vodu'?
+answers: accusative","prompt: A ještě **vodu**.
+en: And some water too.
+options: nominative | genitive | accusative | locative",in: Ordering a drink · exercise type: caseSelect,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-e4,2,"verb: dát
+answers: dám","prompt: (já) ___ si kávu.
+en: I'll have a coffee.",in: Ordering a drink · exercise type: conjugate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-e5,2,"answers: Dám si {kávu|kafe}[, prosím]. | {Kávu|Kafe}, prosím.",prompt: Order a coffee politely.,in: Ordering a drink · exercise type: dialogueComplete,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-e6,2,"answers: Dám si pivo[, prosím]. | {Jedno pivo|Pivo}, prosím.","prompt: I'll have a beer, please.",in: Ordering a drink · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-lis1,2,"listen: Dám si kávu s mlékem, prosím.","prompt: What does the customer order?
+options: A coffee with milk | A tea with milk | A coffee and some water
+answers: A coffee with milk",in: Ordering a drink · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-lis2,2,"listen: Perlivou, nebo neperlivou?","prompt: What is the waiter asking?
+options: Sparkling or still? | Big or small? | Hot or cold?
+answers: Sparkling or still?",in: Ordering a drink · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#exercises/u02-l01-read1,2,realia 1: lines: káva 55 Kč | čaj 45 Kč | voda 30 Kč | pivo 50 Kč,"prompt: Which is the cheapest?
+options: Water | Tea | Beer
+answers: Water",in: Ordering a drink · exercise type: readReal,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#vocab/v-caj,2,čaj,tea,in: Ordering a drink · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#vocab/v-dat-si,2,dát si,to have (order) something,in: Ordering a drink · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#vocab/v-kava,2,káva,coffee,in: Ordering a drink · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#vocab/v-mleko,2,mléko,milk,in: Ordering a drink · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#vocab/v-pivo,2,pivo,beer,in: Ordering a drink · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/02-cafe/lessons/01-ordering-a-drink/lesson.json#vocab/v-voda,2,voda,water,in: Ordering a drink · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#,2,,title: I'd like…,in: I'd like…,Natural and correct?,,,,
+units/02-cafe/lessons/02-id-like/lesson.json#dialogue/lines/0,2,"Dobrý den, máte vybráno?","Hello, are you ready to order?","in: I'd like… · speaker: Číšnice · scene: Lunch with a colleague at a traditional pub near the office. Like most places near offices, it has a daily lunch menu.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/02-id-like/lesson.json#dialogue/lines/1,2,Ano. Chtěla bych gulášovou polévku a smažený sýr.,Yes. I'd like the goulash soup and the fried cheese.,"in: I'd like… · speaker: Anna · scene: Lunch with a colleague at a traditional pub near the office. Like most places near offices, it has a daily lunch menu.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/02-id-like/lesson.json#dialogue/lines/2,2,"S hranolky, nebo s brambory?",With chips or with potatoes?,"in: I'd like… · speaker: Číšnice · scene: Lunch with a colleague at a traditional pub near the office. Like most places near offices, it has a daily lunch menu.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/02-id-like/lesson.json#dialogue/lines/3,2,"S hranolky, prosím.","With chips, please.","in: I'd like… · speaker: Anna · scene: Lunch with a colleague at a traditional pub near the office. Like most places near offices, it has a daily lunch menu.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/02-id-like/lesson.json#dialogue/lines/4,2,A pro pána?,And for the gentleman?,"in: I'd like… · speaker: Číšnice · scene: Lunch with a colleague at a traditional pub near the office. Like most places near offices, it has a daily lunch menu.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/02-id-like/lesson.json#dialogue/lines/5,2,Já bych si dal řízek s bramborovým salátem.,I'd have the schnitzel with potato salad.,"in: I'd like… · speaker: Tom · scene: Lunch with a colleague at a traditional pub near the office. Like most places near offices, it has a daily lunch menu.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/02-id-like/lesson.json#dialogue/lines/6,2,Řízek už bohužel nemáme.,I'm afraid we've run out of schnitzel.,"in: I'd like… · speaker: Číšnice · scene: Lunch with a colleague at a traditional pub near the office. Like most places near offices, it has a daily lunch menu.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/02-id-like/lesson.json#dialogue/lines/7,2,"Tak guláš s knedlíkem, prosím.","Then the goulash with dumplings, please.","in: I'd like… · speaker: Tom · scene: Lunch with a colleague at a traditional pub near the office. Like most places near offices, it has a daily lunch menu.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/02-id-like/lesson.json#dialogue/lines/8,2,Dobře. Něco k pití?,OK. Anything to drink?,"in: I'd like… · speaker: Číšnice · scene: Lunch with a colleague at a traditional pub near the office. Like most places near offices, it has a daily lunch menu.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/02-id-like/lesson.json#dialogue/lines/9,2,"Dvě piva, prosím.","Two beers, please.","in: I'd like… · speaker: Tom · scene: Lunch with a colleague at a traditional pub near the office. Like most places near offices, it has a daily lunch menu.",Natural for this speaker and situation? Does the English match?,,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-asp1,2,answers: jím,"prompt: Každý den ___ k obědu polévku.
+options: jím | sním
+en: Every day I have soup for lunch.",in: I'd like… · exercise type: aspectChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-asp2,2,answers: snědl,"prompt: Už jsem to ___, děkuju.
+options: jedl | snědl
+en: I've already eaten it all, thanks.",in: I'd like… · exercise type: aspectChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-bld1,2,"tiles: chtěla | bych | gulášovou | polévku
+answers: {Chtěla bych gulášovou polévku|Gulášovou polévku bych chtěla}[.]",prompt: I'd like the goulash soup. (a woman says),in: I'd like… · exercise type: buildSentence,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-bld2,2,"tiles: já | bych | si | dal | řízek
+answers: {Já bych si dal řízek|Dal bych si řízek|Řízek bych si dal}[.]",prompt: I'd have the schnitzel. (a man says),in: I'd like… · exercise type: buildSentence,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-e1,2,"verb: chtít
+answers: chtěl","prompt: ___ bych guláš.
+en: I'd like the goulash. (a man speaking)",in: I'd like… · exercise type: conjugate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-e2,2,"base: zeleninová
+answers: ou","prompt: Chtěla bych zeleninov___ polévku.
+en: I'd like the vegetable soup.",in: I'd like… · exercise type: fillEnding,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-e3,2,answers: Máte guláš?,prompt: Do you have goulash?,in: I'd like… · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-e4,2,"answers: {Chtěla bych|Dala bych si|Dám si} řízek[, prosím].","prompt: I'd like a schnitzel, please. (a woman speaking)",in: I'd like… · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-e5,2,"question: Which case is ""knedlíkem""?
+answers: instrumental","prompt: Tak guláš s **knedlíkem**.
+options: nominative | accusative | instrumental | locative
+en: Then the goulash with dumplings.",in: I'd like… · exercise type: caseSelect,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-e6,2,"answers: [Ano[,] ]{Chtěl bych|Dal bych si|Dám si} smažený sýr s hranolky[, prosím].",prompt: Say (as a man) that you'd like the fried cheese with chips.,in: I'd like… · exercise type: dialogueComplete,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-e7,2,prompt: Řízek už bohužel nemáme.,"answers: {Unfortunately|Sorry|I'm afraid}[,] we {don't have|have no} {schnitzel|schnitzels|the schnitzel|any schnitzel} {anymore|any more|left}[.] | We don't have {schnitzel|any schnitzel|the schnitzel} {anymore|any more|left}[,] unfortunately[.] | {Unfortunately|Sorry|I'm afraid}[,] we{'ve run| have run|'re| are} out of {schnitzel|schnitzels}[.] | We{'re| are} out of {schnitzel|schnitzels}[,] {unfortunately|sorry}[.]",in: I'd like… · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-e8,2,"base: pán
+answers: a","prompt: A pro pán___?
+en: And for the gentleman?",in: I'd like… · exercise type: fillEnding,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/lessons/02-id-like/lesson.json#exercises/u02-l02-lis1,2,"listen: S hranolky, nebo s brambory?","prompt: What is the waitress asking?
+options: Chips or potatoes on the side? | Soup or goulash? | Beer or water?
+answers: Chips or potatoes on the side?",in: I'd like… · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,

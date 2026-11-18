@@ -1,0 +1,204 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+idioms/idioms.json#idioms/do-vetru,13,"cs: mluvit do větru
+definitionCs: zbytečně; planě slibovat
+example 1: cs: Pronajímatel slíbil opravu, ale mluvil do větru.","literal: to talk into the wind
+meaning: to talk in vain; to make empty promises
+example 1: en: The landlord promised a repair, but he was talking into the wind.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/do-zeli,13,"cs: lézt někomu do zelí
+definitionCs: zasahovat do jeho působnosti; přebírat mu dívku
+example 1: cs: Tohle je můj projekt, nelez mi do zelí.","literal: to climb into someone's cabbage
+meaning: to meddle in someone else's business (also: to go after their partner)
+example 1: en: This is my project: stay out of my cabbage.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/drivi-do-lesa,13,"cs: nosit dříví do lesa
+definitionCs: konat něco zbytečného
+example 1: cs: Nosit do Prahy pivo je jako nosit dříví do lesa.","literal: to carry wood into the forest
+meaning: to do something pointless, bringing what is already there
+example 1: en: Bringing beer to Prague is carrying wood into the forest.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/dve-zidle,13,"cs: sedět na dvou židlích
+definitionCs: jednat obojace
+example 1: cs: Nemůžeš pracovat pro obě firmy, nesedí se na dvou židlích.","literal: to sit on two chairs
+meaning: to play both sides, be two-faced
+example 1: en: You can't work for both companies: you can't sit on two chairs.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/flinta-do-zita,13,"cs: hodit flintu do žita
+definitionCs: ztratit, ztrácet odvahu pokračovat (po neúspěchu), vzdát se
+example 1: cs: Čeština je těžká, ale flintu do žita neházej.","literal: to throw your rifle into the rye
+meaning: to give up, lose heart (usually after a first setback)
+example 1: en: Czech is hard, but don't throw your rifle into the rye.
+label: hovor.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/horka-kase,13,"cs: chodit kolem horké kaše
+definitionCs: vyhýbat se řešení něčeho, mluvení o něčem
+example 1: cs: Nechoď kolem horké kaše a řekni mi to.","literal: to walk around hot porridge
+meaning: to avoid a subject or decision
+example 1: en: Stop walking around the hot porridge and tell me.
+label: expr.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/hrach-na-stenu,13,"cs: jako když hrách na stěnu hází
+definitionCs: marné, zbytečné (domlouvání ap.)
+example 1: cs: Domlouvat mu je jako hrách na stěnu házet.","literal: like throwing peas at a wall
+meaning: pointless: talking to someone who will not listen
+example 1: en: Reasoning with him is like throwing peas at a wall.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/jablko,13,"cs: jablko nepadá daleko od stromu
+definitionCs: dítě bývá stejné jako rodiče
+example 1: cs: Její táta je taky kuchař. Jablko nepadá daleko od stromu.","literal: the apple doesn't fall far from the tree
+meaning: children turn out like their parents
+example 1: en: Her dad is a chef too. The apple doesn't fall far from the tree.
+label: pořek.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/komar-velbloud,13,"cs: udělat z komára velblouda
+definitionCs: velmi zveličit něco
+example 1: cs: Jedna chyba v e-mailu, nedělej z komára velblouda.","literal: to make a camel out of a mosquito
+meaning: to blow something up out of all proportion
+example 1: en: One typo in an email: don't make a camel out of a mosquito.
+label: expr.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/maslo-na-hlave,13,"cs: mít máslo na hlavě
+definitionCs: lze ho postihnout pro minulé provinění
+example 1: cs: Neříkej mu nic o pozdních příchodech, sám má máslo na hlavě.","literal: to have butter on your head
+meaning: to have done something wrong yourself, so you are in no position to criticise or act freely
+example 1: en: Don't lecture him about being late: he's got butter on his head himself.
+label: expr.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/nad-slunce,13,"cs: je to nad slunce jasnější
+definitionCs: naprosto zřejmé, nepochybné
+example 1: cs: Že prší, když zapomenu deštník, je nad slunce jasnější.","literal: it is clearer than the sun
+meaning: it is completely obvious
+example 1: en: That it rains when I forget my umbrella is clearer than the sun.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/po-masle,13,"cs: jde to jako po másle
+definitionCs: bez potíží, hladce
+example 1: cs: Na úřadě to dnes šlo jako po másle.","literal: it goes as if on butter
+meaning: it goes smoothly, without problems
+example 1: en: At the office today it all went as if on butter.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/pod-obraz,13,"cs: zpít se pod obraz
+definitionCs: (zpít se) do němoty
+example 1: cs: Na firemním večírku se zpil pod obraz.","literal: to drink yourself under the picture
+meaning: to get completely drunk
+example 1: en: He drank himself under the picture at the office party.
+label: expr.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/pro-strach,13,"cs: mít pro strach uděláno
+definitionCs: nebát se
+example 1: cs: Jezdí na kole po Václaváku, ten má pro strach uděláno.","literal: to have it done for fear
+meaning: to be fearless
+example 1: en: He cycles down Wenceslas Square: nothing scares him.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/sovy-do-athen,13,"cs: nosit sovy do Athén
+definitionCs: poučovat někoho, kdo ví něco lépe, a tím dělat něco zbytečného
+example 1: cs: Vysvětlovat Čechovi, jak se točí pivo? To je nosit sovy do Athén.","literal: to carry owls to Athens
+meaning: to teach someone something they know better than you, which is pointless
+example 1: en: Explaining to a Czech how to pour beer? That's carrying owls to Athens.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/spanelska-vesnice,13,"cs: to je pro mě španělská vesnice
+definitionCs: nerozumím tomu
+example 1: cs: Daňové přiznání je pro mě španělská vesnice.","literal: that is a Spanish village to me
+meaning: I don't understand it at all
+example 1: en: My tax return is a Spanish village to me.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/spicka-nosu,13,"cs: vidět si jen na špičku nosu
+definitionCs: má malý rozhled
+example 1: cs: Plánuje jen do pátku, vidí si jen na špičku nosu.","literal: to see only to the tip of your nose
+meaning: to be short-sighted, see only your own interests
+example 1: en: He plans only until Friday: he sees only to the tip of his nose.
+label: hovor. expr.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/tma-v-pytli,13,"cs: tma jako v pytli
+definitionCs: (tma) velká
+example 1: cs: V listopadu je v pět večer tma jako v pytli.","literal: dark as in a sack
+meaning: pitch dark
+example 1: en: In November it's dark as in a sack by five.
+label: expr.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/vitr-z-plachet,13,"cs: vzít někomu vítr z plachet
+definitionCs: předejít ho v něčem, zhatit mu plány
+example 1: cs: Kolega řekl můj nápad na poradě dřív a vzal mi vítr z plachet.","literal: to take the wind out of someone's sails
+meaning: to get ahead of someone and spoil their plans
+example 1: en: A colleague said my idea at the meeting first and took the wind out of my sails.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/zajic-v-pytli,13,"cs: kupovat zajíce v pytli
+definitionCs: (kupovat) něco nevyzkoušeného
+example 1: cs: Byt bez prohlídky? To je kupovat zajíce v pytli.","literal: to buy a hare in a sack
+meaning: to buy something without seeing or testing it
+example 1: en: A flat without a viewing? That's buying a hare in a sack.",,Natural and correct?,,,,
+idioms/idioms.json#idioms/zakopany-pes,13,"cs: v tom je zakopaný pes
+definitionCs: hlavní potíž, překážka
+example 1: cs: Nájem je levný, ale nikdo tam nechce bydlet. Kde je zakopaný pes?","literal: that is where the dog is buried
+meaning: that is the real problem, the catch
+example 1: en: The rent is cheap but nobody wants to live there. Where's the dog buried?",,Natural and correct?,,,,
+lines/lines.json#,13,,,,Natural and correct?,,,,
+overheard/bus.json#,13,titleCs: V autobusu,"title: On the bus
+setting: A city bus, two stops before the metro.",in: On the bus,Natural and correct?,,,,
+overheard/bus.json#lines/0,13,Příští zastávka: Nádraží Veleslavín.,Next stop: Nádraží Veleslavín.,"in: On the bus · speaker: Hlášení · scene: A city bus, two stops before the metro.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/bus.json#lines/1,13,Pro výstup stiskněte tlačítko.,"To get off, press the button.","in: On the bus · speaker: Hlášení · scene: A city bus, two stops before the metro.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/bus.json#lines/2,13,"cs: Promiňte, vystupujete?
+spoken: Pardon, vystupujete?","Excuse me, are you getting off?","in: On the bus · speaker: Paní · scene: A city bus, two stops before the metro.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/bus.json#lines/3,13,"Ne, pustím vás.","No, let me get out of your way.","in: On the bus · speaker: Ty · scene: A city bus, two stops before the metro.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/bus.json#lines/4,13,Děkuju.,Thank you.,"in: On the bus · speaker: Paní · scene: A city bus, two stops before the metro.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/bus.json#questions/oh-bus-q1,13,,"prompt: What does the announcement ask you to do if you want to get off?
+options: Press the button | Wave at the driver | Stand by the door | Nothing: the bus stops everywhere
+answers: Press the button",in: On the bus · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+overheard/bus.json#questions/oh-bus-q2,13,,"prompt: The woman asks **Vystupujete?** What does she want?
+options: To get past you to the door | A seat | To know the next stop
+answers: To get past you to the door",in: On the bus · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+overheard/checkout.json#,13,titleCs: U pokladny,"title: At the checkout
+setting: A supermarket near work, at lunchtime.",in: At the checkout,Natural and correct?,,,,
+overheard/checkout.json#lines/0,13,Dobrý den.,Hello.,"in: At the checkout · speaker: Pokladní · scene: A supermarket near work, at lunchtime.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/checkout.json#lines/1,13,Dobrý den.,Hello.,"in: At the checkout · speaker: Ty · scene: A supermarket near work, at lunchtime.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/checkout.json#lines/2,13,"cs: Máte zákaznickou kartu?
+spoken: Máte kartičku?",Do you have a loyalty card?,"in: At the checkout · speaker: Pokladní · scene: A supermarket near work, at lunchtime.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/checkout.json#lines/3,13,"Nemám, děkuju.","No, thanks.","in: At the checkout · speaker: Ty · scene: A supermarket near work, at lunchtime.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/checkout.json#lines/4,13,Dvě stě čtyřicet osm korun.,Two hundred and forty-eight crowns.,"in: At the checkout · speaker: Pokladní · scene: A supermarket near work, at lunchtime.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/checkout.json#lines/5,13,"Kartou, prosím.","By card, please.","in: At the checkout · speaker: Ty · scene: A supermarket near work, at lunchtime.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/checkout.json#lines/6,13,"cs: Chcete účtenku?
+spoken: Účtenku chcete?",Do you want the receipt?,"in: At the checkout · speaker: Pokladní · scene: A supermarket near work, at lunchtime.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/checkout.json#lines/7,13,"Ne, nemusím.","No, I don't need it.","in: At the checkout · speaker: Ty · scene: A supermarket near work, at lunchtime.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/checkout.json#lines/8,13,Na shledanou.,Goodbye.,"in: At the checkout · speaker: Pokladní · scene: A supermarket near work, at lunchtime.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/checkout.json#questions/oh-checkout-q1,13,,"prompt: What does the cashier ask you first?
+options: If you have a loyalty card | If you want a bag | If you're paying by card
+answers: If you have a loyalty card",in: At the checkout · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+overheard/checkout.json#questions/oh-checkout-q2,13,,"prompt: How much is it?
+options: 248 Kč | 48 Kč | 2,480 Kč
+answers: 248 Kč",in: At the checkout · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+overheard/checkout.json#questions/oh-checkout-q3,13,,"prompt: What is **účtenka**?
+options: The receipt | The bag | The change
+answers: The receipt",in: At the checkout · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+overheard/metro.json#,13,titleCs: V metru,"title: On the metro
+setting: Line A towards the centre, with a friend.",in: On the metro,Natural and correct?,,,,
+overheard/metro.json#lines/0,13,"Ukončete, prosím, výstup a nástup, dveře se zavírají.","Please finish getting off and on, the doors are closing.","in: On the metro · speaker: Hlášení · scene: Line A towards the centre, with a friend.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/metro.json#lines/1,13,Příští stanice: Můstek. Přestup na linku B.,Next station: Můstek. Change here for line B.,"in: On the metro · speaker: Hlášení · scene: Line A towards the centre, with a friend.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/metro.json#lines/2,13,"cs: Vystupujeme na Můstku, že?
+spoken: Vystupujem na Můstku, jo?","We get off at Můstek, right?","in: On the metro · speaker: Kamarád · scene: Line A towards the centre, with a friend.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/metro.json#lines/3,13,"cs: Ano, a pak přestoupíme na linku B.
+spoken: Jo, a pak přestoupíme na béčko.","Yes, and then we change to line B.","in: On the metro · speaker: Ty · scene: Line A towards the centre, with a friend.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/metro.json#questions/oh-metro-q1,13,,"prompt: What happens right after **Ukončete, prosím, výstup a nástup**?
+options: The doors close | The train waits for everyone | You must show your ticket
+answers: The doors close",in: On the metro · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+overheard/metro.json#questions/oh-metro-q2,13,"options: Můstek | Muzeum | Florenc
+answers: Můstek",prompt: Where do they get off?,in: On the metro · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+overheard/metro.json#questions/oh-metro-q3,13,,"prompt: In spoken Czech, what is **béčko**?
+options: Line B | The B exit | A bus
+answers: Line B",in: On the metro · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+overheard/pharmacy.json#,13,titleCs: V lékárně,"title: At the pharmacy
+setting: A pharmacy near the tram stop, with a sore throat.",in: At the pharmacy,Natural and correct?,,,,
+overheard/pharmacy.json#lines/0,13,"Dobrý den, co pro vás?","Hello, what can I do for you?","in: At the pharmacy · speaker: Lékárnice · scene: A pharmacy near the tram stop, with a sore throat.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pharmacy.json#lines/1,13,"cs: Dobrý den, máte něco na bolest v krku?
+spoken: Máte něco na krk?","Hello, do you have anything for a sore throat?","in: At the pharmacy · speaker: Ty · scene: A pharmacy near the tram stop, with a sore throat.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pharmacy.json#lines/2,13,Máte i kašel nebo horečku?,Do you also have a cough or a temperature?,"in: At the pharmacy · speaker: Lékárnice · scene: A pharmacy near the tram stop, with a sore throat.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pharmacy.json#lines/3,13,"Ne, jen mě bolí v krku.","No, just a sore throat.","in: At the pharmacy · speaker: Ty · scene: A pharmacy near the tram stop, with a sore throat.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pharmacy.json#lines/4,13,"Tak tyhle pastilky. Jednu třikrát denně, nejdéle pět dní.","Then these lozenges. One three times a day, for five days at most.","in: At the pharmacy · speaker: Lékárnice · scene: A pharmacy near the tram stop, with a sore throat.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pharmacy.json#lines/5,13,Děkuju. Kolik to stojí?,Thanks. How much is it?,"in: At the pharmacy · speaker: Ty · scene: A pharmacy near the tram stop, with a sore throat.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pharmacy.json#lines/6,13,Sto dvacet korun.,A hundred and twenty crowns.,"in: At the pharmacy · speaker: Lékárnice · scene: A pharmacy near the tram stop, with a sore throat.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pharmacy.json#questions/oh-pharmacy-q1,13,,"prompt: How often should you take a lozenge?
+options: Three times a day | Every three hours | Once a day for three days
+answers: Three times a day",in: At the pharmacy · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+overheard/pharmacy.json#questions/oh-pharmacy-q2,13,,"prompt: What does she ask about?
+options: A cough or a temperature | Your prescription | Your insurance card
+answers: A cough or a temperature",in: At the pharmacy · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+overheard/pharmacy.json#questions/oh-pharmacy-q3,13,,"prompt: **Co pro vás?** means…
+options: What can I do for you? | What's wrong with you? | Who is it for?
+answers: What can I do for you?",in: At the pharmacy · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+overheard/pub.json#,13,titleCs: V hospodě,"title: At the pub
+setting: A pub after work, with colleagues.",in: At the pub,Natural and correct?,,,,
+overheard/pub.json#lines/0,13,"Dobrý den, co to bude?","Hello, what'll it be?","in: At the pub · speaker: Číšník · scene: A pub after work, with colleagues.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pub.json#lines/1,13,"Jedno pivo, prosím.","One beer, please.","in: At the pub · speaker: Ty · scene: A pub after work, with colleagues.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pub.json#lines/2,13,"cs: Velké, nebo malé?
+spoken: Velký, nebo malý?",Large or small?,"in: At the pub · speaker: Číšník · scene: A pub after work, with colleagues.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pub.json#lines/3,13,"cs: Velké.
+spoken: Velký.",Large.,"in: At the pub · speaker: Ty · scene: A pub after work, with colleagues.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pub.json#lines/4,13,Ještě jedno?,Another one?,"in: At the pub · speaker: Číšník · scene: A pub after work, with colleagues.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pub.json#lines/5,13,"cs: Ano, ještě jedno. A pak zaplatíme.
+spoken: Jo, ještě jedno. A pak zaplatíme.","Yes, one more. And then we'll pay.","in: At the pub · speaker: Ty · scene: A pub after work, with colleagues.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pub.json#lines/6,13,"Dohromady, nebo zvlášť?",Together or separately?,"in: At the pub · speaker: Číšník · scene: A pub after work, with colleagues.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pub.json#lines/7,13,"Zvlášť, prosím.","Separately, please.","in: At the pub · speaker: Ty · scene: A pub after work, with colleagues.",Natural for this speaker and situation? Does the English match?,,,,
+overheard/pub.json#questions/oh-pub-q1,13,,"prompt: **Ještě jedno?** means…
+options: Another one? | Just one? | The same tomorrow?
+answers: Another one?",in: At the pub · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+overheard/pub.json#questions/oh-pub-q2,13,"options: Zvlášť | Dohromady | Ještě jedno
+answers: Zvlášť",prompt: You want to pay only for your own drinks. What do you say?,in: At the pub · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,

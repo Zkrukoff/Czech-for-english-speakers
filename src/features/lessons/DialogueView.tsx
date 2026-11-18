@@ -10,6 +10,7 @@ import { recordingUrl } from '@/features/exercises/types/RecordingButton';
 import { ComputerVoice } from '@/components/ListenButton';
 import { IconSpeaker } from '@/components/icons';
 import { useSettings } from '@/db/settings';
+import { dialogueLineId } from '@/lib/audio/ids';
 
 /**
  * The lesson dialogue, listen first (P1): play it with the text hidden, then
@@ -17,13 +18,16 @@ import { useSettings } from '@/db/settings';
  * Czech voice, labelled, with a second voice or pitch for the other speaker.
  * With no Czech voice and no recordings, the text is shown straight away.
  */
-export function DialogueView({ dialogue }: { dialogue: Dialogue }) {
+/** The recording id of line `i`: its own, or one derived from the lesson. */
+const lineAudio = (lessonId: string | undefined, l: { audio?: string }, i: number) => l.audio ?? (lessonId ? dialogueLineId(lessonId, i) : undefined);
+
+export function DialogueView({ dialogue, lessonId }: { dialogue: Dialogue; lessonId?: string }) {
   const [showEn, setShowEn] = useState(true);
   const [playing, setPlaying] = useState(false);
   const [played, setPlayed] = useState(false);
   const settings = useSettings();
   const hasVoice = useHasCzechVoice();
-  const recorded = dialogue.lines.every((l) => l.audio && recordingUrl(l.audio));
+  const recorded = dialogue.lines.every((l, i) => recordingUrl(lineAudio(lessonId, l, i)));
   const canListen = hasVoice || recorded;
   const [textShown, setTextShown] = useState(false);
   const showText = textShown || !canListen;
@@ -39,7 +43,7 @@ export function DialogueView({ dialogue }: { dialogue: Dialogue }) {
       const who = speakers.indexOf(l.speaker);
       // Two Czech voices: one per speaker. One voice: a different pitch for the second speaker.
       const voiceURI = voices.length > 1 ? voices[who % voices.length]!.voiceURI : settings.voiceURI;
-      await speech.speak(lensPlain(l.cs), { audioId: l.audio, rate: settings.speechRate, voiceURI, pitch: voices.length > 1 ? undefined : who % 2 ? 1.3 : 1 });
+      await speech.speak(lensPlain(l.cs), { audioId: lineAudio(lessonId, l, dialogue.lines.indexOf(l)), rate: settings.speechRate, voiceURI, pitch: voices.length > 1 ? undefined : who % 2 ? 1.3 : 1 });
     }
     setPlaying(false);
     setPlayed(true);
@@ -81,7 +85,7 @@ export function DialogueView({ dialogue }: { dialogue: Dialogue }) {
                 <div className="label-board text-ink-3">{l.speaker}</div>
                 <div className="flex items-start gap-1 text-lg" lang="cs">
                   <span><CzechText text={l.cs} /></span>
-                  <SpeakButton text={l.cs} audioId={l.audio} />
+                  <SpeakButton text={l.cs} audioId={lineAudio(lessonId, l, i)} />
                 </div>
                 {showEn && <div className="text-sm text-ink-2">{l.en}</div>}
                 {l.spoken && <div className="mt-2"><SpokenFormNote spoken={l.spoken} /></div>}

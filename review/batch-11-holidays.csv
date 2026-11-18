@@ -1,0 +1,117 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+calendar/holiday-lessons.json#,11,,,,Natural and correct?,,,,
+calendar/holiday-lessons.json#lessons/hol-1-maj,11,titleCs: 1. máj,title: 1 May,in: 1 May,Natural and correct?,,,,
+calendar/holiday-lessons.json#lessons/hol-1-maj/exercises/hol-1m-e1,11,,"prompt: On 1 May, where do couples traditionally kiss?
+options: Under a blossoming tree | On Charles Bridge | Under the Astronomical Clock
+answers: Under a blossoming tree",in: 1 May · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-1-maj/exercises/hol-1m-e2,11,answers: polibek,prompt: kiss,in: 1 May · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-1-maj/exercises/hol-1m-e3,11,,"prompt: What happens on the night of 30 April?
+options: Bonfires and burning straw witches | A torch-lit march to the Castle | Fireworks over the Vltava
+answers: Bonfires and burning straw witches",in: 1 May · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-1-maj/vocab/v-hol-carodejnice,11,čarodějnice,witch,in: 1 May · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-1-maj/vocab/v-hol-ohen,11,oheň,"fire, bonfire",in: 1 May · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-1-maj/vocab/v-hol-polibek,11,polibek,kiss,in: 1 May · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-1-maj/vocab/v-hol-tresen,11,třešeň,cherry tree; cherry,in: 1 May · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-17-listopad,11,titleCs: 17. listopad,title: Freedom and Democracy Day,in: Freedom and Democracy Day,Natural and correct?,,,,
+calendar/holiday-lessons.json#lessons/hol-17-listopad/exercises/hol-17-e1,11,answers: svíčka,prompt: candle,in: Freedom and Democracy Day · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-17-listopad/exercises/hol-17-e2,11,,"prompt: Where in Prague do people light candles on 17 November?
+options: On Národní třída | On Charles Bridge | At Prague Castle
+answers: On Národní třída",in: Freedom and Democracy Day · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-17-listopad/exercises/hol-17-e3,11,,"prompt: What did crowds jingle at the 1989 rallies?
+options: Keys | Coins | Bells
+answers: Keys",in: Freedom and Democracy Day · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-17-listopad/vocab/v-hol-demonstrace,11,demonstrace,demonstration,in: Freedom and Democracy Day · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-17-listopad/vocab/v-hol-sametova-revoluce,11,sametová revoluce,the Velvet Revolution,in: Freedom and Democracy Day · part of speech: phrase,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-17-listopad/vocab/v-hol-svicka,11,svíčka,candle,in: Freedom and Democracy Day · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-17-listopad/vocab/v-hol-svoboda,11,svoboda,freedom,in: Freedom and Democracy Day · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-28-rijen,11,titleCs: 28. říjen,title: Independence Day,in: Independence Day,Natural and correct?,,,,
+calendar/holiday-lessons.json#lessons/hol-28-rijen/exercises/hol-28-e1,11,answers: vlajka,prompt: flag,in: Independence Day · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-28-rijen/exercises/hol-28-e2,11,,"prompt: Who was the first president of Czechoslovakia?
+options: Tomáš Garrigue Masaryk | Václav Havel | Edvard Beneš
+answers: Tomáš Garrigue Masaryk",in: Independence Day · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-28-rijen/exercises/hol-28-e3,11,,"prompt: What year was Czechoslovakia founded?
+options: 1918 | 1939 | 1993
+answers: 1918",in: Independence Day · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-28-rijen/vocab/v-hol-prezident,11,prezident,president,in: Independence Day · gender: m-anim · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-28-rijen/vocab/v-hol-republika,11,republika,republic,in: Independence Day · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-28-rijen/vocab/v-hol-vlajka,11,vlajka,flag,in: Independence Day · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-28-rijen/vocab/v-hol-vznik,11,vznik,"founding, beginning",in: Independence Day · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-8-kveten,11,titleCs: Den vítězství,title: Victory Day,in: Victory Day,Natural and correct?,,,,
+calendar/holiday-lessons.json#lessons/hol-8-kveten/exercises/hol-8k-e1,11,answers: válka,prompt: war,in: Victory Day · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-8-kveten/exercises/hol-8k-e2,11,,"prompt: What is remembered in Prague in the days just before 8 May?
+options: The Prague Uprising of 1945 | The Velvet Revolution | The founding of Czechoslovakia
+answers: The Prague Uprising of 1945",in: Victory Day · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-8-kveten/exercises/hol-8k-e3,11,,"prompt: Are large shops open on 8 May?
+options: No | Yes | Only until noon
+answers: No",in: Victory Day · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-8-kveten/vocab/v-hol-osvobozeni,11,osvobození,liberation,in: Victory Day · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-8-kveten/vocab/v-hol-povstani,11,povstání,uprising,in: Victory Day · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-8-kveten/vocab/v-hol-valka,11,válka,war,in: Victory Day · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-8-kveten/vocab/v-hol-venec,11,věnec,wreath,in: Victory Day · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-cervenec,11,"titleCs: Cyril a Metoděj, Jan Hus","title: Cyril and Methodius, and Jan Hus","in: Cyril and Methodius, and Jan Hus",Natural and correct?,,,,
+calendar/holiday-lessons.json#lessons/hol-cervenec/exercises/hol-ce-e1,11,answers: Hezký prodloužený víkend[!] | Pěkný prodloužený víkend[!],prompt: Have a nice long weekend!,"in: Cyril and Methodius, and Jan Hus · exercise type: translate","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-cervenec/exercises/hol-ce-e2,11,,"prompt: Who is remembered on 6 July?
+options: Jan Hus | St Wenceslas | Cyril and Methodius
+answers: Jan Hus","in: Cyril and Methodius, and Jan Hus · exercise type: multipleChoice","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-cervenec/exercises/hol-ce-e3,11,,"prompt: What is a **chalupa**?
+options: A country cottage, often an old farmhouse | A summer festival | A mountain hut with food
+answers: A country cottage, often an old farmhouse","in: Cyril and Methodius, and Jan Hus · exercise type: multipleChoice","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-cervenec/vocab/v-hol-chalupa,11,chalupa,country cottage (usually an old farmhouse),"in: Cyril and Methodius, and Jan Hus · gender: f · part of speech: noun","Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-cervenec/vocab/v-hol-chata,11,chata,(weekend) cottage,"in: Cyril and Methodius, and Jan Hus · gender: f · part of speech: noun","Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-cervenec/vocab/v-hol-prodlouzeny-vikend,11,prodloužený víkend,long weekend,"in: Cyril and Methodius, and Jan Hus · part of speech: phrase","Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-novy-rok,11,titleCs: Nový rok,title: New Year,in: New Year,Natural and correct?,,,,
+calendar/holiday-lessons.json#lessons/hol-novy-rok/exercises/hol-nr-e1,11,answers: Šťastný nový rok[!],prompt: Happy New Year!,in: New Year · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-novy-rok/exercises/hol-nr-e2,11,answers: předsevzetí,prompt: (a New Year's) resolution,in: New Year · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-novy-rok/exercises/hol-nr-e3,11,,"prompt: What do many Czechs eat around New Year for money in the coming year?
+options: Lentils | Carp | Poppy-seed cake
+answers: Lentils",in: New Year · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-novy-rok/exercises/hol-nr-e4,11,,"prompt: What does **PF** on a New Year card stand for?
+options: pour féliciter | Prosperující a Funkční | Prima Fajn
+answers: pour féliciter",in: New Year · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-novy-rok/vocab/v-hol-cocka,11,čočka,lentils,in: New Year · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-novy-rok/vocab/v-hol-ohnostroj,11,ohňostroj,fireworks,in: New Year · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-novy-rok/vocab/v-hol-predsevzeti,11,předsevzetí,(New Year's) resolution,in: New Year · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-novy-rok/vocab/v-hol-pripitek,11,přípitek,toast (with a drink),in: New Year · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-novy-rok/vocab/v-hol-silvestr,11,Silvestr,New Year's Eve,in: New Year · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vaclav,11,titleCs: Svatý Václav,title: St Wenceslas,in: St Wenceslas,Natural and correct?,,,,
+calendar/holiday-lessons.json#lessons/hol-vaclav/exercises/hol-va-e1,11,,"prompt: What does **pod koněm** (under the horse) mean to a Prague local?
+options: The meeting point by the St Wenceslas statue | A pub near Wenceslas Square | A tram stop
+answers: The meeting point by the St Wenceslas statue",in: St Wenceslas · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vaclav/exercises/hol-va-e2,11,answers: socha,prompt: statue,in: St Wenceslas · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vaclav/exercises/hol-va-e3,11,,"prompt: Who also celebrates on 28 September?
+options: Everyone called Václav | Everyone called Jan | Nobody: there's no name day
+answers: Everyone called Václav",in: St Wenceslas · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vaclav/vocab/v-hol-knize,11,kníže,"duke, prince (historical)",in: St Wenceslas · gender: m-anim · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vaclav/vocab/v-hol-patron,11,patron,patron saint,in: St Wenceslas · gender: m-anim · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vaclav/vocab/v-hol-socha,11,socha,statue,in: St Wenceslas · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vaclav/vocab/v-hol-svaty,11,svatý,saint; holy,in: St Wenceslas · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vanoce,11,titleCs: Vánoce,title: Christmas,in: Christmas,Natural and correct?,,,,
+calendar/holiday-lessons.json#lessons/hol-vanoce/exercises/hol-va2-e1,11,answers: Veselé Vánoce[!],prompt: Merry Christmas!,in: Christmas · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vanoce/exercises/hol-va2-e2,11,,"prompt: Who brings Czech children their Christmas presents?
+options: Ježíšek | Santa Claus | Svatý Mikuláš
+answers: Ježíšek",in: Christmas · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vanoce/exercises/hol-va2-e3,11,,"prompt: Until when are large shops open on 24 December?
+options: Noon | 6 p.m. | They're closed all day
+answers: Noon",in: Christmas · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vanoce/exercises/hol-va2-e4,11,answers: dárek,"prompt: present, gift",in: Christmas · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vanoce/vocab/v-hol-cukrovi,11,cukroví,Christmas biscuits,in: Christmas · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vanoce/vocab/v-hol-darek,11,dárek,"present, gift",in: Christmas · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vanoce/vocab/v-hol-jeziseck,11,Ježíšek,baby Jesus (who brings the presents),in: Christmas · gender: m-anim · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vanoce/vocab/v-hol-kapr,11,kapr,carp,in: Christmas · gender: m-anim · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-vanoce/vocab/v-hol-vanoce,11,Vánoce,Christmas,in: Christmas · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-velikonoce,11,titleCs: Velikonoce,title: Easter,in: Easter,Natural and correct?,,,,
+calendar/holiday-lessons.json#lessons/hol-velikonoce/exercises/hol-ve-e1,11,answers: Veselé Velikonoce[!],prompt: Happy Easter!,in: Easter · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-velikonoce/exercises/hol-ve-e2,11,,"prompt: On Easter Monday, what do girls traditionally tie onto the pomlázka?
+options: A ribbon | A painted egg | A flower
+answers: A ribbon",in: Easter · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-velikonoce/exercises/hol-ve-e3,11,,"prompt: Are large shops open on Good Friday?
+options: Yes | No | Only in the morning
+answers: Yes",in: Easter · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-velikonoce/exercises/hol-ve-e4,11,answers: kraslice,prompt: decorated Easter egg,in: Easter · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+calendar/holiday-lessons.json#lessons/hol-velikonoce/vocab/v-hol-beranek,11,beránek,lamb; lamb-shaped Easter cake,in: Easter · gender: m-anim · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-velikonoce/vocab/v-hol-koleda,11,koleda,Easter round (or a carol at Christmas),in: Easter · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-velikonoce/vocab/v-hol-kraslice,11,kraslice,decorated Easter egg,in: Easter · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-velikonoce/vocab/v-hol-pomlazka,11,pomlázka,braided willow whip (Easter Monday),in: Easter · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holiday-lessons.json#lessons/hol-velikonoce/vocab/v-hol-velikonoce,11,Velikonoce,Easter,in: Easter · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+calendar/holidays.json#,11,,,,Natural and correct?,,,,
+calendar/namedays.json#,11,,,,Natural and correct?,,,,

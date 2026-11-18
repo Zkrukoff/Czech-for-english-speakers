@@ -2,13 +2,15 @@ import { lensPlain } from '@/lib/lens';
 import { speech } from '@/lib/audio/speech';
 import { useHasCzechVoice } from '@/lib/audio/useCzechVoice';
 import { useSettings } from '@/db/settings';
+import { recordingUrl } from '@/lib/audio/recordings';
 
 
 export function SpeakButton({ text: raw, audioId, label = 'Listen' }: { text: string; audioId?: string; label?: string }) {
   const text = lensPlain(raw);
   const settings = useSettings();
   const hasVoice = useHasCzechVoice();
-  if (!hasVoice && !audioId) return null;
+  // A listed recording plays anywhere; without one, it needs the device's Czech voice.
+  if (!hasVoice && !recordingUrl(audioId)) return null;
   return (
     <button
       type="button"

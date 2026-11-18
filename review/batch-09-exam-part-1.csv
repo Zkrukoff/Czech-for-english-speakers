@@ -1,0 +1,121 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+exam/listening.json#tasks/l1-mock2,9,"instruction: Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý dialog uslyšíte dvakrát.
+questions 1: q: Co si muž objedná?
+questions 2: q: Kolik stojí lístek pro muže?
+questions 3: q: Co nefunguje?
+questions 4: q: Kdy přijede vlak?
+questions 5: q: Co dá žena kamarádce k narozeninám?","title: Everyday dialogues
+instructionEn: Listen to five dialogues. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each dialogue twice.
+questions 1: options: Guláš. | Jen smažený sýr. | Gulášovou polévku. | Zeleninovou polévku a smažený sýr.
+questions 2: options: 500 Kč. | 300 Kč. | 450 Kč. | 350 Kč.
+questions 3: options: Topení. | Lednička. | Světlo. | Výtah.
+questions 4: options: V 16:20. | V 15:40. | V 15:00. | V 15:20.
+questions 5: options: Knihu. | Kytku a lístky do kina. | Čokoládu. | Nic.",in: Everyday dialogues · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l1-practice1,9,"instruction: Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý dialog uslyšíte dvakrát.
+questions 1: q: Co si dá žena k pití?
+questions 2: q: Kdy jde Petr k doktorovi?
+questions 3: q: Kolik zaplatí muž?
+questions 4: q: Kde se sejdou?
+questions 5: q: Co hledá žena?","title: Everyday dialogues
+instructionEn: Listen to five dialogues. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each dialogue twice.
+questions 1: options: Čaj s citronem. | Kávu. | Džus. | Minerálku.
+questions 2: options: V úterý. | Ve středu. | Ve čtvrtek. | V pondělí.
+questions 3: options: 45 Kč. | 55 Kč. | 50 Kč. | 40 Kč.
+questions 4: options: Na zastávce tramvaje. | U metra. | Před kinem. | V kavárně.
+questions 5: options: Lékárnu. | Banku. | Poštu. | Nádraží.",in: Everyday dialogues · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l1-practice2,9,"instruction: Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý dialog uslyšíte dvakrát.
+questions 1: q: Jaké počasí bude zítra odpoledne?
+questions 2: q: Kolik je hodin?
+questions 3: q: Co si muž koupí?
+questions 4: q: Jakou jízdenku si žena koupí?
+questions 5: q: Proč muž nepřijde do práce?","title: Plans and errands
+instructionEn: Listen to five dialogues. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each dialogue twice.
+questions 1: options: Bude pršet. | Bude sněžit. | Bude foukat vítr. | Slunečno.
+questions 2: options: Je 6:15. | Je 5:45. | Je 5:15. | Je 6:00.
+questions 3: options: Černé boty. | Modré boty. | Bundu. | Nic.
+questions 4: options: Do Ostravy. | Do Plzně. | Do Brna a zpátky. | Jen do Brna.
+questions 5: options: Má dovolenou. | Jede na úřad. | Je nemocný. | Vlak má zpoždění.",in: Plans and errands · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l2-mock2,9,"instruction: Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý text uslyšíte dvakrát.
+questions 1: q: Kolik minut má vlak zpoždění?
+questions 2: q: Ve kterém patře jsou hračky?
+questions 3: q: Co bude v pondělí?
+questions 4: q: Kdy začíná film?
+questions 5: q: Kde je dnes zastávka autobusu 136?","title: Announcements
+instructionEn: Listen to five announcements. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each one twice.
+questions 1: options: 5 minut. | 15 minut. | 10 minut. | 50 minut.
+questions 2: options: Ve druhém. | V prvním. | Ve čtvrtém. | Ve třetím.
+questions 3: options: Nepojede tramvaj. | Nebude elektřina. | Nebude plyn. | Nepoteče voda.
+questions 4: options: Ve 20:15. | Ve 20:50. | Ve 20:00. | Ve 21:15.
+questions 5: options: Před školou. | Před poliklinikou. | Na náměstí. | U nádraží.",in: Announcements · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l2-practice1,9,"instruction: Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý text uslyšíte dvakrát.
+questions 1: q: Na kterou kolej přijede vlak do Plzně?
+questions 2: q: Co je dnes ve slevě?
+questions 3: q: Do kolika je obchod dnes otevřený?
+questions 4: q: Která stanice metra je zavřená?
+questions 5: q: Kde čeká malý Honzík?","title: At the station and in the shop
+instructionEn: Listen to five announcements. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each one twice.
+questions 1: options: Na kolej 2. | Na kolej 1. | Na kolej 3. | Na kolej 5.
+questions 2: options: Maso. | Jogurty a sýry. | Pečivo. | Ovoce.
+questions 3: options: Do 19:00. | Do 17:00. | Do 20:00. | Do 22:00.
+questions 4: options: Muzeum. | Florenc. | Hlavní nádraží. | Můstek.
+questions 5: options: U informací v přízemí. | V restauraci. | U pokladny. | U východu.",in: At the station and in the shop · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l2-practice2,9,"instruction: Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý text uslyšíte dvakrát.
+questions 1: q: Kdy odjede autobus do Brna?
+questions 2: q: Co v sobotu nebude?
+questions 3: q: Kam mají jít cestující do Vídně?
+questions 4: q: Kolik dnes stojí polední menu?
+questions 5: q: Která tramvaj jede dnes jinou cestou?","title: Travel and events
+instructionEn: Listen to five announcements. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each one twice.
+questions 1: options: Ve 13:30. | Ve 14:30. | Ve 12:30. | Ve 14:00.
+questions 2: options: Divadlo. | Koncert. | Trhy. | Výstava.
+questions 3: options: K východu B2. | K informacím. | K východu B12. | K pokladně.
+questions 4: options: 194 Kč. | 159 Kč. | 149 Kč. | 129 Kč.
+questions 5: options: Číslo 2. | Číslo 12. | Číslo 20. | Číslo 22.",in: Travel and events · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l3-mock2,9,"instruction: Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–G. Dvě nabídky jsou navíc. Každý text uslyšíte dvakrát.
+question: Co potřebují tito lidé?
+options 1: text: jízdenku
+options 2: text: lék
+options 3: text: klíče
+options 4: text: deštník
+options 5: text: dárek
+options 6: text: mapu
+options 7: text: peníze","title: What do they need?
+instructionEn: Listen to five short texts. Choose the right answer, A–G, from the table for each. Two of the options are extra. You’ll hear each text twice.
+items 1: label: Hana
+items 2: label: Zdeněk
+items 3: label: Věra
+items 4: label: Luboš
+items 5: label: Marie",in: What do they need? · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l3-practice1,9,"instruction: Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–G. Dvě nabídky jsou navíc. Každý text uslyšíte dvakrát.
+question: Co dnes dělají tito lidé?
+options 1: text: spí
+options 2: text: nakupuje
+options 3: text: pracuje
+options 4: text: sportuje
+options 5: text: čte
+options 6: text: vaří
+options 7: text: uklízí","title: What are they doing?
+instructionEn: Listen to five short texts. Choose the right answer, A–G, from the table for each. Two of the options are extra. You’ll hear each text twice.
+items 1: label: Martina
+items 2: label: Jirka
+items 3: label: Eva
+items 4: label: Pavel
+items 5: label: Lenka",in: What are they doing? · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l3-practice2,9,"instruction: Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–G. Dvě nabídky jsou navíc. Každý text uslyšíte dvakrát.
+question: Kam jdou tito lidé?
+options 1: text: do kina
+options 2: text: k lékaři
+options 3: text: na poštu
+options 4: text: do knihovny
+options 5: text: do banky
+options 6: text: do restaurace
+options 7: text: na nádraží","title: Where are they going?
+instructionEn: Listen to five short texts. Choose the right answer, A–G, from the table for each. Two of the options are extra. You’ll hear each text twice.
+items 1: label: Tomáš
+items 2: label: Jana
+items 3: label: Karel
+items 4: label: Olga
+items 5: label: Filip",in: Where are they going? · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l4-mock2,9,"instruction: Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jeden správný obrázek z nabídky A–F. Jeden obrázek je navíc. Každý dialog uslyšíte dvakrát.
+question: Jak ti lidé pojedou?","title: How are they travelling?
+instructionEn: Listen to five dialogues. Choose the right picture, A–F, for each. One picture is extra. You’ll hear each dialogue twice.",in: How are they travelling? · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,

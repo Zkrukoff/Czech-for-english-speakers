@@ -1,0 +1,4 @@
+{
+  "$comment": "Who recorded what. Add a speaker before importing their files (npm run audio:import -- <folder> --speaker <key>). 'name' is how they want to be credited (a name or initials). Record the date they gave written consent; see docs/AUDIO.md for the consent and licence template.",
+  "speakers": {}
+}

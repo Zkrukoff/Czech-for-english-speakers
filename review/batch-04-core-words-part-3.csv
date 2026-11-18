@@ -1,0 +1,418 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+words/06-bydleni.json#words/postel,4,"cs: postel
+example 1: cs: Jdu do postele.","en: bed
+example 1: en: I'm going to bed.",in: Home · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/06-bydleni.json#words/smlouva,4,"cs: smlouva
+example 1: cs: Musím podepsat smlouvu.","en: contract
+example 1: en: I have to sign the contract.",in: Home · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/06-bydleni.json#words/stul,4,"cs: stůl
+example 1: cs: Máte volný stůl?","en: table
+example 1: en: Do you have a free table?",in: Home · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/06-bydleni.json#words/svetlo,4,"cs: světlo
+example 1: cs: Zhasněte světlo.","en: light
+example 1: en: Turn off the light.",in: Home · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/06-bydleni.json#words/velky,4,"cs: velký
+example 1: cs: Máme velký byt.","en: big
+example 1: en: We have a big flat.",in: Home · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/auto,4,"cs: auto
+example 1: cs: Nemám auto.","en: car
+example 1: en: I don't have a car.",in: Town and transport · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/cesta,4,"cs: cesta
+example 1: cs: Šťastnou cestu!","en: way; journey; trip
+example 1: en: Have a good trip!",in: Town and transport · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/chodit,4,"cs: chodit
+example 1: cs: Chodím do práce pěšky.","en: to walk, to go (regularly)
+example 1: en: I walk to work.",in: Town and transport · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/dojit,4,"cs: dojít
+example 1: cs: Došlo nám mléko.","en: to get to (on foot); to run out
+example 1: en: We've run out of milk.",in: Town and transport · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/informace,4,"cs: informace
+example 1: cs: Kde jsou informace?","en: information
+example 1: en: Where is the information desk?",in: Town and transport · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/kolem,4,"cs: kolem
+example 1: cs: Jděte kolem kostela.","en: around; past
+example 1: en: Go past the church.",in: Town and transport · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/kolo,4,"cs: kolo
+example 1: cs: Jezdím do práce na kole.","en: bicycle; wheel
+example 1: en: I cycle to work.",in: Town and transport · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/mesto,4,"cs: město
+example 1: cs: Praha je velké město.","en: town, city
+example 1: en: Prague is a big city.",in: Town and transport · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/metr,4,"cs: metr
+example 1: cs: Je to sto metrů odsud.","en: metre
+example 1: en: It's a hundred metres from here.",in: Town and transport · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/odejit,4,"cs: odejít
+example 1: cs: Musím odejít dřív.","en: to leave (on foot)
+example 1: en: I have to leave early.",in: Town and transport · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/prijet,4,"cs: přijet
+example 1: cs: Vlak přijede v deset.","en: to arrive (by vehicle)
+example 1: en: The train arrives at ten.",in: Town and transport · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/prijit,4,"cs: přijít
+example 1: cs: Přijdu v pět.","en: to come, to arrive (on foot)
+example 1: en: I'll come at five.",in: Town and transport · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/smer,4,"cs: směr
+example 1: cs: Tramvaj ve směru Bílá Hora.","en: direction
+example 1: en: The tram towards Bílá Hora.",in: Town and transport · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/ulice,4,"cs: ulice
+example 1: cs: V jaké ulici bydlíte?","en: street
+example 1: en: What street do you live on?",in: Town and transport · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/07-doprava.json#words/zpatky,4,"cs: zpátky
+example 1: cs: Jsem zpátky v pět.","en: back
+example 1: en: I'm back at five.",in: Town and transport · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/cist,4,"cs: číst
+example 1: cs: Rád čtu.","en: to read
+example 1: en: I like reading.",in: Work · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/dulezity,4,"cs: důležitý
+example 1: cs: Je to důležité.","en: important
+example 1: en: It's important.",in: Work · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/firma,4,"cs: firma
+example 1: cs: Pracuju pro velkou firmu.","en: company, firm
+example 1: en: I work for a big company.",in: Work · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/lekar,4,"cs: lékař
+example 1: cs: Musím k lékaři.","en: doctor
+example 1: en: I need to see a doctor.",in: Work · gender: m-anim · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/moznost,4,"cs: možnost
+example 1: cs: Je možnost platit kartou?","en: possibility, option
+example 1: en: Is it possible to pay by card?",in: Work · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/napsat,4,"cs: napsat
+example 1: cs: Napište mi.","en: to write
+example 1: en: Write to me.",in: Work · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/odpoved,4,"cs: odpověď
+example 1: cs: Čekám na odpověď.","en: answer
+example 1: en: I'm waiting for an answer.",in: Work · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/odpovedet,4,"cs: odpovědět
+example 1: cs: Ještě mi neodpověděl.","en: to answer
+example 1: en: He hasn't answered me yet.",in: Work · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/otazka,4,"cs: otázka
+example 1: cs: Můžu mít otázku?","en: question
+example 1: en: Can I ask a question?",in: Work · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/pokracovat,4,"cs: pokračovat
+example 1: cs: Pokračujte rovně.","en: to continue
+example 1: en: Carry on straight ahead.",in: Work · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/pracovni,4,"cs: pracovní
+example 1: cs: To je můj pracovní telefon.","en: work (as in work phone)
+example 1: en: This is my work phone.",in: Work · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/problem,4,"cs: problém
+example 1: cs: To není problém.","en: problem
+example 1: en: That's not a problem.",in: Work · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/projekt,4,"cs: projekt
+example 1: cs: Pracuju na novém projektu.","en: project
+example 1: en: I'm working on a new project.",in: Work · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/psat,4,"cs: psát
+example 1: cs: Píšu e-mail.","en: to write
+example 1: en: I'm writing an e-mail.",in: Work · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/rychly,4,"cs: rychlý
+example 1: cs: Metro je rychlé.","en: fast
+example 1: en: The metro is fast.",in: Work · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/sluzba,4,"cs: služba
+example 1: cs: Mám dnes službu.","en: service; duty, shift
+example 1: en: I'm on duty today.",in: Work · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/tezky,4,"cs: těžký
+example 1: cs: Čeština je těžká.","en: difficult; heavy
+example 1: en: Czech is difficult.",in: Work · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/vest,4,"cs: vést
+example 1: cs: Ta cesta vede k řece.","en: to lead; to run
+example 1: en: This path leads to the river.",in: Work · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/zacinat,4,"cs: začínat
+example 1: cs: Práce začíná v devět.","en: to start
+example 1: en: Work starts at nine.",in: Work · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/zajimavy,4,"cs: zajímavý
+example 1: cs: To je zajímavé.","en: interesting
+example 1: en: That's interesting.",in: Work · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/zeptat-se,4,"cs: zeptat se
+example 1: cs: Můžu se zeptat?","en: to ask
+example 1: en: May I ask?",in: Work · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/08-prace.json#words/zprava,4,"cs: zpráva
+example 1: cs: Poslal jsem vám zprávu.","en: message; report; news
+example 1: en: I sent you a message.",in: Work · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/09-zdravi.json#words/citit-se,4,"cs: cítit se
+example 1: cs: Necítím se dobře.","en: to feel
+example 1: en: I don't feel well.",in: Health and the body · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/09-zdravi.json#words/hlava,4,"cs: hlava
+example 1: cs: Bolí mě hlava.","en: head
+example 1: en: I have a headache.",in: Health and the body · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/09-zdravi.json#words/krev,4,"cs: krev
+example 1: cs: Musím na odběr krve.","en: blood
+example 1: en: I have to have a blood test.",in: Health and the body · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/09-zdravi.json#words/nemocnice,4,"cs: nemocnice
+example 1: cs: Kde je nemocnice?","en: hospital
+example 1: en: Where is the hospital?",in: Health and the body · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/09-zdravi.json#words/noha,4,"cs: noha
+example 1: cs: Bolí mě noha.","en: leg; foot
+example 1: en: My leg hurts.",in: Health and the body · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/09-zdravi.json#words/oblicej,4,"cs: obličej
+example 1: cs: Má hezký obličej.","en: face
+example 1: en: She has a pretty face.",in: Health and the body · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/09-zdravi.json#words/oko,4,"cs: oko
+example 1: cs: Má modré oči.","en: eye
+example 1: en: She has blue eyes.",in: Health and the body · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/09-zdravi.json#words/prst,4,"cs: prst
+example 1: cs: Pořezal jsem si prst.","en: finger
+example 1: en: I cut my finger.",in: Health and the body · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/09-zdravi.json#words/ruka,4,"cs: ruka
+example 1: cs: Bolí mě ruka.","en: hand; arm
+example 1: en: My hand hurts.",in: Health and the body · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/09-zdravi.json#words/srdce,4,"cs: srdce
+example 1: cs: Mám slabé srdce.","en: heart
+example 1: en: I have a weak heart.",in: Health and the body · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/09-zdravi.json#words/telo,4,"cs: tělo
+example 1: cs: Celé tělo mě bolí.","en: body
+example 1: en: My whole body hurts.",in: Health and the body · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/09-zdravi.json#words/zada,4,"cs: záda
+example 1: cs: Bolí mě záda.","en: back
+example 1: en: My back hurts.",in: Health and the body · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/10-urady.json#words/kraj,4,"cs: kraj
+example 1: cs: Bydlím ve Středočeském kraji.","en: region
+example 1: en: I live in the Central Bohemian Region.",in: Offices and services · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/10-urady.json#words/ministerstvo,4,"cs: ministerstvo
+example 1: cs: Ministerstvo vnitra","en: ministry
+example 1: en: The Ministry of the Interior",in: Offices and services · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/10-urady.json#words/osobni,4,"cs: osobní
+example 1: cs: Osobní údaje","en: personal
+example 1: en: Personal details (on a form)",in: Offices and services · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/10-urady.json#words/podminka,4,"cs: podmínka
+example 1: cs: Jaké jsou podmínky?","en: condition
+example 1: en: What are the conditions?",in: Offices and services · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/10-urady.json#words/policie,4,"cs: policie
+example 1: cs: Zavolejte policii!","en: police
+example 1: en: Call the police!",in: Offices and services · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/10-urady.json#words/pravo,4,"cs: právo
+example 1: cs: Máte právo na tlumočníka.","en: right; law
+example 1: en: You have the right to an interpreter.",in: Offices and services · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/10-urady.json#words/predstavit-se,4,"cs: představit se
+example 1: cs: Můžu se představit?","en: to introduce yourself
+example 1: en: May I introduce myself?",in: Offices and services · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/10-urady.json#words/statni,4,"cs: státní
+example 1: cs: Je to státní svátek.","en: state
+example 1: en: It's a public holiday.",in: Offices and services · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/10-urady.json#words/urad,4,"cs: úřad
+example 1: cs: Kde je úřad?","en: office (public authority)
+example 1: en: Where is the office?",in: Offices and services · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/10-urady.json#words/vlada,4,"cs: vláda
+example 1: cs: Vláda zvýšila daně.","en: government
+example 1: en: The government raised taxes.",in: Offices and services · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/10-urady.json#words/zakon,4,"cs: zákon
+example 1: cs: To je proti zákonu.","en: law
+example 1: en: That's against the law.",in: Offices and services · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/11-volny-cas.json#words/divadlo,4,"cs: divadlo
+example 1: cs: Jdeme do divadla.","en: theatre
+example 1: en: We're going to the theatre.",in: Free time · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/11-volny-cas.json#words/divat-se,4,"cs: dívat se
+example 1: cs: Díváme se na film.","en: to watch, to look
+example 1: en: We're watching a film.",in: Free time · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/11-volny-cas.json#words/film,4,"cs: film
+example 1: cs: Ten film byl dobrý.","en: film
+example 1: en: That film was good.",in: Free time · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/11-volny-cas.json#words/hra,4,"cs: hra
+example 1: cs: Jdeme na hru do divadla.","en: game; play
+example 1: en: We're going to a play.",in: Free time · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/11-volny-cas.json#words/hrat,4,"cs: hrát
+example 1: cs: Hraju tenis.","en: to play
+example 1: en: I play tennis.",in: Free time · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/11-volny-cas.json#words/hudba,4,"cs: hudba
+example 1: cs: Jakou hudbu posloucháš?","en: music
+example 1: en: What music do you listen to?",in: Free time · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/11-volny-cas.json#words/klub,4,"cs: klub
+example 1: cs: Jdeme do klubu.","en: club
+example 1: en: We're going to a club.",in: Free time · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/11-volny-cas.json#words/kniha,4,"cs: kniha
+example 1: cs: Čtu dobrou knihu.","en: book
+example 1: en: I'm reading a good book.",in: Free time · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/11-volny-cas.json#words/pes,4,"cs: pes
+example 1: cs: Máme psa.","en: dog
+example 1: en: We have a dog.",in: Free time · gender: m-anim · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/11-volny-cas.json#words/program,4,"cs: program
+example 1: cs: Jaký máte program na víkend?","en: programme
+example 1: en: What are your plans for the weekend?",in: Free time · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/11-volny-cas.json#words/zahrada,4,"cs: zahrada
+example 1: cs: Máme malou zahradu.","en: garden
+example 1: en: We have a small garden.",in: Free time · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/11-volny-cas.json#words/zapas,4,"cs: zápas
+example 1: cs: Kdy začíná zápas?","en: match
+example 1: en: When does the match start?",in: Free time · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/12-pocasi.json#words/hvezda,4,"cs: hvězda
+example 1: cs: V noci jsou vidět hvězdy.","en: star
+example 1: en: At night you can see the stars.",in: Weather and nature · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/12-pocasi.json#words/les,4,"cs: les
+example 1: cs: V neděli jdeme do lesa.","en: forest
+example 1: en: On Sunday we're going to the forest.",in: Weather and nature · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/12-pocasi.json#words/pole,4,"cs: pole
+example 1: cs: Za vesnicí jsou pole.","en: field
+example 1: en: There are fields behind the village.",in: Weather and nature · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/12-pocasi.json#words/slunce,4,"cs: slunce
+example 1: cs: Svítí slunce.","en: sun
+example 1: en: The sun is shining.",in: Weather and nature · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/12-pocasi.json#words/strom,4,"cs: strom
+example 1: cs: Před domem je velký strom.","en: tree
+example 1: en: There's a big tree in front of the house.",in: Weather and nature · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/12-pocasi.json#words/vzduch,4,"cs: vzduch
+example 1: cs: Je tu čerstvý vzduch.","en: air
+example 1: en: The air here is fresh.",in: Weather and nature · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/12-pocasi.json#words/zeme,4,"cs: země
+example 1: cs: Z jaké země jste?","en: earth; country; land
+example 1: en: What country are you from?",in: Weather and nature · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/12-pocasi.json#words/zvire,4,"cs: zvíře
+example 1: cs: Máte doma zvíře?","en: animal
+example 1: en: Do you have a pet?",in: Weather and nature · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/13-obleceni.json#words/barva,4,"cs: barva
+example 1: cs: Jakou barvu chcete?","en: colour
+example 1: en: What colour would you like?",in: Clothes and colours · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/13-obleceni.json#words/bily,4,"cs: bílý
+example 1: cs: Bílé víno, prosím.","en: white
+example 1: en: White wine, please.",in: Clothes and colours · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/13-obleceni.json#words/cerny,4,"cs: černý
+example 1: cs: Černou kávu, prosím.","en: black
+example 1: en: Black coffee, please.",in: Clothes and colours · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/13-obleceni.json#words/cerveny,4,"cs: červený
+example 1: cs: Červené víno, prosím.","en: red
+example 1: en: Red wine, please.",in: Clothes and colours · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/13-obleceni.json#words/moderni,4,"cs: moderní
+example 1: cs: Je to moderní byt.","en: modern
+example 1: en: It's a modern flat.",in: Clothes and colours · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/13-obleceni.json#words/siroky,4,"cs: široký
+example 1: cs: Ta ulice je široká.","en: wide
+example 1: en: That street is wide.",in: Clothes and colours · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/13-obleceni.json#words/zeleny,4,"cs: zelený
+example 1: cs: Zelený čaj, prosím.","en: green
+example 1: en: Green tea, please.",in: Clothes and colours · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/14-skola.json#words/pomalu,4,"cs: pomalu
+example 1: cs: Mluvte pomalu, prosím.","en: slowly
+example 1: en: Please speak slowly.",in: School and languages · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/14-skola.json#words/skola,4,"cs: škola
+example 1: cs: Děti jsou ve škole.","en: school
+example 1: en: The children are at school.",in: School and languages · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/14-skola.json#words/slovo,4,"cs: slovo
+example 1: cs: Co znamená to slovo?","en: word
+example 1: en: What does that word mean?",in: School and languages · gender: n · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/14-skola.json#words/spravny,4,"cs: správný
+example 1: cs: To je správná odpověď.","en: correct
+example 1: en: That's the right answer.",in: School and languages · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/14-skola.json#words/strana,4,"cs: strana
+example 1: cs: Otevřete knihu na straně deset.","en: page; side
+example 1: en: Open the book at page ten.",in: School and languages · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/14-skola.json#words/text,4,"cs: text
+example 1: cs: Přečtěte si text.","en: text
+example 1: en: Read the text.",in: School and languages · gender: m-inan · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/14-skola.json#words/trida,4,"cs: třída
+example 1: cs: Moje dcera je ve třetí třídě.","en: class; classroom
+example 1: en: My daughter is in year three.",in: School and languages · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/14-skola.json#words/umet,4,"cs: umět
+example 1: cs: Umím trochu česky.","en: to know how to, can
+example 1: en: I can speak a little Czech.",in: School and languages · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/14-skola.json#words/vysvetlit,4,"cs: vysvětlit
+example 1: cs: Můžete mi to vysvětlit?","en: to explain
+example 1: en: Can you explain it to me?",in: School and languages · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/bat-se,4,"cs: bát se
+example 1: cs: Nebojte se.","en: to be afraid
+example 1: en: Don't be afraid.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/brat,4,"cs: brát
+example 1: cs: Beru léky.","en: to take
+example 1: en: I take medicine.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/davat,4,"cs: dávat
+example 1: cs: Co dávají v kině?","en: to give; to put
+example 1: en: What's on at the cinema?",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/dokazat,4,"cs: dokázat
+example 1: cs: Dokázal jsem to!","en: to manage (to do)
+example 1: en: I did it!",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/dostat,4,"cs: dostat
+example 1: cs: Dostal jsem e-mail.","en: to get, to receive
+example 1: en: I got an e-mail.",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/drzet,4,"cs: držet
+example 1: cs: Držte se, prosím.","en: to hold
+example 1: en: Hold on, please.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/lezet,4,"cs: ležet
+example 1: cs: Ležím v posteli.","en: to lie, to be lying
+example 1: en: I'm lying in bed.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/libit-se,4,"cs: líbit se
+example 1: cs: Líbí se mi Praha.","en: to please, to like
+example 1: en: I like Prague.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/milovat,4,"cs: milovat
+example 1: cs: Miluju českou kuchyni.","en: to love
+example 1: en: I love Czech food.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/najit,4,"cs: najít
+example 1: cs: Nemůžu najít klíče.","en: to find
+example 1: en: I can't find my keys.",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/nechat,4,"cs: nechat
+example 1: cs: Nechte to tady.","en: to leave, to let
+example 1: en: Leave it here.",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/objevit,4,"cs: objevit
+example 1: cs: Objevili jsme hezkou kavárnu.","en: to discover
+example 1: en: We discovered a nice café.",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/otevrit,4,"cs: otevřít
+example 1: cs: Kdy otevřete?","en: to open
+example 1: en: When do you open?",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/patrit,4,"cs: patřit
+example 1: cs: Komu patří ten kufr?","en: to belong
+example 1: en: Whose suitcase is that?",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/podivat-se,4,"cs: podívat se
+example 1: cs: Můžu se podívat?","en: to have a look
+example 1: en: May I have a look?",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/pouzivat,4,"cs: používat
+example 1: cs: Používám mobilní aplikaci.","en: to use
+example 1: en: I use a mobile app.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/pripravit,4,"cs: připravit
+example 1: cs: Připravím večeři.","en: to prepare
+example 1: en: I'll make dinner.",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/ptat-se,4,"cs: ptát se
+example 1: cs: Ptá se na cestu.","en: to ask
+example 1: en: He's asking the way.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/rikat,4,"cs: říkat
+example 1: cs: Jak se tomu říká česky?","en: to say, to tell
+example 1: en: What is this called in Czech?",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/rozhodnout-se,4,"cs: rozhodnout se
+example 1: cs: Rozhodl jsem se zůstat v Praze.","en: to decide
+example 1: en: I decided to stay in Prague.",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/sedet,4,"cs: sedět
+example 1: cs: Sedím v kanceláři.","en: to sit, to be sitting
+example 1: en: I'm sitting in the office.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/sledovat,4,"cs: sledovat
+example 1: cs: Sleduju zprávy.","en: to watch, to follow
+example 1: en: I follow the news.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/slyset,4,"cs: slyšet
+example 1: cs: Neslyším vás.","en: to hear
+example 1: en: I can't hear you.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/smet,4,"cs: smět
+example 1: cs: Smím dál?","en: may, to be allowed to
+example 1: en: May I come in?",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/snazit-se,4,"cs: snažit se
+example 1: cs: Snažím se mluvit česky.","en: to try
+example 1: en: I'm trying to speak Czech.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/stat-se,4,"cs: stát se
+example 1: cs: Co se stalo?","en: to happen; to become
+example 1: en: What happened?",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/ukazat,4,"cs: ukázat
+example 1: cs: Můžete mi to ukázat na mapě?","en: to show
+example 1: en: Can you show me on the map?",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/verit,4,"cs: věřit
+example 1: cs: Nevěřím mu.","en: to believe
+example 1: en: I don't believe him.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/videt,4,"cs: vidět
+example 1: cs: Vidíte tu věž?","en: to see
+example 1: en: Can you see that tower?",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/vratit-se,4,"cs: vrátit se
+example 1: cs: Vrátím se v pět.","en: to come back
+example 1: en: I'll be back at five.",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/vzit,4,"cs: vzít
+example 1: cs: Vezmu si taxi.","en: to take
+example 1: en: I'll take a taxi.",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/zajimat-se,4,"cs: zajímat se
+example 1: cs: Zajímám se o historii.","en: to be interested
+example 1: en: I'm interested in history.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/zapomenout,4,"cs: zapomenout
+example 1: cs: Zapomněl jsem heslo.","en: to forget
+example 1: en: I forgot my password.",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/zdat-se,4,"cs: zdát se
+example 1: cs: Zdá se mi, že prší.","en: to seem
+example 1: en: It seems to me it is raining.",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/ziskat,4,"cs: získat
+example 1: cs: Získal jsem trvalý pobyt.","en: to get, to gain
+example 1: en: I got permanent residence.",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/zmenit,4,"cs: změnit
+example 1: cs: Můžu změnit termín?","en: to change
+example 1: en: Can I change the appointment?",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/znamenat,4,"cs: znamenat
+example 1: cs: Co to znamená?","en: to mean
+example 1: en: What does it mean?",in: Everyday verbs · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/15-slovesa.json#words/zustat,4,"cs: zůstat
+example 1: cs: Zůstanu doma.","en: to stay
+example 1: en: I'll stay at home.",in: Everyday verbs · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,

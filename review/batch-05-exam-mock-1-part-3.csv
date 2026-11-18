@@ -1,0 +1,92 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+exam/speaking.json#tasks/s3-practice1,5,"heading: Výlet na hory
+question: Co dělala Jana minulou sobotu?
+model: Minulou sobotu jela Jana vlakem na hory. Ráno bylo hezky a Jana šla na dlouhý výlet. Odpoledne ale začalo pršet a Jana neměla deštník. Proto šla do restaurace, dala si čaj a polévku a počkala, až přestane pršet.","title: A trip to the mountains
+panelsAlt: A train. | Mountains. | Rain. | A fork and knife: a restaurant.",in: A trip to the mountains · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/speaking.json#tasks/s3-practice2,5,"heading: Ztracená peněženka
+question: Co se stalo Tomášovi včera?
+model: Včera byl Tomáš v obchodě a nakupoval jídlo. U pokladny zjistil, že nemá peněženku. Byl smutný a hned zavolal do kavárny, kde byl ráno. Paní z kavárny řekla, že peněženku našla. Tomáš si pro ni šel a měl velkou radost.","title: A lost wallet
+panelsAlt: A shop. | A wallet. | A mobile phone. | A happy face.",in: A lost wallet · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/speaking.json#tasks/s4-mock1,5,"situation: Plánujete s kamarádem výlet na víkend. Vyberte spolu jeden výlet.
+turns 1: friend: Kam pojedeme o víkendu? · model: Pojeďme na hory. Můžeme jít na dlouhou procházku.
+turns 2: friend: Na hory je to daleko. Co kolo? · model: Na kole jsem nejezdil rok. Hory jsou lepší, pojedeme vlakem a ve vlaku si odpočineme.
+turns 3: friend: Tak jo. V kolik pojedeme? · model: V sobotu v osm ráno z hlavního nádraží.","title: A weekend trip
+situationEn: You and a friend are planning a weekend trip. Choose one together.
+options 1: en: the mountains
+options 2: en: a bike ride
+options 3: en: an outdoor pool",in: A weekend trip · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/speaking.json#tasks/s4-mock2,5,"situation: Chcete jít s kamarádkou na večeři. Vyberte spolu jedno místo.
+turns 1: friend: Kam půjdeme dnes na večeři? · model: Co třeba pizza? Je levná a rychlá.
+turns 2: friend: Pizzu jsem měla včera. Nechceš něco jiného? · model: Tak pojďme do české restaurace. Mají tam výborný guláš.
+turns 3: friend: Super, guláš mám ráda. Kdy se sejdeme? · model: V sedm u metra, jestli ti to vyhovuje.","title: Dinner out
+situationEn: You and a friend want to go out for dinner. Choose one place together.
+options 1: en: a pizzeria
+options 2: en: a Czech restaurant
+options 3: en: a café",in: Dinner out · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/speaking.json#tasks/s4-practice1,5,"situation: V sobotu chcete jít s kamarádem někam ven. Vyberte spolu jednu věc.
+turns 1: friend: Ahoj! Kam půjdeme v sobotu? · model: Co takhle do kina? Hrají nový český film.
+turns 2: friend: Do kina se mi nechce, byl jsem tam minulý týden. Co jiného? · model: Tak pojďme do bazénu. Bude teplo a plavání je zdravé.
+turns 3: friend: Dobře, to zní dobře. A kdy? · model: Třeba v deset ráno. Potom můžeme jít na oběd.","title: Going out on Saturday
+situationEn: You and a friend want to go out on Saturday. Choose one thing together.
+options 1: en: the cinema
+options 2: en: the swimming pool
+options 3: en: a museum",in: Going out on Saturday · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/speaking.json#tasks/s4-practice2,5,"situation: Kupujete s kamarádkou dárek k narozeninám pro kolegu. Vyberte spolu jeden dárek.
+turns 1: friend: Co koupíme Pavlovi k narozeninám? · model: Pavel rád čte, tak mu kupme knihu.
+turns 2: friend: Knihu? Nevím, jestli víme, co čte. Co víno? · model: Víno ne, Pavel nepije alkohol. Kniha je lepší, můžeme se zeptat jeho ženy.
+turns 3: friend: Dobře, tak knihu. Kdo ji koupí? · model: Já ji koupím zítra po práci.","title: A present for a colleague
+situationEn: You and a friend are buying a birthday present for a colleague. Choose one together.
+options 1: en: a book
+options 2: en: a bottle of wine
+options 3: en: flowers",in: A present for a colleague · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/warmup.json#warmup/pw-01,5,"cs: Včera jsem ___ do práce.
+options: šel | jdu | půjdu
+answers: šel",prompt: Yesterday I **went** (on foot) to work.,exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+exam/warmup.json#warmup/pw-02,5,"cs: Jana ___ bolest hlavy.
+options: měla | měl | má
+answers: měla",prompt: Jana **had** a headache.,exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+exam/warmup.json#warmup/pw-03,5,"cs: Jeli ___ vlakem.
+options: jsme | jsem | jste
+answers: jsme",prompt: We **travelled** by train.,exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+exam/warmup.json#warmup/pw-04,5,"cs: ___ pršet.
+options: Začalo | Začala | Začal
+answers: Začalo",prompt: It **started** to rain.,exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+exam/warmup.json#warmup/pw-05,5,"cs: Petr ___ do práce.
+options: nešel | nejde | nešla
+answers: nešel",prompt: Petr **didn't go** to work.,exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+exam/warmup.json#warmup/pw-06,5,"cs: Ráno ___ hezky.
+options: bylo | byl | je
+answers: bylo",prompt: The weather **was** nice in the morning.,exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+exam/warmup.json#warmup/pw-07,5,"cs: Koupila ___ léky.
+options: jsem | se | je
+answers: jsem",prompt: I (a woman) **bought** some medicine.,exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+exam/warmup.json#warmup/pw-08,5,"cs: Sousedi jim ___.
+options: pomohli | pomohl | pomůžou
+answers: pomohli",prompt: The neighbours **helped** them.,exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+exam/warmup.json#warmup/pw-09,5,"cs: Tomáš ___, že nemá peněženku.
+options: zjistil | zjišťuje | zjistí
+answers: zjistil",prompt: Tomáš **found out** he had no wallet.,exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+exam/warmup.json#warmup/pw-10,5,"cs: Večer ___ všichni v bytě.
+options: byli | bylo | jsou
+answers: byli",prompt: In the evening they **were** all in the flat.,exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+exam/writing.json#tasks/w1-mock1,5,"situation: Přihlašujete dítě do školky. Odpovězte na otázky ve formuláři.
+heading: Mateřská škola Sluníčko: přihláška
+questions 1: q: Co vaše dítě rádo dělá? · model: Moje dcera ráda kreslí, zpívá písničky a hraje si venku s míčem.
+questions 2: q: Proč jste si vybrali naši školku? · model: Vaše školka je blízko našeho domu a má velkou zahradu pro děti.
+questions 3: q: Kdo bude dítě ze školky vyzvedávat? · model: Většinou ji bude vyzvedávat manžel, v pátek ji vyzvednu já nebo babička.","title: A nursery school
+situationEn: You’re enrolling your child at a nursery school. Answer the questions on the form.",in: A nursery school · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/writing.json#tasks/w2-mock1,5,"situation: Na internetu jste viděl/a inzerát na byt. Napište e-mail majiteli bytu.
+subject: Pronájem bytu
+prompts 1: cs: JAKÝ BYT HLEDÁTE?
+prompts 2: cs: KOLIK LIDÍ BUDE V BYTĚ BYDLET?
+prompts 3: cs: MÁTE ZVÍŘE?
+prompts 4: cs: KDY SE CHCETE NASTĚHOVAT?
+prompts 5: cs: KDY SE MŮŽETE PŘIJÍT PODÍVAT?
+model: Dobrý den,
+
+viděla jsem váš inzerát na internetu. Hledám byt 2+kk na Vinohradech blízko metra. V bytě budeme bydlet dva, já a můj přítel. Máme malého psa, je hodný a tichý. Chtěli bychom se nastěhovat od prvního března. Můžu se na byt přijít podívat v úterý nebo ve čtvrtek po páté hodině?
+
+Děkuji za odpověď.
+S pozdravem
+Maria Lopez","title: Renting a flat
+situationEn: You saw an advert for a flat online. Write to the owner.",in: Renting a flat · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,

@@ -1,0 +1,50 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+emergency/cards.json#,1,"cards 1: titleCs: U lékaře
+cards 2: titleCs: V lékárně
+cards 3: titleCs: Policie
+cards 4: titleCs: Zabouchnuté dveře
+cards 5: titleCs: Ztráty a nálezy
+cards 6: titleCs: Nehoda","cards 1: title: Doctor
+cards 2: title: Pharmacy
+cards 3: title: Police
+cards 4: title: Locked out
+cards 5: title: Lost something
+cards 6: title: Accident",,Natural and correct?,,,,
+emergency/cards.json#cards/accident/phrases/0,1,Stala se nehoda.,There's been an accident.,in: Accident,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/accident/phrases/1,1,Je někdo zraněný.,Someone is injured.,in: Accident,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/accident/phrases/2,1,Zavolejte záchranku!,Call an ambulance!,in: Accident,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/accident/phrases/3,1,Jsem v pořádku.,I'm all right.,in: Accident,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/accident/phrases/4,1,Jsme na …,We're at … (say the street or stop),in: Accident,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/accident/show/0,1,Stala se nehoda. Je tu zraněný člověk. Zavolejte prosím záchranku!,There's been an accident. Someone is injured. Please call an ambulance!,in: Accident,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/doctor/phrases/0,1,Je mi špatně.,I feel unwell.,in: Doctor,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/doctor/phrases/1,1,Bolí mě tady.,It hurts here.,in: Doctor,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/doctor/phrases/2,1,Mám horečku.,I have a temperature.,in: Doctor,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/doctor/phrases/3,1,Beru tyto léky.,I take these medicines.,in: Doctor,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/doctor/phrases/4,1,Jsem těhotná.,I'm pregnant.,in: Doctor,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/doctor/phrases/5,1,Mluvíte anglicky?,Do you speak English?,in: Doctor,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/doctor/show/0,1,"Dobrý den, nemluvím dobře česky. Potřebuji lékaře. Můžete mi prosím pomoct?","Hello, I don't speak Czech well. I need a doctor. Can you please help me?",in: Doctor,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/doctor/show/1,1,Mám alergii na penicilin.,I'm allergic to penicillin.,in: Doctor,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/locked-out/phrases/0,1,Zabouchl jsem si dveře. / Zabouchla jsem si dveře.,I've locked myself out. (man / woman),in: Locked out,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/locked-out/phrases/1,1,Nemám klíče.,I don't have my keys.,in: Locked out,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/locked-out/phrases/2,1,Potřebuji zámečníka.,I need a locksmith.,in: Locked out,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/locked-out/phrases/3,1,Kolik to bude stát?,How much will it cost?,in: Locked out,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/locked-out/phrases/4,1,Bydlím tady.,I live here.,in: Locked out,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/locked-out/show/0,1,"Dobrý den, zabouchl jsem si dveře a klíče jsou uvnitř. Potřebuji zámečníka.","Hello, I've locked myself out and the keys are inside. I need a locksmith.",in: Locked out,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/lost/phrases/0,1,Ztratil jsem peněženku. / Ztratila jsem peněženku.,I've lost my wallet. (man / woman),in: Lost something,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/lost/phrases/1,1,Nechal jsem to v tramvaji. / Nechala jsem to v tramvaji.,I left it on the tram. (man / woman),in: Lost something,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/lost/phrases/2,1,"Byla to linka 22, asi v osm.","It was line 22, at about eight.",in: Lost something,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/lost/phrases/3,1,Kde jsou ztráty a nálezy?,Where is the lost-and-found office?,in: Lost something,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/lost/show/0,1,"Dobrý den, nechal jsem v tramvaji tašku. Můžete mi pomoct?","Hello, I left a bag on the tram. Can you help me?",in: Lost something,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/pharmacy/phrases/0,1,Máte něco na kašel?,Do you have anything for a cough?,in: Pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/pharmacy/phrases/1,1,Máte něco na bolest hlavy?,Do you have anything for a headache?,in: Pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/pharmacy/phrases/2,1,Mám recept.,I have a prescription.,in: Pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/pharmacy/phrases/3,1,Je to na předpis?,Is it prescription-only?,in: Pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/pharmacy/phrases/4,1,Kolikrát denně?,How many times a day?,in: Pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/pharmacy/show/0,1,"Dobrý den, potřebuji něco na bolest. Nemluvím dobře česky.","Hello, I need something for pain. I don't speak Czech well.",in: Pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/police/phrases/0,1,Ukradli mi peněženku.,My wallet was stolen.,in: Police,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/police/phrases/1,1,Ukradli mi telefon.,My phone was stolen.,in: Police,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/police/phrases/2,1,Ztratil jsem pas. / Ztratila jsem pas.,I've lost my passport. (man / woman),in: Police,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/police/phrases/3,1,Potřebuji potvrzení pro pojišťovnu.,I need a confirmation for my insurance.,in: Police,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/police/phrases/4,1,Kde je nejbližší policejní služebna?,Where is the nearest police station?,in: Police,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/cards.json#cards/police/show/0,1,"Dobrý den, chci nahlásit krádež. Nemluvím dobře česky.","Hello, I want to report a theft. I don't speak Czech well.",in: Police,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+emergency/numbers.json#,1,,,,Natural and correct?,,,,

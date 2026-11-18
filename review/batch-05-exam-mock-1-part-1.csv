@@ -1,0 +1,117 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+exam/listening.json#tasks/l1-mock1,5,"instruction: Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý dialog uslyšíte dvakrát.
+questions 1: q: Kde bydlí paní Ječmenová teď?
+questions 2: q: Co má muž koupit?
+questions 3: q: Kdy má žena termín u zubaře?
+questions 4: q: Jak jezdí muž do práce teď?
+questions 5: q: Co dělá žena v neděli?","title: Everyday dialogues
+instructionEn: Listen to five dialogues. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each dialogue twice.
+questions 1: options: V Brně. | Na vesnici. | V centru. | V Modřanech.
+questions 2: options: Chleba a máslo. | Mléko a chleba. | Mléko a máslo. | Jen máslo.
+questions 3: options: Zítra ve tři. | Zítra v deset. | Dnes. | Pozítří.
+questions 4: options: Metrem. | Autem. | Na kole. | Autobusem.
+questions 5: options: Uklízí. | Pracuje. | Jde do divadla. | Je na chatě.",in: Everyday dialogues · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l2-mock1,5,"instruction: Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý text uslyšíte dvakrát.
+questions 1: q: Kdy je pošta zavřená?
+questions 2: q: Co dostanou zákazníci zdarma?
+questions 3: q: Ve které zastávce dnes končí tramvaj?
+questions 4: q: Kde mají rodiče počkat na děti?
+questions 5: q: Proti čemu je očkování?","title: Announcements
+instructionEn: Listen to five announcements. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each one twice.
+questions 1: options: V pátek. | Ve čtvrtek. | V pondělí. | Ve středu.
+questions 2: options: Slevu deset procent. | Kávu. | Jízdenku. | Tašku.
+questions 3: options: Národní třída. | Anděl. | Václavské náměstí. | Lazarská.
+questions 4: options: Ve škole. | U zoo. | Na parkovišti před školou. | Na nádraží.
+questions 5: options: Proti bolesti zubů. | Proti chřipce. | Proti horečce. | Proti alergii.",in: Announcements · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l3-mock1,5,"instruction: Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–G. Dvě nabídky jsou navíc. Každý text uslyšíte dvakrát.
+question: Jaký sport dělají tito lidé?
+options 1: text: tenis
+options 2: text: cyklistika
+options 3: text: fotbal
+options 4: text: běh
+options 5: text: lyžování
+options 6: text: hokej
+options 7: text: plavání","title: Sports
+instructionEn: Listen to five short texts. Choose the right answer, A–G, from the table for each. Two of the options are extra. You’ll hear each text twice.
+items 1: label: Ivana
+items 2: label: Robert
+items 3: label: Dana
+items 4: label: Mirek
+items 5: label: Alena",in: Sports · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l4-mock1,5,"instruction: Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jeden správný obrázek z nabídky A–F. Jeden obrázek je navíc. Každý dialog uslyšíte dvakrát.
+question: Kam ti lidé půjdou nebo pojedou?","title: Where are they going?
+instructionEn: Listen to five dialogues. Choose the right picture, A–F, for each. One picture is extra. You’ll hear each dialogue twice.",in: Where are they going? · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l5-mock1,5,"instruction: Poslechněte si hlasovou zprávu. Napište ke každému úkolu 1–5 jednu správnou informaci. Zprávu uslyšíte dvakrát.
+questions 1: q: Kdy má Jitka narozeniny? · answers: v pátek | pátek
+questions 2: q: Jak se jmenuje restaurace? · answers: U Bílé labutě | Bílá labuť
+questions 3: q: V kolik hodin se sejdou? · answers: v půl osmé | půl osmé | 19:30 | v 19:30 | 7:30 | v 7:30
+questions 4: q: Co má Klára přinést? · answers: víno | dobré víno | nějaké víno
+questions 5: q: Jaké číslo telefonu má Jitka? · answers: 605 117 342 | 605117342","title: A birthday invitation
+instructionEn: Listen to a voicemail and write one piece of information for each of questions 1–5. You’ll hear it twice.",in: A birthday invitation · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r1-mock1,5,"instruction: Podívejte se na obrázky 1–5 a vyberte ke každému obrázku jednu správnou informaci z nabídky A–H. Tři informace nebudete potřebovat.
+options 1: text: Pronajmu byt 2+kk v Holešovicích, 18 000 Kč měsíčně.
+options 2: text: Zubní ordinace MUDr. Novákové přijímá nové pacienty.
+options 3: text: Nemáte čas? Půjdeme na procházku s vaším psem.
+options 4: text: Prodám kolo, skoro nové, 3 000 Kč.
+options 5: text: Lékárna U Anděla: léky i bez receptu, otevřeno nonstop.
+options 6: text: Ordinace praktického lékaře je v pátek zavřená.
+options 7: text: Úklid bytů a kanceláří, 250 Kč za hodinu.
+options 8: text: Opravy praček a ledniček. Přijedeme ještě dnes.","title: Health and home
+instructionEn: Look at pictures 1–5 and choose the one right notice for each from A–H. You won’t need three of them.",in: Health and home · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r2-mock1,5,"instruction: Přečtěte si text a úkoly 1–5. Vyberte ke každému úkolu jedno správné řešení z nabídky A–D.
+text: Pekárna Kolář v Dejvicích hledá nového prodavače nebo prodavačku.
+
+Pracovní doba je od pondělí do pátku od 6:00 do 14:00 a jednu sobotu v měsíci do 12:00. Nabízíme plat 32 000 Kč měsíčně, pět týdnů dovolené a slevu 50 % na naše pečivo.
+
+Čeština na úrovni A2 stačí, ale musíte umět dobře komunikovat se zákazníky. Zkušenost z obchodu je výhoda, ale není nutná: všechno vás naučíme.
+
+Životopis posílejte e-mailem do 30. 6. na adresu prace@pekarnakolar.cz. Na pohovor vás pozveme telefonicky.
+questions 1: q: Kde je pekárna?
+questions 2: q: Kdy se pracuje v sobotu?
+questions 3: q: Co dostane zaměstnanec navíc?
+questions 4: q: Co musí uchazeč umět?
+questions 5: q: Jak se uchazeč dozví o pohovoru?","title: A job advert
+instructionEn: Read the text and questions 1–5. Choose the one right answer, A–D, for each.
+questions 1: options: Na Smíchově. | V Dejvicích. | V Holešovicích. | Na Žižkově.
+questions 2: options: Každou druhou sobotu. | Jednou za měsíc. | Nikdy. | Každou sobotu.
+questions 3: options: Jízdenku na MHD. | Slevu na pečivo. | Oběd zdarma. | Služební auto.
+questions 4: options: Péct chleba. | Mluvit anglicky. | Řídit auto. | Komunikovat se zákazníky.
+questions 5: options: Telefonem. | Osobně v pekárně. | E-mailem. | Dopisem.",in: A job advert · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r3-mock1,5,"instruction: Přečtěte si texty 1–4 a informace o osobách. Vyberte ke každému textu jednu vhodnou osobu z nabídky A–E. Jednu osobu nebudete potřebovat.
+items 1: text: Restaurace Zelená zahrada: jen vegetariánská jídla, polední menu 160 Kč.
+items 2: text: Kavárna U Sovy: dětský koutek, domácí dorty, otevřeno od 8 do 20 hodin.
+items 3: text: Pivnice Na Rohu: velká obrazovka, každý zápas živě, pivo od 45 Kč.
+items 4: text: Bistro Rychlík u nádraží: jídlo s sebou za 5 minut, otevřeno nonstop.
+options 1: text: Irena přijede vlakem ve dvě v noci a bude mít hlad.
+options 2: text: Klára jde s malou dcerou na kávu a na něco sladkého.
+options 3: text: Ondřej nejí maso a hledá levný oběd blízko práce.
+options 4: text: Roman se chce s kamarády dívat na hokej.
+options 5: text: Paní Šťastná slaví šedesátiny a chce restauraci s hudbou a tancem.","title: Where to eat
+instructionEn: Read texts 1–4 and what each person wants. Match each text to one person, A–E. You won’t need one of them.",in: Where to eat · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r4-mock1,5,"instruction: Přečtěte si texty 1–6. Vyberte ke každému textu jedno správné řešení z nabídky A–D.
+questions 1: q:  · text: Městská knihovna: Kurz počítačů pro ___ začíná v říjnu.
+questions 2: q:  · text: Pronajmu ___ byt v centru, 2+1, 25 000 Kč.
+questions 3: q:  · text: Do restaurace hledáme číšníka nebo ___.
+questions 4: q:  · text: Lékárna je otevřená ___ den, i o víkendu.
+questions 5: q:  · text: Kvůli opravě jezdí linka B jen ___ stanice Florenc.
+questions 6: q:  · text: Prodám pračku. Je ___ a funguje jako nová.","title: Small ads
+instructionEn: Read texts 1–6. Choose the word or words, A–D, that fill each gap.
+questions 1: options: seniory | seniorů | senioři | seniorem
+questions 2: options: zařízená | zařízený | zařízené | zařízeným
+questions 3: options: servírka | servírku | servírce | servírkou
+questions 4: options: každá | každé | každou | každý
+questions 5: options: k | v | do | na
+questions 6: options: skoro nové | skoro novou | skoro nový | skoro nová",in: Small ads · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r5-mock1,5,"instruction: Přečtěte si text a doplňte ke každému úkolu 1–5 jednu správnou informaci.
+text: Farmářské trhy na Náplavce
+
+Každou sobotu od 8 do 14 hodin, od března do listopadu.
+Prodáváme ovoce, zeleninu, sýry, maso a pečivo přímo od českých farmářů. Pro děti hrajeme od 10 hodin divadlo zdarma. Kávu a teplé jídlo koupíte u stánků u řeky.
+Platit můžete hotově i kartou. Psi musí být na vodítku.
+Tramvají jeďte do zastávky Palackého náměstí.
+questions 1: q: Který den jsou trhy? · answers: v sobotu | sobota | sobotu | každou sobotu
+questions 2: q: Do kolika hodin jsou trhy otevřené? · answers: do 14 | 14 | do 14:00 | 14:00 | do 14 hodin | 14 hodin | do dvou
+questions 3: q: V kolik hodin začíná divadlo pro děti? · answers: v 10 | 10 | 10:00 | od 10 | v deset | od 10 hodin | v 10 hodin
+questions 4: q: Jak můžete platit? Napište jeden způsob. · answers: hotově | kartou | hotově i kartou | hotově nebo kartou
+questions 5: q: Jak se jmenuje zastávka tramvaje? · answers: Palackého náměstí","title: A farmers’ market
+instructionEn: Read the text and write one piece of information for each of questions 1–5.",in: A farmers’ market · set: mock1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,

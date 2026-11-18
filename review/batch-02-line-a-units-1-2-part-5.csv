@@ -1,0 +1,11 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+units/02-cafe/unit.json#check/exercises/u02-c7,2,"answers: Zaplatím[, prosím]. | {Účet|Platím}, prosím.","prompt: I'd like to pay, please.",in: Coffee and lunch near the office · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/unit.json#check/exercises/u02-c8,2,answers: {Můžu|Mohu} [za]platit kartou?,prompt: Can I pay by card?,in: Coffee and lunch near the office · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+units/02-cafe/unit.json#missions/u02-m1,2,"phrases 1: cs: Dobrý den, dám si kávu, prosím.
+phrases 2: cs: S sebou, prosím.
+phrases 3: cs: Zaplatím kartou.
+phrases 4: cs: Děkuju, na shledanou.","title: Coffee, start to finish
+phrases 1: en: Hello, I'll have a coffee, please.
+phrases 2: en: To take away, please.
+phrases 3: en: I'll pay by card.
+phrases 4: en: Thanks, goodbye.","in: Coffee, start to finish",Natural and correct?,,,,

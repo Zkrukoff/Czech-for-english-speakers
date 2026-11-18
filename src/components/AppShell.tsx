@@ -1,5 +1,6 @@
 import { UpdateNotice } from './UpdateNotice';
 import { PageHeader } from './PageHeader';
+import { reviewLine } from '@/lib/reviewStatus';
 import { NavLink, Outlet, useLocation, useRouteError } from 'react-router-dom';
 import { contentErrors } from '@/content';
 import { useHashScroll } from '@/lib/useHashScroll';
@@ -82,7 +83,7 @@ export function AppShell({ error = false }: { error?: boolean }) {
           </span>
           <span className="text-xs">
             <NavLink to="/emergency" className="inline-flex min-h-11 items-center font-semibold text-ink-2 underline decoration-2 underline-offset-2 hover:text-ink">Emergency: 112</NavLink> ·{' '}
-            Progress stays in this browser · Czech content awaiting native review ·{' '}
+            Progress stays in this browser · {reviewLine()} ·{' '}
             <NavLink to="/styleguide" className="inline-flex min-h-11 items-center underline decoration-2 underline-offset-2 hover:text-ink">Style guide</NavLink>
           </span>
         </div>

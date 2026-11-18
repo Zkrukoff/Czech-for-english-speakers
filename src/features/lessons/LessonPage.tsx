@@ -120,7 +120,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
         </>
       )}
       {step === 'vocab' && <VocabList items={lesson.vocab} />}
-      {step === 'dialogue' && <DialogueView dialogue={lesson.dialogue} />}
+      {step === 'dialogue' && <DialogueView dialogue={lesson.dialogue} lessonId={lesson.id} />}
       {step === 'practice' &&
         (outcomes ? (
           <PracticeSummary

@@ -1,0 +1,76 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+phrases/phrases.json#situations/cafe/phrases/chutna,6,"cs: Jak vám chutná?
+answers: Jak vám chutná[?] | Jak ti chutná[?]",How do you like it? (the food),in: Café and bakery,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/cafe/phrases/dam-si-kavu,6,"cs: Dám si kávu, prosím.
+answers: Dám si kávu[,] prosím[.] | Prosím kávu[.] | Kávu[,] prosím[.]","I'll have a coffee, please.",in: Café and bakery,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/cafe/phrases/dobrou-chut,6,Dobrou chuť!,Enjoy your meal!,in: Café and bakery,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/cafe/phrases/na-zdravi,6,Na zdraví!,Cheers!,in: Café and bakery,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/cafe/phrases/ne-dekuju,6,"cs: Ne, děkuju.
+answers: Ne[,] děkuju[.] | Ne[,] děkuji[.] | Ne[,] díky[.]","No, thank you.",in: Café and bakery,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/cafe/phrases/neco-k-piti,6,Něco k pití?,Anything to drink?,in: Café and bakery,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/doctor/phrases/boli-v-krku,6,Bolí mě v krku.,I have a sore throat.,in: Doctor and pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/doctor/phrases/co-boli,6,Co vás bolí?,What hurts? (you'll hear this),in: Doctor and pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/doctor/phrases/dychejte,6,Dýchejte zhluboka.,Breathe deeply. (you'll hear this),in: Doctor and pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/doctor/phrases/horecka,6,Mám horečku.,I have a temperature.,in: Doctor and pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/doctor/phrases/na-kasel,6,Máte něco na kašel?,Do you have anything for a cough?,in: Doctor and pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/doctor/phrases/objednat,6,"cs: Potřebuju se objednat k lékaři.
+answers: Potřebuju se objednat k lékaři[.] | Potřebuji se objednat k lékaři[.]",I need to make a doctor's appointment.,in: Doctor and pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/home/phrases/inzerat,6,"cs: Je byt ještě volný?
+answers: Je {byt |}ještě volný[?]",Is the flat still available?,in: The flat,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/home/phrases/kohoutek,6,Kape kohoutek.,The tap is dripping.,in: The flat,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/home/phrases/najem,6,"cs: Kolik je nájem včetně poplatků?
+answers: Kolik je nájem včetně poplatků[?]",How much is the rent including charges?,in: The flat,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/home/phrases/podivat,6,"cs: Mohl by se na to někdo podívat?
+answers: Mohl by se na to někdo podívat[?]",Could someone take a look at it?,in: The flat,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/home/phrases/pomoct,6,"cs: Nechcete pomoct?
+answers: Nechcete pomoct[?] | Nechceš pomoct[?]",Can I help you? / Do you need a hand?,in: The flat,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/home/phrases/topeni,6,Nejde topení.,The heating isn't working.,in: The flat,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/paying/phrases/hotove,6,"cs: Platím hotově.
+answers: Platím hotově[.] | Zaplatím hotově[.]",I'm paying cash.,in: Paying,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/paying/phrases/kartou,6,"cs: Můžu platit kartou?
+answers: Můžu {platit|zaplatit} kartou[?] | Můžu kartou[?] | Můžu platit kartou[,] prosím[?]",Can I pay by card?,in: Paying,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/paying/phrases/kolik-stoji,6,"cs: Kolik to stojí?
+answers: Kolik to stojí[?] | Kolik stojí[?]",How much is it?,in: Paying,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/paying/phrases/v-poradku,6,"cs: To je v pořádku.
+answers: To je v pořádku[.]",That's fine. (also: keep the change),in: Paying,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/paying/phrases/zaplatime,6,"cs: Zaplatíme, prosím.
+answers: Zaplatíme[,] prosím[.] | Zaplatím[,] prosím[.]","We'd like to pay, please.",in: Paying,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/paying/phrases/zvlast,6,"cs: Dohromady, nebo zvlášť?
+answers: Dohromady[,] nebo zvlášť[?]",Together or separately?,in: Paying,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/phone/phrases/hlaskovat,6,"cs: Můžete mi to hláskovat?
+answers: Můžete mi to hláskovat[?] | Můžeš mi to hláskovat[?]",Can you spell it for me?,in: On the phone,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/phone/phrases/kdo-vola,6,"cs: Kdo volá, prosím?
+answers: Kdo volá[,] prosím[?]","Who's calling, please?",in: On the phone,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/phone/phrases/mejte-se,6,"cs: Mějte se hezky.
+answers: Mějte se hezky[.] | Měj se hezky[.]",Take care. (goodbye),in: On the phone,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/phone/phrases/omyl,6,To je omyl.,Wrong number. / That's a mistake.,in: On the phone,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/phone/phrases/slysite,6,"cs: Haló, slyšíte mě?
+answers: Haló[,] slyšíte mě[?] | Haló[,] slyšíš mě[?]","Hello, can you hear me?",in: On the phone,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/phone/phrases/u-telefonu,6,U telefonu Novák.,Novák speaking.,in: On the phone,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/transport/phrases/daleko,6,Je to daleko?,Is it far?,in: Getting around,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/transport/phrases/jizdenka-brno,6,"cs: Jednu jízdenku do Brna, prosím.
+answers: Jednu jízdenku do Brna[,] prosím[.]","One ticket to Brno, please.",in: Getting around,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/transport/phrases/kde-zastavka,6,"cs: Kde je tady nejbližší zastávka?
+answers: Kde je {tady |}nejbližší zastávka[?]",Where's the nearest stop?,in: Getting around,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/transport/phrases/prestupovat,6,Musím přestupovat?,Do I have to change?,in: Getting around,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/transport/phrases/v-kolik,6,"cs: V kolik jede nejbližší vlak?
+answers: V kolik jede nejbližší vlak[?] | V kolik jede další vlak[?]",What time is the next train?,in: Getting around,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/transport/phrases/vystupujete,6,Vystupujete?,Are you getting off?,in: Getting around,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/understand/phrases/co-znamena,6,"cs: Co znamená…?
+answers: Co znamená[…][?]",What does … mean?,in: When you don't understand,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/understand/phrases/jeste-jednou,6,Můžete to říct ještě jednou?,Can you say that again?,in: When you don't understand,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/understand/phrases/napsat,6,"cs: Můžete mi to napsat?
+answers: Můžete mi to napsat[?] | Můžeš mi to napsat[?]",Can you write it down for me?,in: When you don't understand,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/understand/phrases/nerozumim,6,"cs: Promiňte, nerozumím.
+answers: Promiňte, nerozumím[.] | Promiň, nerozumím[.]","Sorry, I don't understand.",in: When you don't understand,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/understand/phrases/pomaleji,6,"Můžete mluvit pomaleji, prosím?","Can you speak more slowly, please?",in: When you don't understand,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/understand/phrases/rekne-cesky,6,"cs: Jak se řekne česky…?
+answers: Jak se řekne česky[…][?] | Jak se česky řekne[…][?]",How do you say … in Czech?,in: When you don't understand,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/work/phrases/dobry-napad,6,To je dobrý nápad.,That's a good idea.,in: At work,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/work/phrases/nemuzu,6,"cs: Bohužel, nemůžu.
+answers: Bohužel[,] nemůžu[.]",Unfortunately I can't.,in: At work,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/work/phrases/nevadi,6,To nevadí.,That doesn't matter. / No problem.,in: At work,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/work/phrases/predstavit,6,"cs: Rád bych se vám představil.
+answers: Rád bych se vám představil[.] | Ráda bych se vám představila[.]",I'd like to introduce myself.,in: At work,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/work/phrases/proc-ne,6,Proč ne?,Why not?,in: At work,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+phrases/phrases.json#situations/work/phrases/tesi-me,6,Těší mě.,Nice to meet you.,in: At work,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,

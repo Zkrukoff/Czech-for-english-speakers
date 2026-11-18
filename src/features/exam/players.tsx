@@ -3,6 +3,7 @@ import { fillAccepted } from '@/lib/exam/score';
 import { ExamAudio, Transcript, EXAM_PLAYS } from './ExamAudio';
 import { Pictogram, PICTOGRAMS } from './pictograms';
 import type { ChoiceTask, FillTask, MatchTask } from './schema';
+import { examAudioBase } from '@/lib/audio/ids';
 
 const LETTERS = 'ABCDEFGH';
 
@@ -87,7 +88,7 @@ export function MatchPlayer({ task, value, onChange, done, exam }: { task: Match
               {item.picture && <Pictogram id={item.picture} size={72} label={`Picture ${i + 1}: ${PICTOGRAMS[item.picture]?.en}`} className="mb-3" />}
               {item.label && <p className="mb-2 font-semibold">{item.label}</p>}
               {item.text && <p lang="cs" className="mb-3">{item.text}</p>}
-              {item.audio && <div className="mb-3"><ExamAudio lines={item.audio} limit={exam ? EXAM_PLAYS : undefined} /></div>}
+              {item.audio && <div className="mb-3"><ExamAudio lines={item.audio} idBase={examAudioBase(task.id, item.id)} limit={exam ? EXAM_PLAYS : undefined} /></div>}
               <Pick name={`Answer for ${i + 1}`} letters={letters} value={value[item.id]} onChange={(v) => onChange({ ...value, [item.id]: v })} right={right} done={done} />
               {done && (
                 <>
@@ -112,7 +113,7 @@ export function ChoicePlayer({ task, value, onChange, done, exam }: { task: Choi
           const chosen = value[i] === undefined ? undefined : LETTERS[value[i]!];
           return (
             <ItemBox key={i} n={i + 1}>
-              {q.audio && <div className="mb-3"><ExamAudio lines={q.audio} limit={exam ? EXAM_PLAYS : undefined} /></div>}
+              {q.audio && <div className="mb-3"><ExamAudio lines={q.audio} idBase={examAudioBase(task.id, i + 1)} limit={exam ? EXAM_PLAYS : undefined} /></div>}
               {q.text && <p lang="cs" className="mb-2">{q.text.replace('___', '_______')}</p>}
               {q.q && <p lang="cs" className="mb-2 font-semibold">{q.q}</p>}
               <ul className="mb-3 grid gap-1">
@@ -137,7 +138,7 @@ export function FillPlayer({ task, value, onChange, done, exam }: { task: FillTa
   return (
     <div>
       {task.text && <div lang="cs" className="mb-6 whitespace-pre-line rounded-md border-2 border-rule bg-paper p-4 leading-relaxed">{task.text}</div>}
-      {task.audio && <div className="mb-6"><ExamAudio lines={task.audio} limit={exam ? EXAM_PLAYS : undefined} /></div>}
+      {task.audio && <div className="mb-6"><ExamAudio lines={task.audio} idBase={examAudioBase(task.id, 'msg')} limit={exam ? EXAM_PLAYS : undefined} /></div>}
       <ol className="grid gap-3">
         {task.questions.map((q, i) => {
           const ok = fillAccepted(value[i] ?? '', q.answers);

@@ -1,0 +1,152 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+alphabet/alphabet.json#,3,,,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/a,3,"letter: a
+example 1: cs: pas",example 1: en: passport,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/á,3,"letter: á
+example 1: cs: pás",example 1: en: belt; waist,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/b,3,"letter: b
+example 1: cs: banka",example 1: en: bank,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/c,3,"letter: c
+example 1: cs: cena",example 1: en: price,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/č,3,"letter: č
+example 1: cs: čaj",example 1: en: tea,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/ch,3,"letter: ch
+example 1: cs: chleba",example 1: en: bread,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/d,3,"letter: d
+example 1: cs: doma",example 1: en: at home,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/ď,3,"letter: ď
+example 1: cs: ďábel",example 1: en: devil,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/e,3,"letter: e
+example 1: cs: den",example 1: en: day,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/é,3,"letter: é
+example 1: cs: mléko",example 1: en: milk,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/ě,3,"letter: ě
+example 1: cs: děkuju",example 1: en: thank you,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/f,3,"letter: f
+example 1: cs: fotka",example 1: en: photo,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/g,3,"letter: g
+example 1: cs: guláš",example 1: en: goulash,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/h,3,"letter: h
+example 1: cs: hrad",example 1: en: castle,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/i,3,"letter: i
+example 1: cs: pivo",example 1: en: beer,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/í,3,"letter: í
+example 1: cs: víno",example 1: en: wine,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/j,3,"letter: j
+example 1: cs: jídlo",example 1: en: food,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/k,3,"letter: k
+example 1: cs: káva",example 1: en: coffee,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/l,3,"letter: l
+example 1: cs: lékárna",example 1: en: pharmacy,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/m,3,"letter: m
+example 1: cs: máma",example 1: en: mum,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/n,3,"letter: n
+example 1: cs: noc",example 1: en: night,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/ň,3,"letter: ň
+example 1: cs: Plzeň",example 1: en: Pilsen,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/o,3,"letter: o
+example 1: cs: oko",example 1: en: eye,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/ó,3,"letter: ó
+example 1: cs: gól",example 1: en: goal (in sport),,Natural and correct?,,,,
+alphabet/alphabet.json#letters/p,3,"letter: p
+example 1: cs: práce",example 1: en: work,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/q,3,"letter: q
+example 1: cs: aquapark",example 1: en: water park,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/r,3,"letter: r
+example 1: cs: ruka",example 1: en: hand,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/ř,3,"letter: ř
+example 1: cs: řeka",example 1: en: river,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/s,3,"letter: s
+example 1: cs: sestra",example 1: en: sister,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/š,3,"letter: š
+example 1: cs: škola",example 1: en: school,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/t,3,"letter: t
+example 1: cs: tramvaj",example 1: en: tram,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/ť,3,"letter: ť
+example 1: cs: chuť","example 1: en: taste, appetite",,Natural and correct?,,,,
+alphabet/alphabet.json#letters/u,3,"letter: u
+example 1: cs: ulice",example 1: en: street,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/ú,3,"letter: ú
+example 1: cs: úterý",example 1: en: Tuesday,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/ů,3,"letter: ů
+example 1: cs: dům",example 1: en: house,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/v,3,"letter: v
+example 1: cs: voda",example 1: en: water,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/w,3,"letter: w
+example 1: cs: web",example 1: en: website,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/x,3,"letter: x
+example 1: cs: taxi",example 1: en: taxi,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/y,3,"letter: y
+example 1: cs: byt","example 1: en: flat, apartment",,Natural and correct?,,,,
+alphabet/alphabet.json#letters/ý,3,"letter: ý
+example 1: cs: sýr",example 1: en: cheese,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/z,3,"letter: z
+example 1: cs: zima",example 1: en: winter; cold,,Natural and correct?,,,,
+alphabet/alphabet.json#letters/ž,3,"letter: ž
+example 1: cs: žena",example 1: en: woman,,Natural and correct?,,,,
+alphabet/alphabet.json#practice/alphabet-rules/exercises/alpha-r1,3,,"prompt: Which syllable of a Czech word is stressed?
+options: The first | The second | The last
+answers: The first",in: Reading rules · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-rules/exercises/alpha-r2,3,"cs: pas / pás
+answers: pas","prompt: Pas and pás are different words. Which one means **""passport""**?",in: Reading rules · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-rules/exercises/alpha-r3,3,"cs: byt / být
+answers: být","prompt: Byt and být are different words. Which one means **""to be""**?",in: Reading rules · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-rules/exercises/alpha-r4,3,"cs: dívka
+answers: ď","prompt: In **dívka** (girl), is the d pronounced as d or ď?",in: Reading rules · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-rules/exercises/alpha-r5,3,"cs: hrad
+answers: t",prompt: How does the final **d** in **hrad** (castle) sound: d or t?,in: Reading rules · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-rules/exercises/alpha-r6,3,"cs: město
+answers: mňesto","prompt: How is **město** (town) pronounced? Type it the way it sounds, using ň.",in: Reading rules · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-rules/exercises/alpha-r7,3,Strč prst skrz krk.,"prompt: How many vowels are there in this famous tongue-twister?
+options: 0 | 1 | 4
+answers: 0",in: Reading rules · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-sounds/exercises/alpha-s1,3,answers: č,"prompt: Which letter sounds like the **""ch"" in ""church""**?",in: Sounds to letters · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-sounds/exercises/alpha-s10,3,answers: y,prompt: Which vowel sounds **exactly the same as i**?,in: Sounds to letters · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-sounds/exercises/alpha-s2,3,answers: š,"prompt: Which letter sounds like the **""sh"" in ""ship""**?",in: Sounds to letters · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-sounds/exercises/alpha-s3,3,answers: ž,"prompt: Which letter sounds like the **""s"" in ""measure""**?",in: Sounds to letters · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-sounds/exercises/alpha-s4,3,answers: c,"prompt: Which letter sounds like the **""ts"" in ""cats""**?",in: Sounds to letters · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-sounds/exercises/alpha-s5,3,answers: ch,"prompt: Which letter (two characters) sounds like the **""ch"" in Scottish ""loch""**?",in: Sounds to letters · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-sounds/exercises/alpha-s6,3,answers: j,"prompt: Which letter sounds like the **""y"" in ""yes""**?",in: Sounds to letters · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-sounds/exercises/alpha-s7,3,answers: ň,"prompt: Which letter sounds like the **""ny"" in ""canyon""**?",in: Sounds to letters · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-sounds/exercises/alpha-s8,3,answers: ř,prompt: Which letter is the sound in **Dvořák** that English doesn't have?,in: Sounds to letters · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-sounds/exercises/alpha-s9,3,answers: ů,"prompt: Which letter has a **kroužek** (a small ring) and sounds like **""oo"" in ""food""**?",in: Sounds to letters · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-listen/exercises/alpha-l1,3,"cs: en – ó – vé – á s čárkou – ká
+answers: Novák",prompt: Type the surname being spelled.,in: Understanding spelling · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-listen/exercises/alpha-l2,3,"cs: dé – vé – ó – eř – á s čárkou – ká
+answers: Dvořák",prompt: Type the surname being spelled.,in: Understanding spelling · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-listen/exercises/alpha-l3,3,"cs: eš – ťé – á – es – té – en – á s čárkou
+answers: Šťastná",prompt: Type the surname being spelled.,in: Understanding spelling · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-listen/exercises/alpha-l4,3,"cs: ká – ú – chá – á – eř
+answers: Kuchař",prompt: Type the surname being spelled.,in: Understanding spelling · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-listen/exercises/alpha-l5,3,"cs: jé, á, en, á, tečka, en, ó, vé, á, ká, ó, vé, á, zavináč, seznam, tečka, cé, zet
+answers: jana.novakova@seznam.cz",prompt: Type the e-mail address being spelled.,in: Understanding spelling · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-listen/exercises/alpha-l6,3,"cs: H jako Helena, á s čárkou, J jako Josef, E jako Emil, K jako Karel
+answers: Hájek",prompt: Type the name being spelled with the phone alphabet.,in: Understanding spelling · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-say/exercises/alpha-n1,3,answers: eš,prompt: How do you name the letter **š** when spelling?,in: Spelling your own name · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-say/exercises/alpha-n2,3,answers: dvojité vé | dvojité v,prompt: How do you name the letter **w** when spelling?,in: Spelling your own name · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-say/exercises/alpha-n3,3,answers: ypsilon | tvrdé y,prompt: How do you name the letter **y** when spelling?,in: Spelling your own name · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-say/exercises/alpha-n4,3,answers: jé,prompt: How do you name the letter **j** when spelling?,in: Spelling your own name · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-say/exercises/alpha-n5,3,answers: há,prompt: How do you name the letter **h** when spelling?,in: Spelling your own name · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-say/exercises/alpha-n6,3,answers: zavináč,prompt: What do you call the **@** symbol in an e-mail address?,in: Spelling your own name · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-say/exercises/alpha-n7,3,answers: tečka,prompt: What do you call the **dot** in an e-mail address?,in: Spelling your own name · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/alphabet-spelling-say/exercises/alpha-n8,3,answers: D jako David,"prompt: Say ""**D as in David**"" the Czech way.",in: Spelling your own name · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/pron-hard-sounds/exercises/pron-s1,3,"answers: 
+cs: tři",three,"in: Hard sounds, out loud · exercise type: speak","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/pron-hard-sounds/exercises/pron-s2,3,"answers: 
+cs: Dvořák",Dvořák (the composer),"in: Hard sounds, out loud · exercise type: speak","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/pron-hard-sounds/exercises/pron-s3,3,"answers: 
+cs: chleba",bread,"in: Hard sounds, out loud · exercise type: speak","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/pron-hard-sounds/exercises/pron-s4,3,"answers: 
+cs: dům",house,"in: Hard sounds, out loud · exercise type: speak","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/pron-hard-sounds/exercises/pron-s5,3,"answers: 
+cs: byt, být",flat; to be,"in: Hard sounds, out loud · exercise type: speak","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/pron-hard-sounds/exercises/pron-s6,3,"answers: 
+cs: Strč prst skrz krk.",Stick a finger through your throat.,"in: Hard sounds, out loud · exercise type: speak","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/pron-hard-sounds/exercises/pron-s7,3,"answers: 
+cs: nádraží",station,"in: Hard sounds, out loud · exercise type: speak","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/pron-hear/exercises/pron-l1,3,"cs: Strč prst skrz krk.
+answers: Strč prst skrz krk",,in: Hear the difference · exercise type: listenType,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/pron-hear/exercises/pron-l2,3,"cs: Dobrý den.
+answers: Dobrý den",,in: Hear the difference · exercise type: listenType,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/pron-hear/exercises/pron-p1,3,answers: řada,,in: Hear the difference · exercise type: minimalPair,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+alphabet/alphabet.json#practice/pron-hear/exercises/pron-p2,3,answers: být,,in: Hear the difference · exercise type: minimalPair,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,

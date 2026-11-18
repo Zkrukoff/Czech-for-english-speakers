@@ -1,0 +1,14 @@
+﻿file name,say exactly,who,note,where it is used
+rec-tri.mp3,tři,one voice,,speak pron-s1
+rec-dvorak.mp3,Dvořák,one voice,,speak pron-s2
+rec-chleba.mp3,chleba,one voice,,speak pron-s3
+rec-dum.mp3,dům,one voice,,speak pron-s4
+rec-byt-byt.mp3,"byt, být",one voice,,speak pron-s5
+rec-strc-prst.mp3,Strč prst skrz krk.,one voice,,speak pron-s6
+rec-nadrazi.mp3,nádraží,one voice,,speak pron-s7
+rec-rada.mp3,řada,one voice,one word of the pair rada / řada,minimalPair pron-p1
+rec-byt.mp3,být,one voice,one word of the pair byt / být,minimalPair pron-p2
+rec-chlad.mp3,chlad,one voice,one word of the pair chlad / hlad,minimalPair pron-p3
+rec-pas.mp3,pás,one voice,one word of the pair pas / pás,minimalPair pron-p4
+rec-dobry-den.mp3,Dobrý den.,one voice,,listenType pron-l2
+rec-ukoncete-vystup.mp3,"Ukončete, prosím, výstup a nástup, dveře se zavírají.",one voice,"station announcement: the official wording, calm and clear",listenType tr-hear-doors

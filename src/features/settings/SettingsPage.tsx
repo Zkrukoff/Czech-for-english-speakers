@@ -1,3 +1,4 @@
+import { areaName, reviewerCredits, reviewLine, reviewStatus, speakerCredits } from '@/lib/reviewStatus';
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PageHeader } from '@/components/PageHeader';
@@ -200,7 +201,15 @@ export function SettingsPage() {
           <p>Lines and stations: PID open data. Times, prices and rules: the official pages named next to each fact, with the date checked.</p>
           <p>Word frequencies: Czech National Corpus, SYN2015 lemma list (Křen, M., Ústav Českého národního korpusu FF UK), licensed CC BY 4.0.</p>
           <p>Idioms: SSČ and SSJČ via the Internetová jazyková příručka (ÚJČ AV ČR). Phrase-deck entries marked "A1 inventory" cite NPI ČR's <span lang="cs">Soupis lexikálních jednotek</span>.</p>
-          <p>All Czech in Pražák is awaiting review by a native speaker.</p>
+          <p>{reviewLine()}.</p>
+          <ul className="grid gap-x-6 sm:grid-cols-2">
+            {Object.entries(reviewStatus.areas).map(([a, s]) => (
+              <li key={a} className="flex justify-between gap-3 border-b border-rule py-1"><span>{areaName(a)}</span><span className="tabular-nums">{s.reviewed} of {s.total}</span></li>
+            ))}
+          </ul>
+          {reviewerCredits.length > 0 && <p>Native review: {reviewerCredits.join(', ')}. Thank you.</p>}
+          {speakerCredits.length > 0 && <p>Recordings: {speakerCredits.join(', ')}. Thank you.</p>}
+          <p>Are you a native speaker who'd like to help? A batch takes about an hour: <a href="https://github.com/Zkrukoff/Czech-for-english-speakers/blob/main/docs/REVIEWERS.md" target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center text-vltava underline">the reviewers' guide<span className="sr-only"> (opens in a new tab)</span></a>.</p>
         </section>
       </div>
     </>

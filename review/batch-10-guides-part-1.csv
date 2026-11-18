@@ -1,0 +1,160 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+guides/culture/guide.json#,10,titleCs: Česká kultura a tradice,"title: Czech culture and traditions
+summary: Everyday customs at work and at home, the history behind them, all 13 public holidays and the traditions around Christmas and Easter, with phrases to practise.",in: Czech culture and traditions,Natural and correct?,,,,
+guides/culture/guide.json#phrasebook/celebrations/phrases/0,10,Všechno nejlepší k narozeninám!,Happy birthday!,"in: Name days, birthdays and toasts",Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/celebrations/phrases/1,10,Všechno nejlepší k svátku!,Happy name day!,"in: Name days, birthdays and toasts",Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/celebrations/phrases/2,10,Kdy máš svátek?,When is your name day?,"in: Name days, birthdays and toasts",Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/celebrations/phrases/3,10,"Dneska mám svátek, dejte si dort.","It's my name day today, have some cake.","in: Name days, birthdays and toasts",Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/celebrations/phrases/4,10,Na zdraví!,Cheers!,"in: Name days, birthdays and toasts",Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/celebrations/phrases/5,10,Na tebe! / Na vás!,To you! (a toast to the person celebrating),"in: Name days, birthdays and toasts",Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/christmas/phrases/0,10,Veselé Vánoce!,Merry Christmas!,in: Christmas and New Year,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/christmas/phrases/1,10,Krásné svátky!,Happy holidays!,in: Christmas and New Year,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/christmas/phrases/2,10,Šťastný nový rok!,Happy New Year!,in: Christmas and New Year,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/christmas/phrases/3,10,Veselé Vánoce a šťastný nový rok!,Merry Christmas and a happy New Year!,in: Christmas and New Year,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/christmas/phrases/4,10,Hodně zdraví a štěstí v novém roce!,Lots of health and happiness in the new year!,in: Christmas and New Year,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/christmas/phrases/5,10,Co ti přinesl Ježíšek?,What did you get for Christmas? (lit. What did the baby Jesus bring you?),in: Christmas and New Year,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/christmas/phrases/6,10,Na Štědrý den jíme kapra a bramborový salát.,On Christmas Eve we eat carp and potato salad.,in: Christmas and New Year,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/christmas/phrases/7,10,Pečeš cukroví?,Are you baking Christmas biscuits?,in: Christmas and New Year,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/christmas/phrases/8,10,PF 2027,Happy New Year 2027 (on cards),in: Christmas and New Year,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/easter/phrases/0,10,Veselé Velikonoce!,Happy Easter!,in: Easter and spring,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/easter/phrases/1,10,"Hody, hody, doprovody, dejte vejce malovaný.","Hey, hey, give us a painted egg. (Easter Monday rhyme)",in: Easter and spring,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/easter/phrases/2,10,Kde budete o Velikonocích?,Where will you be for Easter?,in: Easter and spring,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/easter/phrases/3,10,Jdeme pálit čarodějnice.,We're going to the witch-burning (30 April).,in: Easter and spring,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/easter/phrases/4,10,Pusu pod rozkvetlou třešní!,A kiss under a blossoming cherry tree! (1 May),in: Easter and spring,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/holidays/phrases/0,10,"Zítra je svátek, obchody jsou zavřené.",Tomorrow is a public holiday; the shops are closed.,in: Public holidays and small talk,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/holidays/phrases/1,10,Máme prodloužený víkend.,We've got a long weekend.,in: Public holidays and small talk,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/holidays/phrases/2,10,Jedeš na chatu?,Are you going to the cottage?,in: Public holidays and small talk,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/holidays/phrases/3,10,Kam jedete na prodloužený víkend?,Where are you going for the long weekend?,in: Public holidays and small talk,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#phrasebook/holidays/phrases/4,10,"Ve čtvrtek je státní svátek, v pátek si beru volno.",Thursday is a public holiday; I'm taking Friday off.,in: Public holidays and small talk,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/culture/guide.json#practice/culture-celebrations/exercises/cul-c1,10,answers: Všechno nejlepší k narozeninám[!] | Všechno nejlepší[!],prompt: Happy birthday!,"in: Name days, birthdays and toasts · exercise type: translate","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-celebrations/exercises/cul-c2,10,answers: Všechno nejlepší {k|ke} svátku[!] | Všechno nejlepší[!],prompt: Happy name day!,"in: Name days, birthdays and toasts · exercise type: translate","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-celebrations/exercises/cul-c3,10,answers: Na zdraví[!],prompt: Cheers!,"in: Name days, birthdays and toasts · exercise type: translate","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-celebrations/exercises/cul-c4,10,answers: Kdy máš {svátek|jmeniny}? | Kdy je tvůj svátek? | Kdy má{š|te} svátek?,prompt: When is your name day? (informal),"in: Name days, birthdays and toasts · exercise type: translate","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-celebrations/exercises/cul-c5,10,,"prompt: On your birthday or name day at a Czech office, who usually brings the cake or snacks?
+options: The person celebrating | Their colleagues, as a surprise | The boss
+answers: The person celebrating","in: Name days, birthdays and toasts · exercise type: multipleChoice","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-celebrations/exercises/cul-c6,10,answers: Všechno nejlepší {k|ke} svátku[!] | Všechno nejlepší[!],prompt: Wish her a happy name day.,"in: Name days, birthdays and toasts · exercise type: dialogueComplete","Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-christmas/exercises/cul-x1,10,answers: {Veselé|Krásné} Vánoce[!],prompt: Merry Christmas!,in: Christmas and New Year · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-christmas/exercises/cul-x2,10,answers: Šťastný [a veselý ]nový rok[!],prompt: Happy New Year!,in: Christmas and New Year · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-christmas/exercises/cul-x3,10,"base: veselý
+answers: é","prompt: Přeju vám vesel___ Vánoce.
+en: I wish you a merry Christmas.",in: Christmas and New Year · exercise type: fillEnding,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-christmas/exercises/cul-x4,10,prompt: Co ti přinesl Ježíšek?,answers: What did {baby Jesus|the baby Jesus|Ježíšek|Jesus|little Jesus|the Christ Child|Santa|Father Christmas} bring you[?] | What did you get for Christmas[?],in: Christmas and New Year · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-christmas/exercises/cul-x5,10,answers: kapr | kapra | kapři,prompt: What fish do most Czech families eat for Christmas Eve dinner? Type the Czech word.,in: Christmas and New Year · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-christmas/exercises/cul-x6,10,,"prompt: What does **PF** stand for on a Czech New Year card?
+options: pour féliciter | post festum | Pražský festival
+answers: pour féliciter",in: Christmas and New Year · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-christmas/exercises/cul-x7,10,"answers: [{Děkuju|Děkuji|Díky}[,] ]{Vám {taky|také}|{Veselé|Krásné} Vánoce i vám}[,] a šťastný nový rok[!]","prompt: Wish her the same, and a happy New Year (you say vy to her).",in: Christmas and New Year · exercise type: dialogueComplete,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-easter/exercises/cul-e1,10,answers: {Veselé|Krásné} Velikonoce[!],prompt: Happy Easter!,in: Easter and spring · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-easter/exercises/cul-e2,10,answers: pomlázka | pomlázku,prompt: What is the braided willow whip used on Easter Monday called? Type the Czech word.,in: Easter and spring · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-easter/exercises/cul-e3,10,answers: kraslice | kraslici | malovaná vajíčka | malované vejce | malovaná vejce,prompt: What are decorated Easter eggs called? Type the Czech word.,in: Easter and spring · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-easter/exercises/cul-e4,10,answers: čarodějnice | čarodějnici | čarodějnic,"prompt: What do Czechs ""burn"" on bonfires on the night of 30 April? Type the Czech word.",in: Easter and spring · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-easter/exercises/cul-e5,10,"base: Velikonoce
+answers: ích","prompt: O Velikonoc___ jedu domů.
+en: I'm going home for Easter.",in: Easter and spring · exercise type: fillEnding,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-easter/exercises/cul-e6,10,"base: Vánoce
+answers: ích","prompt: O Vánoc___ jsme vždycky doma.
+en: We're always at home at Christmas.",in: Easter and spring · exercise type: fillEnding,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-holidays/exercises/cul-h1,10,,"prompt: Which date is the anniversary of the Velvet Revolution, now a public holiday?
+options: 17 November | 28 October | 1 January
+answers: 17 November",in: Public holidays and history · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-holidays/exercises/cul-h2,10,,"prompt: Czechoslovakia was founded on 28 October of which year?
+options: 1918 | 1938 | 1968 | 1993
+answers: 1918",in: Public holidays and history · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-holidays/exercises/cul-h3,10,,"prompt: Which saint, the patron of the Czech lands, is remembered on 28 September?
+options: St Wenceslas | St Vitus | Jan Hus
+answers: St Wenceslas",in: Public holidays and history · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-holidays/exercises/cul-h4,10,,"prompt: Which religious reformer, burned at the stake in 1415, is remembered on 6 July?
+options: Jan Hus | Jan Žižka | Tomáš Garrigue Masaryk
+answers: Jan Hus",in: Public holidays and history · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-holidays/exercises/cul-h5,10,"prompt: Zítra je svátek, obchody jsou zavřené.","answers: Tomorrow is a [public |bank |national ]holiday[,] [and ]the {shops|stores} {are|will be} {closed|shut}[.] | Tomorrow{'s| is} a [public |bank |national ]holiday[,] [and ]{shops|stores} {are|will be} {closed|shut}[.] | It's a [public |bank |national ]holiday tomorrow[,] [and ]the {shops|stores} {are|will be} {closed|shut}[.]",in: Public holidays and history · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-holidays/exercises/cul-h6,10,answers: Máme prodloužený víkend[.],prompt: We've got a long weekend.,in: Public holidays and history · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#practice/culture-holidays/exercises/cul-h7,10,answers: o nás bez nás,"prompt: The Munich Agreement of 1938 is often summed up in four Czech words meaning ""about us, without us"". Type them.",in: Public holidays and history · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/culture/guide.json#timeline/charles-iv,10,titleCs: Karel IV.,"title: Charles IV and the golden age
+summary: The King of Bohemia, later Holy Roman Emperor, makes Prague an imperial capital: Charles University (1348), the New Town, Charles Bridge (1357).
+significance: Much of the Prague visitors admire is his. In a 2005 national TV poll, Czechs voted him the greatest Czech of all time.",in: Charles IV and the golden age,Natural and correct?,,,,
+guides/culture/guide.json#timeline/charter-77,10,titleCs: Charta 77,"title: Charter 77
+summary: Dissidents, including the playwright Václav Havel, sign a document demanding that the regime respect human rights.
+significance: It built the network of dissidents who led the 1989 revolution; many signatories became the new country's leaders.",in: Charter 77,Natural and correct?,,,,
+guides/culture/guide.json#timeline/communism,10,titleCs: Únor 1948,"title: The communist takeover
+summary: In February the Communist Party seizes power. Forty-one years of one-party rule begin.
+significance: This period shaped your colleagues' parents and grandparents: closed borders, nationalised companies, and the panelák housing estates you still see on the edges of every city.",in: The communist takeover,Natural and correct?,,,,
+guides/culture/guide.json#timeline/cyril-methodius,10,titleCs: Cyril a Metoděj,"title: Cyril and Methodius arrive
+summary: Two Byzantine missionaries come to Great Moravia, bringing Christianity and the first Slavic alphabet.
+significance: The start of written Slavic culture. Their feast day, 5 July, is a public holiday, which is why July often begins with a long weekend.",in: Cyril and Methodius arrive,Natural and correct?,,,,
+guides/culture/guide.json#timeline/czechoslovakia,10,titleCs: vznik Československa,"title: Czechoslovakia is born
+summary: On 28 October, as Austria-Hungary collapses, an independent Czechoslovakia is declared. Tomáš Garrigue Masaryk becomes its first president.
+significance: A modern democracy in the heart of Europe, and the reason 28 October is the main national holiday. Masaryk is still the model of a principled president.",in: Czechoslovakia is born,Natural and correct?,,,,
+guides/culture/guide.json#timeline/europe,10,titleCs: NATO a Evropská unie,"title: NATO and the European Union
+summary: Czechia joins NATO in 1999 and the European Union in 2004.
+significance: The freedom to live and work across Europe, which is part of why so many international companies, and you, are here.",in: NATO and the European Union,Natural and correct?,,,,
+guides/culture/guide.json#timeline/hus,10,titleCs: mistr Jan Hus,"title: Jan Hus burned at the stake
+summary: The reformer who preached in Czech and criticised the Church is burned at the Council of Konstanz. The Hussite wars follow.
+significance: A symbol of conscience and of the Czech language: Hus is traditionally credited with the háček and čárka. His motto ""Pravda vítězí"" (Truth prevails) is on the presidential flag. 6 July is a public holiday.",in: Jan Hus burned at the stake,Natural and correct?,,,,
+guides/culture/guide.json#timeline/liberation,10,titleCs: Pražské povstání,"title: Uprising and liberation
+summary: Prague rises against the occupiers on 5 May; the war in Europe ends days later.
+significance: 8 May, Victory Day, is a public holiday. Small plaques remembering those who fell in the uprising are on buildings all over the city, often with fresh flowers.",in: Uprising and liberation,Natural and correct?,,,,
+guides/culture/guide.json#timeline/munich,10,titleCs: Mnichovská dohoda,"title: The Munich Agreement
+summary: Britain, France, Germany and Italy agree to hand the Czech border regions to Nazi Germany, without Czechoslovakia at the table.
+significance: ""O nás bez nás"", about us, without us: still shorthand for great powers deciding Czech fate, and a source of lasting scepticism.",in: The Munich Agreement,Natural and correct?,,,,
+guides/culture/guide.json#timeline/occupation,10,titleCs: protektorát a odboj,"title: Occupation and resistance
+summary: German troops occupy Prague in March 1939. On 17 November 1939 the Nazis close Czech universities after student protests. In 1942, Czechoslovak paratroopers assassinate Reinhard Heydrich; the village of Lidice is destroyed in revenge.
+significance: 17 November became International Students' Day. Operation Anthropoid is one of the most famous resistance acts of the war, and Lidice is remembered worldwide.",in: Occupation and resistance,Natural and correct?,,,,
+guides/culture/guide.json#timeline/palach,10,titleCs: Jan Palach,"title: Jan Palach
+summary: In January, the student Jan Palach sets himself on fire on Wenceslas Square in protest against the nation's resignation after the invasion.
+significance: A lasting symbol of resistance through conscience. Students and politicians still lay flowers at his memorial each January.",in: Jan Palach,Natural and correct?,,,,
+guides/culture/guide.json#timeline/prague-spring,10,titleCs: Pražské jaro,"title: Prague Spring and invasion
+summary: Alexander Dubček's attempt at ""socialism with a human face"" is crushed when Warsaw Pact armies invade on the night of 20–21 August.
+significance: Remembered every 21 August, and one reason many Czechs have strong feelings about Russia. ""Normalisation"" followed: two decades of grey conformity.",in: Prague Spring and invasion,Natural and correct?,,,,
+guides/culture/guide.json#timeline/revival,10,titleCs: národní obrození,"title: The National Revival
+summary: Writers and scholars bring Czech back as a language of literature, science and the stage. The National Theatre opens in 1883, paid for by public collections.
+significance: Without it, Czech might have survived only as a rural dialect. It's why the language is cherished, why Czech coined its own words for many things, and why Czechs light up when foreigners learn it.",in: The National Revival,Natural and correct?,,,,
+guides/culture/guide.json#timeline/velvet,10,titleCs: sametová revoluce,"title: The Velvet Revolution
+summary: Police beat a peaceful student march on Národní třída. Within weeks, mass protests and a general strike bring down the regime; Václav Havel becomes president.
+significance: A peaceful revolution and a point of national pride. 17 November is a public holiday. Havel's line ""Pravda a láska musí zvítězit nad lží a nenávistí"" (Truth and love must prevail over lies and hatred) is still quoted.",in: The Velvet Revolution,Natural and correct?,,,,
+guides/culture/guide.json#timeline/velvet-divorce,10,titleCs: rozdělení Československa,"title: The Velvet Divorce
+summary: Czechoslovakia splits peacefully into the Czech Republic and Slovakia.
+significance: The two nations remain close: most Czechs understand Slovak, and Slovak TV, music and colleagues are everywhere. 1 January is the restoration of the independent Czech state.",in: The Velvet Divorce,Natural and correct?,,,,
+guides/culture/guide.json#timeline/wenceslas,10,titleCs: svatý Václav,"title: Saint Wenceslas
+summary: Duke Wenceslas (Václav) is murdered by his brother, in 929 or 935, and soon venerated as a saint.
+significance: The ""eternal prince"" and patron of the Czech lands. Legend says knights sleep inside Blaník hill, ready to wake when the nation is in danger. 28 September is Czech Statehood Day.",in: Saint Wenceslas,Natural and correct?,,,,
+guides/culture/guide.json#timeline/white-mountain,10,titleCs: Bílá hora,"title: The Battle of White Mountain
+summary: The Protestant Czech estates are defeated. In 1621, 27 of their leaders are executed on Old Town Square.
+significance: Remembered as the beginning of the ""dark age"" (temno): three centuries of Habsburg rule, forced re-Catholicisation and the exile of thinkers such as Jan Amos Komenský (Comenius).",in: The Battle of White Mountain,Natural and correct?,,,,
+guides/prague-transport/guide.json#,10,titleCs: Pražská MHD,"title: Getting around Prague
+summary: How Prague's metro, trams, buses, trains, ferries and night lines fit together; tickets, validation and inspectors; and all the Czech you'll read and hear on the way.",in: Getting around Prague,Natural and correct?,,,,
+guides/prague-transport/guide.json#phrasebook/asking/phrases/0,10,Jede tahle tramvaj na Anděl?,Does this tram go to Anděl?,in: Asking and getting by,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/asking/phrases/1,10,Na které zastávce mám vystoupit?,Which stop should I get off at?,in: Asking and getting by,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/asking/phrases/2,10,Kolik zastávek je to na Muzeum?,How many stops is it to Muzeum?,in: Asking and getting by,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/asking/phrases/3,10,Kde si můžu koupit jízdenku?,Where can I buy a ticket?,in: Asking and getting by,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/asking/phrases/4,10,"Jednu jízdenku na devadesát minut, prosím.","One 90-minute ticket, please.",in: Asking and getting by,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/asking/phrases/5,10,Kde je výstup na Václavské náměstí?,Where's the exit to Wenceslas Square?,in: Asking and getting by,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/asking/phrases/6,10,Vystupujete?,Are you getting off?,in: Asking and getting by,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/asking/phrases/7,10,"Pustíte mě, prosím?","Could you let me through, please?",in: Asking and getting by,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/asking/phrases/8,10,Je tady volno?,Is this seat free?,in: Asking and getting by,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/asking/phrases/9,10,"Posaďte se, prosím.","Please, have a seat.",in: Asking and getting by,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/inspector/phrases/0,10,"Dobrý den, přepravní kontrola. Vaše jízdenky, prosím.","Hello, ticket inspection. Your tickets, please.",in: Ticket inspection,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/inspector/phrases/1,10,Tady je. Mám ji v aplikaci.,Here it is. I have it in the app.,in: Ticket inspection,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/inspector/phrases/2,10,Můžete mi ukázat odznak?,Can you show me your badge?,in: Ticket inspection,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/inspector/phrases/3,10,Můžu zaplatit kartou?,Can I pay by card?,in: Ticket inspection,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/metro/phrases/0,10,"Ukončete, prosím, výstup a nástup, dveře se zavírají.","Please finish getting on and off, the doors are closing.",in: Metro announcements,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/metro/phrases/1,10,Příští stanice: Muzeum.,Next station: Muzeum.,in: Metro announcements,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/metro/phrases/2,10,Přestup na linku C.,Change here for line C.,in: Metro announcements,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/metro/phrases/3,10,"Konečná stanice. Prosíme, vystupte.",Terminal station. Please get off.,in: Metro announcements,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/signs/phrases/0,10,Výstup,Exit,in: Signs,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/signs/phrases/1,10,Vstup,Entrance,in: Signs,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/signs/phrases/2,10,Přestup,"Change, transfer",in: Signs,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/signs/phrases/3,10,Směr Háje,Towards Háje (direction),in: Signs,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/signs/phrases/4,10,Odjezdy,Departures,in: Signs,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/signs/phrases/5,10,Stůjte vpravo,Stand on the right,in: Signs,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/signs/phrases/6,10,Označte si jízdenku,Validate your ticket,in: Signs,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/signs/phrases/7,10,Výluka,"Planned closure, diversion",in: Signs,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/signs/phrases/8,10,Náhradní doprava,Replacement service,in: Signs,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/signs/phrases/9,10,Zpoždění,Delay,in: Signs,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/surface/phrases/0,10,Příští zastávka: Národní divadlo.,Next stop: National Theatre.,in: Trams and buses,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/surface/phrases/1,10,Zastávka na znamení.,Request stop.,in: Trams and buses,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/surface/phrases/2,10,Přestup na metro B.,Change here for metro line B.,in: Trams and buses,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#phrasebook/surface/phrases/3,10,Konečná zastávka.,Last stop.,in: Trams and buses,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/prague-transport/guide.json#practice/transport-ask/exercises/tr-a1,10,answers: Jede {tahle|tato|ta|tahleta} tramvaj na Anděl?,prompt: Does this tram go to Anděl?,in: Asking your way · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-ask/exercises/tr-a2,10,answers: Vystupujete?,prompt: Are you getting off? (to a stranger),in: Asking your way · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-ask/exercises/tr-a3,10,answers: Kde {si můžu|si mohu|můžu|mohu} koupit {jízdenku|lístek}?,prompt: Where can I buy a ticket?,in: Asking your way · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,

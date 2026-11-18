@@ -1,0 +1,61 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+exam/writing.json#tasks/w1-mock2,9,"situation: Chcete pracovat jako dobrovolník v zoo. Odpovězte na otázky ve formuláři.
+heading: Zoo Praha: dobrovolníci
+questions 1: q: Jakou práci jste dělal/a dřív? · model: Dřív jsem pracoval v obchodě se zvířaty a dva roky jsem venčil psy.
+questions 2: q: Proč chcete pracovat v zoo? · model: Mám moc rád zvířata a chci dělat něco užitečného ve volném čase.
+questions 3: q: Kdy můžete pracovat? · model: Můžu pracovat každou sobotu dopoledne a někdy také v neděli odpoledne.","title: Volunteering at the zoo
+situationEn: You want to volunteer at the zoo. Answer the questions on the form.",in: Volunteering at the zoo · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/writing.json#tasks/w1-practice1,9,"situation: Chcete se přihlásit do fitness centra. Odpovězte na otázky ve formuláři.
+heading: Fitness Vinohrady: přihláška
+questions 1: q: Jaký sport děláte rád/a? · model: Rád plavu a o víkendu jezdím na kole, když je hezky.
+questions 2: q: Proč chcete chodit do fitness centra? · model: Celý den sedím v kanceláři, a proto se chci víc hýbat.
+questions 3: q: Kdy máte čas na cvičení? · model: Mám čas v pondělí a ve středu večer po práci, asi od šesti.","title: Joining a gym
+situationEn: You want to join a gym. Answer the questions on the form.",in: Joining a gym · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/writing.json#tasks/w1-practice2,9,"situation: Hledáte nový byt. Vyplňte formulář realitní kanceláře.
+heading: Realitní kancelář Domov: hledám byt
+questions 1: q: Jaký byt hledáte? · model: Hledám byt 2+kk s balkonem, blízko metra a ne moc drahý.
+questions 2: q: S kým budete v bytě bydlet? · model: Budu tam bydlet s manželkou a s naším malým synem Adamem.
+questions 3: q: Proč se chcete stěhovat? · model: Náš byt je teď malý a máme to daleko do práce i do školky.","title: Looking for a flat
+situationEn: You’re looking for a new flat. Fill in the estate agent’s form.",in: Looking for a flat · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/writing.json#tasks/w2-mock2,9,"situation: Koupil/a jste si boty v e-shopu, ale máte s nimi problém. Napište e-mail obchodu.
+subject: Reklamace bot
+prompts 1: cs: CO JSTE KOUPIL/A?
+prompts 2: cs: KDY JSTE TO KOUPIL/A?
+prompts 3: cs: JAKÝ JE PROBLÉM?
+prompts 4: cs: CO CHCETE?
+prompts 5: cs: JAK VÁS MOHOU KONTAKTOVAT?
+model: Dobrý den,
+
+minulý týden, v pondělí 10. 3., jsem si u vás koupil černé zimní boty, velikost 43. Boty mi přišly v pátek, ale jsou malé a jedna bota je na straně rozbitá. Chtěl bych je vrátit a dostat zpátky peníze. Můžete mi prosím napsat, jak boty poslat? Můžete mi také zavolat na číslo 777 123 456.
+
+S pozdravem
+Ahmed Karimi","title: A problem with an order
+situationEn: You bought shoes from an online shop, but there’s a problem. Write to the shop.",in: A problem with an order · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/writing.json#tasks/w2-practice1,9,"situation: Váš kolega Martin slaví narozeniny. Pozvěte ostatní kolegy na oslavu a napište jim další informace.
+subject: Oslava Martinových narozenin
+prompts 1: cs: KDY BUDE OSLAVA?
+prompts 2: cs: KDE BUDE OSLAVA?
+prompts 3: cs: CO BUDETE JÍST?
+prompts 4: cs: CO MAJÍ KOLEGOVÉ PŘINÉST?
+prompts 5: cs: JAK SE TAM DOSTANOU?
+model: Ahoj všichni,
+
+Martin bude mít ve čtvrtek narozeniny, a proto chceme udělat oslavu. Bude v pátek v pět hodin po práci. Sejdeme se v restauraci U Kocoura na Malé Straně. Budeme jíst pizzu a dort. Přineste prosím každý sto korun na dárek. Do restaurace pojedete tramvají číslo 22 do zastávky Malostranské náměstí.
+
+Těším se na vás!
+Lucie","title: A party for a colleague
+situationEn: Your colleague Martin has a birthday. Invite the other colleagues to the party and give them the details.",in: A party for a colleague · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/writing.json#tasks/w2-practice2,9,"situation: Jste nemocný/á a nemůžete jít na kurz češtiny. Napište e-mail učitelce.
+subject: Omluva z kurzu
+prompts 1: cs: PROČ NEPŘIJDETE?
+prompts 2: cs: JAK DLOUHO BUDETE DOMA?
+prompts 3: cs: CO POTŘEBUJETE OD UČITELKY?
+prompts 4: cs: CO BUDETE DĚLAT DOMA?
+prompts 5: cs: KDY PŘIJDETE ZNOVU?
+model: Dobrý den, paní Novotná,
+
+omlouvám se, ale tento týden nepřijdu na kurz. Jsem nemocný, mám horečku a bolí mě v krku. Doktor řekl, že musím zůstat doma pět dní. Můžete mi prosím poslat domácí úkol e-mailem? Doma budu hodně spát a pít čaj, ale můžu také trochu studovat. Na kurz přijdu znovu příští středu.
+
+Děkuji a s pozdravem
+Daniel Brown","title: Missing a class
+situationEn: You’re ill and can’t go to your Czech class. Write to the teacher.",in: Missing a class · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,

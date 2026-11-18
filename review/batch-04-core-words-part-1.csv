@@ -1,0 +1,363 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+words/01-zakladni.json#words/a,4,"cs: a
+example 1: cs: Mám bratra a sestru.","en: and
+example 1: en: I have a brother and a sister.",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/aby,4,"cs: aby
+example 1: cs: Volám, abych se objednal.","en: so that
+example 1: en: I'm calling to make an appointment.",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/ale,4,"cs: ale
+example 1: cs: Je to drahé, ale dobré.","en: but
+example 1: en: It's expensive, but good.",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/alespon,4,alespoň,at least,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/ani,4,"cs: ani
+example 1: cs: Nemám ani korunu.","en: not even; neither
+example 1: en: I haven't got a single crown.",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/asi,4,"cs: asi
+example 1: cs: Asi ano.","en: probably; about (with numbers)
+example 1: en: Probably yes.",in: The little words · part of speech: part,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/az,4,"cs: až
+example 1: cs: Zavolám, až přijdu domů.","en: not until; when (in future)
+example 1: en: I'll call when I get home.",in: The little words · part of speech: part,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/behem,4,"cs: během
+example 1: cs: Během dne pracuju.","en: during
+example 1: en: During the day I work.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/bez,4,"cs: bez
+example 1: cs: Kávu bez cukru.","en: without
+example 1: en: Coffee without sugar.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/brzo,4,brzo,soon; early,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/casto,4,"cs: často
+example 1: cs: Často vařím doma.","en: often
+example 1: en: I often cook at home.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/cely,4,"cs: celý
+example 1: cs: Pršelo celý den.","en: whole
+example 1: en: It rained all day.",in: The little words · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/chtit,4,"cs: chtít
+example 1: cs: Chci jedno pivo.","en: to want
+example 1: en: I want one beer.",in: The little words · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/ci,4,čí,whose,in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/cizi,4,cizí,"foreign, someone else's",in: The little words · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/co,4,"cs: co
+example 1: cs: Co je to?","en: what
+example 1: en: What is it?",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/dalsi,4,"cs: další
+example 1: cs: Další, prosím!","en: next, another, further
+example 1: en: Next, please!",in: The little words · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/dat,4,"cs: dát
+example 1: cs: Dám si kávu.","en: to give
+example 1: en: I'll have a coffee.",in: The little words · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/davno,4,dávno,long ago,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/dekovat,4,děkovat,to thank,in: The little words · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/delat,4,"cs: dělat
+example 1: cs: Co děláte?","en: to do, to make
+example 1: en: What do you do? / What are you doing?",in: The little words · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/docela,4,docela,"quite, fairly",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/dokonce,4,"cs: dokonce
+example 1: cs: Mluví dokonce japonsky.","en: even
+example 1: en: She even speaks Japanese.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/dole,4,dole,"downstairs, at the bottom",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/dost,4,"cs: dost
+example 1: cs: Mám dost.","en: enough; quite
+example 1: en: I've had enough.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/dovnitr,4,dovnitř,in (going in),in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/halo,4,haló,hello (on the phone); hey!,in: The little words · part of speech: interj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/hlavne,4,"cs: hlavně
+example 1: cs: Hlavně klid!","en: mainly
+example 1: en: Above all, stay calm!",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/hlavni,4,"cs: hlavní
+example 1: cs: Hlavní nádraží, prosím.","en: main
+example 1: en: The main station, please.",in: The little words · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/hned,4,"cs: hned
+example 1: cs: Hned jsem tam.","en: right away
+example 1: en: I'll be right there.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/hodne,4,"cs: hodně
+example 1: cs: Mám hodně práce.","en: a lot, much
+example 1: en: I have a lot of work.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/i,4,"cs: i
+example 1: cs: Přijde i Petr.","en: and also, even
+example 1: en: Petr is coming too.",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jak,4,"cs: jak
+example 1: cs: Jak se máte?","en: how
+example 1: en: How are you?",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jako,4,"cs: jako
+example 1: cs: Pracuju jako programátor.","en: like, as
+example 1: en: I work as a programmer.",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jasny,4,"cs: jasný
+example 1: cs: Je to jasné?","en: clear
+example 1: en: Is that clear?",in: The little words · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jediny,4,"cs: jediný
+example 1: cs: Je to jediný obchod v ulici.","en: only, single
+example 1: en: It's the only shop in the street.",in: The little words · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jeho,4,"cs: jeho
+example 1: cs: To je jeho auto.","en: his
+example 1: en: That's his car.",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jeji,4,"cs: její
+example 1: cs: To je její kancelář.","en: her (possessive)
+example 1: en: That's her office.",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jejich,4,"cs: jejich
+example 1: cs: Jejich dcera je v Londýně.","en: their
+example 1: en: Their daughter is in London.",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jen,4,"cs: jen
+example 1: cs: Mám jen kartu.","en: only, just
+example 1: en: I only have a card.",in: The little words · part of speech: part,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jestli,4,"cs: jestli
+example 1: cs: Nevím, jestli přijde.","en: if, whether
+example 1: en: I don't know if he'll come.",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jinak,4,"cs: jinak
+example 1: cs: Jinak je všechno v pořádku.","en: otherwise; differently
+example 1: en: Otherwise everything is fine.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jinde,4,jinde,somewhere else,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jiny,4,"cs: jiný
+example 1: cs: Máte jinou barvu?","en: other, different
+example 1: en: Do you have another colour?",in: The little words · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jiste,4,jistě,certainly,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/jo,4,"cs: jo
+example 1: cs: Jo, jasně.","en: yeah
+example 1: en: Yeah, sure.",in: The little words · part of speech: part,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/k,4,"cs: k
+example 1: cs: Jdu k doktorovi.","en: to, towards
+example 1: en: I'm going to the doctor's.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/kazdy,4,"cs: každý
+example 1: cs: Každý den jezdím metrem.","en: every, each
+example 1: en: I take the metro every day.",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/kdo,4,"cs: kdo
+example 1: cs: Kdo je to?","en: who
+example 1: en: Who is it?",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/kdyby,4,"cs: kdyby
+example 1: cs: Kdybys něco potřeboval, zavolej.","en: if (would)
+example 1: en: If you need anything, call.",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/kdyz,4,"cs: když
+example 1: cs: Když prší, jedu metrem.","en: when; if
+example 1: en: When it rains, I take the metro.",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/konecne,4,konečně,"finally, at last",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/krome,4,"cs: kromě
+example 1: cs: Otevřeno denně kromě pondělí.","en: except
+example 1: en: Open daily except Monday.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/ktery,4,"cs: který
+example 1: cs: Který autobus jede do centra?","en: which; who (in ""the man who…"")
+example 1: en: Which bus goes to the centre?",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/kvuli,4,"cs: kvůli
+example 1: cs: Vlak má zpoždění kvůli sněhu.","en: because of
+example 1: en: The train is late because of the snow.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/malo,4,"cs: málo
+example 1: cs: Mám málo času.","en: little, not much
+example 1: en: I have little time.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/mekky,4,měkký,soft,in: The little words · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/mezi,4,"cs: mezi
+example 1: cs: Lékárna je mezi bankou a poštou.","en: between
+example 1: en: The pharmacy is between the bank and the post office.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/mimo,4,mimo,outside; apart from,in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/minus,4,minus,minus,in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/mit,4,"cs: mít
+example 1: cs: Máte čas?","en: to have
+example 1: en: Do you have time?",in: The little words · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/mluvit,4,"cs: mluvit
+example 1: cs: Mluvíte anglicky?","en: to speak
+example 1: en: Do you speak English?",in: The little words · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/mnoho,4,"cs: mnoho
+example 1: cs: V Praze je mnoho turistů.","en: many, a lot (formal)
+example 1: en: There are many tourists in Prague.",in: The little words · part of speech: num,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/moct,4,moct,"can, to be able to",in: The little words · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/mozna,4,"cs: možná
+example 1: cs: Možná zítra.","en: maybe
+example 1: en: Maybe tomorrow.",in: The little words · part of speech: part,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/muj,4,"cs: můj
+example 1: cs: To je můj kufr.","en: my
+example 1: en: That's my suitcase.",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/muset,4,"cs: muset
+example 1: cs: Musím jít.","en: must, to have to
+example 1: en: I have to go.",in: The little words · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/my,4,"cs: my
+example 1: cs: My jsme z Anglie.","en: we
+example 1: en: We're from England.",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/myslet,4,"cs: myslet
+example 1: cs: Myslím, že ano.","en: to think
+example 1: en: I think so.",in: The little words · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nad,4,"cs: nad
+example 1: cs: Bydlím nad obchodem.","en: above
+example 1: en: I live above a shop.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nahore,4,nahoře,"upstairs, at the top",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/najednou,4,najednou,suddenly; at once,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nalevo,4,nalevo,on the left,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/naopak,4,"cs: naopak
+example 1: cs: Není to drahé, naopak.","en: on the contrary
+example 1: en: It's not expensive, quite the opposite.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/napodobne,4,nápodobně,"likewise, you too",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/napravo,4,napravo,on the right,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/napriklad,4,"cs: například
+example 1: cs: Mám rád sport, například tenis.","en: for example
+example 1: en: I like sport, for example tennis.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nas,4,"cs: náš
+example 1: cs: To je náš syn.","en: our
+example 1: en: This is our son.",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nastesti,4,naštěstí,fortunately,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/navic,4,"cs: navíc
+example 1: cs: Je to levné a navíc blízko.","en: in addition, on top
+example 1: en: It's cheap and close, too.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nebo,4,"cs: nebo
+example 1: cs: Čaj, nebo kávu?","en: or
+example 1: en: Tea or coffee?",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/neco,4,"cs: něco
+example 1: cs: Chcete něco k pití?","en: something
+example 1: en: Would you like something to drink?",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nedavno,4,nedávno,recently,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nejak,4,nějak,somehow,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nejaky,4,"cs: nějaký
+example 1: cs: Máte nějaký dotaz?","en: some, a
+example 1: en: Do you have a question?",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nejen-ale-i,4,"nejen…, ale i","not only…, but also",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nekam,4,někam,(to) somewhere,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nekde,4,někde,somewhere,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nekdo,4,"cs: někdo
+example 1: cs: Je tu někdo?","en: someone
+example 1: en: Is anyone here?",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nekdy,4,"cs: někdy
+example 1: cs: Někdy jezdím na kole.","en: sometimes
+example 1: en: Sometimes I cycle.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nekolik,4,"cs: několik
+example 1: cs: Mám několik otázek.","en: several
+example 1: en: I have several questions.",in: The little words · part of speech: num,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nektery,4,"cs: některý
+example 1: cs: Některé tramvaje dnes nejezdí.","en: some (of them)
+example 1: en: Some trams aren't running today.",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nez,4,"cs: než
+example 1: cs: Praha je větší než Brno.","en: than; before
+example 1: en: Prague is bigger than Brno.",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nic,4,"cs: nic
+example 1: cs: Nic se nestalo.","en: nothing
+example 1: en: Nothing happened. (It's fine.)",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nikam,4,nikam,(to) nowhere,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nikde,4,nikde,nowhere,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nikdo,4,"cs: nikdo
+example 1: cs: Nikdo tam není.","en: nobody
+example 1: en: Nobody is there.",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nikdy,4,"cs: nikdy
+example 1: cs: Nikdy tam nejezdím.","en: never
+example 1: en: I never go there.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/nizky,4,"cs: nízký
+example 1: cs: Ten stůl je nízký.","en: low
+example 1: en: That table is low.",in: The little words · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/normalne,4,normálně,normally,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/o,4,"cs: o
+example 1: cs: Mluvíme o práci.","en: about
+example 1: en: We're talking about work.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/oba,4,"cs: oba
+example 1: cs: Oba moji bratři bydlí v Brně.","en: both
+example 1: en: Both my brothers live in Brno.",in: The little words · part of speech: num,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/od,4,"cs: od
+example 1: cs: Mám dopis od mámy.","en: from (a person, a time)
+example 1: en: I have a letter from mum.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/odkdy,4,odkdy,since when,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/odtud,4,odtud,from here,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/okamzite,4,okamžitě,immediately,in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/omlouvat-se,4,omlouvat se,to apologise,in: The little words · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/on,4,"cs: on
+example 1: cs: On je můj kolega.","en: he
+example 1: en: He is my colleague.",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/ona,4,ona,she,in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/oni,4,"cs: oni
+example 1: cs: Oni bydlí v Brně.","en: they
+example 1: en: They live in Brno.",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/opravdu,4,"cs: opravdu
+example 1: cs: Opravdu?","en: really
+example 1: en: Really?",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/osobne,4,osobně,"in person, personally",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/ostatni,4,"cs: ostatní
+example 1: cs: Ostatní už jsou doma.","en: the other, the rest
+example 1: en: The others are already at home.",in: The little words · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pak,4,"cs: pak
+example 1: cs: Nejdřív jídlo, pak práce.","en: then, after that
+example 1: en: Food first, then work.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pardon,4,pardon,"sorry, excuse me",in: The little words · part of speech: interj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/plus,4,plus,plus,in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/po,4,"cs: po
+example 1: cs: Po obědě mám poradu.","en: after; along
+example 1: en: After lunch I have a meeting.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pod,4,"cs: pod
+example 1: cs: Klíč je pod rohožkou.","en: under
+example 1: en: The key is under the doormat.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/podle,4,"cs: podle
+example 1: cs: Podle mě je to dobré.","en: according to
+example 1: en: In my opinion it's good.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/podobny,4,"cs: podobný
+example 1: cs: Máme podobný problém.","en: similar
+example 1: en: We have a similar problem.",in: The little words · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pokud,4,"cs: pokud
+example 1: cs: Pokud budete mít čas, přijďte.","en: if, as long as
+example 1: en: If you have time, come.",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pomoc,4,"cs: pomoc
+example 1: cs: Děkuju za pomoc.","en: help
+example 1: en: Thanks for the help.",in: The little words · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/porad,4,"cs: pořád
+example 1: cs: Pořád prší.","en: still; all the time
+example 1: en: It's still raining.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/potom,4,"cs: potom
+example 1: cs: Potom jdeme do kina.","en: afterwards
+example 1: en: Afterwards we're going to the cinema.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pouze,4,"cs: pouze
+example 1: cs: Platba pouze kartou.","en: only (formal)
+example 1: en: Card payment only.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pozde,4,"cs: pozdě
+example 1: cs: Promiňte, jdu pozdě.","en: late
+example 1: en: Sorry, I'm late.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pozor,4,pozor,"watch out!, attention",in: The little words · part of speech: interj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pravda,4,"cs: pravda
+example 1: cs: To je pravda.","en: truth
+example 1: en: That's true.",in: The little words · gender: f · part of speech: noun,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/prave,4,"cs: právě
+example 1: cs: Právě jsem přišel.","en: just, exactly
+example 1: en: I've just arrived.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pred,4,"cs: před
+example 1: cs: Čekám před domem.","en: in front of; before
+example 1: en: I'm waiting in front of the house.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/predevsim,4,"cs: především
+example 1: cs: Hledám především klid.","en: above all
+example 1: en: Above all, I'm looking for peace and quiet.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/predtim,4,předtím,before (that),in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pres,4,"cs: přes
+example 1: cs: Jděte přes most.","en: across, over; via
+example 1: en: Go across the bridge.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/presne,4,"cs: přesně
+example 1: cs: Přesně tak.","en: exactly
+example 1: en: Exactly.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/presto,4,"cs: přesto
+example 1: cs: Pršelo, přesto jsme šli ven.","en: still, nevertheless
+example 1: en: It rained, but we still went out.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pri,4,"cs: při
+example 1: cs: Při jídle nemluví.","en: during, at
+example 1: en: He doesn't talk while eating.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/prilis,4,"cs: příliš
+example 1: cs: Je to příliš drahé.","en: too (much)
+example 1: en: It's too expensive.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/proc,4,"cs: proč
+example 1: cs: Proč ne?","en: why
+example 1: en: Why not?",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/proti,4,"cs: proti
+example 1: cs: Bydlím proti škole.","en: against; opposite
+example 1: en: I live opposite the school.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/proto,4,"cs: proto
+example 1: cs: Pršelo, proto jsme zůstali doma.","en: that's why
+example 1: en: It rained, so we stayed at home.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/protoze,4,"cs: protože
+example 1: cs: Nejdu, protože jsem nemocný.","en: because
+example 1: en: I'm not going because I'm ill.",in: The little words · part of speech: conj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pry,4,"cs: prý
+example 1: cs: Prý bude stávka.","en: apparently, they say
+example 1: en: Apparently there'll be a strike.",in: The little words · part of speech: part,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/pryc,4,pryč,"away, gone",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/rict,4,říct,"to say, to tell",in: The little words · aspect: pf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/rozumet,4,rozumět,to understand,in: The little words · aspect: impf · part of speech: verb,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/ruzny,4,"cs: různý
+example 1: cs: Máme různé názory.","en: various, different
+example 1: en: We have different opinions.",in: The little words · part of speech: adj,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/rychle,4,"cs: rychle
+example 1: cs: Mluvíte moc rychle.","en: quickly
+example 1: en: You speak too fast.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/s,4,"cs: s
+example 1: cs: Kávu s mlékem, prosím.","en: with
+example 1: en: Coffee with milk, please.",in: The little words · part of speech: prep,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/sam,4,"cs: sám
+example 1: cs: Bydlím sám.","en: alone; (by) oneself
+example 1: en: I live alone.",in: The little words · part of speech: pron,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,
+words/01-zakladni.json#words/samozrejme,4,"cs: samozřejmě
+example 1: cs: Ano, samozřejmě.","en: of course
+example 1: en: Yes, of course.",in: The little words · part of speech: adv,"Natural, common Czech? Is the English the meaning a learner needs first? Are gender, aspect and the note right?",,,,

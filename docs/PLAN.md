@@ -1647,3 +1647,56 @@ merged or deployed until you say so.
    Settings → Sources.
 5. **Recordings under CC BY 4.0, with written consent.** You may prefer
    assignment to the project. Tell me and I'll change the template.
+
+### 12.7 As built (18 Nov 2026)
+
+- **Review sheets:**
+  - 3,134 items: 3,097 Czech items in JSON plus 37 pages (20 grammar pages
+    and 17 lesson explanations).
+  - **41 sheets** of about an hour each, rather than 13 batches. The
+    batches keep the planned order, but big ones are split by estimated
+    time, e.g. batch 2 into 3 parts and the word decks into many. The
+    sheets are committed in `review/`, so they can be downloaded from
+    GitHub. `review/README.md` lists them with item counts and times.
+  - **Keys** address items by id where they have one, and by position
+    otherwise (dialogue lines, phrases). The import refuses any row whose
+    Czech changed since export, so a stale sheet can't overwrite newer
+    text.
+  - **Auto-applied fixes:** 2,152 of the 3,097 items have a single plain
+    `cs` field and no answers or lens markup. Fixes to anything else go to
+    `review/fixes-to-apply.md`.
+  - **Pages:** grammar pages are marked reviewed in their frontmatter.
+    Lesson explanations have no flag, so their reviews are kept in
+    `review/log.json`.
+  - **Reformatting:** six compactly formatted JSON files (verb tables,
+    noun tables, name days, the warm-up) get reformatted the first time a
+    review touches them. The data is unchanged.
+- **Recording scripts:** 567 clips in 6 scripts (R1 has 13 clips, not the
+  15 I estimated), each as a printable page and a CSV in `review/audio/`.
+  Recording ids are derived from the content, and a test checks the app and
+  the scripts agree.
+- **Two audio bugs fixed** that would have broken the first real
+  recordings:
+  - the player assumed every file was `.mp3`;
+  - it resolved when a clip started, not when it ended, so a recorded
+    dialogue would have played all its lines at once.
+
+  It now looks clips up in the manifest and plays them line by line.
+  Unrecorded items request nothing. Checked in the browser with a
+  temporary clip: only the recorded line offered playback without a Czech
+  voice, and only its file was fetched.
+- **In the app:** the footer shows the live count ("Czech not yet checked by
+  a native speaker (0 of 3,134 items)"), and Settings → Sources shows it by
+  area, with credits and a link to the reviewers' guide.
+- **Docs:** `docs/REVIEWERS.md`; `docs/AUDIO.md`, rewritten with the
+  recording guide and the consent and licence template (marked as not legal
+  advice); `docs/CALL_FOR_HELP.md`, with short and long versions to post.
+- **Checks:**
+  - 298 tests pass, including new kit tests that run the export and import
+    on a copy of the content:
+    - OK and plain fixes apply;
+    - risky fixes are held back;
+    - stale rows and unknown keys are skipped;
+    - a failed validation rolls everything back;
+    - audio import refuses a speaker without consent.
+  - Build, typecheck, `check:targets` and `check:offline` pass.

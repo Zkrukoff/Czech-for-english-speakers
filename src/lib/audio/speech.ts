@@ -1,3 +1,5 @@
+import { recordingUrl } from './recordings';
+
 /**
  * Audio abstraction. Components only call `speech.speak(text, { audioId })`.
  * Today the browser's text-to-speech (cs-CZ) is used; once recorded files
@@ -63,9 +65,10 @@ export class WebSpeechProvider implements SpeechProvider {
 
 export class RecordedAudioProvider implements SpeechProvider {
   private current: HTMLAudioElement | null = null;
+  /** `lookup` gives the URL of a listed recording, or undefined: nothing unlisted is requested. */
   constructor(
     private fallback: SpeechProvider,
-    private baseUrl = `${import.meta.env.BASE_URL}audio/`,
+    private lookup: (id: string) => string | undefined,
   ) {}
 
   isAvailable(): boolean {
@@ -74,12 +77,18 @@ export class RecordedAudioProvider implements SpeechProvider {
 
   async speak(text: string, options: SpeakOptions = {}): Promise<void> {
     this.stop();
-    if (options.audioId) {
+    const url = options.audioId ? this.lookup(options.audioId) : undefined;
+    if (url) {
       try {
-        const audio = new Audio(`${this.baseUrl}${options.audioId}.mp3`);
+        const audio = new Audio(url);
         audio.playbackRate = options.rate ?? 1;
         this.current = audio;
+        // Resolve when the clip has finished (or is stopped), so dialogues play line by line.
+        const ended = new Promise<void>((resolve) => {
+          audio.onended = audio.onerror = audio.onpause = () => resolve();
+        });
         await audio.play();
+        await ended;
         return;
       } catch {
         // No recording (or playback blocked): fall back to TTS.
@@ -96,4 +105,4 @@ export class RecordedAudioProvider implements SpeechProvider {
 }
 
 /** The app-wide provider. Swap here when recorded audio is added. */
-export const speech: SpeechProvider = new RecordedAudioProvider(new WebSpeechProvider());
+export const speech: SpeechProvider = new RecordedAudioProvider(new WebSpeechProvider(), recordingUrl);

@@ -1,0 +1,120 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+guides/prague-transport/guide.json#practice/transport-ask/exercises/tr-a4,10,"answers: Jednu jízdenku na devadesát minut[, prosím]. | Jednu devadesátiminutovou jízdenku[, prosím]. | Jeden lístek na devadesát minut[, prosím].","prompt: One 90-minute ticket, please.",in: Asking your way · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-ask/exercises/tr-a5,10,answers: Na které zastávce mám vystoupit? | Kde mám vystoupit?,prompt: Which stop should I get off at?,in: Asking your way · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-ask/exercises/tr-a6,10,"base: Můstek
+answers: u","prompt: Vystupuju na Můstk___.
+en: I'm getting off at Můstek.",in: Asking your way · exercise type: fillEnding,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-ask/exercises/tr-a7,10,"base: Florenc
+answers: i","prompt: Přestupuju na Florenc___.
+en: I change at Florenc.",in: Asking your way · exercise type: fillEnding,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-ask/exercises/tr-a8,10,"answers: [{Dobrý den|Prosím}[,] ]{Tady je|Tady|Tady ji máte|Tady máte|Prosím}[,] mám ji v aplikaci[.] | [{Dobrý den|Prosím}[,] ]Mám ji v aplikaci[.]","prompt: Say: here it is, I have it in the app.",in: Asking your way · exercise type: dialogueComplete,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-hear/exercises/tr-h1,10,"prompt: Ukončete, prosím, výstup a nástup, dveře se zavírají.","answers: Please {finish|stop} {getting on and off|getting off and on|boarding and exiting|exiting and boarding}[,] the doors are closing[.] | {Stand clear|Stop boarding}[,] the doors are closing[.] | The doors are closing[.]",in: Announcements and signs · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-hear/exercises/tr-h2,10,"prompt: Konečná stanice. Prosíme, vystupte.",answers: {Terminal|Last|Final|End} {station|stop}[.] Please {get off|exit|leave the train}[.] | This is the {terminus|end of the line}[.] Please {get off|exit|leave the train}[.],in: Announcements and signs · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-hear/exercises/tr-h3,10,prompt: Přestup na linku C.,answers: {Change|Transfer} [here ]{for|to} line C[.],in: Announcements and signs · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-hear/exercises/tr-h4,10,Pro výstup stiskněte tlačítko.,"prompt: On a bus you hear **""Pro výstup stiskněte tlačítko.""** What do you do if you want to get off?
+options: Press the stop button | Nothing: the bus stops anyway | Tell the driver
+answers: Press the stop button",in: Announcements and signs · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-hear/exercises/tr-h5,10,answers: Výstup,prompt: Which sign do you follow to get out of the metro to the street? Type the Czech word.,in: Announcements and signs · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-hear/exercises/tr-h6,10,Výluka,"prompt: A yellow poster at your stop says **výluka**. What does it mean?
+options: A planned closure or diversion | A strike | A delay
+answers: A planned closure or diversion",in: Announcements and signs · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-hear/exercises/tr-h7,10,answers: náhradní doprava,"prompt: During a closure, what is the replacement service called? Type the two Czech words.",in: Announcements and signs · exercise type: question,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-hear/exercises/tr-h8,10,22  Bílá Hora  za 4 min,"prompt: An electronic board says **""za 4 min""**. When does the tram leave?
+options: In 4 minutes | 4 stops away | Every 4 minutes
+answers: In 4 minutes",in: Announcements and signs · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-hear/exercises/tr-hear-doors,10,"cs: Ukončete, prosím, výstup a nástup, dveře se zavírají.
+answers: Ukončete[,] prosím[,] výstup a nástup[,] dveře se zavírají","Please finish getting on and off, the doors are closing.",in: Announcements and signs · exercise type: listenType,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-hear/exercises/tr-read-exit,10,realia 1: lines: VÝSTUP,"prompt: Where does this sign send you?
+options: The exit | The entrance | A transfer to another line
+answers: The exit",in: Announcements and signs · exercise type: readReal,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-hear/exercises/tr-read-next,10,realia 1: lines: Příští stanice: Můstek. | Přestup na linku B.,"realia 1: title: Linka A
+prompt: You're on Line A. What can you do at the next station?
+options: Change to line B | Line B is closed | It's the last stop
+answers: Change to line B",in: Announcements and signs · exercise type: readReal,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-motion/exercises/tr-as-1,10,answers: přišel,"prompt: Včera jsem ___ do práce pozdě.
+options: přicházel | přišel
+en: Yesterday I got to work late.",in: Coming and going · exercise type: aspectChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-motion/exercises/tr-as-2,10,answers: přicházel,"prompt: Loni jsem ___ do práce pozdě skoro každý den.
+options: přicházel | přišel
+en: Last year I got to work late almost every day.",in: Coming and going · exercise type: aspectChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-motion/exercises/tr-as-3,10,answers: přijel,"prompt: Kdy jsi ___ do Prahy?
+options: přijížděl | přijel
+en: When did you arrive in Prague?",in: Coming and going · exercise type: aspectChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-motion/exercises/tr-as-4,10,answers: odcházel,"prompt: Vždycky jsem ___ z kanceláře poslední.
+options: odcházel | odešel
+en: I was always the last to leave the office.",in: Coming and going · exercise type: aspectChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-motion/exercises/tr-mo-1,10,"verb: jezdit
+answers: jezdím","prompt: Každý den ___ do práce tramvají.
+en: I go to work by tram every day.",in: Coming and going · exercise type: conjugate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-motion/exercises/tr-mo-2,10,"verb: jet
+answers: jedu","prompt: Dnes ___ metrem, tramvaje nejezdí.
+en: Today I'm going by metro, the trams aren't running.",in: Coming and going · exercise type: conjugate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-motion/exercises/tr-mo-3,10,"verb: chodit
+answers: chodím","prompt: Do práce ___ pěšky, bydlím blízko.
+en: I walk to work, I live close by.",in: Coming and going · exercise type: conjugate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-network/exercises/tr-n1,10,,"prompt: Which metro line is **yellow**?
+options: A | B | C
+answers: B",in: Know the network · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-network/exercises/tr-n2,10,,"prompt: Which metro line is **red**?
+options: A | B | C
+answers: C",in: Know the network · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-network/exercises/tr-n3,10,"options: Můstek | Muzeum | Florenc | Náměstí Republiky
+answers: Můstek",prompt: At which station can you change between lines **A and B**?,in: Know the network · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-network/exercises/tr-n4,10,"options: Muzeum | Můstek | Florenc | Hlavní nádraží
+answers: Muzeum",prompt: At which station can you change between lines **A and C**?,in: Know the network · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-network/exercises/tr-n5,10,"options: Florenc | Můstek | Muzeum | Náměstí Republiky
+answers: Florenc",prompt: At which station can you change between lines **B and C**?,in: Know the network · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-network/exercises/tr-n6,10,,"prompt: Night trams have numbers in which range?
+options: 90–99 | 901 and up | There are no night trams
+answers: 90–99",in: Know the network · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-network/exercises/tr-n7,10,,"prompt: Which line goes from the airport to metro line A (Nádraží Veleslavín)?
+options: 59 | 100 | AE | 910
+answers: 59",in: Know the network · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/prague-transport/guide.json#practice/transport-network/exercises/tr-n8,10,,"prompt: You have a **paper** ticket. Where do you validate it before taking the metro?
+options: In a validator before you go into the metro | On the platform | On the train | At the exit
+answers: In a validator before you go into the metro",in: Know the network · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/settling-in/guide.json#,10,titleCs: Zabydlení,"title: Settling in
+summary: The Czech you need for the paperwork and errands of moving here: the flat, the bank, the doctor and the post office. Practical, dated, and never legal advice.",in: Settling in,Natural and correct?,,,,
+guides/settling-in/guide.json#phrasebook/settle-flat/phrases/0,10,Volám kvůli inzerátu na byt.,I'm calling about the flat advert.,in: The flat,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/settling-in/guide.json#phrasebook/settle-flat/phrases/1,10,Kolik je nájem včetně poplatků?,How much is the rent including charges?,in: The flat,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/settling-in/guide.json#phrasebook/settle-flat/phrases/2,10,Nejde topení.,The heating isn't working.,in: The flat,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/settling-in/guide.json#phrasebook/settle-health/phrases/0,10,Potřebuju se objednat k lékaři.,I need to make a doctor's appointment.,in: Doctor and pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/settling-in/guide.json#phrasebook/settle-health/phrases/1,10,Bolí mě v krku.,I have a sore throat.,in: Doctor and pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/settling-in/guide.json#phrasebook/settle-health/phrases/2,10,Máte něco na kašel?,Do you have anything for a cough?,in: Doctor and pharmacy,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/settling-in/guide.json#phrasebook/settle-office/phrases/0,10,Mám objednaný termín na deset.,I have an appointment at ten.,in: Offices,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/settling-in/guide.json#phrasebook/settle-office/phrases/1,10,Jaké doklady potřebuju?,Which documents do I need?,in: Offices,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/settling-in/guide.json#phrasebook/settle-office/phrases/2,10,Můžete mi to napsat?,Could you write it down for me?,in: Offices,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/settling-in/guide.json#practice/settle-say/exercises/st-1,10,answers: Nejde topení[.] | Topení nejde[.],prompt: The heating isn't working.,in: Say it · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/settling-in/guide.json#practice/settle-say/exercises/st-2,10,answers: Můžete mi to napsat? | Mohl{|a} byste mi to napsat?,prompt: Could you write it down for me? (formal),in: Say it · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/settling-in/guide.json#practice/settle-say/exercises/st-3,10,answers: Bolí mě v krku[.],prompt: I have a sore throat.,in: Say it · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/settling-in/guide.json#practice/settle-say/exercises/st-4,10,prompt: Jaké doklady potřebuju?,answers: {What|Which} documents do I need?,in: Say it · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/settling-in/guide.json#practice/settle-say/exercises/st-5,10,,"prompt: A flat advert says **3+kk**. What does it mean?
+options: 3 rooms, with a kitchenette in one of them | 3 rooms plus a separate kitchen | 3 bedrooms plus a living room
+answers: 3 rooms, with a kitchenette in one of them",in: Say it · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/sports/guide.json#,10,titleCs: Sport,"title: Sport
+summary: Hockey, football, the chants (including the rude ones, explained) and how to go to a game: what to say, where to stand, and what not to sing.",in: Sport,Natural and correct?,,,,
+guides/sports/guide.json#phrasebook/talking/phrases/0,10,Komu fandíš?,Who do you support?,in: Talking about it,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/talking/phrases/1,10,Fandím Slavii.,I support Slavia.,in: Talking about it,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/talking/phrases/2,10,Fandím Spartě.,I support Sparta.,in: Talking about it,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/talking/phrases/3,10,Jdeme na hokej.,We're going to the hockey.,in: Talking about it,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/talking/phrases/4,10,Viděl jsi včera ten zápas?,Did you see the game yesterday?,in: Talking about it,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/talking/phrases/5,10,Vyhráli jsme!,We won!,in: Talking about it,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/talking/phrases/6,10,Prohráli jsme.,We lost.,in: Talking about it,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/talking/phrases/7,10,Byla to remíza.,It was a draw.,in: Talking about it,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/watching/phrases/0,10,Kolik je?,What's the score?,in: Watching a game,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/watching/phrases/1,10,Dva jedna pro Spartu.,Two–one to Sparta.,in: Watching a game,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/watching/phrases/2,10,Nula nula.,Nil–nil.,in: Watching a game,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/watching/phrases/3,10,Gól!,Goal!,in: Watching a game,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/watching/phrases/4,10,To byl faul!,That was a foul!,in: Watching a game,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/watching/phrases/5,10,Rozhodčí!,Ref!,in: Watching a game,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/watching/phrases/6,10,Jdou do prodloužení.,It's going to overtime.,in: Watching a game,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#phrasebook/watching/phrases/7,10,Budou nájezdy.,It's going to a shootout.,in: Watching a game,Would a Czech person say exactly this here? Right register (vy or ty)?,,,,
+guides/sports/guide.json#practice/sports-basics/exercises/spo-x1,10,answers: Komu fandíš[?] | Komu fandíte[?],prompt: Who do you support?,in: At the game · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/sports/guide.json#practice/sports-basics/exercises/spo-x2,10,answers: Jdeme na hokej[.] | Jedeme na hokej[.],prompt: We're going to the hockey.,in: At the game · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/sports/guide.json#practice/sports-basics/exercises/spo-x3,10,"options: Fandím Slavii. | Fandím Slavia. | Fandím Slavie.
+answers: Fandím Slavii.","prompt: ""I support Slavia."" Which form of Slavia?",in: At the game · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/sports/guide.json#practice/sports-basics/exercises/spo-x4,10,"options: Everyone jump: you're not Czech if you don't. | Nobody jump: Czechs stay seated. | Who's the Czech who isn't jumping?
+answers: Everyone jump: you're not Czech if you don't.","prompt: What do fans mean by ""Kdo neskáče, není Čech!""?",in: At the game · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/sports/guide.json#practice/sports-basics/exercises/spo-x5,10,"options: It was a draw, 2–2. | We won 2–0. | It was two games.
+answers: It was a draw, 2–2.","prompt: Your colleague says ""Bylo to dva dva."" What happened?",in: At the game · exercise type: multipleChoice,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,
+guides/sports/guide.json#practice/sports-basics/exercises/spo-x6,10,"prompt: Dvě vstupenky na sobotu, prosím.","answers: Two tickets for Saturday[,] please[.] | Two tickets for Saturday[.]",in: At the game · exercise type: translate,"Is every accepted answer correct Czech? Is a natural, correct answer missing? Are the explanations (why, hints) right?",,,,

@@ -1,3 +1,4 @@
+import { chunkAudioId } from '@/lib/audio/ids';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { course } from '@/content';
 import { db } from '@/db/db';
@@ -53,7 +54,7 @@ export function PhraseSituations() {
                       <span>
                         <span lang="cs" className="font-semibold text-ink">{p.cs}</span> <span className="text-ink-2">{p.en}</span>
                       </span>
-                      <SpeakButton text={p.cs} />
+                      <SpeakButton text={p.cs} audioId={chunkAudioId(p.id)} />
                     </li>
                   ))}
                 </ul>

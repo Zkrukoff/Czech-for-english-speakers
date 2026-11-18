@@ -1,0 +1,139 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+exam/reading.json#tasks/r2-practice2,9,"instruction: Přečtěte si text a úkoly 1–5. Vyberte ke každému úkolu jedno správné řešení z nabídky A–D.
+text: Milí rodiče,
+
+v pátek 22. 5. pojedeme s dětmi na výlet do zoo. Sraz je v 8:00 před školkou, vrátíme se ve 14:30. Pojedeme autobusem. Výlet stojí 250 Kč (vstupné a autobus). Peníze prosím dejte paní učitelce do středy.
+
+Děti budou mít oběd v restauraci v zoo. Svačinu a pití jim dejte s sebou do batohu. Když bude pršet, pojedeme v pondělí 25. 5. Děti, které nepojedou, budou ten den ve třídě paní Kubátové.
+
+Děkujeme,
+Hana Malá, ředitelka školky Sluníčko
+questions 1: q: Kam pojedou děti?
+questions 2: q: Kdy se děti vrátí?
+questions 3: q: Co je v ceně 250 Kč?
+questions 4: q: Co mají rodiče dát dětem s sebou?
+questions 5: q: Co se stane, když bude pršet?","title: A letter from the nursery school
+instructionEn: Read the text and questions 1–5. Choose the one right answer, A–D, for each.
+questions 1: options: Do zoo. | K řece. | Do muzea. | Na hrad.
+questions 2: options: Ve 12:00. | Ve 14:30. | V 8:00. | V 16:00.
+questions 3: options: Jen oběd. | Oběd a svačina. | Batoh. | Vstupné a autobus.
+questions 4: options: Peníze na vstupné. | Svačinu a pití. | Oběd. | Deštník.
+questions 5: options: Pojedou vlakem. | Děti zůstanou doma. | Pojedou v pondělí. | Výlet nebude.",in: A letter from the nursery school · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r3-mock2,9,"instruction: Přečtěte si texty 1–4 a informace o osobách. Vyberte ke každému textu jednu vhodnou osobu z nabídky A–E. Jednu osobu nebudete potřebovat.
+items 1: text: Autoservis Brzda: opravy aut všech značek, i v sobotu.
+items 2: text: Kadeřnictví Vlasta: stříhání bez objednání, pánové 250 Kč, dámy od 400 Kč.
+items 3: text: Čistírna Bílá: vyčistíme kabáty, saka i šaty do 24 hodin.
+items 4: text: Hodinový manžel: opravy v bytě, malování, montáž nábytku.
+options 1: text: Pan Beneš se chce dnes nechat ostříhat a nechce čekat na termín.
+options 2: text: Jiří potřebuje do zítřka čisté sako na svatbu.
+options 3: text: Milan má problém s motorem a v týdnu nemá čas.
+options 4: text: Paní Vaňková hledá někoho, kdo jí bude hlídat děti.
+options 5: text: Simona si koupila novou skříň a neumí ji složit.","title: Services
+instructionEn: Read texts 1–4 and what each person wants. Match each text to one person, A–E. You won’t need one of them.",in: Services · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r3-practice1,9,"instruction: Přečtěte si texty 1–4 a informace o osobách. Vyberte ke každému textu jednu vhodnou osobu z nabídky A–E. Jednu osobu nebudete potřebovat.
+items 1: text: Jazyková škola Lingua: večerní kurzy angličtiny pro dospělé, úterý a čtvrtek 18:00–19:30.
+items 2: text: Plavání pro děti od 4 let, každou sobotu dopoledne v bazénu na Strahově.
+items 3: text: Kurz vaření: naučte se vařit česká jídla! Svíčková, guláš, knedlíky. Jen o víkendu.
+items 4: text: Jóga pro začátečníky v parku Stromovka, každé ráno v 7:00, zdarma.
+options 1: text: Anna má ráda českou kuchyni a chce vařit pro rodinu. V týdnu pracuje.
+options 2: text: Petr pracuje celý týden od osmi do šesti. Chce se ráno před prací hýbat, ale nemá moc peněz.
+options 3: text: Martin hledá kamarády, se kterými může hrát tenis.
+options 4: text: Lucie chce, aby se její syn (5 let) naučil plavat. Přes týden nemá čas.
+options 5: text: Tomáš potřebuje angličtinu do práce. Může chodit jen večer.","title: Courses
+instructionEn: Read texts 1–4 and what each person wants. Match each text to one person, A–E. You won’t need one of them.",in: Courses · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r3-practice2,9,"instruction: Přečtěte si texty 1–4 a informace o osobách. Vyberte ke každému textu jednu vhodnou osobu z nabídky A–E. Jednu osobu nebudete potřebovat.
+items 1: text: Pronájem: garsoniéra 1+kk na Žižkově, 14 000 Kč + poplatky, volná hned, bez zvířat.
+items 2: text: Velký byt 4+1 se zahradou v Řepích, blízko školy a školky, 32 000 Kč.
+items 3: text: Pokoj ve sdíleném bytě pro studenta, 5 minut od metra Dejvická, 8 500 Kč včetně poplatků.
+items 4: text: Byt 2+kk v Holešovicích, zvířata vítána, park hned vedle domu, 21 000 Kč.
+options 1: text: Novákovi mají tři děti a chtějí bydlet mimo centrum.
+options 2: text: Pan Horák chce koupit dům na vesnici.
+options 3: text: Pavel a Eva mají psa a rádi chodí na procházky.
+options 4: text: Jana bydlí sama, chce se přestěhovat co nejdřív a nemá zvíře.
+options 5: text: Karel studuje na technice v Dejvicích. Nechce platit moc.","title: Flats to rent
+instructionEn: Read texts 1–4 and what each person wants. Match each text to one person, A–E. You won’t need one of them.",in: Flats to rent · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r4-mock2,9,"instruction: Přečtěte si texty 1–6. Vyberte ke každému textu jedno správné řešení z nabídky A–D.
+questions 1: q:  · text: Fitness centrum: Prvních 14 dní ___ zdarma!
+questions 2: q:  · text: Ztratil se ___ pes, jmenuje se Max.
+questions 3: q:  · text: Ordinace bude v srpnu zavřená. Lékaře zastupuje kolega v ___ poliklinice.
+questions 4: q:  · text: Prodáváme ___ brambory z Vysočiny, 25 Kč za kilo.
+questions 5: q:  · text: V neděli bude v parku ___ pro celou rodinu.
+questions 6: q:  · text: Vstup do bazénu je pro děti do tří let ___.","title: Notices
+instructionEn: Read texts 1–6. Choose the word or words, A–D, that fill each gap.
+questions 1: options: cvičí | cvičím | cvičíte | cvičit
+questions 2: options: černou | černý | černé | černá
+questions 3: options: nový | nová | novou | nové
+questions 4: options: česká | českou | české | český
+questions 5: options: festivalem | festivalu | festival | festivaly
+questions 6: options: zavřený | drahý | zdarma | volno",in: Notices · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r4-practice1,9,"instruction: Přečtěte si texty 1–6. Vyberte ke každému textu jedno správné řešení z nabídky A–D.
+questions 1: q:  · text: Kavárna Slavia: Dnes je kavárna kvůli soukromé akci ___ od 15:00.
+questions 2: q:  · text: Prodám ___ kolo pro dítě od 6 let, jen 1 200 Kč.
+questions 3: q:  · text: Lékař ordinuje v pondělí a ve středu od 7 do 12 ___.
+questions 4: q:  · text: Hledáme ___ do kuchyně, práce na plný úvazek.
+questions 5: q:  · text: Na nádraží jezdí autobus číslo 133 každých 15 ___.
+questions 6: q:  · text: Knihovna bude v srpnu zavřená. ___ můžete vrátit do schránky u vchodu.","title: Notices and small ads
+instructionEn: Read texts 1–6. Choose the word or words, A–D, that fill each gap.
+questions 1: options: prázdná | volná | otevřená | zavřená
+questions 2: options: děti | dětský | dětské | dětem
+questions 3: options: hodiny | hodin | hodina | hodinou
+questions 4: options: kuchařem | kuchař | kuchaři | kuchaře
+questions 5: options: minut | minuty | minutách | minutu
+questions 6: options: Peníze | Klíče | Knihy | Lístky",in: Notices and small ads · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r4-practice2,9,"instruction: Přečtěte si texty 1–6. Vyberte ke každému textu jedno správné řešení z nabídky A–D.
+questions 1: q:  · text: Pozor! Ve čtvrtek nejezdí tramvaje v ___ Vodičkova.
+questions 2: q:  · text: Pekárna nabízí čerstvý chleba každé ___ od 6:00.
+questions 3: q:  · text: Prodej vstupenek na koncert ___ v pondělí 3. 3.
+questions 4: q:  · text: Hotel Praha hledá recepční se znalostí ___ jazyka.
+questions 5: q:  · text: Objednávejte se telefonicky ___ čísle 224 518 300.
+questions 6: q:  · text: Pozor, v sobotu je supermarket otevřený jen ___ 7 do 13 hodin.","title: Signs around town
+instructionEn: Read texts 1–6. Choose the word or words, A–D, that fill each gap.
+questions 1: options: ulic | ulicí | ulici | ulice
+questions 2: options: večer | hodinu | noc | ráno
+questions 3: options: začíná | začínají | začni | začínat
+questions 4: options: anglického | angličtina | anglický | anglicky
+questions 5: options: u | v | do | na
+questions 6: options: od | k | do | z",in: Signs around town · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r5-mock2,9,"instruction: Přečtěte si text a doplňte ke každému úkolu 1–5 jednu správnou informaci.
+text: Hotel Vltava, Český Krumlov: potvrzení rezervace
+
+Host: Ana García
+Příjezd: pátek 7. 8., odjezd: neděle 9. 8. (2 noci)
+Pokoj: dvoulůžkový s výhledem na řeku
+Cena: 2 400 Kč za noc, snídaně v ceně
+
+Snídaně se podává od 7:30 do 10:00 v restauraci v přízemí. Recepce je otevřená od 7 do 22 hodin. Když přijedete později, klíč najdete v boxu u vchodu, kód je 4815. Parkování u hotelu stojí 200 Kč za den.
+questions 1: q: Kolik nocí bude Ana v hotelu? · answers: 2 | dvě | 2 noci | dvě noci
+questions 2: q: Kolik stojí jedna noc? · answers: 2 400 | 2400 | 2 400 Kč
+questions 3: q: Kde je restaurace? · answers: v přízemí | přízemí
+questions 4: q: Jaký je kód boxu s klíčem? · answers: 4815
+questions 5: q: Kolik stojí parkování za den? · answers: 200 | 200 Kč | dvě stě","title: A hotel booking
+instructionEn: Read the text and write one piece of information for each of questions 1–5.",in: A hotel booking · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r5-practice1,9,"instruction: Přečtěte si text a doplňte ke každému úkolu 1–5 jednu správnou informaci.
+text: Plavecký bazén Šutka
+
+Otevírací doba: pondělí až pátek 6:00–22:00, sobota a neděle 8:00–21:00.
+Vstupné: dospělí 150 Kč za hodinu, děti do 15 let 90 Kč, senioři nad 65 let 100 Kč. Permanentka na 10 vstupů stojí 1 200 Kč.
+V úterý od 18 do 20 hodin je bazén zavřený pro veřejnost: plavou tu plavecké kluby.
+Parkování je zdarma. Bazén je 10 minut pěšky od metra Kobylisy.
+questions 1: q: V kolik hodin bazén otevírá v sobotu? · answers: 8 | 8:00 | v 8 | v osm | osm | 8 hodin | v 8 hodin | od 8 | od 8:00
+questions 2: q: Kolik stojí hodina pro dítě? · answers: 90 | 90 Kč | devadesát
+questions 3: q: Kolik stojí permanentka? · answers: 1 200 | 1200 | 1 200 Kč
+questions 4: q: Který den je bazén večer zavřený pro veřejnost? · answers: v úterý | úterý
+questions 5: q: Od které stanice metra je bazén 10 minut pěšky? · answers: Kobylisy | od Kobylis | z Kobylis | metro Kobylisy","title: A swimming pool
+instructionEn: Read the text and write one piece of information for each of questions 1–5.",in: A swimming pool · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r5-practice2,9,"instruction: Přečtěte si text a doplňte ke každému úkolu 1–5 jednu správnou informaci.
+text: Dobrý den, pane Smithe,
+
+potvrzujeme vaši objednávku na preventivní prohlídku u MUDr. Marie Svobodové.
+Termín: čtvrtek 16. 10. v 9:30.
+Ordinace je ve 2. patře, dveře číslo 214. Prosíme, přijďte o 10 minut dřív a vezměte si s sebou kartičku pojišťovny. Na prohlídku přijďte nalačno: ráno nesnídejte.
+Když nemůžete přijít, zavolejte nejpozději den předem na číslo 241 403 512.
+
+Poliklinika Budějovická
+questions 1: q: Ve který den je prohlídka? · answers: ve čtvrtek | čtvrtek | 16. 10. | 16.10 | 16. 10 | ve čtvrtek 16. 10.
+questions 2: q: V kolik hodin má pan Smith přijít, když má přijít o 10 minut dřív? · answers: 9:20 | v 9:20 | 9.20 | 9 20
+questions 3: q: Ve kterém patře je ordinace? · answers: ve 2. patře | 2. | 2 | ve druhém | ve druhém patře | druhém | 2. patro | druhé
+questions 4: q: Co si má vzít s sebou? · answers: kartičku pojišťovny | kartičku | kartu pojišťovny | kartička pojišťovny | průkaz pojišťovny
+questions 5: q: Co ráno nesmí dělat? · answers: snídat | nesnídat | jíst | nejíst | nesmí snídat","title: A doctor’s appointment
+instructionEn: Read the text and write one piece of information for each of questions 1–5.",in: A doctor’s appointment · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,

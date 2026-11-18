@@ -1,12 +1,8 @@
 import { useState } from 'react';
-import { course } from '@/content';
 import { IconSpeaker } from '@/components/icons';
+import { recordingUrl } from '@/lib/audio/recordings';
 
-/** URL of a real-speaker recording listed in content/audio/manifest.json. */
-export function recordingUrl(id: string): string | undefined {
-  const r = course.audio.get(id);
-  return r ? `${import.meta.env.BASE_URL}audio/${r.file}` : undefined;
-}
+export { recordingUrl };
 
 /** Plays a real recording (never text-to-speech: these exercises are about real sounds). */
 export function RecordingButton({ id, label = 'Play the recording' }: { id: string; label?: string }) {

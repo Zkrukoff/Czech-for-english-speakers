@@ -1,0 +1,97 @@
+﻿key,batch,czech,english,context,check,verdict,corrected_czech,comment,reviewer
+exam/listening.json#tasks/l4-practice1,9,"instruction: Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jeden správný obrázek z nabídky A–F. Jeden obrázek je navíc. Každý dialog uslyšíte dvakrát.
+question: Co hledají ti lidé?","title: Looking for things
+instructionEn: Listen to five dialogues. Choose the right picture, A–F, for each. One picture is extra. You’ll hear each dialogue twice.",in: Looking for things · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l4-practice2,9,"instruction: Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jeden správný obrázek z nabídky A–F. Jeden obrázek je navíc. Každý dialog uslyšíte dvakrát.
+question: Co ti lidé koupí?","title: Shopping for dinner
+instructionEn: Listen to five dialogues. Choose the right picture, A–F, for each. One picture is extra. You’ll hear each dialogue twice.",in: Shopping for dinner · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l5-mock2,9,"instruction: Poslechněte si hlasovou zprávu. Napište ke každému úkolu 1–5 jednu správnou informaci. Zprávu uslyšíte dvakrát.
+questions 1: q: Kdy začíná kurz? · answers: v pondělí 20. ledna | 20. ledna | 20. 1. | 20.1. | dvacátého ledna | 20 ledna | v pondělí dvacátého ledna
+questions 2: q: Ve které dny jsou lekce? Napište jeden den. · answers: v pondělí | pondělí | ve středu | středa | středu | v pondělí a ve středu
+questions 3: q: Jaké číslo má učebna? · answers: 215 | dvě stě patnáct
+questions 4: q: Kolik stojí kurz? · answers: 6 000 | 6000 | šest tisíc | 6 000 Kč
+questions 5: q: Do kdy musí kurz zaplatit? · answers: do pátku | pátek | v pátek","title: A message from a language school
+instructionEn: Listen to a voicemail and write one piece of information for each of questions 1–5. You’ll hear it twice.",in: A message from a language school · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l5-practice1,9,"instruction: Poslechněte si hlasovou zprávu. Napište ke každému úkolu 1–5 jednu správnou informaci. Zprávu uslyšíte dvakrát.
+questions 1: q: Jak pojedou na výlet? · answers: vlakem | vlak
+questions 2: q: V kolik hodin je sraz? · answers: v 8 | 8 | 8:00 | v osm | osm | v 8 hodin | 8 hodin | v osm hodin
+questions 3: q: Kde je sraz? · answers: na Hlavním nádraží | Hlavní nádraží | u pokladen | na nádraží | na Hlavním nádraží u pokladen
+questions 4: q: Kolik stojí jízdenka? · answers: 110 | sto deset | 110 Kč
+questions 5: q: Jaké číslo telefonu má Martin? · answers: 731 524 890 | 731524890","title: A trip on Saturday
+instructionEn: Listen to a voicemail and write one piece of information for each of questions 1–5. You’ll hear it twice.",in: A trip on Saturday · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/listening.json#tasks/l5-practice2,9,"instruction: Poslechněte si hlasovou zprávu. Napište ke každému úkolu 1–5 jednu správnou informaci. Zprávu uslyšíte dvakrát.
+questions 1: q: Co v autě vyměnili? Napište jednu věc. · answers: brzdy | baterii | baterie | brzdy a baterii
+questions 2: q: Kolik stojí oprava? · answers: 4 200 | 4200 | čtyři tisíce dvě stě | 4 200 Kč
+questions 3: q: Kdy si může auto vyzvednout? · answers: zítra | zítra od 7 do 17 | zítra od sedmi do sedmnácti
+questions 4: q: Jak se jmenuje ulice? · answers: Na Zátorce | Zátorce | Na Zátorce 8
+questions 5: q: Jak může zaplatit? Napište jeden způsob. · answers: hotově | převodem | hotově nebo převodem","title: A message from the garage
+instructionEn: Listen to a voicemail and write one piece of information for each of questions 1–5. You’ll hear it twice.",in: A message from the garage · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r1-mock2,9,"instruction: Podívejte se na obrázky 1–5 a vyberte ke každému obrázku jednu správnou informaci z nabídky A–H. Tři informace nebudete potřebovat.
+options 1: text: Fotbal Sparta – Slavia, vstupenky od 300 Kč.
+options 2: text: Květinářství Jana: kytice k svátku i k narozeninám.
+options 3: text: Národní muzeum: v neděli vstup zdarma.
+options 4: text: Kino Lucerna: dnes večer český film s anglickými titulky.
+options 5: text: Koncert v kostele sv. Jakuba, vstupné dobrovolné.
+options 6: text: Bazén Podolí: v pondělí ráno plavou jen senioři.
+options 7: text: Divadlo pro děti každou sobotu v 10:00.
+options 8: text: Restaurace U Zlatého tygra: dnes guláš 189 Kč.","title: Free time
+instructionEn: Look at pictures 1–5 and choose the one right notice for each from A–H. You won’t need three of them.",in: Free time · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r1-practice1,9,"instruction: Podívejte se na obrázky 1–5 a vyberte ke každému obrázku jednu správnou informaci z nabídky A–H. Tři informace nebudete potřebovat.
+options 1: text: Zelenina z Polska: mrkev 15 Kč/kg.
+options 2: text: Sýry z celé Evropy. Ochutnejte!
+options 3: text: Čerstvé pečivo každé ráno od 6:00.
+options 4: text: Káva s sebou jen 39 Kč.
+options 5: text: Dorty na objednávku, i k narozeninám.
+options 6: text: Domácí vejce z farmy, 6 Kč za kus.
+options 7: text: Sleva 20 % na všechna vína.
+options 8: text: Dnes čerstvé ryby z jižních Čech.","title: At the shops
+instructionEn: Look at pictures 1–5 and choose the one right notice for each from A–H. You won’t need three of them.",in: At the shops · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r1-practice2,9,"instruction: Podívejte se na obrázky 1–5 a vyberte ke každému obrázku jednu správnou informaci z nabídky A–H. Tři informace nebudete potřebovat.
+options 1: text: Parkování aut jen pro hosty hotelu.
+options 2: text: Letenky do celého světa za dobré ceny.
+options 3: text: Ztratili jste klíče? Nové vám uděláme na počkání.
+options 4: text: Autobus číslo 119 jezdí na letiště každých 10 minut.
+options 5: text: Vlaky do Brna jezdí dnes z nástupiště 3.
+options 6: text: Prodej kufrů a tašek na cesty, sleva 30 %.
+options 7: text: Prší? Deštník si můžete půjčit na recepci.
+options 8: text: Půjčovna kol: první hodina zdarma.","title: Travelling
+instructionEn: Look at pictures 1–5 and choose the one right notice for each from A–H. You won’t need three of them.",in: Travelling · set: practice2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r2-mock2,9,"instruction: Přečtěte si text a úkoly 1–5. Vyberte ke každému úkolu jedno správné řešení z nabídky A–D.
+text: Městská část Praha 3 informuje:
+
+V sobotu 12. 9. bude od 9 do 13 hodin na rohu ulic Seifertova a Husinecká stát velký kontejner na starý nábytek, koberce a jiný velký odpad. Do kontejneru nepatří elektronika, baterie ani barvy. Ty můžete zdarma odevzdat ve sběrném dvoře v ulici Malešická, který je otevřený od pondělí do soboty.
+
+Kontejner je jen pro obyvatele Prahy 3. Když nemůžete odpad odnést sami, zavolejte na číslo 222 116 300 a za poplatek 300 Kč vám ho odvezeme z bytu.
+
+Děkujeme, že třídíte odpad.
+questions 1: q: Co můžete dát do kontejneru?
+questions 2: q: Jak dlouho bude kontejner na ulici?
+questions 3: q: Kam můžete dát starou televizi?
+questions 4: q: Kdo může kontejner použít?
+questions 5: q: Kolik zaplatíte, když vám odpad odvezou z bytu?","title: A notice from the district office
+instructionEn: Read the text and questions 1–5. Choose the one right answer, A–D, for each.
+questions 1: options: Starou ledničku. | Baterie. | Starý gauč. | Barvy.
+questions 2: options: Dvě hodiny. | Celý den. | Čtyři hodiny. | Celý týden.
+questions 3: options: Před dům. | Do kontejneru. | Do koše. | Do sběrného dvora.
+questions 4: options: Všichni Pražané. | Jen majitelé bytů. | Jen lidé z Prahy 3. | Jen firmy.
+questions 5: options: 300 Kč. | 500 Kč. | Nic. | 100 Kč.",in: A notice from the district office · set: mock2,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
+exam/reading.json#tasks/r2-practice1,9,"instruction: Přečtěte si text a úkoly 1–5. Vyberte ke každému úkolu jedno správné řešení z nabídky A–D.
+text: Vážení nájemníci,
+
+v úterý 14. 4. od 8:00 do 15:00 nepoteče v celém domě teplá voda. Opravujeme kotel ve sklepě. Studená voda poteče normálně. Prosíme, nepouštějte ten den pračku ani myčku.
+
+Ve středu přijde technik zkontrolovat topení ve všech bytech. Pokud nebudete doma, napište prosím SMS správci domu, panu Dvořákovi, na číslo 603 245 118. Pan Dvořák bydlí v bytě číslo 4 a je doma každý den od 17 do 19 hodin.
+
+Děkujeme za pochopení.
+Správa domu Korunní 12
+questions 1: q: Kdy nepoteče teplá voda?
+questions 2: q: Proč nepoteče teplá voda?
+questions 3: q: Co nemají nájemníci v úterý dělat?
+questions 4: q: Kde bydlí správce domu?
+questions 5: q: Co mají nájemníci udělat, když ve středu nebudou doma?","title: A notice from the landlord
+instructionEn: Read the text and questions 1–5. Choose the one right answer, A–D, for each.
+questions 1: options: V pondělí večer. | Ve středu celý den. | Celý týden. | V úterý od rána do odpoledne.
+questions 2: options: Uklízí se sklep. | Mění se okna. | Opravují pračky. | Opravují kotel.
+questions 3: options: Prát v pračce. | Chodit do sklepa. | Volat správci. | Používat studenou vodu.
+questions 4: options: V přízemí. | V bytě číslo 4. | Ve sklepě. | V jiném domě.
+questions 5: options: Přijít v pondělí. | Nechat klíč u souseda. | Napsat SMS. | Zavolat technikovi.",in: A notice from the landlord · set: practice1,"Natural, like real Czech notices and speech? Exactly one right answer where there is a choice? Model answers at A2 level?",,,,
