@@ -1,0 +1,721 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "nakupovani",
+  "title": "Shopping and money",
+  "titleCs": "Nakupování a peníze",
+  "order": 5,
+  "units": [
+    "u02"
+  ],
+  "words": [
+    {
+      "id": "penize",
+      "cs": "peníze",
+      "en": "money",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 226,
+      "example": {
+        "cs": "Nemám u sebe peníze.",
+        "en": "I don't have money on me."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "cena",
+      "cs": "cena",
+      "en": "price",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 175,
+      "example": {
+        "cs": "Jaká je cena?",
+        "en": "What's the price?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "obchod",
+      "cs": "obchod",
+      "en": "shop; business",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 587,
+      "example": {
+        "cs": "Obchod je zavřený.",
+        "en": "The shop is closed."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "supermarket",
+      "cs": "supermarket",
+      "en": "supermarket",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 6266,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prodavac",
+      "cs": "prodavač",
+      "en": "shop assistant (man)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 7306,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prodavacka",
+      "cs": "prodavačka",
+      "en": "shop assistant (woman)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8877,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zakaznik",
+      "cs": "zákazník",
+      "en": "customer",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 777,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pokladna",
+      "cs": "pokladna",
+      "en": "checkout, till; box office",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5168,
+      "nativeReviewed": false
+    },
+    {
+      "id": "uctenka",
+      "cs": "účtenka",
+      "en": "receipt",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 25753,
+      "nativeReviewed": false
+    },
+    {
+      "id": "karta",
+      "cs": "karta",
+      "en": "card",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1108,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hotovost",
+      "cs": "hotovost",
+      "en": "cash",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6654,
+      "nativeReviewed": false
+    },
+    {
+      "id": "drobne",
+      "cs": "drobné",
+      "en": "change, coins",
+      "pos": "noun",
+      "note": "Plural adjective used as a noun",
+      "rank": 11343,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bankomat",
+      "cs": "bankomat",
+      "en": "cash machine",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 13750,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sleva",
+      "cs": "sleva",
+      "en": "discount, sale",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3953,
+      "nativeReviewed": false
+    },
+    {
+      "id": "taska",
+      "cs": "taška",
+      "en": "bag",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2181,
+      "nativeReviewed": false
+    },
+    {
+      "id": "igelitka",
+      "cs": "igelitka",
+      "en": "plastic bag",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 18906,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nakup",
+      "cs": "nákup",
+      "en": "shopping; a purchase",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1668,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pekarna",
+      "cs": "pekárna",
+      "en": "bakery",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 10763,
+      "nativeReviewed": false
+    },
+    {
+      "id": "reznictvi",
+      "cs": "řeznictví",
+      "en": "butcher's",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 26564,
+      "nativeReviewed": false
+    },
+    {
+      "id": "drogerie",
+      "cs": "drogerie",
+      "en": "chemist's (toiletries)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 29419,
+      "nativeReviewed": false
+    },
+    {
+      "id": "trafika",
+      "cs": "trafika",
+      "en": "newsagent, kiosk",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 14145,
+      "nativeReviewed": false
+    },
+    {
+      "id": "otevreno",
+      "cs": "otevřeno",
+      "en": "open (on signs)",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "zavreno",
+      "cs": "zavřeno",
+      "en": "closed (on signs)",
+      "pos": "adv",
+      "nativeReviewed": false
+    },
+    {
+      "id": "oteviraci-doba",
+      "cs": "otevírací doba",
+      "en": "opening hours",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "kilo",
+      "cs": "kilo",
+      "en": "kilo",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 4273,
+      "nativeReviewed": false
+    },
+    {
+      "id": "gram",
+      "cs": "gram",
+      "en": "gram",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 7487,
+      "nativeReviewed": false
+    },
+    {
+      "id": "litr",
+      "cs": "litr",
+      "en": "litre",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2705,
+      "nativeReviewed": false
+    },
+    {
+      "id": "baleni",
+      "cs": "balení",
+      "en": "pack, packet",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 5466,
+      "nativeReviewed": false
+    },
+    {
+      "id": "krabice",
+      "cs": "krabice",
+      "en": "box",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2621,
+      "nativeReviewed": false
+    },
+    {
+      "id": "velikost",
+      "cs": "velikost",
+      "en": "size",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 771,
+      "nativeReviewed": false
+    },
+    {
+      "id": "drahy",
+      "cs": "drahý",
+      "en": "expensive; dear",
+      "pos": "adj",
+      "rank": 1062,
+      "nativeReviewed": false
+    },
+    {
+      "id": "levny",
+      "cs": "levný",
+      "en": "cheap",
+      "pos": "adj",
+      "rank": 1636,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zdarma",
+      "cs": "zdarma",
+      "en": "free (of charge)",
+      "pos": "adv",
+      "rank": 2509,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kupovat",
+      "cs": "kupovat",
+      "en": "to buy",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "koupit",
+      "rank": 2503,
+      "nativeReviewed": false
+    },
+    {
+      "id": "koupit",
+      "cs": "koupit",
+      "en": "to buy",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "kupovat",
+      "rank": 599,
+      "example": {
+        "cs": "Kde můžu koupit jízdenku?",
+        "en": "Where can I buy a ticket?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "prodavat",
+      "cs": "prodávat",
+      "en": "to sell",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1332,
+      "nativeReviewed": false
+    },
+    {
+      "id": "platit",
+      "cs": "platit",
+      "en": "to pay",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "zaplatit",
+      "rank": 350,
+      "example": {
+        "cs": "Platím kartou.",
+        "en": "I'm paying by card."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "stat",
+      "cs": "stát",
+      "en": "to cost; to stand",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Kolik to stojí?",
+      "rank": 47,
+      "example": {
+        "cs": "Kolik to stojí?",
+        "en": "How much does it cost?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vratit",
+      "cs": "vrátit",
+      "en": "to return, to give back",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 198,
+      "example": {
+        "cs": "Můžu to vrátit?",
+        "en": "Can I return it?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vymenit",
+      "cs": "vyměnit",
+      "en": "to exchange",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 2274,
+      "nativeReviewed": false
+    },
+    {
+      "id": "potrebovat",
+      "cs": "potřebovat",
+      "en": "to need",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 216,
+      "example": {
+        "cs": "Potřebuju pomoc.",
+        "en": "I need help."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "hledat",
+      "cs": "hledat",
+      "en": "to look for",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 393,
+      "example": {
+        "cs": "Hledám nádraží.",
+        "en": "I'm looking for the station."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vybrat-si",
+      "cs": "vybrat si",
+      "en": "to choose",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 602,
+      "example": {
+        "cs": "Už jste si vybrali?",
+        "en": "Have you chosen yet?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zkusit",
+      "cs": "zkusit",
+      "en": "to try (on)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1082,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nabidka",
+      "cs": "nabídka",
+      "en": "offer",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 617,
+      "example": {
+        "cs": "Máme novou nabídku.",
+        "en": "We have a new offer."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "akce",
+      "cs": "akce",
+      "en": "special offer; event",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 451,
+      "example": {
+        "cs": "Pivo je v akci.",
+        "en": "Beer is on special offer."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "obchodni-centrum",
+      "cs": "obchodní centrum",
+      "en": "shopping centre",
+      "pos": "noun",
+      "gender": "n",
+      "nativeReviewed": false
+    },
+    {
+      "id": "kosik",
+      "cs": "košík",
+      "en": "basket",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 6214,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vozik",
+      "cs": "vozík",
+      "en": "trolley",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3542,
+      "nativeReviewed": false
+    },
+    {
+      "id": "reklamace",
+      "cs": "reklamace",
+      "en": "complaint, return (of faulty goods)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 14260,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zaruka",
+      "cs": "záruka",
+      "en": "guarantee",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4044,
+      "nativeReviewed": false
+    },
+    {
+      "id": "euro",
+      "cs": "euro",
+      "en": "euro",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1214,
+      "nativeReviewed": false
+    },
+    {
+      "id": "potraviny",
+      "cs": "potraviny",
+      "en": "groceries; food shop",
+      "pos": "noun",
+      "note": "Plural",
+      "nativeReviewed": false
+    },
+    {
+      "id": "zbozi",
+      "cs": "zboží",
+      "en": "goods",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1576,
+      "nativeReviewed": false
+    },
+    {
+      "id": "papirnictvi",
+      "cs": "papírnictví",
+      "en": "stationer's",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 34744,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kvetinarstvi",
+      "cs": "květinářství",
+      "en": "florist's",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 25705,
+      "nativeReviewed": false
+    },
+    {
+      "id": "knihkupectvi",
+      "cs": "knihkupectví",
+      "en": "bookshop",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 7346,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obchodni-dum",
+      "cs": "obchodní dům",
+      "en": "department store",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "objednavka",
+      "cs": "objednávka",
+      "en": "order",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5269,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyzvednout",
+      "cs": "vyzvednout",
+      "en": "to pick up, to collect",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 4673,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pekarstvi",
+      "cs": "pekařství",
+      "en": "bakery",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 22579,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mince",
+      "cs": "mince",
+      "en": "coin",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3701,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pokladni",
+      "cs": "pokladní",
+      "en": "cashier",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Also a man: ten pokladní",
+      "rank": 17209,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hypermarket",
+      "cs": "hypermarket",
+      "en": "hypermarket",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 19181,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mydlo",
+      "cs": "mýdlo",
+      "en": "soap",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 7549,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kartacek-na-zuby",
+      "cs": "kartáček na zuby",
+      "en": "toothbrush",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "krem",
+      "cs": "krém",
+      "en": "cream (cosmetic)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4281,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kosmetika",
+      "cs": "kosmetika",
+      "en": "cosmetics",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 9373,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prodat",
+      "cs": "prodat",
+      "en": "to sell",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1475,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nabizet",
+      "cs": "nabízet",
+      "en": "to offer",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 430,
+      "example": {
+        "cs": "Co nabízíte?",
+        "en": "What do you offer?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "stacit",
+      "cs": "stačit",
+      "en": "to be enough",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "To stačí = That's enough.",
+      "rank": 319,
+      "example": {
+        "cs": "To stačí, děkuju.",
+        "en": "That's enough, thank you."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "plny",
+      "cs": "plný",
+      "en": "full",
+      "pos": "adj",
+      "rank": 326,
+      "example": {
+        "cs": "Autobus je plný.",
+        "en": "The bus is full."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "prazdny",
+      "cs": "prázdný",
+      "en": "empty",
+      "pos": "adj",
+      "rank": 1104,
+      "nativeReviewed": false
+    }
+  ]
+}

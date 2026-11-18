@@ -1,0 +1,845 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "slovesa",
+  "title": "Everyday verbs",
+  "titleCs": "Každý den",
+  "order": 15,
+  "units": [
+    "u01",
+    "u02",
+    "u03"
+  ],
+  "words": [
+    {
+      "id": "videt",
+      "cs": "vidět",
+      "en": "to see",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 90,
+      "example": {
+        "cs": "Vidíte tu věž?",
+        "en": "Can you see that tower?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "slyset",
+      "cs": "slyšet",
+      "en": "to hear",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 276,
+      "example": {
+        "cs": "Neslyším vás.",
+        "en": "I can't hear you."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "sedet",
+      "cs": "sedět",
+      "en": "to sit, to be sitting",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 312,
+      "example": {
+        "cs": "Sedím v kanceláři.",
+        "en": "I'm sitting in the office."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "lezet",
+      "cs": "ležet",
+      "en": "to lie, to be lying",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 436,
+      "example": {
+        "cs": "Ležím v posteli.",
+        "en": "I'm lying in bed."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "otevrit",
+      "cs": "otevřít",
+      "en": "to open",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "otvírat",
+      "rank": 351,
+      "example": {
+        "cs": "Kdy otevřete?",
+        "en": "When do you open?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zavrit",
+      "cs": "zavřít",
+      "en": "to close",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "zavírat",
+      "rank": 1040,
+      "nativeReviewed": false
+    },
+    {
+      "id": "brat",
+      "cs": "brát",
+      "en": "to take",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "vzít",
+      "rank": 438,
+      "example": {
+        "cs": "Beru léky.",
+        "en": "I take medicine."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vzit",
+      "cs": "vzít",
+      "en": "to take",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "brát",
+      "rank": 204,
+      "example": {
+        "cs": "Vezmu si taxi.",
+        "en": "I'll take a taxi."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "davat",
+      "cs": "dávat",
+      "en": "to give; to put",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "dát",
+      "rank": 342,
+      "example": {
+        "cs": "Co dávají v kině?",
+        "en": "What's on at the cinema?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "ukazat",
+      "cs": "ukázat",
+      "en": "to show",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 305,
+      "example": {
+        "cs": "Můžete mi to ukázat na mapě?",
+        "en": "Can you show me on the map?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zustat",
+      "cs": "zůstat",
+      "en": "to stay",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 210,
+      "example": {
+        "cs": "Zůstanu doma.",
+        "en": "I'll stay at home."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vratit-se",
+      "cs": "vrátit se",
+      "en": "to come back",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 198,
+      "example": {
+        "cs": "Vrátím se v pět.",
+        "en": "I'll be back at five."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "spechat",
+      "cs": "spěchat",
+      "en": "to hurry",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 3742,
+      "nativeReviewed": false
+    },
+    {
+      "id": "smet",
+      "cs": "smět",
+      "en": "may, to be allowed to",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 586,
+      "example": {
+        "cs": "Smím dál?",
+        "en": "May I come in?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "libit-se",
+      "cs": "líbit se",
+      "en": "to please, to like",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Líbí se mi to = I like it.",
+      "rank": 591,
+      "example": {
+        "cs": "Líbí se mi Praha.",
+        "en": "I like Prague."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "prat-verb",
+      "cs": "přát",
+      "en": "to wish",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 712,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slavit",
+      "cs": "slavit",
+      "en": "to celebrate",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 2554,
+      "nativeReviewed": false
+    },
+    {
+      "id": "snidat",
+      "cs": "snídat",
+      "en": "to have breakfast",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 14208,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obedvat",
+      "cs": "obědvat",
+      "en": "to have lunch",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 16434,
+      "nativeReviewed": false
+    },
+    {
+      "id": "veceret",
+      "cs": "večeřet",
+      "en": "to have dinner",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 14030,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nakupovat",
+      "cs": "nakupovat",
+      "en": "to shop",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 3703,
+      "nativeReviewed": false
+    },
+    {
+      "id": "telefonovat",
+      "cs": "telefonovat",
+      "en": "to phone",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 6325,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ptat-se",
+      "cs": "ptát se",
+      "en": "to ask",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "zeptat se",
+      "rank": 594,
+      "example": {
+        "cs": "Ptá se na cestu.",
+        "en": "He's asking the way."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "myt-se",
+      "cs": "mýt se",
+      "en": "to wash (yourself)",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 8078,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sprchovat-se",
+      "cs": "sprchovat se",
+      "en": "to shower",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 21183,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cistit-si-zuby",
+      "cs": "čistit si zuby",
+      "en": "to brush your teeth",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 5424,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zapomenout",
+      "cs": "zapomenout",
+      "en": "to forget",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 585,
+      "example": {
+        "cs": "Zapomněl jsem heslo.",
+        "en": "I forgot my password."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pamatovat-si",
+      "cs": "pamatovat si",
+      "en": "to remember",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 909,
+      "nativeReviewed": false
+    },
+    {
+      "id": "doufat",
+      "cs": "doufat",
+      "en": "to hope",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 758,
+      "nativeReviewed": false
+    },
+    {
+      "id": "milovat",
+      "cs": "milovat",
+      "en": "to love",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 644,
+      "example": {
+        "cs": "Miluju českou kuchyni.",
+        "en": "I love Czech food."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "mit-rad",
+      "cs": "mít rád",
+      "en": "to like (someone, something)",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Mám rád kávu.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "zajimat-se",
+      "cs": "zajímat se",
+      "en": "to be interested",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Zajímám se o hudbu.",
+      "rank": 680,
+      "example": {
+        "cs": "Zajímám se o historii.",
+        "en": "I'm interested in history."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "souhlasit",
+      "cs": "souhlasit",
+      "en": "to agree",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1089,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pozvat",
+      "cs": "pozvat",
+      "en": "to invite",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 2001,
+      "nativeReviewed": false
+    },
+    {
+      "id": "navstivit",
+      "cs": "navštívit",
+      "en": "to visit",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1393,
+      "nativeReviewed": false
+    },
+    {
+      "id": "potkat",
+      "cs": "potkat",
+      "en": "to meet (by chance)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1277,
+      "nativeReviewed": false
+    },
+    {
+      "id": "seznamit-se",
+      "cs": "seznámit se",
+      "en": "to get to know, to meet",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1935,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cekat-na",
+      "cs": "čekat na",
+      "en": "to wait for",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Čekám na tebe.",
+      "nativeReviewed": false
+    },
+    {
+      "id": "dostat",
+      "cs": "dostat",
+      "en": "to get, to receive",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 105,
+      "example": {
+        "cs": "Dostal jsem e-mail.",
+        "en": "I got an e-mail."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "najit",
+      "cs": "najít",
+      "en": "to find",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 147,
+      "example": {
+        "cs": "Nemůžu najít klíče.",
+        "en": "I can't find my keys."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "ztratit",
+      "cs": "ztratit",
+      "en": "to lose",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 711,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bezet",
+      "cs": "běžet",
+      "en": "to run",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1174,
+      "nativeReviewed": false
+    },
+    {
+      "id": "letet",
+      "cs": "letět",
+      "en": "to fly",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 2347,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nest",
+      "cs": "nést",
+      "en": "to carry",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 906,
+      "nativeReviewed": false
+    },
+    {
+      "id": "polozit",
+      "cs": "položit",
+      "en": "to put down",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 808,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sednout-si",
+      "cs": "sednout si",
+      "en": "to sit down",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1609,
+      "nativeReviewed": false
+    },
+    {
+      "id": "lehnout-si",
+      "cs": "lehnout si",
+      "en": "to lie down",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 3583,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vstat",
+      "cs": "vstát",
+      "en": "to get up",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "vstávat",
+      "rank": 1276,
+      "nativeReviewed": false
+    },
+    {
+      "id": "verit",
+      "cs": "věřit",
+      "en": "to believe",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 344,
+      "example": {
+        "cs": "Nevěřím mu.",
+        "en": "I don't believe him."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "bat-se",
+      "cs": "bát se",
+      "en": "to be afraid",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 551,
+      "example": {
+        "cs": "Nebojte se.",
+        "en": "Don't be afraid."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "smat-se",
+      "cs": "smát se",
+      "en": "to laugh",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1123,
+      "nativeReviewed": false
+    },
+    {
+      "id": "plakat",
+      "cs": "plakat",
+      "en": "to cry",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 2377,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zlobit-se",
+      "cs": "zlobit se",
+      "en": "to be angry",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 2979,
+      "nativeReviewed": false
+    },
+    {
+      "id": "omluvit-se",
+      "cs": "omluvit se",
+      "en": "to apologise",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 4004,
+      "nativeReviewed": false
+    },
+    {
+      "id": "podekovat",
+      "cs": "poděkovat",
+      "en": "to thank",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 3613,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rozloucit-se",
+      "cs": "rozloučit se",
+      "en": "to say goodbye",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 3500,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pripravit",
+      "cs": "připravit",
+      "en": "to prepare",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 447,
+      "example": {
+        "cs": "Připravím večeři.",
+        "en": "I'll make dinner."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zmenit",
+      "cs": "změnit",
+      "en": "to change",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 382,
+      "example": {
+        "cs": "Můžu změnit termín?",
+        "en": "Can I change the appointment?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "nechat",
+      "cs": "nechat",
+      "en": "to leave, to let",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 170,
+      "example": {
+        "cs": "Nechte to tady.",
+        "en": "Leave it here."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pujcit",
+      "cs": "půjčit",
+      "en": "to lend",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 3992,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pujcit-si",
+      "cs": "půjčit si",
+      "en": "to borrow",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 3992,
+      "nativeReviewed": false
+    },
+    {
+      "id": "myt",
+      "cs": "mýt",
+      "en": "to wash (something)",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 8078,
+      "nativeReviewed": false
+    },
+    {
+      "id": "umyt",
+      "cs": "umýt",
+      "en": "to wash (something)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 5646,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyhodit",
+      "cs": "vyhodit",
+      "en": "to throw away",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 2704,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rikat",
+      "cs": "říkat",
+      "en": "to say, to tell",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "říct",
+      "rank": 89,
+      "example": {
+        "cs": "Jak se tomu říká česky?",
+        "en": "What is this called in Czech?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "odpovidat",
+      "cs": "odpovídat",
+      "en": "to answer",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 727,
+      "nativeReviewed": false
+    },
+    {
+      "id": "otevirat",
+      "cs": "otevírat",
+      "en": "to open",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 2617,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prichazet",
+      "cs": "přicházet",
+      "en": "to come, to arrive",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "přijít",
+      "rank": 804,
+      "nativeReviewed": false
+    },
+    {
+      "id": "odchazet",
+      "cs": "odcházet",
+      "en": "to leave",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "odejít",
+      "rank": 1718,
+      "nativeReviewed": false
+    },
+    {
+      "id": "navstevovat",
+      "cs": "navštěvovat",
+      "en": "to visit",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 3308,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pripravovat",
+      "cs": "připravovat",
+      "en": "to prepare",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1293,
+      "nativeReviewed": false
+    },
+    {
+      "id": "opravovat",
+      "cs": "opravovat",
+      "en": "to repair; to correct",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 5729,
+      "nativeReviewed": false
+    },
+    {
+      "id": "doporucit",
+      "cs": "doporučit",
+      "en": "to recommend",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 3019,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prominout",
+      "cs": "prominout",
+      "en": "to excuse",
+      "pos": "verb",
+      "aspect": "pf",
+      "note": "Promiňte!",
+      "rank": 2676,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sejit-se",
+      "cs": "sejít se",
+      "en": "to meet up",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1401,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spadnout",
+      "cs": "spadnout",
+      "en": "to fall",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1789,
+      "nativeReviewed": false
+    },
+    {
+      "id": "koupat-se",
+      "cs": "koupat se",
+      "en": "to bathe, to swim",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 7534,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nesmet",
+      "cs": "nesmět",
+      "en": "must not",
+      "pos": "verb",
+      "aspect": "impf",
+      "nativeReviewed": false
+    },
+    {
+      "id": "neumet",
+      "cs": "neumět",
+      "en": "can't (not know how)",
+      "pos": "verb",
+      "aspect": "impf",
+      "nativeReviewed": false
+    },
+    {
+      "id": "prosit",
+      "cs": "prosit",
+      "en": "to ask, to beg",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 735,
+      "nativeReviewed": false
+    }
+  ]
+}

@@ -1,0 +1,584 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "skola",
+  "title": "School and languages",
+  "titleCs": "Škola a jazyky",
+  "order": 14,
+  "units": [
+    "u01"
+  ],
+  "words": [
+    {
+      "id": "skola",
+      "cs": "škola",
+      "en": "school",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 182,
+      "example": {
+        "cs": "Děti jsou ve škole.",
+        "en": "The children are at school."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "univerzita",
+      "cs": "univerzita",
+      "en": "university",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 850,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kurz",
+      "cs": "kurz",
+      "en": "course",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "lekce",
+      "cs": "lekce",
+      "en": "lesson",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5594,
+      "nativeReviewed": false
+    },
+    {
+      "id": "trida",
+      "cs": "třída",
+      "en": "class; classroom",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 675,
+      "example": {
+        "cs": "Moje dcera je ve třetí třídě.",
+        "en": "My daughter is in year three."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "ucebnice",
+      "cs": "učebnice",
+      "en": "textbook",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5113,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sesit",
+      "cs": "sešit",
+      "en": "exercise book",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 6246,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pero",
+      "cs": "pero",
+      "en": "pen",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 3409,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tuzka",
+      "cs": "tužka",
+      "en": "pencil",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4333,
+      "nativeReviewed": false
+    },
+    {
+      "id": "papir",
+      "cs": "papír",
+      "en": "paper",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 840,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slovo",
+      "cs": "slovo",
+      "en": "word",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 168,
+      "example": {
+        "cs": "Co znamená to slovo?",
+        "en": "What does that word mean?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "veta",
+      "cs": "věta",
+      "en": "sentence",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1283,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slovnik",
+      "cs": "slovník",
+      "en": "dictionary",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4531,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chyba",
+      "cs": "chyba",
+      "en": "mistake",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 796,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cviceni",
+      "cs": "cvičení",
+      "en": "exercise",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2224,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zkouska",
+      "cs": "zkouška",
+      "en": "exam",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1478,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pismeno",
+      "cs": "písmeno",
+      "en": "letter (of the alphabet)",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2801,
+      "nativeReviewed": false
+    },
+    {
+      "id": "abeceda",
+      "cs": "abeceda",
+      "en": "alphabet",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 12218,
+      "nativeReviewed": false
+    },
+    {
+      "id": "gramatika",
+      "cs": "gramatika",
+      "en": "grammar",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 11964,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyslovnost",
+      "cs": "výslovnost",
+      "en": "pronunciation",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 12215,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cestina",
+      "cs": "čeština",
+      "en": "Czech (the language)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3260,
+      "nativeReviewed": false
+    },
+    {
+      "id": "anglictina",
+      "cs": "angličtina",
+      "en": "English (the language)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3230,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ucit",
+      "cs": "učit",
+      "en": "to teach",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1070,
+      "nativeReviewed": false
+    },
+    {
+      "id": "naucit-se",
+      "cs": "naučit se",
+      "en": "to learn",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "učit se",
+      "rank": 879,
+      "nativeReviewed": false
+    },
+    {
+      "id": "studovat",
+      "cs": "studovat",
+      "en": "to study",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1612,
+      "nativeReviewed": false
+    },
+    {
+      "id": "opakovat",
+      "cs": "opakovat",
+      "en": "to repeat; to revise",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1193,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prekladat",
+      "cs": "překládat",
+      "en": "to translate",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 7998,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prelozit",
+      "cs": "přeložit",
+      "en": "to translate",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 4075,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vysvetlit",
+      "cs": "vysvětlit",
+      "en": "to explain",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 693,
+      "example": {
+        "cs": "Můžete mi to vysvětlit?",
+        "en": "Can you explain it to me?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "umet",
+      "cs": "umět",
+      "en": "to know how to, can",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Umím česky = I can speak Czech.",
+      "rank": 391,
+      "example": {
+        "cs": "Umím trochu česky.",
+        "en": "I can speak a little Czech."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "spravne",
+      "cs": "správně",
+      "en": "correctly, right",
+      "pos": "adv",
+      "rank": 1442,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spatne",
+      "cs": "špatně",
+      "en": "wrongly, badly",
+      "pos": "adv",
+      "rank": 802,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pomalu",
+      "cs": "pomalu",
+      "en": "slowly",
+      "pos": "adv",
+      "rank": 618,
+      "example": {
+        "cs": "Mluvte pomalu, prosím.",
+        "en": "Please speak slowly."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "nahlas",
+      "cs": "nahlas",
+      "en": "aloud",
+      "pos": "adv",
+      "rank": 2968,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zak",
+      "cs": "žák",
+      "en": "pupil",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: žačka",
+      "alt": [
+        "žačka"
+      ],
+      "rank": 947,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spoluzak",
+      "cs": "spolužák",
+      "en": "classmate",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: spolužačka",
+      "alt": [
+        "spolužačka"
+      ],
+      "rank": 4362,
+      "nativeReviewed": false
+    },
+    {
+      "id": "profesor",
+      "cs": "profesor",
+      "en": "professor; teacher (secondary)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: profesorka",
+      "alt": [
+        "profesorka"
+      ],
+      "rank": 1327,
+      "nativeReviewed": false
+    },
+    {
+      "id": "skolka",
+      "cs": "školka",
+      "en": "nursery school",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3454,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zakladni-skola",
+      "cs": "základní škola",
+      "en": "primary school",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "stredni-skola",
+      "cs": "střední škola",
+      "en": "secondary school",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "gymnazium",
+      "cs": "gymnázium",
+      "en": "grammar school",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 3261,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prednaska",
+      "cs": "přednáška",
+      "en": "lecture",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2789,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rozvrh",
+      "cs": "rozvrh",
+      "en": "timetable (at school)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 11858,
+      "nativeReviewed": false
+    },
+    {
+      "id": "domaci-ukol",
+      "cs": "domácí úkol",
+      "en": "homework",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "test",
+      "cs": "test",
+      "en": "test",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1349,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pocitat",
+      "cs": "počítat",
+      "en": "to count",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 743,
+      "nativeReviewed": false
+    },
+    {
+      "id": "priklad",
+      "cs": "příklad",
+      "en": "example",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 718,
+      "nativeReviewed": false
+    },
+    {
+      "id": "strana",
+      "cs": "strana",
+      "en": "page; side",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 111,
+      "example": {
+        "cs": "Otevřete knihu na straně deset.",
+        "en": "Open the book at page ten."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "text",
+      "cs": "text",
+      "en": "text",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 588,
+      "example": {
+        "cs": "Přečtěte si text.",
+        "en": "Read the text."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "fakulta",
+      "cs": "fakulta",
+      "en": "faculty",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1771,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kolej",
+      "cs": "kolej",
+      "en": "hall of residence",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2829,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tabule",
+      "cs": "tabule",
+      "en": "board (in a classroom)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4086,
+      "nativeReviewed": false
+    },
+    {
+      "id": "propiska",
+      "cs": "propiska",
+      "en": "ballpoint pen",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 16238,
+      "nativeReviewed": false
+    },
+    {
+      "id": "matematika",
+      "cs": "matematika",
+      "en": "maths",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4114,
+      "nativeReviewed": false
+    },
+    {
+      "id": "fyzika",
+      "cs": "fyzika",
+      "en": "physics",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3737,
+      "nativeReviewed": false
+    },
+    {
+      "id": "informatika",
+      "cs": "informatika",
+      "en": "computer science",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 14779,
+      "nativeReviewed": false
+    },
+    {
+      "id": "konverzace",
+      "cs": "konverzace",
+      "en": "conversation",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6329,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hlaskovat",
+      "cs": "hláskovat",
+      "en": "to spell",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 48810,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spravny",
+      "cs": "správný",
+      "en": "correct",
+      "pos": "adj",
+      "rank": 556,
+      "example": {
+        "cs": "To je správná odpověď.",
+        "en": "That's the right answer."
+      },
+      "nativeReviewed": false
+    }
+  ]
+}

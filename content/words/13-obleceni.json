@@ -1,0 +1,524 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "obleceni",
+  "title": "Clothes and colours",
+  "titleCs": "Oblečení a barvy",
+  "order": 13,
+  "units": [
+    "u04"
+  ],
+  "words": [
+    {
+      "id": "obleceni",
+      "cs": "oblečení",
+      "en": "clothes",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1690,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bunda",
+      "cs": "bunda",
+      "en": "jacket",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4236,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kabat",
+      "cs": "kabát",
+      "en": "coat",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2632,
+      "nativeReviewed": false
+    },
+    {
+      "id": "svetr",
+      "cs": "svetr",
+      "en": "jumper, sweater",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5112,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tricko",
+      "cs": "tričko",
+      "en": "T-shirt",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 3480,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kalhoty",
+      "cs": "kalhoty",
+      "en": "trousers",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 2114,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dziny",
+      "cs": "džíny",
+      "en": "jeans",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 5772,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sukne",
+      "cs": "sukně",
+      "en": "skirt",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3452,
+      "nativeReviewed": false
+    },
+    {
+      "id": "saty",
+      "cs": "šaty",
+      "en": "dress; clothes",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 1171,
+      "nativeReviewed": false
+    },
+    {
+      "id": "boty",
+      "cs": "boty",
+      "en": "shoes",
+      "pos": "noun",
+      "note": "Plural of bota",
+      "nativeReviewed": false
+    },
+    {
+      "id": "ponozky",
+      "cs": "ponožky",
+      "en": "socks",
+      "pos": "noun",
+      "note": "Plural of ponožka",
+      "nativeReviewed": false
+    },
+    {
+      "id": "cepice",
+      "cs": "čepice",
+      "en": "hat, cap",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4447,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sala",
+      "cs": "šála",
+      "en": "scarf",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 9813,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rukavice",
+      "cs": "rukavice",
+      "en": "glove",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3936,
+      "nativeReviewed": false
+    },
+    {
+      "id": "destnik",
+      "cs": "deštník",
+      "en": "umbrella",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 8847,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kapsa",
+      "cs": "kapsa",
+      "en": "pocket",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1395,
+      "nativeReviewed": false
+    },
+    {
+      "id": "batoh",
+      "cs": "batoh",
+      "en": "backpack",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4752,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kabelka",
+      "cs": "kabelka",
+      "en": "handbag",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3643,
+      "nativeReviewed": false
+    },
+    {
+      "id": "penezenka",
+      "cs": "peněženka",
+      "en": "wallet, purse",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4872,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hodinky",
+      "cs": "hodinky",
+      "en": "watch",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 2925,
+      "nativeReviewed": false
+    },
+    {
+      "id": "barva",
+      "cs": "barva",
+      "en": "colour",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 410,
+      "example": {
+        "cs": "Jakou barvu chcete?",
+        "en": "What colour would you like?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "bily",
+      "cs": "bílý",
+      "en": "white",
+      "pos": "adj",
+      "rank": 323,
+      "example": {
+        "cs": "Bílé víno, prosím.",
+        "en": "White wine, please."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "cerny",
+      "cs": "černý",
+      "en": "black",
+      "pos": "adj",
+      "rank": 341,
+      "example": {
+        "cs": "Černou kávu, prosím.",
+        "en": "Black coffee, please."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "cerveny",
+      "cs": "červený",
+      "en": "red",
+      "pos": "adj",
+      "rank": 627,
+      "example": {
+        "cs": "Červené víno, prosím.",
+        "en": "Red wine, please."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zeleny",
+      "cs": "zelený",
+      "en": "green",
+      "pos": "adj",
+      "rank": 696,
+      "example": {
+        "cs": "Zelený čaj, prosím.",
+        "en": "Green tea, please."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zluty",
+      "cs": "žlutý",
+      "en": "yellow",
+      "pos": "adj",
+      "rank": 1483,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hnedy",
+      "cs": "hnědý",
+      "en": "brown",
+      "pos": "adj",
+      "rank": 1910,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sedy",
+      "cs": "šedý",
+      "en": "grey",
+      "pos": "adj",
+      "rank": 1997,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ruzovy",
+      "cs": "růžový",
+      "en": "pink",
+      "pos": "adj",
+      "rank": 2059,
+      "nativeReviewed": false
+    },
+    {
+      "id": "oranzovy",
+      "cs": "oranžový",
+      "en": "orange",
+      "pos": "adj",
+      "rank": 4330,
+      "nativeReviewed": false
+    },
+    {
+      "id": "fialovy",
+      "cs": "fialový",
+      "en": "purple",
+      "pos": "adj",
+      "rank": 5033,
+      "nativeReviewed": false
+    },
+    {
+      "id": "barevny",
+      "cs": "barevný",
+      "en": "colourful",
+      "pos": "adj",
+      "rank": 1335,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nosit",
+      "cs": "nosit",
+      "en": "to wear; to carry",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1118,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obleknout-se",
+      "cs": "obléknout se",
+      "en": "to get dressed",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 4310,
+      "nativeReviewed": false
+    },
+    {
+      "id": "svleknout-se",
+      "cs": "svléknout se",
+      "en": "to get undressed",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 5904,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kravata",
+      "cs": "kravata",
+      "en": "tie",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6779,
+      "nativeReviewed": false
+    },
+    {
+      "id": "oblek",
+      "cs": "oblek",
+      "en": "suit",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3385,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pyzamo",
+      "cs": "pyžamo",
+      "en": "pyjamas",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 9941,
+      "nativeReviewed": false
+    },
+    {
+      "id": "plavky",
+      "cs": "plavky",
+      "en": "swimsuit",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 8223,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pasek",
+      "cs": "pásek",
+      "en": "belt",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5252,
+      "nativeReviewed": false
+    },
+    {
+      "id": "knoflik",
+      "cs": "knoflík",
+      "en": "button",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5899,
+      "nativeReviewed": false
+    },
+    {
+      "id": "moderni",
+      "cs": "moderní",
+      "en": "modern",
+      "pos": "adj",
+      "rank": 605,
+      "example": {
+        "cs": "Je to moderní byt.",
+        "en": "It's a modern flat."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "elegantni",
+      "cs": "elegantní",
+      "en": "elegant",
+      "pos": "adj",
+      "rank": 3231,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pohodlny",
+      "cs": "pohodlný",
+      "en": "comfortable",
+      "pos": "adj",
+      "rank": 2651,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pruhovany",
+      "cs": "pruhovaný",
+      "en": "striped",
+      "pos": "adj",
+      "rank": 10814,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prevleknout-se",
+      "cs": "převléknout se",
+      "en": "to get changed",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 9934,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sako",
+      "cs": "sako",
+      "en": "jacket (suit)",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 4375,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bluza",
+      "cs": "blůza",
+      "en": "blouse",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 12409,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obuv",
+      "cs": "obuv",
+      "en": "footwear",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8882,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kozeny",
+      "cs": "kožený",
+      "en": "leather",
+      "pos": "adj",
+      "rank": 3595,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bavlna",
+      "cs": "bavlna",
+      "en": "cotton",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 10299,
+      "nativeReviewed": false
+    },
+    {
+      "id": "siroky",
+      "cs": "široký",
+      "en": "wide",
+      "pos": "adj",
+      "rank": 578,
+      "example": {
+        "cs": "Ta ulice je široká.",
+        "en": "That street is wide."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "uzky",
+      "cs": "úzký",
+      "en": "narrow, tight",
+      "pos": "adj",
+      "rank": 1341,
+      "nativeReviewed": false
+    },
+    {
+      "id": "oblekat-se",
+      "cs": "oblékat se",
+      "en": "to get dressed",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 5303,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cistirna",
+      "cs": "čistírna",
+      "en": "dry cleaner's",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 10717,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pradelna",
+      "cs": "prádelna",
+      "en": "laundry",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 12759,
+      "nativeReviewed": false
+    }
+  ]
+}

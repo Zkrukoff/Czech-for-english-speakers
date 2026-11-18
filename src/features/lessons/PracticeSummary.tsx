@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import type { ExerciseOutcome } from '@/features/exercises/ExerciseRunner';
 import { IconArrowRight } from '@/components/icons';
 
-export function PracticeSummary({ outcomes, onAgain, next }: { outcomes: ExerciseOutcome[]; onAgain: () => void; next: { to: string; label: string } }) {
+export function PracticeSummary({ outcomes, onAgain, next, decks = [] }: { outcomes: ExerciseOutcome[]; onAgain: () => void; next: { to: string; label: string }; decks?: { id: string; title: string; titleCs: string }[] }) {
   const first = outcomes.filter((o) => o.firstTry);
   const right = first.filter((o) => o.result.accepted).length;
   const missed = first.filter((o) => !o.result.accepted);
@@ -26,6 +26,18 @@ export function PracticeSummary({ outcomes, onAgain, next }: { outcomes: Exercis
             ))}
           </ul>
         </div>
+      )}
+      {decks.length > 0 && (
+        <p className="mt-5 text-sm text-ink-2">
+          Words for this topic:{' '}
+          {decks.map((d, i) => (
+            <span key={d.id}>
+              {i > 0 && ', '}
+              <Link to="/review#packs" className="inline-flex min-h-11 items-center text-vltava underline"><span lang="cs">{d.titleCs}</span>&nbsp;· {d.title.toLowerCase()}</Link>
+            </span>
+          ))}
+          . Add them to your reviews, a few a day.
+        </p>
       )}
       <div className="mt-6 flex flex-wrap gap-3">
         <Link to={next.to} className="btn btn-primary">{next.label}</Link>

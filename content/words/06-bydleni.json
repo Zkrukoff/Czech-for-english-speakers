@@ -1,0 +1,1014 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "bydleni",
+  "title": "Home",
+  "titleCs": "Bydlení",
+  "order": 6,
+  "units": [
+    "u04"
+  ],
+  "words": [
+    {
+      "id": "byt",
+      "cs": "byt",
+      "en": "flat, apartment",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 456,
+      "example": {
+        "cs": "Hledám byt.",
+        "en": "I'm looking for a flat."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dum",
+      "cs": "dům",
+      "en": "house; building",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 143,
+      "example": {
+        "cs": "Bydlíme ve starém domě.",
+        "en": "We live in an old building."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pokoj",
+      "cs": "pokoj",
+      "en": "room",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 401,
+      "example": {
+        "cs": "Máte volný pokoj?",
+        "en": "Do you have a free room?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "kuchyn",
+      "cs": "kuchyň",
+      "en": "kitchen",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "koupelna",
+      "cs": "koupelna",
+      "en": "bathroom",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2076,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zachod",
+      "cs": "záchod",
+      "en": "toilet",
+      "pos": "noun",
+      "gender": "m-inan",
+      "alt": [
+        "toaleta"
+      ],
+      "rank": 3710,
+      "nativeReviewed": false
+    },
+    {
+      "id": "loznice",
+      "cs": "ložnice",
+      "en": "bedroom",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2124,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obyvak",
+      "cs": "obývák",
+      "en": "living room",
+      "pos": "noun",
+      "gender": "m-inan",
+      "alt": [
+        "obývací pokoj"
+      ],
+      "rank": 4925,
+      "nativeReviewed": false
+    },
+    {
+      "id": "predsin",
+      "cs": "předsíň",
+      "en": "hall (inside a flat)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6402,
+      "nativeReviewed": false
+    },
+    {
+      "id": "balkon",
+      "cs": "balkon",
+      "en": "balcony",
+      "pos": "noun",
+      "gender": "m-inan",
+      "alt": [
+        "balkón"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "sklep",
+      "cs": "sklep",
+      "en": "cellar",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3187,
+      "nativeReviewed": false
+    },
+    {
+      "id": "patro",
+      "cs": "patro",
+      "en": "floor, storey",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1573,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vytah",
+      "cs": "výtah",
+      "en": "lift",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3832,
+      "nativeReviewed": false
+    },
+    {
+      "id": "schody",
+      "cs": "schody",
+      "en": "stairs",
+      "pos": "noun",
+      "note": "Plural",
+      "nativeReviewed": false
+    },
+    {
+      "id": "dvere",
+      "cs": "dveře",
+      "en": "door",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 211,
+      "example": {
+        "cs": "Zavřete dveře, prosím.",
+        "en": "Close the door, please."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "okno",
+      "cs": "okno",
+      "en": "window",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 343,
+      "example": {
+        "cs": "Můžu otevřít okno?",
+        "en": "May I open the window?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "klic",
+      "cs": "klíč",
+      "en": "key",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1895,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zvonek",
+      "cs": "zvonek",
+      "en": "doorbell",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5825,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stul",
+      "cs": "stůl",
+      "en": "table",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 354,
+      "example": {
+        "cs": "Máte volný stůl?",
+        "en": "Do you have a free table?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zidle",
+      "cs": "židle",
+      "en": "chair",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1315,
+      "nativeReviewed": false
+    },
+    {
+      "id": "postel",
+      "cs": "postel",
+      "en": "bed",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 611,
+      "example": {
+        "cs": "Jdu do postele.",
+        "en": "I'm going to bed."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "skrin",
+      "cs": "skříň",
+      "en": "wardrobe, cupboard",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2403,
+      "nativeReviewed": false
+    },
+    {
+      "id": "gauc",
+      "cs": "gauč",
+      "en": "sofa",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 6168,
+      "nativeReviewed": false
+    },
+    {
+      "id": "lampa",
+      "cs": "lampa",
+      "en": "lamp",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2916,
+      "nativeReviewed": false
+    },
+    {
+      "id": "lednicka",
+      "cs": "lednička",
+      "en": "fridge",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 7292,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pracka",
+      "cs": "pračka",
+      "en": "washing machine",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 7654,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sporak",
+      "cs": "sporák",
+      "en": "cooker, stove",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 8916,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sprcha",
+      "cs": "sprcha",
+      "en": "shower",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4672,
+      "nativeReviewed": false
+    },
+    {
+      "id": "topeni",
+      "cs": "topení",
+      "en": "heating",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 5938,
+      "nativeReviewed": false
+    },
+    {
+      "id": "elektrina",
+      "cs": "elektřina",
+      "en": "electricity",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2026,
+      "nativeReviewed": false
+    },
+    {
+      "id": "najem",
+      "cs": "nájem",
+      "en": "rent",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5794,
+      "nativeReviewed": false
+    },
+    {
+      "id": "najemnik",
+      "cs": "nájemník",
+      "en": "tenant",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: nájemnice",
+      "alt": [
+        "nájemnice"
+      ],
+      "rank": 8508,
+      "nativeReviewed": false
+    },
+    {
+      "id": "majitel",
+      "cs": "majitel",
+      "en": "owner, landlord",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: majitelka",
+      "alt": [
+        "majitelka"
+      ],
+      "rank": 755,
+      "nativeReviewed": false
+    },
+    {
+      "id": "smlouva",
+      "cs": "smlouva",
+      "en": "contract",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 673,
+      "example": {
+        "cs": "Musím podepsat smlouvu.",
+        "en": "I have to sign the contract."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zaloha",
+      "cs": "záloha",
+      "en": "deposit; advance",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4713,
+      "nativeReviewed": false
+    },
+    {
+      "id": "inzerat",
+      "cs": "inzerát",
+      "en": "advert",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 8548,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stehovat-se",
+      "cs": "stěhovat se",
+      "en": "to move (house)",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 5501,
+      "nativeReviewed": false
+    },
+    {
+      "id": "uklizet",
+      "cs": "uklízet",
+      "en": "to tidy, to clean",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 6611,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prat",
+      "cs": "prát",
+      "en": "to wash (clothes)",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 5039,
+      "nativeReviewed": false
+    },
+    {
+      "id": "opravit",
+      "cs": "opravit",
+      "en": "to repair",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 3202,
+      "nativeReviewed": false
+    },
+    {
+      "id": "fungovat",
+      "cs": "fungovat",
+      "en": "to work, to function",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Nefunguje to.",
+      "rank": 597,
+      "example": {
+        "cs": "Topení nefunguje.",
+        "en": "The heating doesn't work."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zapnout",
+      "cs": "zapnout",
+      "en": "to switch on",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 4604,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vypnout",
+      "cs": "vypnout",
+      "en": "to switch off",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 3717,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cisty",
+      "cs": "čistý",
+      "en": "clean",
+      "pos": "adj",
+      "rank": 919,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spinavy",
+      "cs": "špinavý",
+      "en": "dirty",
+      "pos": "adj",
+      "rank": 2902,
+      "nativeReviewed": false
+    },
+    {
+      "id": "velky",
+      "cs": "velký",
+      "en": "big",
+      "pos": "adj",
+      "rank": 43,
+      "example": {
+        "cs": "Máme velký byt.",
+        "en": "We have a big flat."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "volny",
+      "cs": "volný",
+      "en": "free, available",
+      "pos": "adj",
+      "rank": 734,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tichy",
+      "cs": "tichý",
+      "en": "quiet",
+      "pos": "adj",
+      "rank": 1758,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hlucny",
+      "cs": "hlučný",
+      "en": "noisy",
+      "pos": "adj",
+      "rank": 7242,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chodba",
+      "cs": "chodba",
+      "en": "corridor",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1267,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pracovna",
+      "cs": "pracovna",
+      "en": "study (room)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4087,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dvur",
+      "cs": "dvůr",
+      "en": "courtyard",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1816,
+      "nativeReviewed": false
+    },
+    {
+      "id": "garaz",
+      "cs": "garáž",
+      "en": "garage",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3807,
+      "nativeReviewed": false
+    },
+    {
+      "id": "strecha",
+      "cs": "střecha",
+      "en": "roof",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1079,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zed",
+      "cs": "zeď",
+      "en": "wall",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 725,
+      "nativeReviewed": false
+    },
+    {
+      "id": "podlaha",
+      "cs": "podlaha",
+      "en": "floor",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1007,
+      "nativeReviewed": false
+    },
+    {
+      "id": "strop",
+      "cs": "strop",
+      "en": "ceiling",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2008,
+      "nativeReviewed": false
+    },
+    {
+      "id": "koberec",
+      "cs": "koberec",
+      "en": "carpet",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2663,
+      "nativeReviewed": false
+    },
+    {
+      "id": "polstar",
+      "cs": "polštář",
+      "en": "pillow",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3435,
+      "nativeReviewed": false
+    },
+    {
+      "id": "perina",
+      "cs": "peřina",
+      "en": "duvet",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8019,
+      "nativeReviewed": false
+    },
+    {
+      "id": "deka",
+      "cs": "deka",
+      "en": "blanket",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4368,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rucnik",
+      "cs": "ručník",
+      "en": "towel",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5284,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zrcadlo",
+      "cs": "zrcadlo",
+      "en": "mirror",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2022,
+      "nativeReviewed": false
+    },
+    {
+      "id": "police",
+      "cs": "police",
+      "en": "shelf",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4834,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obraz",
+      "cs": "obraz",
+      "en": "picture, painting",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 458,
+      "example": {
+        "cs": "Na stěně visí obraz.",
+        "en": "There's a picture on the wall."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "mikrovlnka",
+      "cs": "mikrovlnka",
+      "en": "microwave",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 21734,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mycka",
+      "cs": "myčka",
+      "en": "dishwasher",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 10161,
+      "nativeReviewed": false
+    },
+    {
+      "id": "trouba",
+      "cs": "trouba",
+      "en": "oven",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3729,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kohoutek",
+      "cs": "kohoutek",
+      "en": "tap",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 7125,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vana",
+      "cs": "vana",
+      "en": "bath",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3912,
+      "nativeReviewed": false
+    },
+    {
+      "id": "umyvadlo",
+      "cs": "umyvadlo",
+      "en": "washbasin",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 6375,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nabytek",
+      "cs": "nábytek",
+      "en": "furniture",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1976,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zarizeny",
+      "cs": "zařízený",
+      "en": "furnished",
+      "pos": "adj",
+      "rank": 9527,
+      "nativeReviewed": false
+    },
+    {
+      "id": "podnajem",
+      "cs": "podnájem",
+      "en": "sublet",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 18030,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spravce",
+      "cs": "správce",
+      "en": "caretaker, building manager",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 3110,
+      "nativeReviewed": false
+    },
+    {
+      "id": "poplatky",
+      "cs": "poplatky",
+      "en": "charges, fees",
+      "pos": "noun",
+      "note": "Plural",
+      "nativeReviewed": false
+    },
+    {
+      "id": "plyn",
+      "cs": "plyn",
+      "en": "gas",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1206,
+      "nativeReviewed": false
+    },
+    {
+      "id": "odpad",
+      "cs": "odpad",
+      "en": "rubbish; drain",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2011,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kos",
+      "cs": "koš",
+      "en": "bin",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3356,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vysavac",
+      "cs": "vysavač",
+      "en": "vacuum cleaner",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 7137,
+      "nativeReviewed": false
+    },
+    {
+      "id": "uklidit",
+      "cs": "uklidit",
+      "en": "to tidy up, to clean",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 5962,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mistnost",
+      "cs": "místnost",
+      "en": "room",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 601,
+      "example": {
+        "cs": "Porada je v místnosti 204.",
+        "en": "The meeting is in room 204."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "prizemi",
+      "cs": "přízemí",
+      "en": "ground floor",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 4790,
+      "nativeReviewed": false
+    },
+    {
+      "id": "poschodi",
+      "cs": "poschodí",
+      "en": "floor, storey",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 9404,
+      "nativeReviewed": false
+    },
+    {
+      "id": "najemne",
+      "cs": "nájemné",
+      "en": "rent (amount)",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 8758,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pronajem",
+      "cs": "pronájem",
+      "en": "rental, renting",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 6167,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pronajmout",
+      "cs": "pronajmout",
+      "en": "to rent out",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 7293,
+      "nativeReviewed": false
+    },
+    {
+      "id": "domacnost",
+      "cs": "domácnost",
+      "en": "household",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1732,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spotrebic",
+      "cs": "spotřebič",
+      "en": "appliance",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 6021,
+      "nativeReviewed": false
+    },
+    {
+      "id": "televizor",
+      "cs": "televizor",
+      "en": "TV set",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4599,
+      "nativeReviewed": false
+    },
+    {
+      "id": "radio",
+      "cs": "rádio",
+      "en": "radio",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2696,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mobil",
+      "cs": "mobil",
+      "en": "mobile phone",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1874,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sklo",
+      "cs": "sklo",
+      "en": "glass (material)",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1358,
+      "nativeReviewed": false
+    },
+    {
+      "id": "svetlo",
+      "cs": "světlo",
+      "en": "light",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 357,
+      "example": {
+        "cs": "Zhasněte světlo.",
+        "en": "Turn off the light."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "neporadek",
+      "cs": "nepořádek",
+      "en": "mess",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 7354,
+      "nativeReviewed": false
+    },
+    {
+      "id": "poradek",
+      "cs": "pořádek",
+      "en": "order, tidiness",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 986,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rozbity",
+      "cs": "rozbitý",
+      "en": "broken",
+      "pos": "adj",
+      "rank": 5040,
+      "nativeReviewed": false
+    },
+    {
+      "id": "porucha",
+      "cs": "porucha",
+      "en": "fault, breakdown",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2070,
+      "nativeReviewed": false
+    },
+    {
+      "id": "oprava",
+      "cs": "oprava",
+      "en": "repair",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1667,
+      "nativeReviewed": false
+    },
+    {
+      "id": "opravar",
+      "cs": "opravář",
+      "en": "repairman",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 22946,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hluk",
+      "cs": "hluk",
+      "en": "noise",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2655,
+      "nativeReviewed": false
+    },
+    {
+      "id": "klid",
+      "cs": "klid",
+      "en": "peace, calm",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 977,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ticho",
+      "cs": "ticho",
+      "en": "silence, quiet",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1311,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tma",
+      "cs": "tma",
+      "en": "darkness",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Je tma = It's dark.",
+      "rank": 1280,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nezarizeny",
+      "cs": "nezařízený",
+      "en": "unfurnished",
+      "pos": "adj",
+      "nativeReviewed": false
+    }
+  ]
+}

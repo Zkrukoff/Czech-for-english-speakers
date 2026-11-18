@@ -1,0 +1,789 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "doprava",
+  "title": "Town and transport",
+  "titleCs": "Město a doprava",
+  "order": 7,
+  "units": [
+    "u03"
+  ],
+  "words": [
+    {
+      "id": "mesto",
+      "cs": "město",
+      "en": "town, city",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 134,
+      "example": {
+        "cs": "Praha je velké město.",
+        "en": "Prague is a big city."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "ulice",
+      "cs": "ulice",
+      "en": "street",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 335,
+      "example": {
+        "cs": "V jaké ulici bydlíte?",
+        "en": "What street do you live on?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "silnice",
+      "cs": "silnice",
+      "en": "road",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 707,
+      "nativeReviewed": false
+    },
+    {
+      "id": "most",
+      "cs": "most",
+      "en": "bridge",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1270,
+      "nativeReviewed": false
+    },
+    {
+      "id": "park",
+      "cs": "park",
+      "en": "park",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1050,
+      "nativeReviewed": false
+    },
+    {
+      "id": "roh",
+      "cs": "roh",
+      "en": "corner",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1413,
+      "nativeReviewed": false
+    },
+    {
+      "id": "krizovatka",
+      "cs": "křižovatka",
+      "en": "crossroads",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3765,
+      "nativeReviewed": false
+    },
+    {
+      "id": "semafor",
+      "cs": "semafor",
+      "en": "traffic lights",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 11020,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prechod",
+      "cs": "přechod",
+      "en": "pedestrian crossing",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2012,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cesta",
+      "cs": "cesta",
+      "en": "way; journey; trip",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 136,
+      "example": {
+        "cs": "Šťastnou cestu!",
+        "en": "Have a good trip!"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "auto",
+      "cs": "auto",
+      "en": "car",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 265,
+      "example": {
+        "cs": "Nemám auto.",
+        "en": "I don't have a car."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "taxi",
+      "cs": "taxi",
+      "en": "taxi",
+      "pos": "noun",
+      "gender": "n",
+      "alt": [
+        "taxík"
+      ],
+      "rank": 14981,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kolo",
+      "cs": "kolo",
+      "en": "bicycle; wheel",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 439,
+      "example": {
+        "cs": "Jezdím do práce na kole.",
+        "en": "I cycle to work."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "metro",
+      "cs": "metro",
+      "en": "metro, underground",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 4403,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stanice",
+      "cs": "stanice",
+      "en": "station (metro)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1060,
+      "nativeReviewed": false
+    },
+    {
+      "id": "letiste",
+      "cs": "letiště",
+      "en": "airport",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2140,
+      "nativeReviewed": false
+    },
+    {
+      "id": "letadlo",
+      "cs": "letadlo",
+      "en": "plane",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1480,
+      "nativeReviewed": false
+    },
+    {
+      "id": "lod",
+      "cs": "loď",
+      "en": "boat, ship",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 788,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ridic",
+      "cs": "řidič",
+      "en": "driver",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: řidička",
+      "alt": [
+        "řidička"
+      ],
+      "rank": 974,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cestujici",
+      "cs": "cestující",
+      "en": "passenger",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 2525,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mapa",
+      "cs": "mapa",
+      "en": "map",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1604,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jizdni-rad",
+      "cs": "jízdní řád",
+      "en": "timetable",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "odjezd",
+      "cs": "odjezd",
+      "en": "departure",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4962,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prijezd",
+      "cs": "příjezd",
+      "en": "arrival",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4533,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zpozdeni",
+      "cs": "zpoždění",
+      "en": "delay",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 5181,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vchod",
+      "cs": "vchod",
+      "en": "entrance",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2573,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vychod",
+      "cs": "východ",
+      "en": "exit; east",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1632,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nahoru",
+      "cs": "nahoru",
+      "en": "up",
+      "pos": "adv",
+      "rank": 1385,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dolu",
+      "cs": "dolů",
+      "en": "down",
+      "pos": "adv",
+      "rank": 912,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dopredu",
+      "cs": "dopředu",
+      "en": "forward",
+      "pos": "adv",
+      "rank": 2220,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zpatky",
+      "cs": "zpátky",
+      "en": "back",
+      "pos": "adv",
+      "rank": 655,
+      "example": {
+        "cs": "Jsem zpátky v pět.",
+        "en": "I'm back at five."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "naproti",
+      "cs": "naproti",
+      "en": "opposite",
+      "pos": "adv",
+      "rank": 2179,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kolem",
+      "cs": "kolem",
+      "en": "around; past",
+      "pos": "prep",
+      "rank": 163,
+      "example": {
+        "cs": "Jděte kolem kostela.",
+        "en": "Go past the church."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "nastup",
+      "cs": "nástup",
+      "en": "boarding",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2656,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vystup",
+      "cs": "výstup",
+      "en": "getting off; exit",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2302,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jezdit",
+      "cs": "jezdit",
+      "en": "to go (by vehicle, regularly)",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 791,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chodit",
+      "cs": "chodit",
+      "en": "to walk, to go (regularly)",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 331,
+      "example": {
+        "cs": "Chodím do práce pěšky.",
+        "en": "I walk to work."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "prijet",
+      "cs": "přijet",
+      "en": "to arrive (by vehicle)",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "přijíždět",
+      "rank": 698,
+      "example": {
+        "cs": "Vlak přijede v deset.",
+        "en": "The train arrives at ten."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "prijit",
+      "cs": "přijít",
+      "en": "to come, to arrive (on foot)",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "přicházet",
+      "rank": 112,
+      "example": {
+        "cs": "Přijdu v pět.",
+        "en": "I'll come at five."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "odjet",
+      "cs": "odjet",
+      "en": "to leave (by vehicle)",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "odjíždět",
+      "rank": 1521,
+      "nativeReviewed": false
+    },
+    {
+      "id": "odejit",
+      "cs": "odejít",
+      "en": "to leave (on foot)",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "odcházet",
+      "rank": 514,
+      "example": {
+        "cs": "Musím odejít dřív.",
+        "en": "I have to leave early."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "nastoupit",
+      "cs": "nastoupit",
+      "en": "to get on",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1512,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vystoupit",
+      "cs": "vystoupit",
+      "en": "to get off",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1543,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zabocit",
+      "cs": "zabočit",
+      "en": "to turn",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 14168,
+      "nativeReviewed": false
+    },
+    {
+      "id": "parkovat",
+      "cs": "parkovat",
+      "en": "to park",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 10152,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ztratit-se",
+      "cs": "ztratit se",
+      "en": "to get lost",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 711,
+      "nativeReviewed": false
+    },
+    {
+      "id": "trolejbus",
+      "cs": "trolejbus",
+      "en": "trolleybus",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 16244,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pokuta",
+      "cs": "pokuta",
+      "en": "fine",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2907,
+      "nativeReviewed": false
+    },
+    {
+      "id": "revizor",
+      "cs": "revizor",
+      "en": "ticket inspector",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: revizorka",
+      "alt": [
+        "revizorka"
+      ],
+      "rank": 20582,
+      "nativeReviewed": false
+    },
+    {
+      "id": "benzinka",
+      "cs": "benzinka",
+      "en": "petrol station",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 19979,
+      "nativeReviewed": false
+    },
+    {
+      "id": "benzin",
+      "cs": "benzín",
+      "en": "petrol",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4995,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dalnice",
+      "cs": "dálnice",
+      "en": "motorway",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2227,
+      "nativeReviewed": false
+    },
+    {
+      "id": "parkoviste",
+      "cs": "parkoviště",
+      "en": "car park",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 3371,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nehoda",
+      "cs": "nehoda",
+      "en": "accident",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1733,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ridicsky-prukaz",
+      "cs": "řidičský průkaz",
+      "en": "driving licence",
+      "pos": "noun",
+      "gender": "m-inan",
+      "nativeReviewed": false
+    },
+    {
+      "id": "ridit",
+      "cs": "řídit",
+      "en": "to drive",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1091,
+      "nativeReviewed": false
+    },
+    {
+      "id": "letenka",
+      "cs": "letenka",
+      "en": "plane ticket",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8536,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zavazadlo",
+      "cs": "zavazadlo",
+      "en": "luggage, bag",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 5633,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kufr",
+      "cs": "kufr",
+      "en": "suitcase; boot (of a car)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3122,
+      "nativeReviewed": false
+    },
+    {
+      "id": "turista",
+      "cs": "turista",
+      "en": "tourist",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: turistka",
+      "alt": [
+        "turistka"
+      ],
+      "rank": 2172,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hotel",
+      "cs": "hotel",
+      "en": "hotel",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1099,
+      "nativeReviewed": false
+    },
+    {
+      "id": "recepce",
+      "cs": "recepce",
+      "en": "reception",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6070,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ubytovani",
+      "cs": "ubytování",
+      "en": "accommodation",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 5848,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rezervace",
+      "cs": "rezervace",
+      "en": "booking",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5316,
+      "nativeReviewed": false
+    },
+    {
+      "id": "informace",
+      "cs": "informace",
+      "en": "information",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 299,
+      "example": {
+        "cs": "Kde jsou informace?",
+        "en": "Where is the information desk?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "smer",
+      "cs": "směr",
+      "en": "direction",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 347,
+      "example": {
+        "cs": "Tramvaj ve směru Bílá Hora.",
+        "en": "The tram towards Bílá Hora."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "prestup",
+      "cs": "přestup",
+      "en": "change, transfer",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 8014,
+      "nativeReviewed": false
+    },
+    {
+      "id": "konecna",
+      "cs": "konečná",
+      "en": "last stop, terminus",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 18983,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rychlik",
+      "cs": "rychlík",
+      "en": "fast train",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 13625,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sedadlo",
+      "cs": "sedadlo",
+      "en": "seat",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2507,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pruvodci",
+      "cs": "průvodčí",
+      "en": "conductor (on a train)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 18549,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prestoupit",
+      "cs": "přestoupit",
+      "en": "to change (trains, lines)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 10746,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nastupovat",
+      "cs": "nastupovat",
+      "en": "to get on",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 4817,
+      "nativeReviewed": false
+    },
+    {
+      "id": "trasa",
+      "cs": "trasa",
+      "en": "route; metro line",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1922,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pumpa",
+      "cs": "pumpa",
+      "en": "petrol station (spoken)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8236,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nafta",
+      "cs": "nafta",
+      "en": "diesel",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6142,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kilometr",
+      "cs": "kilometr",
+      "en": "kilometre",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 978,
+      "nativeReviewed": false
+    },
+    {
+      "id": "metr",
+      "cs": "metr",
+      "en": "metre",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 509,
+      "example": {
+        "cs": "Je to sto metrů odsud.",
+        "en": "It's a hundred metres from here."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "mestsky",
+      "cs": "městský",
+      "en": "city, municipal",
+      "pos": "adj",
+      "rank": 776,
+      "nativeReviewed": false
+    }
+  ]
+}

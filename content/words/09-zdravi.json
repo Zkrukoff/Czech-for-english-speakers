@@ -1,0 +1,671 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "zdravi",
+  "title": "Health and the body",
+  "titleCs": "Zdraví a tělo",
+  "order": 9,
+  "units": [],
+  "words": [
+    {
+      "id": "zdravi",
+      "cs": "zdraví",
+      "en": "health",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1203,
+      "nativeReviewed": false
+    },
+    {
+      "id": "telo",
+      "cs": "tělo",
+      "en": "body",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 227,
+      "example": {
+        "cs": "Celé tělo mě bolí.",
+        "en": "My whole body hurts."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "hlava",
+      "cs": "hlava",
+      "en": "head",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 128,
+      "example": {
+        "cs": "Bolí mě hlava.",
+        "en": "I have a headache."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "oko",
+      "cs": "oko",
+      "en": "eye",
+      "pos": "noun",
+      "gender": "n",
+      "note": "Plural: oči",
+      "rank": 132,
+      "example": {
+        "cs": "Má modré oči.",
+        "en": "She has blue eyes."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "ucho",
+      "cs": "ucho",
+      "en": "ear",
+      "pos": "noun",
+      "gender": "n",
+      "note": "Plural: uši",
+      "rank": 1073,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nos",
+      "cs": "nos",
+      "en": "nose",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1471,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pusa",
+      "cs": "pusa",
+      "en": "mouth (everyday)",
+      "pos": "noun",
+      "gender": "f",
+      "alt": [
+        "ústa"
+      ],
+      "rank": 2368,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zub",
+      "cs": "zub",
+      "en": "tooth",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1189,
+      "nativeReviewed": false
+    },
+    {
+      "id": "krk",
+      "cs": "krk",
+      "en": "neck; throat",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1093,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ruka",
+      "cs": "ruka",
+      "en": "hand; arm",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Plural: ruce",
+      "rank": 98,
+      "example": {
+        "cs": "Bolí mě ruka.",
+        "en": "My hand hurts."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "noha",
+      "cs": "noha",
+      "en": "leg; foot",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Plural: nohy",
+      "rank": 286,
+      "example": {
+        "cs": "Bolí mě noha.",
+        "en": "My leg hurts."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "prst",
+      "cs": "prst",
+      "en": "finger",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 584,
+      "example": {
+        "cs": "Pořezal jsem si prst.",
+        "en": "I cut my finger."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zada",
+      "cs": "záda",
+      "en": "back",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 702,
+      "example": {
+        "cs": "Bolí mě záda.",
+        "en": "My back hurts."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "bricho",
+      "cs": "břicho",
+      "en": "belly, stomach",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1961,
+      "nativeReviewed": false
+    },
+    {
+      "id": "srdce",
+      "cs": "srdce",
+      "en": "heart",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 491,
+      "example": {
+        "cs": "Mám slabé srdce.",
+        "en": "I have a weak heart."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "nemocnice",
+      "cs": "nemocnice",
+      "en": "hospital",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 570,
+      "example": {
+        "cs": "Kde je nemocnice?",
+        "en": "Where is the hospital?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "lek",
+      "cs": "lék",
+      "en": "medicine",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1505,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prasek",
+      "cs": "prášek",
+      "en": "pill",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3312,
+      "nativeReviewed": false
+    },
+    {
+      "id": "recept",
+      "cs": "recept",
+      "en": "prescription; recipe",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3134,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pojisteni",
+      "cs": "pojištění",
+      "en": "insurance",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2791,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pojistovna",
+      "cs": "pojišťovna",
+      "en": "insurance company",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2249,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pohotovost",
+      "cs": "pohotovost",
+      "en": "out-of-hours service, A&E",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6918,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sanitka",
+      "cs": "sanitka",
+      "en": "ambulance",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6830,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nemoc",
+      "cs": "nemoc",
+      "en": "illness",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1211,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bolest",
+      "cs": "bolest",
+      "en": "pain",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 855,
+      "nativeReviewed": false
+    },
+    {
+      "id": "horecka",
+      "cs": "horečka",
+      "en": "fever, temperature",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5331,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kasel",
+      "cs": "kašel",
+      "en": "cough",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 8654,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ryma",
+      "cs": "rýma",
+      "en": "cold, runny nose",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 12748,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chripka",
+      "cs": "chřipka",
+      "en": "flu",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 7345,
+      "nativeReviewed": false
+    },
+    {
+      "id": "alergie",
+      "cs": "alergie",
+      "en": "allergy",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 9296,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zubar",
+      "cs": "zubař",
+      "en": "dentist",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: zubařka",
+      "alt": [
+        "zubařka"
+      ],
+      "rank": 9483,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nemocny",
+      "cs": "nemocný",
+      "en": "ill, sick",
+      "pos": "adj",
+      "rank": 1476,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zdravy",
+      "cs": "zdravý",
+      "en": "healthy",
+      "pos": "adj",
+      "rank": 1191,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bolet",
+      "cs": "bolet",
+      "en": "to hurt",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Bolí mě hlava.",
+      "rank": 2029,
+      "nativeReviewed": false
+    },
+    {
+      "id": "citit-se",
+      "cs": "cítit se",
+      "en": "to feel",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Cítím se dobře.",
+      "rank": 238,
+      "example": {
+        "cs": "Necítím se dobře.",
+        "en": "I don't feel well."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "objednat-se",
+      "cs": "objednat se",
+      "en": "to make an appointment",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 2883,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cekarna",
+      "cs": "čekárna",
+      "en": "waiting room",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8238,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vysetreni",
+      "cs": "vyšetření",
+      "en": "examination (medical)",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2813,
+      "nativeReviewed": false
+    },
+    {
+      "id": "injekce",
+      "cs": "injekce",
+      "en": "injection",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6988,
+      "nativeReviewed": false
+    },
+    {
+      "id": "operace",
+      "cs": "operace",
+      "en": "operation",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1513,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nachlazeni",
+      "cs": "nachlazení",
+      "en": "cold (illness)",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 15705,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prujem",
+      "cs": "průjem",
+      "en": "diarrhoea",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 10730,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zvracet",
+      "cs": "zvracet",
+      "en": "to be sick, to vomit",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 8329,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zlomit-si",
+      "cs": "zlomit si",
+      "en": "to break (a bone)",
+      "pos": "verb",
+      "aspect": "pf",
+      "note": "Zlomil jsem si ruku.",
+      "rank": 3551,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vitamin",
+      "cs": "vitamín",
+      "en": "vitamin",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4203,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mast",
+      "cs": "mast",
+      "en": "ointment",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 12398,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kapky",
+      "cs": "kapky",
+      "en": "drops",
+      "pos": "noun",
+      "note": "Plural",
+      "nativeReviewed": false
+    },
+    {
+      "id": "naplast",
+      "cs": "náplast",
+      "en": "plaster",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 14736,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kourit",
+      "cs": "kouřit",
+      "en": "to smoke",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 3043,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cigareta",
+      "cs": "cigareta",
+      "en": "cigarette",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1879,
+      "nativeReviewed": false
+    },
+    {
+      "id": "alkohol",
+      "cs": "alkohol",
+      "en": "alcohol",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1457,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dychat",
+      "cs": "dýchat",
+      "en": "to breathe",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 2444,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sestricka",
+      "cs": "sestřička",
+      "en": "nurse (everyday)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6755,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ordinace",
+      "cs": "ordinace",
+      "en": "surgery, doctor's office",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4727,
+      "nativeReviewed": false
+    },
+    {
+      "id": "poliklinika",
+      "cs": "poliklinika",
+      "en": "health centre",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 18031,
+      "nativeReviewed": false
+    },
+    {
+      "id": "neschopenka",
+      "cs": "neschopenka",
+      "en": "sick note",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 42611,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prohlidka",
+      "cs": "prohlídka",
+      "en": "check-up",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2471,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ockovani",
+      "cs": "očkování",
+      "en": "vaccination",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 8587,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rentgen",
+      "cs": "rentgen",
+      "en": "X-ray",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 16752,
+      "nativeReviewed": false
+    },
+    {
+      "id": "krev",
+      "cs": "krev",
+      "en": "blood",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 620,
+      "example": {
+        "cs": "Musím na odběr krve.",
+        "en": "I have to have a blood test."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "tlak",
+      "cs": "tlak",
+      "en": "blood pressure; pressure",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 972,
+      "nativeReviewed": false
+    },
+    {
+      "id": "oblicej",
+      "cs": "obličej",
+      "en": "face",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 645,
+      "example": {
+        "cs": "Má hezký obličej.",
+        "en": "She has a pretty face."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "koleno",
+      "cs": "koleno",
+      "en": "knee",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1468,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kuze",
+      "cs": "kůže",
+      "en": "skin; leather",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 882,
+      "nativeReviewed": false
+    },
+    {
+      "id": "oci",
+      "cs": "oči",
+      "en": "eyes",
+      "pos": "noun",
+      "note": "Plural of oko",
+      "nativeReviewed": false
+    },
+    {
+      "id": "kaslat",
+      "cs": "kašlat",
+      "en": "to cough",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 7509,
+      "nativeReviewed": false
+    },
+    {
+      "id": "infarkt",
+      "cs": "infarkt",
+      "en": "heart attack",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 6820,
+      "nativeReviewed": false
+    }
+  ]
+}

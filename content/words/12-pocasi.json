@@ -1,0 +1,542 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "pocasi",
+  "title": "Weather and nature",
+  "titleCs": "Počasí a příroda",
+  "order": 12,
+  "units": [],
+  "words": [
+    {
+      "id": "pocasi",
+      "cs": "počasí",
+      "en": "weather",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1493,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slunce",
+      "cs": "slunce",
+      "en": "sun",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 628,
+      "example": {
+        "cs": "Svítí slunce.",
+        "en": "The sun is shining."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dest",
+      "cs": "déšť",
+      "en": "rain",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1532,
+      "nativeReviewed": false
+    },
+    {
+      "id": "snih",
+      "cs": "sníh",
+      "en": "snow",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1313,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vitr",
+      "cs": "vítr",
+      "en": "wind",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1030,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mrak",
+      "cs": "mrak",
+      "en": "cloud",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3204,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bourka",
+      "cs": "bouřka",
+      "en": "storm",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6943,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mlha",
+      "cs": "mlha",
+      "en": "fog",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3158,
+      "nativeReviewed": false
+    },
+    {
+      "id": "teplota",
+      "cs": "teplota",
+      "en": "temperature",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 732,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stupen",
+      "cs": "stupeň",
+      "en": "degree",
+      "pos": "noun",
+      "gender": "m-inan",
+      "note": "Je pět stupňů.",
+      "rank": 902,
+      "nativeReviewed": false
+    },
+    {
+      "id": "priroda",
+      "cs": "příroda",
+      "en": "nature",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 858,
+      "nativeReviewed": false
+    },
+    {
+      "id": "les",
+      "cs": "les",
+      "en": "forest",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 560,
+      "example": {
+        "cs": "V neděli jdeme do lesa.",
+        "en": "On Sunday we're going to the forest."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "reka",
+      "cs": "řeka",
+      "en": "river",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 846,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jezero",
+      "cs": "jezero",
+      "en": "lake",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2017,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hora",
+      "cs": "hora",
+      "en": "mountain",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 714,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kopec",
+      "cs": "kopec",
+      "en": "hill",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1921,
+      "nativeReviewed": false
+    },
+    {
+      "id": "strom",
+      "cs": "strom",
+      "en": "tree",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 505,
+      "example": {
+        "cs": "Před domem je velký strom.",
+        "en": "There's a big tree in front of the house."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "kvetina",
+      "cs": "květina",
+      "en": "flower",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2406,
+      "nativeReviewed": false
+    },
+    {
+      "id": "trava",
+      "cs": "tráva",
+      "en": "grass",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1730,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zvire",
+      "cs": "zvíře",
+      "en": "animal",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 580,
+      "example": {
+        "cs": "Máte doma zvíře?",
+        "en": "Do you have a pet?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "ptak",
+      "cs": "pták",
+      "en": "bird",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1614,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zeme",
+      "cs": "země",
+      "en": "earth; country; land",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 115,
+      "example": {
+        "cs": "Z jaké země jste?",
+        "en": "What country are you from?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "sever",
+      "cs": "sever",
+      "en": "north",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2222,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jih",
+      "cs": "jih",
+      "en": "south",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2200,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zapad",
+      "cs": "západ",
+      "en": "west",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1670,
+      "nativeReviewed": false
+    },
+    {
+      "id": "teplo",
+      "cs": "teplo",
+      "en": "warm",
+      "pos": "adv",
+      "note": "Je teplo.",
+      "rank": 1301,
+      "nativeReviewed": false
+    },
+    {
+      "id": "horko",
+      "cs": "horko",
+      "en": "hot",
+      "pos": "adv",
+      "note": "Je horko.",
+      "rank": 4065,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chladno",
+      "cs": "chladno",
+      "en": "chilly",
+      "pos": "adv",
+      "rank": 10230,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zima-adv",
+      "cs": "zima",
+      "en": "cold",
+      "pos": "adv",
+      "note": "Je mi zima = I'm cold.",
+      "rank": 877,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hezky-adv",
+      "cs": "hezky",
+      "en": "nicely; (of weather) fine",
+      "pos": "adv",
+      "note": "Je hezky.",
+      "rank": 3605,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prset",
+      "cs": "pršet",
+      "en": "to rain",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Prší.",
+      "rank": 4043,
+      "nativeReviewed": false
+    },
+    {
+      "id": "snezit",
+      "cs": "sněžit",
+      "en": "to snow",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Sněží.",
+      "rank": 10275,
+      "nativeReviewed": false
+    },
+    {
+      "id": "svitit",
+      "cs": "svítit",
+      "en": "to shine",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 2660,
+      "nativeReviewed": false
+    },
+    {
+      "id": "foukat",
+      "cs": "foukat",
+      "en": "to blow",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 7843,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mokry",
+      "cs": "mokrý",
+      "en": "wet",
+      "pos": "adj",
+      "rank": 3123,
+      "nativeReviewed": false
+    },
+    {
+      "id": "suchy",
+      "cs": "suchý",
+      "en": "dry",
+      "pos": "adj",
+      "rank": 1903,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slunecny",
+      "cs": "slunečný",
+      "en": "sunny",
+      "pos": "adj",
+      "rank": 9966,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obloha",
+      "cs": "obloha",
+      "en": "sky",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2131,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hvezda",
+      "cs": "hvězda",
+      "en": "star",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 662,
+      "example": {
+        "cs": "V noci jsou vidět hvězdy.",
+        "en": "At night you can see the stars."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "plaz",
+      "cs": "pláž",
+      "en": "beach",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2537,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ostrov",
+      "cs": "ostrov",
+      "en": "island",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1256,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pole",
+      "cs": "pole",
+      "en": "field",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 554,
+      "example": {
+        "cs": "Za vesnicí jsou pole.",
+        "en": "There are fields behind the village."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "louka",
+      "cs": "louka",
+      "en": "meadow",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2847,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kamen",
+      "cs": "kámen",
+      "en": "stone",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 738,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vzduch",
+      "cs": "vzduch",
+      "en": "air",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 523,
+      "example": {
+        "cs": "Je tu čerstvý vzduch.",
+        "en": "The air here is fresh."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "led",
+      "cs": "led",
+      "en": "ice",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1537,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mraz",
+      "cs": "mráz",
+      "en": "frost",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3209,
+      "nativeReviewed": false
+    },
+    {
+      "id": "predpoved",
+      "cs": "předpověď",
+      "en": "forecast",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5456,
+      "nativeReviewed": false
+    },
+    {
+      "id": "destivy",
+      "cs": "deštivý",
+      "en": "rainy",
+      "pos": "adj",
+      "rank": 12487,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vetrny",
+      "cs": "větrný",
+      "en": "windy",
+      "pos": "adj",
+      "rank": 5101,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zatazeno",
+      "cs": "zataženo",
+      "en": "overcast",
+      "pos": "adv",
+      "note": "Je zataženo.",
+      "rank": 28377,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jasno",
+      "cs": "jasno",
+      "en": "clear (sky)",
+      "pos": "adv",
+      "note": "Je jasno.",
+      "rank": 4053,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rybnik",
+      "cs": "rybník",
+      "en": "pond",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3436,
+      "nativeReviewed": false
+    },
+    {
+      "id": "horky",
+      "cs": "horký",
+      "en": "hot",
+      "pos": "adj",
+      "rank": 1775,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chladny",
+      "cs": "chladný",
+      "en": "cool, chilly",
+      "pos": "adj",
+      "rank": 1894,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mrznout",
+      "cs": "mrznout",
+      "en": "to freeze",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Mrzne.",
+      "rank": 11236,
+      "nativeReviewed": false
+    }
+  ]
+}

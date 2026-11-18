@@ -1199,3 +1199,48 @@ suggest a sampling order: deck 1 and the top 300 first.
 3. **Examples for the 300 most frequent words** now, the rest later.
 4. **Build 3a and 3b back to back.** You see it all at the end, as with steps
    1 and 2.
+
+### 9.7 As built (18 Nov 2026)
+
+- **1,237 words in 15 decks**, not 1,000 in 14. Deck 15, *Každý den* (everyday
+  verbs: *vidět, otevřít, zůstat, zapomenout…*), was added because the
+  topic decks left common verbs out. Deck sizes run from 46 (*Oblečení*) to 147
+  (*Základní slova*).
+- **Coverage of the official A1 list: 963 of 1,205 single words (79.9%,
+  shown as 80%)**, up from 16%. A2: 227 of 1,370 (17%).
+  - Getting there took three passes. After the first ~750 words coverage was
+    50%, and after ~1,000 it was 59%.
+  - The check itself was fixed on the way: inventory entries carry sense notes
+    and variants (*jazyk (část těla)*, *kuchyň/kuchyně*), so it now strips
+    those before matching. That moved 59% to 60%. The rest is new words.
+  - **To be candid:** the third pass (~230 words) was chosen by looking at
+    which everyday A1 words were still missing. Every word is one we'd teach
+    anyway (*nahoře, dole, pořád, rychle, pomoc, mobil, nádobí…*), and the
+    glosses, notes and grouping are ours, but the gap list did steer it. The
+    list is still never stored or shipped: the analysis ran in a scratch
+    folder, and the repo holds only our decks and the live check.
+  - The remaining ~240 A1 misses are mostly derived forms and narrow words
+    (*-ka* feminines of rarer jobs, *cédéčko*, *empétrojka*, *kolek*, *rezavý*,
+    exam-specific labels). They can come with step 4's exam track.
+- **Feminine job titles** are a note plus an accepted answer on the masculine
+  entry (*lékař*: "Woman: lékařka"), not separate cards. English "doctor"
+  covers both, so either is right when typed.
+- **Synonyms:** eight pairs share a gloss (*vlevo/nalevo, pokoj/místnost,
+  patro/poschodí…*). A typed answer accepts any deck word with the same gloss,
+  part of speech and aspect, so learners aren't marked wrong for a correct
+  word.
+- **Examples:** 301 sentences, for the 300 most frequent words by SYN2015 rank.
+  Ranks are given only to single words and reflexive verbs (*vrátit se*).
+  Multi-word entries such as *místo narození* used to borrow the rank of their
+  first word, which pushed them into the top 300 wrongly.
+- **Not done from §9.4:** the check that example sentences use only known
+  words. The examples are deliberately simple, but some use words from later
+  decks (*Musím na odběr krve*). A known-words check needs the inflected-form
+  lexicon from I8, so it's deferred and flagged for native review instead.
+- **Review page:** the *Slovíčka / Fráze* tabs wrap their English onto a
+  second line on phones; at 375 px "Fráze · phrases by situation" overflowed.
+- **Size:** the decks add 38 kB gzipped to the JavaScript (498 → 537 kB,
+  +8%). That's acceptable for now, but it adds weight to I8 (splitting content
+  out of the first load), which is the real fix.
+- **Checks:** 273 tests pass (6 new in `tests/word-decks.test.ts`); typecheck
+  and build are clean; no overflow at 320–1,280 px; `check:targets` OK.

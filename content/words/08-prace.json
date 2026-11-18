@@ -1,0 +1,936 @@
+{
+  "$comment": "Core vocabulary deck (step 3). Ranks: Czech National Corpus SYN2015 lemma list, CC BY 4.0 (Křen, M., ÚČNK FF UK). Selection, meanings and notes: Pražák, awaiting native review.",
+  "id": "prace",
+  "title": "Work",
+  "titleCs": "Práce",
+  "order": 8,
+  "units": [
+    "u01",
+    "u04",
+    "u05"
+  ],
+  "words": [
+    {
+      "id": "firma",
+      "cs": "firma",
+      "en": "company, firm",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 188,
+      "example": {
+        "cs": "Pracuju pro velkou firmu.",
+        "en": "I work for a big company."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "kancelar",
+      "cs": "kancelář",
+      "en": "office",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 992,
+      "nativeReviewed": false
+    },
+    {
+      "id": "schuzka",
+      "cs": "schůzka",
+      "en": "meeting; appointment",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2202,
+      "nativeReviewed": false
+    },
+    {
+      "id": "porada",
+      "cs": "porada",
+      "en": "(team) meeting",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6553,
+      "nativeReviewed": false
+    },
+    {
+      "id": "projekt",
+      "cs": "projekt",
+      "en": "project",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 258,
+      "example": {
+        "cs": "Pracuju na novém projektu.",
+        "en": "I'm working on a new project."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "ukol",
+      "cs": "úkol",
+      "en": "task",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 731,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pocitac",
+      "cs": "počítač",
+      "en": "computer",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 742,
+      "nativeReviewed": false
+    },
+    {
+      "id": "notebook",
+      "cs": "notebook",
+      "en": "laptop",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2855,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tiskarna",
+      "cs": "tiskárna",
+      "en": "printer",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4316,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dokument",
+      "cs": "dokument",
+      "en": "document",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1140,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zprava",
+      "cs": "zpráva",
+      "en": "message; report; news",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 426,
+      "example": {
+        "cs": "Poslal jsem vám zprávu.",
+        "en": "I sent you a message."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "plat",
+      "cs": "plat",
+      "en": "salary",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2395,
+      "nativeReviewed": false
+    },
+    {
+      "id": "smlouva-o-praci",
+      "cs": "smlouva o práci",
+      "en": "employment contract",
+      "pos": "noun",
+      "gender": "f",
+      "alt": [
+        "pracovní smlouva"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "zamestnanec",
+      "cs": "zaměstnanec",
+      "en": "employee",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: zaměstnankyně",
+      "alt": [
+        "zaměstnankyně"
+      ],
+      "rank": 821,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zamestnavatel",
+      "cs": "zaměstnavatel",
+      "en": "employer",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 2701,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pracovni-doba",
+      "cs": "pracovní doba",
+      "en": "working hours",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "prestavka",
+      "cs": "přestávka",
+      "en": "break",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3097,
+      "nativeReviewed": false
+    },
+    {
+      "id": "volno",
+      "cs": "volno",
+      "en": "time off",
+      "pos": "noun",
+      "gender": "n",
+      "note": "Mám volno = I'm off.",
+      "rank": 4472,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nemocenska",
+      "cs": "nemocenská",
+      "en": "sick leave",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "inzenyr",
+      "cs": "inženýr",
+      "en": "engineer",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: inženýrka",
+      "alt": [
+        "inženýrka"
+      ],
+      "rank": 4089,
+      "nativeReviewed": false
+    },
+    {
+      "id": "lekar",
+      "cs": "lékař",
+      "en": "doctor",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: lékařka",
+      "alt": [
+        "lékařka"
+      ],
+      "rank": 528,
+      "example": {
+        "cs": "Musím k lékaři.",
+        "en": "I need to see a doctor."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "programator",
+      "cs": "programátor",
+      "en": "programmer",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: programátorka",
+      "alt": [
+        "programátorka"
+      ],
+      "rank": 13383,
+      "nativeReviewed": false
+    },
+    {
+      "id": "urednik",
+      "cs": "úředník",
+      "en": "clerk, official",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: úřednice",
+      "alt": [
+        "úřednice"
+      ],
+      "rank": 2139,
+      "nativeReviewed": false
+    },
+    {
+      "id": "uspech",
+      "cs": "úspěch",
+      "en": "success",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 729,
+      "nativeReviewed": false
+    },
+    {
+      "id": "problem",
+      "cs": "problém",
+      "en": "problem",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 171,
+      "example": {
+        "cs": "To není problém.",
+        "en": "That's not a problem."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "otazka",
+      "cs": "otázka",
+      "en": "question",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 231,
+      "example": {
+        "cs": "Můžu mít otázku?",
+        "en": "Can I ask a question?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "odpoved",
+      "cs": "odpověď",
+      "en": "answer",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 681,
+      "example": {
+        "cs": "Čekám na odpověď.",
+        "en": "I'm waiting for an answer."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dulezity",
+      "cs": "důležitý",
+      "en": "important",
+      "pos": "adj",
+      "rank": 221,
+      "example": {
+        "cs": "Je to důležité.",
+        "en": "It's important."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zajimavy",
+      "cs": "zajímavý",
+      "en": "interesting",
+      "pos": "adj",
+      "rank": 480,
+      "example": {
+        "cs": "To je zajímavé.",
+        "en": "That's interesting."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "nudny",
+      "cs": "nudný",
+      "en": "boring",
+      "pos": "adj",
+      "rank": 5591,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tezky",
+      "cs": "těžký",
+      "en": "difficult; heavy",
+      "pos": "adj",
+      "rank": 381,
+      "example": {
+        "cs": "Čeština je těžká.",
+        "en": "Czech is difficult."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "lehky",
+      "cs": "lehký",
+      "en": "easy; light",
+      "pos": "adj",
+      "rank": 1180,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rychly",
+      "cs": "rychlý",
+      "en": "fast",
+      "pos": "adj",
+      "rank": 642,
+      "example": {
+        "cs": "Metro je rychlé.",
+        "en": "The metro is fast."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pomaly",
+      "cs": "pomalý",
+      "en": "slow",
+      "pos": "adj",
+      "rank": 2688,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pracovni",
+      "cs": "pracovní",
+      "en": "work (as in work phone)",
+      "pos": "adj",
+      "rank": 515,
+      "example": {
+        "cs": "To je můj pracovní telefon.",
+        "en": "This is my work phone."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "psat",
+      "cs": "psát",
+      "en": "to write",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "napsat",
+      "rank": 384,
+      "example": {
+        "cs": "Píšu e-mail.",
+        "en": "I'm writing an e-mail."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "napsat",
+      "cs": "napsat",
+      "en": "to write",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "psát",
+      "rank": 471,
+      "example": {
+        "cs": "Napište mi.",
+        "en": "Write to me."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "cist",
+      "cs": "číst",
+      "en": "to read",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "přečíst",
+      "rank": 569,
+      "example": {
+        "cs": "Rád čtu.",
+        "en": "I like reading."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "poslat",
+      "cs": "poslat",
+      "en": "to send",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 708,
+      "nativeReviewed": false
+    },
+    {
+      "id": "volat",
+      "cs": "volat",
+      "en": "to call, to phone",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "zavolat",
+      "rank": 1039,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zavolat",
+      "cs": "zavolat",
+      "en": "to call, to phone",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "volat",
+      "rank": 895,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pomahat",
+      "cs": "pomáhat",
+      "en": "to help",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "pomoct",
+      "rank": 741,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pomoct",
+      "cs": "pomoct",
+      "en": "to help",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "pomáhat",
+      "nativeReviewed": false
+    },
+    {
+      "id": "zacinat",
+      "cs": "začínat",
+      "en": "to start",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "začít",
+      "rank": 411,
+      "example": {
+        "cs": "Práce začíná v devět.",
+        "en": "Work starts at nine."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vydelavat",
+      "cs": "vydělávat",
+      "en": "to earn",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 4390,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ucit-se",
+      "cs": "učit se",
+      "en": "to learn, to study",
+      "pos": "verb",
+      "aspect": "impf",
+      "partner": "naučit se",
+      "rank": 1070,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zeptat-se",
+      "cs": "zeptat se",
+      "en": "to ask",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "ptát se",
+      "rank": 269,
+      "example": {
+        "cs": "Můžu se zeptat?",
+        "en": "May I ask?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "odpovedet",
+      "cs": "odpovědět",
+      "en": "to answer",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 427,
+      "example": {
+        "cs": "Ještě mi neodpověděl.",
+        "en": "He hasn't answered me yet."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zamestnani",
+      "cs": "zaměstnání",
+      "en": "job, employment",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2376,
+      "nativeReviewed": false
+    },
+    {
+      "id": "povolani",
+      "cs": "povolání",
+      "en": "occupation",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 3352,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sekretarka",
+      "cs": "sekretářka",
+      "en": "secretary",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6997,
+      "nativeReviewed": false
+    },
+    {
+      "id": "manazer",
+      "cs": "manažer",
+      "en": "manager",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: manažerka",
+      "alt": [
+        "manažerka"
+      ],
+      "rank": 1566,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kuchar",
+      "cs": "kuchař",
+      "en": "cook, chef",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: kuchařka",
+      "alt": [
+        "kuchařka"
+      ],
+      "rank": 5427,
+      "nativeReviewed": false
+    },
+    {
+      "id": "delnik",
+      "cs": "dělník",
+      "en": "worker",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: dělnice",
+      "alt": [
+        "dělnice"
+      ],
+      "rank": 3130,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zdravotni-sestra",
+      "cs": "zdravotní sestra",
+      "en": "nurse",
+      "pos": "noun",
+      "gender": "f",
+      "nativeReviewed": false
+    },
+    {
+      "id": "policista",
+      "cs": "policista",
+      "en": "police officer",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: policistka",
+      "alt": [
+        "policistka"
+      ],
+      "rank": 1008,
+      "nativeReviewed": false
+    },
+    {
+      "id": "uklizecka",
+      "cs": "uklízečka",
+      "en": "cleaner",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 15058,
+      "nativeReviewed": false
+    },
+    {
+      "id": "podnikatel",
+      "cs": "podnikatel",
+      "en": "businessman, self-employed",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: podnikatelka",
+      "alt": [
+        "podnikatelka"
+      ],
+      "rank": 2016,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nezamestnany",
+      "cs": "nezaměstnaný",
+      "en": "unemployed",
+      "pos": "adj",
+      "rank": 12344,
+      "nativeReviewed": false
+    },
+    {
+      "id": "duchodce",
+      "cs": "důchodce",
+      "en": "pensioner",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: důchodkyně",
+      "alt": [
+        "důchodkyně"
+      ],
+      "rank": 5229,
+      "nativeReviewed": false
+    },
+    {
+      "id": "brigada",
+      "cs": "brigáda",
+      "en": "part-time or summer job",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 7465,
+      "nativeReviewed": false
+    },
+    {
+      "id": "smena",
+      "cs": "směna",
+      "en": "shift",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5232,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyplata",
+      "cs": "výplata",
+      "en": "pay, wages",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6752,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tisknout",
+      "cs": "tisknout",
+      "en": "to print",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 3854,
+      "nativeReviewed": false
+    },
+    {
+      "id": "odeslat",
+      "cs": "odeslat",
+      "en": "to send",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 6960,
+      "nativeReviewed": false
+    },
+    {
+      "id": "advokat",
+      "cs": "advokát",
+      "en": "lawyer",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: advokátka",
+      "alt": [
+        "advokátka"
+      ],
+      "rank": 3886,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pravnik",
+      "cs": "právník",
+      "en": "lawyer (law graduate)",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: právnička",
+      "alt": [
+        "právnička"
+      ],
+      "rank": 2671,
+      "nativeReviewed": false
+    },
+    {
+      "id": "herec",
+      "cs": "herec",
+      "en": "actor",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: herečka",
+      "alt": [
+        "herečka"
+      ],
+      "rank": 1244,
+      "nativeReviewed": false
+    },
+    {
+      "id": "novinar",
+      "cs": "novinář",
+      "en": "journalist",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: novinářka",
+      "alt": [
+        "novinářka"
+      ],
+      "rank": 1809,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spisovatel",
+      "cs": "spisovatel",
+      "en": "writer",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: spisovatelka",
+      "alt": [
+        "spisovatelka"
+      ],
+      "rank": 1888,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tlumocnik",
+      "cs": "tlumočník",
+      "en": "interpreter",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: tlumočnice",
+      "alt": [
+        "tlumočnice"
+      ],
+      "rank": 9685,
+      "nativeReviewed": false
+    },
+    {
+      "id": "technik",
+      "cs": "technik",
+      "en": "technician",
+      "pos": "noun",
+      "gender": "m-anim",
+      "note": "Woman: technička",
+      "alt": [
+        "technička"
+      ],
+      "rank": 5270,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kadernice",
+      "cs": "kadeřnice",
+      "en": "hairdresser (woman)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 18139,
+      "nativeReviewed": false
+    },
+    {
+      "id": "holic",
+      "cs": "holič",
+      "en": "barber",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 13842,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hasic",
+      "cs": "hasič",
+      "en": "firefighter",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 2239,
+      "nativeReviewed": false
+    },
+    {
+      "id": "remeslnik",
+      "cs": "řemeslník",
+      "en": "tradesman",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 7006,
+      "nativeReviewed": false
+    },
+    {
+      "id": "specialista",
+      "cs": "specialista",
+      "en": "specialist",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 4506,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tovarna",
+      "cs": "továrna",
+      "en": "factory",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3085,
+      "nativeReviewed": false
+    },
+    {
+      "id": "podnik",
+      "cs": "podnik",
+      "en": "company, enterprise",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 800,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pracoviste",
+      "cs": "pracoviště",
+      "en": "workplace",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2965,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obor",
+      "cs": "obor",
+      "en": "field (of study or work)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 963,
+      "nativeReviewed": false
+    },
+    {
+      "id": "praxe",
+      "cs": "praxe",
+      "en": "experience, practice",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1102,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mzda",
+      "cs": "mzda",
+      "en": "wage",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3321,
+      "nativeReviewed": false
+    },
+    {
+      "id": "duchod",
+      "cs": "důchod",
+      "en": "pension; retirement",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3172,
+      "nativeReviewed": false
+    },
+    {
+      "id": "podnikat",
+      "cs": "podnikat",
+      "en": "to run a business",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 5056,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pokracovat",
+      "cs": "pokračovat",
+      "en": "to continue",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 386,
+      "example": {
+        "cs": "Pokračujte rovně.",
+        "en": "Carry on straight ahead."
+      },
+      "nativeReviewed": false
+    }
+  ]
+}
