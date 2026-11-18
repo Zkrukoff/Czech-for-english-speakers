@@ -223,6 +223,44 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l03-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "form",
+        "lines": [
+          "10 × rohlík   30 Kč",
+          "2 × koláč   50 Kč",
+          "Dohromady   80 Kč",
+          "Kartou"
+        ]
+      },
+      "prompt": "How did the customer pay?",
+      "options": [
+        "By card",
+        "In cash",
+        "They haven't paid yet"
+      ],
+      "answers": [
+        "By card"
+      ],
+      "hints": [
+        {
+          "wrong": "In cash",
+          "explain": "\"Kartou\" on the receipt means by card. Cash would be hotově."
+        },
+        {
+          "wrong": "They haven't paid yet",
+          "explain": "The receipt shows the total (\"dohromady\") and how it was paid: kartou, by card."
+        }
+      ],
+      "why": "\"Kartou\": paid by card. Dohromady = altogether.",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l03-bld1",
       "type": "buildSentence",
       "prompt": "Can I pay by card?",
@@ -404,19 +442,29 @@
     },
     {
       "id": "u02-l03-e8",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "twenty-five crowns",
-      "answers": [
-        "{dvacet pět|pětadvacet} korun"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Dvacet pět korun.",
+      "options": [
+        "twenty-five crowns",
+        "How much is it?",
+        "Can I pay by card?"
       ],
-      "why": "Czech has two ways to say 25: dvacet pět and pětadvacet. Both are common. After numbers from five, use the genitive plural: korun.",
+      "optionsLang": "en",
+      "answers": [
+        "twenty-five crowns"
+      ],
       "hints": [
         {
-          "wrong": "{dvacet pět|pětadvacet} koruny",
-          "explain": "koruny is used after 2–4. After 25 (any number from five up), use korun."
+          "wrong": "How much is it?",
+          "explain": "That one is “Kolik to stojí?”."
+        },
+        {
+          "wrong": "Can I pay by card?",
+          "explain": "That one is “Můžu zaplatit kartou?”."
         }
       ],
+      "why": "Czech has two ways to say 25: dvacet pět and pětadvacet. Both are common. After numbers from five, use the genitive plural: korun.",
       "skills": [
         "case:genitive",
         "vocab:v-koruna"

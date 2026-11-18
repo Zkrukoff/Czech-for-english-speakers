@@ -213,6 +213,42 @@
       "nativeReviewed": false
     },
     {
+      "id": "u03-l04-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "timetable",
+        "lines": [
+          "Brno   10:30   nástupiště 5",
+          "Praha   11:15   nástupiště 2"
+        ]
+      },
+      "prompt": "Which platform does the Brno train leave from?",
+      "options": [
+        "Platform 5",
+        "Platform 2",
+        "Platform 10"
+      ],
+      "answers": [
+        "Platform 5"
+      ],
+      "hints": [
+        {
+          "wrong": "Platform 2",
+          "explain": "Platform 2 is for Praha. Brno is nástupiště 5."
+        },
+        {
+          "wrong": "Platform 10",
+          "explain": "10:30 is the time; the platform (nástupiště) is 5."
+        }
+      ],
+      "why": "Brno, 10:30, nástupiště 5: platform 5.",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l04-bld1",
       "type": "buildSentence",
       "prompt": "Do I have to change in Brno?",
@@ -410,23 +446,29 @@
     },
     {
       "id": "u03-l04-e8",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "When does the next train to Brno leave?",
-      "answers": [
-        "{Kdy|V kolik} {jede|odjíždí} {nejbližší|další|příští} vlak do Brna?"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Kdy jede nejbližší vlak do Brna?",
+      "options": [
+        "When does the next train to Brno leave?",
+        "One ticket to Prague, please.",
+        "Do I have to change?"
       ],
-      "why": "Vehicles use jet / odjíždět: Kdy jede vlak? do + genitive: do Brna.",
+      "optionsLang": "en",
+      "answers": [
+        "When does the next train to Brno leave?"
+      ],
       "hints": [
         {
-          "wrong": "{Kdy|V kolik} {jede|odjíždí} {nejbližší|další|příští} vlak do Brno?",
-          "explain": "do takes the genitive: do Brna."
+          "wrong": "One ticket to Prague, please.",
+          "explain": "That one is “Jednu jízdenku do Prahy, prosím.”."
         },
         {
-          "wrong": "{Kdy|V kolik} {jde|odchází} {nejbližší|další|příští} vlak do Brna?",
-          "explain": "Trains use the vehicle verbs: vlak jede / odjíždí."
+          "wrong": "Do I have to change?",
+          "explain": "That one is “Musím přestupovat?”."
         }
       ],
+      "why": "Vehicles use jet / odjíždět: Kdy jede vlak? do + genitive: do Brna.",
       "skills": [
         "verb:motion",
         "case:genitive",

@@ -219,6 +219,41 @@
       "nativeReviewed": false
     },
     {
+      "id": "u03-l03-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Promiň, jsem ještě v tramvaji. Budu tam za deset minut. Klára"
+        ]
+      },
+      "prompt": "When will Klára arrive?",
+      "options": [
+        "In ten minutes",
+        "In two minutes",
+        "She isn't coming"
+      ],
+      "answers": [
+        "In ten minutes"
+      ],
+      "hints": [
+        {
+          "wrong": "In two minutes",
+          "explain": "\"Za deset minut\" is in ten minutes (deset = 10)."
+        },
+        {
+          "wrong": "She isn't coming",
+          "explain": "\"Budu tam\" means \"I'll be there\", in ten minutes."
+        }
+      ],
+      "why": "\"Sorry, I'm still on the tram. I'll be there in ten minutes. Klára\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l03-bld1",
       "type": "buildSentence",
       "prompt": "I'm still on the tram.",
@@ -417,19 +452,29 @@
     },
     {
       "id": "u03-l03-e7",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "I'm waiting in the square.",
-      "answers": [
-        "Čekám na náměstí[.]"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Čekám na náměstí.",
+      "options": [
+        "I'm waiting in the square.",
+        "I live in Prague.",
+        "I'm at home."
       ],
-      "why": "Open spaces like squares and streets take na, not v: na náměstí, na ulici.",
+      "optionsLang": "en",
+      "answers": [
+        "I'm waiting in the square."
+      ],
       "hints": [
         {
-          "wrong": "Čekám v náměstí[.]",
-          "explain": "Squares take na: na náměstí."
+          "wrong": "I live in Prague.",
+          "explain": "That one is “Bydlím v Praze.”."
+        },
+        {
+          "wrong": "I'm at home.",
+          "explain": "That one is “Já jsem doma.”."
         }
       ],
+      "why": "Open spaces like squares and streets take na, not v: na náměstí, na ulici.",
       "skills": [
         "case:locative",
         "vocab:v-namesti",

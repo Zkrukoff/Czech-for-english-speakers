@@ -241,6 +241,41 @@
       "nativeReviewed": false
     },
     {
+      "id": "u01-l03-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Jsem Sam, jsem z Anglie. Bydlím v Praze a pracuju z domu."
+        ]
+      },
+      "prompt": "Where does Sam work?",
+      "options": [
+        "From home",
+        "In England",
+        "In Brno"
+      ],
+      "answers": [
+        "From home"
+      ],
+      "hints": [
+        {
+          "wrong": "In England",
+          "explain": "He's from England (\"z Anglie\"), but works \"z domu\", from home."
+        },
+        {
+          "wrong": "In Brno",
+          "explain": "Brno isn't mentioned: he lives in Prague and works from home."
+        }
+      ],
+      "why": "\"I'm Sam, I'm from England. I live in Prague and work from home.\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u01-l03-bld1",
       "type": "buildSentence",
       "prompt": "I'm a teacher. (a woman says)",
@@ -421,23 +456,29 @@
     },
     {
       "id": "u01-l03-e7",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "I live in Prague, but I'm from Brno.",
-      "answers": [
-        "Bydlím v Praze, ale {jsem|pocházím} z Brna."
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Bydlím v Praze, ale jsem z Brna.",
+      "options": [
+        "I live in Prague, but I'm from Brno.",
+        "Where are you from? (informal)",
+        "I'm a teacher. (a woman speaking)"
       ],
-      "why": "Use v + locative for where you live (v Praze) and z + genitive for where you're from (z Brna).",
+      "optionsLang": "en",
+      "answers": [
+        "I live in Prague, but I'm from Brno."
+      ],
       "hints": [
         {
-          "wrong": "Bydlím v Praze, ale {jsem|pocházím} z Brno.",
-          "explain": "After z (from), use the genitive: Brno → z Brna."
+          "wrong": "Where are you from? (informal)",
+          "explain": "That one is “Odkud jsi ty?”."
         },
         {
-          "wrong": "Bydlím v Praha, ale {jsem|pocházím} z Brna.",
-          "explain": "After v (in), the noun changes too: Praha → v Praze. You'll practise this in unit 3."
+          "wrong": "I'm a teacher. (a woman speaking)",
+          "explain": "That one is “Já jsem učitelka.”."
         }
       ],
+      "why": "Use v + locative for where you live (v Praze) and z + genitive for where you're from (z Brna).",
       "skills": [
         "case:genitive",
         "case:locative",

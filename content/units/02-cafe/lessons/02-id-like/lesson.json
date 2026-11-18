@@ -248,6 +248,45 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l02-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "menu",
+        "lines": [
+          "Polévka",
+          "Smažený sýr, hranolky",
+          "Řízek, brambory",
+          "Guláš, knedlík"
+        ],
+        "title": "Polední menu"
+      },
+      "prompt": "Which dish comes with chips?",
+      "options": [
+        "The fried cheese",
+        "The schnitzel",
+        "The goulash"
+      ],
+      "answers": [
+        "The fried cheese"
+      ],
+      "hints": [
+        {
+          "wrong": "The schnitzel",
+          "explain": "The schnitzel (řízek) comes with potatoes (brambory). Chips are hranolky."
+        },
+        {
+          "wrong": "The goulash",
+          "explain": "The goulash comes with a dumpling (knedlík)."
+        }
+      ],
+      "why": "Smažený sýr, hranolky: fried cheese with chips.",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l02-bld1",
       "type": "buildSentence",
       "prompt": "I'd like the goulash soup. (a woman says)",

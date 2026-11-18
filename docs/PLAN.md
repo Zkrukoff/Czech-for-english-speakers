@@ -1032,6 +1032,15 @@ practice, with more reading for meaning.
     3.5 s on Lighthouse's slow 4G profile.
   - The offline cache still holds everything.
 
+### 8.2a P3 as built
+
+The 14 "direction swaps" became **recognition multiple choice** (read the
+Czech, pick its meaning; the other options are the lesson's other sentences),
+not typed Czech → English. Typed English has too many correct phrasings to
+check reliably. Same ids, so review history stays. Line A is now 241
+exercises, of which 42 (17%) are English → Czech; a test keeps it at or
+below 20%.
+
 ### 8.4a I8 as built, and what it showed (18 Nov 2026)
 
 - **Built:** production loads content in a "trusted" mode that skips the

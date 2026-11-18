@@ -140,6 +140,41 @@
       "nativeReviewed": false
     },
     {
+      "id": "u05-l02-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Tome, můžeme si tykat. Já jsem Petra. Na zdraví!"
+        ]
+      },
+      "prompt": "What is Petra offering?",
+      "options": [
+        "To say ty to each other",
+        "To buy him a coffee",
+        "Her phone number"
+      ],
+      "answers": [
+        "To say ty to each other"
+      ],
+      "hints": [
+        {
+          "wrong": "To buy him a coffee",
+          "explain": "No coffee here: \"Můžeme si tykat\" means we can say ty."
+        },
+        {
+          "wrong": "Her phone number",
+          "explain": "She gives her first name, Petra, because they're switching to ty."
+        }
+      ],
+      "why": "\"Tom, we can say ty. I'm Petra. Cheers!\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u05-l02-bld1",
       "type": "buildSentence",
       "prompt": "We can say ty.",

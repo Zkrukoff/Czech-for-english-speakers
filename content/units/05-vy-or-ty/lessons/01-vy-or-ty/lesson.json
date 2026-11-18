@@ -186,6 +186,41 @@
       "nativeReviewed": false
     },
     {
+      "id": "u05-l01-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Dobrý den, jsem Kovářová. Vedu účetní oddělení. Kdyby něco, přijďte za mnou."
+        ]
+      },
+      "prompt": "Is she saying vy or ty to you?",
+      "options": [
+        "Vy (polite)",
+        "Ty (informal)",
+        "You can't tell"
+      ],
+      "answers": [
+        "Vy (polite)"
+      ],
+      "hints": [
+        {
+          "wrong": "Ty (informal)",
+          "explain": "\"Přijďte\" ends in -te: that's the vy form. With ty it would be \"přijď\"."
+        },
+        {
+          "wrong": "You can't tell",
+          "explain": "\"Přijďte\" (with -te) shows it: vy."
+        }
+      ],
+      "why": "\"Hello, I'm Kovářová. I run the accounts department. If you need anything, come and find me.\" Přijďte = vy.",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u05-l01-bld1",
       "type": "buildSentence",
       "prompt": "Do you want a coffee? (to a friend)",

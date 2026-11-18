@@ -238,6 +238,41 @@
       "nativeReviewed": false
     },
     {
+      "id": "u01-l01-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Ahoj Jano, jak se máš? Dobře, díky. Měj se! Daniel"
+        ]
+      },
+      "prompt": "Who wrote this, and how is he?",
+      "options": [
+        "Daniel; he's fine",
+        "Jana; she's fine",
+        "Daniel; he's not well"
+      ],
+      "answers": [
+        "Daniel; he's fine"
+      ],
+      "hints": [
+        {
+          "wrong": "Jana; she's fine",
+          "explain": "It's signed Daniel; he's writing to Jana (\"Jano\" is how you call her). \"Dobře, díky\" = fine, thanks."
+        },
+        {
+          "wrong": "Daniel; he's not well",
+          "explain": "\"Dobře, díky\" means \"fine, thanks\"."
+        }
+      ],
+      "why": "\"Hi Jana, how are you? Fine, thanks. Take care! Daniel\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u01-l01-e1",
       "type": "translate",
       "direction": "en-cs",
@@ -304,19 +339,29 @@
     },
     {
       "id": "u01-l01-e4",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "How are you? (to your boss)",
-      "answers": [
-        "Jak se máte?"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Jak se máte?",
+      "options": [
+        "How are you? (to your boss)",
+        "Hello! (to a shop assistant)",
+        "Hi! (to a friend)"
       ],
-      "why": "To your boss, or anyone you'd call pan or paní, use vy: Jak se máte?",
+      "optionsLang": "en",
+      "answers": [
+        "How are you? (to your boss)"
+      ],
       "hints": [
         {
-          "wrong": "Jak se máš?",
-          "explain": "That's the informal ty form. Your boss gets vy: Jak se máte?"
+          "wrong": "Hello! (to a shop assistant)",
+          "explain": "That one is “Dobrý den!”."
+        },
+        {
+          "wrong": "Hi! (to a friend)",
+          "explain": "That one is “Ahoj!”."
         }
       ],
+      "why": "To your boss, or anyone you'd call pan or paní, use vy: Jak se máte?",
       "skills": [
         "verb:irregulars",
         "vocab:v-jak-se-mas"

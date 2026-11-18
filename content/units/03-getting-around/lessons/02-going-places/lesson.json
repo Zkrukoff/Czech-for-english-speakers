@@ -246,6 +246,41 @@
       "nativeReviewed": false
     },
     {
+      "id": "u03-l02-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Ahoj, jedu na víkend do Olomouce. Jedu vlakem. Jakub"
+        ]
+      },
+      "prompt": "How is Jakub travelling?",
+      "options": [
+        "By train",
+        "By bus",
+        "On foot"
+      ],
+      "answers": [
+        "By train"
+      ],
+      "hints": [
+        {
+          "wrong": "By bus",
+          "explain": "A bus would be \"autobusem\". \"Vlakem\" is by train."
+        },
+        {
+          "wrong": "On foot",
+          "explain": "On foot is \"pěšky\". He goes \"vlakem\", by train."
+        }
+      ],
+      "why": "\"Hi, I'm going to Olomouc for the weekend. I'm going by train. Jakub\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u03-l02-bld1",
       "type": "buildSentence",
       "prompt": "I'm going to Olomouc for the weekend.",
@@ -455,23 +490,29 @@
     },
     {
       "id": "u03-l02-e8",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "I go to work by bus. (every day)",
-      "answers": [
-        "{Jezdím do práce autobusem|Jezdím autobusem do práce|Do práce jezdím autobusem}[.]"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Jezdím do práce autobusem.",
+      "options": [
+        "I go to work by bus. (every day)",
+        "I'm going to Brno by train.",
+        "I'm going home. (on foot)"
       ],
-      "why": "For habits, use the indeterminate verb: jezdit (by vehicle) or chodit (on foot). do práce = to work (genitive).",
+      "optionsLang": "en",
+      "answers": [
+        "I go to work by bus. (every day)"
+      ],
       "hints": [
         {
-          "wrong": "{Jedu do práce autobusem|Jedu autobusem do práce|Do práce jedu autobusem}[.]",
-          "explain": "Jedu describes one trip (I'm going now). For a regular habit, use jezdit: Jezdím do práce autobusem."
+          "wrong": "I'm going to Brno by train.",
+          "explain": "That one is “Jedu do Brna vlakem.”."
         },
         {
-          "wrong": "{Chodím do práce autobusem|Chodím autobusem do práce|Do práce chodím autobusem}[.]",
-          "explain": "chodit is for going on foot. By bus, the habitual verb is jezdit."
+          "wrong": "I'm going home. (on foot)",
+          "explain": "That one is “Jdu domů.”."
         }
       ],
+      "why": "For habits, use the indeterminate verb: jezdit (by vehicle) or chodit (on foot). do práce = to work (genitive).",
       "skills": [
         "verb:motion",
         "case:instrumental",

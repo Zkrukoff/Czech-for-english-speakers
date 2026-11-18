@@ -178,6 +178,44 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l01-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "menu",
+        "lines": [
+          "káva 55 Kč",
+          "čaj 45 Kč",
+          "voda 30 Kč",
+          "pivo 50 Kč"
+        ]
+      },
+      "prompt": "Which is the cheapest?",
+      "options": [
+        "Water",
+        "Tea",
+        "Beer"
+      ],
+      "answers": [
+        "Water"
+      ],
+      "hints": [
+        {
+          "wrong": "Tea",
+          "explain": "Tea (čaj) is 45 Kč; water (voda) is 30."
+        },
+        {
+          "wrong": "Beer",
+          "explain": "Beer (pivo) is 50 Kč; water is 30."
+        }
+      ],
+      "why": "Voda (water) is 30 Kč, the cheapest.",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l01-bld1",
       "type": "buildSentence",
       "prompt": "I'll have a coffee, please.",

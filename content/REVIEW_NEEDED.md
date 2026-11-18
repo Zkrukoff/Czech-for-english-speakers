@@ -317,3 +317,10 @@ check first. When an item is confirmed or corrected, remove it here and set
 | grammar/overview/word-order.md | The whole page: topic–focus examples (*V Brně bydlí Petr*, *Kávu si dám, ale bez mléka*), the clitic order, the traps | Accurate and natural? Is the clitic order stated correctly for A1 (jsem/bych → se/si → dative → accusative)? |
 | 34 sentence-building items (`<lesson>-bld1/2`) | Accepted orders, e.g. *Sarah se jmenuju*, *Kávu si dám, prosím*, *Řízek bych si dal*, *Pomáhají mi kolegové* | Are all accepted orders really grammatical, and are any natural orders missing? |
 | hints | Wrong orders flagged: *se jmenuju Sarah*, *už vidím ho*, *koupil si jsem…*, *kolik je jim* | Are these really wrong (not just unusual)? *Kolik je jim?* in particular. |
+
+## Round 3 · P3 Reading and recognition
+
+| Where | Text | Question |
+|---|---|---|
+| 18 readings (`<lesson>-read1`) | Short messages, menus, a receipt and a timetable built from each lesson's words, e.g. *Lékárna je vedle banky. Jděte rovně a pak doleva. Je to blízko.* | Natural as real messages and signs? |
+| 14 recognition items (former English → Czech, same ids) | The Czech now shown, e.g. *Tomáši, počkej!*, *Můžu zaplatit stravenkami?*, *Jezdím do práce autobusem.* | Natural on their own, out of the exercise? |

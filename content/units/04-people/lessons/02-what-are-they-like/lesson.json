@@ -214,6 +214,41 @@
       "nativeReviewed": false
     },
     {
+      "id": "u04-l02-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Moje nová práce je super. Kolegové jsou milí. Šéf je trochu přísný, ale spravedlivý."
+        ]
+      },
+      "prompt": "What is the boss like?",
+      "options": [
+        "A bit strict, but fair",
+        "Very lazy",
+        "Funny and nice"
+      ],
+      "answers": [
+        "A bit strict, but fair"
+      ],
+      "hints": [
+        {
+          "wrong": "Very lazy",
+          "explain": "Lazy is \"líný\". The boss is \"přísný\", strict, but \"spravedlivý\", fair."
+        },
+        {
+          "wrong": "Funny and nice",
+          "explain": "\"Milí\" (nice) describes the colleagues. The boss is strict but fair."
+        }
+      ],
+      "why": "\"My new job is great. My colleagues are nice. The boss is a bit strict, but fair.\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u04-l02-bld1",
       "type": "buildSentence",
       "prompt": "How do you like the new job?",
@@ -382,27 +417,29 @@
     },
     {
       "id": "u04-l02-e6",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "My colleagues are nice. (a mixed team)",
-      "answers": [
-        "{Moji|Mí} kolegové jsou {milí|moc milí|sympatičtí}[.]"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Moji kolegové jsou milí.",
+      "options": [
+        "My colleagues are nice. (a mixed team)",
+        "What's your boss like? (informal; a male boss)",
+        "He's very funny."
       ],
-      "why": "Masculine animate plural: kolegové, with adjectives in -í (milí). sympatický → sympatičtí.",
+      "optionsLang": "en",
+      "answers": [
+        "My colleagues are nice. (a mixed team)"
+      ],
       "hints": [
         {
-          "wrong": "{Moji|Mí} kolegové jsou milý[.]",
-          "explain": "milý is singular. With kolegové use the plural: milí."
+          "wrong": "What's your boss like? (informal; a male boss)",
+          "explain": "That one is “Jaký je tvůj šéf?”."
         },
         {
-          "wrong": "{Moji|Mí} kolegové jsou milé[.]",
-          "explain": "milé is for women or things. For a mixed group (kolegové): milí."
-        },
-        {
-          "wrong": "Moje kolegové jsou milí[.]",
-          "explain": "For masculine animate plurals, \"my\" is moji (or mí): moji kolegové."
+          "wrong": "He's very funny.",
+          "explain": "That one is “On je velmi vtipný.”."
         }
       ],
+      "why": "Masculine animate plural: kolegové, with adjectives in -í (milí). sympatický → sympatičtí.",
       "skills": [
         "case:nominative",
         "vocab:v-mily",

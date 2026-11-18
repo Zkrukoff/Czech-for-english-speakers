@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { ALPHABET_SKILL, CASES, CASE_KEYS, GRAMMAR_SKILLS, LISTENING_SKILL, WORD_ORDER_SKILL } from './taxonomy';
+import { ALPHABET_SKILL, CASES, CASE_KEYS, GRAMMAR_SKILLS, LISTENING_SKILL, READING_SKILL, WORD_ORDER_SKILL } from './taxonomy';
 
 /**
  * Zod schemas for everything in /content. These are the source of truth for
@@ -14,8 +14,8 @@ const id = z.string().regex(/^[a-z0-9][a-z0-9-]*$/, 'ids use lowercase letters, 
 
 export const SkillTagSchema = z
   .string()
-  .refine((s) => GRAMMAR_SKILLS.includes(s) || s === ALPHABET_SKILL || s === LISTENING_SKILL || s === WORD_ORDER_SKILL || /^(vocab|guide):[a-z0-9-]+$/.test(s), {
-    message: 'skill must be case:<case>, verb:<topic>, vocab:<vocabId>, guide:<guideId>, alphabet, listening or word-order',
+  .refine((s) => GRAMMAR_SKILLS.includes(s) || s === ALPHABET_SKILL || s === LISTENING_SKILL || s === WORD_ORDER_SKILL || s === READING_SKILL || /^(vocab|guide):[a-z0-9-]+$/.test(s), {
+    message: 'skill must be case:<case>, verb:<topic>, vocab:<vocabId>, guide:<guideId>, alphabet, listening, reading or word-order',
   });
 
 export const SpokenFormSchema = z.object({

@@ -219,6 +219,41 @@
       "nativeReviewed": false
     },
     {
+      "id": "u02-l04-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Zaplatíme dohromady, nebo zvlášť? Tom"
+        ]
+      },
+      "prompt": "What does Tom want to know?",
+      "options": [
+        "Whether to pay together or separately",
+        "Whether the food was good",
+        "How big the tip should be"
+      ],
+      "answers": [
+        "Whether to pay together or separately"
+      ],
+      "hints": [
+        {
+          "wrong": "Whether the food was good",
+          "explain": "That would be \"Chutnalo ti?\". Tom asks about paying: dohromady, nebo zvlášť."
+        },
+        {
+          "wrong": "How big the tip should be",
+          "explain": "The tip (spropitné) isn't mentioned."
+        }
+      ],
+      "why": "\"Shall we pay together or separately? Tom\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u02-l04-bld1",
       "type": "buildSentence",
       "prompt": "It was excellent.",
@@ -430,24 +465,29 @@
     },
     {
       "id": "u02-l04-e9",
-      "type": "translate",
-      "direction": "en-cs",
-      "prompt": "Can I pay with meal vouchers?",
-      "answers": [
-        "{Můžu|Mohu} [za]platit {stravenkami|stravenkou|stravenkovou kartou}?",
-        "Berete stravenky?"
+      "type": "multipleChoice",
+      "prompt": "What does this mean?",
+      "cs": "Můžu zaplatit stravenkami?",
+      "options": [
+        "Can I pay with meal vouchers?",
+        "We'd like to pay, please.",
+        "Together or separately?"
       ],
-      "why": "The means of payment is the bare instrumental: stravenka → stravenkou (one), stravenkami (several). A meal card: stravenkovou kartou. You can also ask Berete stravenky? (Do you take meal vouchers?)",
+      "optionsLang": "en",
+      "answers": [
+        "Can I pay with meal vouchers?"
+      ],
       "hints": [
         {
-          "wrong": "{Můžu|Mohu} [za]platit {se stravenkami|s stravenkami|se stravenkou|s stravenkou}?",
-          "explain": "Use the bare instrumental, without s/se: stravenkami."
+          "wrong": "We'd like to pay, please.",
+          "explain": "That one is “Zaplatíme, prosím.”."
         },
         {
-          "wrong": "{Můžu|Mohu} [za]platit stravenky?",
-          "explain": "stravenky is the plural nominative/accusative. \"With vouchers\" is the instrumental: stravenkami."
+          "wrong": "Together or separately?",
+          "explain": "That one is “Dohromady, nebo zvlášť?”."
         }
       ],
+      "why": "The means of payment is the bare instrumental: stravenka → stravenkou (one), stravenkami (several). A meal card: stravenkovou kartou. You can also ask Berete stravenky? (Do you take meal vouchers?)",
       "skills": [
         "case:instrumental",
         "vocab:v-stravenka"

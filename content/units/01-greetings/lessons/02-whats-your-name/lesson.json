@@ -237,6 +237,41 @@
       "nativeReviewed": false
     },
     {
+      "id": "u01-l02-read1",
+      "type": "readReal",
+      "realia": {
+        "kind": "message",
+        "lines": [
+          "Ahoj, já jsem Emma. Jsem tady nová. Těší mě!"
+        ]
+      },
+      "prompt": "What does Emma tell you?",
+      "options": [
+        "She's new here",
+        "She's from England",
+        "She's your boss"
+      ],
+      "answers": [
+        "She's new here"
+      ],
+      "hints": [
+        {
+          "wrong": "She's from England",
+          "explain": "She doesn't say where she's from: \"Jsem tady nová\" means she's new here."
+        },
+        {
+          "wrong": "She's your boss",
+          "explain": "\"Nová\" means new: she's new here."
+        }
+      ],
+      "why": "\"Hi, I'm Emma. I'm new here. Nice to meet you!\"",
+      "answerLang": "en",
+      "skills": [
+        "reading"
+      ],
+      "nativeReviewed": false
+    },
+    {
       "id": "u01-l02-bld1",
       "type": "buildSentence",
       "prompt": "My name is Sarah.",
