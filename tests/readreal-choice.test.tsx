@@ -13,7 +13,7 @@ const exit = g.practice.flatMap((s) => s.exercises).find((e) => e.id === 'tr-rea
 
 describe('A sign-reading question with options', () => {
   it('shows the sign and the choices, with no text box, and explains a wrong pick', async () => {
-    render(<MemoryRouter><ExerciseRunner exercises={[exit]} context="guide" onAnswer={() => {}} /></MemoryRouter>);
+    render(<MemoryRouter><ExerciseRunner exercises={[exit]} context="guide" retryMissed={false} onAnswer={() => {}} onFinish={() => {}} /></MemoryRouter>);
     expect(screen.getByText('VÝSTUP')).toBeTruthy();
     expect(screen.queryByRole('textbox')).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'The entrance' }));
