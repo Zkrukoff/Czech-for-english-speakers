@@ -387,6 +387,62 @@
         "vocab:v-kdy"
       ],
       "nativeReviewed": false
+    },
+    {
+      "id": "u03-l04-asp1",
+      "type": "aspectChoice",
+      "prompt": "Jízdenku vždycky ___ na nádraží.",
+      "options": [
+        "kupuju",
+        "koupím"
+      ],
+      "verbs": [
+        "kupovat",
+        "koupit"
+      ],
+      "answers": [
+        "kupuju"
+      ],
+      "en": "I always buy my ticket at the station.",
+      "why": "Vždycky: a habit, so the imperfective kupovat → kupuju.",
+      "hints": [
+        {
+          "wrong": "koupím",
+          "explain": "Koupím is \"I'll buy\" once. Always: kupuju."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l04-asp2",
+      "type": "aspectChoice",
+      "prompt": "Ten vlak ___ každou hodinu.",
+      "options": [
+        "odjíždí",
+        "odjede"
+      ],
+      "verbs": [
+        "odjíždět",
+        "odjet"
+      ],
+      "answers": [
+        "odjíždí"
+      ],
+      "en": "That train leaves every hour.",
+      "why": "Každou hodinu (every hour) is repeated: the imperfective odjíždět → odjíždí.",
+      "hints": [
+        {
+          "wrong": "odjede",
+          "explain": "Odjede is \"it will leave\", one departure. Every hour: odjíždí."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
     }
   ]
 }

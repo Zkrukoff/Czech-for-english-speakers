@@ -302,3 +302,10 @@ check first. When an item is confirmed or corrected, remove it here and set
 | phrases | *Vystupujete?* (ours) | Is this what you say to get past someone to the door? |
 | phrases | *Platím hotově.*, *Zaplatíme, prosím.*, *Je byt ještě volný?* | Natural? |
 | situation names | *Když nerozumíte, Kavárna a pekárna, Placení, V práci, Telefon, U lékaře a v lékárně, Doprava, Byt* | Natural titles? |
+
+## Round 3 · P6 Aspect pairs
+
+| Where | Text | Question |
+|---|---|---|
+| 12 aspect items (`<lesson>-asp1/2`) in u02-l01, u02-l02, u02-l04, u03-l03, u03-l04, u04-l02 | e.g. *Ráno si vždycky dávám kávu.* / *Co si dáte?*, *Už jsem to snědl.*, *Ten vlak odjíždí každou hodinu.*, *Pomůžeš mi?* | Natural? Is the other form really wrong in each context (or only less likely)? |
+| aspect explanations | "habit or process → imperfective; one completed result → perfective" in each item | Fair simplification for A1? |

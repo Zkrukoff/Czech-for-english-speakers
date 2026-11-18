@@ -313,6 +313,62 @@
         "vocab:v-pivo"
       ],
       "nativeReviewed": false
+    },
+    {
+      "id": "u02-l01-asp1",
+      "type": "aspectChoice",
+      "prompt": "Ráno si vždycky ___ kávu s mlékem.",
+      "options": [
+        "dávám",
+        "dám"
+      ],
+      "verbs": [
+        "dávat",
+        "dát"
+      ],
+      "answers": [
+        "dávám"
+      ],
+      "en": "In the morning I always have a coffee with milk.",
+      "why": "Vždycky (always) makes it a habit, so the imperfective: dávat → dávám.",
+      "hints": [
+        {
+          "wrong": "dám",
+          "explain": "Dám si is one particular coffee, now or next. With vždycky it's a habit: dávám."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l01-asp2",
+      "type": "aspectChoice",
+      "prompt": "Co si ___? Kávu, nebo čaj?",
+      "options": [
+        "dáváte",
+        "dáte"
+      ],
+      "verbs": [
+        "dávat",
+        "dát"
+      ],
+      "answers": [
+        "dáte"
+      ],
+      "en": "What will you have? Coffee or tea?",
+      "why": "One order, right now: the perfective dát → dáte. Its present form points to what happens next.",
+      "hints": [
+        {
+          "wrong": "dáváte",
+          "explain": "Dáváte si…? would ask what you usually have. The waiter means this one order: dáte."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
     }
   ]
 }

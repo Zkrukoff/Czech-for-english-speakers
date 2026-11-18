@@ -411,6 +411,62 @@
         "case:nominative"
       ],
       "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-asp1",
+      "type": "aspectChoice",
+      "prompt": "Kolegové mi ___ s češtinou.",
+      "options": [
+        "pomáhají",
+        "pomůžou"
+      ],
+      "verbs": [
+        "pomáhat",
+        "pomoct"
+      ],
+      "answers": [
+        "pomáhají"
+      ],
+      "en": "My colleagues help me with my Czech.",
+      "why": "They do it regularly: the imperfective pomáhat → pomáhají.",
+      "hints": [
+        {
+          "wrong": "pomůžou",
+          "explain": "Pomůžou is \"they will help\" once. Regularly: pomáhají."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u04-l02-asp2",
+      "type": "aspectChoice",
+      "prompt": "Nevím, jak to udělat. ___ mi?",
+      "options": [
+        "Pomáháš",
+        "Pomůžeš"
+      ],
+      "verbs": [
+        "pomáhat",
+        "pomoct"
+      ],
+      "answers": [
+        "Pomůžeš"
+      ],
+      "en": "I don't know how to do it. Will you help me?",
+      "why": "Asking for help with this one thing: the perfective pomoct → pomůžeš.",
+      "hints": [
+        {
+          "wrong": "Pomáháš",
+          "explain": "Pomáháš mi? is \"are you helping me / do you help me?\". Asking for one-off help: Pomůžeš mi?"
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
     }
   ]
 }

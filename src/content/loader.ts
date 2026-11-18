@@ -375,6 +375,12 @@ export function loadContent(files: ContentFiles, options: { validate?: boolean }
       };
       for (const v of data.vocab) {
         claimId('vocab', v.id, lessonPath);
+        // P6: verbs show their aspect partner from verbs.json, so pairs are learned as pairs.
+        const verb = course.verbsByLemma.get(v.cs);
+        if (verb && verb.partner.length) {
+          if (!v.partner) v.partner = verb.partner.join(' / ');
+          if (!v.aspect) v.aspect = verb.aspect;
+        }
         course.vocabById.set(v.id, { item: v, lessonId: data.id });
       }
       for (const ex of data.exercises) {

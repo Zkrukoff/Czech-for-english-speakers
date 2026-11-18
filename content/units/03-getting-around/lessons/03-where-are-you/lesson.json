@@ -410,6 +410,62 @@
         "verb:aspect"
       ],
       "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-asp1",
+      "type": "aspectChoice",
+      "prompt": "___ v kavárně na náměstí.",
+      "options": [
+        "Čekám",
+        "Počkám"
+      ],
+      "verbs": [
+        "čekat",
+        "počkat"
+      ],
+      "answers": [
+        "Čekám"
+      ],
+      "en": "I'm waiting in the café on the square.",
+      "why": "Happening now, in progress: the imperfective čekat → čekám.",
+      "hints": [
+        {
+          "wrong": "Počkám",
+          "explain": "Počkám is \"I'll wait\", a promise about what you'll do. Right now: čekám."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u03-l03-asp2",
+      "type": "aspectChoice",
+      "prompt": "Dobře, ___ venku.",
+      "options": [
+        "čekám",
+        "počkám"
+      ],
+      "verbs": [
+        "čekat",
+        "počkat"
+      ],
+      "answers": [
+        "počkám"
+      ],
+      "en": "OK, I'll wait outside.",
+      "why": "A promise about what you'll do next: the perfective počkat → počkám (its present form means the future).",
+      "hints": [
+        {
+          "wrong": "čekám",
+          "explain": "Čekám is \"I'm waiting\" right now. Promising to wait: počkám."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
     }
   ]
 }

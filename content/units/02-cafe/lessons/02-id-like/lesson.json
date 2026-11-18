@@ -435,6 +435,62 @@
         "case:accusative"
       ],
       "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-asp1",
+      "type": "aspectChoice",
+      "prompt": "Každý den ___ k obědu polévku.",
+      "options": [
+        "jím",
+        "sním"
+      ],
+      "verbs": [
+        "jíst",
+        "sníst"
+      ],
+      "answers": [
+        "jím"
+      ],
+      "en": "Every day I have soup for lunch.",
+      "why": "Každý den (every day) is a habit: imperfective jíst → jím.",
+      "hints": [
+        {
+          "wrong": "sním",
+          "explain": "Sním is \"I'll eat it up\", one finished meal. Every day: jím."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "u02-l02-asp2",
+      "type": "aspectChoice",
+      "prompt": "Už jsem to ___, děkuju.",
+      "options": [
+        "jedl",
+        "snědl"
+      ],
+      "verbs": [
+        "jíst",
+        "sníst"
+      ],
+      "answers": [
+        "snědl"
+      ],
+      "en": "I've already eaten it all, thanks.",
+      "why": "Finished, nothing left: the perfective sníst → snědl.",
+      "hints": [
+        {
+          "wrong": "jedl",
+          "explain": "Jedl jsem is \"I was eating / I ate\" (the activity). Eaten it all up: snědl."
+        }
+      ],
+      "skills": [
+        "verb:aspect"
+      ],
+      "nativeReviewed": false
     }
   ]
 }
