@@ -519,6 +519,123 @@
       "gender": "f",
       "rank": 12759,
       "nativeReviewed": false
+    },
+    {
+      "id": "mikina",
+      "cs": "mikina",
+      "en": "sweatshirt, hoodie",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 13698,
+      "nativeReviewed": false
+    },
+    {
+      "id": "teplaky",
+      "cs": "tepláky",
+      "en": "tracksuit bottoms",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 14840,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kratasy",
+      "cs": "kraťasy",
+      "en": "shorts",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 21832,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tenisky",
+      "cs": "tenisky",
+      "en": "trainers",
+      "pos": "noun",
+      "note": "Plural",
+      "nativeReviewed": false
+    },
+    {
+      "id": "klobouk",
+      "cs": "klobouk",
+      "en": "hat",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2783,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prsten",
+      "cs": "prsten",
+      "en": "ring",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4664,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nausnice",
+      "cs": "náušnice",
+      "en": "earring",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 9557,
+      "nativeReviewed": false
+    },
+    {
+      "id": "latka",
+      "cs": "látka",
+      "en": "fabric, material",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 740,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyzkouset",
+      "cs": "vyzkoušet",
+      "en": "to try on; to try out",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1931,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sluset",
+      "cs": "slušet",
+      "en": "to suit",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Sluší ti to = It suits you.",
+      "rank": 4247,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obout-se",
+      "cs": "obout se",
+      "en": "to put your shoes on",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 13500,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zout-se",
+      "cs": "zout se",
+      "en": "to take your shoes off",
+      "pos": "verb",
+      "aspect": "pf",
+      "note": "Guests usually do, at home.",
+      "rank": 17920,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kostkovany",
+      "cs": "kostkovaný",
+      "en": "checked",
+      "pos": "adj",
+      "rank": 13977,
+      "nativeReviewed": false
     }
   ]
 }

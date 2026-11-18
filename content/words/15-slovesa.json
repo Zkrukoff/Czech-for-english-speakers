@@ -840,6 +840,425 @@
       "aspect": "impf",
       "rank": 735,
       "nativeReviewed": false
+    },
+    {
+      "id": "snazit-se",
+      "cs": "snažit se",
+      "en": "to try",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 200,
+      "example": {
+        "cs": "Snažím se mluvit česky.",
+        "en": "I'm trying to speak Czech."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dokazat",
+      "cs": "dokázat",
+      "en": "to manage (to do)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 155,
+      "example": {
+        "cs": "Dokázal jsem to!",
+        "en": "I did it!"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "patrit",
+      "cs": "patřit",
+      "en": "to belong",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 206,
+      "example": {
+        "cs": "Komu patří ten kufr?",
+        "en": "Whose suitcase is that?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "ziskat",
+      "cs": "získat",
+      "en": "to get, to gain",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 251,
+      "example": {
+        "cs": "Získal jsem trvalý pobyt.",
+        "en": "I got permanent residence."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "znamenat",
+      "cs": "znamenat",
+      "en": "to mean",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 260,
+      "example": {
+        "cs": "Co to znamená?",
+        "en": "What does it mean?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "podivat-se",
+      "cs": "podívat se",
+      "en": "to have a look",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "dívat se",
+      "rank": 281,
+      "example": {
+        "cs": "Můžu se podívat?",
+        "en": "May I have a look?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "rozhodnout-se",
+      "cs": "rozhodnout se",
+      "en": "to decide",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 290,
+      "example": {
+        "cs": "Rozhodl jsem se zůstat v Praze.",
+        "en": "I decided to stay in Prague."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "objevit",
+      "cs": "objevit",
+      "en": "to discover",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 301,
+      "example": {
+        "cs": "Objevili jsme hezkou kavárnu.",
+        "en": "We discovered a nice café."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zdat-se",
+      "cs": "zdát se",
+      "en": "to seem",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 333,
+      "example": {
+        "cs": "Zdá se mi, že prší.",
+        "en": "It seems to me it is raining."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "drzet",
+      "cs": "držet",
+      "en": "to hold",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 390,
+      "example": {
+        "cs": "Držte se, prosím.",
+        "en": "Hold on, please."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pouzivat",
+      "cs": "používat",
+      "en": "to use",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 405,
+      "example": {
+        "cs": "Používám mobilní aplikaci.",
+        "en": "I use a mobile app."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pouzit",
+      "cs": "použít",
+      "en": "to use",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 583,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sledovat",
+      "cs": "sledovat",
+      "en": "to watch, to follow",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 446,
+      "example": {
+        "cs": "Sleduju zprávy.",
+        "en": "I follow the news."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vytvorit",
+      "cs": "vytvořit",
+      "en": "to create",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 508,
+      "nativeReviewed": false
+    },
+    {
+      "id": "postavit",
+      "cs": "postavit",
+      "en": "to build; to put (upright)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 490,
+      "nativeReviewed": false
+    },
+    {
+      "id": "poznat",
+      "cs": "poznat",
+      "en": "to recognise; to get to know",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 553,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vybrat",
+      "cs": "vybrat",
+      "en": "to choose",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 602,
+      "nativeReviewed": false
+    },
+    {
+      "id": "uvidet",
+      "cs": "uvidět",
+      "en": "to see (catch sight of)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 604,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prinest",
+      "cs": "přinést",
+      "en": "to bring",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 613,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prestat",
+      "cs": "přestat",
+      "en": "to stop (doing)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 639,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vsimnout-si",
+      "cs": "všimnout si",
+      "en": "to notice",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 682,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pustit",
+      "cs": "pustit",
+      "en": "to let go; to put on (music)",
+      "pos": "verb",
+      "aspect": "pf",
+      "note": "Pusť to!",
+      "rank": 690,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hodit",
+      "cs": "hodit",
+      "en": "to throw",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 748,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zmizet",
+      "cs": "zmizet",
+      "en": "to disappear",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 753,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vracet-se",
+      "cs": "vracet se",
+      "en": "to come back",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 794,
+      "nativeReviewed": false
+    },
+    {
+      "id": "uvedomit-si",
+      "cs": "uvědomit si",
+      "en": "to realise",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 779,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dit-se",
+      "cs": "dít se",
+      "en": "to happen",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Co se děje? = What's going on?",
+      "rank": 789,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chybet",
+      "cs": "chybět",
+      "en": "to be missing",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "Chybíš mi = I miss you.",
+      "rank": 847,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stat-se",
+      "cs": "stát se",
+      "en": "to happen; to become",
+      "pos": "verb",
+      "aspect": "pf",
+      "note": "Co se stalo?",
+      "rank": 47,
+      "example": {
+        "cs": "Co se stalo?",
+        "en": "What happened?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "padat",
+      "cs": "padat",
+      "en": "to fall",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1818,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vzpominat",
+      "cs": "vzpomínat",
+      "en": "to remember, to reminisce",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 931,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vzpomenout-si",
+      "cs": "vzpomenout si",
+      "en": "to remember",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1216,
+      "nativeReviewed": false
+    },
+    {
+      "id": "premyslet",
+      "cs": "přemýšlet",
+      "en": "to think (about)",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1003,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stihnout",
+      "cs": "stihnout",
+      "en": "to make it (in time)",
+      "pos": "verb",
+      "aspect": "pf",
+      "note": "Stihneš vlak?",
+      "rank": 1964,
+      "nativeReviewed": false
+    },
+    {
+      "id": "posilat",
+      "cs": "posílat",
+      "en": "to send",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 2217,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ukazovat",
+      "cs": "ukazovat",
+      "en": "to show",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 715,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vypravet",
+      "cs": "vyprávět",
+      "en": "to tell (a story)",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 818,
+      "nativeReviewed": false
+    },
+    {
+      "id": "povidat",
+      "cs": "povídat",
+      "en": "to chat, to tell",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1116,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ozvat-se",
+      "cs": "ozvat se",
+      "en": "to get in touch",
+      "pos": "verb",
+      "aspect": "pf",
+      "note": "Ozvi se!",
+      "rank": 1115,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slibit",
+      "cs": "slíbit",
+      "en": "to promise",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 2135,
+      "nativeReviewed": false
     }
   ]
 }

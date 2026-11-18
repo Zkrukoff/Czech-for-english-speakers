@@ -1,0 +1,1342 @@
+{
+  "$comment": "A2 exam practice (round 3, step 4): our own tasks in the official formats of the new exam (NPI ČR, from 11 April 2026). The official model tests are linked from the app, never copied. Awaiting native review.",
+  "tasks": [
+    {
+      "id": "r1-practice1",
+      "part": "reading",
+      "task": 1,
+      "use": "practice1",
+      "title": "At the shops",
+      "kind": "match",
+      "instruction": "Podívejte se na obrázky 1–5 a vyberte ke každému obrázku jednu správnou informaci z nabídky A–H. Tři informace nebudete potřebovat.",
+      "instructionEn": "Look at pictures 1–5 and choose the one right notice for each from A–H. You won’t need three of them.",
+      "items": [
+        {
+          "id": "1",
+          "picture": "bread"
+        },
+        {
+          "id": "2",
+          "picture": "eggs"
+        },
+        {
+          "id": "3",
+          "picture": "coffee"
+        },
+        {
+          "id": "4",
+          "picture": "fish"
+        },
+        {
+          "id": "5",
+          "picture": "cake"
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Zelenina z Polska: mrkev 15 Kč/kg."
+        },
+        {
+          "id": "B",
+          "text": "Sýry z celé Evropy. Ochutnejte!"
+        },
+        {
+          "id": "C",
+          "text": "Čerstvé pečivo každé ráno od 6:00."
+        },
+        {
+          "id": "D",
+          "text": "Káva s sebou jen 39 Kč."
+        },
+        {
+          "id": "E",
+          "text": "Dorty na objednávku, i k narozeninám."
+        },
+        {
+          "id": "F",
+          "text": "Domácí vejce z farmy, 6 Kč za kus."
+        },
+        {
+          "id": "G",
+          "text": "Sleva 20 % na všechna vína."
+        },
+        {
+          "id": "H",
+          "text": "Dnes čerstvé ryby z jižních Čech."
+        }
+      ],
+      "answers": {
+        "1": "C",
+        "2": "F",
+        "3": "D",
+        "4": "H",
+        "5": "E"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "r1-practice2",
+      "part": "reading",
+      "task": 1,
+      "use": "practice2",
+      "title": "Travelling",
+      "kind": "match",
+      "instruction": "Podívejte se na obrázky 1–5 a vyberte ke každému obrázku jednu správnou informaci z nabídky A–H. Tři informace nebudete potřebovat.",
+      "instructionEn": "Look at pictures 1–5 and choose the one right notice for each from A–H. You won’t need three of them.",
+      "items": [
+        {
+          "id": "1",
+          "picture": "bike"
+        },
+        {
+          "id": "2",
+          "picture": "train"
+        },
+        {
+          "id": "3",
+          "picture": "suitcase"
+        },
+        {
+          "id": "4",
+          "picture": "umbrella"
+        },
+        {
+          "id": "5",
+          "picture": "key"
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Parkování aut jen pro hosty hotelu."
+        },
+        {
+          "id": "B",
+          "text": "Letenky do celého světa za dobré ceny."
+        },
+        {
+          "id": "C",
+          "text": "Ztratili jste klíče? Nové vám uděláme na počkání."
+        },
+        {
+          "id": "D",
+          "text": "Autobus číslo 119 jezdí na letiště každých 10 minut."
+        },
+        {
+          "id": "E",
+          "text": "Vlaky do Brna jezdí dnes z nástupiště 3."
+        },
+        {
+          "id": "F",
+          "text": "Prodej kufrů a tašek na cesty, sleva 30 %."
+        },
+        {
+          "id": "G",
+          "text": "Prší? Deštník si můžete půjčit na recepci."
+        },
+        {
+          "id": "H",
+          "text": "Půjčovna kol: první hodina zdarma."
+        }
+      ],
+      "answers": {
+        "1": "H",
+        "2": "E",
+        "3": "F",
+        "4": "G",
+        "5": "C"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "r1-mock1",
+      "part": "reading",
+      "task": 1,
+      "use": "mock1",
+      "title": "Health and home",
+      "kind": "match",
+      "instruction": "Podívejte se na obrázky 1–5 a vyberte ke každému obrázku jednu správnou informaci z nabídky A–H. Tři informace nebudete potřebovat.",
+      "instructionEn": "Look at pictures 1–5 and choose the one right notice for each from A–H. You won’t need three of them.",
+      "items": [
+        {
+          "id": "1",
+          "picture": "pill"
+        },
+        {
+          "id": "2",
+          "picture": "tooth"
+        },
+        {
+          "id": "3",
+          "picture": "house"
+        },
+        {
+          "id": "4",
+          "picture": "wrench"
+        },
+        {
+          "id": "5",
+          "picture": "dog"
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Pronajmu byt 2+kk v Holešovicích, 18 000 Kč měsíčně."
+        },
+        {
+          "id": "B",
+          "text": "Zubní ordinace MUDr. Novákové přijímá nové pacienty."
+        },
+        {
+          "id": "C",
+          "text": "Nemáte čas? Půjdeme na procházku s vaším psem."
+        },
+        {
+          "id": "D",
+          "text": "Prodám kolo, skoro nové, 3 000 Kč."
+        },
+        {
+          "id": "E",
+          "text": "Lékárna U Anděla: léky i bez receptu, otevřeno nonstop."
+        },
+        {
+          "id": "F",
+          "text": "Ordinace praktického lékaře je v pátek zavřená."
+        },
+        {
+          "id": "G",
+          "text": "Úklid bytů a kanceláří, 250 Kč za hodinu."
+        },
+        {
+          "id": "H",
+          "text": "Opravy praček a ledniček. Přijedeme ještě dnes."
+        }
+      ],
+      "answers": {
+        "1": "E",
+        "2": "B",
+        "3": "A",
+        "4": "H",
+        "5": "C"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "r1-mock2",
+      "part": "reading",
+      "task": 1,
+      "use": "mock2",
+      "title": "Free time",
+      "kind": "match",
+      "instruction": "Podívejte se na obrázky 1–5 a vyberte ke každému obrázku jednu správnou informaci z nabídky A–H. Tři informace nebudete potřebovat.",
+      "instructionEn": "Look at pictures 1–5 and choose the one right notice for each from A–H. You won’t need three of them.",
+      "items": [
+        {
+          "id": "1",
+          "picture": "film"
+        },
+        {
+          "id": "2",
+          "picture": "swimming"
+        },
+        {
+          "id": "3",
+          "picture": "museum"
+        },
+        {
+          "id": "4",
+          "picture": "ball"
+        },
+        {
+          "id": "5",
+          "picture": "flowers"
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Fotbal Sparta – Slavia, vstupenky od 300 Kč."
+        },
+        {
+          "id": "B",
+          "text": "Květinářství Jana: kytice k svátku i k narozeninám."
+        },
+        {
+          "id": "C",
+          "text": "Národní muzeum: v neděli vstup zdarma."
+        },
+        {
+          "id": "D",
+          "text": "Kino Lucerna: dnes večer český film s anglickými titulky."
+        },
+        {
+          "id": "E",
+          "text": "Koncert v kostele sv. Jakuba, vstupné dobrovolné."
+        },
+        {
+          "id": "F",
+          "text": "Bazén Podolí: v pondělí ráno plavou jen senioři."
+        },
+        {
+          "id": "G",
+          "text": "Divadlo pro děti každou sobotu v 10:00."
+        },
+        {
+          "id": "H",
+          "text": "Restaurace U Zlatého tygra: dnes guláš 189 Kč."
+        }
+      ],
+      "answers": {
+        "1": "D",
+        "2": "F",
+        "3": "C",
+        "4": "A",
+        "5": "B"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "r2-practice1",
+      "part": "reading",
+      "task": 2,
+      "use": "practice1",
+      "title": "A notice from the landlord",
+      "kind": "choice",
+      "instruction": "Přečtěte si text a úkoly 1–5. Vyberte ke každému úkolu jedno správné řešení z nabídky A–D.",
+      "instructionEn": "Read the text and questions 1–5. Choose the one right answer, A–D, for each.",
+      "text": "Vážení nájemníci,\n\nv úterý 14. 4. od 8:00 do 15:00 nepoteče v celém domě teplá voda. Opravujeme kotel ve sklepě. Studená voda poteče normálně. Prosíme, nepouštějte ten den pračku ani myčku.\n\nVe středu přijde technik zkontrolovat topení ve všech bytech. Pokud nebudete doma, napište prosím SMS správci domu, panu Dvořákovi, na číslo 603 245 118. Pan Dvořák bydlí v bytě číslo 4 a je doma každý den od 17 do 19 hodin.\n\nDěkujeme za pochopení.\nSpráva domu Korunní 12",
+      "questions": [
+        {
+          "q": "Kdy nepoteče teplá voda?",
+          "options": [
+            "V pondělí večer.",
+            "Ve středu celý den.",
+            "Celý týden.",
+            "V úterý od rána do odpoledne."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Proč nepoteče teplá voda?",
+          "options": [
+            "Uklízí se sklep.",
+            "Mění se okna.",
+            "Opravují pračky.",
+            "Opravují kotel."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Co nemají nájemníci v úterý dělat?",
+          "options": [
+            "Prát v pračce.",
+            "Chodit do sklepa.",
+            "Volat správci.",
+            "Používat studenou vodu."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Kde bydlí správce domu?",
+          "options": [
+            "V přízemí.",
+            "V bytě číslo 4.",
+            "Ve sklepě.",
+            "V jiném domě."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co mají nájemníci udělat, když ve středu nebudou doma?",
+          "options": [
+            "Přijít v pondělí.",
+            "Nechat klíč u souseda.",
+            "Napsat SMS.",
+            "Zavolat technikovi."
+          ],
+          "answer": 2
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "r2-practice2",
+      "part": "reading",
+      "task": 2,
+      "use": "practice2",
+      "title": "A letter from the nursery school",
+      "kind": "choice",
+      "instruction": "Přečtěte si text a úkoly 1–5. Vyberte ke každému úkolu jedno správné řešení z nabídky A–D.",
+      "instructionEn": "Read the text and questions 1–5. Choose the one right answer, A–D, for each.",
+      "text": "Milí rodiče,\n\nv pátek 22. 5. pojedeme s dětmi na výlet do zoo. Sraz je v 8:00 před školkou, vrátíme se ve 14:30. Pojedeme autobusem. Výlet stojí 250 Kč (vstupné a autobus). Peníze prosím dejte paní učitelce do středy.\n\nDěti budou mít oběd v restauraci v zoo. Svačinu a pití jim dejte s sebou do batohu. Když bude pršet, pojedeme v pondělí 25. 5. Děti, které nepojedou, budou ten den ve třídě paní Kubátové.\n\nDěkujeme,\nHana Malá, ředitelka školky Sluníčko",
+      "questions": [
+        {
+          "q": "Kam pojedou děti?",
+          "options": [
+            "Do zoo.",
+            "K řece.",
+            "Do muzea.",
+            "Na hrad."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Kdy se děti vrátí?",
+          "options": [
+            "Ve 12:00.",
+            "Ve 14:30.",
+            "V 8:00.",
+            "V 16:00."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co je v ceně 250 Kč?",
+          "options": [
+            "Jen oběd.",
+            "Oběd a svačina.",
+            "Batoh.",
+            "Vstupné a autobus."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Co mají rodiče dát dětem s sebou?",
+          "options": [
+            "Peníze na vstupné.",
+            "Svačinu a pití.",
+            "Oběd.",
+            "Deštník."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co se stane, když bude pršet?",
+          "options": [
+            "Pojedou vlakem.",
+            "Děti zůstanou doma.",
+            "Pojedou v pondělí.",
+            "Výlet nebude."
+          ],
+          "answer": 2
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "r2-mock1",
+      "part": "reading",
+      "task": 2,
+      "use": "mock1",
+      "title": "A job advert",
+      "kind": "choice",
+      "instruction": "Přečtěte si text a úkoly 1–5. Vyberte ke každému úkolu jedno správné řešení z nabídky A–D.",
+      "instructionEn": "Read the text and questions 1–5. Choose the one right answer, A–D, for each.",
+      "text": "Pekárna Kolář v Dejvicích hledá nového prodavače nebo prodavačku.\n\nPracovní doba je od pondělí do pátku od 6:00 do 14:00 a jednu sobotu v měsíci do 12:00. Nabízíme plat 32 000 Kč měsíčně, pět týdnů dovolené a slevu 50 % na naše pečivo.\n\nČeština na úrovni A2 stačí, ale musíte umět dobře komunikovat se zákazníky. Zkušenost z obchodu je výhoda, ale není nutná: všechno vás naučíme.\n\nŽivotopis posílejte e-mailem do 30. 6. na adresu prace@pekarnakolar.cz. Na pohovor vás pozveme telefonicky.",
+      "questions": [
+        {
+          "q": "Kde je pekárna?",
+          "options": [
+            "Na Smíchově.",
+            "V Dejvicích.",
+            "V Holešovicích.",
+            "Na Žižkově."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Kdy se pracuje v sobotu?",
+          "options": [
+            "Každou druhou sobotu.",
+            "Jednou za měsíc.",
+            "Nikdy.",
+            "Každou sobotu."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co dostane zaměstnanec navíc?",
+          "options": [
+            "Jízdenku na MHD.",
+            "Slevu na pečivo.",
+            "Oběd zdarma.",
+            "Služební auto."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co musí uchazeč umět?",
+          "options": [
+            "Péct chleba.",
+            "Mluvit anglicky.",
+            "Řídit auto.",
+            "Komunikovat se zákazníky."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Jak se uchazeč dozví o pohovoru?",
+          "options": [
+            "Telefonem.",
+            "Osobně v pekárně.",
+            "E-mailem.",
+            "Dopisem."
+          ],
+          "answer": 0
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "r2-mock2",
+      "part": "reading",
+      "task": 2,
+      "use": "mock2",
+      "title": "A notice from the district office",
+      "kind": "choice",
+      "instruction": "Přečtěte si text a úkoly 1–5. Vyberte ke každému úkolu jedno správné řešení z nabídky A–D.",
+      "instructionEn": "Read the text and questions 1–5. Choose the one right answer, A–D, for each.",
+      "text": "Městská část Praha 3 informuje:\n\nV sobotu 12. 9. bude od 9 do 13 hodin na rohu ulic Seifertova a Husinecká stát velký kontejner na starý nábytek, koberce a jiný velký odpad. Do kontejneru nepatří elektronika, baterie ani barvy. Ty můžete zdarma odevzdat ve sběrném dvoře v ulici Malešická, který je otevřený od pondělí do soboty.\n\nKontejner je jen pro obyvatele Prahy 3. Když nemůžete odpad odnést sami, zavolejte na číslo 222 116 300 a za poplatek 300 Kč vám ho odvezeme z bytu.\n\nDěkujeme, že třídíte odpad.",
+      "questions": [
+        {
+          "q": "Co můžete dát do kontejneru?",
+          "options": [
+            "Starou ledničku.",
+            "Baterie.",
+            "Starý gauč.",
+            "Barvy."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Jak dlouho bude kontejner na ulici?",
+          "options": [
+            "Dvě hodiny.",
+            "Celý den.",
+            "Čtyři hodiny.",
+            "Celý týden."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Kam můžete dát starou televizi?",
+          "options": [
+            "Před dům.",
+            "Do kontejneru.",
+            "Do koše.",
+            "Do sběrného dvora."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Kdo může kontejner použít?",
+          "options": [
+            "Všichni Pražané.",
+            "Jen majitelé bytů.",
+            "Jen lidé z Prahy 3.",
+            "Jen firmy."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Kolik zaplatíte, když vám odpad odvezou z bytu?",
+          "options": [
+            "300 Kč.",
+            "500 Kč.",
+            "Nic.",
+            "100 Kč."
+          ],
+          "answer": 0
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "r3-practice1",
+      "part": "reading",
+      "task": 3,
+      "use": "practice1",
+      "title": "Courses",
+      "kind": "match",
+      "instruction": "Přečtěte si texty 1–4 a informace o osobách. Vyberte ke každému textu jednu vhodnou osobu z nabídky A–E. Jednu osobu nebudete potřebovat.",
+      "instructionEn": "Read texts 1–4 and what each person wants. Match each text to one person, A–E. You won’t need one of them.",
+      "items": [
+        {
+          "id": "1",
+          "text": "Jazyková škola Lingua: večerní kurzy angličtiny pro dospělé, úterý a čtvrtek 18:00–19:30."
+        },
+        {
+          "id": "2",
+          "text": "Plavání pro děti od 4 let, každou sobotu dopoledne v bazénu na Strahově."
+        },
+        {
+          "id": "3",
+          "text": "Kurz vaření: naučte se vařit česká jídla! Svíčková, guláš, knedlíky. Jen o víkendu."
+        },
+        {
+          "id": "4",
+          "text": "Jóga pro začátečníky v parku Stromovka, každé ráno v 7:00, zdarma."
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Anna má ráda českou kuchyni a chce vařit pro rodinu. V týdnu pracuje."
+        },
+        {
+          "id": "B",
+          "text": "Petr pracuje celý týden od osmi do šesti. Chce se ráno před prací hýbat, ale nemá moc peněz."
+        },
+        {
+          "id": "C",
+          "text": "Martin hledá kamarády, se kterými může hrát tenis."
+        },
+        {
+          "id": "D",
+          "text": "Lucie chce, aby se její syn (5 let) naučil plavat. Přes týden nemá čas."
+        },
+        {
+          "id": "E",
+          "text": "Tomáš potřebuje angličtinu do práce. Může chodit jen večer."
+        }
+      ],
+      "answers": {
+        "1": "E",
+        "2": "D",
+        "3": "A",
+        "4": "B"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "r3-practice2",
+      "part": "reading",
+      "task": 3,
+      "use": "practice2",
+      "title": "Flats to rent",
+      "kind": "match",
+      "instruction": "Přečtěte si texty 1–4 a informace o osobách. Vyberte ke každému textu jednu vhodnou osobu z nabídky A–E. Jednu osobu nebudete potřebovat.",
+      "instructionEn": "Read texts 1–4 and what each person wants. Match each text to one person, A–E. You won’t need one of them.",
+      "items": [
+        {
+          "id": "1",
+          "text": "Pronájem: garsoniéra 1+kk na Žižkově, 14 000 Kč + poplatky, volná hned, bez zvířat."
+        },
+        {
+          "id": "2",
+          "text": "Velký byt 4+1 se zahradou v Řepích, blízko školy a školky, 32 000 Kč."
+        },
+        {
+          "id": "3",
+          "text": "Pokoj ve sdíleném bytě pro studenta, 5 minut od metra Dejvická, 8 500 Kč včetně poplatků."
+        },
+        {
+          "id": "4",
+          "text": "Byt 2+kk v Holešovicích, zvířata vítána, park hned vedle domu, 21 000 Kč."
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Novákovi mají tři děti a chtějí bydlet mimo centrum."
+        },
+        {
+          "id": "B",
+          "text": "Pan Horák chce koupit dům na vesnici."
+        },
+        {
+          "id": "C",
+          "text": "Pavel a Eva mají psa a rádi chodí na procházky."
+        },
+        {
+          "id": "D",
+          "text": "Jana bydlí sama, chce se přestěhovat co nejdřív a nemá zvíře."
+        },
+        {
+          "id": "E",
+          "text": "Karel studuje na technice v Dejvicích. Nechce platit moc."
+        }
+      ],
+      "answers": {
+        "1": "D",
+        "2": "A",
+        "3": "E",
+        "4": "C"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "r3-mock1",
+      "part": "reading",
+      "task": 3,
+      "use": "mock1",
+      "title": "Where to eat",
+      "kind": "match",
+      "instruction": "Přečtěte si texty 1–4 a informace o osobách. Vyberte ke každému textu jednu vhodnou osobu z nabídky A–E. Jednu osobu nebudete potřebovat.",
+      "instructionEn": "Read texts 1–4 and what each person wants. Match each text to one person, A–E. You won’t need one of them.",
+      "items": [
+        {
+          "id": "1",
+          "text": "Restaurace Zelená zahrada: jen vegetariánská jídla, polední menu 160 Kč."
+        },
+        {
+          "id": "2",
+          "text": "Kavárna U Sovy: dětský koutek, domácí dorty, otevřeno od 8 do 20 hodin."
+        },
+        {
+          "id": "3",
+          "text": "Pivnice Na Rohu: velká obrazovka, každý zápas živě, pivo od 45 Kč."
+        },
+        {
+          "id": "4",
+          "text": "Bistro Rychlík u nádraží: jídlo s sebou za 5 minut, otevřeno nonstop."
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Irena přijede vlakem ve dvě v noci a bude mít hlad."
+        },
+        {
+          "id": "B",
+          "text": "Klára jde s malou dcerou na kávu a na něco sladkého."
+        },
+        {
+          "id": "C",
+          "text": "Ondřej nejí maso a hledá levný oběd blízko práce."
+        },
+        {
+          "id": "D",
+          "text": "Roman se chce s kamarády dívat na hokej."
+        },
+        {
+          "id": "E",
+          "text": "Paní Šťastná slaví šedesátiny a chce restauraci s hudbou a tancem."
+        }
+      ],
+      "answers": {
+        "1": "C",
+        "2": "B",
+        "3": "D",
+        "4": "A"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "r3-mock2",
+      "part": "reading",
+      "task": 3,
+      "use": "mock2",
+      "title": "Services",
+      "kind": "match",
+      "instruction": "Přečtěte si texty 1–4 a informace o osobách. Vyberte ke každému textu jednu vhodnou osobu z nabídky A–E. Jednu osobu nebudete potřebovat.",
+      "instructionEn": "Read texts 1–4 and what each person wants. Match each text to one person, A–E. You won’t need one of them.",
+      "items": [
+        {
+          "id": "1",
+          "text": "Autoservis Brzda: opravy aut všech značek, i v sobotu."
+        },
+        {
+          "id": "2",
+          "text": "Kadeřnictví Vlasta: stříhání bez objednání, pánové 250 Kč, dámy od 400 Kč."
+        },
+        {
+          "id": "3",
+          "text": "Čistírna Bílá: vyčistíme kabáty, saka i šaty do 24 hodin."
+        },
+        {
+          "id": "4",
+          "text": "Hodinový manžel: opravy v bytě, malování, montáž nábytku."
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "Pan Beneš se chce dnes nechat ostříhat a nechce čekat na termín."
+        },
+        {
+          "id": "B",
+          "text": "Jiří potřebuje do zítřka čisté sako na svatbu."
+        },
+        {
+          "id": "C",
+          "text": "Milan má problém s motorem a v týdnu nemá čas."
+        },
+        {
+          "id": "D",
+          "text": "Paní Vaňková hledá někoho, kdo jí bude hlídat děti."
+        },
+        {
+          "id": "E",
+          "text": "Simona si koupila novou skříň a neumí ji složit."
+        }
+      ],
+      "answers": {
+        "1": "C",
+        "2": "A",
+        "3": "B",
+        "4": "E"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "r4-practice1",
+      "part": "reading",
+      "task": 4,
+      "use": "practice1",
+      "title": "Notices and small ads",
+      "kind": "choice",
+      "instruction": "Přečtěte si texty 1–6. Vyberte ke každému textu jedno správné řešení z nabídky A–D.",
+      "instructionEn": "Read texts 1–6. Choose the word or words, A–D, that fill each gap.",
+      "questions": [
+        {
+          "q": "",
+          "text": "Kavárna Slavia: Dnes je kavárna kvůli soukromé akci ___ od 15:00.",
+          "options": [
+            "prázdná",
+            "volná",
+            "otevřená",
+            "zavřená"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "",
+          "text": "Prodám ___ kolo pro dítě od 6 let, jen 1 200 Kč.",
+          "options": [
+            "děti",
+            "dětský",
+            "dětské",
+            "dětem"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "",
+          "text": "Lékař ordinuje v pondělí a ve středu od 7 do 12 ___.",
+          "options": [
+            "hodiny",
+            "hodin",
+            "hodina",
+            "hodinou"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "",
+          "text": "Hledáme ___ do kuchyně, práce na plný úvazek.",
+          "options": [
+            "kuchařem",
+            "kuchař",
+            "kuchaři",
+            "kuchaře"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "",
+          "text": "Na nádraží jezdí autobus číslo 133 každých 15 ___.",
+          "options": [
+            "minut",
+            "minuty",
+            "minutách",
+            "minutu"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "",
+          "text": "Knihovna bude v srpnu zavřená. ___ můžete vrátit do schránky u vchodu.",
+          "options": [
+            "Peníze",
+            "Klíče",
+            "Knihy",
+            "Lístky"
+          ],
+          "answer": 2
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "r4-practice2",
+      "part": "reading",
+      "task": 4,
+      "use": "practice2",
+      "title": "Signs around town",
+      "kind": "choice",
+      "instruction": "Přečtěte si texty 1–6. Vyberte ke každému textu jedno správné řešení z nabídky A–D.",
+      "instructionEn": "Read texts 1–6. Choose the word or words, A–D, that fill each gap.",
+      "questions": [
+        {
+          "q": "",
+          "text": "Pozor! Ve čtvrtek nejezdí tramvaje v ___ Vodičkova.",
+          "options": [
+            "ulic",
+            "ulicí",
+            "ulici",
+            "ulice"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "",
+          "text": "Pekárna nabízí čerstvý chleba každé ___ od 6:00.",
+          "options": [
+            "večer",
+            "hodinu",
+            "noc",
+            "ráno"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "",
+          "text": "Prodej vstupenek na koncert ___ v pondělí 3. 3.",
+          "options": [
+            "začíná",
+            "začínají",
+            "začni",
+            "začínat"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "",
+          "text": "Hotel Praha hledá recepční se znalostí ___ jazyka.",
+          "options": [
+            "anglického",
+            "angličtina",
+            "anglický",
+            "anglicky"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "",
+          "text": "Objednávejte se telefonicky ___ čísle 224 518 300.",
+          "options": [
+            "u",
+            "v",
+            "do",
+            "na"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "",
+          "text": "Pozor, v sobotu je supermarket otevřený jen ___ 7 do 13 hodin.",
+          "options": [
+            "od",
+            "k",
+            "do",
+            "z"
+          ],
+          "answer": 0
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "r4-mock1",
+      "part": "reading",
+      "task": 4,
+      "use": "mock1",
+      "title": "Small ads",
+      "kind": "choice",
+      "instruction": "Přečtěte si texty 1–6. Vyberte ke každému textu jedno správné řešení z nabídky A–D.",
+      "instructionEn": "Read texts 1–6. Choose the word or words, A–D, that fill each gap.",
+      "questions": [
+        {
+          "q": "",
+          "text": "Městská knihovna: Kurz počítačů pro ___ začíná v říjnu.",
+          "options": [
+            "seniory",
+            "seniorů",
+            "senioři",
+            "seniorem"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "",
+          "text": "Pronajmu ___ byt v centru, 2+1, 25 000 Kč.",
+          "options": [
+            "zařízená",
+            "zařízený",
+            "zařízené",
+            "zařízeným"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "",
+          "text": "Do restaurace hledáme číšníka nebo ___.",
+          "options": [
+            "servírka",
+            "servírku",
+            "servírce",
+            "servírkou"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "",
+          "text": "Lékárna je otevřená ___ den, i o víkendu.",
+          "options": [
+            "každá",
+            "každé",
+            "každou",
+            "každý"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "",
+          "text": "Kvůli opravě jezdí linka B jen ___ stanice Florenc.",
+          "options": [
+            "k",
+            "v",
+            "do",
+            "na"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "",
+          "text": "Prodám pračku. Je ___ a funguje jako nová.",
+          "options": [
+            "skoro nové",
+            "skoro novou",
+            "skoro nový",
+            "skoro nová"
+          ],
+          "answer": 3
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "r4-mock2",
+      "part": "reading",
+      "task": 4,
+      "use": "mock2",
+      "title": "Notices",
+      "kind": "choice",
+      "instruction": "Přečtěte si texty 1–6. Vyberte ke každému textu jedno správné řešení z nabídky A–D.",
+      "instructionEn": "Read texts 1–6. Choose the word or words, A–D, that fill each gap.",
+      "questions": [
+        {
+          "q": "",
+          "text": "Fitness centrum: Prvních 14 dní ___ zdarma!",
+          "options": [
+            "cvičí",
+            "cvičím",
+            "cvičíte",
+            "cvičit"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "",
+          "text": "Ztratil se ___ pes, jmenuje se Max.",
+          "options": [
+            "černou",
+            "černý",
+            "černé",
+            "černá"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "",
+          "text": "Ordinace bude v srpnu zavřená. Lékaře zastupuje kolega v ___ poliklinice.",
+          "options": [
+            "nový",
+            "nová",
+            "novou",
+            "nové"
+          ],
+          "answer": 3
+        },
+        {
+          "q": "",
+          "text": "Prodáváme ___ brambory z Vysočiny, 25 Kč za kilo.",
+          "options": [
+            "česká",
+            "českou",
+            "české",
+            "český"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "",
+          "text": "V neděli bude v parku ___ pro celou rodinu.",
+          "options": [
+            "festivalem",
+            "festivalu",
+            "festival",
+            "festivaly"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "",
+          "text": "Vstup do bazénu je pro děti do tří let ___.",
+          "options": [
+            "zavřený",
+            "drahý",
+            "zdarma",
+            "volno"
+          ],
+          "answer": 2
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "r5-practice1",
+      "part": "reading",
+      "task": 5,
+      "use": "practice1",
+      "title": "A swimming pool",
+      "kind": "fill",
+      "instruction": "Přečtěte si text a doplňte ke každému úkolu 1–5 jednu správnou informaci.",
+      "instructionEn": "Read the text and write one piece of information for each of questions 1–5.",
+      "text": "Plavecký bazén Šutka\n\nOtevírací doba: pondělí až pátek 6:00–22:00, sobota a neděle 8:00–21:00.\nVstupné: dospělí 150 Kč za hodinu, děti do 15 let 90 Kč, senioři nad 65 let 100 Kč. Permanentka na 10 vstupů stojí 1 200 Kč.\nV úterý od 18 do 20 hodin je bazén zavřený pro veřejnost: plavou tu plavecké kluby.\nParkování je zdarma. Bazén je 10 minut pěšky od metra Kobylisy.",
+      "questions": [
+        {
+          "q": "V kolik hodin bazén otevírá v sobotu?",
+          "answers": [
+            "8",
+            "8:00",
+            "v 8",
+            "v osm",
+            "osm",
+            "8 hodin",
+            "v 8 hodin",
+            "od 8",
+            "od 8:00"
+          ]
+        },
+        {
+          "q": "Kolik stojí hodina pro dítě?",
+          "answers": [
+            "90",
+            "90 Kč",
+            "devadesát"
+          ]
+        },
+        {
+          "q": "Kolik stojí permanentka?",
+          "answers": [
+            "1 200",
+            "1200",
+            "1 200 Kč"
+          ]
+        },
+        {
+          "q": "Který den je bazén večer zavřený pro veřejnost?",
+          "answers": [
+            "v úterý",
+            "úterý"
+          ]
+        },
+        {
+          "q": "Od které stanice metra je bazén 10 minut pěšky?",
+          "answers": [
+            "Kobylisy",
+            "od Kobylis",
+            "z Kobylis",
+            "metro Kobylisy"
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "r5-practice2",
+      "part": "reading",
+      "task": 5,
+      "use": "practice2",
+      "title": "A doctor’s appointment",
+      "kind": "fill",
+      "instruction": "Přečtěte si text a doplňte ke každému úkolu 1–5 jednu správnou informaci.",
+      "instructionEn": "Read the text and write one piece of information for each of questions 1–5.",
+      "text": "Dobrý den, pane Smithe,\n\npotvrzujeme vaši objednávku na preventivní prohlídku u MUDr. Marie Svobodové.\nTermín: čtvrtek 16. 10. v 9:30.\nOrdinace je ve 2. patře, dveře číslo 214. Prosíme, přijďte o 10 minut dřív a vezměte si s sebou kartičku pojišťovny. Na prohlídku přijďte nalačno: ráno nesnídejte.\nKdyž nemůžete přijít, zavolejte nejpozději den předem na číslo 241 403 512.\n\nPoliklinika Budějovická",
+      "questions": [
+        {
+          "q": "Ve který den je prohlídka?",
+          "answers": [
+            "ve čtvrtek",
+            "čtvrtek",
+            "16. 10.",
+            "16.10",
+            "16. 10",
+            "ve čtvrtek 16. 10."
+          ]
+        },
+        {
+          "q": "V kolik hodin má pan Smith přijít, když má přijít o 10 minut dřív?",
+          "answers": [
+            "9:20",
+            "v 9:20",
+            "9.20",
+            "9 20"
+          ]
+        },
+        {
+          "q": "Ve kterém patře je ordinace?",
+          "answers": [
+            "ve 2. patře",
+            "2.",
+            "2",
+            "ve druhém",
+            "ve druhém patře",
+            "druhém",
+            "2. patro",
+            "druhé"
+          ]
+        },
+        {
+          "q": "Co si má vzít s sebou?",
+          "answers": [
+            "kartičku pojišťovny",
+            "kartičku",
+            "kartu pojišťovny",
+            "kartička pojišťovny",
+            "průkaz pojišťovny"
+          ]
+        },
+        {
+          "q": "Co ráno nesmí dělat?",
+          "answers": [
+            "snídat",
+            "nesnídat",
+            "jíst",
+            "nejíst",
+            "nesmí snídat"
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "r5-mock1",
+      "part": "reading",
+      "task": 5,
+      "use": "mock1",
+      "title": "A farmers’ market",
+      "kind": "fill",
+      "instruction": "Přečtěte si text a doplňte ke každému úkolu 1–5 jednu správnou informaci.",
+      "instructionEn": "Read the text and write one piece of information for each of questions 1–5.",
+      "text": "Farmářské trhy na Náplavce\n\nKaždou sobotu od 8 do 14 hodin, od března do listopadu.\nProdáváme ovoce, zeleninu, sýry, maso a pečivo přímo od českých farmářů. Pro děti hrajeme od 10 hodin divadlo zdarma. Kávu a teplé jídlo koupíte u stánků u řeky.\nPlatit můžete hotově i kartou. Psi musí být na vodítku.\nTramvají jeďte do zastávky Palackého náměstí.",
+      "questions": [
+        {
+          "q": "Který den jsou trhy?",
+          "answers": [
+            "v sobotu",
+            "sobota",
+            "sobotu",
+            "každou sobotu"
+          ]
+        },
+        {
+          "q": "Do kolika hodin jsou trhy otevřené?",
+          "answers": [
+            "do 14",
+            "14",
+            "do 14:00",
+            "14:00",
+            "do 14 hodin",
+            "14 hodin",
+            "do dvou"
+          ]
+        },
+        {
+          "q": "V kolik hodin začíná divadlo pro děti?",
+          "answers": [
+            "v 10",
+            "10",
+            "10:00",
+            "od 10",
+            "v deset",
+            "od 10 hodin",
+            "v 10 hodin"
+          ]
+        },
+        {
+          "q": "Jak můžete platit? Napište jeden způsob.",
+          "answers": [
+            "hotově",
+            "kartou",
+            "hotově i kartou",
+            "hotově nebo kartou"
+          ]
+        },
+        {
+          "q": "Jak se jmenuje zastávka tramvaje?",
+          "answers": [
+            "Palackého náměstí"
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "r5-mock2",
+      "part": "reading",
+      "task": 5,
+      "use": "mock2",
+      "title": "A hotel booking",
+      "kind": "fill",
+      "instruction": "Přečtěte si text a doplňte ke každému úkolu 1–5 jednu správnou informaci.",
+      "instructionEn": "Read the text and write one piece of information for each of questions 1–5.",
+      "text": "Hotel Vltava, Český Krumlov: potvrzení rezervace\n\nHost: Ana García\nPříjezd: pátek 7. 8., odjezd: neděle 9. 8. (2 noci)\nPokoj: dvoulůžkový s výhledem na řeku\nCena: 2 400 Kč za noc, snídaně v ceně\n\nSnídaně se podává od 7:30 do 10:00 v restauraci v přízemí. Recepce je otevřená od 7 do 22 hodin. Když přijedete později, klíč najdete v boxu u vchodu, kód je 4815. Parkování u hotelu stojí 200 Kč za den.",
+      "questions": [
+        {
+          "q": "Kolik nocí bude Ana v hotelu?",
+          "answers": [
+            "2",
+            "dvě",
+            "2 noci",
+            "dvě noci"
+          ]
+        },
+        {
+          "q": "Kolik stojí jedna noc?",
+          "answers": [
+            "2 400",
+            "2400",
+            "2 400 Kč"
+          ]
+        },
+        {
+          "q": "Kde je restaurace?",
+          "answers": [
+            "v přízemí",
+            "přízemí"
+          ]
+        },
+        {
+          "q": "Jaký je kód boxu s klíčem?",
+          "answers": [
+            "4815"
+          ]
+        },
+        {
+          "q": "Kolik stojí parkování za den?",
+          "answers": [
+            "200",
+            "200 Kč",
+            "dvě stě"
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

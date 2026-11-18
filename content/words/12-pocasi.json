@@ -513,7 +513,7 @@
       "nativeReviewed": false
     },
     {
-      "id": "horky",
+      "id": "horky-adj",
       "cs": "horký",
       "en": "hot",
       "pos": "adj",
@@ -536,6 +536,199 @@
       "aspect": "impf",
       "note": "Mrzne.",
       "rank": 11236,
+      "nativeReviewed": false
+    },
+    {
+      "id": "krajina",
+      "cs": "krajina",
+      "en": "landscape",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1094,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nebe",
+      "cs": "nebe",
+      "en": "sky; heaven",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1307,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vlna",
+      "cs": "vlna",
+      "en": "wave",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 893,
+      "nativeReviewed": false
+    },
+    {
+      "id": "breh",
+      "cs": "břeh",
+      "en": "bank, shore",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1552,
+      "nativeReviewed": false
+    },
+    {
+      "id": "udoli",
+      "cs": "údolí",
+      "en": "valley",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2004,
+      "nativeReviewed": false
+    },
+    {
+      "id": "skala",
+      "cs": "skála",
+      "en": "rock",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2000,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jeskyne",
+      "cs": "jeskyně",
+      "en": "cave",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2253,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rostlina",
+      "cs": "rostlina",
+      "en": "plant",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 941,
+      "nativeReviewed": false
+    },
+    {
+      "id": "list",
+      "cs": "list",
+      "en": "leaf; sheet (of paper)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 717,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vetev",
+      "cs": "větev",
+      "en": "branch",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1870,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pisek",
+      "cs": "písek",
+      "en": "sand",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2168,
+      "nativeReviewed": false
+    },
+    {
+      "id": "drevo",
+      "cs": "dřevo",
+      "en": "wood",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1218,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vlhky",
+      "cs": "vlhký",
+      "en": "damp, humid",
+      "pos": "adj",
+      "rank": 2722,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ledovy",
+      "cs": "ledový",
+      "en": "icy",
+      "pos": "adj",
+      "rank": 2386,
+      "nativeReviewed": false
+    },
+    {
+      "id": "severni",
+      "cs": "severní",
+      "en": "northern",
+      "pos": "adj",
+      "rank": 1377,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jizni",
+      "cs": "jižní",
+      "en": "southern",
+      "pos": "adj",
+      "rank": 1127,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zapadni",
+      "cs": "západní",
+      "en": "western",
+      "pos": "adj",
+      "rank": 1160,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vychodni",
+      "cs": "východní",
+      "en": "eastern",
+      "pos": "adj",
+      "rank": 1757,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tridit",
+      "cs": "třídit",
+      "en": "to sort (rubbish)",
+      "pos": "verb",
+      "aspect": "impf",
+      "note": "třídit odpad",
+      "rank": 9480,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kun",
+      "cs": "kůň",
+      "en": "horse",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 854,
+      "nativeReviewed": false
+    },
+    {
+      "id": "krava",
+      "cs": "kráva",
+      "en": "cow",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3420,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prase",
+      "cs": "prase",
+      "en": "pig",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 4133,
       "nativeReviewed": false
     }
   ]

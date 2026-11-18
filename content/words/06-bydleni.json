@@ -1009,6 +1009,256 @@
       "en": "unfurnished",
       "pos": "adj",
       "nativeReviewed": false
+    },
+    {
+      "id": "domov",
+      "cs": "domov",
+      "en": "home",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1044,
+      "nativeReviewed": false
+    },
+    {
+      "id": "budova",
+      "cs": "budova",
+      "en": "building",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 593,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stena",
+      "cs": "stěna",
+      "en": "wall (inside)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 625,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zarizeni",
+      "cs": "zařízení",
+      "en": "equipment; furnishings",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 526,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kreslo",
+      "cs": "křeslo",
+      "en": "armchair",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1721,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stolek",
+      "cs": "stolek",
+      "en": "small table",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2421,
+      "nativeReviewed": false
+    },
+    {
+      "id": "skrinka",
+      "cs": "skříňka",
+      "en": "cupboard, locker",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4137,
+      "nativeReviewed": false
+    },
+    {
+      "id": "klika",
+      "cs": "klika",
+      "en": "door handle",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4683,
+      "nativeReviewed": false
+    },
+    {
+      "id": "okoli",
+      "cs": "okolí",
+      "en": "surroundings, area",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 684,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sidliste",
+      "cs": "sídliště",
+      "en": "housing estate",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 4932,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vesnice",
+      "cs": "vesnice",
+      "en": "village",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1308,
+      "nativeReviewed": false
+    },
+    {
+      "id": "panelak",
+      "cs": "panelák",
+      "en": "prefab block of flats",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 9761,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ctvrt-noun",
+      "cs": "čtvrť",
+      "en": "district, neighbourhood",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4299,
+      "nativeReviewed": false
+    },
+    {
+      "id": "topit",
+      "cs": "topit",
+      "en": "to heat",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 7239,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zarovka",
+      "cs": "žárovka",
+      "en": "light bulb",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5285,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zasuvka",
+      "cs": "zásuvka",
+      "en": "socket; drawer",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4280,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vypinac",
+      "cs": "vypínač",
+      "en": "switch",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 9956,
+      "nativeReviewed": false
+    },
+    {
+      "id": "susicka",
+      "cs": "sušička",
+      "en": "tumble dryer",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 16047,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mrazak",
+      "cs": "mrazák",
+      "en": "freezer",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 14388,
+      "nativeReviewed": false
+    },
+    {
+      "id": "konvice",
+      "cs": "konvice",
+      "en": "kettle",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8072,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hrnec",
+      "cs": "hrnec",
+      "en": "pot, saucepan",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4369,
+      "nativeReviewed": false
+    },
+    {
+      "id": "panev",
+      "cs": "pánev",
+      "en": "frying pan",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3278,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pradlo",
+      "cs": "prádlo",
+      "en": "laundry; underwear",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2977,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zehlit",
+      "cs": "žehlit",
+      "en": "to iron",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 17962,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vysavat",
+      "cs": "vysávat",
+      "en": "to vacuum",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 15229,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bydleni",
+      "cs": "bydlení",
+      "en": "housing",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2260,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prostorny",
+      "cs": "prostorný",
+      "en": "spacious",
+      "pos": "adj",
+      "rank": 6735,
+      "nativeReviewed": false
+    },
+    {
+      "id": "utulny",
+      "cs": "útulný",
+      "en": "cosy",
+      "pos": "adj",
+      "rank": 10000,
+      "nativeReviewed": false
     }
   ]
 }

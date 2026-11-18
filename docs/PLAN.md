@@ -1244,3 +1244,220 @@ suggest a sampling order: deck 1 and the top 300 first.
   out of the first load), which is the real fix.
 - **Checks:** 273 tests pass (6 new in `tests/word-decks.test.ts`); typecheck
   and build are clean; no overflow at 320–1,280 px; `check:targets` OK.
+
+## 10. Round 3, step 4: the A2 exam track
+
+**The goal:** someone preparing for the A2 permanent-residence exam can
+practise every part of it in Pražák, in the exam's own formats and timings,
+and see honestly how close they are to passing. Today Pražák covers none of
+the exam formats (PEDAGOGY_REVIEW §5).
+
+### 10.1 The exam, as it is now (checked 18 Nov 2026)
+
+**Sources [Official]:**
+- NPI ČR's online mock test, *Test nanečisto – nový formát od 11. 4. 2026*
+  (cestina-pro-cizince.cz/trvaly-pobyt/a2/…/modelovy-test-novy-format/), read
+  task by task;
+- the exam information page;
+- NPI ČR's notice of 15 October 2025.
+
+| Part | Time | Points | Tasks (new format) |
+|---|---|---|---|
+| **Reading** | 40 min | 25 | **1** Match 5 pictures to 5 of 8 short notices or ads (5 pts) · **2** One text, 5 multiple-choice questions A–D (5) · **3** Match 4 texts to 4 of 5 people (4) · **4** 6 short texts, each with a gap, multiple choice A–D (6) · **5** One text, write 5 facts from it (5) |
+| **Writing** | 25 min | 20 | **1** A form: 3 questions, a full sentence and **at least 10 words** each (8) · **2** An e-mail covering 5 picture prompts, **at least 35 words, or 0 points** (12) |
+| **Listening** | about 40 min | 25 | Each text is heard **twice**, with set time to read first. **1** 5 dialogues, multiple choice A–D (5) · **2** 5 announcements, multiple choice A–D (5) · **3** 5 short texts matched to a table of 7 options (5) · **4** 5 dialogues matched to 6 pictures (5) · **5** A voicemail, write 5 facts (5) |
+| **Speaking** | about 15 min | 40 | **1** 8 questions on 2 announced topics, **7 seconds** per answer (8) · **2** 2 role-play dialogues, ask 4 questions from a card, **90 s** each (12) · **3** Tell a story from 4 pictures **in the past tense**, **1 minute** (10) · **4** Agree with a friend on 1 of 3 pictured options and say why, **tykání**, **15 s** per turn (7) |
+
+- **Pass:** at least 42 of 70 in reading, writing and listening together,
+  **and** at least 24 of 40 in speaking. If you fail, you resit the whole exam.
+- **One thing I couldn't confirm:** the four speaking tasks add up to 37
+  points, not 40. The other 3 are probably an overall mark, for example for
+  pronunciation. The mock test doesn't say, so I won't model it. We'll score
+  speaking tasks 1–4 only and show "out of 37 that we can practise".
+- **Speaking topics** named by NPI: housing, travel, food and drink, shopping,
+  weather, work, free time, education, health.
+
+### 10.2 What we build
+
+A new section, **Exam · *Zkouška A2*** (`/exam`), with four parts:
+
+**1. The exam hub.**
+- The format and pass rules above, in plain English.
+- Links to the official mock test, registration and exam dates. We link the
+  dates rather than copying them, because they change monthly.
+- **"How close am I?"** per part: your best score on each task type and how
+  many sets you've done.
+- No promise of a pass. Reading and listening are scored; writing and
+  speaking are self-assessed (below).
+
+**2. Practice, task by task**, for all 14 task types. These are our own
+tasks, written in the official formats, about Prague life. We link the
+official tests; we don't copy them.
+
+- **Reading (5 types)** reuses the reading and multiple-choice exercises,
+  plus two new pieces: **matching** (items to options, with extras left over)
+  and **short written answers** (task 5). Answers are checked leniently on
+  case and diacritics, and numbers are accepted with or without "Kč".
+- **Listening (5 types)** reuses the computer voice from step 1, clearly
+  labelled.
+  - Each text plays twice, with the exam's preview time first (1 minute or
+    15 seconds).
+  - Dialogues use two voice pitches, the way the dialogue player does now.
+  - If the device has no Czech voice, it says so and offers the transcript,
+    marked "reading, not listening practice".
+- **Writing (2 types)**, with a 25-minute timer (optional in practice) and a
+  live word counter that shows the minimums (10 per answer, 35 for the
+  e-mail). Afterwards you see:
+  - **a model answer;**
+  - **the official-style checklist,** e.g. "Did you write at least 35 words?",
+    "Did you answer every picture?", which you tick yourself;
+  - **the zero-point rule, enforced:** under 35 words, the e-mail scores 0.
+    That's the one thing we can check automatically and honestly.
+
+  **We don't grade the writing itself.** Automatic grading of free Czech text
+  would be guesswork, and wrong feedback is worse than none.
+- **Speaking (4 types)**, recorded on the device with the existing recorder.
+  Recordings stay on the device and are never uploaded.
+  - The questions are spoken by the computer voice, with the exam's timers:
+    7 s, 90 s, 1 min, 15 s.
+  - Afterwards: a model answer to listen to, your recording to compare, and a
+    checklist per task (full sentences? past tense? 4 questions asked? a
+    reason given?). You score it yourself.
+  - **Practice mode** has no time limits, for building up.
+
+**3. Two full mock exams** in the real order, with real timings and points.
+- **Exam mode:** the timers run and you can't go back, like the real exam.
+- **The result:** reading and listening are scored automatically, out of 50,
+  and then we work out what you need. For example: "38/50. You'd need at least
+  4 of 20 in writing to reach 42." That's honest and useful. Writing and
+  speaking show your self-assessment, labelled as such.
+
+**4. A2 vocabulary.** The decks reach 80% of the official A1 word list but
+only 17% of A2, and the exam marks A2 vocabulary in writing and speaking.
+- Add **about 400 A2 words** to the existing decks: everyday words chosen by
+  corpus frequency within the exam's nine topics.
+- Use the same benchmark-only method as step 3. **Target: 40% of A2 single
+  words.**
+- See decision 3: it's the part I'm least sure belongs in this step.
+
+### 10.3 Pictures
+
+Four task types need pictures: reading 1, listening 4, speaking 3 (a
+4-picture story) and speaking 4 (3 options). The official ones are drawings.
+- **Proposal:** about 45 simple **pictograms** in the app's own line style,
+  drawn as SVG. That covers objects, places and activities, plus four
+  4-panel stories with no text, as in the exam.
+- They're decorative only for screen readers where the task allows; where the
+  picture *is* the question, it has a text alternative that doesn't give the
+  answer away.
+- The cheaper alternative is text captions instead of pictures. It's less
+  like the exam and gives the vocabulary away. Not recommended.
+
+### 10.4 Content volume and review
+
+- **Per task type:** 2 practice sets, plus 1 inside each of the 2 mocks. That
+  makes 4 sets each, 56 in all.
+- **Reading and listening texts** are short, but there are many: about 140
+  items in total.
+- **All of it is Czech written by us**, so all of it goes to native review,
+  in this order: mock 1 → speaking model answers → the rest.
+- **The past tense:** speaking task 3 needs it. The grammar page exists
+  (`grammar/verbs/past.md`), but Line A doesn't drill it yet. Speaking task 3
+  links the page and starts with a short past-tense warm-up (10 items). It
+  isn't a full lesson; that belongs in a later unit.
+
+### 10.5 Data and checks
+
+- **New Dexie table `examAttempts`** (schema v4): one row per task or mock
+  attempt, with type, score, maximum, self-assessment and time.
+  - It's included in backups.
+  - The migration is additive: nothing existing changes.
+  - **Recordings are never stored.**
+- **Content tests:**
+  - every task matches its official shape (item count, options, points);
+  - mocks total 25/20/25/37;
+  - every matching task has the right number of extra options;
+  - every model answer meets its own word minimum;
+  - typed answers are accepted by the checker.
+- **Unit tests:** the scoring arithmetic and the "you'd need" line; the 0
+  points under 35 words; the timers with fake time.
+- **QA as before:** five widths, the 44px check, the offline check (the exam
+  pages work offline), Lighthouse, and keyboard use through a full mock.
+
+### 10.6 Order and effort
+
+On `round-3-step4`, one commit per part:
+
+| Part | Contents | Estimate |
+|---|---|---|
+| **4a** | The `/exam` hub and nav item, the attempts table, the matching and short-answer exercises, reading and listening practice (10 types × 2 sets) | about 1 week |
+| **4b** | Writing and speaking practice (6 types × 2 sets), timers, checklists, model answers, the pictograms, the past-tense warm-up | about 1 week |
+| **4c** | The two mock exams and the results screen; A2 vocabulary (if decision 3 is yes) | 3–5 days |
+
+Then QA and a push. Not merged or deployed until you say so.
+
+**This adds roughly 56 task sets and about 400 words for native review**,
+the largest batch yet. Native review is now the thing most limiting how
+trustworthy the app is.
+
+### 10.7 Decisions (defaults unless you say otherwise)
+
+1. **Its own section, not a metro line.** The audit floated *Linka A2*, but
+   the map is real PID data and lines B and C are real lines, coming later.
+   An invented exam line would blur that. So: a nav item **Exam ·
+   *Zkouška***, between Review and Sounds, and a card on Home. (The nav is
+   then 8 items; the planned IA work, I2/I3, can regroup it.)
+2. **Pictograms**, not text captions (§10.3).
+3. **A2 vocabulary in 4c: yes**, about 400 words, target 40% of A2. Say no if
+   you'd rather keep this step to exam formats only. It can follow as its own
+   step.
+4. **Two mocks and two practice sets per task type.** More can follow once
+   native review catches up.
+5. **Strict timers in exam mode, none in practice mode.**
+
+### 10.8 As built (18 Nov 2026)
+
+- **16 task types, not 14.** I miscounted in §10.2: the exam has 5 reading,
+  2 writing, 5 listening and 4 speaking tasks. So there are **64 task sets**,
+  not 56: two practice sets per type plus one in each mock. A test now checks
+  the count and that each mock adds up to 25 / 20 / 25 / 37.
+- **Where it lives:** `/exam`, with a nav item (Exam · *Zkouška*) and a Home
+  card. The exam's content is in its own chunk, loaded only with the exam
+  pages. The A2 deck words do go in the first download: +12 kB gzipped
+  (content chunk 222 → 234 kB), which adds to the case for I8.
+- **Reading and listening:** scored automatically. In mocks, recordings play
+  twice and no more. **Not built:** the exam's preview time before each
+  listening task. It's explained in the mock, not enforced.
+- **Writing:** word counters; the 35-word zero rule for the e-mail is enforced;
+  otherwise self-assessed with a model and a checklist.
+- **Speaking:** questions spoken by the computer voice, answers recorded on the
+  device only, exam timers in mocks (7 s / 90 s / 1 min / 15 s), none in
+  practice. Self-assessed out of the 37 points we can confirm.
+- **Mocks:** each part is handed in once (reading and writing also by their
+  timers) and checked straight away. The results screen says what writing
+  still has to bring to reach 42 of 70.
+- **A2 vocabulary: 29% of A2 single words (392 of 1,370), not the 40%
+  target.**
+  - About 420 words were added, chosen by corpus frequency within the exam
+    topics; 21 were dropped as already taught. The decks now hold 1,656
+    words, and A1 coverage rose to 82%.
+  - I didn't close the gap by picking from the official list's missing
+    words: §9.7 already flagged that as too close to copying the list.
+  - Reaching 40% needs about 150 more A2 words. They can come by frequency in
+    a later step, or from the list if NPI ČR gives permission.
+- **Fixes found on the way:**
+  - Speech could leave a step waiting forever if the engine threw.
+  - Speaking recordings were freed before the review screen.
+  - React's dev double-mount started exam steps twice.
+  - The hub's average counted untried task types as 0%.
+- **Checks:**
+  - 284 tests pass; typecheck and build are clean.
+  - No overflow at 320–1,280 px.
+  - `check:targets` (now including three exam screens) and `check:offline`
+    pass, and exam pages work offline.
+  - A whole mock runs end to end with a simulated clock, microphone and voice.
+  - The keyboard can answer tasks.
+  - Structural accessibility checks (names, labels, headings) pass on 18 exam
+    pages.
+  - **Lighthouse wasn't run this step:** it needs a downloaded package, which
+    the permission settings blocked.

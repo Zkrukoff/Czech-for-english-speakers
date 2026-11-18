@@ -12,6 +12,7 @@ import { MarkKubismus, WordmarkKubismus } from './brand/Wordmarks';
 const NAV: { to: string; label: string; cs: string; end?: boolean; also?: string[] }[] = [
   { to: '/', label: 'Home', cs: 'Linka', end: true },
   { to: '/review', label: 'Review', cs: 'Opakování' },
+  { to: '/exam', label: 'Exam', cs: 'Zkouška' },
   { to: '/sounds', label: 'Sounds', cs: 'Výslovnost' },
   { to: '/grammar', label: 'Grammar & verbs', cs: 'Mluvnice a slovesa', also: ['/verbs'] },
   { to: '/guides', label: 'Guides', cs: 'Průvodce' },

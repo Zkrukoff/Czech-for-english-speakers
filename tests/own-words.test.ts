@@ -43,7 +43,7 @@ describe('saved words in the database and reviews', () => {
     v2.close();
     const db = new PrazakDB(name);
     await db.open();
-    expect(db.verno).toBe(3);
+    expect(db.verno).toBe(4);
     expect(await db.stamps.get('unit:u01')).toBeDefined();
     expect(await db.ownWords.count()).toBe(0);
     db.close();

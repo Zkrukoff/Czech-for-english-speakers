@@ -1,0 +1,1991 @@
+{
+  "$comment": "A2 exam practice (round 3, step 4): our own tasks in the official formats of the new exam (NPI ČR, from 11 April 2026). The official model tests are linked from the app, never copied. Awaiting native review.",
+  "tasks": [
+    {
+      "id": "l1-practice1",
+      "part": "listening",
+      "task": 1,
+      "use": "practice1",
+      "title": "Everyday dialogues",
+      "kind": "choice",
+      "instruction": "Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý dialog uslyšíte dvakrát.",
+      "instructionEn": "Listen to five dialogues. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each dialogue twice.",
+      "questions": [
+        {
+          "q": "Co si dá žena k pití?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Dobrý den, co si dáte?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Dala bych si kávu… Vlastně ne, už jsem dnes měla dvě. Dám si čaj s citronem."
+            },
+            {
+              "speaker": "a",
+              "cs": "Dobře. A něco k jídlu?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Ne, děkuju."
+            }
+          ],
+          "options": [
+            "Čaj s citronem.",
+            "Kávu.",
+            "Džus.",
+            "Minerálku."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Kdy jde Petr k doktorovi?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Petře, půjdeš v úterý na fotbal?"
+            },
+            {
+              "speaker": "b",
+              "cs": "V úterý ne, to jdu k doktorovi. Ale ve čtvrtek můžu."
+            }
+          ],
+          "options": [
+            "V úterý.",
+            "Ve středu.",
+            "Ve čtvrtek.",
+            "V pondělí."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Kolik zaplatí muž?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Dva rohlíky a chleba, prosím."
+            },
+            {
+              "speaker": "b",
+              "cs": "Rohlíky jsou po pěti korunách a chleba stojí čtyřicet. Dohromady padesát korun."
+            },
+            {
+              "speaker": "a",
+              "cs": "Tady máte."
+            }
+          ],
+          "options": [
+            "45 Kč.",
+            "55 Kč.",
+            "50 Kč.",
+            "40 Kč."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Kde se sejdou?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Sejdeme se před kinem?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Před kinem je vždycky moc lidí. Radši u metra, u východu na Můstek."
+            },
+            {
+              "speaker": "a",
+              "cs": "Dobře, v sedm u metra."
+            }
+          ],
+          "options": [
+            "Na zastávce tramvaje.",
+            "U metra.",
+            "Před kinem.",
+            "V kavárně."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co hledá žena?",
+          "audio": [
+            {
+              "speaker": "b",
+              "cs": "Promiňte, nevíte, kde je tady lékárna?"
+            },
+            {
+              "speaker": "a",
+              "cs": "Lékárna je hned za rohem, vedle banky."
+            },
+            {
+              "speaker": "b",
+              "cs": "Děkuju."
+            }
+          ],
+          "options": [
+            "Lékárnu.",
+            "Banku.",
+            "Poštu.",
+            "Nádraží."
+          ],
+          "answer": 0
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "l1-practice2",
+      "part": "listening",
+      "task": 1,
+      "use": "practice2",
+      "title": "Plans and errands",
+      "kind": "choice",
+      "instruction": "Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý dialog uslyšíte dvakrát.",
+      "instructionEn": "Listen to five dialogues. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each dialogue twice.",
+      "questions": [
+        {
+          "q": "Jaké počasí bude zítra odpoledne?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Bude zítra hezky? Chceme jít na výlet."
+            },
+            {
+              "speaker": "b",
+              "cs": "Podle předpovědi bude ráno mlha a odpoledne bude pršet."
+            }
+          ],
+          "options": [
+            "Bude pršet.",
+            "Bude sněžit.",
+            "Bude foukat vítr.",
+            "Slunečno."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Kolik je hodin?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Promiňte, kolik je hodin?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Je čtvrt na šest."
+            }
+          ],
+          "options": [
+            "Je 6:15.",
+            "Je 5:45.",
+            "Je 5:15.",
+            "Je 6:00."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Co si muž koupí?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Ty modré boty jsou hezké, ale jsou malé. Máte čtyřicet čtyřku?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Modré už nemáme, ale máme černé."
+            },
+            {
+              "speaker": "a",
+              "cs": "Tak ty černé si vezmu."
+            }
+          ],
+          "options": [
+            "Černé boty.",
+            "Modré boty.",
+            "Bundu.",
+            "Nic."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Jakou jízdenku si žena koupí?",
+          "audio": [
+            {
+              "speaker": "b",
+              "cs": "Jednu jízdenku do Brna, prosím."
+            },
+            {
+              "speaker": "a",
+              "cs": "Jen tam, nebo i zpátky?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Tam i zpátky. Vracím se v neděli."
+            }
+          ],
+          "options": [
+            "Do Ostravy.",
+            "Do Plzně.",
+            "Do Brna a zpátky.",
+            "Jen do Brna."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Proč muž nepřijde do práce?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Haló, Jano? Dneska nepřijdu, mám horečku."
+            },
+            {
+              "speaker": "b",
+              "cs": "To je mi líto. Uzdrav se."
+            }
+          ],
+          "options": [
+            "Má dovolenou.",
+            "Jede na úřad.",
+            "Je nemocný.",
+            "Vlak má zpoždění."
+          ],
+          "answer": 2
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "l1-mock1",
+      "part": "listening",
+      "task": 1,
+      "use": "mock1",
+      "title": "Everyday dialogues",
+      "kind": "choice",
+      "instruction": "Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý dialog uslyšíte dvakrát.",
+      "instructionEn": "Listen to five dialogues. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each dialogue twice.",
+      "questions": [
+        {
+          "q": "Kde bydlí paní Ječmenová teď?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Paní Ječmenová, bydlíte pořád v centru?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Ne, před rokem jsme se přestěhovali do Modřan. Je tam víc zeleně."
+            }
+          ],
+          "options": [
+            "V Brně.",
+            "Na vesnici.",
+            "V centru.",
+            "V Modřanech."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Co má muž koupit?",
+          "audio": [
+            {
+              "speaker": "b",
+              "cs": "Koupíš cestou mléko a máslo?"
+            },
+            {
+              "speaker": "a",
+              "cs": "Mléko ano. Ale máslo ještě máme, ne?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Aha, tak jen mléko. A vezmi chleba."
+            }
+          ],
+          "options": [
+            "Chleba a máslo.",
+            "Mléko a chleba.",
+            "Mléko a máslo.",
+            "Jen máslo."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Kdy má žena termín u zubaře?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Zubní ordinace, dobrý den."
+            },
+            {
+              "speaker": "b",
+              "cs": "Dobrý den, potřebuju se objednat. Bolí mě zub."
+            },
+            {
+              "speaker": "a",
+              "cs": "Můžete přijít zítra v deset?"
+            },
+            {
+              "speaker": "b",
+              "cs": "V deset jsem v práci. Šlo by to odpoledne?"
+            },
+            {
+              "speaker": "a",
+              "cs": "Tak ve tři."
+            },
+            {
+              "speaker": "b",
+              "cs": "Ve tři je to dobré."
+            }
+          ],
+          "options": [
+            "Zítra ve tři.",
+            "Zítra v deset.",
+            "Dnes.",
+            "Pozítří."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Jak jezdí muž do práce teď?",
+          "audio": [
+            {
+              "speaker": "b",
+              "cs": "Jezdíš do práce autem?"
+            },
+            {
+              "speaker": "a",
+              "cs": "Dřív jsem jezdil, ale teď jezdím na kole. Je to rychlejší."
+            }
+          ],
+          "options": [
+            "Metrem.",
+            "Autem.",
+            "Na kole.",
+            "Autobusem."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Co dělá žena v neděli?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Co děláš o víkendu?"
+            },
+            {
+              "speaker": "b",
+              "cs": "V sobotu jedeme na chatu a v neděli jdu s dětmi do divadla."
+            }
+          ],
+          "options": [
+            "Uklízí.",
+            "Pracuje.",
+            "Jde do divadla.",
+            "Je na chatě."
+          ],
+          "answer": 2
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "l1-mock2",
+      "part": "listening",
+      "task": 1,
+      "use": "mock2",
+      "title": "Everyday dialogues",
+      "kind": "choice",
+      "instruction": "Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý dialog uslyšíte dvakrát.",
+      "instructionEn": "Listen to five dialogues. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each dialogue twice.",
+      "questions": [
+        {
+          "q": "Co si muž objedná?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Máte dnes polévku?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Ano, gulášovou a zeleninovou."
+            },
+            {
+              "speaker": "a",
+              "cs": "Zeleninovou, prosím. A potom smažený sýr."
+            }
+          ],
+          "options": [
+            "Guláš.",
+            "Jen smažený sýr.",
+            "Gulášovou polévku.",
+            "Zeleninovou polévku a smažený sýr."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Kolik stojí lístek pro muže?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Kolik stojí lístek na koncert?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Normální stojí čtyři sta padesát korun, pro studenty tři sta."
+            },
+            {
+              "speaker": "a",
+              "cs": "Já nejsem student, tak normální."
+            }
+          ],
+          "options": [
+            "500 Kč.",
+            "300 Kč.",
+            "450 Kč.",
+            "350 Kč."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Co nefunguje?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Dobrý den, mluvím se správcem domu?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Ano, u telefonu."
+            },
+            {
+              "speaker": "a",
+              "cs": "V bytě číslo pět nefunguje topení. Je tu strašná zima."
+            }
+          ],
+          "options": [
+            "Topení.",
+            "Lednička.",
+            "Světlo.",
+            "Výtah."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Kdy přijede vlak?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Promiňte, kdy přijede vlak z Ostravy?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Měl přijet ve 15:20, ale má zpoždění dvacet minut."
+            }
+          ],
+          "options": [
+            "V 16:20.",
+            "V 15:40.",
+            "V 15:00.",
+            "V 15:20."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co dá žena kamarádce k narozeninám?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Co dáš Petře k narozeninám? Knihu?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Knihu jsem jí dala loni. Letos jí koupím kytku a lístky do kina."
+            }
+          ],
+          "options": [
+            "Knihu.",
+            "Kytku a lístky do kina.",
+            "Čokoládu.",
+            "Nic."
+          ],
+          "answer": 1
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "l2-practice1",
+      "part": "listening",
+      "task": 2,
+      "use": "practice1",
+      "title": "At the station and in the shop",
+      "kind": "choice",
+      "instruction": "Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý text uslyšíte dvakrát.",
+      "instructionEn": "Listen to five announcements. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each one twice.",
+      "questions": [
+        {
+          "q": "Na kterou kolej přijede vlak do Plzně?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Vážení cestující, rychlík do Plzně přijede na druhou kolej, nástupiště číslo tři. Vlak má zpoždění asi pět minut."
+            }
+          ],
+          "options": [
+            "Na kolej 2.",
+            "Na kolej 1.",
+            "Na kolej 3.",
+            "Na kolej 5."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Co je dnes ve slevě?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Vážení zákazníci, jen dnes máme slevu třicet procent na všechny jogurty a sýry. Pečivo je za normální cenu."
+            }
+          ],
+          "options": [
+            "Maso.",
+            "Jogurty a sýry.",
+            "Pečivo.",
+            "Ovoce."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Do kolika je obchod dnes otevřený?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Vážení zákazníci, upozorňujeme, že dnes zavíráme už v sedmnáct hodin. Zítra máme otevřeno jako obvykle, od sedmi do dvaceti dvou."
+            }
+          ],
+          "options": [
+            "Do 19:00.",
+            "Do 17:00.",
+            "Do 20:00.",
+            "Do 22:00."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Která stanice metra je zavřená?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Upozorňujeme cestující, že stanice Muzeum je z technických důvodů uzavřena. Vlaky ve stanici nezastavují."
+            }
+          ],
+          "options": [
+            "Muzeum.",
+            "Florenc.",
+            "Hlavní nádraží.",
+            "Můstek."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Kde čeká malý Honzík?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Prosíme maminku malého Honzíka, aby si ho vyzvedla u informací v přízemí obchodního centra."
+            }
+          ],
+          "options": [
+            "U informací v přízemí.",
+            "V restauraci.",
+            "U pokladny.",
+            "U východu."
+          ],
+          "answer": 0
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "l2-practice2",
+      "part": "listening",
+      "task": 2,
+      "use": "practice2",
+      "title": "Travel and events",
+      "kind": "choice",
+      "instruction": "Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý text uslyšíte dvakrát.",
+      "instructionEn": "Listen to five announcements. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each one twice.",
+      "questions": [
+        {
+          "q": "Kdy odjede autobus do Brna?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Autobus do Brna odjede ze stanoviště číslo dvanáct ve čtrnáct hodin třicet minut."
+            }
+          ],
+          "options": [
+            "Ve 13:30.",
+            "Ve 14:30.",
+            "Ve 12:30.",
+            "Ve 14:00."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co v sobotu nebude?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Vážení návštěvníci, koncert v parku, který měl být v sobotu, se kvůli špatnému počasí ruší. Výstava v galerii bude otevřená normálně."
+            }
+          ],
+          "options": [
+            "Divadlo.",
+            "Koncert.",
+            "Trhy.",
+            "Výstava."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Kam mají jít cestující do Vídně?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Cestující do Vídně, váš let je připraven k odletu. Jděte prosím k východu B dvanáct."
+            }
+          ],
+          "options": [
+            "K východu B2.",
+            "K informacím.",
+            "K východu B12.",
+            "K pokladně."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Kolik dnes stojí polední menu?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Vážení hosté, dnešní polední menu: kuřecí řízek s bramborem za sto čtyřicet devět korun. Polévka je v ceně."
+            }
+          ],
+          "options": [
+            "194 Kč.",
+            "159 Kč.",
+            "149 Kč.",
+            "129 Kč."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Která tramvaj jede dnes jinou cestou?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Pozor, tramvaj číslo dvacet dva jede dnes kvůli opravě trati přes Anděl. Ostatní linky jezdí normálně."
+            }
+          ],
+          "options": [
+            "Číslo 2.",
+            "Číslo 12.",
+            "Číslo 20.",
+            "Číslo 22."
+          ],
+          "answer": 3
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "l2-mock1",
+      "part": "listening",
+      "task": 2,
+      "use": "mock1",
+      "title": "Announcements",
+      "kind": "choice",
+      "instruction": "Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý text uslyšíte dvakrát.",
+      "instructionEn": "Listen to five announcements. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each one twice.",
+      "questions": [
+        {
+          "q": "Kdy je pošta zavřená?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Vážení zákazníci, ve čtvrtek je pošta z technických důvodů zavřená. V pátek otevíráme v osm hodin."
+            }
+          ],
+          "options": [
+            "V pátek.",
+            "Ve čtvrtek.",
+            "V pondělí.",
+            "Ve středu."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co dostanou zákazníci zdarma?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Při nákupu nad pět set korun dostanete zdarma tašku. Akce platí do neděle."
+            }
+          ],
+          "options": [
+            "Slevu deset procent.",
+            "Kávu.",
+            "Jízdenku.",
+            "Tašku."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Ve které zastávce dnes končí tramvaj?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Tramvaj číslo devět dnes končí v zastávce Národní třída. Dál pokračujte pěšky nebo metrem."
+            }
+          ],
+          "options": [
+            "Národní třída.",
+            "Anděl.",
+            "Václavské náměstí.",
+            "Lazarská."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Kde mají rodiče počkat na děti?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Milí rodiče, děti se z výletu vrátí v šestnáct hodin. Počkejte na ně prosím na parkovišti před školou."
+            }
+          ],
+          "options": [
+            "Ve škole.",
+            "U zoo.",
+            "Na parkovišti před školou.",
+            "Na nádraží."
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Proti čemu je očkování?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Pojišťovna nabízí svým klientům zdarma očkování proti chřipce. Objednejte se u svého praktického lékaře."
+            }
+          ],
+          "options": [
+            "Proti bolesti zubů.",
+            "Proti chřipce.",
+            "Proti horečce.",
+            "Proti alergii."
+          ],
+          "answer": 1
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "l2-mock2",
+      "part": "listening",
+      "task": 2,
+      "use": "mock2",
+      "title": "Announcements",
+      "kind": "choice",
+      "instruction": "Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–D. Každý text uslyšíte dvakrát.",
+      "instructionEn": "Listen to five announcements. Choose the one right answer, A–D, for each of questions 1–5. You’ll hear each one twice.",
+      "questions": [
+        {
+          "q": "Kolik minut má vlak zpoždění?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Osobní vlak z Kolína přijede o patnáct minut později. Omlouváme se za zpoždění."
+            }
+          ],
+          "options": [
+            "5 minut.",
+            "15 minut.",
+            "10 minut.",
+            "50 minut."
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Ve kterém patře jsou hračky?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Vážení zákazníci, hračky najdete nově ve třetím patře, vedle sportovního oddělení."
+            }
+          ],
+          "options": [
+            "Ve druhém.",
+            "V prvním.",
+            "Ve čtvrtém.",
+            "Ve třetím."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Co bude v pondělí?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "V pondělí od osmi do dvanácti nepoteče voda v celé ulici. Omlouváme se."
+            }
+          ],
+          "options": [
+            "Nepojede tramvaj.",
+            "Nebude elektřina.",
+            "Nebude plyn.",
+            "Nepoteče voda."
+          ],
+          "answer": 3
+        },
+        {
+          "q": "Kdy začíná film?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Vážení diváci, film začne s malým zpožděním, ve dvacet hodin patnáct minut."
+            }
+          ],
+          "options": [
+            "Ve 20:15.",
+            "Ve 20:50.",
+            "Ve 20:00.",
+            "Ve 21:15."
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Kde je dnes zastávka autobusu 136?",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Zastávka autobusu sto třicet šest je kvůli stavbě dočasně o sto metrů dál, před poliklinikou."
+            }
+          ],
+          "options": [
+            "Před školou.",
+            "Před poliklinikou.",
+            "Na náměstí.",
+            "U nádraží."
+          ],
+          "answer": 1
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "l3-practice1",
+      "part": "listening",
+      "task": 3,
+      "use": "practice1",
+      "title": "What are they doing?",
+      "kind": "match",
+      "instruction": "Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–G. Dvě nabídky jsou navíc. Každý text uslyšíte dvakrát.",
+      "instructionEn": "Listen to five short texts. Choose the right answer, A–G, from the table for each. Two of the options are extra. You’ll hear each text twice.",
+      "question": "Co dnes dělají tito lidé?",
+      "items": [
+        {
+          "id": "1",
+          "label": "Martina",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Mám v košíku chleba, mléko a sýr a teď jdu k pokladně."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jirka",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Jsem v kuchyni a dělám polévku a knedlíky pro celou rodinu."
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Eva",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Běhám v parku, už mám za sebou pět kilometrů."
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Pavel",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Jsem v kanceláři. Mám ještě dvě porady a pak jdu domů."
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Lenka",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Ležím na gauči a mám novou detektivku. Je moc napínavá."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "spí"
+        },
+        {
+          "id": "B",
+          "text": "nakupuje"
+        },
+        {
+          "id": "C",
+          "text": "pracuje"
+        },
+        {
+          "id": "D",
+          "text": "sportuje"
+        },
+        {
+          "id": "E",
+          "text": "čte"
+        },
+        {
+          "id": "F",
+          "text": "vaří"
+        },
+        {
+          "id": "G",
+          "text": "uklízí"
+        }
+      ],
+      "answers": {
+        "1": "B",
+        "2": "F",
+        "3": "D",
+        "4": "C",
+        "5": "E"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "l3-practice2",
+      "part": "listening",
+      "task": 3,
+      "use": "practice2",
+      "title": "Where are they going?",
+      "kind": "match",
+      "instruction": "Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–G. Dvě nabídky jsou navíc. Každý text uslyšíte dvakrát.",
+      "instructionEn": "Listen to five short texts. Choose the right answer, A–G, from the table for each. Two of the options are extra. You’ll hear each text twice.",
+      "question": "Kam jdou tito lidé?",
+      "items": [
+        {
+          "id": "1",
+          "label": "Tomáš",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Musím poslat balík babičce do Brna."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Jana",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Mám horečku a bolí mě v krku."
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Karel",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Potřebuju vrátit dvě knihy a půjčit si nové."
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Olga",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Za dvacet minut mi jede vlak do Olomouce."
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Filip",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Chci si otevřít nový účet a dostat kartu."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "do kina"
+        },
+        {
+          "id": "B",
+          "text": "k lékaři"
+        },
+        {
+          "id": "C",
+          "text": "na poštu"
+        },
+        {
+          "id": "D",
+          "text": "do knihovny"
+        },
+        {
+          "id": "E",
+          "text": "do banky"
+        },
+        {
+          "id": "F",
+          "text": "do restaurace"
+        },
+        {
+          "id": "G",
+          "text": "na nádraží"
+        }
+      ],
+      "answers": {
+        "1": "C",
+        "2": "B",
+        "3": "D",
+        "4": "G",
+        "5": "E"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "l3-mock1",
+      "part": "listening",
+      "task": 3,
+      "use": "mock1",
+      "title": "Sports",
+      "kind": "match",
+      "instruction": "Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–G. Dvě nabídky jsou navíc. Každý text uslyšíte dvakrát.",
+      "instructionEn": "Listen to five short texts. Choose the right answer, A–G, from the table for each. Two of the options are extra. You’ll hear each text twice.",
+      "question": "Jaký sport dělají tito lidé?",
+      "items": [
+        {
+          "id": "1",
+          "label": "Ivana",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "V zimě jezdíme každý rok do Alp. Na horách je nejlepší sníh."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Robert",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Každou neděli hrajeme s kamarády s míčem na hřišti za školou. Já jsem v bráně."
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Dana",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Jezdím do práce na kole a o víkendu ještě dál, třeba šedesát kilometrů."
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Mirek",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Mám novou raketu a v úterý hraju s kolegou na kurtu."
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Alena",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Chodím do bazénu třikrát týdně, vždycky uplavu kilometr."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "tenis"
+        },
+        {
+          "id": "B",
+          "text": "cyklistika"
+        },
+        {
+          "id": "C",
+          "text": "fotbal"
+        },
+        {
+          "id": "D",
+          "text": "běh"
+        },
+        {
+          "id": "E",
+          "text": "lyžování"
+        },
+        {
+          "id": "F",
+          "text": "hokej"
+        },
+        {
+          "id": "G",
+          "text": "plavání"
+        }
+      ],
+      "answers": {
+        "1": "E",
+        "2": "C",
+        "3": "B",
+        "4": "A",
+        "5": "G"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "l3-mock2",
+      "part": "listening",
+      "task": 3,
+      "use": "mock2",
+      "title": "What do they need?",
+      "kind": "match",
+      "instruction": "Poslechněte si pět textů. Vyberte ke každému úkolu 1–5 jedno správné řešení z nabídky A–G. Dvě nabídky jsou navíc. Každý text uslyšíte dvakrát.",
+      "instructionEn": "Listen to five short texts. Choose the right answer, A–G, from the table for each. Two of the options are extra. You’ll hear each text twice.",
+      "question": "Co potřebují tito lidé?",
+      "items": [
+        {
+          "id": "1",
+          "label": "Hana",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Zítra má můj syn narozeniny a já pro něj ještě nic nemám."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Zdeněk",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Nemůžu otevřít dveře. Nechal jsem je v kanceláři."
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Věra",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Venku prší a já nechci zmoknout."
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Luboš",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Bolí mě hlava, potřebuju něco z lékárny."
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Marie",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Jedu tramvají a ještě nemám lístek."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": "jízdenku"
+        },
+        {
+          "id": "B",
+          "text": "lék"
+        },
+        {
+          "id": "C",
+          "text": "klíče"
+        },
+        {
+          "id": "D",
+          "text": "deštník"
+        },
+        {
+          "id": "E",
+          "text": "dárek"
+        },
+        {
+          "id": "F",
+          "text": "mapu"
+        },
+        {
+          "id": "G",
+          "text": "peníze"
+        }
+      ],
+      "answers": {
+        "1": "E",
+        "2": "C",
+        "3": "D",
+        "4": "B",
+        "5": "A"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "l4-practice1",
+      "part": "listening",
+      "task": 4,
+      "use": "practice1",
+      "title": "Looking for things",
+      "kind": "match",
+      "instruction": "Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jeden správný obrázek z nabídky A–F. Jeden obrázek je navíc. Každý dialog uslyšíte dvakrát.",
+      "instructionEn": "Listen to five dialogues. Choose the right picture, A–F, for each. One picture is extra. You’ll hear each dialogue twice.",
+      "question": "Co hledají ti lidé?",
+      "items": [
+        {
+          "id": "1",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Nevíš, kde mám brýle? Bez nich nepřečtu noviny."
+            },
+            {
+              "speaker": "b",
+              "cs": "Máš je na hlavě!"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "audio": [
+            {
+              "speaker": "b",
+              "cs": "Kde je můj mobil? Musím zavolat mámě."
+            },
+            {
+              "speaker": "a",
+              "cs": "Ležel na stole v kuchyni."
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Venku začíná pršet a já nemůžu najít deštník."
+            },
+            {
+              "speaker": "b",
+              "cs": "Je v předsíni u dveří."
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "audio": [
+            {
+              "speaker": "b",
+              "cs": "Ztratila jsem peněženku. Byly v ní všechny karty."
+            },
+            {
+              "speaker": "a",
+              "cs": "Zavolej hned do banky."
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Nemůžu odemknout. Kde mám klíče?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Nechal jsi je v autě."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "picture": "phone"
+        },
+        {
+          "id": "B",
+          "picture": "ticket"
+        },
+        {
+          "id": "C",
+          "picture": "umbrella"
+        },
+        {
+          "id": "D",
+          "picture": "key"
+        },
+        {
+          "id": "E",
+          "picture": "wallet"
+        },
+        {
+          "id": "F",
+          "picture": "glasses"
+        }
+      ],
+      "answers": {
+        "1": "F",
+        "2": "A",
+        "3": "C",
+        "4": "E",
+        "5": "D"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "l4-practice2",
+      "part": "listening",
+      "task": 4,
+      "use": "practice2",
+      "title": "Shopping for dinner",
+      "kind": "match",
+      "instruction": "Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jeden správný obrázek z nabídky A–F. Jeden obrázek je navíc. Každý dialog uslyšíte dvakrát.",
+      "instructionEn": "Listen to five dialogues. Choose the right picture, A–F, for each. One picture is extra. You’ll hear each dialogue twice.",
+      "question": "Co ti lidé koupí?",
+      "items": [
+        {
+          "id": "1",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Na večeři budou ryby, ne?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Ano, kup prosím dvě, třeba pstruhy."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "audio": [
+            {
+              "speaker": "b",
+              "cs": "Babička slaví osmdesátiny. Objednáme dort?"
+            },
+            {
+              "speaker": "a",
+              "cs": "Jo, čokoládový."
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Máme doma ovoce?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Ne, kup kilo jablek."
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "audio": [
+            {
+              "speaker": "b",
+              "cs": "K večeři bude sýr a víno?"
+            },
+            {
+              "speaker": "a",
+              "cs": "Víno máme, kup jen sýr."
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Půjdeš do pekárny? Došel chleba."
+            },
+            {
+              "speaker": "b",
+              "cs": "Dobře, koupím ho cestou."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "picture": "cheese"
+        },
+        {
+          "id": "B",
+          "picture": "fish"
+        },
+        {
+          "id": "C",
+          "picture": "wine"
+        },
+        {
+          "id": "D",
+          "picture": "bread"
+        },
+        {
+          "id": "E",
+          "picture": "apple"
+        },
+        {
+          "id": "F",
+          "picture": "cake"
+        }
+      ],
+      "answers": {
+        "1": "B",
+        "2": "F",
+        "3": "E",
+        "4": "A",
+        "5": "D"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "l4-mock1",
+      "part": "listening",
+      "task": 4,
+      "use": "mock1",
+      "title": "Where are they going?",
+      "kind": "match",
+      "instruction": "Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jeden správný obrázek z nabídky A–F. Jeden obrázek je navíc. Každý dialog uslyšíte dvakrát.",
+      "instructionEn": "Listen to five dialogues. Choose the right picture, A–F, for each. One picture is extra. You’ll hear each dialogue twice.",
+      "question": "Kam ti lidé půjdou nebo pojedou?",
+      "items": [
+        {
+          "id": "1",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "V sobotu bude teplo. Půjdeme se koupat?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Jo, do bazénu v Podolí."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "audio": [
+            {
+              "speaker": "b",
+              "cs": "Na jaký film chceš jít?"
+            },
+            {
+              "speaker": "a",
+              "cs": "Na nový český, hrají ho v Lucerně."
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "O prázdninách pojedeme na hory, do Krkonoš."
+            },
+            {
+              "speaker": "b",
+              "cs": "To je super, vezměte si dobré boty."
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "audio": [
+            {
+              "speaker": "b",
+              "cs": "Půjdeme dnes večer na večeři?"
+            },
+            {
+              "speaker": "a",
+              "cs": "Rád. Znám dobrou italskou restauraci."
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Děti chtějí vidět dinosaury."
+            },
+            {
+              "speaker": "b",
+              "cs": "Tak je vezmi do Národního muzea."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "picture": "tree"
+        },
+        {
+          "id": "B",
+          "picture": "swimming"
+        },
+        {
+          "id": "C",
+          "picture": "museum"
+        },
+        {
+          "id": "D",
+          "picture": "restaurant"
+        },
+        {
+          "id": "E",
+          "picture": "mountains"
+        },
+        {
+          "id": "F",
+          "picture": "film"
+        }
+      ],
+      "answers": {
+        "1": "B",
+        "2": "F",
+        "3": "E",
+        "4": "D",
+        "5": "C"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "l4-mock2",
+      "part": "listening",
+      "task": 4,
+      "use": "mock2",
+      "title": "How are they travelling?",
+      "kind": "match",
+      "instruction": "Poslechněte si pět dialogů. Vyberte ke každému úkolu 1–5 jeden správný obrázek z nabídky A–F. Jeden obrázek je navíc. Každý dialog uslyšíte dvakrát.",
+      "instructionEn": "Listen to five dialogues. Choose the right picture, A–F, for each. One picture is extra. You’ll hear each dialogue twice.",
+      "question": "Jak ti lidé pojedou?",
+      "items": [
+        {
+          "id": "1",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Pojedeš do Londýna vlakem?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Ne, to je moc daleko. Poletím."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "audio": [
+            {
+              "speaker": "b",
+              "cs": "Jak se dostanu na Petřín?"
+            },
+            {
+              "speaker": "a",
+              "cs": "Jeď tramvají číslo dvacet dva na Újezd."
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Vezmeš si auto?"
+            },
+            {
+              "speaker": "b",
+              "cs": "Ne, do Brna jedu vlakem. Je to rychlejší."
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "audio": [
+            {
+              "speaker": "b",
+              "cs": "Na letiště jezdí autobus sto devatenáct, viď?"
+            },
+            {
+              "speaker": "a",
+              "cs": "Ano. Tak pojedu autobusem."
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "audio": [
+            {
+              "speaker": "a",
+              "cs": "Do práce to mám jen tři kilometry, tak jezdím na kole."
+            },
+            {
+              "speaker": "b",
+              "cs": "To je zdravé."
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "picture": "tram"
+        },
+        {
+          "id": "B",
+          "picture": "car"
+        },
+        {
+          "id": "C",
+          "picture": "train"
+        },
+        {
+          "id": "D",
+          "picture": "bike"
+        },
+        {
+          "id": "E",
+          "picture": "plane"
+        },
+        {
+          "id": "F",
+          "picture": "bus"
+        }
+      ],
+      "answers": {
+        "1": "E",
+        "2": "A",
+        "3": "C",
+        "4": "F",
+        "5": "D"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "l5-practice1",
+      "part": "listening",
+      "task": 5,
+      "use": "practice1",
+      "title": "A trip on Saturday",
+      "kind": "fill",
+      "instruction": "Poslechněte si hlasovou zprávu. Napište ke každému úkolu 1–5 jednu správnou informaci. Zprávu uslyšíte dvakrát.",
+      "instructionEn": "Listen to a voicemail and write one piece of information for each of questions 1–5. You’ll hear it twice.",
+      "audio": [
+        {
+          "speaker": "a",
+          "cs": "Ahoj Sáro, tady Martin. Volám kvůli sobotě. Na výlet pojedeme vlakem, ne autem, protože Petr má auto v servisu. Sraz je v osm hodin na Hlavním nádraží, u pokladen. Jízdenka do Kutné Hory stojí sto deset korun, kup si ji prosím předem na internetu. Vezmi si dobré boty, budeme hodně chodit. Kdyby něco, moje číslo je sedm set třicet jedna, pět set dvacet čtyři, osm set devadesát. Ahoj!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Jak pojedou na výlet?",
+          "answers": [
+            "vlakem",
+            "vlak"
+          ]
+        },
+        {
+          "q": "V kolik hodin je sraz?",
+          "answers": [
+            "v 8",
+            "8",
+            "8:00",
+            "v osm",
+            "osm",
+            "v 8 hodin",
+            "8 hodin",
+            "v osm hodin"
+          ]
+        },
+        {
+          "q": "Kde je sraz?",
+          "answers": [
+            "na Hlavním nádraží",
+            "Hlavní nádraží",
+            "u pokladen",
+            "na nádraží",
+            "na Hlavním nádraží u pokladen"
+          ]
+        },
+        {
+          "q": "Kolik stojí jízdenka?",
+          "answers": [
+            "110",
+            "sto deset",
+            "110 Kč"
+          ]
+        },
+        {
+          "q": "Jaké číslo telefonu má Martin?",
+          "answers": [
+            "731 524 890",
+            "731524890"
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "l5-practice2",
+      "part": "listening",
+      "task": 5,
+      "use": "practice2",
+      "title": "A message from the garage",
+      "kind": "fill",
+      "instruction": "Poslechněte si hlasovou zprávu. Napište ke každému úkolu 1–5 jednu správnou informaci. Zprávu uslyšíte dvakrát.",
+      "instructionEn": "Listen to a voicemail and write one piece of information for each of questions 1–5. You’ll hear it twice.",
+      "audio": [
+        {
+          "speaker": "a",
+          "cs": "Dobrý den, tady autoservis Brzda, Novotný. Vaše auto je opravené. Vyměnili jsme brzdy a baterii. Oprava stojí čtyři tisíce dvě stě korun. Auto si můžete vyzvednout zítra od sedmi do sedmnácti hodin. Jsme v ulici Na Zátorce, číslo osm. Platit můžete hotově nebo převodem. Na shledanou."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Co v autě vyměnili? Napište jednu věc.",
+          "answers": [
+            "brzdy",
+            "baterii",
+            "baterie",
+            "brzdy a baterii"
+          ]
+        },
+        {
+          "q": "Kolik stojí oprava?",
+          "answers": [
+            "4 200",
+            "4200",
+            "čtyři tisíce dvě stě",
+            "4 200 Kč"
+          ]
+        },
+        {
+          "q": "Kdy si může auto vyzvednout?",
+          "answers": [
+            "zítra",
+            "zítra od 7 do 17",
+            "zítra od sedmi do sedmnácti"
+          ]
+        },
+        {
+          "q": "Jak se jmenuje ulice?",
+          "answers": [
+            "Na Zátorce",
+            "Zátorce",
+            "Na Zátorce 8"
+          ]
+        },
+        {
+          "q": "Jak může zaplatit? Napište jeden způsob.",
+          "answers": [
+            "hotově",
+            "převodem",
+            "hotově nebo převodem"
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "l5-mock1",
+      "part": "listening",
+      "task": 5,
+      "use": "mock1",
+      "title": "A birthday invitation",
+      "kind": "fill",
+      "instruction": "Poslechněte si hlasovou zprávu. Napište ke každému úkolu 1–5 jednu správnou informaci. Zprávu uslyšíte dvakrát.",
+      "instructionEn": "Listen to a voicemail and write one piece of information for each of questions 1–5. You’ll hear it twice.",
+      "audio": [
+        {
+          "speaker": "a",
+          "cs": "Ahoj Kláro, tady Jitka. Poslouchej, v pátek mám narozeniny a chci tě pozvat na večeři. Budeme v restauraci U Bílé labutě, to je v ulici Dlouhá. Sejdeme se v půl osmé. Přijde asi deset lidí. Nekupuj mi prosím žádný dárek, ale jestli chceš, přines nějaké dobré víno. Zavolej mi, jestli přijdeš, na číslo šest set pět, sto sedmnáct, tři sta čtyřicet dva. Měj se!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Kdy má Jitka narozeniny?",
+          "answers": [
+            "v pátek",
+            "pátek"
+          ]
+        },
+        {
+          "q": "Jak se jmenuje restaurace?",
+          "answers": [
+            "U Bílé labutě",
+            "Bílá labuť"
+          ]
+        },
+        {
+          "q": "V kolik hodin se sejdou?",
+          "answers": [
+            "v půl osmé",
+            "půl osmé",
+            "19:30",
+            "v 19:30",
+            "7:30",
+            "v 7:30"
+          ]
+        },
+        {
+          "q": "Co má Klára přinést?",
+          "answers": [
+            "víno",
+            "dobré víno",
+            "nějaké víno"
+          ]
+        },
+        {
+          "q": "Jaké číslo telefonu má Jitka?",
+          "answers": [
+            "605 117 342",
+            "605117342"
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "l5-mock2",
+      "part": "listening",
+      "task": 5,
+      "use": "mock2",
+      "title": "A message from a language school",
+      "kind": "fill",
+      "instruction": "Poslechněte si hlasovou zprávu. Napište ke každému úkolu 1–5 jednu správnou informaci. Zprávu uslyšíte dvakrát.",
+      "instructionEn": "Listen to a voicemail and write one piece of information for each of questions 1–5. You’ll hear it twice.",
+      "audio": [
+        {
+          "speaker": "a",
+          "cs": "Dobrý den, tady je Jazyková škola Most, Hana Pokorná. Volám kvůli kurzu češtiny. Kurz začíná v pondělí dvacátého ledna. Lekce jsou vždycky v pondělí a ve středu od šesti do půl osmé večer. Učebna je ve druhém patře, číslo dvě stě patnáct. Kurz stojí šest tisíc korun, zaplaťte ho prosím do pátku. Kdybyste měl otázky, volejte na číslo dvě stě dvacet dva, tři sta třicet tři, čtyři sta čtyřicet čtyři. Na shledanou."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Kdy začíná kurz?",
+          "answers": [
+            "v pondělí 20. ledna",
+            "20. ledna",
+            "20. 1.",
+            "20.1.",
+            "dvacátého ledna",
+            "20 ledna",
+            "v pondělí dvacátého ledna"
+          ]
+        },
+        {
+          "q": "Ve které dny jsou lekce? Napište jeden den.",
+          "answers": [
+            "v pondělí",
+            "pondělí",
+            "ve středu",
+            "středa",
+            "středu",
+            "v pondělí a ve středu"
+          ]
+        },
+        {
+          "q": "Jaké číslo má učebna?",
+          "answers": [
+            "215",
+            "dvě stě patnáct"
+          ]
+        },
+        {
+          "q": "Kolik stojí kurz?",
+          "answers": [
+            "6 000",
+            "6000",
+            "šest tisíc",
+            "6 000 Kč"
+          ]
+        },
+        {
+          "q": "Do kdy musí kurz zaplatit?",
+          "answers": [
+            "do pátku",
+            "pátek",
+            "v pátek"
+          ]
+        }
+      ],
+      "nativeReviewed": false
+    }
+  ]
+}

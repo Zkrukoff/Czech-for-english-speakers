@@ -34,17 +34,26 @@ export class WebSpeechProvider implements SpeechProvider {
     if (typeof speechSynthesis === 'undefined') return Promise.resolve();
     speechSynthesis.cancel();
     return new Promise((resolve) => {
-      const u = new SpeechSynthesisUtterance(text);
-      u.lang = 'cs-CZ';
-      u.rate = options.rate ?? 0.9;
-      if (options.pitch !== undefined) u.pitch = options.pitch;
-      const voices = czechVoices();
-      const voice = voices.find((v) => v.voiceURI === options.voiceURI) ?? voices[0];
-      if (voice) u.voice = voice;
-      u.onend = () => resolve();
-      u.onerror = () => resolve();
-      speechSynthesis.speak(u);
+      // A speech engine that throws mustn't leave a caller waiting forever.
+      try {
+        this.utter(text, options, resolve);
+      } catch {
+        resolve();
+      }
     });
+  }
+
+  private utter(text: string, options: SpeakOptions, resolve: () => void): void {
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'cs-CZ';
+    u.rate = options.rate ?? 0.9;
+    if (options.pitch !== undefined) u.pitch = options.pitch;
+    const voices = czechVoices();
+    const voice = voices.find((v) => v.voiceURI === options.voiceURI) ?? voices[0];
+    if (voice) u.voice = voice;
+    u.onend = () => resolve();
+    u.onerror = () => resolve();
+    speechSynthesis.speak(u);
   }
 
   stop(): void {

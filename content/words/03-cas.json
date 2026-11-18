@@ -909,6 +909,258 @@
         "en": "Twenty per cent off."
       },
       "nativeReviewed": false
+    },
+    {
+      "id": "doba",
+      "cs": "doba",
+      "en": "time, period",
+      "pos": "noun",
+      "gender": "f",
+      "note": "v současné době = at present",
+      "rank": 83,
+      "example": {
+        "cs": "Jaká je otevírací doba?",
+        "en": "What are the opening hours?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "stoleti",
+      "cs": "století",
+      "en": "century",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 316,
+      "example": {
+        "cs": "Ten dům je z 19. století.",
+        "en": "The house is from the 19th century."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "okamzik",
+      "cs": "okamžik",
+      "en": "moment",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 539,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obdobi",
+      "cs": "období",
+      "en": "period, season",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 459,
+      "nativeReviewed": false
+    },
+    {
+      "id": "letos",
+      "cs": "letos",
+      "en": "this year",
+      "pos": "adv",
+      "rank": 564,
+      "nativeReviewed": false
+    },
+    {
+      "id": "loni",
+      "cs": "loni",
+      "en": "last year",
+      "pos": "adv",
+      "alt": [
+        "vloni"
+      ],
+      "nativeReviewed": false
+    },
+    {
+      "id": "tehdy",
+      "cs": "tehdy",
+      "en": "then, at that time",
+      "pos": "adv",
+      "rank": 324,
+      "example": {
+        "cs": "Tehdy jsem bydlel v Londýně.",
+        "en": "At that time I lived in London."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "nyni",
+      "cs": "nyní",
+      "en": "now (formal)",
+      "pos": "adv",
+      "rank": 279,
+      "example": {
+        "cs": "Nyní vystupte.",
+        "en": "Get off now."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "poprve",
+      "cs": "poprvé",
+      "en": "for the first time",
+      "pos": "adv",
+      "rank": 531,
+      "nativeReviewed": false
+    },
+    {
+      "id": "naposledy",
+      "cs": "naposledy",
+      "en": "for the last time; last time",
+      "pos": "adv",
+      "rank": 1951,
+      "nativeReviewed": false
+    },
+    {
+      "id": "teprve",
+      "cs": "teprve",
+      "en": "only (not until)",
+      "pos": "adv",
+      "note": "Je teprve osm.",
+      "rank": 543,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dosud",
+      "cs": "dosud",
+      "en": "so far, until now",
+      "pos": "adv",
+      "rank": 649,
+      "nativeReviewed": false
+    },
+    {
+      "id": "budoucnost",
+      "cs": "budoucnost",
+      "en": "future",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1004,
+      "nativeReviewed": false
+    },
+    {
+      "id": "minulost",
+      "cs": "minulost",
+      "en": "past",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 798,
+      "nativeReviewed": false
+    },
+    {
+      "id": "letosni",
+      "cs": "letošní",
+      "en": "this year's",
+      "pos": "adj",
+      "rank": 822,
+      "nativeReviewed": false
+    },
+    {
+      "id": "lonsky",
+      "cs": "loňský",
+      "en": "last year's",
+      "pos": "adj",
+      "rank": 1359,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nocni",
+      "cs": "noční",
+      "en": "night",
+      "pos": "adj",
+      "rank": 1290,
+      "nativeReviewed": false
+    },
+    {
+      "id": "letni",
+      "cs": "letní",
+      "en": "summer",
+      "pos": "adj",
+      "rank": 1352,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zimni",
+      "cs": "zimní",
+      "en": "winter",
+      "pos": "adj",
+      "rank": 1672,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jarni",
+      "cs": "jarní",
+      "en": "spring",
+      "pos": "adj",
+      "rank": 2577,
+      "nativeReviewed": false
+    },
+    {
+      "id": "podzimni",
+      "cs": "podzimní",
+      "en": "autumn",
+      "pos": "adj",
+      "rank": 3468,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vanocni",
+      "cs": "vánoční",
+      "en": "Christmas",
+      "pos": "adj",
+      "rank": 1770,
+      "nativeReviewed": false
+    },
+    {
+      "id": "desitka",
+      "cs": "desítka",
+      "en": "ten (a ten); a group of ten",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 885,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stovka",
+      "cs": "stovka",
+      "en": "a hundred; a 100-crown note",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1015,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tretina",
+      "cs": "třetina",
+      "en": "a third",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1830,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pravidelne",
+      "cs": "pravidelně",
+      "en": "regularly",
+      "pos": "adv",
+      "rank": 1526,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pravidelny",
+      "cs": "pravidelný",
+      "en": "regular",
+      "pos": "adj",
+      "rank": 1501,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pozdeji",
+      "cs": "později",
+      "en": "later",
+      "pos": "adv",
+      "nativeReviewed": false
     }
   ]
 }

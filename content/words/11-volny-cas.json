@@ -744,6 +744,233 @@
       "aspect": "impf",
       "rank": 1392,
       "nativeReviewed": false
+    },
+    {
+      "id": "zapas",
+      "cs": "zápas",
+      "en": "match",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 378,
+      "example": {
+        "cs": "Kdy začíná zápas?",
+        "en": "When does the match start?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "soutez",
+      "cs": "soutěž",
+      "en": "competition",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 576,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hrac",
+      "cs": "hráč",
+      "en": "player",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 468,
+      "nativeReviewed": false
+    },
+    {
+      "id": "trener",
+      "cs": "trenér",
+      "en": "coach",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 843,
+      "nativeReviewed": false
+    },
+    {
+      "id": "fanousek",
+      "cs": "fanoušek",
+      "en": "fan",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1497,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sportovni",
+      "cs": "sportovní",
+      "en": "sports",
+      "pos": "adj",
+      "rank": 1153,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyhrat",
+      "cs": "vyhrát",
+      "en": "to win",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 769,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prohrat",
+      "cs": "prohrát",
+      "en": "to lose (a game)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 2282,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zavod",
+      "cs": "závod",
+      "en": "race",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 873,
+      "nativeReviewed": false
+    },
+    {
+      "id": "gol",
+      "cs": "gól",
+      "en": "goal",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1061,
+      "nativeReviewed": false
+    },
+    {
+      "id": "divak",
+      "cs": "divák",
+      "en": "spectator",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1055,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kultura",
+      "cs": "kultura",
+      "en": "culture",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 812,
+      "nativeReviewed": false
+    },
+    {
+      "id": "umeni",
+      "cs": "umění",
+      "en": "art",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 842,
+      "nativeReviewed": false
+    },
+    {
+      "id": "festival",
+      "cs": "festival",
+      "en": "festival",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1437,
+      "nativeReviewed": false
+    },
+    {
+      "id": "predstaveni",
+      "cs": "představení",
+      "en": "performance, show",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1970,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kapela",
+      "cs": "kapela",
+      "en": "band",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1744,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pisen",
+      "cs": "píseň",
+      "en": "song",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1208,
+      "nativeReviewed": false
+    },
+    {
+      "id": "hudebni",
+      "cs": "hudební",
+      "en": "music",
+      "pos": "adj",
+      "rank": 1097,
+      "nativeReviewed": false
+    },
+    {
+      "id": "roman",
+      "cs": "román",
+      "en": "novel",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1491,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pribeh",
+      "cs": "příběh",
+      "en": "story",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 507,
+      "nativeReviewed": false
+    },
+    {
+      "id": "autor",
+      "cs": "autor",
+      "en": "author",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 492,
+      "nativeReviewed": false
+    },
+    {
+      "id": "reziser",
+      "cs": "režisér",
+      "en": "(film) director",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1712,
+      "nativeReviewed": false
+    },
+    {
+      "id": "navsteva",
+      "cs": "návštěva",
+      "en": "visit",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 856,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zazitek",
+      "cs": "zážitek",
+      "en": "experience (something lived)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1853,
+      "nativeReviewed": false
+    },
+    {
+      "id": "opalovat-se",
+      "cs": "opalovat se",
+      "en": "to sunbathe",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 22574,
+      "nativeReviewed": false
     }
   ]
 }

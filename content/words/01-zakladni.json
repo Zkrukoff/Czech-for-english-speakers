@@ -1674,6 +1674,685 @@
       "pos": "conj",
       "rank": 7056,
       "nativeReviewed": false
+    },
+    {
+      "id": "jako",
+      "cs": "jako",
+      "en": "like, as",
+      "pos": "conj",
+      "note": "Je to jako doma.",
+      "rank": 19,
+      "example": {
+        "cs": "Pracuju jako programátor.",
+        "en": "I work as a programmer."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "svuj",
+      "cs": "svůj",
+      "en": "one's own (my, your, his… own)",
+      "pos": "pron",
+      "note": "Mám svůj klíč. Refers back to the subject.",
+      "rank": 21,
+      "example": {
+        "cs": "Každý si vezme svůj lístek.",
+        "en": "Everyone takes their own ticket."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vsechen",
+      "cs": "všechen",
+      "en": "all",
+      "pos": "pron",
+      "note": "Feminine všechna, neuter všechno",
+      "rank": 33,
+      "example": {
+        "cs": "Všechny obchody jsou zavřené.",
+        "en": "All the shops are closed."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "az",
+      "cs": "až",
+      "en": "not until; when (in future)",
+      "pos": "part",
+      "note": "Přijdu až v pět.",
+      "rank": 49,
+      "example": {
+        "cs": "Zavolám, až přijdu domů.",
+        "en": "I'll call when I get home."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "ani",
+      "cs": "ani",
+      "en": "not even; neither",
+      "pos": "conj",
+      "note": "Nemám ani korunu.",
+      "rank": 58,
+      "example": {
+        "cs": "Nemám ani korunu.",
+        "en": "I haven't got a single crown."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vsak",
+      "cs": "však",
+      "en": "however",
+      "pos": "conj",
+      "rank": 74,
+      "example": {
+        "cs": "Byt je hezký, je však drahý.",
+        "en": "The flat is nice; it's expensive, though."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "nejaky",
+      "cs": "nějaký",
+      "en": "some, a",
+      "pos": "pron",
+      "note": "Máte nějaký dotaz?",
+      "rank": 99,
+      "example": {
+        "cs": "Máte nějaký dotaz?",
+        "en": "Do you have a question?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pokud",
+      "cs": "pokud",
+      "en": "if, as long as",
+      "pos": "conj",
+      "rank": 103,
+      "example": {
+        "cs": "Pokud budete mít čas, přijďte.",
+        "en": "If you have time, come."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "tedy",
+      "cs": "tedy",
+      "en": "so, then (therefore)",
+      "pos": "adv",
+      "rank": 107,
+      "example": {
+        "cs": "Je tedy všechno v pořádku?",
+        "en": "So is everything all right?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "proto",
+      "cs": "proto",
+      "en": "that's why",
+      "pos": "adv",
+      "rank": 116,
+      "example": {
+        "cs": "Pršelo, proto jsme zůstali doma.",
+        "en": "It rained, so we stayed at home."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zadny",
+      "cs": "žádný",
+      "en": "no, none",
+      "pos": "pron",
+      "note": "Takes a double negative: Nemám žádný čas.",
+      "rank": 122,
+      "example": {
+        "cs": "Nemám žádný problém.",
+        "en": "I don't have any problem."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "treba",
+      "cs": "třeba",
+      "en": "for example; maybe",
+      "pos": "part",
+      "note": "Třeba zítra.",
+      "rank": 125,
+      "example": {
+        "cs": "Sejdeme se třeba v pět?",
+        "en": "Shall we meet at, say, five?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "tu",
+      "cs": "tu",
+      "en": "here (spoken)",
+      "pos": "adv",
+      "rank": 138,
+      "example": {
+        "cs": "Je tu volno?",
+        "en": "Is this seat free?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "nektery",
+      "cs": "některý",
+      "en": "some (of them)",
+      "pos": "pron",
+      "note": "Některé obchody jsou zavřené.",
+      "rank": 139,
+      "example": {
+        "cs": "Některé tramvaje dnes nejezdí.",
+        "en": "Some trams aren't running today."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "stejne",
+      "cs": "stejně",
+      "en": "anyway; equally",
+      "pos": "adv",
+      "rank": 158,
+      "example": {
+        "cs": "Stejně tam nepůjdu.",
+        "en": "I'm not going there anyway."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "kdyby",
+      "cs": "kdyby",
+      "en": "if (would)",
+      "pos": "conj",
+      "note": "Kdybych měl čas, přišel bych.",
+      "rank": 160,
+      "example": {
+        "cs": "Kdybys něco potřeboval, zavolej.",
+        "en": "If you need anything, call."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "takze",
+      "cs": "takže",
+      "en": "so (as a result)",
+      "pos": "conj",
+      "rank": 164,
+      "example": {
+        "cs": "Je zavřeno, takže půjdeme jinam.",
+        "en": "It's closed, so we'll go somewhere else."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "oba",
+      "cs": "oba",
+      "en": "both",
+      "pos": "num",
+      "note": "Feminine and neuter obě",
+      "rank": 173,
+      "example": {
+        "cs": "Oba moji bratři bydlí v Brně.",
+        "en": "Both my brothers live in Brno."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vubec",
+      "cs": "vůbec",
+      "en": "at all",
+      "pos": "adv",
+      "note": "Vůbec nevím.",
+      "rank": 174,
+      "example": {
+        "cs": "Vůbec tomu nerozumím.",
+        "en": "I don't understand it at all."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "stale",
+      "cs": "stále",
+      "en": "still, all the time",
+      "pos": "adv",
+      "rank": 180,
+      "example": {
+        "cs": "Stále hledám byt.",
+        "en": "I'm still looking for a flat."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "pouze",
+      "cs": "pouze",
+      "en": "only (formal)",
+      "pos": "adv",
+      "rank": 184,
+      "example": {
+        "cs": "Platba pouze kartou.",
+        "en": "Card payment only."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "jediny",
+      "cs": "jediný",
+      "en": "only, single",
+      "pos": "adj",
+      "rank": 197,
+      "example": {
+        "cs": "Je to jediný obchod v ulici.",
+        "en": "It's the only shop in the street."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "dokonce",
+      "cs": "dokonce",
+      "en": "even",
+      "pos": "adv",
+      "rank": 205,
+      "example": {
+        "cs": "Mluví dokonce japonsky.",
+        "en": "She even speaks Japanese."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "spis",
+      "cs": "spíš",
+      "en": "rather",
+      "pos": "adv",
+      "rank": 207,
+      "example": {
+        "cs": "Dám si spíš čaj.",
+        "en": "I'll have tea instead."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "navic",
+      "cs": "navíc",
+      "en": "in addition, on top",
+      "pos": "adv",
+      "rank": 235,
+      "example": {
+        "cs": "Je to levné a navíc blízko.",
+        "en": "It's cheap and close, too."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "mnoho",
+      "cs": "mnoho",
+      "en": "many, a lot (formal)",
+      "pos": "num",
+      "note": "Takes the genitive: mnoho lidí.",
+      "rank": 240,
+      "example": {
+        "cs": "V Praze je mnoho turistů.",
+        "en": "There are many tourists in Prague."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "ostatni",
+      "cs": "ostatní",
+      "en": "the other, the rest",
+      "pos": "adj",
+      "rank": 245,
+      "example": {
+        "cs": "Ostatní už jsou doma.",
+        "en": "The others are already at home."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "predevsim",
+      "cs": "především",
+      "en": "above all",
+      "pos": "adv",
+      "rank": 250,
+      "example": {
+        "cs": "Hledám především klid.",
+        "en": "Above all, I'm looking for peace and quiet."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "behem",
+      "cs": "během",
+      "en": "during",
+      "pos": "prep",
+      "note": "Takes the genitive: během dne.",
+      "rank": 254,
+      "example": {
+        "cs": "Během dne pracuju.",
+        "en": "During the day I work."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "uplne",
+      "cs": "úplně",
+      "en": "completely",
+      "pos": "adv",
+      "rank": 274,
+      "example": {
+        "cs": "Jsem úplně unavený.",
+        "en": "I'm completely tired."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "prilis",
+      "cs": "příliš",
+      "en": "too (much)",
+      "pos": "adv",
+      "rank": 275,
+      "example": {
+        "cs": "Je to příliš drahé.",
+        "en": "It's too expensive."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "temer",
+      "cs": "téměř",
+      "en": "almost (formal)",
+      "pos": "adv",
+      "rank": 280,
+      "example": {
+        "cs": "Je téměř půlnoc.",
+        "en": "It's almost midnight."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "jinak",
+      "cs": "jinak",
+      "en": "otherwise; differently",
+      "pos": "adv",
+      "rank": 325,
+      "example": {
+        "cs": "Jinak je všechno v pořádku.",
+        "en": "Otherwise everything is fine."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "podobny",
+      "cs": "podobný",
+      "en": "similar",
+      "pos": "adj",
+      "rank": 329,
+      "example": {
+        "cs": "Máme podobný problém.",
+        "en": "We have a similar problem."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "naopak",
+      "cs": "naopak",
+      "en": "on the contrary",
+      "pos": "adv",
+      "rank": 400,
+      "example": {
+        "cs": "Není to drahé, naopak.",
+        "en": "It's not expensive, quite the opposite."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vice",
+      "cs": "více",
+      "en": "more",
+      "pos": "adv",
+      "note": "Spoken: víc",
+      "alt": [
+        "víc"
+      ],
+      "rank": 402,
+      "example": {
+        "cs": "Potřebuju více času.",
+        "en": "I need more time."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "jasny",
+      "cs": "jasný",
+      "en": "clear",
+      "pos": "adj",
+      "note": "Jasně! = Sure!",
+      "rank": 406,
+      "example": {
+        "cs": "Je to jasné?",
+        "en": "Is that clear?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "presto",
+      "cs": "přesto",
+      "en": "still, nevertheless",
+      "pos": "adv",
+      "rank": 418,
+      "example": {
+        "cs": "Pršelo, přesto jsme šli ven.",
+        "en": "It rained, but we still went out."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "tolik",
+      "cs": "tolik",
+      "en": "so much, so many",
+      "pos": "adv",
+      "rank": 454,
+      "example": {
+        "cs": "Nemám tolik peněz.",
+        "en": "I don't have that much money."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "konecne",
+      "cs": "konečně",
+      "en": "finally, at last",
+      "pos": "adv",
+      "rank": 485,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jiste",
+      "cs": "jistě",
+      "en": "certainly",
+      "pos": "adv",
+      "rank": 499,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mimo",
+      "cs": "mimo",
+      "en": "outside; apart from",
+      "pos": "prep",
+      "note": "Takes the accusative: mimo Prahu.",
+      "rank": 519,
+      "nativeReviewed": false
+    },
+    {
+      "id": "alespon",
+      "cs": "alespoň",
+      "en": "at least",
+      "pos": "adv",
+      "note": "Spoken: aspoň",
+      "alt": [
+        "aspoň"
+      ],
+      "rank": 542,
+      "nativeReviewed": false
+    },
+    {
+      "id": "najednou",
+      "cs": "najednou",
+      "en": "suddenly; at once",
+      "pos": "adv",
+      "rank": 561,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vcetne",
+      "cs": "včetně",
+      "en": "including",
+      "pos": "prep",
+      "note": "Takes the genitive: včetně DPH.",
+      "rank": 563,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spousta",
+      "cs": "spousta",
+      "en": "lots, loads",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Spousta lidí = loads of people.",
+      "rank": 582,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zhruba",
+      "cs": "zhruba",
+      "en": "roughly",
+      "pos": "adv",
+      "rank": 609,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zrovna",
+      "cs": "zrovna",
+      "en": "just (now); exactly",
+      "pos": "adv",
+      "rank": 656,
+      "nativeReviewed": false
+    },
+    {
+      "id": "docela",
+      "cs": "docela",
+      "en": "quite, fairly",
+      "pos": "adv",
+      "rank": 752,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nejak",
+      "cs": "nějak",
+      "en": "somehow",
+      "pos": "adv",
+      "rank": 757,
+      "nativeReviewed": false
+    },
+    {
+      "id": "predtim",
+      "cs": "předtím",
+      "en": "before (that)",
+      "pos": "adv",
+      "rank": 772,
+      "nativeReviewed": false
+    },
+    {
+      "id": "okamzite",
+      "cs": "okamžitě",
+      "en": "immediately",
+      "pos": "adv",
+      "rank": 820,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ven",
+      "cs": "ven",
+      "en": "out (going out)",
+      "pos": "adv",
+      "note": "Jdu ven.",
+      "rank": 889,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dovnitr",
+      "cs": "dovnitř",
+      "en": "in (going in)",
+      "pos": "adv",
+      "note": "Pojďte dovnitř.",
+      "rank": 1336,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nedavno",
+      "cs": "nedávno",
+      "en": "recently",
+      "pos": "adv",
+      "rank": 1346,
+      "nativeReviewed": false
+    },
+    {
+      "id": "davno",
+      "cs": "dávno",
+      "en": "long ago",
+      "pos": "adv",
+      "rank": 1085,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jinde",
+      "cs": "jinde",
+      "en": "somewhere else",
+      "pos": "adv",
+      "rank": 1763,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pry",
+      "cs": "prý",
+      "en": "apparently, they say",
+      "pos": "part",
+      "note": "Prý bude pršet.",
+      "rank": 437,
+      "example": {
+        "cs": "Prý bude stávka.",
+        "en": "Apparently there'll be a strike."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "snad",
+      "cs": "snad",
+      "en": "hopefully; perhaps",
+      "pos": "part",
+      "rank": 264,
+      "example": {
+        "cs": "Snad bude zítra hezky.",
+        "en": "Hopefully it will be nice tomorrow."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "totiz",
+      "cs": "totiž",
+      "en": "you see, because",
+      "pos": "part",
+      "note": "Nepřijdu, jsem totiž nemocný.",
+      "rank": 190,
+      "example": {
+        "cs": "Nepřijdu, jsem totiž nemocný.",
+        "en": "I won't come: I'm ill, you see."
+      },
+      "nativeReviewed": false
     }
   ]
 }
