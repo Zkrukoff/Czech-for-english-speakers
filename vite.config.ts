@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { fileURLToPath } from 'node:url';
-import { serviceWorker } from './build/serviceWorker';
+import { serviceWorker } from './build/serviceWorker.ts';
 
 export default defineConfig({
   // GitHub Pages serves the app from /<repo-name>/; the deploy workflow sets

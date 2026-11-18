@@ -11,6 +11,19 @@ import { LineBadge, Stamp, Ticket } from '@/components/ui';
 import { useDueSummary } from '@/db/useDue';
 import { computeAllMastery, MASTERY_ACCURACY, MASTERY_MIN_ATTEMPTS, MASTERY_WINDOW, type SkillMastery } from '@/lib/progress/mastery';
 import { relativeTime } from '@/lib/time';
+import { StationWall } from '@/features/wall/StationWall';
+import { useWall } from '@/features/wall/useWall';
+
+function WallSection() {
+  const blocks = useWall();
+  return (
+    <section id="wall" aria-labelledby="wall-h" className="mb-12">
+      <h2 id="wall-h" className="label-board mb-1 text-ink-3"><span lang="cs">Tvoje stěna</span> · your wall</h2>
+      <p className="mb-4 max-w-2xl text-ink-2">Line A as a wall of panels in each station's colour. Every lesson you finish fills a circle; a stamped station gets a red frame.</p>
+      {blocks && <StationWall blocks={blocks} />}
+    </section>
+  );
+}
 
 const STATUS_LABEL = { 'not-started': 'not started', learning: 'practising', mastered: 'mastered' } as const;
 const STATUS_STYLE = {
@@ -57,6 +70,8 @@ export function ProgressPage() {
   return (
     <>
       <PageHeader title="Ticket wallet" cs="Jízdenky" subtitle="Every finished station gets its ticket stamped. Progress here is what you can do, not how many days in a row you opened the app." />
+
+      <WallSection />
 
       <dl className="mb-10 grid grid-cols-2 border-2 border-ink bg-surface shadow-offset sm:grid-cols-4">
         {[

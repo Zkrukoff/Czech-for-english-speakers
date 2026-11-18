@@ -218,3 +218,11 @@ check first. When an item is confirmed or corrected, remove it here and set
 | pharmacy | "Prescriptions are electronic (eRecept)" | Still accurate? Not yet verified against an official page. |
 | ShowMode.tsx | Label *Ukažte to* on the single-screen show mode | Natural? |
 | verified | 112, 150, 155, 158 (portal.gov.cz, mv.gov.cz) and 156 (mv.gov.cz); DPP line and lost-and-found office (pid.cz), checked 17 Nov 2026 | Re-check yearly. |
+
+## Round 2 · A6 Station wall
+
+| Where | Text | Question |
+|---|---|---|
+| wallet, home | *Tvoje stěna* (in the app), *Moje stěna* (on the shared image) | Natural for "your wall" / "my wall"? |
+| shared image | *Linka A · Moje stěna*, *1 stanice / 3 stanice / 5 stanic*, *zatím žádná stanice* | Right plurals? Does "N stanic" read as "N stations done" without a verb? |
+| wall design | "after the Line A wall panels" | The brief credits the panels to Jaroslav Otruba; still unverified, so the app doesn't name him. |
