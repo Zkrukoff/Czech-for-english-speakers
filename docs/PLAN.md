@@ -1461,3 +1461,49 @@ trustworthy the app is.
     pages.
   - **Lighthouse wasn't run this step:** it needs a downloaded package, which
     the permission settings blocked.
+
+## 11. Round 4: proposal (18 Nov 2026, for approval)
+
+**Where things stand.**
+- Round 3 closed the method gaps: listening, word order, aspect, about 1,650
+  deck words, and the exam track.
+- Most of the audit is done.
+- What's left falls into three kinds:
+  1. **People work** that code can only make easier: native review (C1/A8)
+     and recordings (C2/A1). About 3,000 Czech items are now unreviewed.
+  2. **Line A stops early.** Its 5 units (18 lessons) cover meeting people,
+     the café, getting around, colleagues and vy/ty. The exam's topics of
+     housing, health, free time, weather and education have decks but no
+     lessons. **The past and future tenses are never drilled**, though the
+     exam's story task requires the past.
+  3. **Audit leftovers:**
+     - Home and navigation (I2, I3, N5); the nav now has 8 items;
+     - first-load speed (I8 content split, N4 fonts, N6);
+     - unverified culture and holiday facts (I9);
+     - Czech subtitles on a few pages (N2).
+
+### 11.1 Suggested order
+
+| Step | Contents | Why now | Effort |
+|---|---|---|---|
+| **1** | **A kit for reviewers and voice talent.** `npm run export:review` writes review sheets by priority batch (id, Czech, English, what to check), and `npm run import:review` applies corrections and marks items reviewed. A recording script (clip id, text, speaker) plus a drop-in folder that updates the audio manifest. A one-page brief for reviewers. | People are the bottleneck. This makes their hours count and turns "reviewed" from a hand edit into a checked process. | S–M, about 3–4 days |
+| **2** | **Line A, part 2: four new units.** u06 *Minulý víkend* · last weekend (past tense, free time) at Malostranská. u07 *U lékaře* · at the doctor's (health, *bolí mě*, dative) at Staroměstská, completing Part 1 before the Václavák check. u08 *Hledám byt* · finding a flat (housing, prepositions with the locative, *chtěl bych*) at Náměstí Míru. u09 *Plány* · plans and the weather (future tense, perfective vs imperfective future) at Jiřího z Poděbrad. Each unit has 4 lessons in the current format (dialogue with listen-first, vocabulary, explanation, mixed exercises including listening, reading, word order and aspect), a unit check and missions, and links to its decks and exam tasks. | The biggest remaining learning gap, and the one the exam needs. | L, about 3–4 weeks |
+| **3** | **Home and navigation, then speed.** Screenshots first, then a lighter Home for new learners (one first step, not two), grouped navigation (8 items → about 5), and no duplicate entry points. Then split the course content so each screen loads what it needs (I8), and preload fonts (N4). Measure Home (N6). | Home has grown every round; the first download is about 537 kB gzipped and growing. | M + M, about 1.5–2 weeks |
+| **4** | **Facts and finishing.** Verify the culture guide, holiday customs, settling-in specifics and name days against sources, with dates (I9). Add about 150 A2 words by frequency, aiming for 40% of A2. Czech subtitles where missing (N2). | Unverified facts are the other trust gap, after the Czech itself. | M, about 1 week |
+| later | Graded reading, one 50–150-word text per lesson (A6), and shadowing with model audio (A4), once recordings exist. | Both work far better with real audio. | L |
+
+**Total: about 6–8 weeks.** As before, each step gets its own detailed plan
+section before any code, and nothing is merged or deployed without your say.
+
+### 11.2 Decisions (defaults unless you say otherwise)
+
+1. **The reviewer kit comes first,** before more content. Step 2 adds roughly
+   1,000 more Czech items. Without reviewers lined up, that grows the
+   unreviewed pile, so recruiting should start now, in parallel. I can draft
+   the brief and a short call for reviewers you could post.
+2. **Four units, not more.** Part 2 ends at Jiřího z Poděbrad. Flora and
+   beyond wait until review catches up.
+3. **The Home and navigation redesign starts from screenshots and a short
+   proposal** for you to approve, as the audit suggested. No redesign
+   without your sign-off.
+4. **Graded reading and shadowing wait for recordings.**
