@@ -9,7 +9,7 @@ const require = createRequire(import.meta.url);
 const { chromium } = require('playwright');
 const PORT = 4181;
 const base = `http://localhost:${PORT}`;
-const PAGES = ['/', '/review', '/sounds', '/grammar', '/guides', '/guides/prague-transport', '/wallet', '/settings', '/lessons/u01-l01', '/emergency'];
+const PAGES = ['/', '/review', '/sounds', '/grammar', '/guides', '/guides/prague-transport', '/wallet', '/settings', '/lessons/u01-l01', '/emergency', '/exam', '/exam/practice/r1-practice1', '/exam/practice/w2-practice1'];
 
 const server = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--strictPort'], { stdio: 'ignore', detached: true });
 const stop = () => { try { process.kill(-server.pid); } catch { /* gone */ } };

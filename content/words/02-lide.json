@@ -997,6 +997,362 @@
       "gender": "m-inan",
       "rank": 1224,
       "nativeReviewed": false
+    },
+    {
+      "id": "zivot",
+      "cs": "život",
+      "en": "life",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 94,
+      "example": {
+        "cs": "Život v Praze je drahý.",
+        "en": "Life in Prague is expensive."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "svet",
+      "cs": "svět",
+      "en": "world",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 110,
+      "example": {
+        "cs": "Cestuju po celém světě.",
+        "en": "I travel all over the world."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "osoba",
+      "cs": "osoba",
+      "en": "person (formal)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 407,
+      "example": {
+        "cs": "Vstupné je 200 Kč za osobu.",
+        "en": "Entry is 200 crowns per person."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "skupina",
+      "cs": "skupina",
+      "en": "group",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 234,
+      "example": {
+        "cs": "Přišla velká skupina turistů.",
+        "en": "A big group of tourists came."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vztah",
+      "cs": "vztah",
+      "en": "relationship",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 284,
+      "example": {
+        "cs": "Mám dobrý vztah s kolegy.",
+        "en": "I get on well with my colleagues."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "hlas",
+      "cs": "hlas",
+      "en": "voice; vote",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 292,
+      "example": {
+        "cs": "Má krásný hlas.",
+        "en": "She has a beautiful voice."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "tvar",
+      "cs": "tvář",
+      "en": "face; cheek",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 266,
+      "example": {
+        "cs": "Má veselou tvář.",
+        "en": "She has a cheerful face."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "laska",
+      "cs": "láska",
+      "en": "love",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 495,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nazor",
+      "cs": "názor",
+      "en": "opinion",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 538,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pocit",
+      "cs": "pocit",
+      "en": "feeling",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 338,
+      "example": {
+        "cs": "Mám dobrý pocit.",
+        "en": "I have a good feeling."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "chlap",
+      "cs": "chlap",
+      "en": "bloke, guy",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1279,
+      "nativeReviewed": false
+    },
+    {
+      "id": "par",
+      "cs": "pár",
+      "en": "couple; a few",
+      "pos": "noun",
+      "gender": "m-inan",
+      "note": "pár dní = a few days",
+      "rank": 214,
+      "example": {
+        "cs": "Počkejte pár minut.",
+        "en": "Wait a few minutes."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "stesti",
+      "cs": "štěstí",
+      "en": "luck; happiness",
+      "pos": "noun",
+      "gender": "n",
+      "note": "Mám štěstí = I'm lucky.",
+      "rank": 939,
+      "nativeReviewed": false
+    },
+    {
+      "id": "usmev",
+      "cs": "úsměv",
+      "en": "smile",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 933,
+      "nativeReviewed": false
+    },
+    {
+      "id": "smich",
+      "cs": "smích",
+      "en": "laughter",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1565,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prani",
+      "cs": "přání",
+      "en": "wish",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1782,
+      "nativeReviewed": false
+    },
+    {
+      "id": "detsky",
+      "cs": "dětský",
+      "en": "children's",
+      "pos": "adj",
+      "rank": 844,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rodinny",
+      "cs": "rodinný",
+      "en": "family",
+      "pos": "adj",
+      "rank": 924,
+      "nativeReviewed": false
+    },
+    {
+      "id": "znamy",
+      "cs": "známý",
+      "en": "well-known; (as a noun) acquaintance",
+      "pos": "adj",
+      "rank": 248,
+      "example": {
+        "cs": "Je to známý herec.",
+        "en": "He's a well-known actor."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "detstvi",
+      "cs": "dětství",
+      "en": "childhood",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1991,
+      "nativeReviewed": false
+    },
+    {
+      "id": "manzelstvi",
+      "cs": "manželství",
+      "en": "marriage",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2101,
+      "nativeReviewed": false
+    },
+    {
+      "id": "generace",
+      "cs": "generace",
+      "en": "generation",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1056,
+      "nativeReviewed": false
+    },
+    {
+      "id": "starost",
+      "cs": "starost",
+      "en": "worry, care",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Nedělej si starosti.",
+      "rank": 1237,
+      "nativeReviewed": false
+    },
+    {
+      "id": "ochotny",
+      "cs": "ochotný",
+      "en": "willing, helpful",
+      "pos": "adj",
+      "rank": 2097,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slusny",
+      "cs": "slušný",
+      "en": "polite, decent",
+      "pos": "adj",
+      "rank": 2169,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spokojeny",
+      "cs": "spokojený",
+      "en": "satisfied",
+      "pos": "adj",
+      "rank": 1338,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vazny",
+      "cs": "vážný",
+      "en": "serious",
+      "pos": "adj",
+      "rank": 1429,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slavny",
+      "cs": "slavný",
+      "en": "famous",
+      "pos": "adj",
+      "rank": 994,
+      "nativeReviewed": false
+    },
+    {
+      "id": "oblibeny",
+      "cs": "oblíbený",
+      "en": "favourite, popular",
+      "pos": "adj",
+      "rank": 971,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bohaty",
+      "cs": "bohatý",
+      "en": "rich",
+      "pos": "adj",
+      "rank": 968,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chudy",
+      "cs": "chudý",
+      "en": "poor",
+      "pos": "adj",
+      "rank": 2219,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zemrit",
+      "cs": "zemřít",
+      "en": "to die",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 720,
+      "nativeReviewed": false
+    },
+    {
+      "id": "usmat-se",
+      "cs": "usmát se",
+      "en": "to smile",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 979,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chovat-se",
+      "cs": "chovat se",
+      "en": "to behave",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 825,
+      "nativeReviewed": false
+    },
+    {
+      "id": "setkat-se",
+      "cs": "setkat se",
+      "en": "to meet",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1101,
+      "nativeReviewed": false
+    },
+    {
+      "id": "setkani",
+      "cs": "setkání",
+      "en": "meeting",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1255,
+      "nativeReviewed": false
     }
   ]
 }

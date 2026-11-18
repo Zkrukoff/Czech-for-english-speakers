@@ -56,6 +56,7 @@ export const routes: RouteObject[] = [
       { path: 'verbs/lookup/:lemma', ...page(() => import('./features/verbs/VerbDetail'), 'VerbDetail') },
       { path: 'verbs/:pageId', ...page(() => import('./features/grammar/GrammarPageView'), 'GrammarPageView') },
       { path: 'exam', ...page(() => import('./features/exam/ExamHub'), 'ExamHub') },
+      { path: 'exam/mock/:mockId', ...page(() => import('./features/exam/MockExamPage'), 'MockExamPage') },
       { path: 'exam/practice/:taskId', ...page(() => import('./features/exam/PracticeTaskPage'), 'PracticeTaskPage') },
       { path: 'review', ...page(() => import('./features/review/ReviewPage'), 'ReviewPage') },
       { path: 'wallet', ...page(() => import('./features/progress/ProgressPage'), 'ProgressPage') },

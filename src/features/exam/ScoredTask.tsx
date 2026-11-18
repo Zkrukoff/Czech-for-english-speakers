@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { scoreChoice, scoreFill, scoreMatch } from '@/lib/exam/score';
 import { ChoicePlayer, FillPlayer, MatchPlayer } from './players';
 import { TASK_SHAPE, type ChoiceTask, type FillTask, type MatchTask } from './schema';
@@ -34,7 +34,16 @@ function answered(t: AutoTask, a: Answers): number {
  * was right. `exam` limits recordings to two plays; `onHandIn` gets the score.
  * `handIn` lets a mock exam's timer hand the task in.
  */
-export function ScoredTask({ task, exam = false, onHandIn, handInLabel = 'Check my answers' }: { task: AutoTask; exam?: boolean; onHandIn?: (score: number, max: number) => void; handInLabel?: string }) {
+export function ScoredTask({ task, exam = false, onHandIn, handInLabel = 'Check my answers', forceHandIn, partHandIn }: {
+  task: AutoTask;
+  exam?: boolean;
+  onHandIn?: (score: number, max: number) => void;
+  handInLabel?: string;
+  /** A mock exam handed the whole part in (its button, or its timer). */
+  forceHandIn?: boolean;
+  /** In a mock the part has one hand-in button, so the task has none. */
+  partHandIn?: boolean;
+}) {
   const [answers, setAnswers] = useState<Answers>(() => empty(task));
   const [done, setDone] = useState(false);
   const max = TASK_SHAPE[task.part][task.task]!.points;
@@ -42,9 +51,13 @@ export function ScoredTask({ task, exam = false, onHandIn, handInLabel = 'Check 
   const got = score(task, answers);
 
   function handIn() {
+    if (done) return;
     setDone(true);
     onHandIn?.(got, max);
   }
+  const handInRef = useRef(handIn);
+  handInRef.current = handIn;
+  useEffect(() => { if (forceHandIn) handInRef.current(); }, [forceHandIn]);
 
   return (
     <div>
@@ -55,7 +68,7 @@ export function ScoredTask({ task, exam = false, onHandIn, handInLabel = 'Check 
       <div className="mt-6 flex flex-wrap items-center gap-4" aria-live="polite">
         {!done ? (
           <>
-            <button type="button" className="btn btn-primary" onClick={handIn}>{handInLabel}</button>
+            {!partHandIn && <button type="button" className="btn btn-primary" onClick={handIn}>{handInLabel}</button>}
             <span className="text-sm text-ink-2">{answered(task, answers)} of {total} answered</span>
           </>
         ) : (

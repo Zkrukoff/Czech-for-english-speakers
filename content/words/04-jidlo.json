@@ -978,6 +978,230 @@
       "gender": "n",
       "rank": 4285,
       "nativeReviewed": false
+    },
+    {
+      "id": "chut",
+      "cs": "chuť",
+      "en": "taste; appetite",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 921,
+      "nativeReviewed": false
+    },
+    {
+      "id": "svickova",
+      "cs": "svíčková",
+      "en": "beef in cream sauce",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Adjective used as a noun",
+      "rank": 19395,
+      "nativeReviewed": false
+    },
+    {
+      "id": "smazeny",
+      "cs": "smažený",
+      "en": "fried",
+      "pos": "adj",
+      "rank": 10309,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vareny",
+      "cs": "vařený",
+      "en": "boiled, cooked",
+      "pos": "adj",
+      "rank": 9332,
+      "nativeReviewed": false
+    },
+    {
+      "id": "peceny",
+      "cs": "pečený",
+      "en": "roast, baked",
+      "pos": "adj",
+      "rank": 7786,
+      "nativeReviewed": false
+    },
+    {
+      "id": "syrovy",
+      "cs": "syrový",
+      "en": "raw",
+      "pos": "adj",
+      "rank": 7213,
+      "nativeReviewed": false
+    },
+    {
+      "id": "horky",
+      "cs": "hořký",
+      "en": "bitter",
+      "pos": "adj",
+      "rank": 5985,
+      "nativeReviewed": false
+    },
+    {
+      "id": "domaci",
+      "cs": "domácí",
+      "en": "home-made; domestic",
+      "pos": "adj",
+      "rank": 409,
+      "example": {
+        "cs": "Prodáváme domácí vejce.",
+        "en": "We sell home-produced eggs."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "potravina",
+      "cs": "potravina",
+      "en": "food item",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Usually plural: potraviny",
+      "rank": 1753,
+      "nativeReviewed": false
+    },
+    {
+      "id": "plechovka",
+      "cs": "plechovka",
+      "en": "can, tin",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6112,
+      "nativeReviewed": false
+    },
+    {
+      "id": "klobasa",
+      "cs": "klobása",
+      "en": "sausage",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 14315,
+      "nativeReviewed": false
+    },
+    {
+      "id": "slanina",
+      "cs": "slanina",
+      "en": "bacon",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8689,
+      "nativeReviewed": false
+    },
+    {
+      "id": "houba",
+      "cs": "houba",
+      "en": "mushroom; sponge",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2072,
+      "nativeReviewed": false
+    },
+    {
+      "id": "fazole",
+      "cs": "fazole",
+      "en": "beans",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 10005,
+      "nativeReviewed": false
+    },
+    {
+      "id": "meloun",
+      "cs": "meloun",
+      "en": "melon",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 12571,
+      "nativeReviewed": false
+    },
+    {
+      "id": "tresne",
+      "cs": "třešně",
+      "en": "cherry",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 12037,
+      "nativeReviewed": false
+    },
+    {
+      "id": "buchta",
+      "cs": "buchta",
+      "en": "sweet bun",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 13839,
+      "nativeReviewed": false
+    },
+    {
+      "id": "palacinka",
+      "cs": "palačinka",
+      "en": "pancake",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 19382,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zakusek",
+      "cs": "zákusek",
+      "en": "cake, pastry (dessert)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 14476,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kousek",
+      "cs": "kousek",
+      "en": "piece, bit",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 787,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pect",
+      "cs": "péct",
+      "en": "to bake",
+      "pos": "verb",
+      "aspect": "impf",
+      "nativeReviewed": false
+    },
+    {
+      "id": "smazit",
+      "cs": "smažit",
+      "en": "to fry",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 16498,
+      "nativeReviewed": false
+    },
+    {
+      "id": "krajet",
+      "cs": "krájet",
+      "en": "to slice, to cut",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 12191,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nalit",
+      "cs": "nalít",
+      "en": "to pour",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 3633,
+      "nativeReviewed": false
+    },
+    {
+      "id": "michat",
+      "cs": "míchat",
+      "en": "to stir, to mix",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 6511,
+      "nativeReviewed": false
     }
   ]
 }

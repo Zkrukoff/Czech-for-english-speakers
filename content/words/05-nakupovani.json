@@ -716,6 +716,150 @@
       "pos": "adj",
       "rank": 1104,
       "nativeReviewed": false
+    },
+    {
+      "id": "prodej",
+      "cs": "prodej",
+      "en": "sale",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1090,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyber",
+      "cs": "výběr",
+      "en": "choice, selection",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 926,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kvalita",
+      "cs": "kvalita",
+      "en": "quality",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 638,
+      "nativeReviewed": false
+    },
+    {
+      "id": "znacka",
+      "cs": "značka",
+      "en": "brand; sign",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 881,
+      "nativeReviewed": false
+    },
+    {
+      "id": "produkt",
+      "cs": "produkt",
+      "en": "product",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1036,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyrobek",
+      "cs": "výrobek",
+      "en": "product (made)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1448,
+      "nativeReviewed": false
+    },
+    {
+      "id": "nabidnout",
+      "cs": "nabídnout",
+      "en": "to offer",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 826,
+      "nativeReviewed": false
+    },
+    {
+      "id": "utratit",
+      "cs": "utratit",
+      "en": "to spend",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 6109,
+      "nativeReviewed": false
+    },
+    {
+      "id": "usetrit",
+      "cs": "ušetřit",
+      "en": "to save",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 2310,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pujcovna",
+      "cs": "půjčovna",
+      "en": "rental shop",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 12260,
+      "nativeReviewed": false
+    },
+    {
+      "id": "reklama",
+      "cs": "reklama",
+      "en": "advert; advertising",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2356,
+      "nativeReviewed": false
+    },
+    {
+      "id": "bankovka",
+      "cs": "bankovka",
+      "en": "banknote",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5905,
+      "nativeReviewed": false
+    },
+    {
+      "id": "reklamovat",
+      "cs": "reklamovat",
+      "en": "to return (as faulty)",
+      "pos": "verb",
+      "aspect": "both",
+      "rank": 26488,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dodavka",
+      "cs": "dodávka",
+      "en": "delivery; van",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2353,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dorucit",
+      "cs": "doručit",
+      "en": "to deliver",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 9194,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sacek",
+      "cs": "sáček",
+      "en": "small bag",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5105,
+      "nativeReviewed": false
     }
   ]
 }

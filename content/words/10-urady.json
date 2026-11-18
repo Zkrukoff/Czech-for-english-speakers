@@ -543,6 +543,227 @@
         "en": "You have the right to an interpreter."
       },
       "nativeReviewed": false
+    },
+    {
+      "id": "zakon",
+      "cs": "zákon",
+      "en": "law",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 334,
+      "example": {
+        "cs": "To je proti zákonu.",
+        "en": "That's against the law."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "soud",
+      "cs": "soud",
+      "en": "court",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 469,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vlada",
+      "cs": "vláda",
+      "en": "government",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 359,
+      "example": {
+        "cs": "Vláda zvýšila daně.",
+        "en": "The government raised taxes."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "obec",
+      "cs": "obec",
+      "en": "municipality",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 463,
+      "nativeReviewed": false
+    },
+    {
+      "id": "radnice",
+      "cs": "radnice",
+      "en": "town hall",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1745,
+      "nativeReviewed": false
+    },
+    {
+      "id": "starosta",
+      "cs": "starosta",
+      "en": "mayor",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1187,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obcan",
+      "cs": "občan",
+      "en": "citizen",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1164,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obcansky",
+      "cs": "občanský",
+      "en": "civil; citizen's",
+      "pos": "adj",
+      "rank": 1481,
+      "nativeReviewed": false
+    },
+    {
+      "id": "potvrdit",
+      "cs": "potvrdit",
+      "en": "to confirm",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1057,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pozadat",
+      "cs": "požádat",
+      "en": "to ask for, to apply for",
+      "pos": "verb",
+      "aspect": "pf",
+      "note": "požádat o povolení",
+      "rank": 1227,
+      "nativeReviewed": false
+    },
+    {
+      "id": "predpis",
+      "cs": "předpis",
+      "en": "regulation",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2262,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pravidlo",
+      "cs": "pravidlo",
+      "en": "rule",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 754,
+      "nativeReviewed": false
+    },
+    {
+      "id": "udaj",
+      "cs": "údaj",
+      "en": "detail, piece of data",
+      "pos": "noun",
+      "gender": "m-inan",
+      "note": "osobní údaje = personal details",
+      "rank": 1143,
+      "nativeReviewed": false
+    },
+    {
+      "id": "podminka",
+      "cs": "podmínka",
+      "en": "condition",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 372,
+      "example": {
+        "cs": "Jaké jsou podmínky?",
+        "en": "What are the conditions?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "lhuta",
+      "cs": "lhůta",
+      "en": "deadline, time limit",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4408,
+      "nativeReviewed": false
+    },
+    {
+      "id": "registrace",
+      "cs": "registrace",
+      "en": "registration",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6427,
+      "nativeReviewed": false
+    },
+    {
+      "id": "odhlasit-se",
+      "cs": "odhlásit se",
+      "en": "to deregister, to sign off",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 21739,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prechodny",
+      "cs": "přechodný",
+      "en": "temporary",
+      "pos": "adj",
+      "rank": 6364,
+      "nativeReviewed": false
+    },
+    {
+      "id": "statni",
+      "cs": "státní",
+      "en": "state",
+      "pos": "adj",
+      "rank": 442,
+      "example": {
+        "cs": "Je to státní svátek.",
+        "en": "It's a public holiday."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "verejny",
+      "cs": "veřejný",
+      "en": "public",
+      "pos": "adj",
+      "rank": 502,
+      "nativeReviewed": false
+    },
+    {
+      "id": "uredni",
+      "cs": "úřední",
+      "en": "official",
+      "pos": "adj",
+      "note": "úřední hodiny = office hours",
+      "rank": 4585,
+      "nativeReviewed": false
+    },
+    {
+      "id": "volby",
+      "cs": "volby",
+      "en": "election",
+      "pos": "noun",
+      "note": "Plural-only noun",
+      "rank": 3563,
+      "nativeReviewed": false
+    },
+    {
+      "id": "volit",
+      "cs": "volit",
+      "en": "to vote",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1996,
+      "nativeReviewed": false
     }
   ]
 }

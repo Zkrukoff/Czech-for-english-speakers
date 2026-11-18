@@ -31,6 +31,7 @@ export function PracticeTaskPage() {
         cs={`${info.cs}, úloha ${task.task}`}
         subtitle={`Practice set ${task.use === 'practice1' ? 1 : 2}${task.title ? `: ${task.title}` : ''}. ${shape.points} points in the exam. No time limit here.`}
       />
+      <h2 className="label-board mb-3 text-ink-3">The task · <span lang="cs">úloha</span></h2>
       {isAutoScored(task) ? (
         <ScoredTask key={task.id} task={task} onHandIn={(s, m) => record(s, m, false)} />
       ) : (

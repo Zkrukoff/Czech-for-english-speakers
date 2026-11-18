@@ -138,7 +138,7 @@ function WritingTask({ task, exam, forceHandIn, onDone }: { task: FormTask | Ema
       )}
 
       {!handedIn ? (
-        <button type="button" className="btn btn-primary mt-6" onClick={() => setHandedIn(true)}>Hand in and see a model answer</button>
+        !exam && <button type="button" className="btn btn-primary mt-6" onClick={() => setHandedIn(true)}>Hand in and see a model answer</button>
       ) : (
         <>
           <section aria-labelledby="w-model" className="mt-8">
@@ -281,6 +281,7 @@ function SpeakStep({ step, seconds, exam, onDone }: { step: Step; seconds: numbe
   const [phase, setPhase] = useState<'ready' | 'asking' | 'answering'>('ready');
   const [showText, setShowText] = useState(!hasVoice);
   const finished = useRef(false);
+  const started = useRef(false);
   const left = useCountdown(seconds, phase === 'answering' && exam, () => void finish());
 
   async function finish() {
@@ -289,6 +290,8 @@ function SpeakStep({ step, seconds, exam, onDone }: { step: Step; seconds: numbe
     onDone(await rec.stop());
   }
   async function begin() {
+    if (started.current) return;
+    started.current = true;
     if (step.say && hasVoice) {
       setPhase('asking');
       // Whatever the speech engine does, carry on to the answer.

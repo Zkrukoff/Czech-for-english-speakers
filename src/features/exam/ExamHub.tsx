@@ -11,7 +11,7 @@ const OFFICIAL = {
 };
 
 function Ext({ href, children }: { href: string; children: React.ReactNode }) {
-  return <a href={href} target="_blank" rel="noreferrer" className="text-vltava underline">{children}<span className="sr-only"> (opens the official site in a new tab)</span></a>;
+  return <a href={href} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center text-vltava underline">{children}<span className="sr-only"> (opens the official site in a new tab)</span></a>;
 }
 
 const pct = (score: number, max: number) => Math.round((100 * score) / max);
@@ -74,6 +74,28 @@ export function ExamHub() {
                 <p className="font-semibold">{PART_INFO[p].en}</p>
                 <p className="text-ink-2">{tried.length} of {types.length} task types tried{avg !== undefined && <>; your best on those averages <strong className="text-ink">{avg}%</strong></>}.</p>
                 {avg !== undefined && <p className="mt-1 text-sm text-ink-2">{avg >= 80 ? 'Strong. The exam needs 60% overall.' : avg >= 60 ? 'Around the pass line (60%). Keep practising.' : 'Below the pass line (60%) so far.'}{p === 'writing' || p === 'speaking' ? ' Self-assessed.' : ''}</p>}
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+
+      <section aria-labelledby="exam-mocks" className="mb-12">
+        <h2 id="exam-mocks" className="label-board mb-3 text-ink-3">Mock exams</h2>
+        <ul className="grid gap-3 sm:grid-cols-2">
+          {(['mock1', 'mock2'] as const).map((m, i) => {
+            const runs = attempts.filter((a) => a.mock === m && a.run);
+            const lastRun = Math.max(0, ...runs.map((a) => a.run!));
+            const last = runs.filter((a) => a.run === lastRun);
+            const rl = last.filter((a) => a.part === 'reading' || a.part === 'listening').reduce((s, a) => s + a.score, 0);
+            const complete = new Set(last.map((a) => a.part)).size === 4;
+            return (
+              <li key={m}>
+                <Link to={`/exam/mock/${m}`} className="card card-link block p-4">
+                  <span className="block text-xl font-bold">Mock exam {i + 1}</span>
+                  <span className="block text-ink-2">All four parts, about two hours, on the exam's timers.</span>
+                  {last.length > 0 && <span className="mt-2 block text-sm">Last time{complete ? '' : ' (not finished)'}: reading and listening {rl} of 50.</span>}
+                </Link>
               </li>
             );
           })}

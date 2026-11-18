@@ -666,6 +666,229 @@
       "gender": "m-inan",
       "rank": 6820,
       "nativeReviewed": false
+    },
+    {
+      "id": "rameno",
+      "cs": "rameno",
+      "en": "shoulder",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 549,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kost",
+      "cs": "kost",
+      "en": "bone",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1568,
+      "nativeReviewed": false
+    },
+    {
+      "id": "sval",
+      "cs": "sval",
+      "en": "muscle",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2345,
+      "nativeReviewed": false
+    },
+    {
+      "id": "mozek",
+      "cs": "mozek",
+      "en": "brain",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1119,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zaludek",
+      "cs": "žaludek",
+      "en": "stomach",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2748,
+      "nativeReviewed": false
+    },
+    {
+      "id": "plice",
+      "cs": "plíce",
+      "en": "lungs",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3303,
+      "nativeReviewed": false
+    },
+    {
+      "id": "loket",
+      "cs": "loket",
+      "en": "elbow",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3934,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kotnik",
+      "cs": "kotník",
+      "en": "ankle",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 5084,
+      "nativeReviewed": false
+    },
+    {
+      "id": "celo",
+      "cs": "čelo",
+      "en": "forehead",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 828,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pacient",
+      "cs": "pacient",
+      "en": "patient",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 670,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pece",
+      "cs": "péče",
+      "en": "care",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 685,
+      "nativeReviewed": false
+    },
+    {
+      "id": "lecba",
+      "cs": "léčba",
+      "en": "treatment",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1580,
+      "nativeReviewed": false
+    },
+    {
+      "id": "lecit",
+      "cs": "léčit",
+      "en": "to treat",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 3572,
+      "nativeReviewed": false
+    },
+    {
+      "id": "onemocneni",
+      "cs": "onemocnění",
+      "en": "illness (formal)",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1949,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zraneni",
+      "cs": "zranění",
+      "en": "injury",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 2084,
+      "nativeReviewed": false
+    },
+    {
+      "id": "uraz",
+      "cs": "úraz",
+      "en": "accident, injury",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 4843,
+      "nativeReviewed": false
+    },
+    {
+      "id": "uzdravit-se",
+      "cs": "uzdravit se",
+      "en": "to get better",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 8564,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zdravotni",
+      "cs": "zdravotní",
+      "en": "health",
+      "pos": "adj",
+      "rank": 943,
+      "nativeReviewed": false
+    },
+    {
+      "id": "lekarsky",
+      "cs": "lékařský",
+      "en": "medical",
+      "pos": "adj",
+      "rank": 2183,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dech",
+      "cs": "dech",
+      "en": "breath",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1329,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spanek",
+      "cs": "spánek",
+      "en": "sleep",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1796,
+      "nativeReviewed": false
+    },
+    {
+      "id": "unava",
+      "cs": "únava",
+      "en": "tiredness",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 3738,
+      "nativeReviewed": false
+    },
+    {
+      "id": "stres",
+      "cs": "stres",
+      "en": "stress",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 3378,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dieta",
+      "cs": "dieta",
+      "en": "diet",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5324,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cukrovka",
+      "cs": "cukrovka",
+      "en": "diabetes",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 8722,
+      "nativeReviewed": false
     }
   ]
 }

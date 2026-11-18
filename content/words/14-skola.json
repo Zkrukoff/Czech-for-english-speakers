@@ -579,6 +579,222 @@
         "en": "That's the right answer."
       },
       "nativeReviewed": false
+    },
+    {
+      "id": "studium",
+      "cs": "studium",
+      "en": "studies",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 709,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vzdelani",
+      "cs": "vzdělání",
+      "en": "education",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1986,
+      "nativeReviewed": false
+    },
+    {
+      "id": "skolni",
+      "cs": "školní",
+      "en": "school",
+      "pos": "adj",
+      "rank": 1449,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyuka",
+      "cs": "výuka",
+      "en": "teaching, lessons",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2661,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rocnik",
+      "cs": "ročník",
+      "en": "year (of study)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1177,
+      "nativeReviewed": false
+    },
+    {
+      "id": "semestr",
+      "cs": "semestr",
+      "en": "semester, term",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 10998,
+      "nativeReviewed": false
+    },
+    {
+      "id": "maturita",
+      "cs": "maturita",
+      "en": "school-leaving exam",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5398,
+      "nativeReviewed": false
+    },
+    {
+      "id": "diplom",
+      "cs": "diplom",
+      "en": "diploma",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 9233,
+      "nativeReviewed": false
+    },
+    {
+      "id": "znalost",
+      "cs": "znalost",
+      "en": "knowledge",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1594,
+      "nativeReviewed": false
+    },
+    {
+      "id": "veda",
+      "cs": "věda",
+      "en": "science",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 957,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyzkum",
+      "cs": "výzkum",
+      "en": "research",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 813,
+      "nativeReviewed": false
+    },
+    {
+      "id": "historie",
+      "cs": "historie",
+      "en": "history",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 780,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zemepis",
+      "cs": "zeměpis",
+      "en": "geography",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 21086,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chemie",
+      "cs": "chemie",
+      "en": "chemistry",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 5251,
+      "nativeReviewed": false
+    },
+    {
+      "id": "biologie",
+      "cs": "biologie",
+      "en": "biology",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 6513,
+      "nativeReviewed": false
+    },
+    {
+      "id": "clanek",
+      "cs": "článek",
+      "en": "article",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 852,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kapitola",
+      "cs": "kapitola",
+      "en": "chapter",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 981,
+      "nativeReviewed": false
+    },
+    {
+      "id": "poznamka",
+      "cs": "poznámka",
+      "en": "note",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1713,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zapsat-se",
+      "cs": "zapsat se",
+      "en": "to enrol",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 2723,
+      "nativeReviewed": false
+    },
+    {
+      "id": "precist",
+      "cs": "přečíst",
+      "en": "to read (to the end)",
+      "pos": "verb",
+      "aspect": "pf",
+      "partner": "číst",
+      "rank": 1575,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pochopit",
+      "cs": "pochopit",
+      "en": "to understand, to get",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 668,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chapat",
+      "cs": "chápat",
+      "en": "to understand",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 555,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vysvetlovat",
+      "cs": "vysvětlovat",
+      "en": "to explain",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 792,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zkouset",
+      "cs": "zkoušet",
+      "en": "to test; to try",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 2007,
+      "nativeReviewed": false
     }
   ]
 }

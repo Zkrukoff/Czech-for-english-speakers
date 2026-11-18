@@ -931,6 +931,306 @@
         "en": "Carry on straight ahead."
       },
       "nativeReviewed": false
+    },
+    {
+      "id": "sluzba",
+      "cs": "služba",
+      "en": "service; duty, shift",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 306,
+      "example": {
+        "cs": "Mám dnes službu.",
+        "en": "I'm on duty today."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "cinnost",
+      "cs": "činnost",
+      "en": "activity",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 460,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vedeni",
+      "cs": "vedení",
+      "en": "management",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 590,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pohovor",
+      "cs": "pohovor",
+      "en": "(job) interview",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 9374,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zivotopis",
+      "cs": "životopis",
+      "en": "CV",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 6969,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zkusenost",
+      "cs": "zkušenost",
+      "en": "experience",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 548,
+      "nativeReviewed": false
+    },
+    {
+      "id": "uvazek",
+      "cs": "úvazek",
+      "en": "(working) hours",
+      "pos": "noun",
+      "gender": "m-inan",
+      "note": "plný úvazek = full time",
+      "rank": 7671,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vypoved",
+      "cs": "výpověď",
+      "en": "notice (leaving a job)",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2642,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prijem",
+      "cs": "příjem",
+      "en": "income",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 1342,
+      "nativeReviewed": false
+    },
+    {
+      "id": "odmena",
+      "cs": "odměna",
+      "en": "reward, bonus",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2380,
+      "nativeReviewed": false
+    },
+    {
+      "id": "obchodni",
+      "cs": "obchodní",
+      "en": "business",
+      "pos": "adj",
+      "rank": 938,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pracovnik",
+      "cs": "pracovník",
+      "en": "worker, employee",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1271,
+      "nativeReviewed": false
+    },
+    {
+      "id": "klient",
+      "cs": "klient",
+      "en": "client",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 952,
+      "nativeReviewed": false
+    },
+    {
+      "id": "odbornik",
+      "cs": "odborník",
+      "en": "expert",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 1145,
+      "nativeReviewed": false
+    },
+    {
+      "id": "plan",
+      "cs": "plán",
+      "en": "plan",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 547,
+      "nativeReviewed": false
+    },
+    {
+      "id": "planovat",
+      "cs": "plánovat",
+      "en": "to plan",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 1759,
+      "nativeReviewed": false
+    },
+    {
+      "id": "resit",
+      "cs": "řešit",
+      "en": "to deal with, to solve",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 688,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyresit",
+      "cs": "vyřešit",
+      "en": "to solve",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1872,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spolupracovat",
+      "cs": "spolupracovat",
+      "en": "to work together",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 2054,
+      "nativeReviewed": false
+    },
+    {
+      "id": "spoluprace",
+      "cs": "spolupráce",
+      "en": "cooperation",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 805,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vest",
+      "cs": "vést",
+      "en": "to lead; to run",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 213,
+      "example": {
+        "cs": "Ta cesta vede k řece.",
+        "en": "This path leads to the river."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "zvladnout",
+      "cs": "zvládnout",
+      "en": "to manage, to cope with",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1002,
+      "nativeReviewed": false
+    },
+    {
+      "id": "splnit",
+      "cs": "splnit",
+      "en": "to fulfil, to complete",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1813,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dokoncit",
+      "cs": "dokončit",
+      "en": "to finish",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1854,
+      "nativeReviewed": false
+    },
+    {
+      "id": "kontrolovat",
+      "cs": "kontrolovat",
+      "en": "to check",
+      "pos": "verb",
+      "aspect": "impf",
+      "rank": 2564,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zkontrolovat",
+      "cs": "zkontrolovat",
+      "en": "to check",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 3836,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vydelat",
+      "cs": "vydělat",
+      "en": "to earn",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 2717,
+      "nativeReviewed": false
+    },
+    {
+      "id": "prijmout",
+      "cs": "přijmout",
+      "en": "to accept; to take on (staff)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 832,
+      "nativeReviewed": false
+    },
+    {
+      "id": "odpovednost",
+      "cs": "odpovědnost",
+      "en": "responsibility",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 2153,
+      "nativeReviewed": false
+    },
+    {
+      "id": "povinnost",
+      "cs": "povinnost",
+      "en": "duty",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1107,
+      "nativeReviewed": false
+    },
+    {
+      "id": "moznost",
+      "cs": "možnost",
+      "en": "possibility, option",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 212,
+      "example": {
+        "cs": "Je možnost platit kartou?",
+        "en": "Is it possible to pay by card?"
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "prilezitost",
+      "cs": "příležitost",
+      "en": "opportunity",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 816,
+      "nativeReviewed": false
     }
   ]
 }

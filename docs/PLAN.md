@@ -1414,3 +1414,50 @@ trustworthy the app is.
 4. **Two mocks and two practice sets per task type.** More can follow once
    native review catches up.
 5. **Strict timers in exam mode, none in practice mode.**
+
+### 10.8 As built (18 Nov 2026)
+
+- **16 task types, not 14.** I miscounted in §10.2: the exam has 5 reading,
+  2 writing, 5 listening and 4 speaking tasks. So there are **64 task sets**,
+  not 56: two practice sets per type plus one in each mock. A test now checks
+  the count and that each mock adds up to 25 / 20 / 25 / 37.
+- **Where it lives:** `/exam`, with a nav item (Exam · *Zkouška*) and a Home
+  card. The exam's content is in its own chunk, loaded only with the exam
+  pages. The A2 deck words do go in the first download: +12 kB gzipped
+  (content chunk 222 → 234 kB), which adds to the case for I8.
+- **Reading and listening:** scored automatically. In mocks, recordings play
+  twice and no more. **Not built:** the exam's preview time before each
+  listening task. It's explained in the mock, not enforced.
+- **Writing:** word counters; the 35-word zero rule for the e-mail is enforced;
+  otherwise self-assessed with a model and a checklist.
+- **Speaking:** questions spoken by the computer voice, answers recorded on the
+  device only, exam timers in mocks (7 s / 90 s / 1 min / 15 s), none in
+  practice. Self-assessed out of the 37 points we can confirm.
+- **Mocks:** each part is handed in once (reading and writing also by their
+  timers) and checked straight away. The results screen says what writing
+  still has to bring to reach 42 of 70.
+- **A2 vocabulary: 29% of A2 single words (392 of 1,370), not the 40%
+  target.**
+  - About 420 words were added, chosen by corpus frequency within the exam
+    topics; 21 were dropped as already taught. The decks now hold 1,656
+    words, and A1 coverage rose to 82%.
+  - I didn't close the gap by picking from the official list's missing
+    words: §9.7 already flagged that as too close to copying the list.
+  - Reaching 40% needs about 150 more A2 words. They can come by frequency in
+    a later step, or from the list if NPI ČR gives permission.
+- **Fixes found on the way:**
+  - Speech could leave a step waiting forever if the engine threw.
+  - Speaking recordings were freed before the review screen.
+  - React's dev double-mount started exam steps twice.
+  - The hub's average counted untried task types as 0%.
+- **Checks:**
+  - 284 tests pass; typecheck and build are clean.
+  - No overflow at 320–1,280 px.
+  - `check:targets` (now including three exam screens) and `check:offline`
+    pass, and exam pages work offline.
+  - A whole mock runs end to end with a simulated clock, microphone and voice.
+  - The keyboard can answer tasks.
+  - Structural accessibility checks (names, labels, headings) pass on 18 exam
+    pages.
+  - **Lighthouse wasn't run this step:** it needs a downloaded package, which
+    the permission settings blocked.

@@ -784,6 +784,208 @@
       "pos": "adj",
       "rank": 776,
       "nativeReviewed": false
+    },
+    {
+      "id": "vuz",
+      "cs": "vůz",
+      "en": "car; carriage (of a train)",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 643,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vozidlo",
+      "cs": "vozidlo",
+      "en": "vehicle",
+      "pos": "noun",
+      "gender": "n",
+      "rank": 1199,
+      "nativeReviewed": false
+    },
+    {
+      "id": "jizda",
+      "cs": "jízda",
+      "en": "ride, journey",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1333,
+      "nativeReviewed": false
+    },
+    {
+      "id": "trat",
+      "cs": "trať",
+      "en": "track, line",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1772,
+      "nativeReviewed": false
+    },
+    {
+      "id": "linka",
+      "cs": "linka",
+      "en": "(bus or tram) line, route",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1886,
+      "nativeReviewed": false
+    },
+    {
+      "id": "rychlost",
+      "cs": "rychlost",
+      "en": "speed",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 630,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vzdalenost",
+      "cs": "vzdálenost",
+      "en": "distance",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 1489,
+      "nativeReviewed": false
+    },
+    {
+      "id": "provoz",
+      "cs": "provoz",
+      "en": "traffic; operation",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 730,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dopravni",
+      "cs": "dopravní",
+      "en": "traffic, transport",
+      "pos": "adj",
+      "rank": 1179,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zacpa",
+      "cs": "zácpa",
+      "en": "traffic jam",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 10776,
+      "nativeReviewed": false
+    },
+    {
+      "id": "chodnik",
+      "cs": "chodník",
+      "en": "pavement",
+      "pos": "noun",
+      "gender": "m-inan",
+      "rank": 2547,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pesi",
+      "cs": "pěší",
+      "en": "pedestrian; on foot",
+      "pos": "adj",
+      "rank": 6195,
+      "nativeReviewed": false
+    },
+    {
+      "id": "cyklista",
+      "cs": "cyklista",
+      "en": "cyclist",
+      "pos": "noun",
+      "gender": "m-anim",
+      "rank": 4006,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zatacka",
+      "cs": "zatáčka",
+      "en": "bend",
+      "pos": "noun",
+      "gender": "f",
+      "rank": 4381,
+      "nativeReviewed": false
+    },
+    {
+      "id": "pristat",
+      "cs": "přistát",
+      "en": "to land",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 4819,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zrusit",
+      "cs": "zrušit",
+      "en": "to cancel",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 2186,
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyluka",
+      "cs": "výluka",
+      "en": "(planned) closure of a line",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Prague notices: výluka tramvají",
+      "rank": 13363,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dojet",
+      "cs": "dojet",
+      "en": "to get to (by vehicle)",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 3826,
+      "nativeReviewed": false
+    },
+    {
+      "id": "dojit",
+      "cs": "dojít",
+      "en": "to get to (on foot); to run out",
+      "pos": "verb",
+      "aspect": "pf",
+      "note": "Došlo mléko.",
+      "rank": 241,
+      "example": {
+        "cs": "Došlo nám mléko.",
+        "en": "We've run out of milk."
+      },
+      "nativeReviewed": false
+    },
+    {
+      "id": "vyrazit",
+      "cs": "vyrazit",
+      "en": "to set off",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 1087,
+      "nativeReviewed": false
+    },
+    {
+      "id": "zastavit",
+      "cs": "zastavit",
+      "en": "to stop",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 510,
+      "nativeReviewed": false
+    },
+    {
+      "id": "otocit-se",
+      "cs": "otočit se",
+      "en": "to turn round",
+      "pos": "verb",
+      "aspect": "pf",
+      "rank": 721,
+      "nativeReviewed": false
     }
   ]
 }
