@@ -1087,3 +1087,115 @@ at the same pace as step 1.**
    wrong.
 3. **Direction swaps** keep exercise ids, so review history stays: the next
    review of that card asks Czech → English.
+
+### 8.7 Step 2 status
+
+Built, merged and deployed on 18 November 2026 (`c5e25d2`): P6, A3, P3
+(recognition instead of typed English for the swaps, § 8.2a), I5, and I8 in
+part (trusted load; the content split is its own item, § 8.4a).
+
+## 9. Round 3, step 3: core vocabulary
+
+**The gap** [Data]: Line A's word lists cover **16% of the official A1 word
+inventory** (194 of 1,204 single words) and 3% of A2. Core lemmas such as
+*protože, když, který, člověk, čas, peníze, týden, dnes* aren't taught as
+vocabulary at all.
+
+### 9.1 Sources and rights (checked 18 Nov 2026)
+
+- **The official A1/A2 inventory** (NPI ČR, *Soupis lexikálních jednotek*) is
+  "© 2026 NPI ČR" with no open licence. A wholesale copy into the app could
+  infringe the database maker's right in EU law, even though the words
+  themselves are public. So:
+  - We **don't copy it.** It's used only as an **outside benchmark**:
+    `npm run check:coverage` fetches it at check time, compares, and stores
+    nothing.
+  - The 26 phrases in the phrase deck that cite an inventory entry stay. That
+    is a small, attributed use.
+  - **If you want a closer match**, ask NPI ČR for permission to use or tag
+    the list; I can draft the e-mail. Nothing below depends on it.
+- **Frequency:** the Czech National Corpus SYN2015 lemma list, which is **CC BY
+  4.0** (Křen, M., ÚČNK). It's used to choose and order words, credited in
+  Settings → About and in the deck file.
+- **Our own work:** the selection by topic, the English glosses, gender, aspect
+  partners and examples. All of it is flagged for native review.
+
+### 9.2 The decks
+
+About **1,000 words in 14 topic decks**, chosen by frequency within each
+everyday topic, the kind of topics an A1 syllabus covers. Words the lessons
+already teach are skipped, so there are no duplicate cards.
+
+| # | Deck | Examples |
+|---|---|---|
+| 1 | *Základní slova* · the little words | *a, ale, protože, když, který, tady, tam, už, ještě* |
+| 2 | *Lidé a rodina* · people and family | *člověk, muž, žena, dítě, babička* |
+| 3 | *Čísla, čas, kalendář* · numbers and time | *hodina, týden, měsíc, dnes, zítra, ráno* |
+| 4 | *Jídlo a pití* · food and drink | *chleba, maso, zelenina, oběd, večeře* |
+| 5 | *Nakupování a peníze* · shopping and money | *peníze, cena, obchod, drahý, levný* |
+| 6 | *Bydlení* · home | *byt, pokoj, kuchyň, nájem, soused* |
+| 7 | *Město a doprava* · town and transport | *ulice, auto, cesta, metro, stanice* |
+| 8 | *Práce* · work | *práce, firma, kancelář, schůzka, plat* |
+| 9 | *Zdraví a tělo* · health and the body | *hlava, ruka, nemocný, lék* |
+| 10 | *Úřady a služby* · offices and services | *úřad, doklad, formulář, pošta* |
+| 11 | *Volný čas* · free time | *film, kniha, hrát, cestovat* |
+| 12 | *Počasí a příroda* · weather and nature | *počasí, déšť, slunce, zima* |
+| 13 | *Oblečení a barvy* · clothes and colours | *bunda, boty, bílý, černý* |
+| 14 | *Škola a jazyky* · school and languages | *škola, jazyk, slovo, rozumět* |
+
+**Each entry has:**
+- the Czech lemma and an English gloss;
+- the part of speech;
+- for nouns, gender (with animacy) and any irregular forms;
+- for verbs, the aspect and its partner (taken from `verbs.json` where it has
+  one);
+- the SYN2015 rank.
+
+**Example sentences:** one each for the 300 most frequent words, built from
+words taught so far. The rest get examples later. Writing 1,000 good examples
+at once would mean 1,000 rushed ones.
+
+### 9.3 How they're learned
+
+The same model as the phrase deck, which already works:
+- **Add a deck** on the Review page; it gets a *Slovíčka* tab beside *Fráze*.
+- **New words per day:** 10 by default, with 5, 10 or 20 in Settings.
+- **First you recognise each word:** Czech shown (and heard), choose the
+  meaning from three in the same deck, and each wrong choice says which word
+  it really is.
+- **Then you produce it:** English → Czech, typed. Nouns show their gender
+  after the answer.
+- **Linked from lessons:** each Line A unit links its decks from the lesson's
+  end screen (for example "Coffee and lunch → Jídlo a pití").
+- **Data:** a new card kind (`word:<id>`) in the existing table. No schema
+  version change, backups already include cards, and nothing existing changes.
+
+### 9.4 Checks
+
+- **Content tests:** every entry is valid; no duplicates across decks or with
+  lesson vocabulary; gender is present on nouns and aspect on verbs; verb
+  partners match `verbs.json`; example sentences use only known words.
+- **`npm run check:coverage`:** coverage of the official A1 list, fetched live.
+  **Target: 80% or more of A1 single words** after both halves (from 16% today).
+
+### 9.5 Order and effort
+
+On `round-3-step3`, one commit per part:
+1. **3a:** the deck system (schema, loader, cards, the *Slovíčka* tab,
+   Settings, coverage script) plus the first four decks (1–4, about 300
+   words). *About 4–5 days.*
+2. **3b:** decks 5–14 (about 700 words) and the unit links. *About 5–6 days.*
+
+Then QA and a push. Not merged or deployed until you say so.
+
+**This adds about 1,000 items for native review.** The review list will
+suggest a sampling order: deck 1 and the top 300 first.
+
+### 9.6 Decisions (defaults unless you say otherwise)
+
+1. **The NPI list is a benchmark only**, not imported. (You can still ask NPI
+   for permission; I'll draft the e-mail if you like.)
+2. **10 new words a day,** adjustable to 5, 10 or 20.
+3. **Examples for the 300 most frequent words** now, the rest later.
+4. **Build 3a and 3b back to back.** You see it all at the end, as with steps
+   1 and 2.
